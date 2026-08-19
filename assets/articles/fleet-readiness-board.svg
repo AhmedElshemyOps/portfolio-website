@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">Fleet readiness operations board</title>
+<desc id="desc">A professional fleet readiness dashboard showing status summary, vehicle readiness cards, exceptions, ownership and guest-service suitability.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#071427"/>
+    <stop offset=".58" stop-color="#123b63"/>
+    <stop offset="1" stop-color="#0d5b68"/>
+  </linearGradient>
+  <linearGradient id="surface" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#ffffff"/>
+    <stop offset="1" stop-color="#edf6ff"/>
+  </linearGradient>
+  <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#f4d876"/>
+    <stop offset="1" stop-color="#c99733"/>
+  </linearGradient>
+  <pattern id="grid" width="52" height="52" patternUnits="userSpaceOnUse">
+    <path d="M52 0H0V52" fill="none" stroke="#d8e8f7" stroke-opacity=".09" stroke-width="1"/>
+  </pattern>
+  <filter id="shadow" x="-12%" y="-12%" width="124%" height="132%">
+    <feDropShadow dx="0" dy="24" stdDeviation="24" flood-color="#001326" flood-opacity=".24"/>
+  </filter>
+  <filter id="cardShadow" x="-16%" y="-16%" width="132%" height="136%">
+    <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#001326" flood-opacity=".13"/>
+  </filter>
+</defs>
+
+<rect width="1600" height="900" rx="44" fill="url(#bg)"/>
+<rect width="1600" height="900" rx="44" fill="url(#grid)"/>
+<path d="M1170 0H1600V900H1278C1388 708 1408 486 1338 270C1292 126 1224 42 1170 0Z" fill="#ffffff" opacity=".07"/>
+
+<g font-family="Aptos, Segoe UI, Helvetica, Arial, sans-serif">
+  <text x="82" y="96" fill="#f0ca67" font-size="22" font-weight="850" letter-spacing="5">FLEET READINESS BOARD</text>
+  <text x="82" y="158" fill="#ffffff" font-size="56" font-weight="850">Availability is not readiness</text>
+  <text x="82" y="204" fill="#d6e8f7" font-size="25">A control tower should show whether each vehicle is safe, comfortable, compliant and suitable for the guest service ahead.</text>
+
+  <g transform="translate(82 250)" filter="url(#shadow)">
+    <rect width="1436" height="560" rx="34" fill="url(#surface)"/>
+    <rect width="1436" height="88" rx="34" fill="#08192f"/>
+    <path d="M0 56H1436V108H0Z" fill="#08192f"/>
+    <text x="34" y="55" fill="#f1cf70" font-size="18" font-weight="850" letter-spacing="4">LIVE READINESS SCREEN</text>
+    <text x="1182" y="55" fill="#cfe2f3" font-size="20" font-weight="760">Morning service view</text>
+
+    <g transform="translate(34 118)">
+      <rect width="1368" height="88" rx="24" fill="#eef6ff" stroke="#c9dbea"/>
+      <g transform="translate(24 20)">
+        <text x="0" y="18" fill="#5a7087" font-size="14" font-weight="850" letter-spacing="2">GOOD TO GO</text>
+        <text x="0" y="54" fill="#0b6b48" font-size="34" font-weight="900">39</text>
+      </g>
+      <g transform="translate(230 20)">
+        <text x="0" y="18" fill="#5a7087" font-size="14" font-weight="850" letter-spacing="2">ACTIVE SERVICE</text>
+        <text x="0" y="54" fill="#123b63" font-size="34" font-weight="900">26</text>
+      </g>
+      <g transform="translate(478 20)">
+        <text x="0" y="18" fill="#5a7087" font-size="14" font-weight="850" letter-spacing="2">TRIPS AT RISK</text>
+        <text x="0" y="54" fill="#b42318" font-size="34" font-weight="900">5</text>
+      </g>
+      <g transform="translate(704 20)">
+        <text x="0" y="18" fill="#5a7087" font-size="14" font-weight="850" letter-spacing="2">MAINTENANCE</text>
+        <text x="0" y="54" fill="#765a12" font-size="34" font-weight="900">3</text>
+      </g>
+      <g transform="translate(958 20)">
+        <text x="0" y="18" fill="#5a7087" font-size="14" font-weight="850" letter-spacing="2">SUPPLIERS CONFIRMED</text>
+        <text x="0" y="54" fill="#123b63" font-size="34" font-weight="900">11/12</text>
+      </g>
+      <rect x="1210" y="24" width="128" height="40" rx="20" fill="#fff7df" stroke="#dec16e"/>
+      <text x="1274" y="50" text-anchor="middle" fill="#765a12" font-size="14" font-weight="900" letter-spacing="1.5">FIELD READY</text>
+    </g>
+
+    <g transform="translate(34 236)" filter="url(#cardShadow)">
+      <g>
+        <rect width="310" height="222" rx="22" fill="#effbf5" stroke="#30a66c" stroke-width="3"/>
+        <rect x="20" y="18" width="110" height="30" rx="15" fill="#d9f4e6"/>
+        <text x="75" y="39" text-anchor="middle" fill="#10643d" font-size="14" font-weight="900">GOOD TO GO</text>
+        <text x="22" y="80" fill="#071d37" font-size="25" font-weight="900">SUV-12</text>
+        <text x="22" y="112" fill="#334b64" font-size="18">Family transfer · AUH 07:30</text>
+        <text x="22" y="148" fill="#10643d" font-size="17">✓ Comfort, child seats, luggage fit</text>
+        <text x="22" y="178" fill="#10643d" font-size="17">✓ Driver acknowledged</text>
+      </g>
+      <g transform="translate(344 0)">
+        <rect width="310" height="222" rx="22" fill="#fff9e8" stroke="#d4a437" stroke-width="3"/>
+        <rect x="20" y="18" width="148" height="30" rx="15" fill="#fff0bd"/>
+        <text x="94" y="39" text-anchor="middle" fill="#755811" font-size="14" font-weight="900">READY WITH NOTE</text>
+        <text x="22" y="80" fill="#071d37" font-size="25" font-weight="900">COACH-04</text>
+        <text x="22" y="112" fill="#334b64" font-size="18">City tour · 34 guests</text>
+        <text x="22" y="148" fill="#755811" font-size="17">✓ Cleaned · documents valid</text>
+        <text x="22" y="178" fill="#755811" font-size="17">! AC inspection after service</text>
+      </g>
+      <g transform="translate(688 0)">
+        <rect width="310" height="222" rx="22" fill="#fff1f1" stroke="#c84f5c" stroke-width="3"/>
+        <rect x="20" y="18" width="110" height="30" rx="15" fill="#ffe0e1"/>
+        <text x="75" y="39" text-anchor="middle" fill="#9f2634" font-size="14" font-weight="900">RESTRICTED</text>
+        <text x="22" y="80" fill="#071d37" font-size="25" font-weight="900">SEDAN-07</text>
+        <text x="22" y="112" fill="#334b64" font-size="18">VIP transfer · premium guest</text>
+        <text x="22" y="148" fill="#9f2634" font-size="17">! Premium standard not met</text>
+        <text x="22" y="178" fill="#9f2634" font-size="17">Action: substitute vehicle</text>
+      </g>
+      <g transform="translate(1032 0)">
+        <rect width="302" height="222" rx="22" fill="#edf2f7" stroke="#66819c" stroke-width="3"/>
+        <rect x="20" y="18" width="150" height="30" rx="15" fill="#dfe8f2"/>
+        <text x="95" y="39" text-anchor="middle" fill="#465b70" font-size="14" font-weight="900">MAINTENANCE HOLD</text>
+        <text x="22" y="80" fill="#071d37" font-size="25" font-weight="900">SUV-21</text>
+        <text x="22" y="112" fill="#334b64" font-size="18">No active service</text>
+        <text x="22" y="148" fill="#465b70" font-size="17">Technical defect · owner set</text>
+        <text x="22" y="178" fill="#465b70" font-size="17">Return-to-service check required</text>
+      </g>
+    </g>
+
+    <g transform="translate(64 496)">
+      <rect width="1308" height="38" rx="19" fill="#08192f"/>
+      <text x="24" y="25" fill="#f1cf70" font-size="16" font-weight="850" letter-spacing="2">OPERATING RULE</text>
+      <text x="210" y="25" fill="#d6e8f7" font-size="16">Release only when readiness, guest fit, driver acknowledgement and recovery ownership are clear.</text>
+    </g>
+  </g>
+</g>
+</svg>

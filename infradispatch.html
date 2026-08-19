@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>InfraDispatch | Abu Dhabi Dispatch Planning Beta</title>
+<meta content="InfraDispatch is an Abu Dhabi beta dispatch planning system for pickup and drop-off sequencing, timing rules, and stakeholder messages." name="description"/>
+<link href="assets/infradispatch-favicon-n5.svg" rel="icon" type="image/svg+xml"/>
+<link href="styles-v38.css?v=38" rel="stylesheet"/>
+<link href="css/front-end-polish-v14.css" rel="stylesheet"/><meta content="InfraDispatch | Abu Dhabi Dispatch Planning" property="og:title"/><meta content="A tourism operations project for Abu Dhabi pickup planning, dispatch sequencing, guide and driver communication." property="og:description"/><meta content="assets/og-v14/og-infradispatch.svg" property="og:image"/><meta content="website" property="og:type"/><meta content="summary_large_image" name="twitter:card"/><meta content="InfraDispatch | Abu Dhabi Dispatch Planning" name="twitter:title"/><meta content="A tourism operations project for Abu Dhabi pickup planning, dispatch sequencing, guide and driver communication." name="twitter:description"/><meta content="assets/og-v14/og-infradispatch.svg" name="twitter:image"/><link href="css/premium-v15.css" rel="stylesheet"/><link href="css/enhance-v17.css" rel="stylesheet"/><link href="site.webmanifest" rel="manifest"/>
+<link href="assets/brand/favicon-192.png" rel="apple-touch-icon"/>
+<link href="assets/css/design-vnext.css" rel="stylesheet"/>
+<link href="assets/css/github-integration.css?v=20260711" rel="stylesheet"/><link href="/assets/css/final-enhancements.css?v=20260712" rel="stylesheet"/>
+<link href="assets/css/table-responsive-v16.css?v=20260721" rel="stylesheet"/></head>
+<body data-page="infra">
+<a id="top"></a>
+<header class="site-header">
+<a aria-label="Ahmed Mahmoud home" class="brand" href="index.html">
+<span class="brand-mark">AM</span>
+<span><strong>Ahmed Mahmoud</strong><small>Operations · Quality · Product</small></span>
+</a>
+<button aria-controls="main-navigation" aria-expanded="false" aria-label="Menu" class="menu-btn" data-menu-button="">☰</button>
+<nav aria-label="Primary navigation" class="nav" data-nav="" id="main-navigation" role="navigation"><a href="index.html">Home</a><a href="projects.html">Projects</a><a href="articles.html">Insights</a><a href="index.html#experience">Experience</a><a href="index.html#footer-contact">Contact</a><a href="tourism-ai-operations-playbook.html">AI Playbook</a><a class="nav-cv" download="" href="Ahmed-Mahmoud-CV.pdf">Download CV</a></nav>
+</header>
+<main>
+<section class="hero hero-grid" id="infra-overview">
+<div class="hero-copy reveal">
+<span class="eyebrow pill">InfraDispatch · Abu Dhabi Beta</span>
+<h1>Smart dispatch planning for <em>tourism operations</em> teams.</h1>
+<p class="lead">InfraDispatch converts multi-location service details into a clear operational plan: pickup or drop-off sequencing, timing control, route links, vehicle recommendation, and professional stakeholder communication.</p>
+<div class="actions">
+<a class="btn primary" href="#planner">Open planning system →</a>
+<a class="btn secondary" href="article-tour-guide-quality-index.html">Read quality article</a>
+</div>
+<div class="tag-row"><span>Abu Dhabi operations focus</span><span>Rule-based dispatch logic</span><span>Mobile-ready planning UX</span></div>
+</div>
+<div class="system-preview reveal delay">
+<div class="panel-title"><div><small>Beta system preview</small><h2>From list to dispatch plan</h2></div></div>
+<ol class="flow-list">
+<li>Operator enters hotels and attractions</li>
+<li>System applies sequencing and timing logic</li>
+<li>Pickup and drop-off are sequenced</li>
+<li>Professional multilingual messages are generated</li>
+</ol>
+</div>
+</section>
+<section class="section dark-section" id="planner">
+<div class="section-head dark-head">
+<span class="eyebrow">Beta System</span>
+<h2>The real system flow</h2>
+<p>The operator enters hotels, passenger details, and attractions once. The system produces a complete dispatch plan with sequencing, timing, vehicle recommendation, route split logic, and stakeholder messages.</p>
+</div>
+<div class="planner-grid">
+<aside class="planner-inputs">
+<h3>Planner inputs</h3>
+<p>Full-width input workspace for faster planning on desktop and easier step-by-step use on mobile.</p>
+<div class="demo-badge">Live MVP Demo · Abu Dhabi Tourism Dispatch Planning</div>
+<form id="plannerForm">
+<label>Service title<input id="serviceType" value="Abu Dhabi city tour"/></label>
+<div class="field-row ops-fields">
+<label>Service date<input id="serviceDate" type="date"/></label>
+<label>Driver name<input id="driverName" placeholder="Driver name"/></label>
+<label>Guide name<input id="guideName" placeholder="Guide name"/></label>
+<label>Vehicle plate<input id="vehiclePlate" placeholder="AD 12345"/></label>
+</div>
+<div class="field-row ops-fields">
+<label>Driver mobile<input id="driverMobile" placeholder="+971..."/></label>
+<label>Guide mobile<input id="guideMobile" placeholder="+971..."/></label>
+<label>Vehicle type / model<input id="vehicleTypeManual" placeholder="Toyota Coaster / Van / SUV"/></label>
+<label>Approved by<input id="approvedBy" placeholder="Operations supervisor"/></label>
+</div>
+<div class="field-row">
+<label>Service flow
+                <select id="serviceFlow">
+<option value="roundtrip">Pickup + drop-off</option>
+<option value="pickup_only">Pickup only</option>
+<option value="dropoff_only">Drop-off only</option>
+</select>
+</label>
+<label>Drop-off behavior
+                <select id="dropMode">
+<option value="same">Smart return order from last attraction</option>
+<option value="custom">Custom drop-off sequence</option>
+</select>
+</label>
+</div>
+<div class="field-row">
+<label>Transfer mode
+                <select id="transferMode">
+<option value="city_tour">City tour transfer</option>
+<option value="airport_transfer">Airport transfer</option>
+<option value="point_to_point">Point-to-point transfer</option>
+<option value="intercity">Intercity transfer</option>
+</select>
+</label>
+<label>Target pickup window
+                <select id="pickupWindowTarget">
+<option selected="" value="60">60 minutes (standard)</option>
+<option value="45">45 minutes</option>
+<option value="30">30 minutes</option>
+<option value="15">15 minutes</option>
+<option value="75">75 minutes</option>
+<option value="90">90 minutes</option>
+</select>
+</label>
+</div>
+<div class="field-row">
+<label>First attraction
+                <select id="firstAttraction"></select>
+</label>
+<label>First attraction time (24h)
+                <input id="firstArrivalTime" placeholder="09:15" value="09:15"/>
+</label>
+</div>
+<div class="field-row">
+<label>Last attraction / end point
+                <select id="lastAttraction"></select>
+</label>
+<label>Last attraction time (24h)
+                <input id="lastDepartTime" placeholder="16:30" value="16:30"/>
+</label>
+</div>
+<div class="field-row">
+<label>Luggage count (airport)<input id="luggageCount" min="0" type="number" value="0"/></label>
+<label>DARB toll gates (auto)<input id="darbTollCount" min="0" readonly="" type="number" value="0"/></label>
+</div>
+<div class="field-row">
+<label>Petty cash type
+                <select id="pettyCashType">
+<option value="none">No petty cash</option>
+<option value="driver">Driver petty cash</option>
+<option value="guide">Guide petty cash</option>
+<option value="both">Driver + Guide petty cash</option>
+</select>
+</label>
+<label>Petty cash amount (AED)<input id="pettyCashAmount" min="0" type="number" value="0"/></label>
+</div>
+<label>Petty cash note<input id="pettyCashNote" placeholder="Optional finance note for ops team"/></label>
+<label>Guide special note
+              <select id="guideSpecialNote">
+<option value="normal">Normal / usual service</option>
+<option value="repeater">Repeater guest</option>
+<option value="vip">VIP guests - special care</option>
+<option value="custom">Custom note</option>
+</select>
+</label>
+<label>Custom guide note<input id="guideCustomNote" placeholder="Only used when guide note = Custom"/></label>
+<label>Hotel pickup / attraction pickup search<input id="pickupSearch" placeholder="Search hotel / mall / attraction"/></label>
+<div class="search-results" id="pickupResults"></div>
+<button class="btn secondary full" id="addMorePickupBtn" type="button">Add more pickup</button>
+<div class="entry-list" id="pickupEntries"></div>
+<div id="dropoffBlock">
+<label>Drop-off search<input id="dropoffSearch" placeholder="Search hotel / mall / attraction"/></label>
+<div class="search-results" id="dropoffResults"></div>
+<button class="btn secondary full" id="addMoreDropoffBtn" type="button">Add more drop-off</button>
+</div>
+<button class="btn primary full" id="generatePlanBtn" type="button">🧭 Plan Service</button>
+<button class="btn secondary full" id="resetPlan" type="button">Load Demo Plan</button>
+<button class="btn ghost full" id="clearPlanBtn" type="button">Clear Plan</button>
+</form>
+</aside>
+<div class="planner-output">
+<div class="output-head"><h3>Generated dispatch plan</h3><p class="output-helper">Your dispatch plan will appear here after adding pickup locations and clicking Plan Service.</p></div>
+<div class="sequence-grid">
+<div><h4>Pickup sequence</h4><div class="sequence-list" id="pickupList"></div></div>
+<div><h4>Drop-off sequence</h4><div class="sequence-list" id="dropoffList"></div></div>
+</div>
+<div class="summary-row">
+<div><small>Service Snapshot</small><strong id="serviceSnapshot">-</strong></div>
+<div><small>Zoning area</small><strong id="zoningSummary">-</strong></div>
+<div><small>Vehicle recommendation</small><strong id="vehicleRecommendation">-</strong></div>
+<div><small>Route split</small><strong id="splitRecommendation">-</strong></div>
+<div><small>Route score</small><strong id="routeScore">-</strong><span class="score-badge" id="routeScoreBadge">-</span></div>
+<div class="route-actions"><small>Route actions</small><a id="mapLink" rel="noreferrer" target="_blank">Open Google Maps route</a><button class="btn copy" id="copyMainRouteBtn" type="button">Copy Google Maps route</button><a id="mapLinkSplit" rel="noreferrer" target="_blank"></a><button class="btn copy" hidden="" id="copySplitRouteBtn" type="button">Copy second route</button></div>
+</div>
+<div class="route-narrative" id="routeNarrative">Recommended sequence and main reason will appear here.</div>
+<div class="top-reason-strip"><strong>Top reason:</strong> <span id="topReasonInline">Plan not generated yet.</span></div>
+<details class="ops-detail">
+<summary>Advanced Dispatch Analysis</summary>
+<div class="summary-row summary-row-compact">
+<div><small>Pickup window</small><strong id="pickupWindow">-</strong></div>
+<div><small>Drop-off window</small><strong id="dropoffWindow">-</strong></div>
+<div><small>Zone spread</small><strong id="zoneCount">-</strong></div>
+<div><small>Top risk reason</small><strong id="routeReason">-</strong></div>
+</div>
+<div class="cards two-infra">
+<article class="card">
+<h3>Supervisor Route Options</h3>
+<div class="dispatch-options" id="supervisorOptions"></div>
+</article>
+<article class="card">
+<h3>Operational Risk Warnings</h3>
+<ul class="risk-list" id="riskWarnings"></ul>
+</article>
+</div>
+</details>
+<div class="card">
+<h3>Dispatch Manifest</h3>
+<p class="manifest-status" id="planStatus">Draft mode. Press “Plan Service” to generate final route links and manifest.</p>
+<p class="manifest-summary" id="manifestSummary"></p>
+<div class="actions">
+<button class="btn primary" id="copyManifestBtn" type="button">Copy manifest</button>
+<button class="btn secondary" id="jumpMessagesBtn" type="button">View stakeholder messages</button>
+<button class="btn secondary" id="printManifestBtn" type="button">Print manifest</button>
+<button class="btn secondary" id="downloadManifestPdfBtn" type="button">Download PDF manifest</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section admin-section" hidden="" id="adminDb">
+<div class="section-head">
+<span class="eyebrow">Admin Mode</span>
+<h2>InfraDispatch Database Manager</h2>
+<p>Manage Abu Dhabi emirate locations (hotels, attractions, malls, hubs) without touching code.</p>
+</div>
+<div class="cards two-infra">
+<article class="card">
+<h3>Add / Edit Location</h3>
+<form class="admin-form" id="adminLocationForm">
+<input id="adminEditIndex" type="hidden" value=""/>
+<label>Name<input id="adminName" required=""/></label>
+<div class="field-row">
+<label>Type<input id="adminType" placeholder="Hotel / Attraction / Mall" required=""/></label>
+<label>Category<input id="adminCategory" placeholder="Hotel / Attraction / Mall / Transport Hub" required=""/></label>
+</div>
+<div class="field-row">
+<label>Stars (Hotel only)<input id="adminStars" max="5" min="0" placeholder="5" type="number"/></label>
+<label>Zone<input id="adminZone" placeholder="Yas Island / Al Ain / Liwa" required=""/></label>
+</div>
+<label>Pickup Note<input id="adminNote" required=""/></label>
+<label>Access Rule<input id="adminAccess" required=""/></label>
+<div class="actions">
+<button class="btn primary" type="submit">Save location</button>
+<button class="btn secondary" id="adminResetForm" type="button">Clear form</button>
+</div>
+</form>
+</article>
+<article class="card">
+<h3>Import / Export</h3>
+<p>JSON is recommended for full backup. CSV import expects columns: `name,type,category,stars,zone,note,access`.</p>
+<div class="actions">
+<button class="btn primary" id="exportLocationsJson" type="button">Export JSON</button>
+<button class="btn secondary" id="exportLocationsCsv" type="button">Export CSV</button>
+</div>
+<div class="field-row">
+<label>Import JSON<input accept=".json,application/json" id="importLocationsJson" type="file"/></label>
+<label>Import CSV<input accept=".csv,text/csv" id="importLocationsCsv" type="file"/></label>
+</div>
+<button class="btn copy full" id="resetLocationsDb" type="button">Reset to default database</button>
+</article>
+</div>
+<div class="card">
+<h3>Location Inventory</h3>
+<div class="admin-locations" id="adminLocationsList"></div>
+</div>
+</section>
+<section class="section" id="messages">
+<div class="section-head">
+<span class="eyebrow">Output Messages</span>
+<h2>Stakeholder messages ready for copy and send.</h2>
+<p>Use clear, professional communication for driver, guide, and guest. Operations details remain in the dispatch manifest.</p>
+<div class="whatsapp-ready-label">Ready to copy or send via WhatsApp</div>
+</div>
+<div class="wide-panel message-hub">
+<div class="message-controls">
+<div class="lang-chips" id="languageChips">
+<button class="lang-chip active" data-lang="en" type="button">English</button>
+<button class="lang-chip" data-lang="ar" type="button">Arabic</button>
+<button class="lang-chip" data-lang="fr" type="button">French</button>
+<button class="lang-chip" data-lang="it" type="button">Italian</button>
+<button class="lang-chip" data-lang="es" type="button">Spanish</button>
+<button class="lang-chip" data-lang="ru" type="button">Russian</button>
+</div>
+<button class="btn primary" id="copyAllMessages" type="button">Copy all messages</button>
+</div>
+<div class="cards three message-columns">
+<article class="card message-col">
+<h3>Driver Message</h3>
+<p aria-live="polite" class="all-message-box" id="driverMessage"></p>
+<div class="actions">
+<button class="btn copy" data-copy="driverMessage" type="button">Copy driver message</button>
+<a class="btn secondary" id="waDriverLink" rel="noreferrer" target="_blank">WhatsApp driver</a>
+</div>
+</article>
+<article class="card message-col">
+<h3>Guide Message</h3>
+<p aria-live="polite" class="all-message-box" id="guideMessage"></p>
+<div class="actions">
+<button class="btn copy" data-copy="guideMessage" type="button">Copy guide message</button>
+<a class="btn secondary" id="waGuideLink" rel="noreferrer" target="_blank">WhatsApp guide</a>
+</div>
+</article>
+<article class="card message-col">
+<h3>Guest Message</h3>
+<p aria-live="polite" class="all-message-box" id="guestMessage"></p>
+<div class="actions">
+<button class="btn copy" data-copy="guestMessage" type="button">Copy guest message</button>
+<a class="btn secondary" id="waGuestLink" rel="noreferrer" target="_blank">WhatsApp guest</a>
+</div>
+</article>
+</div>
+<div class="actions">
+<a class="btn secondary" id="waAllLink" rel="noreferrer" target="_blank">Open WhatsApp (all stakeholder messages)</a>
+<button class="btn copy" id="copyAllStakeholderMessages" type="button">Copy all stakeholder messages</button>
+</div>
+</div>
+</section>
+<section class="section how-section" id="how-it-works">
+<div class="section-head">
+<span class="eyebrow">How it works</span>
+<h2>From service details to a dispatch-ready plan.</h2>
+<p>InfraDispatch keeps the workflow simple for the operator while the system handles sequencing, timing, vehicle logic, and message preparation in the background.</p>
+</div>
+<div class="cards three step-cards">
+<article class="card step-card"><span>01</span><h3>Add service details</h3><p>Enter pickup and drop-off locations, attraction timing, passengers, guide notes, and operational context.</p></article>
+<article class="card step-card"><span>02</span><h3>Generate the dispatch plan</h3><p>The planner builds a logical route sequence, route score, top reason, vehicle recommendation, and direct Google Maps link.</p></article>
+<article class="card step-card"><span>03</span><h3>Copy ready outputs</h3><p>Use the manifest, driver message, guide briefing, guest message, and WhatsApp-ready text without rewriting the operation manually.</p></article>
+</div>
+</section>
+<section class="section two-col-simple">
+<article class="white-panel">
+<span class="eyebrow">Problem</span>
+<h2>Pickup and drop-off planning is still too manual.</h2>
+<p>In daily DMC operations, a pickup list is not just a list. It affects guest readiness, hotel access, driver timing, guide briefing, attraction arrival, and the final guest experience. When the information is spread across calls, WhatsApp messages, and manual notes, small mistakes can create delays and confusion.</p>
+</article>
+<article class="dark-panel">
+<span class="eyebrow">Solution</span>
+<h2>One structured dispatch flow.</h2>
+<p>InfraDispatch turns operational details into a clean flow: service inputs, pickup sequence, drop-off sequence, zoning control, and messages for the driver, guide, guest, and operations team.</p>
+</article>
+</section>
+<section class="section database-section" id="database-coverage">
+<div class="section-head">
+<span class="eyebrow">Database coverage</span>
+<h2>Abu Dhabi emirate dispatch coverage built for operational search.</h2>
+<p>Database includes hotels, attractions, museums, malls, beaches, parks, transport hubs, cultural sites, community pickup clusters, Al Ain, Al Dhafra, Liwa, Ruwais, Yas Island, Saadiyat Island, Corniche, Airport Area, and Abu Dhabi city zones.</p>
+</div>
+<div class="stats db-stats">
+<article><strong id="dbTotalCount">1,052</strong><span>Total dispatch locations</span></article>
+<article><strong id="dbAttractionCount">542</strong><span>Attractions / venue points</span></article>
+<article><strong id="dbHotelCount">332</strong><span>Hotel pickup points</span></article>
+<article><strong id="dbZoneCount">11</strong><span>Operational zones</span></article>
+</div>
+<div class="wide-panel database-note-card">
+<h3>Operational database is active.</h3>
+<p>The planner is using the current Abu Dhabi master locations set for pickup, drop-off, and routing support.</p>
+</div>
+</section>
+<section class="section" id="scope">
+<div class="section-head">
+<span class="eyebrow">Scope</span>
+<h2>Abu Dhabi beta with deeper emirate coverage.</h2>
+<p>The current version is intentionally focused: Abu Dhabi beta first. The next update expands the same planning logic to the wider UAE emirates after the database and workflow are stable.</p>
+</div>
+<div class="cards three">
+<article class="card"><h3>Now</h3><p>Abu Dhabi emirate planning: advanced service flow controls, pickup/drop-off sequencing, route score, vehicle recommendation, DARB toll tracking, manifest output, and multilingual stakeholder messages.</p></article>
+<article class="card"><h3>Updating</h3><p>Operational intelligence layers are active: attraction timing sensitivity, zone risk awareness, supervisor split-route options, and database manager controls in hidden admin mode.</p></article>
+<article class="card"><h3>Next</h3><p>Next enhancement wave: multi-vehicle assignment by driver/plate, incident board, status workflow, and more verified venues, hotel entrances, and attraction access notes for production readiness.</p></article>
+</div>
+</section>
+<section class="section quality-connection">
+<div class="wide-panel">
+<span class="eyebrow">Connected thinking</span>
+<h2>Dispatch quality and guide quality belong together.</h2>
+<p>InfraDispatch improves the operational planning layer: route sequence, timing, vehicle logic, and stakeholder messages. The Tour Guide Quality Index improves the human service layer: readiness, safety, storytelling, communication, service recovery, and documentation.</p>
+<div class="actions"><a class="btn primary" href="article-tour-guide-quality-index.html">Open Tour Guide Quality Index →</a></div>
+</div>
+</section>
+<section class="section faq-section" id="faq">
+<div class="section-head">
+<span class="eyebrow">FAQ</span>
+<h2>Simple answers for visitors and operators.</h2>
+</div>
+<div class="cards two-infra faq-grid">
+<article class="card"><h3>Is InfraDispatch a booking system?</h3><p>No. This MVP is a dispatch planning assistant. It helps prepare route logic, vehicle recommendation, manifest, and messages before the service.</p></article>
+<article class="card"><h3>Does it replace Google Maps?</h3><p>No. It keeps Google Maps as the direct route tool and adds an operations layer for sequencing, communication, and manifest readiness.</p></article>
+<article class="card"><h3>Who is it for?</h3><p>DMC teams, tour operators, transport coordinators, guides, service delivery teams, and tourism operations supervisors.</p></article>
+<article class="card"><h3>Can the database be expanded?</h3><p>Yes. Hidden admin mode allows locations to be added, edited, imported, exported, or reset without a backend.</p></article>
+</div>
+<div class="wide-panel disclaimer-panel">
+<span class="eyebrow">Important note</span>
+<p>InfraDispatch is an MVP planning assistant. Final route decisions should always be reviewed by the operations team based on live traffic, hotel instructions, supplier rules, guest requirements, and attraction access conditions.</p>
+</div>
+</section>
+</main>
+<footer class="footer enhanced-footer">
+<div class="footer-inner">
+<div><strong>Ahmed Quality Ops</strong><p>Tourism operations, DMC workflow, dispatch planning, quotation logic and service quality knowledge built from real field experience.</p></div>
+<div class="footer-links"><a href="index.html">Home</a><a href="articles.html">Insights</a><a href="infradispatch/">InfraDispatch</a><a href="article-tour-guide-quality-index.html">Tour Guide Quality Index</a><a href="tourism-ai-operations-playbook.html">AI Playbook</a></div>
+<div class="footer-links"><a href="index.html#experience">Experience</a><a download="" href="Ahmed-Mahmoud-CV.pdf">Download CV</a><a href="mailto:contact@ahmedqualityops.com">contact@ahmedqualityops.com</a><a href="https://www.linkedin.com/in/ahmed-mahmoud-tourism" rel="noopener noreferrer" target="_blank">LinkedIn</a><a class="back-top" href="#top">↑</a></div>
+</div>
+<div aria-label="GitHub links" class="github-footer-links"><a class="footer-repository-badge" href="https://github.com/AhmedElshemyOps/tourism-ai-operations-playbook" rel="noopener noreferrer" target="_blank">Tourism AI Playbook on GitHub ↗</a><a href="https://github.com/AhmedElshemyOps" rel="noopener noreferrer" target="_blank">Ahmed Mahmoud on GitHub ↗</a></div></footer>
+<script src="script.js"></script>
+<div class="v14-mobile-cta"><a download="" href="Ahmed-Mahmoud-CV.pdf">Download CV</a><a href="articles.html">Insights</a><a href="mailto:contact@ahmedqualityops.com">Contact</a></div><script src="js/front-end-polish-v14.js"></script><script src="js/enhance-v17.js"></script><script defer="" src="assets/js/site-config.js"></script>
+<script defer="" src="assets/js/analytics.js"></script>
+<script defer="True" src="assets/js/table-responsive-v16.js?v=20260721"></script></body>
+</html>

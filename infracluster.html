@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html id="top" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>InfraCluster | UAE Hotel Pickup &amp; Dispatch Clustering MVP</title>
+<meta content="InfraCluster is a static MVP for UAE hotel pickup and drop-off clustering, tourism location intelligence, group timing, language matching, vehicle recommendation, cost signals and InfraDispatch handoff outputs." name="description"/>
+<link href="https://ahmedqualityops.com/infracluster.html" rel="canonical"/>
+<link href="assets/brand/favicon-32.png" rel="icon" type="image/png"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=Playfair+Display:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<link href="assets/css/styles.css" rel="stylesheet"/>
+<link href="assets/css/design-vnext.css" rel="stylesheet"/>
+<link href="assets/css/infracluster.css" rel="stylesheet"/>
+<link href="site.webmanifest" rel="manifest"/>
+<link href="assets/brand/favicon-192.png" rel="apple-touch-icon"/>
+<script data-schema="seo-geo" type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"InfraCluster","url":"https://ahmedqualityops.com/infracluster.html","applicationCategory":"BusinessApplication","operatingSystem":"Web","isAccessibleForFree":true,"description":"Static MVP for UAE hotel pickup and drop-off clustering, tourism location intelligence, group timing, vehicle recommendation, language matching, cost signals and InfraDispatch handoff outputs.","author":{"@type":"Person","name":"Ahmed Mahmoud","url":"https://ahmedqualityops.com/"}}</script>
+<link href="assets/css/github-integration.css?v=20260711" rel="stylesheet"/><link href="/assets/css/final-enhancements.css?v=20260712" rel="stylesheet"/>
+<link href="assets/css/table-responsive-v16.css?v=20260721" rel="stylesheet"/></head>
+<body class="infracluster-page">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="container nav">
+<a aria-label="Ahmed Mahmoud portfolio home" class="wordmark" href="index.html"><span class="wordmark-mark">AM</span><span>Ahmed Mahmoud<small>Tourism Operations · Product Operations</small></span></a>
+<button aria-controls="siteNav" aria-expanded="false" class="menu-button" id="menuButton" type="button">Menu</button>
+<nav aria-label="Main navigation" class="nav-links" id="siteNav">
+<a href="index.html">Home</a>
+<div class="dropdown"><button class="dropbtn active" type="button">Projects</button><div class="dropdown-menu"><a href="projects.html">All Projects</a><a href="infradispatch/">InfraDispatch · Dispatch Planner</a><a href="infracluster.html">InfraCluster · Hotel Clustering</a><a href="infrasky.html">InfraSky · Stargazing Planner</a><a href="infraquote.html">InfraQuote · Quotation Tool</a></div></div>
+<a href="articles.html">Insights</a><a href="experience/">Experience</a><a href="index.html#footer-contact">Contact</a><a href="tourism-ai-operations-playbook.html">AI Playbook</a><a class="btn small" download="" href="downloads/Ahmed_Mahmoud_Full_CV.html">Download CV</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="cluster-hero">
+<div class="container cluster-hero-grid">
+<div>
+<p class="eyebrow">InfraCluster · UAE tourism location intelligence</p>
+<h1>Cluster large hotel pickups by area, timing, language, group size, vehicle fit and dispatch cost.</h1>
+<p>InfraCluster turns scattered hotel pickup and drop-off requests into practical operating clusters for UAE tours. It checks guest counts, infants, children, luggage, guide language, pickup windows, area spread, vehicle capacity and cost signals before recommending the cleanest dispatch split for InfraDispatch.</p>
+<div class="hero-actions"><a class="btn" href="#infraClusterApp">Create cluster plan</a><a class="btn secondary" href="infradispatch/">Open InfraDispatch</a></div>
+</div>
+<aside class="cluster-hero-card">
+<strong>Problem, solution, use case</strong>
+<p><strong>Problem:</strong> Large UAE hotel pickups become messy when hotel areas, pickup timing, passenger mix, language needs and vehicle sizes are planned separately.</p>
+<p><strong>Solution:</strong> A static MVP that groups hotels into operational clusters, recommends vehicle splits, compares cost signals and prepares an InfraDispatch handoff.</p>
+<p><strong>Use case:</strong> DMC operations teams, MICE groups, city tours, airport movements, and dispatch supervisors preparing multi-hotel services.</p>
+</aside>
+</div>
+</section>
+<section class="cluster-shell" id="infraClusterApp">
+<div class="cluster-app">
+<aside class="cluster-sidebar">
+<div class="cluster-progress" id="clusterProgress"></div>
+<p class="cluster-note">The database is a static UAE tourism seed of 7,500+ rows across all seven emirates. It supports workflow testing, not a verified live hotel or attraction registry.</p>
+<div class="cluster-actions"><button class="btn secondary" id="loadDemoGroups" type="button">Load demo</button><button class="btn" id="runCluster" type="button">Run clustering</button></div>
+</aside>
+<section class="cluster-workspace">
+<form class="cluster-form" onsubmit="return false">
+<section class="cluster-step">
+<div class="step-head"><span>Step 1</span><h2>Service and operating target</h2></div>
+<div class="cluster-grid">
+<label>Service title<input id="clusterServiceTitle" value="Dubai city tour hotel pickup"/></label>
+<label>Service date<input id="clusterServiceDate" type="date"/></label>
+<label>Tour type<select id="clusterTourType"><option>Dubai City Tour</option><option>Abu Dhabi from Dubai</option><option>Desert safari pickup</option><option>MICE transfer</option><option>Airport movement</option><option>Custom tour</option></select></label>
+<label>Destination / first stop<input id="clusterFirstStop" value="Museum of the Future"/></label>
+<label>Target arrival time<input id="targetArrival" type="time" value="10:00"/></label>
+<label>Dispatch base<select id="dispatchBase"><option>Dubai central</option><option>Dubai Marina</option><option>Airport area</option><option>Old Dubai</option></select></label>
+<label class="full">Supervisor note<textarea id="clusterNote" placeholder="VIP, school, luggage, airport terminal, wheelchair, or supplier notes..."></textarea></label>
+</div>
+</section>
+<section class="cluster-step" hidden="">
+<div class="step-head"><span>Step 2</span><h2>Hotel groups and passenger mix</h2></div>
+<div class="upload-panel" id="uploadPanel">
+<div>
+<span class="upload-kicker">Spreadsheet import</span>
+<h3>Upload CSV, TSV or Excel file</h3>
+<p>Use columns such as hotel, area, adults, children, infants, luggage, language, pickup time and tour. CSV works fully offline. Excel files use a browser spreadsheet parser.</p>
+</div>
+<div class="upload-controls">
+<label class="file-drop">Choose file<input accept=".csv,.tsv,.xlsx,.xls,text/csv,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-excel" id="clusterFileInput" type="file"/></label>
+<button class="btn secondary" id="downloadClusterTemplate" type="button">Download template</button>
+</div>
+<div class="upload-status" id="uploadStatus">No file uploaded yet.</div>
+<div class="mapping-panel" hidden="" id="mappingPanel">
+<div class="mapping-head"><strong>Map your spreadsheet columns</strong><span id="importRowCount"></span></div>
+<div class="mapping-grid">
+<label>Hotel column<select id="mapHotel"></select></label>
+<label>Area column<select id="mapArea"></select></label>
+<label>Adults<select id="mapAdults"></select></label>
+<label>Children<select id="mapChildren"></select></label>
+<label>Infants<select id="mapInfants"></select></label>
+<label>Luggage<select id="mapLuggage"></select></label>
+<label>Language<select id="mapLanguage"></select></label>
+<label>Pickup time<select id="mapPickupTime"></select></label>
+<label>Tour<select id="mapTour"></select></label>
+<label>Import mode<select id="importMode"><option value="replace">Replace current groups</option><option value="append">Append to current groups</option></select></label>
+</div>
+<div aria-label="Data table" class="cluster-table-wrap import-preview-wrap site-table-shell" role="region" tabindex="0">
+<table class="cluster-table site-responsive-table site-table--0" data-table-enhanced="v16"><thead id="importPreviewHead"></thead><tbody id="importPreviewBody"></tbody></table>
+</div>
+<div class="cluster-actions"><button class="btn" id="applyImport" type="button">Import rows and cluster</button></div>
+</div>
+</div>
+<div class="cluster-toolbar"><button class="btn secondary" id="addGroup" type="button">Add hotel group</button><button class="btn secondary" id="exportClusterCsv" type="button">Export CSV</button></div>
+<div class="cluster-list" id="groupList"></div>
+</section>
+<section class="cluster-step" hidden="">
+<div class="step-head"><span>Step 3</span><h2>Cluster rules and vehicle policy</h2></div>
+<div class="cluster-grid">
+<label>Maximum clusters<select id="maxClusters"><option>2</option><option>3</option><option selected="">4</option><option>5</option><option>6</option></select></label>
+<label>Pickup timing window<select id="timeWindow"><option value="15">15 minutes</option><option selected="" value="20">20 minutes</option><option value="30">30 minutes</option><option value="45">45 minutes</option><option value="60">60 minutes</option></select></label>
+<label>Maximum pax per vehicle<input id="maxVehiclePax" min="3" type="number" value="32"/></label>
+<label>Language grouping<select id="languageMode"><option selected="" value="strict">Keep same guide language together</option><option value="mixed">Allow mixed language clusters</option></select></label>
+<label>Infant policy<select id="infantPolicy"><option>Count infant in comfort capacity</option><option>Count infant separately but flag seat need</option></select></label>
+<label>Luggage policy<select id="luggagePolicy"><option>Use comfort capacity buffer</option><option>Ignore luggage for city tour</option><option>Strict airport luggage policy</option></select></label>
+</div>
+</section>
+<section class="cluster-step" hidden="">
+<div class="step-head"><span>Step 4</span><h2>Generated cluster plan</h2></div>
+<div class="cluster-results-panel">
+<div class="kpi-grid" id="clusterKpis"></div>
+<div aria-label="Simplified Dubai cluster map" class="result-map" id="clusterMap"></div>
+<div class="cluster-output-grid" id="clusterCards"></div>
+<div class="bridge-panel">
+<div class="bridge-head">
+<div>
+<span class="upload-kicker">InfraCluster to InfraDispatch</span>
+<h3>Dispatch bridge and cost-control handoff</h3>
+<p>Use InfraCluster to find the best cluster and vehicle split, then pass the result into InfraDispatch for final route sequence, driver note, guide note, manifest and team communication.</p>
+</div>
+<div class="bridge-actions">
+<button class="btn secondary" id="copyDispatchHandoff" type="button">Copy handoff JSON</button>
+<button class="btn secondary" id="exportDispatchJson" type="button">Export handoff JSON</button>
+<a class="btn" href="infradispatch/" rel="noopener noreferrer" target="_blank">Open InfraDispatch</a>
+</div>
+</div>
+<div class="cluster-output-grid" id="dispatchBridgeOutput"></div>
+</div>
+<div class="cluster-output-grid" id="briefingOutput" style="margin-top:14px"></div>
+<div class="cluster-actions"><button class="btn secondary" id="copyClusterBrief" type="button">Copy briefing</button><button class="btn secondary" onclick="window.print()" type="button">Print plan</button></div>
+</div>
+</section>
+<section class="cluster-step" hidden="">
+<div class="step-head"><span>Step 5</span><h2>UAE tourism seed database</h2></div>
+<div class="database-filter">
+<input id="dbSearch" placeholder="Search hotel, mall, attraction, museum, culture site or emirate"/>
+<select id="dbArea"></select>
+<select id="dbType"></select>
+<select id="dbLanguage"></select>
+<strong id="databaseCount"></strong>
+</div>
+<div aria-label="Data table" class="cluster-table-wrap site-table-shell" role="region" tabindex="0">
+<table class="cluster-table site-responsive-table site-table--7 site-table--stackable site-table--stack-wide" data-table-enhanced="v16">
+<thead><tr><th scope="col">ID</th><th scope="col">Location</th><th scope="col">Type</th><th scope="col">Emirate</th><th scope="col">Area</th><th scope="col">Source</th><th scope="col">Language support</th></tr></thead>
+<tbody id="hotelDatabaseBody"></tbody>
+</table>
+</div>
+</section>
+<div class="step-controls"><button class="btn secondary" id="prevClusterStep" type="button">Back</button><button class="btn" id="nextClusterStep" type="button">Next</button></div>
+</form>
+</section>
+<aside class="cluster-summary">
+<h2>Live cluster review</h2>
+<div class="summary-cards" id="summaryCards"></div>
+<div class="risk-box" id="riskPanel"></div>
+</aside>
+</div>
+</section>
+</main>
+<footer class="footer" id="footer-contact"><div class="container footer-grid"><div><strong>InfraCluster by Ahmed Mahmoud</strong><br/><span>Static MVP for UAE pickup clustering, vehicle planning and dispatch handoff logic</span></div><div class="social-row"><a href="projects.html">Projects</a><a href="infradispatch/">InfraDispatch</a><a href="mailto:contact@ahmedqualityops.com">Contact</a></div></div><div aria-label="GitHub links" class="github-footer-links"><a class="footer-repository-badge" href="https://github.com/AhmedElshemyOps/tourism-ai-operations-playbook" rel="noopener noreferrer" target="_blank">Tourism AI Playbook on GitHub ↗</a><a href="https://github.com/AhmedElshemyOps" rel="noopener noreferrer" target="_blank">Ahmed Mahmoud on GitHub ↗</a></div></footer>
+<script defer="" src="assets/js/site.js"></script>
+<script defer="" src="https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js"></script>
+<script defer="" src="assets/js/infracluster-app.js"></script>
+<script defer="" src="assets/js/site-config.js"></script>
+<script defer="" src="assets/js/analytics.js"></script>
+<script defer="True" src="assets/js/table-responsive-v16.js?v=20260721"></script></body>
+</html>

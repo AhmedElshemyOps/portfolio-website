@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Ahmed Mahmoud Portfolio Color Concept</title>
+<meta content="A fresh color-forward portfolio concept for Ahmed Mahmoud's professional brand, projects, and insights." name="description"/>
+<style>
+    :root{
+      --ink:#14213d;
+      --deep:#0b132b;
+      --teal:#1b998b;
+      --teal-soft:#d9f3ef;
+      --gold:#d8a31a;
+      --coral:#e76f51;
+      --sky:#e9f4ff;
+      --paper:#fffaf0;
+      --white:#ffffff;
+      --mist:#f5f7fb;
+      --muted:#5f6f86;
+      --line:#d8e0ea;
+      --shadow:0 22px 56px rgba(20,33,61,.14);
+      --radius:12px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      color:var(--ink);
+      font-family:"Trebuchet MS","Segoe UI",Arial,sans-serif;
+      background:
+        linear-gradient(90deg,rgba(27,153,139,.06) 1px,transparent 1px),
+        linear-gradient(180deg,rgba(20,33,61,.05) 1px,transparent 1px),
+        linear-gradient(135deg,#f7fbff 0%,#fffaf0 48%,#f5f7fb 100%);
+      background-size:44px 44px,44px 44px,100% 100%;
+    }
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .wrap{width:min(1220px,92vw);margin:0 auto}
+    .topbar{
+      position:sticky;
+      top:0;
+      z-index:20;
+      background:rgba(255,255,255,.88);
+      border-bottom:1px solid rgba(20,33,61,.1);
+      backdrop-filter:blur(16px);
+    }
+    .nav{
+      min-height:76px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:18px;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      font-weight:950;
+      letter-spacing:.01em;
+    }
+    .brand-badge{
+      width:44px;
+      height:44px;
+      border-radius:14px;
+      display:grid;
+      place-items:center;
+      color:#fff;
+      background:linear-gradient(145deg,var(--teal),var(--ink));
+      box-shadow:0 12px 26px rgba(27,153,139,.22);
+    }
+    .brand small{display:block;color:var(--muted);font-size:.74rem;margin-top:3px}
+    .navlinks{display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+    .navlinks a{
+      border-radius:12px;
+      padding:10px 12px;
+      color:#34445f;
+      font-size:.88rem;
+      font-weight:900;
+    }
+    .navlinks a:hover{background:var(--teal-soft);color:var(--ink)}
+    .navlinks .resume{background:var(--ink);color:#fff}
+    .hero{
+      position:relative;
+      overflow:hidden;
+      padding:78px 0 50px;
+    }
+    .hero::before{
+      content:"";
+      position:absolute;
+      inset:40px 4vw auto auto;
+      width:310px;
+      height:310px;
+      border-radius:999px;
+      background:radial-gradient(circle,rgba(27,153,139,.24),transparent 68%);
+      pointer-events:none;
+    }
+    .hero-grid{
+      position:relative;
+      display:grid;
+      grid-template-columns:minmax(0,1fr) minmax(340px,.52fr);
+      gap:44px;
+      align-items:center;
+    }
+    .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      color:#11665d;
+      font-size:.78rem;
+      font-weight:950;
+      letter-spacing:.15em;
+      text-transform:uppercase;
+    }
+    .eyebrow::before{content:"";width:38px;height:3px;border-radius:10px;background:var(--coral)}
+    h1,h2,h3,p{margin-top:0}
+    h1{
+      max-width:800px;
+      margin:18px 0 20px;
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:clamp(3rem,6vw,6.7rem);
+      line-height:.92;
+      letter-spacing:-.035em;
+      color:var(--deep);
+    }
+    .lead{
+      max-width:760px;
+      color:#42536d;
+      font-size:1.12rem;
+      line-height:1.78;
+    }
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .btn{
+      display:inline-flex;
+      justify-content:center;
+      align-items:center;
+      min-height:48px;
+      border-radius:12px;
+      padding:12px 16px;
+      font-weight:950;
+      border:1px solid transparent;
+      box-shadow:0 14px 30px rgba(20,33,61,.1);
+    }
+    .btn.primary{background:var(--teal);color:#fff}
+    .btn.secondary{background:#fff;color:var(--ink);border-color:var(--line);box-shadow:none}
+    .profile-card{
+      position:relative;
+      border-radius:24px;
+      overflow:hidden;
+      background:#fff;
+      border:1px solid rgba(20,33,61,.1);
+      box-shadow:var(--shadow);
+    }
+    .profile-card img{width:100%;height:560px;object-fit:cover;object-position:top center}
+    .profile-caption{
+      position:absolute;
+      left:16px;
+      right:16px;
+      bottom:16px;
+      border-radius:16px;
+      padding:16px;
+      background:rgba(255,255,255,.92);
+      border:1px solid rgba(20,33,61,.1);
+      backdrop-filter:blur(14px);
+    }
+    .profile-caption strong{display:block;color:var(--deep);font-family:Georgia,"Times New Roman",serif;font-size:1.35rem}
+    .profile-caption span{display:block;color:var(--muted);margin-top:6px;line-height:1.45;font-size:.92rem}
+    .color-strip{
+      display:grid;
+      grid-template-columns:1fr 1fr 1fr 1fr;
+      gap:12px;
+      margin-top:46px;
+    }
+    .color-note{
+      border-radius:18px;
+      padding:18px;
+      min-height:118px;
+      color:#fff;
+      box-shadow:0 16px 38px rgba(20,33,61,.11);
+    }
+    .color-note strong{display:block;font-family:Georgia,"Times New Roman",serif;font-size:1.45rem}
+    .color-note span{display:block;margin-top:8px;line-height:1.45;font-size:.9rem}
+    .section{padding:78px 0}
+    .section-head{
+      display:grid;
+      grid-template-columns:minmax(0,.9fr) minmax(300px,.42fr);
+      gap:34px;
+      align-items:end;
+      margin-bottom:28px;
+    }
+    .section h2{
+      margin:10px 0 0;
+      max-width:840px;
+      color:var(--deep);
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:clamp(2.35rem,4.5vw,4.7rem);
+      line-height:.98;
+      letter-spacing:-.02em;
+    }
+    .section-copy{color:var(--muted);line-height:1.72}
+    .portfolio-grid{
+      display:grid;
+      grid-template-columns:1.05fr .95fr;
+      gap:18px;
+    }
+    .flagship{
+      display:grid;
+      grid-template-columns:.92fr 1.08fr;
+      gap:0;
+      overflow:hidden;
+      min-height:520px;
+      border-radius:24px;
+      background:var(--deep);
+      color:#fff;
+      box-shadow:var(--shadow);
+    }
+    .flagship img{width:100%;height:100%;object-fit:cover;background:#0b132b}
+    .flagship-copy{padding:30px;display:flex;flex-direction:column;justify-content:flex-end}
+    .tag{
+      display:inline-flex;
+      width:max-content;
+      border-radius:999px;
+      padding:7px 10px;
+      margin-bottom:14px;
+      background:var(--gold);
+      color:#2a2107;
+      font-size:.75rem;
+      font-weight:950;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+    }
+    .flagship h3{font-family:Georgia,"Times New Roman",serif;font-size:3rem;line-height:.98;margin-bottom:14px}
+    .flagship p{color:#dce8f3;line-height:1.68}
+    .project-stack{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .project-card{
+      min-height:250px;
+      border-radius:22px;
+      background:#fff;
+      border:1px solid var(--line);
+      box-shadow:0 16px 34px rgba(20,33,61,.08);
+      overflow:hidden;
+      display:flex;
+      flex-direction:column;
+    }
+    .project-card img{height:126px;width:100%;object-fit:cover;background:#eef5f8}
+    .project-card div{padding:18px}
+    .project-card h3{font-family:Georgia,"Times New Roman",serif;font-size:1.55rem;line-height:1.05;margin-bottom:8px;color:var(--deep)}
+    .project-card p{margin:0;color:var(--muted);line-height:1.55;font-size:.93rem}
+    .case-zone{
+      background:
+        linear-gradient(135deg,rgba(27,153,139,.09),rgba(216,163,26,.08)),
+        #fff;
+      border-top:1px solid rgba(20,33,61,.08);
+      border-bottom:1px solid rgba(20,33,61,.08);
+    }
+    .case-layout{
+      display:grid;
+      grid-template-columns:minmax(0,1fr) minmax(320px,.42fr);
+      gap:18px;
+    }
+    .case-panel,.case-side,.article-card,.system-card{
+      border-radius:24px;
+      background:#fff;
+      border:1px solid var(--line);
+      box-shadow:var(--shadow);
+      overflow:hidden;
+    }
+    .case-panel img{width:100%;height:330px;object-fit:cover;background:#eef5f8}
+    .case-content{padding:30px}
+    .case-content h3{font-family:Georgia,"Times New Roman",serif;font-size:2.8rem;line-height:1;margin-bottom:12px;color:var(--deep)}
+    .case-content p{color:var(--muted);line-height:1.7}
+    .metric-row{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:22px}
+    .metric{
+      border-radius:16px;
+      padding:16px;
+      background:var(--sky);
+      border:1px solid #cde4f8;
+    }
+    .metric strong{display:block;color:var(--deep)}
+    .metric span{display:block;color:#536477;font-size:.86rem;line-height:1.4;margin-top:6px}
+    .case-side{padding:22px;display:grid;gap:12px;align-content:start}
+    .side-note{border-radius:16px;padding:16px;background:var(--teal-soft);border:1px solid #bfe6df}
+    .side-note strong{display:block;color:#0c5f56;margin-bottom:6px}
+    .side-note p{margin:0;color:#42625f;line-height:1.5;font-size:.92rem}
+    .insights-layout{
+      display:grid;
+      grid-template-columns:.92fr 1.08fr;
+      gap:18px;
+    }
+    .system-card{
+      padding:28px;
+      color:#fff;
+      background:
+        radial-gradient(circle at 80% 12%,rgba(231,111,81,.38),transparent 34%),
+        linear-gradient(145deg,var(--ink),#0b132b);
+    }
+    .system-card h3{font-family:Georgia,"Times New Roman",serif;font-size:2.6rem;line-height:1;margin-bottom:14px}
+    .system-card p{color:#dce8f3;line-height:1.7}
+    .topic-chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+    .topic-chips span{
+      border-radius:999px;
+      padding:9px 11px;
+      background:rgba(255,255,255,.09);
+      border:1px solid rgba(255,255,255,.14);
+      color:#fff6db;
+      font-weight:900;
+      font-size:.86rem;
+    }
+    .article-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .article-card img{height:138px;width:100%;object-fit:cover;background:#eef5f8}
+    .article-card div{padding:18px}
+    .article-card h3{font-family:Georgia,"Times New Roman",serif;color:var(--deep);font-size:1.45rem;line-height:1.08;margin:8px 0}
+    .article-card p{color:var(--muted);line-height:1.55;margin-bottom:12px}
+    .date{font-size:.82rem;color:#65758b;font-weight:900}
+    .specs{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .spec{
+      border-radius:20px;
+      padding:20px;
+      background:#fff;
+      border:1px solid var(--line);
+      box-shadow:0 14px 34px rgba(20,33,61,.08);
+    }
+    .spec strong{display:block;color:var(--deep);margin-bottom:8px}
+    .spec p{margin:0;color:var(--muted);line-height:1.55;font-size:.92rem}
+    .footer{padding:42px 0;color:var(--muted)}
+    @media(max-width:980px){
+      .hero-grid,.section-head,.portfolio-grid,.case-layout,.insights-layout{grid-template-columns:1fr}
+      .flagship{grid-template-columns:1fr}
+      .flagship img{height:310px}
+      .color-strip,.specs{grid-template-columns:1fr 1fr}
+      .nav{align-items:flex-start;flex-direction:column;padding:14px 0}
+      .navlinks{justify-content:flex-start}
+    }
+    @media(max-width:640px){
+      .hero{padding-top:54px}
+      .profile-card img{height:420px}
+      .color-strip,.project-stack,.metric-row,.article-grid,.specs{grid-template-columns:1fr}
+      .flagship-copy,.case-content,.system-card{padding:22px}
+      .section{padding:58px 0}
+    }
+  </style>
+<link href="assets/css/github-integration.css?v=20260711" rel="stylesheet"/><link href="/assets/css/final-enhancements.css?v=20260712" rel="stylesheet"/>
+<link href="assets/css/table-responsive-v16.css?v=20260721" rel="stylesheet"/></head>
+<body>
+<header class="topbar">
+<div class="wrap nav">
+<a class="brand" href="#top"><span class="brand-badge">AM</span><span>Ahmed Mahmoud <small>Color-forward portfolio concept</small></span></a>
+<nav aria-label="Color concept navigation" class="navlinks">
+<a href="#portfolio">Portfolio</a>
+<a href="#case">Project</a>
+<a href="#insights">Insights</a>
+<a href="#system">Colors</a>
+<a class="resume" href="portfolio-creative-concept.html">Concept 2</a>
+</nav>
+</div>
+</header>
+<main id="top">
+<section class="hero">
+<div class="wrap hero-grid">
+<div>
+<span class="eyebrow">Fresh color direction</span>
+<h1>Operational expertise with a sharper, warmer visual voice.</h1>
+<p class="lead">This concept keeps Ahmed's portfolio professional, but moves away from a heavy corporate palette. Teal adds modern product energy, coral adds human warmth, gold keeps authority, and deep ink preserves recruiter credibility.</p>
+<div class="hero-actions">
+<a class="btn primary" href="#portfolio">View portfolio</a>
+<a class="btn secondary" href="#system">See color system</a>
+</div>
+</div>
+<aside class="profile-card">
+<img alt="Ahmed Mahmoud professional portrait" src="assets/ahmed-mahmoud-profile-current.jpeg"/>
+<div class="profile-caption">
+<strong>Personal brand direction</strong>
+<span>Confident, modern, field-aware, and easier on the eye than a fully dark executive layout.</span>
+</div>
+</aside>
+</div>
+<div aria-label="Color palette summary" class="wrap color-strip">
+<div class="color-note" style="background:#14213d"><strong>Deep Ink</strong><span>Authority, navigation, headings, recruiter trust.</span></div>
+<div class="color-note" style="background:#1b998b"><strong>Teal</strong><span>Product thinking, freshness, smart systems.</span></div>
+<div class="color-note" style="background:#e76f51"><strong>Coral</strong><span>Human energy, service, hospitality warmth.</span></div>
+<div class="color-note" style="background:#d8a31a"><strong>Gold</strong><span>Premium signal, UAE tourism polish, credibility.</span></div>
+</div>
+</section>
+<section class="section" id="portfolio">
+<div class="wrap">
+<div class="section-head">
+<div>
+<span class="eyebrow">Portfolio Section</span>
+<h2>Flagship first, supporting systems around it.</h2>
+</div>
+<p class="section-copy">InfraDispatch gets the largest surface area. Supporting projects sit beside it as proof that Ahmed's thinking spans dispatch, quotation, stargazing operations, and assignment quality.</p>
+</div>
+<div class="portfolio-grid">
+<article class="flagship">
+<img alt="InfraDispatch project visual" src="assets/og-v14/og-infradispatch.svg"/>
+<div class="flagship-copy">
+<span class="tag">Flagship active project</span>
+<h3>InfraDispatch</h3>
+<p>Smart rule-based dispatch planner/demo for pickup sequencing, assignments, route handoff concepts, and briefing outputs.</p>
+</div>
+</article>
+<div class="project-stack">
+<article class="project-card">
+<img alt="InfraSky project visual" src="assets/og/og-infrasky.svg"/>
+<div><h3>InfraSky</h3><p>Condition-aware static prototype for stargazing tour readiness.</p></div>
+</article>
+<article class="project-card">
+<img alt="InfraQuote project visual" src="assets/og-v14/og-masterclass.svg"/>
+<div><h3>InfraQuote</h3><p>Commercial workflow for quotation clarity and margin control.</p></div>
+</article>
+<article class="project-card">
+<img alt="Assignment engine visual" src="assets/articles/assignment-engine-hero.svg"/>
+<div><h3>Assignment Logic</h3><p>Framework for right person, right operation, right guest profile.</p></div>
+</article>
+<article class="project-card">
+<img alt="Fleet control tower visual" src="assets/articles/fleet-control-tower-hero.svg"/>
+<div><h3>Control Tower</h3><p>Operational dashboard thinking for readiness and exceptions.</p></div>
+</article>
+</div>
+</div>
+</div>
+</section>
+<section class="section case-zone" id="case">
+<div class="wrap">
+<div class="section-head">
+<div>
+<span class="eyebrow">Projects Section</span>
+<h2>A case study page that feels product-led, not template-led.</h2>
+</div>
+<p class="section-copy">The project detail area uses warmer background color and clear metric blocks to make operational logic easier to understand. It remains honest about static/demo boundaries.</p>
+</div>
+<div class="case-layout">
+<article class="case-panel">
+<img alt="Fleet readiness board visual" src="assets/articles/fleet-readiness-board.svg"/>
+<div class="case-content">
+<span class="tag">Case study structure</span>
+<h3>InfraDispatch project detail</h3>
+<p>Use this section for the full story: the operational problem, the planning rules, sample outputs, screenshots, result signals, and next engineering steps.</p>
+<div class="metric-row">
+<div class="metric"><strong>Problem</strong><span>Manual coordination across pickup, guide, driver, and vehicle tasks.</span></div>
+<div class="metric"><strong>Solution</strong><span>Rule-based sequence and briefing demo for operations teams.</span></div>
+<div class="metric"><strong>Boundary</strong><span>Static frontend demo; no live backend, routing, traffic, or OTA inventory.</span></div>
+</div>
+</div>
+</article>
+<aside class="case-side">
+<div class="side-note"><strong>Populate with</strong><p>Screenshots, workflow diagrams, sample briefings, role, use case, and limitation copy.</p></div>
+<div class="side-note"><strong>Visual hierarchy</strong><p>Hero image first, case summary second, evidence cards third, then next-build roadmap.</p></div>
+<div class="side-note"><strong>Recruiter signal</strong><p>Shows product judgment, operational understanding, and implementation awareness.</p></div>
+</aside>
+</div>
+</div>
+</section>
+<section class="section" id="insights">
+<div class="wrap">
+<div class="section-head">
+<div>
+<span class="eyebrow">Insights Section</span>
+<h2>Thought leadership with brighter category energy.</h2>
+</div>
+<p class="section-copy">The editorial system uses deep ink for trust, teal for systems thinking, and coral/gold accents for warmth. Each article should feel practical and field-tested.</p>
+</div>
+<div class="insights-layout">
+<aside class="system-card">
+<span class="tag">Editorial lens</span>
+<h3>Useful thinking for tourism operators.</h3>
+<p>Article previews should show how Ahmed breaks down messy operations into decisions, checklists, workflows, and commercial logic.</p>
+<div class="topic-chips">
+<span>Dispatch</span>
+<span>DMC sales</span>
+<span>Guide quality</span>
+<span>Quotation</span>
+</div>
+</aside>
+<div class="article-grid">
+<article class="article-card">
+<img alt="Fleet control tower article visual" src="assets/articles/fleet-control-tower-hero.svg"/>
+<div><span class="eyebrow">Operations</span><h3>The Fleet Control Tower</h3><p>What managers should see on one screen when readiness and exceptions matter.</p><span class="date">Published · Operations systems</span></div>
+</article>
+<article class="article-card">
+<img alt="Assignment scorecard article visual" src="assets/articles/assignment-fit-scorecard.svg"/>
+<div><span class="eyebrow">Assignment</span><h3>The Assignment Engine</h3><p>How to match guides, drivers, timing, guest profile, and risk context.</p><span class="date">Published · Service quality</span></div>
+</article>
+<article class="article-card">
+<img alt="DMC sales flow visual" src="assets/insights/dmc-sales-partnership-flow.svg"/>
+<div><span class="eyebrow">Sales</span><h3>From Introduction to Group</h3><p>A practical DMC sales workflow from partnership signal to confirmed movement.</p><span class="date">Published · DMC sales</span></div>
+</article>
+<article class="article-card">
+<img alt="Tour quotation article visual" src="assets/og-v14/og-masterclass.svg"/>
+<div><span class="eyebrow">Quotation</span><h3>Pricing Masterclass</h3><p>Net cost, selling price, markup, VAT, transport, and break-even risk.</p><span class="date">Published · Commercial clarity</span></div>
+</article>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="system">
+<div class="wrap">
+<div class="section-head">
+<div>
+<span class="eyebrow">Color &amp; UX System</span>
+<h2>Better coloring, still professional.</h2>
+</div>
+<p class="section-copy">This palette avoids a one-note dark corporate feel. It gives the portfolio more personality while preserving authority, readability, and static-hosting simplicity.</p>
+</div>
+<div class="specs">
+<div class="spec"><strong>Primary</strong><p>Deep ink headings and nav for trust and recruiter seriousness.</p></div>
+<div class="spec"><strong>Accent</strong><p>Teal buttons and highlights for modern product energy.</p></div>
+<div class="spec"><strong>Warmth</strong><p>Coral micro-accents for hospitality and human service context.</p></div>
+<div class="spec"><strong>Premium</strong><p>Gold status labels keep the UAE tourism polish without dominating the UI.</p></div>
+</div>
+</div>
+</section>
+</main>
+<footer class="footer">
+<div class="wrap">
+<strong>Static concept boundary:</strong> This is a visual design direction only. It uses existing local assets and does not add backend, API, routing, traffic, inventory, or account functionality.
+    </div>
+<div aria-label="GitHub links" class="github-footer-links"><a class="footer-repository-badge" href="https://github.com/AhmedElshemyOps/tourism-ai-operations-playbook" rel="noopener noreferrer" target="_blank">Tourism AI Playbook on GitHub ↗</a><a href="https://github.com/AhmedElshemyOps" rel="noopener noreferrer" target="_blank">Ahmed Mahmoud on GitHub ↗</a></div></footer>
+<script defer="True" src="assets/js/table-responsive-v16.js?v=20260721"></script></body>
+</html>

@@ -1,0 +1,53 @@
+[
+  {
+    "name": "InfraDispatch",
+    "url": "infradispatch/",
+    "status": "Live static demo",
+    "problem": "DMC teams lose time in fragmented pickup, drop-off, guide, driver, and vehicle coordination.",
+    "solution": "Smart rule-based dispatch planner with operational logic for pickup points, route sequencing, assignments, InfraCluster handoff concepts, and clear team briefing outputs.",
+    "useCase": "Tourism operations teams, destination management companies, and tour operator transport workflows.",
+    "role": "Product concept owner, operations workflow designer, and practical implementation planner.",
+    "boundary": "Static frontend demo with rule-based logic; no production routing API, backend, accounts, or live traffic integration yet."
+  },
+  {
+    "name": "InfraCluster",
+    "url": "infracluster.html",
+    "status": "Static MVP",
+    "problem": "Large UAE hotel pickups become difficult when different pickup times, hotel areas, adult/child/infant counts, luggage, guide language and vehicle capacity are managed manually.",
+    "solution": "Hotel pickup clustering MVP that imports CSV/Excel-style group sheets, searches a 7,500+ row static UAE tourism seed database, groups hotels by timing, area, language and passenger count, compares cost signals, then prepares vehicle alternatives and InfraDispatch handoff outputs.",
+    "useCase": "DMC operations teams, MICE groups, city tours, airport movements, desert safari pickups and dispatch supervisors preparing multi-hotel services.",
+    "role": "Product concept owner, hotel pickup workflow designer, clustering rule planner and static MVP implementation lead.",
+    "boundary": "Static frontend MVP with generated UAE tourism seed data, browser-side spreadsheet import, estimated cost signals and JSON handoff; no verified live hotel master database, routing, traffic API, vehicle inventory or guide availability integration yet."
+  },
+  {
+    "name": "InfraSky",
+    "url": "infrasky.html",
+    "status": "Working static prototype",
+    "problem": "Stargazing tours can be oversold when Moon phase, haze, camp lighting, access, guide capability, and guest comfort are checked separately.",
+    "solution": "UAE-first stargazing operations planner that scores product fit, classifies nights, and generates sales, guide, guest, driver, and SOP outputs.",
+    "useCase": "DMCs, desert camps, stargazing guides, and tourism product teams planning condition-aware astro-tourism experiences.",
+    "role": "Product concept owner, tourism operations logic designer, and static prototype builder.",
+    "boundary": "Static browser prototype with local planning logic; not an astronomy guarantee or live production platform."
+  },
+  {
+    "name": "InfraQuote",
+    "url": "infraquote.html",
+    "status": "Functional static MVP",
+    "problem": "Tourism quotations become risky when net cost, selling price, markup, margin, VAT, transport, tickets, gratuities, and break-even assumptions are not clearly separated.",
+    "solution": "Quotation logic concept that turns tour pricing rules into a structured workflow for cost building, margin control, and client-ready proposal outputs.",
+    "useCase": "DMC sales teams, tour operators, travel desks, and product teams preparing clear and commercially safe tour quotations.",
+    "role": "Commercial workflow designer, quotation logic researcher, and article-series author.",
+    "boundary": "Static frontend MVP with editable sample data and local-storage drafts; real supplier rates, finance policy and backend approval workflow still require implementation."
+  },
+  {
+    "name": "Tourism AI Operations Playbook",
+    "url": "tourism-ai-operations-playbook.html",
+    "externalUrl": "https://github.com/AhmedElshemyOps/tourism-ai-operations-playbook",
+    "status": "Public open knowledge project · v1.0.0",
+    "problem": "Tourism teams need practical AI support, but generic prompt lists often ignore operating context, privacy, missing information, verification and human accountability.",
+    "solution": "A connected ten-part professional Playbook with 100 responsible, copy-ready AI prompts, structured data, governance templates, version control and an open GitHub contribution workflow.",
+    "useCase": "DMCs, tour operators, guides, product teams, dispatch, sales, guest-experience, training and quality professionals adopting AI responsibly.",
+    "role": "Creator, maintainer, tourism operations subject-matter author, prompt-engineering designer and open-project documentation lead.",
+    "boundary": "AI outputs remain drafts. Dynamic tourism information, privacy, safety, commercial commitments and operational approval require qualified human review."
+  }
+]

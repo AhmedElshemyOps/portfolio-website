@@ -1,0 +1,68 @@
+{
+  "stats": {
+    "html_files": 60,
+    "files_with_tables": 15,
+    "tables": 48,
+    "wrapped": 2,
+    "labels": 852,
+    "links_added": 60,
+    "scripts_added": 60
+  },
+  "mice_wording_unchanged": {
+    "article-abu-dhabi-mice-movement-control-room.html": {
+      "before": [
+        "1ec88e310e27bae5d7d01a75a9c35dda467b21cd76a89cd8157924a0b73bcb0e",
+        36637
+      ],
+      "after": [
+        "1ec88e310e27bae5d7d01a75a9c35dda467b21cd76a89cd8157924a0b73bcb0e",
+        36637
+      ],
+      "match": true
+    },
+    "article-mice-arrival-waves-zayed-international-airport.html": {
+      "before": [
+        "c60354fa77edc9b3be727ec2577db1a206675537d52c3fd9502bd3caf2ebc46a",
+        51726
+      ],
+      "after": [
+        "c60354fa77edc9b3be727ec2577db1a206675537d52c3fd9502bd3caf2ebc46a",
+        51726
+      ],
+      "match": true
+    },
+    "article-mice-hotel-desks-coach-departures-abu-dhabi.html": {
+      "before": [
+        "3fed5bb2539b09fa15e928bfaeb19afe46721617ac54361dd8da03d5d2dcc1cd",
+        50993
+      ],
+      "after": [
+        "3fed5bb2539b09fa15e928bfaeb19afe46721617ac54361dd8da03d5d2dcc1cd",
+        50993
+      ],
+      "match": true
+    },
+    "article-mice-venue-arrivals-registration-abu-dhabi.html": {
+      "before": [
+        "4703f16adba65221483a1a74d1fa709421d4a6e4c706e13c390c548fc6e810c4",
+        53040
+      ],
+      "after": [
+        "4703f16adba65221483a1a74d1fa709421d4a6e4c706e13c390c548fc6e810c4",
+        53040
+      ],
+      "match": true
+    },
+    "article-mice-backup-operations-service-recovery-abu-dhabi.html": {
+      "before": [
+        "9c701472ab775d4d7b006f354c889e55cfab5cd0c62ccd6f58396628d7768675",
+        53338
+      ],
+      "after": [
+        "9c701472ab775d4d7b006f354c889e55cfab5cd0c62ccd6f58396628d7768675",
+        53338
+      ],
+      "match": true
+    }
+  }
+}

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 430" role="img" aria-labelledby="title desc">
+<title id="title">DMC sales journey from partnership introduction to review</title>
+<desc id="desc">A visual flow showing Partnership Introduction, Portfolio Sharing, RFI, RFQ or RFP, Confirmation, Operation, Follow-up and Review.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#071527"/><stop offset="1" stop-color="#12335c"/></linearGradient>
+  <linearGradient id="card" x1="0" x2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f8fafc"/></linearGradient>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#020617" flood-opacity="0.22"/></filter>
+</defs>
+<rect width="1280" height="430" rx="34" fill="url(#bg)"/>
+<circle cx="1170" cy="62" r="120" fill="#fbbf24" opacity="0.10"/>
+<circle cx="120" cy="360" r="140" fill="#60a5fa" opacity="0.12"/>
+<text x="64" y="62" font-family="Inter, Arial, sans-serif" font-size="28" fill="#fbbf24" font-weight="800">DMC Sales Journey</text>
+<text x="64" y="96" font-family="Inter, Arial, sans-serif" font-size="18" fill="#dbeafe">From first B2B contact to confirmed group, operation and review</text>
+<g transform="translate(54 146)" filter="url(#shadow)">
+  <g font-family="Inter, Arial, sans-serif">
+    <g transform="translate(0 0)"><rect width="132" height="92" rx="18" fill="url(#card)"/><text x="66" y="34" text-anchor="middle" font-size="13" fill="#0f172a" font-weight="800">1. Partnership</text><text x="66" y="56" text-anchor="middle" font-size="13" fill="#0f172a" font-weight="800">Introduction</text><text x="66" y="76" text-anchor="middle" font-size="11" fill="#64748b">Open the door</text></g>
+    <g transform="translate(152 0)"><rect width="132" height="92" rx="18" fill="url(#card)"/><text x="66" y="34" text-anchor="middle" font-size="13" fill="#0f172a" font-weight="800">2. Portfolio</text><text x="66" y="56" text-anchor="middle" font-size="13" fill="#0f172a" font-weight="800">Sharing</text><text x="66" y="76" text-anchor="middle" font-size="11" fill="#64748b">Show capability</text></g>
+    <g transform="translate(304 0)"><rect width="132" height="92" rx="18" fill="url(#card)"/><text x="66" y="43" text-anchor="middle" font-size="16" fill="#0f172a" font-weight="900">3. RFI</text><text x="66" y="67" text-anchor="middle" font-size="11" fill="#64748b">Build understanding</text></g>
+    <g transform="translate(456 0)"><rect width="132" height="92" rx="18" fill="url(#card)"/><text x="66" y="34" text-anchor="middle" font-size="15" fill="#0f172a" font-weight="900">4. RFQ</text><text x="66" y="56" text-anchor="middle" font-size="12" fill="#64748b">or RFP</text><text x="66" y="76" text-anchor="middle" font-size="11" fill="#64748b">Price / solution</text></g>
+    <g transform="translate(608 0)"><rect width="132" height="92" rx="18" fill="url(#card)"/><text x="66" y="43" text-anchor="middle" font-size="14" fill="#0f172a" font-weight="900">5. Confirmation</text><text x="66" y="67" text-anchor="middle" font-size="11" fill="#64748b">File becomes live</text></g>
+    <g transform="translate(760 0)"><rect width="132" height="92" rx="18" fill="url(#card)"/><text x="66" y="43" text-anchor="middle" font-size="15" fill="#0f172a" font-weight="900">6. Operation</text><text x="66" y="67" text-anchor="middle" font-size="11" fill="#64748b">Deliver on ground</text></g>
+    <g transform="translate(912 0)"><rect width="132" height="92" rx="18" fill="url(#card)"/><text x="66" y="43" text-anchor="middle" font-size="14" fill="#0f172a" font-weight="900">7. Follow-up</text><text x="66" y="67" text-anchor="middle" font-size="11" fill="#64748b">Report &amp; care</text></g>
+    <g transform="translate(1064 0)"><rect width="132" height="92" rx="18" fill="url(#card)"/><text x="66" y="43" text-anchor="middle" font-size="15" fill="#0f172a" font-weight="900">8. Review</text><text x="66" y="67" text-anchor="middle" font-size="11" fill="#64748b">Win next group</text></g>
+  </g>
+</g>
+<g stroke="#fbbf24" stroke-width="4" stroke-linecap="round" opacity="0.95">
+  <path d="M190 192h18"/><path d="M342 192h18"/><path d="M494 192h18"/><path d="M646 192h18"/><path d="M798 192h18"/><path d="M950 192h18"/><path d="M1102 192h18"/>
+</g>
+<g fill="#fbbf24" opacity="0.95">
+  <path d="M211 192l-10-7v14z"/><path d="M363 192l-10-7v14z"/><path d="M515 192l-10-7v14z"/><path d="M667 192l-10-7v14z"/><path d="M819 192l-10-7v14z"/><path d="M971 192l-10-7v14z"/><path d="M1123 192l-10-7v14z"/>
+</g>
+<text x="640" y="306" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" fill="#e0f2fe">Sales creates the opportunity · Operations protects the delivery · Follow-up builds repeat business</text>
+</svg>

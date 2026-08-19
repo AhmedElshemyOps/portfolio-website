@@ -1,0 +1,80 @@
+{
+  "version": "v16",
+  "static_tables": 48,
+  "pages_with_static_tables": 15,
+  "html_pages_covered": 60,
+  "viewport_widths_tested": [
+    390,
+    768,
+    1024,
+    1440
+  ],
+  "rendered_page_viewport_checks": 60,
+  "overflow_or_scroll_anomalies": 0,
+  "dynamic_table_mutation_test": {
+    "passed": true,
+    "five_column_table_card_layout_at_390px": true,
+    "document_scroll_width_equals_viewport": true
+  },
+  "local_references_checked": 2022,
+  "broken_local_references": 0,
+  "javascript_syntax": "passed",
+  "mice_wording_unchanged": true,
+  "mice_article_checksums": {
+    "article-abu-dhabi-mice-movement-control-room.html": {
+      "before": [
+        "1ec88e310e27bae5d7d01a75a9c35dda467b21cd76a89cd8157924a0b73bcb0e",
+        36637
+      ],
+      "after": [
+        "1ec88e310e27bae5d7d01a75a9c35dda467b21cd76a89cd8157924a0b73bcb0e",
+        36637
+      ],
+      "match": true
+    },
+    "article-mice-arrival-waves-zayed-international-airport.html": {
+      "before": [
+        "c60354fa77edc9b3be727ec2577db1a206675537d52c3fd9502bd3caf2ebc46a",
+        51726
+      ],
+      "after": [
+        "c60354fa77edc9b3be727ec2577db1a206675537d52c3fd9502bd3caf2ebc46a",
+        51726
+      ],
+      "match": true
+    },
+    "article-mice-hotel-desks-coach-departures-abu-dhabi.html": {
+      "before": [
+        "3fed5bb2539b09fa15e928bfaeb19afe46721617ac54361dd8da03d5d2dcc1cd",
+        50993
+      ],
+      "after": [
+        "3fed5bb2539b09fa15e928bfaeb19afe46721617ac54361dd8da03d5d2dcc1cd",
+        50993
+      ],
+      "match": true
+    },
+    "article-mice-venue-arrivals-registration-abu-dhabi.html": {
+      "before": [
+        "4703f16adba65221483a1a74d1fa709421d4a6e4c706e13c390c548fc6e810c4",
+        53040
+      ],
+      "after": [
+        "4703f16adba65221483a1a74d1fa709421d4a6e4c706e13c390c548fc6e810c4",
+        53040
+      ],
+      "match": true
+    },
+    "article-mice-backup-operations-service-recovery-abu-dhabi.html": {
+      "before": [
+        "9c701472ab775d4d7b006f354c889e55cfab5cd0c62ccd6f58396628d7768675",
+        53338
+      ],
+      "after": [
+        "9c701472ab775d4d7b006f354c889e55cfab5cd0c62ccd6f58396628d7768675",
+        53338
+      ],
+      "match": true
+    }
+  }
+}

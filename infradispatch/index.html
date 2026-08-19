@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+
+<html id="top" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>InfraDispatch | Transport Dispatch Planner for Tourism Operations</title>
+<meta content="InfraDispatch is a live beta transport dispatch planner for tourism operations teams: multi-stop pickup/drop-off planning, team briefings, Google Maps route links, and print-ready manifests." name="description"/>
+<link href="https://ahmedqualityops.com/infradispatch/" rel="canonical"/>
+<meta content="InfraDispatch | Transport Dispatch Planner for Tourism Operations" property="og:title"/>
+<meta content="Live beta planner for transport teams in DMC and tour operations: route planning, driver/guide briefing, and manifest export." property="og:description"/>
+<meta content="https://ahmedqualityops.com/assets/infradispatch-og.png" property="og:image"/>
+<meta content="website" property="og:type"/>
+<meta content="https://ahmedqualityops.com/infradispatch/" property="og:url"/>
+<link href="../assets/brand/favicon-32.png" rel="icon" type="image/png"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=Playfair+Display:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<link crossorigin="" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" rel="stylesheet"/>
+<link href="../assets/css/styles.css" rel="stylesheet"/>
+<link href="../assets/css/design-vnext.css" rel="stylesheet"/>
+<link href="../site.webmanifest" rel="manifest"/>
+<link href="../assets/brand/favicon-192.png" rel="apple-touch-icon"/>
+<script data-schema="seo-geo" type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"InfraDispatch","url":"https://ahmedqualityops.com/infradispatch/","applicationCategory":"BusinessApplication","operatingSystem":"Web","isAccessibleForFree":true,"description":"Static live beta transport dispatch planner for tourism operations teams, pickup/drop-off planning, briefing outputs, Google Maps route links and manifests.","author":{"@type":"Person","name":"Ahmed Mahmoud","url":"https://ahmedqualityops.com/"}}</script>
+<link href="/assets/css/final-enhancements.css?v=20260712" rel="stylesheet"/>
+<link href="../assets/css/table-responsive-v16.css?v=20260721" rel="stylesheet"/></head>
+<body>
+<a class="skip" href="#planner">Skip to planner</a>
+<header class="site-header">
+<div class="container nav">
+<a aria-label="InfraDispatch home" class="wordmark infra-wordmark" href="../index.html">
+<img alt="InfraDispatch logo" class="infra-logo" src="../assets/brand/InfraDispatch_Logo_Primary_Transparent.svg"/>
+<span>InfraDispatch<small>Transport Operations Command Center</small></span>
+</a>
+<button aria-controls="siteNav" aria-expanded="false" class="menu-button" id="menuButton" type="button">Menu</button>
+<nav aria-label="Main navigation" class="nav-links" id="siteNav">
+<a href="../index.html">Portfolio Home</a>
+<div class="dropdown">
+<button class="dropbtn" type="button">Projects</button>
+<div class="dropdown-menu">
+<a href="../projects.html">All Projects</a>
+<a href="../infradispatch/">InfraDispatch · Dispatch Planner</a>
+<a href="../infracluster.html">InfraCluster · Hotel Clustering</a>
+<a href="../infrasky.html">InfraSky · Stargazing Planner</a>
+<a href="../infraquote.html">InfraQuote · Quotation Tool</a>
+</div>
+</div>
+<a class="active" href="#planner">Live Planner</a>
+<a href="#beta-boundaries">Beta Boundaries</a>
+<a href="../tourism-ai-operations-playbook.html">AI Playbook</a><a class="btn small" download="" href="../downloads/Ahmed_Mahmoud_CV_Summary.pdf">Download CV</a>
+</nav>
+</div>
+</header>
+<main>
+<section class="cluster-hero dispatch-hero">
+<div class="container cluster-hero-grid">
+<div>
+<p class="eyebrow">InfraDispatch · Live Beta</p>
+<h1>Plan tourism pickups, team handovers and dispatch briefs in one clean flow.</h1>
+<p>InfraDispatch is a transport-team-first planning MVP for DMC and tour operations. It helps coordinators build pickup and drop-off plans, assign guide/driver/vehicle details, generate Google Maps route links, and prepare operational short messages without pushing the team through scattered notes.</p>
+<div class="hero-actions">
+<a class="btn" href="#planner">Open planner</a>
+<a class="btn secondary" href="#how-it-works">How it works</a>
+</div>
+</div>
+<aside class="cluster-hero-card">
+<strong>Problem, solution, use case</strong>
+<p><strong>Problem:</strong> Tourism pickup planning becomes risky when hotel sequence, guest counts, driver notes, guide notes, vehicle data and supervisor approval are handled separately.</p>
+<p><strong>Solution:</strong> A static MVP that turns pickup points, destination timing and team assignment into route logic, Google Maps links, operational messages, and a print-ready manifest.</p>
+<p><strong>Use case:</strong> DMC operations teams, transport coordinators, tour operators, guides, drivers and supervisors preparing city tours, airport movements and inter-emirate services.</p>
+</aside>
+</div>
+</section>
+<section class="planner-shell" id="planner">
+<div class="container">
+<div class="beta-bar">
+<div>
+<strong>InfraDispatch Live Beta Planner</strong>
+<div class="db-note">Database last updated: <span id="dbLastUpdated">loading...</span>. Static beta with browser storage and no server login.</div>
+</div>
+<div class="beta-chips">
+<span class="chip">Transport Team Mode</span>
+<span class="chip">Google Maps only</span>
+<span class="chip">Operational short briefs</span>
+<span class="chip">Manifest export</span>
+</div>
+</div>
+<div class="planner-grid">
+<aside class="planner-sidebar no-print">
+<details class="workspace-profile optional-workspace">
+<summary>Optional local profile</summary>
+<p class="sidebar-note">Saved only in this browser for faster repeat usage.</p>
+<label>Operator name</label><input id="operatorName" placeholder="Your name"/>
+<label>Team / company</label><input id="teamName" placeholder="Operations team"/>
+<label>Role</label><select id="operatorRole"><option>Transport Coordinator</option><option>Supervisor</option><option>Guide</option><option>Driver</option></select>
+<div class="action-row"><button class="btn small" id="saveProfile" type="button">Save profile</button><button class="btn secondary small" id="clearProfile" type="button">Clear</button></div>
+</details>
+<div class="workspace-profile">
+<strong style="display:block;margin-bottom:8px">Start in 3 steps</strong>
+<small>1) Add trip/team/vehicle<br/>2) Add pickup points<br/>3) Generate dispatch plan</small>
+</div>
+<nav class="step-nav">
+<a href="#tripAcc">1. Trip, team &amp; vehicle</a>
+<a href="#pointsAcc">2. Pickup/drop-off points</a>
+<a href="#costAcc">3. Costs &amp; petty cash</a>
+<a href="#decisionAcc">4. Decision &amp; approval</a>
+<a href="#resultsAcc">5. Results &amp; messages</a>
+<a href="#exportAcc">6. Export / print</a>
+</nav>
+</aside>
+<div class="planner-main">
+<details class="accordion" id="tripAcc" open="">
+<summary><div><h2>Trip, team &amp; vehicle assignment</h2><p>Start blank or load a sample, then define timing, guide, driver and vehicle.</p></div></summary>
+<div class="accordion-body">
+<div class="action-row no-print"><button class="btn secondary" id="startBlank" type="button">Start blank plan</button><button class="btn outline" id="loadDemo" type="button">Load sample city tour</button></div>
+<div class="form-grid three">
+<div class="field"><label>Tour date</label><input id="tourDate" type="date"/></div>
+<div class="field"><label>Tour / operation name</label><input id="tourName" placeholder="Abu Dhabi City Tour"/></div>
+<div class="field"><label>Mode</label><select id="tripMode"><option value="Pickup">Pickup</option><option value="Drop-off">Drop-off</option><option value="Pickup &amp; Drop-off">Pickup &amp; Drop-off</option></select></div>
+<div class="field"><label>Required arrival point</label><input id="arrivalPoint" placeholder="Sheikh Zayed Grand Mosque"/></div>
+<div class="field"><label>Required arrival time</label><input id="arrivalTime" type="time"/></div>
+<div class="field"><label>Maximum pickup window (minutes)</label><input id="maxWindow" min="10" type="number" value="60"/></div>
+<div class="field"><label>Guide name <span class="optional-mark">* Optional</span></label><input id="guideName" placeholder="Guide name"/></div>
+<div class="field"><label>Driver name <span class="optional-mark">* Optional</span></label><input id="driverName" placeholder="Driver name"/></div>
+<div class="field"><label>Vehicle selection</label><select id="vehicleSelect"><option value="auto">Auto recommendation</option><option value="sedan">Sedan / private car</option><option value="van">Van / minibus</option><option value="coach">Coach / multiple vehicles</option></select></div>
+<div class="field"><label>Car brand / model <span class="optional-mark">* Optional</span></label><input id="vehicleBrand" placeholder="Toyota Hiace / Lexus / Coaster"/></div>
+<div class="field"><label>Car color <span class="optional-mark">* Optional</span></label><input id="vehicleColor" placeholder="White / Black / Silver"/></div>
+<div class="field"><label>Plate number <span class="optional-mark">* Optional</span></label><input id="vehiclePlate" placeholder="Abu Dhabi 12345"/></div>
+</div>
+</div>
+</details>
+<details class="accordion" id="pointsAcc" open="">
+<summary><div><h2>Pickup / drop-off points</h2><p>Add hotels/points and guest data. Use custom-place only when search does not find location.</p></div></summary>
+<div class="accordion-body">
+<div class="section-title compact-title"><div><h3>Pickup list</h3><p>Hotels, attractions, malls, airports, restaurants or custom points.</p></div><button class="btn small" id="addPickup" type="button">+ Add point</button></div>
+<div class="db-note" id="locationDbCount">Location database: loading...</div><div class="point-list" id="pickupRows"></div>
+<div class="action-row no-print"><button class="btn secondary small" id="duplicateLastPickup" type="button">Duplicate last point</button><button class="btn outline small" id="clearPickups" type="button">Clear points</button></div>
+<details class="custom-place-panel no-print">
+<summary><strong>Missing location?</strong> Add custom place</summary>
+<p style="margin:8px 0 14px;color:#5b4300">Saves in this browser and becomes searchable.</p>
+<div class="form-grid">
+<div class="field"><label>Custom place name</label><input id="customPlaceName" placeholder="Example: Founder’s Memorial"/></div>
+<div class="field"><label>Area / zone</label><select id="customPlaceZone"><option value="Z4">Abu Dhabi City / Corniche / Downtown</option><option value="Z1">Yas / Airport / Al Raha</option><option value="Z2">Saadiyat / Mina / Cultural District</option><option value="Z3">Grand Mosque / Capital Gate / ADNEC</option><option value="Z5">Outer Abu Dhabi / Suburbs</option><option value="Z6">Dubai / Other Emirate</option></select></div>
+<div class="field"><label>Place type</label><select id="customPlaceType"><option>Attraction</option><option>Hotel</option><option>Mall</option><option>Airport</option><option>Cruise terminal</option><option>Restaurant</option><option>Event venue</option><option>Custom pickup point</option></select></div>
+<div class="field"><label>Optional Google Maps link</label><input id="customPlaceMaps" placeholder="Paste Google Maps link"/></div>
+<div class="field full"><label>Meeting point / note</label><input id="customPlaceNote" placeholder="Main entrance, bus bay, security gate..."/></div>
+</div>
+<div class="action-row"><button class="btn small" id="saveCustomPlace" type="button">Save custom place</button><button class="btn secondary small" id="addCustomPlaceToPickup" type="button">Add to pickup list</button><span class="db-note" id="customPlaceStatus"></span></div>
+</details>
+<div class="toggle-card"><label class="toggle-line"><input checked="" id="useSameDrop" type="checkbox"/> Use same locations for drop-off</label></div>
+<div class="hidden" id="dropSection">
+<div class="section-title compact-title"><div><h3>Custom drop-off list</h3><p>Use only if drop sequence differs.</p></div><button class="btn small" id="addDrop" type="button">+ Add drop-off</button></div>
+<div class="point-list" id="dropRows"></div>
+</div>
+</div>
+</details>
+<details class="accordion" id="costAcc">
+<summary><div><h2>Optional costs &amp; petty cash</h2><p>Operator-controlled. Hidden from outputs when unchecked.</p></div></summary>
+<div class="accordion-body">
+<div class="toggle-card"><label class="toggle-line"><input id="includeExpenses" type="checkbox"/> Include estimated expenses</label></div>
+<div class="hidden" id="expenseFields"><div class="toggle-card"><label class="toggle-line"><input id="includeDarb" type="checkbox"/> Darb / toll gate expected</label></div><div class="form-grid three"><div class="field"><label>Darb crossings <span class="optional-mark">* Auto-estimated after plan</span></label><input id="darbGateCount" min="0" type="number" value="0"/></div><div class="field"><label>Fee per crossing — AED</label><input id="tollFee" min="0" step="0.5" type="number" value="4"/></div><div class="field"><label>Fuel estimate — AED</label><input id="fuelEstimate" min="0" type="number" value="0"/></div><div class="field"><label>Parking / permits — AED</label><input id="parkingEstimate" min="0" type="number" value="0"/></div><div class="field"><label>Other amount — AED</label><input id="otherEstimate" min="0" type="number" value="0"/></div><div class="field"><label>Other notes</label><input id="otherExpenseNote" placeholder="Driver overtime, extra vehicle..."/></div></div></div>
+<div class="toggle-card"><label class="toggle-line"><input id="includePettyCash" type="checkbox"/> Petty cash / cash handover required</label></div>
+<div class="hidden" id="pettyCashFields"><div class="form-grid"><div class="field"><label>Cash handed to</label><select id="pettyCashReceiver"><option>Guide</option><option>Driver</option></select></div><div class="field"><label>Amount — AED</label><input id="pettyCashAmount" min="0" type="number" value="0"/></div><div class="field full"><label>Purpose</label><input id="pettyCashPurpose" placeholder="Museum / cash attraction / emergency"/></div><div class="field full"><label>Petty cash note</label><input id="pettyCashNote" placeholder="Confirm receipt and return unused balance."/></div></div></div>
+</div>
+</details>
+<details class="accordion" id="decisionAcc">
+<summary><div><h2>Decision &amp; supervisor approval</h2><p>Keep human coordination control over route split and final dispatch.</p></div></summary>
+<div class="accordion-body"><div class="form-grid"><div class="field"><label>Coordinator decision</label><select id="manualDecision"><option value="auto">Accept system recommendation</option><option value="single">Force single route</option><option value="split">Force split route</option><option value="review">Supervisor review required</option></select></div><div class="field"><label>Supervisor name</label><input id="supervisorName" placeholder="Supervisor name"/></div><div class="field full"><label>Message style</label><select id="messageStyle"><option selected="" value="operational-short">Operational short</option><option value="formal">Formal</option><option value="guest-friendly">Guest-friendly</option></select></div></div><div class="validation-list"><label><input id="trafficChecked" type="checkbox"/> Live maps checked</label><label><input id="hotelAccessChecked" type="checkbox"/> Hotel access checked</label><label><input id="openingHoursChecked" type="checkbox"/> Attraction opening hours checked</label><label><input id="supervisorApproved" type="checkbox"/> Supervisor approved / reviewed</label></div><button class="btn" id="calculate" type="button">Generate dispatch plan</button><p class="db-note">Dispatch score is a planning indicator, not a live traffic guarantee.</p></div>
+</details>
+<details class="accordion" id="resultsAcc" open="">
+<summary><div><h2>Results &amp; messages</h2><p>Route decision, Google Maps route link, operational messages, and manifest.</p></div></summary>
+<div class="accordion-body"><div class="warning" id="emptyResult">No result yet. Complete the trip plan and click Generate dispatch plan.</div><div class="hidden result-card" id="results"></div></div>
+</details>
+<details class="accordion" id="exportAcc">
+<summary><div><h2>Export / print</h2><p>Save as JSON, reload later, print manifest, or download HTML.</p></div></summary>
+<div class="accordion-body"><div class="export-bar"><button class="btn" id="printManifest" type="button">Open print-ready manifest</button><button class="btn secondary" id="downloadHtml" type="button">Download manifest HTML</button><button class="btn outline" id="savePlanJson" type="button">Save plan JSON</button><button class="btn outline" id="loadPlanJson" type="button">Load plan JSON</button><input accept="application/json" class="hidden" id="planFileInput" type="file"/><button class="btn outline" id="copyFullPlan" type="button">Copy full operation plan</button></div><p class="db-note">JSON import/export helps transport teams continue work across devices in this beta phase.</p><div id="manifestPreview"></div></div>
+</details>
+</div>
+</div>
+<section class="simulator-wrap" id="demo-simulator">
+<div class="section-title">
+<div>
+<p class="eyebrow dark">Try InfraDispatch Demo</p>
+<h2>InfraDispatch Live Dispatch Simulator</h2>
+</div>
+<p>Interactive product demo for <strong>DMC dispatch software UAE</strong>, <strong>tour operator transport planning</strong>, and <strong>pickup and drop-off planning software</strong> use cases in Abu Dhabi and GCC operations.</p>
+</div>
+<div class="sim-grid">
+<article class="card sim-scenario">
+<h3>Sample DMC Scenario</h3>
+<div class="sim-meta" id="simMeta"></div>
+<ul class="sim-list" id="simStops"></ul>
+<div class="action-row">
+<button class="btn small" id="simLoad" type="button">Load Scenario</button>
+<button class="btn secondary small" id="simOptimize" type="button">Run Optimization</button>
+</div>
+</article>
+<article class="card sim-map-card">
+<h3>Route Preview Map</h3>
+<div aria-label="Demo route map" class="sim-map" id="simMap"></div>
+<p class="db-note">Demo map built with OpenStreetMap and Leaflet for tourism route optimization preview.</p>
+</article>
+</div>
+<div class="sim-grid">
+<article class="card">
+<h3>Optimized Dispatch Result</h3>
+<div class="sim-result" id="simResult">Click <strong>Run Optimization</strong> to generate demo output.</div>
+<div class="action-row">
+<button class="btn small" id="simCopyBrief" type="button">Copy WhatsApp Driver Brief</button>
+<button class="btn secondary small" id="simExportSheet" type="button">Export Pickup Sheet</button>
+<a class="btn secondary small" href="https://www.google.com/maps" id="simOpenGoogle" rel="noopener noreferrer" target="_blank">Open in Google Maps</a>
+<button class="btn outline small" id="simSendDriver" type="button">Send to Driver</button>
+</div>
+</article>
+<article class="card">
+<h3>Transport Dashboard Preview</h3>
+<div class="sim-status-grid" id="simStatus"></div>
+<p class="db-note">Designed for <strong>Abu Dhabi DMC operations</strong>, <strong>tour guide and driver dispatch</strong>, and GCC transport coordination teams.</p>
+</article>
+</div>
+</section>
+<div class="kpi-ribbon" id="how-it-works">
+<span>Built for multi-stop tours</span>
+<span>WhatsApp-ready briefs</span>
+<span>Manifest export</span>
+<span>Google Maps route logic</span>
+</div>
+<div class="product-strip">
+<div class="card"><h3>Less dispatch confusion</h3><p>One workflow for points, team assignment, route, and handover.</p></div>
+<div class="card"><h3>Faster supervisor review</h3><p>Validation checklist and readiness score in one place.</p></div>
+<div class="card"><h3>Better team communication</h3><p>Operational short messaging for drivers and guides.</p></div>
+<div class="card"><h3>Portable planning</h3><p>Save and load plan JSON between laptops and teams.</p></div>
+</div>
+</div>
+</section>
+<section class="section alt dispatch-support-section">
+<div class="container">
+<div class="section-title"><div><p class="eyebrow dark">Who InfraDispatch Is For</p><h2>DMC and tourism operations teams in UAE/GCC</h2></div></div>
+<div class="grid cards3">
+<article class="card"><h3>DMCs &amp; Tour Operators</h3><p>Hotel pickup sequencing, dispatch control, and transport planning software for daily operations.</p></article>
+<article class="card"><h3>Transport Coordinators</h3><p>Driver, vehicle, and timing coordination with operational short communication outputs.</p></article>
+<article class="card"><h3>Drivers &amp; Tour Guides</h3><p>Clear pickup order, route links, notes, and handover-ready instructions.</p></article>
+</div>
+<div class="grid cards2" style="margin-top:18px">
+<article class="card"><h3>Core Workflow</h3><p>Create trip -&gt; add pickups -&gt; add destination -&gt; assign team and vehicle -&gt; generate dispatch plan -&gt; export pickup sheet -&gt; send team brief -&gt; monitor status.</p></article>
+<article class="card"><h3>Operating Focus</h3><p>Keep the MVP focused on practical planning: pickup order, route clarity, supervisor review, team messages, and manifest export.</p></article>
+</div>
+</div>
+</section>
+<section class="section" id="beta-boundaries">
+<div class="container grid cards2">
+<article class="card">
+<h3>What this beta does now</h3>
+<p>Supports route planning logic, operational short dispatch messages, team assignment, Google Maps links, and print-ready manifests.</p>
+</article>
+<article class="card">
+<h3>What this beta does not do yet</h3>
+<p>No live traffic prediction engine, no backend user accounts, no cloud plan sync, and no server-side PDF automation yet.</p>
+</article>
+</div>
+</section>
+</main>
+<div class="mobile-bottom"><a href="../index.html">Home</a><a href="#planner">Planner</a><a href="#beta-boundaries">Beta</a><a download="" href="../downloads/Ahmed_Mahmoud_CV_Summary.pdf">CV</a><a href="../tourism-ai-operations-playbook.html">AI Playbook</a></div>
+<button aria-label="Back to top" class="back-to-top" id="backToTop" type="button">↑</button>
+<footer class="footer">
+<div class="container footer-grid">
+<div>
+<strong>InfraDispatch by Ahmed Mahmoud</strong><br/>
+<span>Tourism transport operations product concept · Abu Dhabi, UAE</span>
+</div>
+<div class="social-row">
+<a href="https://www.linkedin.com/in/ahmed-mahmoud-tourism/" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+<a href="https://www.linkedin.com/company/infradispatch" rel="noopener noreferrer" target="_blank">InfraDispatch LinkedIn</a>
+</div>
+</div>
+</footer>
+<script defer="" src="../assets/js/site.js"></script>
+<script crossorigin="" defer="" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script defer="" src="../assets/js/planner-data.js"></script>
+<script defer="" src="../assets/js/planner-calculation.js"></script>
+<script defer="" src="../assets/js/planner-ui.js"></script>
+<script defer="" src="../assets/js/dispatch-simulator.js"></script>
+<script defer="" src="../assets/js/mvp-wizard.js"></script>
+<script defer="" src="../assets/js/site-config.js"></script>
+<script defer="" src="../assets/js/analytics.js"></script>
+<script defer="True" src="../assets/js/table-responsive-v16.js?v=20260721"></script></body>
+</html>

@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">Assignment fit scorecard</title>
+<desc id="desc">A professional DMC assignment fit scorecard showing weighted assignment factors and an example score for selecting the best guide.</desc>
+<defs>
+  <linearGradient id="canvas" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071527"/><stop offset=".62" stop-color="#123b63"/><stop offset="1" stop-color="#0f5a70"/></linearGradient>
+  <linearGradient id="surface" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffffff"/><stop offset="1" stop-color="#eef6ff"/></linearGradient>
+  <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f4d876"/><stop offset="1" stop-color="#c89a38"/></linearGradient>
+  <pattern id="grid" width="52" height="52" patternUnits="userSpaceOnUse"><path d="M52 0H0V52" fill="none" stroke="#d7e8f8" stroke-opacity=".09" stroke-width="1"/></pattern>
+  <filter id="shadow" x="-12%" y="-12%" width="124%" height="130%"><feDropShadow dx="0" dy="24" stdDeviation="24" flood-color="#001326" flood-opacity=".24"/></filter>
+  <filter id="cardShadow" x="-14%" y="-14%" width="128%" height="132%"><feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#001326" flood-opacity=".13"/></filter>
+</defs>
+<rect width="1600" height="900" rx="44" fill="url(#canvas)"/>
+<rect width="1600" height="900" rx="44" fill="url(#grid)"/>
+<path d="M1164 0H1600V900H1268C1380 708 1402 486 1332 270C1286 126 1218 42 1164 0Z" fill="#ffffff" opacity=".07"/>
+<g font-family="Aptos, Segoe UI, Helvetica, Arial, sans-serif">
+  <text x="82" y="96" fill="#f0ca67" font-size="22" font-weight="850" letter-spacing="5">ASSIGNMENT ENGINE</text>
+  <text x="82" y="158" fill="#ffffff" font-size="56" font-weight="850">Assignment Fit Scorecard</text>
+  <text x="82" y="204" fill="#d6e8f7" font-size="25">A transparent weighted model to support professional judgment, not replace it.</text>
+  <g transform="translate(82 252)" filter="url(#shadow)">
+    <rect width="1436" height="552" rx="34" fill="url(#surface)"/>
+    <rect width="1436" height="88" rx="34" fill="#08192f"/>
+    <path d="M0 56H1436V108H0Z" fill="#08192f"/>
+    <text x="34" y="55" fill="#f1cf70" font-size="18" font-weight="850" letter-spacing="4">WEIGHTED DECISION BOARD</text>
+    <text x="1160" y="55" fill="#cfe2f3" font-size="20" font-weight="760">Guide selection example</text>
+    <g transform="translate(42 126)" filter="url(#cardShadow)">
+      <rect width="880" height="348" rx="26" fill="#f8fbff" stroke="#cadbea"/>
+      <rect x="24" y="24" width="832" height="52" rx="18" fill="#0b2f50"/>
+      <text x="50" y="58" fill="#ffffff" font-size="16" font-weight="900" letter-spacing="2">ASSIGNMENT FACTOR</text>
+      <text x="790" y="58" fill="#ffffff" font-size="16" font-weight="900" letter-spacing="2" text-anchor="end">WEIGHT</text>
+      <g font-size="17" fill="#17334f">
+        <text x="50" y="112">Required licence and qualifications</text>
+        <text x="50" y="148">Language match</text>
+        <text x="50" y="184">Relevant product experience</text>
+        <text x="50" y="220">Guest-profile suitability</text>
+        <text x="50" y="256">Availability and timing realism</text>
+        <text x="50" y="292">Route knowledge, workload and feedback</text>
+      </g>
+      <g font-size="16" font-weight="900" fill="#071527">
+        <rect x="724" y="94" width="72" height="26" rx="13" fill="#f4d876"/>
+        <rect x="724" y="130" width="72" height="26" rx="13" fill="#b9dcf0"/>
+        <rect x="724" y="166" width="72" height="26" rx="13" fill="#b9dcf0"/>
+        <rect x="724" y="202" width="72" height="26" rx="13" fill="#b9dcf0"/>
+        <rect x="724" y="238" width="72" height="26" rx="13" fill="#c3e9d6"/>
+        <rect x="724" y="274" width="72" height="26" rx="13" fill="#e6edf5"/>
+        <text x="760" y="113" text-anchor="middle">20</text>
+        <text x="760" y="149" text-anchor="middle">15</text>
+        <text x="760" y="185" text-anchor="middle">15</text>
+        <text x="760" y="221" text-anchor="middle">15</text>
+        <text x="760" y="257" text-anchor="middle">10</text>
+        <text x="760" y="293" text-anchor="middle">25</text>
+      </g>
+    </g>
+    <g transform="translate(970 126)" filter="url(#cardShadow)">
+      <rect width="374" height="348" rx="26" fill="#071527"/>
+      <text x="187" y="54" text-anchor="middle" fill="#f4d876" font-size="18" font-weight="900" letter-spacing="2">EXAMPLE OUTCOME</text>
+      <text x="187" y="94" text-anchor="middle" fill="#ffffff" font-size="24" font-weight="850">French VIP Family Tour</text>
+      <circle cx="187" cy="184" r="72" fill="#123b63" stroke="#f4d876" stroke-width="7"/>
+      <text x="187" y="202" text-anchor="middle" fill="#ffffff" font-size="58" font-weight="900">94</text>
+      <text x="187" y="234" text-anchor="middle" fill="#cfe2f3" font-size="15" font-weight="800">BEST-FIT SCORE / 100</text>
+      <rect x="50" y="276" width="274" height="42" rx="14" fill="url(#gold)"/>
+      <text x="187" y="303" text-anchor="middle" fill="#071527" font-size="17" font-weight="900">PRIMARY GUIDE SELECTED</text>
+      <text x="187" y="336" text-anchor="middle" fill="#cfe2f3" font-size="15">Confirm briefing and backup before service.</text>
+    </g>
+    <g transform="translate(64 510)">
+      <rect width="1308" height="38" rx="19" fill="#eaf3fb" stroke="#c8d9e8"/>
+      <text x="24" y="25" fill="#173b61" font-size="16" font-weight="900" letter-spacing="2">DECISION RULE:</text>
+      <text x="206" y="25" fill="#45617d" font-size="16">use the score to compare fit, then confirm human judgment, readiness and backup coverage.</text>
+    </g>
+  </g>
+</g>
+</svg>

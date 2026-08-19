@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+<title id="title">Before the Flight Lands</title>
+<desc id="desc">Ahmed Mahmoud article about air connectivity intelligence for Destination Management Companies in Abu Dhabi.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#071527"/><stop offset="0.55" stop-color="#12375e"/><stop offset="1" stop-color="#1a4b73"/></linearGradient>
+  <radialGradient id="glow" cx=".78" cy=".2" r=".75"><stop offset="0" stop-color="#f5cf7a" stop-opacity=".42"/><stop offset="1" stop-color="#f5cf7a" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="1200" height="630" fill="url(#bg)"/>
+<rect width="1200" height="630" fill="url(#glow)"/>
+<path d="M0 510 C250 420 500 550 740 460 S1020 390 1200 470 L1200 630 L0 630Z" fill="#06101e" opacity=".78"/>
+<path d="M770 470 L1010 318 L1088 339 L860 480 Z" fill="#d8b45b" opacity=".9"/>
+<path d="M835 430 L1040 320 L1090 335 L870 452 Z" fill="#f8e0a0" opacity=".95"/>
+<circle cx="1080" cy="125" r="3" fill="#f7df9c"/><circle cx="1024" cy="177" r="2" fill="#f7df9c"/><circle cx="970" cy="100" r="2" fill="#f7df9c"/><circle cx="900" cy="158" r="2" fill="#f7df9c"/><circle cx="1120" cy="232" r="2" fill="#f7df9c"/>
+<text x="86" y="112" fill="#f5cf7a" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" letter-spacing="4">AHMED QUALITY OPS · INSIGHTS</text>
+<text x="86" y="225" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="67" font-weight="800">Before the Flight Lands</text>
+<text x="86" y="300" fill="#d7e6f4" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="600">How Smart DMCs Use Air Connectivity</text>
+<text x="86" y="346" fill="#d7e6f4" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="600">to Predict the Next Guest Market</text>
+<text x="86" y="424" fill="#f5cf7a" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">ABU DHABI · DMC STRATEGY · DESTINATION EXPERIENCE</text>
+</svg>

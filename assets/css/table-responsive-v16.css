@@ -1,0 +1,272 @@
+/* Site-wide responsive table system — v16
+   Keeps desktop tables native, prevents page overflow, and converts wide tables
+   into labeled cards on compact screens. */
+
+.site-table-shell {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-inline: contain;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-gutter: stable;
+}
+
+.site-table-shell:focus-visible {
+  outline: 3px solid rgba(191, 140, 40, .36);
+  outline-offset: 3px;
+}
+
+.site-table-shell > table.site-responsive-table,
+table.site-responsive-table {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  display: table !important;
+  border-collapse: collapse;
+}
+
+.site-responsive-table th,
+.site-responsive-table td {
+  min-width: 0;
+  max-width: none;
+  overflow-wrap: anywhere;
+  word-break: normal;
+  hyphens: auto;
+}
+
+.site-responsive-table th :is(a, strong, span),
+.site-responsive-table td :is(a, strong, span) {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
+.site-responsive-table.site-table--2 {
+  table-layout: fixed !important;
+  min-width: 0 !important;
+}
+
+.site-responsive-table.site-table--2 > :is(thead,tbody,tfoot) > tr > :is(th,td) {
+  width: 50%;
+}
+
+/* Dense tables remain full-width on larger screens, with balanced wrapping. */
+@media (min-width: 801px) {
+  .site-responsive-table:is(.site-table--4,.site-table--5,.site-table--6,.site-table--7,.site-table--8,.site-table--9,.site-table--10) {
+    table-layout: auto !important;
+    min-width: 0 !important;
+  }
+  .site-responsive-table:is(.site-table--5,.site-table--6,.site-table--7,.site-table--8,.site-table--9,.site-table--10) :is(th,td) {
+    padding-left: clamp(9px, 1vw, 15px) !important;
+    padding-right: clamp(9px, 1vw, 15px) !important;
+    font-size: clamp(12px, .92vw, 15px);
+  }
+}
+
+@media (max-width: 900px) {
+  .site-table-shell > table.site-responsive-table {
+    min-width: 0 !important;
+  }
+  .site-responsive-table :is(th,td) {
+    white-space: normal !important;
+  }
+}
+
+/* Complex tables become labeled cards before columns get cramped. */
+@media (max-width: 800px) {
+  .site-table-shell:has(> table.site-table--stack-wide) {
+    overflow: visible !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+  }
+
+  table.site-responsive-table.site-table--stack-wide {
+    display: block !important;
+    min-width: 0 !important;
+    border: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  table.site-responsive-table.site-table--stack-wide caption {
+    display: block;
+    width: 100%;
+    margin: 0 0 12px;
+    border: 1px solid #d9e4ee;
+    border-radius: 14px;
+    background: #f8fbff;
+  }
+
+  table.site-responsive-table.site-table--stack-wide thead {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0,0,0,0) !important;
+    clip-path: inset(50%) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+  }
+
+  table.site-responsive-table.site-table--stack-wide tbody,
+  table.site-responsive-table.site-table--stack-wide tfoot {
+    display: grid !important;
+    gap: 14px;
+    width: 100%;
+  }
+
+  table.site-responsive-table.site-table--stack-wide tbody > tr,
+  table.site-responsive-table.site-table--stack-wide tfoot > tr {
+    display: block !important;
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid #d9e4ee;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 8px 22px rgba(7, 21, 39, .055);
+  }
+
+  table.site-responsive-table.site-table--stack-wide tbody > tr > :is(th,td),
+  table.site-responsive-table.site-table--stack-wide tfoot > tr > :is(th,td) {
+    display: grid !important;
+    grid-template-columns: minmax(108px, 36%) minmax(0, 1fr);
+    gap: 14px;
+    width: 100% !important;
+    min-height: 46px;
+    padding: 12px 14px !important;
+    border: 0 !important;
+    border-top: 1px solid #e5edf4 !important;
+    background: #fff !important;
+    text-align: left !important;
+    white-space: normal !important;
+  }
+
+  table.site-responsive-table.site-table--stack-wide tbody > tr > :is(th,td):first-child,
+  table.site-responsive-table.site-table--stack-wide tfoot > tr > :is(th,td):first-child {
+    border-top: 0 !important;
+  }
+
+  table.site-responsive-table.site-table--stack-wide tbody > tr > :is(th,td)::before,
+  table.site-responsive-table.site-table--stack-wide tfoot > tr > :is(th,td)::before {
+    content: attr(data-label);
+    align-self: start;
+    color: #123b63;
+    font-size: 11px;
+    font-weight: 900;
+    line-height: 1.35;
+    letter-spacing: .055em;
+    text-transform: uppercase;
+  }
+
+  table.site-responsive-table.site-table--stack-wide tbody > tr:nth-child(even) > :is(th,td),
+  table.site-responsive-table.site-table--stack-wide tfoot > tr:nth-child(even) > :is(th,td) {
+    background: #fbfdff !important;
+  }
+}
+
+/* Two-column comparison tables also stack on narrow phones. */
+@media (max-width: 540px) {
+  .site-table-shell:has(> table.site-table--stack-phone) {
+    overflow: visible !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+  }
+
+  table.site-responsive-table.site-table--stack-phone {
+    display: block !important;
+    border: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  table.site-responsive-table.site-table--stack-phone thead {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0,0,0,0) !important;
+    clip-path: inset(50%) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+  }
+
+  table.site-responsive-table.site-table--stack-phone tbody {
+    display: grid !important;
+    gap: 12px;
+  }
+
+  table.site-responsive-table.site-table--stack-phone tbody > tr {
+    display: block !important;
+    overflow: hidden;
+    border: 1px solid #d9e4ee;
+    border-radius: 15px;
+    background: #fff;
+  }
+
+  table.site-responsive-table.site-table--stack-phone tbody > tr > :is(th,td) {
+    display: grid !important;
+    grid-template-columns: minmax(96px, 34%) minmax(0,1fr);
+    gap: 12px;
+    width: 100% !important;
+    padding: 11px 13px !important;
+    border: 0 !important;
+    border-top: 1px solid #e5edf4 !important;
+    background: #fff !important;
+    text-align: left !important;
+  }
+
+  table.site-responsive-table.site-table--stack-phone tbody > tr > :is(th,td):first-child {
+    border-top: 0 !important;
+  }
+
+  table.site-responsive-table.site-table--stack-phone tbody > tr > :is(th,td)::before {
+    content: attr(data-label);
+    color: #123b63;
+    font-size: 11px;
+    font-weight: 900;
+    line-height: 1.35;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 420px) {
+  table.site-responsive-table:is(.site-table--stack-wide,.site-table--stack-phone) tbody > tr > :is(th,td),
+  table.site-responsive-table:is(.site-table--stack-wide,.site-table--stack-phone) tfoot > tr > :is(th,td) {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+}
+
+@media print {
+  .site-table-shell {
+    overflow: visible !important;
+    border: 0 !important;
+    box-shadow: none !important;
+  }
+  table.site-responsive-table,
+  table.site-responsive-table :is(thead,tbody,tfoot,tr,th,td) {
+    display: revert !important;
+  }
+  table.site-responsive-table thead {
+    position: static !important;
+    width: auto !important;
+    height: auto !important;
+    clip: auto !important;
+    clip-path: none !important;
+  }
+  table.site-responsive-table :is(th,td)::before { content: none !important; }
+}

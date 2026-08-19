@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Ahmed Mahmoud Operations Atlas Portfolio</title>
+<meta content="Enhanced operations atlas portfolio design concept for Ahmed Mahmoud, InfraDispatch, projects, and insights." name="description"/>
+<style>
+    :root{
+      --ink:#102033;
+      --deep:#07111f;
+      --blue:#185a7d;
+      --teal:#0f8b7f;
+      --mint:#cfeee8;
+      --amber:#d8a027;
+      --rose:#cf5f4b;
+      --ivory:#fff8ea;
+      --cloud:#f4f8fb;
+      --white:#fff;
+      --muted:#617086;
+      --line:#d7e2ea;
+      --shadow:0 24px 70px rgba(16,32,51,.14);
+      --radius:14px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      color:var(--ink);
+      font-family:"Aptos","Segoe UI",Arial,sans-serif;
+      background:
+        linear-gradient(90deg,rgba(15,139,127,.055) 1px,transparent 1px),
+        linear-gradient(180deg,rgba(16,32,51,.045) 1px,transparent 1px),
+        linear-gradient(135deg,#f8fbfd 0%,#fff8ea 56%,#eff7f5 100%);
+      background-size:48px 48px,48px 48px,100% 100%;
+    }
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .shell{width:min(1280px,92vw);margin:0 auto}
+    .nav-wrap{
+      position:sticky;
+      top:0;
+      z-index:30;
+      padding:12px 0;
+      background:linear-gradient(180deg,rgba(248,251,253,.94),rgba(248,251,253,.78));
+      border-bottom:1px solid rgba(16,32,51,.08);
+      backdrop-filter:blur(18px);
+    }
+    .nav{
+      display:grid;
+      grid-template-columns:1fr auto;
+      align-items:center;
+      gap:20px;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:13px;
+      min-width:0;
+      font-weight:950;
+      color:var(--deep);
+    }
+    .brand-mark{
+      width:46px;
+      height:46px;
+      border-radius:16px;
+      display:grid;
+      place-items:center;
+      color:#fff;
+      background:
+        linear-gradient(135deg,rgba(216,160,39,.95),rgba(207,95,75,.75)),
+        var(--teal);
+      box-shadow:0 16px 34px rgba(15,139,127,.22);
+    }
+    .brand small{display:block;margin-top:3px;color:var(--muted);font-size:.73rem;font-weight:800}
+    .nav-links{
+      display:flex;
+      gap:6px;
+      align-items:center;
+      justify-content:flex-end;
+      flex-wrap:wrap;
+    }
+    .nav-links a{
+      border-radius:12px;
+      padding:10px 12px;
+      color:#34475e;
+      font-size:.86rem;
+      font-weight:900;
+    }
+    .nav-links a:hover{background:#e8f5f2;color:var(--deep)}
+    .nav-links .current{background:var(--deep);color:#fff}
+    .hero{
+      position:relative;
+      overflow:hidden;
+      padding:62px 0 34px;
+    }
+    .hero:before{
+      content:"";
+      position:absolute;
+      inset:22px 0 auto auto;
+      width:min(42vw,560px);
+      height:min(42vw,560px);
+      background:radial-gradient(circle,rgba(15,139,127,.22),transparent 66%);
+      pointer-events:none;
+    }
+    .hero-grid{
+      position:relative;
+      display:grid;
+      grid-template-columns:minmax(0,1.04fr) minmax(360px,.68fr);
+      gap:38px;
+      align-items:stretch;
+    }
+    .hero-copy{
+      min-height:650px;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      padding:34px 0;
+    }
+    .kicker{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      width:max-content;
+      color:#0b6f66;
+      font-size:.78rem;
+      font-weight:950;
+      letter-spacing:.16em;
+      text-transform:uppercase;
+    }
+    .kicker:before{content:"";width:40px;height:3px;border-radius:999px;background:var(--rose)}
+    h1,h2,h3,p{margin-top:0}
+    h1{
+      margin:18px 0 22px;
+      max-width:900px;
+      color:var(--deep);
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:clamp(3.35rem,7vw,7.8rem);
+      line-height:.88;
+      letter-spacing:-.045em;
+    }
+    .lead{
+      max-width:760px;
+      color:#42546b;
+      font-size:1.12rem;
+      line-height:1.8;
+    }
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+    .btn{
+      display:inline-flex;
+      min-height:48px;
+      align-items:center;
+      justify-content:center;
+      border-radius:14px;
+      padding:12px 17px;
+      border:1px solid transparent;
+      font-weight:950;
+    }
+    .primary{background:var(--teal);color:#fff;box-shadow:0 16px 34px rgba(15,139,127,.2)}
+    .secondary{background:#fff;color:var(--deep);border-color:var(--line)}
+    .atlas-card{
+      position:relative;
+      display:grid;
+      grid-template-rows:1fr auto;
+      min-height:650px;
+      overflow:hidden;
+      border-radius:28px;
+      background:var(--deep);
+      color:#fff;
+      box-shadow:var(--shadow);
+      border:1px solid rgba(16,32,51,.1);
+    }
+    .atlas-card img{width:100%;height:100%;object-fit:cover;object-position:top center;opacity:.88}
+    .atlas-caption{
+      position:absolute;
+      left:18px;
+      right:18px;
+      bottom:18px;
+      display:grid;
+      grid-template-columns:1fr auto;
+      gap:16px;
+      align-items:end;
+      padding:18px;
+      border-radius:20px;
+      background:rgba(255,255,255,.92);
+      color:var(--deep);
+      border:1px solid rgba(255,255,255,.48);
+      backdrop-filter:blur(16px);
+    }
+    .atlas-caption strong{display:block;font-family:Georgia,"Times New Roman",serif;font-size:1.55rem;line-height:1.05}
+    .atlas-caption span{display:block;color:var(--muted);font-size:.9rem;line-height:1.45;margin-top:6px}
+    .status-dot{
+      width:58px;
+      height:58px;
+      border-radius:18px;
+      display:grid;
+      place-items:center;
+      background:var(--amber);
+      color:#281f07;
+      font-weight:950;
+    }
+    .ribbon{
+      margin-top:-4px;
+      position:relative;
+      z-index:4;
+    }
+    .ribbon-grid{
+      display:grid;
+      grid-template-columns:1.2fr 1fr 1fr;
+      gap:14px;
+    }
+    .ribbon-card{
+      min-height:150px;
+      border:1px solid var(--line);
+      border-radius:22px;
+      padding:22px;
+      background:rgba(255,255,255,.86);
+      box-shadow:0 18px 44px rgba(16,32,51,.09);
+      backdrop-filter:blur(10px);
+    }
+    .ribbon-card strong{display:block;color:var(--deep);font-family:Georgia,"Times New Roman",serif;font-size:1.65rem;line-height:1.05}
+    .ribbon-card span{display:block;margin-top:10px;color:var(--muted);line-height:1.55}
+    .section{padding:86px 0}
+    .section-head{
+      display:grid;
+      grid-template-columns:minmax(0,.88fr) minmax(310px,.42fr);
+      gap:36px;
+      align-items:end;
+      margin-bottom:30px;
+    }
+    .section h2{
+      margin:10px 0 0;
+      max-width:880px;
+      color:var(--deep);
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:clamp(2.5rem,4.7vw,5.2rem);
+      line-height:.94;
+      letter-spacing:-.03em;
+    }
+    .intro{color:var(--muted);line-height:1.74}
+    .work-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr 1fr;
+      gap:16px;
+      align-items:stretch;
+    }
+    .work-card{
+      position:relative;
+      min-height:420px;
+      overflow:hidden;
+      border-radius:24px;
+      background:#111;
+      color:#fff;
+      box-shadow:0 20px 56px rgba(16,32,51,.14);
+    }
+    .work-card.feature{grid-column:span 2}
+    .work-card img{
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      opacity:.76;
+      transform:scale(1.02);
+    }
+    .work-card:after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:linear-gradient(180deg,rgba(7,17,31,.02),rgba(7,17,31,.9));
+    }
+    .work-copy{
+      position:absolute;
+      z-index:2;
+      left:0;
+      right:0;
+      bottom:0;
+      padding:24px;
+    }
+    .pill{
+      display:inline-flex;
+      margin-bottom:13px;
+      border-radius:999px;
+      padding:8px 10px;
+      background:var(--ivory);
+      color:#6e4b08;
+      font-size:.74rem;
+      font-weight:950;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+    }
+    .work-card h3{font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.8rem,3vw,3.35rem);line-height:.96;margin-bottom:10px}
+    .work-card p{margin:0;color:#e7edf3;line-height:1.6}
+    .case-section{
+      background:
+        radial-gradient(circle at 88% 10%,rgba(207,95,75,.16),transparent 30%),
+        linear-gradient(135deg,#07111f,#11324a);
+      color:#fff;
+    }
+    .case-section h2{color:#fff}
+    .case-section .intro{color:#cedbe7}
+    .case-layout{
+      display:grid;
+      grid-template-columns:minmax(0,1fr) minmax(320px,.42fr);
+      gap:18px;
+    }
+    .case-main,.case-side,.article,.system-panel{
+      border-radius:24px;
+      overflow:hidden;
+      background:#fff;
+      border:1px solid rgba(16,32,51,.1);
+      box-shadow:var(--shadow);
+    }
+    .case-main{color:var(--ink)}
+    .case-visual{
+      display:grid;
+      grid-template-columns:1fr .72fr;
+      min-height:360px;
+      background:#f3f8fb;
+      border-bottom:1px solid var(--line);
+    }
+    .case-visual img{width:100%;height:100%;object-fit:cover}
+    .route-board{display:grid;gap:12px;align-content:center;padding:28px}
+    .route-step{
+      border-radius:16px;
+      padding:15px;
+      background:#fff;
+      border:1px solid var(--line);
+      color:var(--deep);
+      font-weight:950;
+    }
+    .case-copy{padding:30px}
+    .case-copy h3{color:var(--deep);font-family:Georgia,"Times New Roman",serif;font-size:3rem;line-height:1;margin-bottom:12px}
+    .case-copy p{color:var(--muted);line-height:1.7}
+    .metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:22px}
+    .metric{border-radius:16px;padding:16px;background:#eef8f5;border:1px solid #c9e8e1}
+    .metric strong{display:block;color:#0b665d}
+    .metric span{display:block;margin-top:6px;color:#536477;font-size:.87rem;line-height:1.45}
+    .case-side{padding:22px;color:var(--ink);display:grid;gap:14px;align-content:start}
+    .note{border-radius:18px;padding:17px;background:#f8fbfd;border:1px solid var(--line)}
+    .note strong{display:block;color:var(--deep);margin-bottom:7px}
+    .note p{margin:0;color:var(--muted);line-height:1.55}
+    .insights{
+      display:grid;
+      grid-template-columns:.86fr 1.14fr;
+      gap:18px;
+    }
+    .system-panel{
+      padding:30px;
+      color:#fff;
+      background:
+        linear-gradient(135deg,rgba(15,139,127,.94),rgba(24,90,125,.95)),
+        var(--teal);
+    }
+    .system-panel h3{font-family:Georgia,"Times New Roman",serif;font-size:2.8rem;line-height:.98;margin-bottom:16px}
+    .system-panel p{color:#e7f5f1;line-height:1.72}
+    .topic-list{display:grid;gap:10px;margin-top:24px}
+    .topic-list span{border-radius:14px;padding:13px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);font-weight:900}
+    .article-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .article img{width:100%;height:150px;object-fit:cover;background:#eef5f8}
+    .article-copy{padding:20px}
+    .article h3{color:var(--deep);font-family:Georgia,"Times New Roman",serif;font-size:1.55rem;line-height:1.08;margin:8px 0}
+    .article p{color:var(--muted);line-height:1.58}
+    .date{font-size:.84rem;font-weight:900;color:#68798c}
+    .palette{
+      display:grid;
+      grid-template-columns:1.2fr repeat(4,1fr);
+      gap:14px;
+    }
+    .palette-card{
+      min-height:170px;
+      border-radius:22px;
+      padding:20px;
+      background:#fff;
+      border:1px solid var(--line);
+      box-shadow:0 16px 40px rgba(16,32,51,.09);
+    }
+    .palette-card.lead-card{background:var(--deep);color:#fff}
+    .palette-card strong{display:block;font-family:Georgia,"Times New Roman",serif;font-size:1.45rem;line-height:1.05}
+    .palette-card span{display:block;margin-top:10px;color:var(--muted);line-height:1.55}
+    .palette-card.lead-card span{color:#d7e4ef}
+    .swatch{height:52px;border-radius:16px;margin-bottom:14px;border:1px solid rgba(16,32,51,.12)}
+    .footer{padding:46px 0;color:var(--muted)}
+    @media(max-width:1040px){
+      .hero-grid,.section-head,.case-layout,.insights{grid-template-columns:1fr}
+      .hero-copy,.atlas-card{min-height:auto}
+      .atlas-card img{height:560px}
+      .ribbon-grid,.work-grid,.palette{grid-template-columns:1fr 1fr}
+      .work-card.feature{grid-column:span 2}
+      .case-visual{grid-template-columns:1fr}
+      .nav{grid-template-columns:1fr}
+      .nav-links{justify-content:flex-start}
+    }
+    @media(max-width:680px){
+      .hero{padding-top:34px}
+      .atlas-card img{height:430px}
+      .atlas-caption{grid-template-columns:1fr}
+      .ribbon-grid,.work-grid,.metrics,.article-grid,.palette{grid-template-columns:1fr}
+      .work-card.feature{grid-column:auto}
+      .work-card{min-height:410px}
+      .section{padding:62px 0}
+      .case-copy,.system-panel{padding:22px}
+    }
+  </style>
+<link href="/assets/css/final-enhancements.css?v=20260712" rel="stylesheet"/>
+<link href="../assets/css/table-responsive-v16.css?v=20260721" rel="stylesheet"/></head>
+<body>
+<header class="nav-wrap">
+<div class="shell nav">
+<a class="brand" href="#top">
+<span class="brand-mark">AM</span>
+<span>Ahmed Mahmoud <small>Operations atlas portfolio concept</small></span>
+</a>
+<nav aria-label="Atlas concept navigation" class="nav-links">
+<a href="#work">Work</a>
+<a href="#case">Case</a>
+<a href="#insights">Insights</a>
+<a href="#palette">Palette</a>
+<a class="current" href="#top">Top</a>
+<a href="../tourism-ai-operations-playbook.html">AI Playbook</a></nav>
+</div>
+</header>
+<main id="top">
+<section class="hero">
+<div class="shell hero-grid">
+<div class="hero-copy">
+<span class="kicker">Enhanced style direction</span>
+<h1>The operations atlas for tourism systems thinking.</h1>
+<p class="lead">A more refined, memorable portfolio style: lighter than the executive navy concept, richer than the color concept, and designed to position Ahmed as a practical operator who can translate messy tourism workflows into clear systems.</p>
+<div class="hero-actions">
+<a class="btn primary" href="#work">Explore the atlas</a>
+<a class="btn secondary" href="#palette">View palette</a>
+</div>
+</div>
+<aside class="atlas-card">
+<img alt="Ahmed Mahmoud executive portrait" src="assets/ahmed-mahmoud-photo-executive.jpeg"/>
+<div class="atlas-caption">
+<div>
+<strong>Premium, warmer, sharper.</strong>
+<span>Deep ink authority, teal system energy, amber premium cues, and rose human-service accents.</span>
+</div>
+<div class="status-dot">2026</div>
+</div>
+</aside>
+</div>
+</section>
+<section aria-label="Positioning summary" class="ribbon">
+<div class="shell ribbon-grid">
+<div class="ribbon-card"><strong>Flagship project first</strong><span>InfraDispatch stays the strongest proof point and is framed accurately as a smart rule-based dispatch planner/demo.</span></div>
+<div class="ribbon-card"><strong>Systems thinker</strong><span>Projects are presented as operational models, not isolated website cards.</span></div>
+<div class="ribbon-card"><strong>Thought leadership</strong><span>Insights become a field manual for tourism operators and recruiters.</span></div>
+</div>
+</section>
+<section class="section" id="work">
+<div class="shell">
+<div class="section-head">
+<div>
+<span class="kicker">Portfolio Section</span>
+<h2>Project cards become map plates in an operations atlas.</h2>
+</div>
+<p class="intro">This layout gives each project more visual confidence. InfraDispatch spans the largest area, while supporting work demonstrates range across assignment logic, quotation, fleet readiness, and experience design.</p>
+</div>
+<div class="work-grid">
+<article class="work-card feature">
+<img alt="InfraDispatch project artwork" src="assets/og-v14/og-infradispatch.svg"/>
+<div class="work-copy">
+<span class="pill">Flagship active project</span>
+<h3>InfraDispatch</h3>
+<p>Smart rule-based dispatch planner/demo for pickup sequencing, team briefing outputs, and operational decision support.</p>
+</div>
+</article>
+<article class="work-card">
+<img alt="Assignment engine artwork" src="assets/articles/assignment-engine-hero.svg"/>
+<div class="work-copy">
+<span class="pill">Assignment logic</span>
+<h3>Right person, right operation</h3>
+<p>Guide, driver, timing, capability, and guest-context thinking.</p>
+</div>
+</article>
+<article class="work-card">
+<img alt="Quotation masterclass artwork" src="assets/og-v14/og-masterclass.svg"/>
+<div class="work-copy">
+<span class="pill">Commercial clarity</span>
+<h3>InfraQuote</h3>
+<p>Cost, margin, VAT, transport, tickets, gratuities, and break-even workflow.</p>
+</div>
+</article>
+<article class="work-card">
+<img alt="InfraSky artwork" src="assets/og/og-infrasky.svg"/>
+<div class="work-copy">
+<span class="pill">Static prototype</span>
+<h3>InfraSky</h3>
+<p>Condition-aware planning for stargazing tour readiness.</p>
+</div>
+</article>
+<article class="work-card">
+<img alt="Fleet control tower artwork" src="assets/articles/fleet-control-tower-hero.svg"/>
+<div class="work-copy">
+<span class="pill">Control tower</span>
+<h3>Fleet readiness</h3>
+<p>Exception, risk, and manager-attention dashboard thinking.</p>
+</div>
+</article>
+</div>
+</div>
+</section>
+<section class="section case-section" id="case">
+<div class="shell">
+<div class="section-head">
+<div>
+<span class="kicker" style="color:#ead08a">Projects Section</span>
+<h2>A project detail page with real product-story gravity.</h2>
+</div>
+<p class="intro">The case study structure makes the work feel serious: visual evidence, workflow sequence, measurable claims only when available, and clear static/demo boundaries.</p>
+</div>
+<div class="case-layout">
+<article class="case-main">
+<div class="case-visual">
+<img alt="Fleet readiness board visual" src="assets/articles/fleet-readiness-board.svg"/>
+<div class="route-board">
+<div class="route-step">01 Capture hotels, guests, timing, vehicle needs</div>
+<div class="route-step">02 Apply sequencing and assignment rules</div>
+<div class="route-step">03 Generate team-ready briefing outputs</div>
+</div>
+</div>
+<div class="case-copy">
+<span class="pill">Featured case study</span>
+<h3>InfraDispatch</h3>
+<p>Use this style to explain what the product demo does, who it helps, what problem it addresses, and what still needs backend/API work before it can be described as a production platform.</p>
+<div class="metrics">
+<div class="metric"><strong>Problem</strong><span>Fragmented pickup, guide, driver, and vehicle coordination.</span></div>
+<div class="metric"><strong>Logic</strong><span>Rule-based planning and briefing outputs in a static frontend demo.</span></div>
+<div class="metric"><strong>Boundary</strong><span>No live routing, traffic, accounts, OTA inventory, or backend yet.</span></div>
+</div>
+</div>
+</article>
+<aside class="case-side">
+<div class="note"><strong>Populate with</strong><p>Real screenshots, workflow diagrams, sample outputs, use cases, role, and implementation notes.</p></div>
+<div class="note"><strong>Recruiter value</strong><p>Shows Ahmed can think in systems, prioritize operational clarity, and respect product boundaries.</p></div>
+<div class="note"><strong>Next build path</strong><p>Backend, authenticated accounts, live routing, verified inventory, API contracts, QA data, and analytics.</p></div>
+</aside>
+</div>
+</div>
+</section>
+<section class="section" id="insights">
+<div class="shell">
+<div class="section-head">
+<div>
+<span class="kicker">Insights Section</span>
+<h2>Insights as a field manual, not a generic blog.</h2>
+</div>
+<p class="intro">The enhanced style makes articles feel like practical operator notes: clear categories, useful previews, visual diagrams, and topics that reinforce Ahmed's domain expertise.</p>
+</div>
+<div class="insights">
+<aside class="system-panel">
+<span class="pill">Editorial system</span>
+<h3>Write from inside the operation.</h3>
+<p>Each article should explain how to make a decision, reduce risk, improve coordination, or understand a commercial workflow.</p>
+<div class="topic-list">
+<span>DMC operations systems</span>
+<span>Assignment and service quality</span>
+<span>Quotation and sales workflows</span>
+<span>Destination experience logic</span>
+</div>
+</aside>
+<div class="article-grid">
+<article class="article">
+<img alt="Fleet control tower article visual" src="assets/articles/fleet-control-tower-hero.svg"/>
+<div class="article-copy"><span class="kicker">Operations</span><h3>The Fleet Control Tower</h3><p>What managers should see on one screen when readiness and exceptions matter.</p><span class="date">Published · Operations systems</span></div>
+</article>
+<article class="article">
+<img alt="Assignment scorecard article visual" src="assets/articles/assignment-fit-scorecard.svg"/>
+<div class="article-copy"><span class="kicker">Assignment</span><h3>The Assignment Engine</h3><p>How to match people, timing, guest profile, and operational risk.</p><span class="date">Published · Service quality</span></div>
+</article>
+<article class="article">
+<img alt="DMC sales partnership visual" src="assets/insights/dmc-sales-partnership-flow.svg"/>
+<div class="article-copy"><span class="kicker">Sales</span><h3>From Introduction to Group</h3><p>A practical DMC sales scenario from signal to confirmed movement.</p><span class="date">Published · DMC sales</span></div>
+</article>
+<article class="article">
+<img alt="Tour quotation visual" src="assets/og-v14/og-masterclass.svg"/>
+<div class="article-copy"><span class="kicker">Quotation</span><h3>Pricing Masterclass</h3><p>Net cost, selling price, markup, VAT, transport, and break-even risk.</p><span class="date">Published · Commercial clarity</span></div>
+</article>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="palette">
+<div class="shell">
+<div class="section-head">
+<div>
+<span class="kicker">New Style System</span>
+<h2>More premium than bright, more human than corporate.</h2>
+</div>
+<p class="intro">This palette improves the previous version by lowering visual noise, sharpening contrast, and using color roles more intentionally.</p>
+</div>
+<div class="palette">
+<div class="palette-card lead-card"><strong>Operations Atlas</strong><span>The central idea: maps, systems, decisions, routes, workflows, and field-tested insight.</span></div>
+<div class="palette-card"><div class="swatch" style="background:#07111f"></div><strong>Deep Ink</strong><span>Authority, headers, premium contrast.</span></div>
+<div class="palette-card"><div class="swatch" style="background:#0f8b7f"></div><strong>System Teal</strong><span>Product intelligence and clarity.</span></div>
+<div class="palette-card"><div class="swatch" style="background:#d8a027"></div><strong>Atlas Amber</strong><span>Premium status and UAE warmth.</span></div>
+<div class="palette-card"><div class="swatch" style="background:#cf5f4b"></div><strong>Service Rose</strong><span>Human hospitality accent.</span></div>
+</div>
+</div>
+</section>
+</main>
+<footer class="footer">
+<div class="shell">
+<strong>Static concept boundary:</strong> This is a visual design concept only. It uses local assets and does not add backend, live routing, traffic, inventory, account, or API functionality.
+    </div>
+</footer>
+<script defer="True" src="../assets/js/table-responsive-v16.js?v=20260721"></script></body>
+</html>

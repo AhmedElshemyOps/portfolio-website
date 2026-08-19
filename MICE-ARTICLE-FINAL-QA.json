@@ -1,0 +1,124 @@
+{
+  "all_checks_pass": true,
+  "all_wording_unchanged": true,
+  "broken_local_references": [],
+  "pages": [
+    {
+      "file": "article-abu-dhabi-mice-movement-control-room.html",
+      "one_h1": true,
+      "standard_body_class": true,
+      "standard_hero": true,
+      "left_toc": true,
+      "article_content": true,
+      "reading_time_card": true,
+      "reading_minutes": "25",
+      "reading_minutes_correct": true,
+      "same_stylesheet_stack": true,
+      "toc_targets_exist": true,
+      "wording_preserved_marker": true
+    },
+    {
+      "file": "article-mice-arrival-waves-zayed-international-airport.html",
+      "one_h1": true,
+      "standard_body_class": true,
+      "standard_hero": true,
+      "left_toc": true,
+      "article_content": true,
+      "reading_time_card": true,
+      "reading_minutes": "35",
+      "reading_minutes_correct": true,
+      "same_stylesheet_stack": true,
+      "toc_targets_exist": true,
+      "wording_preserved_marker": true
+    },
+    {
+      "file": "article-mice-hotel-desks-coach-departures-abu-dhabi.html",
+      "one_h1": true,
+      "standard_body_class": true,
+      "standard_hero": true,
+      "left_toc": true,
+      "article_content": true,
+      "reading_time_card": true,
+      "reading_minutes": "35",
+      "reading_minutes_correct": true,
+      "same_stylesheet_stack": true,
+      "toc_targets_exist": true,
+      "wording_preserved_marker": true
+    },
+    {
+      "file": "article-mice-venue-arrivals-registration-abu-dhabi.html",
+      "one_h1": true,
+      "standard_body_class": true,
+      "standard_hero": true,
+      "left_toc": true,
+      "article_content": true,
+      "reading_time_card": true,
+      "reading_minutes": "35",
+      "reading_minutes_correct": true,
+      "same_stylesheet_stack": true,
+      "toc_targets_exist": true,
+      "wording_preserved_marker": true
+    },
+    {
+      "file": "article-mice-backup-operations-service-recovery-abu-dhabi.html",
+      "one_h1": true,
+      "standard_body_class": true,
+      "standard_hero": true,
+      "left_toc": true,
+      "article_content": true,
+      "reading_time_card": true,
+      "reading_minutes": "35",
+      "reading_minutes_correct": true,
+      "same_stylesheet_stack": true,
+      "toc_targets_exist": true,
+      "wording_preserved_marker": true
+    }
+  ],
+  "wording_checks": [
+    {
+      "file": "article-abu-dhabi-mice-movement-control-room.html",
+      "title": "The Abu Dhabi MICE Movement Control Room",
+      "minutes": "25",
+      "toc_items": 13,
+      "wording_checksum_before": "6be766318c2ed0e8674a44e405e38e049ead9325ab71af94430e16a11f73892a",
+      "wording_checksum_after": "6be766318c2ed0e8674a44e405e38e049ead9325ab71af94430e16a11f73892a",
+      "wording_unchanged": true
+    },
+    {
+      "file": "article-mice-arrival-waves-zayed-international-airport.html",
+      "title": "Before the Delegate Reaches the Hotel",
+      "minutes": "35",
+      "toc_items": 23,
+      "wording_checksum_before": "bfcc791a8f8c67fb717b85f1dda8e6674ee1f3efc817bf61bffc23441a54f04c",
+      "wording_checksum_after": "bfcc791a8f8c67fb717b85f1dda8e6674ee1f3efc817bf61bffc23441a54f04c",
+      "wording_unchanged": true
+    },
+    {
+      "file": "article-mice-hotel-desks-coach-departures-abu-dhabi.html",
+      "title": "From Hotel Lobby to Coach Door",
+      "minutes": "35",
+      "toc_items": 27,
+      "wording_checksum_before": "e9ac7b2ee47ba4741cb2cd63387ad3ab1a98caa388b45af4d00ae5c1fb6ec922",
+      "wording_checksum_after": "e9ac7b2ee47ba4741cb2cd63387ad3ab1a98caa388b45af4d00ae5c1fb6ec922",
+      "wording_unchanged": true
+    },
+    {
+      "file": "article-mice-venue-arrivals-registration-abu-dhabi.html",
+      "title": "From Coach Bay to Conference Seat",
+      "minutes": "35",
+      "toc_items": 30,
+      "wording_checksum_before": "500d8f617f8c8fd41ea95297638c68eb95982f74e0962122913725f8ea942c4c",
+      "wording_checksum_after": "500d8f617f8c8fd41ea95297638c68eb95982f74e0962122913725f8ea942c4c",
+      "wording_unchanged": true
+    },
+    {
+      "file": "article-mice-backup-operations-service-recovery-abu-dhabi.html",
+      "title": "When the MICE Plan Changes",
+      "minutes": "35",
+      "toc_items": 34,
+      "wording_checksum_before": "eb8f69feeafb95e14570be445c6597e2bd878c4255d92a1f88ebd6b28b49531d",
+      "wording_checksum_after": "eb8f69feeafb95e14570be445c6597e2bd878c4255d92a1f88ebd6b28b49531d",
+      "wording_unchanged": true
+    }
+  ]
+}

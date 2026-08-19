@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">Tour guide interpretation system</title>
+<desc id="desc">A professional tour guide interpretation board showing how destination promise, story structure, verified facts, guide interaction and operational notes work together.</desc>
+<defs>
+  <linearGradient id="canvas" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#071427"/>
+    <stop offset=".58" stop-color="#123b63"/>
+    <stop offset="1" stop-color="#0f5a70"/>
+  </linearGradient>
+  <linearGradient id="surface" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#ffffff"/>
+    <stop offset="1" stop-color="#eef6ff"/>
+  </linearGradient>
+  <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#f4d876"/>
+    <stop offset="1" stop-color="#c89a38"/>
+  </linearGradient>
+  <pattern id="grid" width="52" height="52" patternUnits="userSpaceOnUse">
+    <path d="M52 0H0V52" fill="none" stroke="#d7e8f8" stroke-opacity=".09" stroke-width="1"/>
+  </pattern>
+  <filter id="shadow" x="-12%" y="-12%" width="124%" height="130%">
+    <feDropShadow dx="0" dy="24" stdDeviation="24" flood-color="#001326" flood-opacity=".24"/>
+  </filter>
+  <filter id="cardShadow" x="-14%" y="-14%" width="128%" height="132%">
+    <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#001326" flood-opacity=".13"/>
+  </filter>
+  <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+    <path d="M0 0L10 5L0 10Z" fill="#d5ae52"/>
+  </marker>
+</defs>
+
+<rect width="1600" height="900" rx="44" fill="url(#canvas)"/>
+<rect width="1600" height="900" rx="44" fill="url(#grid)"/>
+<path d="M1162 0H1600V900H1270C1382 708 1404 488 1334 270C1288 128 1218 42 1162 0Z" fill="#ffffff" opacity=".07"/>
+
+<g font-family="Aptos, Segoe UI, Helvetica, Arial, sans-serif">
+  <text x="82" y="96" fill="#f0ca67" font-size="22" font-weight="850" letter-spacing="5">TOUR GUIDE DEVELOPMENT</text>
+  <text x="82" y="158" fill="#ffffff" font-size="56" font-weight="850">Interpretation system for professional guides</text>
+  <text x="82" y="204" fill="#d6e8f7" font-size="25">A clean operating model for turning verified facts into a flexible, memorable guest experience.</text>
+
+  <g transform="translate(82 252)" filter="url(#shadow)">
+    <rect width="1436" height="552" rx="34" fill="url(#surface)"/>
+    <rect width="1436" height="88" rx="34" fill="#08192f"/>
+    <path d="M0 56H1436V108H0Z" fill="#08192f"/>
+    <text x="34" y="55" fill="#f1cf70" font-size="18" font-weight="850" letter-spacing="4">GUIDE TRAINING BOARD</text>
+    <text x="1166" y="55" fill="#cfe2f3" font-size="20" font-weight="760">Seven practical layers</text>
+
+    <g transform="translate(42 126)">
+      <rect width="1352" height="296" rx="26" fill="#f8fbff" stroke="#cadbea"/>
+      <g stroke="#d5ae52" stroke-width="4" stroke-linecap="round" fill="none" marker-end="url(#arrow)">
+        <path d="M306 150H356"/>
+        <path d="M648 150H698"/>
+        <path d="M990 150H1040"/>
+      </g>
+
+      <g filter="url(#cardShadow)">
+        <g transform="translate(24 44)">
+          <rect width="282" height="212" rx="22" fill="#ffffff" stroke="#d9e5f0"/>
+          <rect x="22" y="22" width="44" height="44" rx="14" fill="url(#gold)"/>
+          <text x="44" y="51" text-anchor="middle" fill="#06152a" font-size="16" font-weight="900">01</text>
+          <text x="82" y="42" fill="#765a12" font-size="13" font-weight="900" letter-spacing="2">GUEST PROMISE</text>
+          <text x="22" y="92" fill="#061d3b" font-size="27" font-weight="900">Destination</text>
+          <text x="22" y="126" fill="#061d3b" font-size="27" font-weight="900">promise</text>
+          <text x="22" y="166" fill="#52677e" font-size="17">What should the place</text>
+          <text x="22" y="190" fill="#52677e" font-size="17">feel like to the guest?</text>
+        </g>
+
+        <g transform="translate(366 44)">
+          <rect width="282" height="212" rx="22" fill="#ffffff" stroke="#d9e5f0"/>
+          <rect x="22" y="22" width="44" height="44" rx="14" fill="url(#gold)"/>
+          <text x="44" y="51" text-anchor="middle" fill="#06152a" font-size="16" font-weight="900">02</text>
+          <text x="82" y="42" fill="#765a12" font-size="13" font-weight="900" letter-spacing="2">MAIN STORY</text>
+          <text x="22" y="92" fill="#061d3b" font-size="27" font-weight="900">Tour narrative</text>
+          <text x="22" y="126" fill="#061d3b" font-size="27" font-weight="900">and sequence</text>
+          <text x="22" y="166" fill="#52677e" font-size="17">A clear journey, not a list</text>
+          <text x="22" y="190" fill="#52677e" font-size="17">of disconnected facts.</text>
+        </g>
+
+        <g transform="translate(708 44)">
+          <rect width="282" height="212" rx="22" fill="#fff7df" stroke="#e5cc82"/>
+          <rect x="22" y="22" width="44" height="44" rx="14" fill="#061d3b"/>
+          <text x="44" y="51" text-anchor="middle" fill="#ffffff" font-size="16" font-weight="900">03</text>
+          <text x="82" y="42" fill="#765a12" font-size="13" font-weight="900" letter-spacing="2">FACT CONTROL</text>
+          <text x="22" y="92" fill="#061d3b" font-size="27" font-weight="900">Verified facts</text>
+          <text x="22" y="126" fill="#061d3b" font-size="27" font-weight="900">with purpose</text>
+          <text x="22" y="166" fill="#52677e" font-size="17">Only facts that support</text>
+          <text x="22" y="190" fill="#52677e" font-size="17">the story and context.</text>
+        </g>
+
+        <g transform="translate(1050 44)">
+          <rect width="278" height="212" rx="22" fill="#ffffff" stroke="#d9e5f0"/>
+          <rect x="22" y="22" width="44" height="44" rx="14" fill="url(#gold)"/>
+          <text x="44" y="51" text-anchor="middle" fill="#06152a" font-size="16" font-weight="900">04</text>
+          <text x="82" y="42" fill="#765a12" font-size="13" font-weight="900" letter-spacing="2">GUIDE DELIVERY</text>
+          <text x="22" y="92" fill="#061d3b" font-size="27" font-weight="900">Flexible voice</text>
+          <text x="22" y="126" fill="#061d3b" font-size="27" font-weight="900">and interaction</text>
+          <text x="22" y="166" fill="#52677e" font-size="17">Use questions to adapt</text>
+          <text x="22" y="190" fill="#52677e" font-size="17">to the guest profile.</text>
+        </g>
+      </g>
+    </g>
+
+    <g transform="translate(66 408)" filter="url(#cardShadow)">
+      <rect width="402" height="70" rx="18" fill="#ffffff" stroke="#d9e5f0"/>
+      <rect x="18" y="16" width="38" height="38" rx="13" fill="url(#gold)"/>
+      <text x="37" y="41" text-anchor="middle" fill="#06152a" font-size="15" font-weight="900">05</text>
+      <text x="72" y="31" fill="#061d3b" font-size="20" font-weight="900">Approved scripts</text>
+      <text x="72" y="55" fill="#52677e" font-size="15">Safety, meeting points and rules.</text>
+
+      <rect x="474" width="402" height="70" rx="18" fill="#061d3b"/>
+      <rect x="492" y="16" width="38" height="38" rx="13" fill="url(#gold)"/>
+      <text x="511" y="41" text-anchor="middle" fill="#06152a" font-size="15" font-weight="900">06</text>
+      <text x="546" y="31" fill="#ffffff" font-size="20" font-weight="900">Guest questions</text>
+      <text x="546" y="55" fill="#cfe2f3" font-size="15">Adapt the story to the group.</text>
+
+      <rect x="948" width="388" height="70" rx="18" fill="#ffffff" stroke="#d9e5f0"/>
+      <rect x="966" y="16" width="38" height="38" rx="13" fill="url(#gold)"/>
+      <text x="985" y="41" text-anchor="middle" fill="#06152a" font-size="15" font-weight="900">07</text>
+      <text x="1020" y="31" fill="#061d3b" font-size="20" font-weight="900">Operational notes</text>
+      <text x="1020" y="55" fill="#52677e" font-size="15">Access, timing and comfort.</text>
+    </g>
+
+    <g transform="translate(64 500)">
+      <rect width="1308" height="38" rx="19" fill="#eaf3fb" stroke="#c8d9e8"/>
+      <text x="24" y="25" fill="#173b61" font-size="15" font-weight="900" letter-spacing="1.5">PROFESSIONAL STANDARD:</text>
+      <text x="306" y="25" fill="#45617d" font-size="16">accurate facts, flexible delivery and operating control.</text>
+      <rect x="1148" y="7" width="132" height="24" rx="12" fill="#fff7df" stroke="#e1c573"/>
+      <text x="1214" y="25" text-anchor="middle" fill="#765a12" font-size="12" font-weight="900" letter-spacing="1.3">FIELD READY</text>
+    </g>
+  </g>
+</g>
+</svg>

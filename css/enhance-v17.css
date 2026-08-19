@@ -1,0 +1,414 @@
+/* ============================================================
+   Ahmed Quality Ops — V17 Enhancement Layer
+   Layers cleanly over premium-v15.css. No HTML changes needed.
+   Focus: visual rhythm, signature element, micro-interactions,
+          typography refinement, footer, section contrast.
+   ============================================================ */
+
+/* ─── 1. HERO: OPERATIONS-GRID BACKGROUND ────────────────── */
+/* The signature element: a faint dot-grid pattern that nods to
+   dispatch planning grids — ops-minded, distinctive, subtle.   */
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(201,164,74,.18) 1px, transparent 1px);
+  background-size: 28px 28px;
+  pointer-events: none;
+  z-index: 0;
+  mask-image: linear-gradient(to bottom right, transparent 0%, rgba(0,0,0,.5) 40%, rgba(0,0,0,.9) 70%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom right, transparent 0%, rgba(0,0,0,.5) 40%, rgba(0,0,0,.9) 70%, transparent 100%);
+}
+/* Keep radial gold glow as second layer */
+.hero::after {
+  content: '';
+  position: absolute;
+  right: -100px; top: -80px;
+  width: 520px; height: 520px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(201,164,74,.2) 0%, transparent 65%);
+  pointer-events: none;
+  z-index: 0;
+}
+/* Ensure hero content sits above both */
+.hero > *, .hero-grid { position: relative; z-index: 1; }
+
+/* InfraDispatch hero same treatment */
+.hero.hero-grid::before {
+  background-image: radial-gradient(circle, rgba(201,164,74,.14) 1px, transparent 1px);
+  background-size: 28px 28px;
+  mask-image: linear-gradient(to bottom right, transparent 0%, rgba(0,0,0,.4) 40%, rgba(0,0,0,.8) 70%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom right, transparent 0%, rgba(0,0,0,.4) 40%, rgba(0,0,0,.8) 70%, transparent 100%);
+}
+
+/* ─── 2. HERO LEAD TEXT: more contrast ───────────────────── */
+.hero .lead {
+  color: #b0c8de !important;
+  font-size: clamp(16px, 1.75vw, 18.5px) !important;
+}
+
+/* ─── 3. SECTION RHYTHM: alternating backgrounds ─────────── */
+/* Sections alternate: bg (#f4f6fb) → white → bg to prevent
+   the page feeling like one uniform flat scroll.               */
+.section:nth-of-type(even) {
+  background: #fff;
+}
+/* Named sections that should always be white */
+#projects, #certifications {
+  background: #fff;
+}
+/* Stats section: white pill on bg */
+.stats.section-tight {
+  background: transparent;
+}
+
+/* ─── 4. SECTION-HEAD H2: tighter, more decisive ─────────── */
+.section-head h2 {
+  font-size: clamp(28px, 3.8vw, 46px) !important;
+  letter-spacing: -.045em !important;
+  line-height: 1.04 !important;
+}
+
+/* ─── 5. CARD IMPROVEMENTS ───────────────────────────────── */
+/* All cards: smooth gold-border reveal on hover */
+.card {
+  transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease !important;
+}
+.card:not(.project):hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 50px rgba(6,17,42,.12) !important;
+  border-color: rgba(201,164,74,.4) !important;
+}
+/* Remove the generic top-gradient line from non-project cards —
+   it was overused. Use border-color shift instead (above).      */
+.card:not(.project)::before {
+  display: none;
+}
+/* Step cards: numbered circle styled properly */
+.step-card span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #c9a44a, #8a6b20);
+  color: #06112a;
+  font-weight: 900;
+  font-size: 14px;
+  margin-bottom: 14px;
+  box-shadow: 0 6px 16px rgba(201,164,74,.3);
+}
+
+/* ─── 6. PATHWAYS SECTION ────────────────────────────────── */
+/* Each path card gets a stronger visual identity */
+.v14-path-card {
+  border-radius: 22px !important;
+  padding: 24px !important;
+  border: 1px solid #dde4ef !important;
+  background: #fff !important;
+  position: relative;
+  transition: all .22s ease !important;
+}
+.v14-path-card::after {
+  content: '→';
+  position: absolute;
+  right: 20px;
+  bottom: 22px;
+  font-size: 18px;
+  font-weight: 900;
+  color: rgba(201,164,74,.35);
+  transition: color .2s, transform .2s;
+}
+.v14-path-card:hover::after {
+  color: #8a6b20;
+  transform: translateX(4px);
+}
+.v14-path-card:hover {
+  border-color: rgba(201,164,74,.5) !important;
+  box-shadow: 0 16px 40px rgba(6,17,42,.1) !important;
+  transform: translateY(-3px) !important;
+}
+.v14-path-card small {
+  font-size: 10px !important;
+  color: #8a6b20 !important;
+}
+.v14-path-card h3 {
+  font-size: 18px !important;
+  margin-bottom: 10px !important;
+}
+/* Pathways section itself: soft border top+bottom, white bg */
+.v14-pathways-home {
+  background: #fff !important;
+  position: relative;
+}
+
+/* ─── 7. STATS: animated count + accent top line ─────────── */
+.stats article {
+  overflow: hidden;
+  transition: transform .2s, box-shadow .2s;
+}
+.stats article:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 36px rgba(6,17,42,.1);
+}
+.stats article::before {
+  display: block !important;
+  height: 3px !important;
+  background: linear-gradient(90deg, #c9a44a, transparent) !important;
+  opacity: 1 !important;
+}
+.stats strong {
+  font-variant-numeric: tabular-nums;
+  font-size: 32px !important;
+}
+
+/* ─── 8. PROJECTS: stronger left-border hover ─────────────── */
+.card.project {
+  transition: transform .22s ease, box-shadow .22s ease, border-left-color .22s ease !important;
+}
+.card.project:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 24px 56px rgba(6,17,42,.14) !important;
+}
+
+/* ─── 9. SCROLL PROGRESS BAR ─────────────────────────────── */
+/* Already in HTML as .progress — just refine styling */
+.progress {
+  height: 3px !important;
+  background: linear-gradient(90deg, #c9a44a, #dbbf6a) !important;
+  box-shadow: 0 0 10px rgba(201,164,74,.5);
+}
+
+/* ─── 10. FOOTER IMPROVEMENTS ────────────────────────────── */
+.footer.enhanced-footer {
+  position: relative;
+  overflow: hidden;
+}
+/* Subtle dot pattern also in footer */
+.footer.enhanced-footer::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(255,255,255,.04) 1px, transparent 1px);
+  background-size: 24px 24px;
+  pointer-events: none;
+}
+.footer-inner {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 10px;
+}
+/* Footer brand name styling */
+.footer-inner > div:first-child strong {
+  font-size: 17px !important;
+  letter-spacing: -.02em;
+  margin-bottom: 10px !important;
+}
+/* Footer bottom divider */
+.footer.enhanced-footer::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: clamp(22px,4vw,52px); right: clamp(22px,4vw,52px);
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(201,164,74,.4), transparent);
+}
+/* Footer link columns: vertical layout with hover gold */
+.footer-links a {
+  font-size: 13px !important;
+  color: #64748b !important;
+  padding: 3px 0;
+  display: block;
+}
+.footer-links a:hover {
+  color: #c9a44a !important;
+  padding-left: 4px;
+  transition: padding-left .15s, color .15s;
+}
+
+/* ─── 11. NAVIGATION: active page indicator ──────────────── */
+/* Subtle underline on the currently active nav item */
+.nav a[aria-current="page"],
+.site-header .nav a[href="insights.html"],
+.site-header .nav a.active {
+  color: #fff !important;
+  background: rgba(255,255,255,.1) !important;
+}
+
+/* ─── 12. INFRADISPATCH: DB STATS SECTION ─────────────────── */
+.database-section .stats.db-stats {
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 16px;
+}
+.db-stats article {
+  text-align: center;
+  padding: 28px 20px !important;
+}
+.db-stats article::before {
+  display: block !important;
+  height: 3px !important;
+  background: linear-gradient(90deg, #c9a44a, transparent) !important;
+}
+.db-stats strong {
+  font-size: 36px !important;
+  display: block;
+  margin-bottom: 6px;
+  color: #06112a;
+}
+.db-stats span {
+  color: #5a6b84;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* ─── 13. INFRADISPATCH PLANNER SECTION: dark section bg ─── */
+.dark-section {
+  position: relative;
+  overflow: hidden;
+}
+/* Dot grid in dark planner section */
+.dark-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(201,164,74,.08) 1px, transparent 1px);
+  background-size: 32px 32px;
+  pointer-events: none;
+  z-index: 0;
+}
+.dark-section > * { position: relative; z-index: 1; }
+
+/* ─── 14. INSIGHTS PAGE HERO ─────────────────────────────── */
+.insights-page-hero {
+  position: relative;
+  overflow: hidden;
+}
+.insights-page-hero::before {
+  background-image: radial-gradient(circle, rgba(201,164,74,.12) 1px, transparent 1px) !important;
+  background-size: 28px 28px !important;
+  inset: 0 !important;
+  width: auto !important;
+  height: auto !important;
+  border-radius: 0 !important;
+  background-color: transparent !important;
+  filter: none !important;
+}
+.insights-page-hero::after {
+  content: '';
+  position: absolute;
+  right: -100px; top: -80px;
+  width: 500px; height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(201,164,74,.18) 0%, transparent 65%);
+  pointer-events: none;
+}
+
+/* ─── 15. SECTION DIVIDERS: gold gradient line between key areas */
+.section + .section {
+  border-top: 1px solid #eef2f8;
+}
+.hero + .section,
+.hero + * + .section {
+  border-top: none;
+}
+
+/* ─── 16. GENERAL POLISH ─────────────────────────────────── */
+/* Better link underline in body text */
+a:not(.btn):not(.nav a):not(.footer-links a):not(.v14-path-card):not(.card) {
+  text-underline-offset: 2px;
+}
+/* Smooth page-load: avoid flash */
+body {
+  transition: background .2s;
+}
+/* Tag rows on hero: slightly more readable */
+.hero .tag-row span {
+  font-size: 12px !important;
+  letter-spacing: .01em;
+}
+/* Eyebrow on white sections: stronger contrast */
+.section .eyebrow:not(.pill) {
+  color: #8a6b20 !important;
+  letter-spacing: .2em !important;
+}
+/* Dark panel eyebrow stays gold */
+.dark-card .eyebrow,
+.dark-panel .eyebrow,
+.wide-panel .eyebrow,
+.insights-home .eyebrow,
+.contact-section .eyebrow {
+  color: #c9a44a !important;
+}
+
+/* ─── 18. PATHWAYS SECTION BG: distinguish from adjacent sections */
+.v14-pathways-home {
+  background: #f4f6fb !important;
+  border-top: 1px solid #dde4ef !important;
+  border-bottom: 1px solid #dde4ef !important;
+}
+.v14-pathways-home .section-head h2 {
+  color: #06112a;
+}
+
+/* ─── 19. HERO H1: accent treatment for key phrase ───────── */
+.hero-copy h1 em,
+.hero h1 em {
+  font-style: normal;
+  background: linear-gradient(135deg, #c9a44a, #f0d380);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ─── 20. WIDE PANELS: refined ───────────────────────────── */
+.wide-panel.real-ops-panel,
+.wide-panel.product-direction-panel {
+  background: linear-gradient(145deg, #06112a, #0e2248);
+  color: white;
+  border: none;
+}
+.wide-panel.real-ops-panel p,
+.wide-panel.product-direction-panel p { color: #8aa8c5; }
+.wide-panel.real-ops-panel h2,
+.wide-panel.product-direction-panel h2 { color: white; }
+
+/* ─── 21. OPS-PROOF GRID inside panel ────────────────────── */
+.ops-proof-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 24px;
+}
+.ops-proof-grid span {
+  background: rgba(201,164,74,.12);
+  border: 1px solid rgba(201,164,74,.25);
+  color: #f0d380;
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* ─── 22. CONTACT SECTION: subtle dot pattern ────────────── */
+.contact-section {
+  position: relative;
+  overflow: hidden;
+}
+.contact-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(201,164,74,.07) 1px, transparent 1px);
+  background-size: 24px 24px;
+  pointer-events: none;
+  z-index: 0;
+}
+.contact-section > * { position: relative; z-index: 1; }
+
+@media (max-width: 680px) {
+  .database-section .stats.db-stats {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .v14-path-card::after { display: none; }
+  .section + .section { border-top: none; }
+}

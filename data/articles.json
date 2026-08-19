@@ -1,0 +1,233 @@
+[
+  {
+    "title": "The Tourism AI Operations Playbook",
+    "url": "tourism-ai-operations-playbook.html",
+    "category": "AI & Tourism Operations",
+    "status": "Published",
+    "source": "Original professional series hub"
+  },
+  {
+    "title": "Before the Flight Lands: How Smart DMCs Use Air Connectivity to Predict the Next Guest Market",
+    "url": "article-air-connectivity-dmc-market-intelligence.html",
+    "category": "Market Intelligence",
+    "status": "Published",
+    "source": "Preserved article page"
+  },
+  {
+    "title": "The Assignment Engine: How DMC Operations Managers Put the Right Person in the Right Operation",
+    "url": "article-assignment-engine-dmc-operations.html",
+    "category": "Operations Systems",
+    "status": "Published",
+    "source": "Preserved article page"
+  },
+  {
+    "title": "The Fleet Control Tower: What Operations Managers Should See on One Screen",
+    "url": "article-fleet-control-tower-operations-dashboard.html",
+    "category": "Operations Systems",
+    "status": "Published",
+    "source": "Preserved article page"
+  },
+  {
+    "title": "Beyond the Script: How Great Tour Guides Turn Key Facts into Experiences Guests Remember",
+    "url": "article-tour-guide-storytelling-system.html",
+    "category": "Guide Quality",
+    "status": "Published",
+    "source": "Preserved article page"
+  },
+  {
+    "title": "From Partnership Introduction to Confirmed Group: A Real-Life DMC Sales Scenario",
+    "url": "article-rfi-rfq-rfp-erfp-nda-tourism-sales.html",
+    "category": "DMC Sales",
+    "status": "Published",
+    "source": "Preserved article page"
+  },
+  {
+    "title": "From Airport Arrival to Final Farewell | Destination Experience Journey Map",
+    "url": "article-destination-experience-journey-map.html",
+    "category": "Destination Experience",
+    "status": "Published",
+    "source": "Preserved article page"
+  },
+  {
+    "title": "Tour Guide Quality Index",
+    "url": "article-tour-guide-quality-index.html",
+    "category": "Service Quality",
+    "status": "Published",
+    "source": "Preserved article page"
+  },
+  {
+    "title": "Gate Man, Sign Man, Transfer Guide, Hotel Rep, Travel Desk, Tour Leader and Tour Guide: What Is the Real Difference?",
+    "url": "article-tourism-operations-roles-real-difference.html",
+    "category": "Tourism Roles",
+    "status": "Published",
+    "source": "Preserved article page"
+  },
+  {
+    "title": "How to Quote a City Tour Professionally for DMCs",
+    "url": "article-city-tour-quotation-professional.html",
+    "category": "Tour Quotation",
+    "status": "Published",
+    "source": "Preserved article page"
+  },
+  {
+    "title": "Fixed vs Variable Costs in Tour Pricing",
+    "url": "article-fixed-variable-costs-city-tour-pricing.html",
+    "category": "Tour Quotation",
+    "status": "Published",
+    "source": "Preserved article page"
+  },
+  {
+    "title": "Net Cost, Selling Price, Markup and Margin",
+    "url": "article-net-cost-selling-price-markup.html",
+    "category": "Tour Quotation",
+    "status": "Published",
+    "source": "Preserved article page"
+  },
+  {
+    "title": "Participant Estimation and Break-Even Risk",
+    "url": "article-participant-estimation-break-even-risk.html",
+    "category": "Tour Quotation",
+    "status": "Published",
+    "source": "Preserved article page"
+  },
+  {
+    "title": "Professional Client Tour Quotation",
+    "url": "article-professional-client-tour-quotation.html",
+    "category": "Tour Quotation",
+    "status": "Published",
+    "source": "Preserved article page"
+  },
+  {
+    "title": "Tour Cost Worksheet for City Tours",
+    "url": "article-tour-cost-worksheet-city-tour.html",
+    "category": "Tour Quotation",
+    "status": "Published",
+    "source": "Preserved article page"
+  },
+  {
+    "title": "Transport, Tickets, VAT and Gratuities in Tour Quotation",
+    "url": "article-transport-tickets-vat-gratuities.html",
+    "category": "Tour Quotation",
+    "status": "Published",
+    "source": "Preserved article page"
+  },
+  {
+    "title": "Tour Quotation & Pricing Masterclass",
+    "url": "insights-city-tour-quotation-pricing-masterclass.html",
+    "category": "Tour Quotation",
+    "status": "Published",
+    "source": "Preserved article page"
+  },
+  {
+    "title": "The Tourism Prompting Framework: How to Write Professional AI Prompts for Travel and Tourism",
+    "url": "tourism-prompting-framework.html",
+    "category": "AI & Tourism Operations",
+    "status": "Published",
+    "source": "Tourism AI Operations Playbook"
+  },
+  {
+    "title": "The Front-Line Tourism AI Toolkit: 10 Professional Prompt Templates for Tour Guides and Guest-Facing Teams",
+    "url": "front-line-tourism-ai-toolkit.html",
+    "category": "AI & Tourism Operations",
+    "status": "Published",
+    "source": "Tourism AI Operations Playbook"
+  },
+  {
+    "title": "The DMC Operations AI Toolkit: 10 Ready-to-Use Prompts for Daily Tour Operations",
+    "url": "dmc-operations-ai-prompts.html",
+    "category": "AI & Tourism Operations",
+    "status": "Published",
+    "source": "Tourism AI Operations Playbook"
+  },
+  {
+    "title": "The Tourism Transport and Dispatch AI Toolkit: 10 Prompts for Smarter Pickup, Routing, and Fleet Coordination",
+    "url": "tourism-transport-dispatch-ai-prompts.html",
+    "category": "AI & Tourism Operations",
+    "status": "Published",
+    "source": "Tourism AI Operations Playbook"
+  },
+  {
+    "title": "The Tourism Product Development AI Toolkit: 10 Prompts for Building Better Tours and Experiences",
+    "url": "tourism-product-development-ai-prompts.html",
+    "category": "AI & Tourism Operations",
+    "status": "Published",
+    "source": "Tourism AI Operations Playbook"
+  },
+  {
+    "title": "The Tourism Itinerary AI Toolkit: 10 Prompts for Realistic and Guest-Centred Travel Planning",
+    "url": "tourism-itinerary-ai-prompts.html",
+    "category": "AI & Tourism Operations",
+    "status": "Published",
+    "source": "Tourism AI Operations Playbook"
+  },
+  {
+    "title": "The Tourism Sales and Quotation AI Toolkit: 10 Prompts for B2B Proposals and Commercial Communication",
+    "url": "tourism-sales-quotation-ai-prompts.html",
+    "category": "AI & Tourism Operations",
+    "status": "Published",
+    "source": "Tourism AI Operations Playbook"
+  },
+  {
+    "title": "The Guest Experience AI Toolkit: 10 Prompts for Communication, Complaints, and Service Recovery",
+    "url": "guest-experience-ai-prompts.html",
+    "category": "AI & Tourism Operations",
+    "status": "Published",
+    "source": "Tourism AI Operations Playbook"
+  },
+  {
+    "title": "The Tourism Quality and SOP AI Toolkit: 10 Prompts for Process Improvement and Operational Excellence",
+    "url": "tourism-quality-sop-ai-prompts.html",
+    "category": "AI & Tourism Operations",
+    "status": "Published",
+    "source": "Tourism AI Operations Playbook"
+  },
+  {
+    "title": "Responsible AI for Tourism: A Practical Governance Guide for Travel Companies",
+    "url": "responsible-ai-tourism-guide.html",
+    "category": "AI & Tourism Operations",
+    "status": "Published",
+    "source": "Tourism AI Operations Playbook"
+  },
+  {
+    "title": "Abu Dhabi MICE Operations in Practice",
+    "url": "abu-dhabi-mice-operations-series.html",
+    "category": "MICE Operations Series",
+    "status": "Published",
+    "source": "Five-part original professional series hub"
+  },
+  {
+    "title": "The Abu Dhabi MICE Movement Control Room",
+    "url": "article-abu-dhabi-mice-movement-control-room.html",
+    "category": "MICE Operations Series",
+    "status": "Published",
+    "source": "Article 01 of 05 — Abu Dhabi MICE Operations in Practice"
+  },
+  {
+    "title": "Before the Delegate Reaches the Hotel",
+    "url": "article-mice-arrival-waves-zayed-international-airport.html",
+    "category": "MICE Operations Series",
+    "status": "Published",
+    "source": "Article 02 of 05 — Abu Dhabi MICE Operations in Practice"
+  },
+  {
+    "title": "From Hotel Lobby to Coach Door",
+    "url": "article-mice-hotel-desks-coach-departures-abu-dhabi.html",
+    "category": "MICE Operations Series",
+    "status": "Published",
+    "source": "Article 03 of 05 — Abu Dhabi MICE Operations in Practice"
+  },
+  {
+    "title": "From Coach Bay to Conference Seat",
+    "url": "article-mice-venue-arrivals-registration-abu-dhabi.html",
+    "category": "MICE Operations Series",
+    "status": "Published",
+    "source": "Article 04 of 05 — Abu Dhabi MICE Operations in Practice"
+  },
+  {
+    "title": "When the MICE Plan Changes",
+    "url": "article-mice-backup-operations-service-recovery-abu-dhabi.html",
+    "category": "MICE Operations Series",
+    "status": "Published",
+    "source": "Article 05 of 05 — Abu Dhabi MICE Operations in Practice"
+  }
+]

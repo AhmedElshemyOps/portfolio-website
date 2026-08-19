@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Insights | Ahmed Mahmoud</title>
+<meta content="Ahmed Quality Ops Insights Library: destination experience, tourism operations, guide quality, DMC workflows, city tour pricing, dispatch planning, RFQ/RFP sales and service quality articles by Ahmed Mahmoud." name="description"/>
+<link href="assets/infradispatch-favicon-n5.svg" rel="icon" type="image/svg+xml"/>
+<link href="styles-v38.css?v=38" rel="stylesheet"/>
+<link href="css/quotation-masterclass-v12.css" rel="stylesheet"/>
+<link href="css/front-end-polish-v14.css" rel="stylesheet"/>
+<meta content="Insights Library | Ahmed Quality Ops" property="og:title"/>
+<meta content="Practical DMC quotation, dispatch and guide quality articles for tourism operations professionals." property="og:description"/>
+<meta content="assets/og-v14/og-insights.svg" property="og:image"/>
+<meta content="website" property="og:type"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Insights Library | Ahmed Quality Ops" name="twitter:title"/>
+<meta content="Practical DMC quotation, dispatch and guide quality articles for tourism operations professionals." name="twitter:description"/>
+<meta content="assets/og-v14/og-insights.svg" name="twitter:image"/>
+<link href="css/premium-v15.css" rel="stylesheet"/>
+<style>
+/* Insights page enhancements */
+.insights-page-hero {
+  background: var(--navy);
+  color: white;
+  padding: clamp(64px,10vw,120px) clamp(20px,4vw,48px) clamp(48px,7vw,80px);
+  position: relative;
+  overflow: hidden;
+}
+.insights-page-hero::before {
+  content: "";
+  position: absolute;
+  right: -140px; top: -160px;
+  width: 400px; height: 400px;
+  border-radius: 50%;
+  background: rgba(251,191,36,.16);
+  filter: blur(40px);
+}
+.insights-page-hero::after {
+  content: "";
+  position: absolute;
+  left: -160px; bottom: -200px;
+  width: 440px; height: 440px;
+  border-radius: 50%;
+  background: rgba(59,130,246,.10);
+  filter: blur(40px);
+}
+.insights-page-hero > * { position: relative; z-index: 1; }
+.insights-hero-inner { max-width: 820px; }
+.insights-hero-inner h1 { font-size: clamp(36px,6vw,72px); line-height: .97; letter-spacing: -.045em; margin: 0 0 18px; }
+.insights-hero-inner p { font-size: 18px; line-height: 1.75; color: #cbd5e1; max-width: 680px; }
+
+/* Main board matching homepage */
+.insights-main-board {
+  display: grid;
+  grid-template-columns: 1.35fr .65fr;
+  gap: 24px;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+.ins-feature-card {
+  background: linear-gradient(135deg,#020617 0%,#071527 60%,#172554 100%);
+  color: white;
+  border-radius: var(--radius);
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  border: 1px solid rgba(255,255,255,.08);
+  box-shadow: var(--shadow);
+}
+.ins-feature-card h3 { font-size: clamp(26px,3.5vw,40px); line-height: 1; letter-spacing: -.04em; margin: 0; color: white; }
+.ins-feature-card p { font-size: 16px; line-height: 1.75; color: #cbd5e1; margin: 0; }
+.ins-badge { display: inline-flex; background: var(--gold); color: var(--navy); border-radius: 999px; padding: 6px 12px; font-size: 12px; font-weight: 900; margin-bottom: 4px; }
+.ins-stats-row { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 4px; }
+.ins-stats-row span { background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.12); color: #e2e8f0; border-radius: 999px; padding: 9px 14px; font-size: 13px; font-weight: 700; }
+.ins-article-rail { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+.ins-article-rail a { background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.14); color: #e2e8f0; border-radius: 10px; padding: 7px 12px; font-size: 13px; font-weight: 800; transition: background .2s; }
+.ins-article-rail a:hover { background: var(--gold); color: var(--navy); }
+
+/* Side stack */
+.ins-side-stack { display: flex; flex-direction: column; gap: 20px; }
+.ins-side-card {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 28px;
+  box-shadow: 0 8px 28px rgba(15,23,42,.06);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+.ins-side-card.dark-side {
+  background: linear-gradient(135deg,#020617,#111827);
+  color: white;
+  border-color: transparent;
+}
+.ins-side-card.dark-side p { color: #cbd5e1; }
+.ins-side-card h3 { font-size: 22px; line-height: 1.1; letter-spacing: -.03em; margin: 0; }
+.ins-side-card p { font-size: 14px; line-height: 1.7; color: var(--muted); margin: 0; }
+.ins-small-tags { display: flex; flex-wrap: wrap; gap: 7px; }
+.ins-small-tags span { border: 1px solid #e2e8f0; background: #fff7ed; color: #92400e; border-radius: 999px; padding: 6px 10px; font-weight: 800; font-size: 12px; }
+
+/* Article library grid */
+.ins-library-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+.ins-lib-card {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 26px;
+  box-shadow: 0 8px 22px rgba(15,23,42,.05);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: box-shadow .2s, transform .2s;
+}
+.ins-lib-card:hover { box-shadow: 0 16px 40px rgba(15,23,42,.12); transform: translateY(-2px); }
+.ins-lib-card .series-num { font-size: 13px; font-weight: 900; color: #d97706; text-transform: uppercase; letter-spacing: .12em; }
+.ins-lib-card h4 { font-size: 18px; line-height: 1.2; margin: 0; letter-spacing: -.02em; }
+.ins-lib-card p { font-size: 13px; line-height: 1.65; color: var(--muted); margin: 0; flex: 1; }
+.ins-lib-card a { display: inline-flex; font-size: 13px; font-weight: 900; color: #d97706; margin-top: 4px; }
+.ins-lib-card a:hover { color: #92400e; }
+.ins-lib-card.muted-lib { background: #f8fafc; }
+.ins-lib-card.muted-lib .status { background: #e2e8f0; color: #475569; }
+
+/* Learning paths */
+.ins-paths { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; max-width: 1180px; margin: 0 auto; }
+.ins-path-card {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 28px;
+  box-shadow: 0 8px 22px rgba(15,23,42,.05);
+  display: flex; flex-direction: column; gap: 12px;
+}
+.ins-path-card h3 { font-size: 22px; margin: 0; letter-spacing: -.03em; }
+.ins-path-card p { font-size: 14px; line-height: 1.7; color: var(--muted); flex: 1; margin: 0; }
+.path-number { font-size: 12px; font-weight: 900; color: #d97706; text-transform: uppercase; letter-spacing: .14em; }
+
+@media(max-width:900px) {
+  .insights-main-board, .ins-library-grid, .ins-paths { grid-template-columns: 1fr; }
+}
+@media(max-width:640px) {
+  .ins-feature-card { padding: 24px; }
+}
+</style>
+<link href="css/enhance-v17.css" rel="stylesheet"/><link href="https://ahmedqualityops.com/insights.html" rel="canonical"/><style>.insights-flagship-v50{max-width:1180px;margin:0 auto;background:linear-gradient(135deg,#071527,#172554);color:#fff;border-radius:30px;padding:36px;box-shadow:0 24px 70px rgba(15,23,42,.18)}.insights-flagship-v50 h2{color:#fff;font-size:clamp(30px,4vw,52px);line-height:1;margin:10px 0}.insights-flagship-v50 p{color:#dbeafe;font-size:17px;line-height:1.75;max-width:820px}.insights-flagship-v50 .btn{margin-top:14px}</style><script data-insights-schema="true" type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Ahmed Quality Ops Insights Library","url":"https://ahmedqualityops.com/insights.html","description":"Tourism operations, destination experience, guide quality, dispatch planning and city tour pricing articles.","about":["Destination Experience","Tourism Operations","DMC Operations","City Tour Pricing","Tour Guide KPIs","Dispatch Planning"]}</script><style id="insights-redesign-v51">
+.insights-redesign-v51{background:#f8fafc}.insights-redesign-v51 .wrap{max-width:1180px;margin:0 auto;padding:70px 24px}.insights-hero-v51{background:radial-gradient(circle at 90% 10%,rgba(251,191,36,.22),transparent 28%),linear-gradient(135deg,#071527,#172554);color:#fff;padding:96px 24px 72px}.insights-hero-v51 .inner{max-width:1180px;margin:0 auto}.insights-hero-v51 h1{font-size:clamp(40px,6vw,72px);line-height:1;letter-spacing:-.055em;color:#fff;margin:14px 0}.insights-hero-v51 p{color:#dbeafe;font-size:19px;line-height:1.7;max-width:890px}.ins-card-v51{background:#fff;border:1px solid #e2e8f0;border-radius:28px;padding:28px;box-shadow:0 12px 36px rgba(15,23,42,.07)}.ins-grid-v51{display:grid;grid-template-columns:1.25fr .75fr;gap:24px}.ins-flagship-v51{background:linear-gradient(135deg,#071527,#172554);color:#fff;border-radius:34px;padding:38px;box-shadow:0 24px 70px rgba(15,23,42,.18)}.ins-flagship-v51 h2{color:#fff;font-size:clamp(32px,4vw,54px);line-height:1.03;margin:12px 0}.ins-flagship-v51 p{color:#dbeafe;font-size:17px;line-height:1.75}.ins-badge-v51{display:inline-flex;border-radius:999px;background:#fffbeb;color:#92400e;border:1px solid #fde68a;padding:8px 12px;font-size:12px;font-weight:950;text-transform:uppercase;letter-spacing:.1em}.ins-tags-v51{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}.ins-tags-v51 span{border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.08);color:#fff;border-radius:999px;padding:8px 11px;font-size:12px;font-weight:850}.ins-section-title-v51{margin:0 0 26px}.ins-section-title-v51 h2{font-size:clamp(30px,4vw,46px);margin:8px 0;letter-spacing:-.04em}.ins-section-title-v51 p{color:#64748b;font-size:16px;line-height:1.7;max-width:820px}.article-grid-v51{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.article-card-v51{display:flex;flex-direction:column;gap:10px;background:#fff;border:1px solid #e2e8f0;border-radius:24px;padding:24px;box-shadow:0 8px 24px rgba(15,23,42,.05);min-height:250px}.article-card-v51 h3{font-size:20px;line-height:1.2;margin:0}.article-card-v51 p{color:#64748b;font-size:14px;line-height:1.65;margin:0;flex:1}.article-card-v51 a{font-weight:950;color:#d97706;text-decoration:none}.learning-paths-v51{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.path-v51{background:#fff;border:1px solid #e2e8f0;border-radius:24px;padding:26px}.path-v51 h3{margin:10px 0}.path-v51 p{color:#64748b;line-height:1.7}.quick-menu-v51{display:grid;gap:12px}.quick-menu-v51 a{background:#fff;border:1px solid #e2e8f0;border-radius:18px;padding:16px 18px;color:#071527;text-decoration:none;font-weight:900}.quick-menu-v51 a:hover{background:#fffbeb;border-color:#fde68a}.ins-note-v51{background:#fff7ed;border:1px solid #fed7aa;border-radius:24px;padding:24px;color:#7c2d12;line-height:1.7}@media(max-width:980px){.ins-grid-v51,.article-grid-v51,.learning-paths-v51{grid-template-columns:1fr}.insights-hero-v51{padding-top:86px}}
+</style><link href="site.webmanifest" rel="manifest"/>
+<link href="assets/brand/favicon-192.png" rel="apple-touch-icon"/>
+<link href="assets/css/design-vnext.css" rel="stylesheet"/>
+<link href="css/insights-ai-series-v52.css" rel="stylesheet"/><link href="assets/css/github-integration.css?v=20260711" rel="stylesheet"/><link href="/assets/css/final-enhancements.css?v=20260712" rel="stylesheet"/>
+<link href="css/mice-series-v1.css" rel="stylesheet"/><link href="assets/css/table-responsive-v16.css?v=20260721" rel="stylesheet"/></head>
+<body>
+<a id="top"></a>
+<header class="site-header">
+<a aria-label="Ahmed Mahmoud home" class="brand" href="index.html">
+<span class="brand-mark">AM</span>
+<span><strong>Ahmed Mahmoud</strong><small>Operations · Quality · Product</small></span>
+</a>
+<button aria-controls="main-navigation" aria-expanded="false" aria-label="Menu" class="menu-btn" data-menu-button="">☰</button>
+<nav aria-label="Primary navigation" class="nav" data-nav="" id="main-navigation" role="navigation">
+<a href="index.html">Home</a>
+<a href="projects.html">Projects</a>
+<a href="articles.html">Insights</a>
+<a href="index.html#experience">Experience</a>
+<a href="index.html#footer-contact">Contact</a>
+<a href="tourism-ai-operations-playbook.html">AI Playbook</a><a class="nav-cv" download="" href="Ahmed-Mahmoud-CV.pdf">Download CV</a>
+</nav>
+</header>
+<main class="insights-redesign-v51">
+<section class="insights-hero-v51"><div class="inner"><span class="ins-badge-v51">Ahmed Quality Ops · Insights Library</span><h1>Tourism operations articles built from real field experience.</h1><p>Practical articles for destination experience, DMC workflows, tour guide quality, operational roles, dispatch planning, RFQ/RFP sales requests, and city tour pricing discipline.</p><div class="actions"><a class="btn primary" href="article-destination-experience-journey-map.html">Read the flagship article →</a><a class="btn secondary" href="#library">Browse the library</a></div></div></section>
+<section class="wrap" id="flagship"><div class="ins-grid-v51"><div class="ins-flagship-v51"><span class="ins-badge-v51">Flagship Article · Destination Experience</span><h2>From Airport Arrival to Final Farewell: What 10+ Years in Tourism Taught Me About Destination Experience</h2><p>A senior-level practical article connecting Abu Dhabi destination operations, 13-stage journey mapping, guest touchpoints, tour guide quality, airport arrival roles, dispatch planning, service recovery and pricing discipline.</p><div class="ins-tags-v51"><span>Destination Experience</span><span>Abu Dhabi Case Study</span><span>13-stage Journey Map</span><span>Recruiter-ready</span></div><div class="actions"><a class="btn primary" href="article-destination-experience-journey-map.html">Open flagship article →</a></div></div><aside aria-label="Quick learning paths" class="quick-menu-v51"><a href="#destination-experience">Destination Experience</a><a href="#ai-playbook">Tourism AI Playbook</a><a href="#pricing-masterclass">City Tour Pricing Masterclass</a><a href="#operations-quality">Operations &amp; Quality</a><a href="#sales-requests">Tourism Sales Requests</a><a href="infradispatch/">InfraDispatch Project</a><a href="#mice-operations-series">Abu Dhabi MICE Operations</a></aside></div></section>
+<section class="wrap" id="library"><div class="ins-section-title-v51"><span class="ins-badge-v51">Library Structure</span><h2>Choose the topic you want to study.</h2><p>The library is organized into clear groups so recruiters, tourism teams, and operators can quickly understand Ahmed Quality Ops thinking.</p></div><div class="learning-paths-v51"><div class="path-v51"><span class="ins-badge-v51">Path 1</span><h3>Destination Experience</h3><p>Start here for visitor journey mapping, Abu Dhabi case study, roles, KPIs, dispatch and service recovery.</p><a class="btn primary" href="article-destination-experience-journey-map.html">Open article</a></div><div class="path-v51"><span class="ins-badge-v51">Path 2</span><h3>Pricing Discipline</h3><p>Seven articles explaining quotation logic, fixed and variable costs, break-even risk, VAT, gratuities and client quotations.</p><a class="btn primary" href="#pricing-masterclass">View articles</a></div><div class="path-v51"><span class="ins-badge-v51">Path 3</span><h3>Operations Quality</h3><p>Guide KPIs, operational roles, field execution and sales request discipline for tourism teams.</p><a class="btn primary" href="#operations-quality">View articles</a></div><div class="path-v51"><span class="ins-badge-v51">Path 4</span><h3>Tourism AI Operations</h3><p>Ten connected articles with 100+ prompts for guides, DMCs, transport, product, itinerary, sales, guest experience, quality, and governance.</p><a class="btn primary" href="#ai-playbook">View articles</a></div></div></section>
+<section class="wrap" id="destination-experience"><div class="ins-section-title-v51"><span class="ins-badge-v51">Destination Experience</span><h2>Flagship article</h2><p>The most important article for recruiters and destination experience roles.</p></div><div class="article-grid-v51"><article class="article-card-v51"><span class="ins-badge-v51">Flagship</span><h3>From Airport Arrival to Final Farewell: What 10+ Years in Tourism Taught Me About Destination Experience</h3><p>Abu Dhabi journey map, guest touchpoints, airport arrival, transfer guide, sign man, tour guide KPIs, dispatch, pricing and recovery.</p><a href="article-destination-experience-journey-map.html">Read article →</a></article></div></section>
+<section class="wrap" id="pricing-masterclass"><div class="ins-section-title-v51"><span class="ins-badge-v51">City Tour Quotation &amp; Pricing Masterclass</span><h2>Seven connected pricing articles.</h2><p>Pricing is not only sales. It affects feasibility, delivery quality, guest expectation and operational pressure.</p></div><div class="article-grid-v51"><article class="article-card-v51"><span class="ins-badge-v51">01</span><h3>City Tour Quotation Fundamentals</h3><p>How to structure a professional city tour quotation from the first request.</p><a href="article-city-tour-quotation-professional.html">Read article →</a></article><article class="article-card-v51"><span class="ins-badge-v51">02</span><h3>Fixed Costs vs Variable Costs</h3><p>Why cost classification protects margin and delivery quality.</p><a href="article-fixed-variable-costs-city-tour-pricing.html">Read article →</a></article><article class="article-card-v51"><span class="ins-badge-v51">03</span><h3>Net Cost, Selling Price &amp; Markup</h3><p>How markup decisions affect realistic and sustainable tour pricing.</p><a href="article-net-cost-selling-price-markup.html">Read article →</a></article><article class="article-card-v51"><span class="ins-badge-v51">04</span><h3>Participant Estimation &amp; Break-even Risk</h3><p>Why group size assumptions can make or break profitability.</p><a href="article-participant-estimation-break-even-risk.html">Read article →</a></article><article class="article-card-v51"><span class="ins-badge-v51">05</span><h3>Tour Cost Worksheet</h3><p>A practical worksheet logic for building city tour cost structure.</p><a href="article-tour-cost-worksheet-city-tour.html">Read article →</a></article><article class="article-card-v51"><span class="ins-badge-v51">06</span><h3>Transport, Tickets, VAT &amp; Gratuities</h3><p>The hidden details that can damage tour delivery if missed.</p><a href="article-transport-tickets-vat-gratuities.html">Read article →</a></article><article class="article-card-v51"><span class="ins-badge-v51">07</span><h3>Professional Client Tour Quotation</h3><p>How to present the quotation clearly to clients and partners.</p><a href="article-professional-client-tour-quotation.html">Read article →</a></article></div></section>
+<section class="wrap ai-playbook-legacy" id="ai-playbook"><div class="ins-section-title-v51"><span class="ins-badge-v51">Tourism AI Operations Playbook</span><h2>Ten connected AI articles for tourism teams.</h2><p>A complete learning series with 100+ copy-ready prompts, operational safeguards, and human-verification rules.</p></div><div class="legacy-ai-hub"><h3>Start with the complete series hub</h3><p>Use the hub to understand the sequence, responsible-AI rules, and how each toolkit connects to real tourism operations.</p><a class="btn primary" href="tourism-ai-operations-playbook.html">Open Playbook hub</a></div><div class="article-grid-v51 ai-legacy-grid"><article class="article-card-v51 ai-legacy-card"><span class="ins-badge-v51">01</span><h3>The Tourism Prompting Framework</h3><p>Build reliable tourism prompts using roles, context, guest profiles, output formats, limitations, and verification rules.</p><a href="tourism-prompting-framework.html">Read Article 01 →</a></article><article class="article-card-v51 ai-legacy-card"><span class="ins-badge-v51">02</span><h3>The Front-Line Tourism AI Toolkit</h3><p>Ten prompts for tour preparation, storytelling, multilingual communication, delays, complaints, and post-tour reporting.</p><a href="front-line-tourism-ai-toolkit.html">Read Article 02 →</a></article><article class="article-card-v51 ai-legacy-card"><span class="ins-badge-v51">03</span><h3>The DMC Operations AI Toolkit</h3><p>Daily briefings, tour-file checks, assignments, supplier coordination, risk reviews, handovers, and reporting.</p><a href="dmc-operations-ai-prompts.html">Read Article 03 →</a></article><article class="article-card-v51 ai-legacy-card"><span class="ins-badge-v51">04</span><h3>The Tourism Transport and Dispatch AI Toolkit</h3><p>Pickup sequencing, vehicle allocation, driver briefings, route risks, accessibility checks, and fleet reporting.</p><a href="tourism-transport-dispatch-ai-prompts.html">Read Article 04 →</a></article><article class="article-card-v51 ai-legacy-card"><span class="ins-badge-v51">05</span><h3>The Tourism Product Development AI Toolkit</h3><p>Tour concepts, product reviews, market adaptation, seasonal planning, competitor analysis, and feasibility.</p><a href="tourism-product-development-ai-prompts.html">Read Article 05 →</a></article><article class="article-card-v51 ai-legacy-card"><span class="ins-badge-v51">06</span><h3>The Tourism Itinerary AI Toolkit</h3><p>Realistic one-day, multi-day, stopover, cruise, family, luxury, accessible, and weather-backup itineraries.</p><a href="tourism-itinerary-ai-prompts.html">Read Article 06 →</a></article><article class="article-card-v51 ai-legacy-card"><span class="ins-badge-v51">07</span><h3>The Tourism Sales and Quotation AI Toolkit</h3><p>B2B proposals, quotation structure, partnership emails, follow-ups, objections, and commercial reviews.</p><a href="tourism-sales-quotation-ai-prompts.html">Read Article 07 →</a></article><article class="article-card-v51 ai-legacy-card"><span class="ins-badge-v51">08</span><h3>The Guest Experience AI Toolkit</h3><p>Pre-arrival communication, pickup updates, complaint responses, service recovery, reviews, and journey analysis.</p><a href="guest-experience-ai-prompts.html">Read Article 08 →</a></article><article class="article-card-v51 ai-legacy-card"><span class="ins-badge-v51">09</span><h3>The Tourism Quality and SOP AI Toolkit</h3><p>SOPs, process maps, root-cause analysis, incident reports, CAPA, audits, training, and quality summaries.</p><a href="tourism-quality-sop-ai-prompts.html">Read Article 09 →</a></article><article class="article-card-v51 ai-legacy-card"><span class="ins-badge-v51">10</span><h3>Responsible AI for Tourism</h3><p>Privacy, verification, cultural sensitivity, prompt governance, employee policy, incidents, and human accountability.</p><a href="responsible-ai-tourism-guide.html">Read Article 10 →</a></article></div></section><section class="wrap" id="operations-quality"><div class="ins-section-title-v51"><span class="ins-badge-v51">Operations &amp; Quality</span><h2>Guide quality, field roles and execution discipline.</h2><p>These articles connect frontline tourism work with destination experience and service quality.</p></div><div class="article-grid-v51"><article class="article-card-v51"><span class="ins-badge-v51">Quality</span><h3>Tour Guide Quality Index</h3><p>A practical KPI framework for guide quality beyond storytelling.</p><a href="article-tour-guide-quality-index.html">Read article →</a></article><article class="article-card-v51"><span class="ins-badge-v51">Roles</span><h3>Tour Guide vs Tour Leader vs Transfer Guide vs Sign Man vs Gate Man</h3><p>Role clarity for airport, hotel, attraction and group flow operations.</p><a href="article-tourism-operations-roles-real-difference.html">Read article →</a></article><article class="article-card-v51" id="sales-requests"><span class="ins-badge-v51">Sales</span><h3>RFI, RFQ, RFP, E‑RFP and NDA in Tourism Sales</h3><p>How tourism teams should handle sales requests without losing scope control.</p><a href="article-rfi-rfq-rfp-erfp-nda-tourism-sales.html">Read article →</a></article></div></section><section class="wrap mice-insights-v1" id="mice-operations-series"><div class="ins-section-title-v51"><span class="ins-badge-v51">Final Series · MICE Operations</span><h2>Abu Dhabi MICE Operations in Practice</h2><p>Five connected articles showing how to coordinate 500 delegates across airport arrival waves, hotels, coaches, venue registration and service recovery.</p><a class="btn primary" href="abu-dhabi-mice-operations-series.html">Open the complete series →</a></div><div class="article-grid-v51"><article class="article-card-v51"><span class="ins-badge-v51">Article 01</span><h3>The Abu Dhabi MICE Movement Control Room</h3><p>How to Coordinate 500 Delegates Without Losing the Guest Experience</p><a href="article-abu-dhabi-mice-movement-control-room.html">Read Article 01 →</a></article><article class="article-card-v51"><span class="ins-badge-v51">Article 02</span><h3>Before the Delegate Reaches the Hotel</h3><p>Managing MICE Arrival Waves at Zayed International Airport</p><a href="article-mice-arrival-waves-zayed-international-airport.html">Read Article 02 →</a></article><article class="article-card-v51"><span class="ins-badge-v51">Article 03</span><h3>From Hotel Lobby to Coach Door</h3><p>Managing MICE Hospitality Desks, Delegate Readiness and Controlled Departures in Abu Dhabi</p><a href="article-mice-hotel-desks-coach-departures-abu-dhabi.html">Read Article 03 →</a></article><article class="article-card-v51"><span class="ins-badge-v51">Article 04</span><h3>From Coach Bay to Conference Seat</h3><p>Managing MICE Venue Arrivals, Registration and Delegate Flow in Abu Dhabi</p><a href="article-mice-venue-arrivals-registration-abu-dhabi.html">Read Article 04 →</a></article><article class="article-card-v51"><span class="ins-badge-v51">Article 05</span><h3>When the MICE Plan Changes</h3><p>Backup Operations, Escalation and Service Recovery in Abu Dhabi</p><a href="article-mice-backup-operations-service-recovery-abu-dhabi.html">Read Article 05 →</a></article></div></section>
+</main>
+<footer class="footer enhanced-footer">
+<div class="footer-inner">
+<div><strong>Ahmed Quality Ops</strong><p>Tourism operations, DMC workflow, dispatch planning, quotation logic and service quality knowledge built from real field experience.</p></div>
+<div class="footer-links"><a href="index.html">Home</a><a href="articles.html">Insights</a><a href="infradispatch/">InfraDispatch</a><a href="article-tour-guide-quality-index.html">Tour Guide Quality Index</a><a href="tourism-ai-operations-playbook.html">AI Playbook</a></div>
+<div class="footer-links"><a href="index.html#experience">Experience</a><a download="" href="Ahmed-Mahmoud-CV.pdf">Download CV</a><a href="mailto:contact@ahmedqualityops.com">contact@ahmedqualityops.com</a><a href="https://www.linkedin.com/in/ahmed-mahmoud-tourism" rel="noopener noreferrer" target="_blank">LinkedIn</a><a class="back-top" href="#top">↑</a></div>
+</div>
+<div aria-label="GitHub links" class="github-footer-links"><a class="footer-repository-badge" href="https://github.com/AhmedElshemyOps/tourism-ai-operations-playbook" rel="noopener noreferrer" target="_blank">Tourism AI Playbook on GitHub ↗</a><a href="https://github.com/AhmedElshemyOps" rel="noopener noreferrer" target="_blank">Ahmed Mahmoud on GitHub ↗</a></div></footer>
+<script src="script.js"></script>
+<div class="v14-mobile-cta"><a download="" href="Ahmed-Mahmoud-CV.pdf">Download CV</a><a href="articles.html">Insights</a><a href="mailto:contact@ahmedqualityops.com">Contact</a></div>
+<script src="js/front-end-polish-v14.js"></script>
+<script src="js/enhance-v17.js"></script><script defer="" src="assets/js/site-config.js"></script>
+<script defer="" src="assets/js/analytics.js"></script>
+<script defer="True" src="assets/js/table-responsive-v16.js?v=20260721"></script></body>
+</html>

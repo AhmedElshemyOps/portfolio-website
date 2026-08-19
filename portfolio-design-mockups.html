@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Ahmed Mahmoud Portfolio Design Mockups</title>
+<meta content="High-fidelity portfolio, project, and insights mockups for Ahmed Mahmoud's professional brand framework." name="description"/>
+<style>
+    :root{
+      --navy:#071527;
+      --navy-2:#10243d;
+      --blue:#1f4d73;
+      --gold:#c6a14a;
+      --gold-soft:#ead08a;
+      --paper:#f6f3ec;
+      --bg:#f4f6f8;
+      --card:#fff;
+      --ink:#101828;
+      --muted:#5c6a7d;
+      --line:#d9e0e8;
+      --radius:8px;
+      --shadow:0 18px 46px rgba(7,21,39,.1);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      color:var(--ink);
+      font-family:Georgia,"Times New Roman",serif;
+      background:
+        linear-gradient(90deg,rgba(7,21,39,.035) 1px,transparent 1px),
+        linear-gradient(180deg,rgba(7,21,39,.028) 1px,transparent 1px),
+        linear-gradient(180deg,#f9fafb 0%,#eef2f6 100%);
+      background-size:40px 40px,40px 40px,100% 100%;
+    }
+    a{color:inherit;text-decoration:none}
+    .page-shell{width:min(1240px,92vw);margin:0 auto}
+    .mock-header{
+      position:sticky;
+      top:0;
+      z-index:5;
+      background:rgba(255,255,255,.94);
+      border-bottom:1px solid rgba(7,21,39,.12);
+      backdrop-filter:blur(12px);
+    }
+    .nav{
+      min-height:72px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px;
+    }
+    .brand{display:flex;align-items:center;gap:12px;font-family:Arial,sans-serif;font-weight:900;color:var(--navy)}
+    .brand-mark{
+      width:42px;
+      height:42px;
+      border-radius:8px;
+      display:grid;
+      place-items:center;
+      color:var(--gold-soft);
+      background:linear-gradient(145deg,var(--navy),#17385f);
+      border:1px solid rgba(198,161,74,.42);
+    }
+    .brand small{display:block;color:#65758a;font-size:.72rem;font-weight:700;margin-top:2px}
+    .nav-links{display:flex;gap:8px;align-items:center;font-family:Arial,sans-serif;font-size:.88rem;font-weight:800;color:#334155}
+    .nav-links a{border-radius:8px;padding:10px 11px}
+    .nav-links a:hover{background:#edf2f7;color:var(--navy)}
+    .nav-links .cta{background:var(--navy);color:#fff}
+    .hero{
+      color:#fff;
+      background:
+        linear-gradient(90deg,rgba(234,208,138,.12) 1px,transparent 1px),
+        linear-gradient(180deg,rgba(234,208,138,.08) 1px,transparent 1px),
+        radial-gradient(circle at 86% 10%,rgba(198,161,74,.24),transparent 24%),
+        linear-gradient(135deg,#06101d 0%,#0a1b31 52%,#123b5f 100%);
+      background-size:48px 48px,48px 48px,100% 100%,100% 100%;
+      padding:86px 0 96px;
+    }
+    .hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(330px,.7fr);gap:54px;align-items:end}
+    .eyebrow{
+      display:inline-flex;
+      margin-bottom:14px;
+      color:var(--gold-soft);
+      font-family:Arial,sans-serif;
+      font-size:.75rem;
+      font-weight:900;
+      letter-spacing:.16em;
+      text-transform:uppercase;
+    }
+    h1,h2,h3,p{margin-top:0}
+    h1{
+      max-width:860px;
+      margin-bottom:22px;
+      font-size:clamp(3rem,6vw,6.1rem);
+      line-height:.94;
+      letter-spacing:0;
+    }
+    .hero p{max-width:770px;color:#d8e1ee;font-size:1.12rem;line-height:1.8}
+    .hero-card{
+      background:#fff;
+      color:var(--navy);
+      border:1px solid rgba(234,208,138,.32);
+      border-radius:8px;
+      padding:24px;
+      box-shadow:0 34px 80px rgba(0,0,0,.28);
+      font-family:Arial,sans-serif;
+    }
+    .hero-card h2{font-family:Georgia,"Times New Roman",serif;font-size:1.8rem;line-height:1.1}
+    .spec-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}
+    .spec{border:1px solid var(--line);border-radius:8px;background:#f7f9fc;padding:12px}
+    .spec strong{display:block;color:var(--navy)}
+    .spec span{display:block;color:var(--muted);font-size:.82rem;margin-top:4px}
+    .section{padding:72px 0}
+    .section.dark{background:var(--navy);color:#fff}
+    .section-head{display:grid;grid-template-columns:minmax(0,.8fr) minmax(300px,.44fr);gap:36px;align-items:end;margin-bottom:28px}
+    .section h2{font-size:clamp(2rem,4vw,3.8rem);line-height:1;margin-bottom:12px}
+    .section-head p,.annotation p,.card p,.case-card p,.article-card p{color:var(--muted);line-height:1.65}
+    .dark .section-head p,.dark .annotation p{color:#cbd5e1}
+    .annotation{
+      border:1px dashed rgba(198,161,74,.75);
+      background:rgba(255,255,255,.76);
+      border-radius:8px;
+      padding:16px;
+      font-family:Arial,sans-serif;
+      font-size:.92rem;
+    }
+    .dark .annotation{background:rgba(255,255,255,.07);border-color:rgba(234,208,138,.42)}
+    .label{
+      display:inline-flex;
+      border-radius:8px;
+      padding:6px 9px;
+      margin-bottom:10px;
+      background:#fff8df;
+      color:#7b5c10;
+      font-family:Arial,sans-serif;
+      font-size:.72rem;
+      font-weight:900;
+      letter-spacing:.1em;
+      text-transform:uppercase;
+    }
+    .portfolio-grid{display:grid;grid-template-columns:1.15fr .85fr .85fr;gap:16px}
+    .card,.case-card,.article-card,.sidebar-panel{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:8px;
+      box-shadow:var(--shadow);
+      overflow:hidden;
+    }
+    .card{min-height:300px;padding:22px;display:flex;flex-direction:column}
+    .card.featured{grid-row:span 2;min-height:616px;background:linear-gradient(180deg,#fff 0%,#f7f9fc 100%)}
+    .visual-slot{
+      min-height:170px;
+      border:1px dashed #b6c2d1;
+      border-radius:8px;
+      display:grid;
+      place-items:center;
+      text-align:center;
+      padding:18px;
+      color:#526173;
+      background:
+        linear-gradient(135deg,rgba(198,161,74,.12),rgba(31,77,115,.08)),
+        #f8fafc;
+      font-family:Arial,sans-serif;
+      font-size:.86rem;
+      font-weight:800;
+    }
+    .featured .visual-slot{min-height:260px}
+    .card h3{font-size:1.45rem;line-height:1.15;margin:18px 0 10px;color:var(--navy)}
+    .meta-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;padding-top:18px}
+    .chip{
+      border:1px solid #d8e1eb;
+      border-radius:8px;
+      padding:7px 9px;
+      color:#334155;
+      background:#fff;
+      font-family:Arial,sans-serif;
+      font-size:.76rem;
+      font-weight:800;
+    }
+    .chip.gold{background:#fff8df;color:#7b5c10;border-color:#ead08a}
+    .case-layout{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(300px,.52fr);gap:18px}
+    .case-card{padding:0}
+    .case-hero{padding:24px;background:#fff;color:var(--ink)}
+    .case-hero .visual-slot{min-height:320px;margin-bottom:22px}
+    .case-hero h3{font-size:clamp(2rem,3vw,3.2rem);line-height:1;margin-bottom:12px;color:var(--navy)}
+    .outcomes{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:22px}
+    .outcome{border:1px solid var(--line);border-radius:8px;background:#f7f9fc;padding:14px;font-family:Arial,sans-serif}
+    .outcome strong{display:block;color:var(--navy);font-size:1.25rem}
+    .outcome span{display:block;color:var(--muted);font-size:.8rem;margin-top:5px;line-height:1.4}
+    .case-body{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:0 24px 24px}
+    .case-note{border-top:1px solid var(--line);padding:18px 24px;color:#526173;font-family:Arial,sans-serif;font-size:.9rem;line-height:1.6}
+    .sidebar-panel{padding:20px;background:#fff;color:var(--ink)}
+    .sidebar-panel + .sidebar-panel{margin-top:18px}
+    .sidebar-panel h4{margin:0 0 12px;color:var(--navy);font-size:1.05rem;font-family:Arial,sans-serif}
+    .timeline{display:grid;gap:10px}
+    .timeline div{border-left:3px solid var(--gold);padding:4px 0 4px 12px;color:#526173;font-family:Arial,sans-serif;font-size:.9rem;line-height:1.45}
+    .insights-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
+    .article-card{display:flex;flex-direction:column;min-height:390px}
+    .article-top{padding:18px;border-bottom:1px solid var(--line);background:#fff}
+    .article-card .visual-slot{min-height:150px;margin-bottom:16px}
+    .article-card h3{font-size:1.3rem;line-height:1.22;color:var(--navy);margin-bottom:12px}
+    .article-bottom{padding:18px;margin-top:auto;font-family:Arial,sans-serif}
+    .article-date{color:#64748b;font-size:.82rem;font-weight:800}
+    .mock-footer{padding:38px 0;color:#526173;font-family:Arial,sans-serif}
+    .style-board{
+      display:grid;
+      grid-template-columns:1fr 1fr 1fr;
+      gap:14px;
+      margin-top:22px;
+    }
+    .token{border:1px solid var(--line);background:#fff;border-radius:8px;padding:16px;font-family:Arial,sans-serif}
+    .swatches{display:flex;gap:8px;margin-top:10px}
+    .swatch{width:42px;height:42px;border-radius:8px;border:1px solid rgba(7,21,39,.14)}
+    .responsive-strip{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:18px}
+    .device{border:1px dashed #b6c2d1;border-radius:8px;background:#fff;padding:14px;font-family:Arial,sans-serif}
+    .device strong{display:block;color:var(--navy);margin-bottom:6px}
+    @media(max-width:980px){
+      .hero-grid,.section-head,.case-layout,.style-board,.responsive-strip{grid-template-columns:1fr}
+      .portfolio-grid{grid-template-columns:1fr 1fr}
+      .card.featured{grid-row:auto}
+      .insights-grid{grid-template-columns:1fr 1fr}
+      .nav{align-items:flex-start;flex-direction:column;padding:16px 0}
+      .nav-links{flex-wrap:wrap}
+    }
+    @media(max-width:640px){
+      .hero{padding:56px 0 64px}
+      .section{padding:54px 0}
+      .portfolio-grid,.insights-grid,.case-body,.outcomes,.spec-grid{grid-template-columns:1fr}
+      .card,.case-hero,.sidebar-panel{padding:18px}
+      .case-body{padding:0 18px 18px}
+      .case-note{padding:16px 18px}
+      .visual-slot,.featured .visual-slot,.case-hero .visual-slot{min-height:180px}
+      .nav-links a{padding:9px}
+    }
+  </style>
+<link href="assets/css/github-integration.css?v=20260711" rel="stylesheet"/><link href="/assets/css/final-enhancements.css?v=20260712" rel="stylesheet"/>
+<link href="assets/css/table-responsive-v16.css?v=20260721" rel="stylesheet"/></head>
+<body>
+<header class="mock-header">
+<div aria-label="Mockup navigation" class="page-shell nav">
+<a class="brand" href="#top">
+<span class="brand-mark">AM</span>
+<span>Ahmed Mahmoud <small>Tourism operations portfolio framework</small></span>
+</a>
+<nav aria-label="Mockup sections" class="nav-links">
+<a href="#portfolio">Portfolio</a>
+<a href="#project-detail">Project Detail</a>
+<a href="#insights">Insights</a>
+<a href="#style-system">Style System</a>
+<a class="cta" href="index.html">Current Site</a>
+<a href="tourism-ai-operations-playbook.html">AI Playbook</a></nav>
+</div>
+</header>
+<main id="top">
+<section class="hero">
+<div class="page-shell hero-grid">
+<div>
+<span class="eyebrow">High-fidelity design mockups</span>
+<h1>Portfolio framework for an executive tourism operations brand.</h1>
+<p>This page is a visual blueprint for Ahmed Mahmoud's portfolio. It shows how featured work, project case studies, and insights can be structured to communicate practical expertise, credibility, and thought leadership without claiming unsupported live platform capabilities.</p>
+</div>
+<aside aria-label="Mockup usage notes" class="hero-card">
+<span class="label">How to use</span>
+<h2>Replace labels with real content as each asset becomes ready.</h2>
+<p>Every dashed image area and bracketed copy area is a content slot. Keep InfraDispatch as the flagship project, and use static/demo language until real APIs or backend systems exist.</p>
+<div class="spec-grid">
+<div class="spec"><strong>Brand tone</strong><span>Recruiter-focused, operational, commercially credible.</span></div>
+<div class="spec"><strong>Visual tone</strong><span>Navy, gold, white, crisp data-led SaaS styling.</span></div>
+</div>
+</aside>
+</div>
+</section>
+<section class="section" id="portfolio">
+<div class="page-shell">
+<div class="section-head">
+<div>
+<span class="eyebrow" style="color:#7b5c10">01 / Portfolio Section</span>
+<h2>Featured work grid</h2>
+<p>Use this section near the top of the portfolio to prove breadth quickly while still making InfraDispatch the central credibility signal.</p>
+</div>
+<aside class="annotation">
+<span class="label">Population notes</span>
+<p>Pull project names, status, problem, solution, role, and boundary text from project data. Use product screenshots, UI mockups, diagrams, or neutral abstract operation visuals in the image slots.</p>
+</aside>
+</div>
+<div aria-label="Featured work mockup" class="portfolio-grid">
+<article class="card featured">
+<div class="visual-slot">Hero screenshot / annotated product image<br/>[InfraDispatch dispatch planner UI]</div>
+<h3>InfraDispatch</h3>
+<p>[Smart rule-based dispatch planner/demo for pickup points, route sequencing, assignments, and team briefing outputs.]</p>
+<div class="meta-row">
+<span class="chip gold">Flagship active project</span>
+<span class="chip">Static frontend demo</span>
+<span class="chip">Operations systems</span>
+</div>
+</article>
+<article class="card">
+<div class="visual-slot">Project thumbnail<br/>[InfraCluster grouping board]</div>
+<h3>InfraCluster</h3>
+<p>[Hotel pickup clustering MVP for group sheets, pickup zones, timing, language, passenger counts, and vehicle alternatives.]</p>
+<div class="meta-row"><span class="chip">Static MVP</span><span class="chip">DMC operations</span></div>
+</article>
+<article class="card">
+<div class="visual-slot">Project thumbnail<br/>[InfraSky scoring dashboard]</div>
+<h3>InfraSky</h3>
+<p>[Condition-aware stargazing planner concept for product fit, guest readiness, guide outputs, and SOP preparation.]</p>
+<div class="meta-row"><span class="chip">Prototype</span><span class="chip">Tour product logic</span></div>
+</article>
+<article class="card">
+<div class="visual-slot">Project thumbnail<br/>[InfraQuote quotation worksheet]</div>
+<h3>InfraQuote</h3>
+<p>[Quotation logic concept separating net cost, selling price, markup, margin, VAT, tickets, transport, and break-even risk.]</p>
+<div class="meta-row"><span class="chip">Functional static MVP</span><span class="chip">Commercial systems</span></div>
+</article>
+<article class="card">
+<div class="visual-slot">Proof point visual<br/>[Article series / framework map]</div>
+<h3>Operations Thought Leadership</h3>
+<p>[Cluster of published articles that connect practical tourism operations, sales workflows, guide quality, and control tower thinking.]</p>
+<div class="meta-row"><span class="chip">Insights</span><span class="chip">Recruiter proof</span></div>
+</article>
+</div>
+</div>
+</section>
+<section class="section dark" id="project-detail">
+<div class="page-shell">
+<div class="section-head">
+<div>
+<span class="eyebrow">02 / Projects Section</span>
+<h2>Individual project case study</h2>
+<p>This detailed view turns each project into a credible case study: problem, design logic, outcomes, scope boundary, and implementation status.</p>
+</div>
+<aside class="annotation">
+<span class="label">Brand role</span>
+<p>The layout should make Ahmed look like a practical product and operations thinker, not just a page builder. Keep outcome claims measurable only when evidence exists.</p>
+</aside>
+</div>
+<div class="case-layout">
+<article class="case-card">
+<div class="case-hero">
+<div class="visual-slot">Large project visual<br/>[Screenshot, workflow diagram, or product interaction image]</div>
+<span class="label">Featured case study</span>
+<h3>[Project Name: InfraDispatch]</h3>
+<p>[One-paragraph project description: what it is, who it helps, and the operational problem it clarifies.]</p>
+<div class="outcomes">
+<div class="outcome"><strong>[01]</strong><span>Primary operational outcome or decision improved.</span></div>
+<div class="outcome"><strong>[02]</strong><span>Workflow, cost, timing, or coordination signal.</span></div>
+<div class="outcome"><strong>[03]</strong><span>Recruiter-facing proof of product thinking.</span></div>
+</div>
+</div>
+<div class="case-body">
+<div>
+<span class="label">Problem</span>
+<p>[Describe the fragmented or manual workflow the project addresses. Keep it grounded in tourism operations.]</p>
+</div>
+<div>
+<span class="label">Solution Logic</span>
+<p>[Explain rules, inputs, scoring, sequencing, or decision support patterns. Mention static/demo status clearly.]</p>
+</div>
+<div>
+<span class="label">Role</span>
+<p>[Product concept owner, workflow designer, researcher, prototype builder, or implementation planner.]</p>
+</div>
+<div>
+<span class="label">Next Build Step</span>
+<p>[Backend/API integration, authenticated users, live routing, supplier rates, inventory locks, or QA data validation.]</p>
+</div>
+</div>
+<div class="case-note"><strong>Boundary copy:</strong> [Static frontend demo with rule-based logic. No production routing API, backend accounts, live traffic, live OTA inventory, or vehicle inventory integration yet.]</div>
+</article>
+<aside>
+<div class="sidebar-panel">
+<h4>Case Study Sidebar</h4>
+<div class="timeline">
+<div><strong>Status:</strong> [Live static demo / Static MVP / Prototype]</div>
+<div><strong>Audience:</strong> [DMC teams, tour operators, recruiters, product stakeholders]</div>
+<div><strong>Inputs:</strong> [Hotels, pickup points, passenger counts, guide language, pricing rules]</div>
+<div><strong>Outputs:</strong> [Route sequence, briefing, cost signal, case study insight]</div>
+</div>
+</div>
+<div class="sidebar-panel">
+<h4>Recommended Page Flow</h4>
+<div class="timeline">
+<div>Overview and hero visual</div>
+<div>Problem and operational context</div>
+<div>Workflow or system diagram</div>
+<div>Outcomes, limitations, and next steps</div>
+</div>
+</div>
+</aside>
+</div>
+</div>
+</section>
+<section class="section" id="insights">
+<div class="page-shell">
+<div class="section-head">
+<div>
+<span class="eyebrow" style="color:#7b5c10">03 / Insights Section</span>
+<h2>Thought leadership feed</h2>
+<p>Use editorial cards to show recurring topics: DMC operations, assignment logic, guide quality, sales workflows, pricing, and market intelligence.</p>
+</div>
+<aside class="annotation">
+<span class="label">Content notes</span>
+<p>Each article card should include a category, publication date, clear title, short preview, and optional related project. Keep copy direct and useful, like a field manual for operators.</p>
+</aside>
+</div>
+<div aria-label="Insights feed mockup" class="insights-grid">
+<article class="article-card">
+<div class="article-top">
+<div class="visual-slot">Article image / diagram<br/>[Fleet control tower visual]</div>
+<span class="label">Operations Systems</span>
+<h3>[The Fleet Control Tower: What Operations Managers Should See on One Screen]</h3>
+<p>[Preview text explaining the operational lens and why the article matters to DMC leaders.]</p>
+</div>
+<div class="article-bottom">
+<div class="article-date">[Published date] · [6 min read]</div>
+<div class="meta-row"><span class="chip">Control tower</span><span class="chip">DMC ops</span></div>
+</div>
+</article>
+<article class="article-card">
+<div class="article-top">
+<div class="visual-slot">Article image / diagram<br/>[Assignment scorecard]</div>
+<span class="label">Assignment Logic</span>
+<h3>[The Assignment Engine: Right Person, Right Operation]</h3>
+<p>[Preview text about matching guides, drivers, timing, capability, guest profile, and service risk.]</p>
+</div>
+<div class="article-bottom">
+<div class="article-date">[Published date] · [7 min read]</div>
+<div class="meta-row"><span class="chip">Guide quality</span><span class="chip">Dispatch</span></div>
+</div>
+</article>
+<article class="article-card">
+<div class="article-top">
+<div class="visual-slot">Article image / diagram<br/>[Pricing worksheet]</div>
+<span class="label">Tour Quotation</span>
+<h3>[Net Cost, Selling Price, Markup and Margin]</h3>
+<p>[Preview text that positions Ahmed as commercially aware, not only operationally focused.]</p>
+</div>
+<div class="article-bottom">
+<div class="article-date">[Published date] · [5 min read]</div>
+<div class="meta-row"><span class="chip">Pricing</span><span class="chip">Sales ops</span></div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<section class="section" id="style-system">
+<div class="page-shell">
+<div class="section-head">
+<div>
+<span class="eyebrow" style="color:#7b5c10">04 / Design System Notes</span>
+<h2>Implementation guide</h2>
+<p>These tokens and layout rules keep the mockups consistent when translated into the current static website.</p>
+</div>
+<aside class="annotation">
+<span class="label">Responsive behavior</span>
+<p>Desktop uses multi-column evidence layouts. Tablet collapses to two-column grids. Mobile becomes a single editorial column with shorter image slots and clear section anchors.</p>
+</aside>
+</div>
+<div class="style-board">
+<div class="token">
+<strong>Color Scheme</strong>
+<p>Navy for authority, gold for expertise signals, white cards for clarity, cool gray for operational calm.</p>
+<div class="swatches">
+<span class="swatch" style="background:#071527"></span>
+<span class="swatch" style="background:#c6a14a"></span>
+<span class="swatch" style="background:#fff"></span>
+<span class="swatch" style="background:#f4f6f8"></span>
+</div>
+</div>
+<div class="token">
+<strong>Typography</strong>
+<p>Serif display headings for executive editorial authority. Arial/sans UI text for labels, cards, chips, and metadata.</p>
+</div>
+<div class="token">
+<strong>Spacing &amp; Components</strong>
+<p>8px radius, 16px card gaps, 72px section rhythm, dashed placeholders for assets, concise metadata chips.</p>
+</div>
+</div>
+<div class="responsive-strip">
+<div class="device"><strong>Desktop</strong>3-column portfolio grid, 2-column case study, 3-card insights feed.</div>
+<div class="device"><strong>Tablet</strong>Portfolio and insights reduce to two columns; case sidebar stacks below detail.</div>
+<div class="device"><strong>Mobile</strong>All sections become one column; image slots stay labeled and content remains scannable.</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="mock-footer">
+<div class="page-shell">
+<strong>Mockup boundary:</strong> This is a static visual framework and content-planning artifact. It uses placeholder text and mock image slots; it does not add live backend, API integrations, analytics events, or real project data wiring.
+    </div>
+<div aria-label="GitHub links" class="github-footer-links"><a class="footer-repository-badge" href="https://github.com/AhmedElshemyOps/tourism-ai-operations-playbook" rel="noopener noreferrer" target="_blank">Tourism AI Playbook on GitHub ↗</a><a href="https://github.com/AhmedElshemyOps" rel="noopener noreferrer" target="_blank">Ahmed Mahmoud on GitHub ↗</a></div></footer>
+<script defer="True" src="assets/js/table-responsive-v16.js?v=20260721"></script></body>
+</html>

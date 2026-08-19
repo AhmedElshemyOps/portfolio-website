@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html id="top" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>InfraQuote | Tour Quotation &amp; Costing Tool for DMCs</title>
+<meta content="InfraQuote is a static MVP for DMC city-tour costing, margin review, break-even control, internal worksheets, and client-ready quotations." name="description"/>
+<link href="https://ahmedqualityops.com/infraquote.html" rel="canonical"/>
+<link href="assets/brand/favicon-32.png" rel="icon" type="image/png"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=Playfair+Display:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<link href="assets/css/styles.css" rel="stylesheet"/>
+<link href="assets/css/design-vnext.css" rel="stylesheet"/>
+<link href="assets/css/infraquote.css" rel="stylesheet"/>
+<link href="site.webmanifest" rel="manifest"/>
+<link href="assets/brand/favicon-192.png" rel="apple-touch-icon"/>
+<script data-schema="seo-geo" type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"InfraQuote","url":"https://ahmedqualityops.com/infraquote.html","applicationCategory":"BusinessApplication","operatingSystem":"Web","isAccessibleForFree":true,"description":"Static MVP for DMC city-tour costing, margin review, guest requirements, transport assumptions and client-ready quotations.","author":{"@type":"Person","name":"Ahmed Mahmoud","url":"https://ahmedqualityops.com/"}}</script>
+<link href="assets/css/github-integration.css?v=20260711" rel="stylesheet"/><link href="/assets/css/final-enhancements.css?v=20260712" rel="stylesheet"/>
+<link href="assets/css/table-responsive-v16.css?v=20260721" rel="stylesheet"/></head>
+<body class="infraquote-page">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="container nav">
+<a aria-label="Ahmed Mahmoud portfolio home" class="wordmark" href="index.html"><span class="wordmark-mark">AM</span><span>Ahmed Mahmoud<small>Tourism Operations · Product Operations</small></span></a>
+<button aria-controls="siteNav" aria-expanded="false" class="menu-button" id="menuButton" type="button">Menu</button>
+<nav aria-label="Main navigation" class="nav-links" id="siteNav">
+<a href="index.html">Home</a>
+<div class="dropdown"><button class="dropbtn active" type="button">Projects</button><div class="dropdown-menu"><a href="projects.html">All Projects</a><a href="infradispatch/">InfraDispatch · Dispatch Planner</a>
+<a href="infracluster.html">InfraCluster · Hotel Clustering</a><a href="infrasky.html">InfraSky · Stargazing Planner</a><a href="infraquote.html">InfraQuote · Quotation Tool</a></div></div>
+<a href="articles.html">Articles</a><a href="experience/">Experience</a><a href="index.html#footer-contact">Contact</a><a href="tourism-ai-operations-playbook.html">AI Playbook</a><a class="btn small" download="" href="downloads/Ahmed_Mahmoud_Full_CV.html">Download CV</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="cluster-hero infraquote-hero">
+<div class="container cluster-hero-grid">
+<div>
+<p class="eyebrow">InfraQuote · Calculate internally. Present externally.</p>
+<h1>Build professional tour costing, margin review and client quotation in one flow.</h1>
+<p>InfraQuote turns a DMC city-tour request into an internal worksheet, break-even review, validation check and client-ready quotation without exposing supplier rates or margin logic.</p>
+<div class="hero-actions"><a class="btn" href="#quoteApp">Create quotation</a><a class="btn secondary" href="articles.html#quotation">Learn methodology</a></div>
+</div>
+<aside class="cluster-hero-card">
+<strong>Problem, solution, use case</strong>
+<p><strong>Problem:</strong> Tour quotations become risky when guest requirements, vehicle assumptions, attraction tickets, guide costs, VAT, margin and client wording are handled in separate notes.</p>
+<p><strong>Solution:</strong> A static MVP that converts request details into controlled costing, margin review, internal worksheet logic, readiness warnings and a clean client quotation.</p>
+<p><strong>Use case:</strong> DMC sales teams, tour operators, travel desks and product managers preparing Abu Dhabi city-tour quotations with clearer commercial control.</p>
+</aside>
+</div>
+</section>
+<section class="quote-shell" id="quoteApp">
+<div class="quote-app">
+<aside class="quote-sidebar">
+<div class="quote-progress" id="quoteProgress"></div>
+<div class="quote-actions">
+<button class="btn" id="saveDraft" type="button">Save draft</button>
+<button class="btn secondary" id="duplicateQuote" type="button">Duplicate</button>
+<button class="btn secondary" id="resetQuote" type="button">Reset</button>
+</div>
+<p class="quote-note">Drafts save automatically in this browser. Demo supplier/ticket rates are editable sample data only.</p>
+</aside>
+<section class="quote-workspace">
+<form class="quote-form" id="quoteForm" onsubmit="return false">
+<section class="quote-step" data-step="0">
+<div class="step-head"><span>Step 1</span><h2>Client &amp; booking details</h2></div>
+<div class="form-grid">
+<label>Client company<input id="clientCompany"/></label><label>Contact person<input id="contactPerson"/></label>
+<label>Email<input id="clientEmail" type="email"/></label><label>Phone<input id="clientPhone"/></label>
+<label>Enquiry reference<input id="enquiryRef"/></label><label>Quotation number<input id="quoteNo"/></label>
+<label>Quotation date<input id="quoteDate" type="date"/></label><label>Service date<input id="serviceDate" type="date"/></label>
+<label>Validity date<input id="validityDate" type="date"/></label><label>Prepared by<input id="preparedBy"/></label>
+<label>Market/source<input id="marketSource"/></label><label>Nationality<input id="nationality" placeholder="Guest nationality or source market"/></label>
+<label>Currency<select id="currency"><option>AED</option><option>USD</option><option>EUR</option><option>GBP</option><option>SAR</option></select><small id="currencyHint"></small></label>
+<label>Service type<select id="serviceType"><option>Private tour</option><option>Shared tour</option><option>Corporate group</option><option>School group</option><option>VIP tour</option><option>Custom tour</option></select></label>
+<label>Status<select id="quoteStatus"><option>Draft</option><option>Under review</option><option>Sent</option><option>Revised</option><option>Confirmed</option></select></label>
+</div>
+</section>
+<section class="quote-step" data-step="1" hidden="">
+<div class="step-head"><span>Step 2</span><h2>Guests &amp; service requirements</h2></div>
+<div class="form-grid">
+<label>Adults<input id="adults" min="0" type="number"/></label><label>Children<input id="children" min="0" type="number"/></label><label>Infants<input id="infants" min="0" type="number"/></label><label>Total guests<input id="totalGuests" readonly=""/></label>
+<label>Guest profile<select id="guestProfile"><option>Leisure</option><option>Family</option><option>Corporate</option><option>VIP</option><option>School</option><option>Senior guests</option><option>Mixed group</option></select></label>
+<label>Pickup location<input id="pickupLocation"/></label><label>Drop-off location<input id="dropoffLocation"/></label>
+<label>Pickup points<input id="pickupPoints" min="1" type="number"/></label><label>Pickup time<input id="pickupTime" type="time"/></label>
+<label>Tour duration<select id="tourDuration"><option>Half day</option><option>Full day</option><option>Custom</option></select></label><label>Custom hours<input id="customHours" min="1" step="0.5" type="number"/></label>
+<label>Selling style<select id="sellingStyle"><option>FIT</option><option>MICE</option><option>Group</option></select></label>
+<label>Comfort level<select id="comfortLevel"><option>Standard</option><option>Comfort</option><option>Premium</option><option>VIP</option></select></label>
+<label>Tour pace<select id="tourPace"><option>Relaxed</option><option>Balanced</option><option>Fast</option></select></label>
+<label>Tour difficulty<select id="tourDifficulty"><option>Easy</option><option>Moderate</option><option>Long walking</option><option>Outdoor-heavy</option><option>Senior-friendly</option></select></label>
+<label>Special occasion<input id="specialOccasion" placeholder="Birthday, honeymoon, delegation, incentive..."/></label>
+<label>Meal preference<select id="mealPreference"><option>No meal required</option><option>Quick cafe stop</option><option>Lunch stop required</option><option>Premium restaurant</option><option>Vegetarian / allergy note</option></select></label>
+<label class="full">Mobility/accessibility requirements<textarea id="accessibility"></textarea></label>
+<fieldset class="interest-field full">
+<legend>Guest interest tags</legend>
+<div class="quote-checks">
+<label><input data-interest="Culture" type="checkbox"/>Culture</label>
+<label><input data-interest="Museums" type="checkbox"/>Museums</label>
+<label><input data-interest="Shopping" type="checkbox"/>Shopping</label>
+<label><input data-interest="Family fun" type="checkbox"/>Family fun</label>
+<label><input data-interest="Architecture" type="checkbox"/>Architecture</label>
+<label><input data-interest="Photography" type="checkbox"/>Photography</label>
+<label><input data-interest="Food" type="checkbox"/>Food</label>
+<label><input data-interest="Nature" type="checkbox"/>Nature</label>
+<label><input data-interest="Luxury" type="checkbox"/>Luxury</label>
+</div>
+</fieldset>
+<div class="quote-checks full"><label><input id="wheelchair" type="checkbox"/>Wheelchair support required</label><label><input id="childSeat" type="checkbox"/>Child seat required</label></div>
+</div>
+<div class="smart-prompts" id="smartPrompts"></div>
+</section>
+<section class="quote-step" data-step="2" hidden="">
+<div class="step-head"><span>Step 3</span><h2>Itinerary builder</h2></div>
+<div class="experience-panel" id="itineraryAdvisor"></div>
+<div class="quote-toolbar"><select id="attractionSelect"></select><button class="btn secondary" id="addStop" type="button">Add stop</button></div>
+<div class="item-list" id="itineraryList"></div>
+</section>
+<section class="quote-step" data-step="3" hidden="">
+<div class="step-head"><span>Step 4</span><h2>Transport, guide &amp; operating costs</h2></div>
+<div class="vehicle-panel" id="vehiclePanel"></div>
+<div class="form-grid">
+<label>Guide language<input id="guideLanguage" list="guideLanguageOptions" placeholder="English, French, Arabic, German..."/><datalist id="guideLanguageOptions"></datalist></label>
+<label>Transport service flags<select id="transportMode"><option>Tour only</option><option>Airport pickup</option><option>Airport drop-off</option><option>Airport pickup and drop-off</option></select></label>
+<label>Flight number<input id="flightNumber" placeholder="Optional for airport services"/></label><label>Terminal / airport note<input id="terminalNote" placeholder="Terminal, gate, arrival hall, meeting point"/></label>
+<label>Arrival/departure time<input id="flightTime" type="time"/></label><label>Waiting policy<select id="waitingPolicy"><option>Standard waiting policy</option><option>Extended waiting buffer</option><option>VIP meet-and-greet buffer</option></select></label>
+<label>Selected vehicle<select id="vehicleSelect"></select></label><label>Vehicle quantity<input id="vehicleQty" min="1" type="number"/></label>
+<label>Override reason<input id="vehicleOverride"/></label><label>Guide type<select id="guideType"><option>Licensed guide</option><option>Tour leader</option><option>Driver-guide</option><option>Hostess</option><option>Assistant guide</option><option>Interpreter</option></select></label>
+<label>Coordinator / handling fee<input id="handlingFee" min="0" type="number"/></label><label>Risk buffer<input id="riskBuffer" min="0" type="number"/></label>
+<div class="quote-checks full"><label><input id="luggage" type="checkbox"/>Luggage requirement affects vehicle comfort</label><label><input id="airportPickup" type="checkbox"/>Airport pickup required</label><label><input id="airportDropoff" type="checkbox"/>Airport drop-off required</label></div>
+</div>
+</section>
+<section class="quote-step" data-step="4" hidden="">
+<div class="step-head"><span>Step 5</span><h2>Tickets, extras, VAT &amp; conditional costs</h2></div>
+<div class="quote-toolbar"><button class="btn secondary" id="addCost" type="button">Add custom cost</button><button class="btn secondary" id="addCondition" type="button">Add conditional cost</button></div>
+<div class="item-list" id="costList"></div>
+<div class="form-grid">
+<label>VAT treatment<select id="vatMode"><option value="exclusive">VAT exclusive</option><option value="inclusive">VAT inclusive</option><option value="none">No VAT / outside scope</option></select></label>
+<label>Gratuities wording<select id="gratuities"><option>Gratuities are not included and remain at the guest’s discretion.</option><option>Gratuities are included.</option><option>Gratuities are optional and not included in the quoted price.</option></select></label>
+</div>
+</section>
+<section class="quote-step" data-step="5" hidden="">
+<div class="step-head"><span>Step 6</span><h2>Pricing, margin &amp; break-even review</h2></div>
+<div class="form-grid">
+<label>Pricing method<select id="pricingMethod"><option value="margin">Target margin</option><option value="markup">Markup</option></select></label>
+<label>Markup %<input id="markupPct" min="0" step="0.5" type="number"/></label>
+<label>Target margin %<input id="targetMargin" max="90" min="0" step="0.5" type="number"/></label>
+<label>Review threshold %<input id="reviewMargin" max="90" min="0" step="0.5" type="number"/></label>
+<label>Minimum shared-tour target<input id="minimumGuests" min="1" type="number"/></label>
+<label>Rounding increment<input id="rounding" min="1" type="number"/></label>
+</div>
+<div class="pricing-explain">Markup is profit divided by net cost. Margin is profit divided by selling price. They are not the same.</div>
+<div class="experience-panel" id="pricingAdvisor"></div>
+<div class="break-even-panel" id="breakEvenPanel"></div>
+</section>
+<section class="quote-step" data-step="6" hidden="">
+<div class="step-head"><span>Step 7</span><h2>Internal worksheet review</h2></div>
+<div id="validationPanel"></div>
+<div class="worksheet" id="internalWorksheet"></div>
+</section>
+<section class="quote-step" data-step="7" hidden="">
+<div class="step-head"><span>Step 8</span><h2>Client quotation preview &amp; export</h2></div>
+<div class="form-grid"><label>Quote theme<select id="quoteTheme"><option>Standard</option><option>Premium</option><option>Corporate</option><option>VIP</option></select></label><label>Tour title<input id="tourTitle"/></label><label class="full">Tour description<textarea id="tourDescription"></textarea></label><label class="full">Inclusions<textarea id="inclusions"></textarea></label><label class="full">Exclusions<textarea id="exclusions"></textarea></label><label class="full">Cancellation / amendment terms<textarea id="cancellation"></textarea></label></div>
+<div class="quote-toolbar"><button class="btn" id="printQuote" type="button">Print / save PDF</button><button class="btn secondary" id="copyClientQuote" type="button">Copy quote text</button><button class="btn secondary" id="exportWorksheet" type="button">Export worksheet CSV</button><button class="btn secondary" id="exportJson" type="button">Export JSON</button><button class="btn secondary" id="prepareDispatch" type="button">Prepare for InfraDispatch</button></div>
+<div class="client-quote" id="clientQuote"></div>
+</section>
+<div class="step-controls"><button class="btn secondary" id="prevStep" type="button">Back</button><button class="btn" id="nextStep" type="button">Next</button></div>
+</form>
+</section>
+<aside class="quote-summary">
+<h2>Live quote review</h2>
+<div class="summary-cards" id="summaryCards"></div>
+<div class="risk-panel" id="riskPanel"></div>
+</aside>
+</div>
+</section>
+<aside class="ai-playbook-context-link" style="margin:32px 0;padding:24px;border:1px solid #b9ddd9;border-left:5px solid #0d7c7a;border-radius:14px;background:#eff9f8;"><h2 style="margin:0 0 8px;color:#071527;font-size:1.35rem;">Connect InfraQuote with the Sales AI Toolkit</h2><p>Use AI for commercial structure and quality review while keeping calculations and terms in approved sources.</p><a href="tourism-sales-quotation-ai-prompts.html" style="display:inline-block;margin-top:8px;font-weight:800;color:#0d7c7a;">Explore the connected playbook article →</a></aside></main>
+<footer class="footer" id="footer-contact"><div class="container footer-grid"><div><strong>InfraQuote by Ahmed Mahmoud</strong><br/><span>Static MVP for DMC quotation discipline · Abu Dhabi first market</span></div><div class="social-row"><a href="projects.html">Projects</a><a href="articles.html#quotation">Methodology</a><a href="mailto:contact@ahmedqualityops.com">Contact</a></div></div><div aria-label="GitHub links" class="github-footer-links"><a class="footer-repository-badge" href="https://github.com/AhmedElshemyOps/tourism-ai-operations-playbook" rel="noopener noreferrer" target="_blank">Tourism AI Playbook on GitHub ↗</a><a href="https://github.com/AhmedElshemyOps" rel="noopener noreferrer" target="_blank">Ahmed Mahmoud on GitHub ↗</a></div></footer>
+<script defer="" src="assets/js/site.js"></script>
+<script defer="" src="assets/js/infraquote-data.js"></script>
+<script defer="" src="assets/js/infraquote-calculations.js"></script>
+<script defer="" src="assets/js/infraquote-app.js"></script>
+<script defer="" src="assets/js/site-config.js"></script>
+<script defer="" src="assets/js/analytics.js"></script>
+<script defer="True" src="assets/js/table-responsive-v16.js?v=20260721"></script></body>
+</html>
