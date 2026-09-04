@@ -162,8 +162,10 @@
    strong without allowing the heading to dominate smaller reading screens. */
 body[data-article-slug="amsterdam-product-discovery-08-commercial-model-unit-economics"] .article-page-header h1{font-size:clamp(2.7rem,4.35vw,4.35rem)}
 body[data-article-slug="amsterdam-product-discovery-09-risk-responsibility"] .article-page-header h1{font-size:clamp(2.65rem,4.1vw,4.2rem)}
+body[data-article-slug="amsterdam-product-discovery-10-seasonality-operating-calendar"] .article-page-header h1{font-size:clamp(2.55rem,3.9vw,4rem)}
 @media(max-width:620px){body[data-article-slug="amsterdam-product-discovery-08-commercial-model-unit-economics"] .article-page-header h1{font-size:clamp(2rem,9.6vw,2.55rem);line-height:1.02}}
 @media(max-width:620px){body[data-article-slug="amsterdam-product-discovery-09-risk-responsibility"] .article-page-header h1{font-size:clamp(1.95rem,9.2vw,2.45rem);line-height:1.03}}
+@media(max-width:620px){body[data-article-slug="amsterdam-product-discovery-10-seasonality-operating-calendar"] .article-page-header h1{font-size:clamp(1.9rem,8.8vw,2.4rem);line-height:1.03}}
 @media(pointer:coarse){.article-body a,.article-source-list a{min-height:44px}.article-sequence>a,.article-growth a{min-height:52px}}
 @supports(content-visibility:auto){.article-related,.article-footer,.article-newsletter{content-visibility:auto;contain-intrinsic-size:auto 700px}}
 @media print{@supports(content-visibility:auto){.article-related,.article-footer,.article-newsletter{content-visibility:visible;contain-intrinsic-size:none}}}

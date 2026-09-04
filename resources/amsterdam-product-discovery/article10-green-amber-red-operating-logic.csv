@@ -1,0 +1,11 @@
+control_id,condition,state,required_action,hard_gate,owner,evidence_to_record,source_type,review_timing
+GAR-01,No relevant warning and all route permit guide and commercial controls closed,GREEN,Operate approved route,Yes,Duty Manager,Completed departure-day check,Live operational evidence,Before departure
+GAR-02,KNMI code yellow relevant to route or timing,AMBER,Apply weather control and document decision,Yes,Duty Manager,Warning and control selected,Official live warning,Before departure
+GAR-03,KNMI orange or red warning relevant to route or timing,RED,Do not operate normal departure,Yes,Duty Manager,Warning and cancellation record,Official live warning,Before departure
+GAR-04,Required Centre exemption missing or invalid,RED,Do not enter controlled area,Yes,Operations Manager,Permit check,Official permit record,Before sale and departure
+GAR-05,Event crowd pressure manageable through approved variant,AMBER,Switch route timing or meeting point,Yes,Duty Manager,Event check and route selected,Official event plus field check,Before departure
+GAR-06,Official closure or security perimeter blocks route with no approved alternative,RED,Cancel or reschedule,Yes,Duty Manager,Closure notice and customer action,Official live notice,Before departure
+GAR-07,Confirmed access need requires an audited alternative,AMBER,Use approved accessible variant and communicate limits,Yes,Product Owner,Guest requirement and approved route,Customer input and route audit,Before confirmation
+GAR-08,No qualified guide available,RED,Do not operate,Yes,Operations Manager,Roster and cancellation record,Internal operational evidence,Before departure
+GAR-09,Departure is below approved commercial minimum,RED,Cancel unless funded research exception is approved,Yes,Product Owner,Channel load contribution and approval,Commercial model and booking data,At cut-off
+GAR-10,Optional attraction unavailable but core route remains viable,AMBER,Remove module and use approved alternative,No,Duty Manager,Attraction status and replacement,Official live information,Before departure

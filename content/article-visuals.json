@@ -863,6 +863,35 @@
       }
     ]
   },
+  "amsterdam-product-discovery-10-seasonality-operating-calendar": {
+    "hero": {
+      "src": "/assets/articles/amsterdam-product-discovery-10-seasonality-operating-calendar/amsterdam-product-discovery-10-seasonality-operating-calendar-hero-1600x900.svg",
+      "width": 1600,
+      "height": 900,
+      "alt": "Amsterdam operating calendar balancing historical climate, live weather, destination demand, product bookings and event pressure",
+      "caption": "The monthly calendar establishes a planning baseline; current evidence retains authority over every departure."
+    },
+    "ogImage": "/assets/articles/amsterdam-product-discovery-10-seasonality-operating-calendar/amsterdam-product-discovery-10-seasonality-operating-calendar-og-1200x630.jpg",
+    "ogAlt": "Amsterdam Layers rolling operating calendar for Article 10",
+    "figures": [
+      {
+        "src": "/assets/articles/amsterdam-product-discovery-10-seasonality-operating-calendar/amsterdam-product-discovery-10-seasonality-operating-calendar-rag-logic-1600x900.svg",
+        "width": 1600,
+        "height": 900,
+        "alt": "Green Amber Red operating authority based on live weather, route, permit, guide, accessibility and booking evidence",
+        "caption": "GREEN permits the approved operation, AMBER requires an owned control and RED stops the normal departure.",
+        "beforeHeadingId": "green--amber--red-the-calendar-must-be-overridable"
+      },
+      {
+        "src": "/assets/articles/amsterdam-product-discovery-10-seasonality-operating-calendar/amsterdam-product-discovery-10-seasonality-operating-calendar-rolling-calendar-1600x900.svg",
+        "width": 1600,
+        "height": 900,
+        "alt": "Rolling operating calendar from September 2026 to August 2027 with monthly baseline states and mandatory live checks",
+        "caption": "The rolling calendar connects each seasonal baseline to a practical instruction while keeping live checks and commercial permission visible.",
+        "beforeHeadingId": "the-12-month-operating-calendar-september-2026-to-august-2027"
+      }
+    ]
+  },
   "article-air-connectivity-dmc-market-intelligence": {
     "hero": {
       "src": "/assets/articles/article-air-connectivity-dmc-market-intelligence/article-air-connectivity-dmc-market-intelligence-hero-1600x900.avif",

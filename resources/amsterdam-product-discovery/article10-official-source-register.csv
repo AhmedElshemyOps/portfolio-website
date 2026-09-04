@@ -1,0 +1,12 @@
+source_id,topic,publisher,source_title,url,evidence_use,evidence_class,checked_date,refresh_rule
+A10-S01,Climate normals,KNMI,Schiphol climate tables,https://www.knmi.nl/klimaat-viewer/grafieken-tabellen/klimaattabellen-per-station/schiphol,Historical climate planning,OFFICIAL_SOURCE,2026-09-04,Annual or method change
+A10-S02,Weather warnings,KNMI,Current weather warnings,https://www.knmi.nl/nederland-nu/weer/waarschuwingen,Departure-day weather state,LIVE_OFFICIAL_SOURCE,2026-09-04,Every departure
+A10-S03,Visitor forecast,Amsterdam O&S,Visitor forecast Amsterdam 2026-2028,https://onderzoek.amsterdam.nl/publicatie/bezoekersprognose-amsterdam-2026-2028,Destination demand context,OFFICIAL_SOURCE,2026-09-04,On new release
+A10-S04,Tourism figures,Amsterdam O&S,Tourism in figures 2025,https://onderzoek.amsterdam.nl/artikel/toerisme-in-cijfers-2025,Staying visitor context,OFFICIAL_SOURCE,2026-09-04,On new release
+A10-S05,Hotel statistics,CBS,Amsterdam hotel guests and overnight stays,https://www.cbs.nl/en-gb/figures/detail/82061ENG?q=amsterdam,Monthly destination context,OFFICIAL_SOURCE,2026-09-04,Monthly
+A10-S06,Daylight context,Rijksoverheid,Summer and winter time,https://www.rijksoverheid.nl/onderwerpen/zomertijd-en-wintertijd/vraag-en-antwoord/wanneer-begint-en-eindigt-de-zomertijd,Daylight planning context,OFFICIAL_SOURCE,2026-09-04,Annual check
+A10-S07,Event,Amsterdam Dance Event,FAQ and contact,https://www.amsterdam-dance-event.nl/en/faq-and-contact/,ADE operating dates and context,PRIMARY_SOURCE,2026-09-04,Before calendar release and departure
+A10-S08,Event,Amsterdam Light Festival,Edition 15 announcement,https://amsterdamlightfestival.com/en/news/the-lights-are-off-edition-14,Winter event dates and context,PRIMARY_SOURCE,2026-09-04,Before calendar release and departure
+A10-S09,Event,City of Amsterdam,King's Day 2027,https://www.amsterdam.nl/nieuws/evenementen-herdenkingen/koningsdag-2027/,King's Day date and operating context,OFFICIAL_SOURCE,2026-09-04,When city guidance changes
+A10-S10,Attraction availability,Hortus Botanicus Amsterdam,Visit information,https://www.dehortus.nl/en/visit/,Optional indoor module status,PRIMARY_SOURCE,2026-09-04,Before departure
+A10-S11,Attraction availability,Eye Filmmuseum,Visit information,https://www.eyefilm.nl/en/visit,Optional indoor module status,PRIMARY_SOURCE,2026-09-04,Before departure

@@ -1,0 +1,20 @@
+dimension,value,planning_class,test_priority,current_evidence,required_pilot_measure,decision_boundary,evidence_class,owner
+Month,January,Lower,Controlled,Historical climate and destination context,Bookings conversion load factor contribution,Not a product-demand forecast,PLANNING_HYPOTHESIS,Product Owner
+Month,February,Lower,Controlled,Historical climate and destination context,Bookings conversion load factor contribution,Not a product-demand forecast,PLANNING_HYPOTHESIS,Product Owner
+Month,March,Shoulder,Standard,Historical climate and destination context,Bookings conversion load factor contribution,Not a product-demand forecast,PLANNING_HYPOTHESIS,Product Owner
+Month,April,Strong,Priority,Historical climate and destination context,Bookings conversion load factor contribution,Event overrides remain active,PLANNING_HYPOTHESIS,Product Owner
+Month,May,Strong,Priority,Historical climate and destination context,Bookings conversion load factor contribution,Not a product-demand forecast,PLANNING_HYPOTHESIS,Product Owner
+Month,June,Strong,Priority,Historical climate and destination context,Bookings conversion load factor contribution,Not a product-demand forecast,PLANNING_HYPOTHESIS,Product Owner
+Month,July,High context,Controlled,Historical climate and destination context,Bookings conversion load factor contribution,Crowd controls remain active,PLANNING_HYPOTHESIS,Product Owner
+Month,August,High context,Controlled,Historical climate and destination context,Bookings conversion load factor contribution,Live forecast dominates,PLANNING_HYPOTHESIS,Product Owner
+Month,September,Strong,Priority,Historical climate and destination context,Bookings conversion load factor contribution,Not a product-demand forecast,PLANNING_HYPOTHESIS,Product Owner
+Month,October,Shoulder,Controlled,Historical climate and destination context,Bookings conversion load factor contribution,ADE controls remain active,PLANNING_HYPOTHESIS,Product Owner
+Month,November,Lower,Controlled,Historical climate and destination context,Bookings conversion load factor contribution,Live closures and events dominate,PLANNING_HYPOTHESIS,Product Owner
+Month,December,Lower,Controlled,Historical climate and destination context,Bookings conversion load factor contribution,Holiday and daylight controls remain active,PLANNING_HYPOTHESIS,Product Owner
+Weekday,Monday,Unknown,Control cell,No product-level history,Sessions bookings conversion guests contribution,Keep offered cells balanced,PILOT_TEST,Analyst
+Weekday,Tuesday,Unknown,Control cell,No product-level history,Sessions bookings conversion guests contribution,Keep offered cells balanced,PILOT_TEST,Analyst
+Weekday,Wednesday,Unknown,Control cell,No product-level history,Sessions bookings conversion guests contribution,Keep offered cells balanced,PILOT_TEST,Analyst
+Weekday,Thursday,Unknown,Control cell,No product-level history,Sessions bookings conversion guests contribution,Keep offered cells balanced,PILOT_TEST,Analyst
+Weekday,Friday,Unknown,Priority test,No product-level history,Sessions bookings conversion guests contribution,Do not label strongest without evidence,PILOT_TEST,Analyst
+Weekday,Saturday,Unknown,Priority test,No product-level history,Sessions bookings conversion guests contribution,Do not label strongest without evidence,PILOT_TEST,Analyst
+Weekday,Sunday,Unknown,Priority test,No product-level history,Sessions bookings conversion guests contribution,Do not label strongest without evidence,PILOT_TEST,Analyst

@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>When Should the Tour Run? Demand, Weather, Seasonality and the Amsterdam Operating Calendar | Ahmed Mahmoud</title><meta name="description" content="Part 10 of a 12-part Amsterdam tourism product-management case study: demand context, historical climate, live-weather controls, event pressure and a rolling operating calendar for Amsterdam Layers."/><meta name="author" content="Ahmed Mahmoud"/><link rel="canonical" href="https://ahmedqualityops.com/articles/amsterdam-product-discovery-10-seasonality-operating-calendar/index.html"/>
+<meta name="theme-color" content="#ffffff"/><meta property="og:title" content="When Should the Tour Run? Demand, Weather, Seasonality and the Amsterdam Operating Calendar"/><meta property="og:description" content="Part 10 of a 12-part Amsterdam tourism product-management case study: demand context, historical climate, live-weather controls, event pressure and a rolling operating calendar for Amsterdam Layers."/><meta property="og:type" content="article"/><meta property="og:site_name" content="Ahmed Mahmoud — Field Journal Portfolio"/><meta property="og:url" content="https://ahmedqualityops.com/articles/amsterdam-product-discovery-10-seasonality-operating-calendar/index.html"/><meta property="og:image" content="https://ahmedqualityops.com/assets/articles/amsterdam-product-discovery-10-seasonality-operating-calendar/amsterdam-product-discovery-10-seasonality-operating-calendar-og-1200x630.jpg"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image:alt" content="Amsterdam Layers rolling operating calendar for Article 10"/><meta property="article:published_time" content="2026-09-04"/><meta property="article:modified_time" content="2026-09-04"/><meta property="article:author" content="https://ahmedqualityops.com/#person"/><meta property="article:section" content="Amsterdam Product Discovery"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="When Should the Tour Run? Demand, Weather, Seasonality and the Amsterdam Operating Calendar | Ahmed Mahmoud"/><meta name="twitter:description" content="Part 10 of a 12-part Amsterdam tourism product-management case study: demand context, historical climate, live-weather controls, event pressure and a rolling operating calendar for Amsterdam Layers."/><meta name="twitter:image" content="https://ahmedqualityops.com/assets/articles/amsterdam-product-discovery-10-seasonality-operating-calendar/amsterdam-product-discovery-10-seasonality-operating-calendar-og-1200x630.jpg"/><meta name="twitter:image:alt" content="Amsterdam Layers rolling operating calendar for Article 10"/>
+<link rel="icon" href="/assets/brand/favicon-32.png" type="image/png"/><link rel="alternate" type="application/atom+xml" title="Ahmed Mahmoud Tourism Operations Knowledge" href="/feed.xml"/><link rel="manifest" href="/site.webmanifest"/><link rel="stylesheet" href="/assets/css/design-tokens.css"/><link rel="stylesheet" href="/assets/css/launch-pages.css"/><link rel="stylesheet" href="/assets/css/article-pages.css"/><link rel="stylesheet" href="/assets/css/discovery.css"/>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Article","headline":"When Should the Tour Run? Demand, Weather, Seasonality and the Amsterdam Operating Calendar","description":"Part 10 of a 12-part Amsterdam tourism product-management case study: demand context, historical climate, live-weather controls, event pressure and a rolling operating calendar for Amsterdam Layers.","mainEntityOfPage":"https://ahmedqualityops.com/articles/amsterdam-product-discovery-10-seasonality-operating-calendar/index.html","datePublished":"2026-09-04","dateModified":"2026-09-04","articleSection":"Amsterdam Product Discovery","wordCount":2305,"timeRequired":"PT11M","author":{"@type":"Person","@id":"https://ahmedqualityops.com/#person","name":"Ahmed Mahmoud","url":"https://ahmedqualityops.com/"},"publisher":{"@id":"https://ahmedqualityops.com/#person"},"isPartOf":{"@id":"https://ahmedqualityops.com/#website"},"image":"https://ahmedqualityops.com/assets/articles/amsterdam-product-discovery-10-seasonality-operating-calendar/amsterdam-product-discovery-10-seasonality-operating-calendar-og-1200x630.jpg"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Knowledge Hub","item":"https://ahmedqualityops.com/knowledge/index.html"},{"@type":"ListItem","position":2,"name":"When Should the Tour Run? Demand, Weather, Seasonality and the Amsterdam Operating Calendar","item":"https://ahmedqualityops.com/articles/amsterdam-product-discovery-10-seasonality-operating-calendar/index.html"}]},{"@context":"https://schema.org","@type":"Dataset","name":"When Should the Tour Run? Demand, Weather, Seasonality and the Amsterdam Operating Calendar — Seasonality model","description":"Part 10 of a 12-part Amsterdam tourism product-management case study: demand context, historical climate, live-weather controls, event pressure and a rolling operating calendar for Amsterdam Layers.","creator":{"@type":"Person","name":"Ahmed Mahmoud"},"dateModified":"2026-09-04","license":"https://ahmedqualityops.com/privacy/index.html","distribution":[{"@type":"DataDownload","encodingFormat":"text/csv","contentUrl":"https://ahmedqualityops.com/resources/amsterdam-product-discovery/article10-seasonality-model.csv"},{"@type":"DataDownload","encodingFormat":"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet","contentUrl":"https://ahmedqualityops.com/resources/amsterdam-product-discovery/Amsterdam-Product-Discovery-Evidence-Pack.xlsx"}]}]</script>
+<script defer src="/assets/js/site-config.js"></script><script defer src="/assets/js/analytics.js"></script><script defer src="/assets/js/discovery.js"></script><script defer src="/assets/js/newsletter.js"></script><script defer src="/assets/js/saved-reading.js"></script><script defer src="/assets/js/article-tables.js"></script><script defer src="/assets/js/article-prompts.js"></script><script defer src="/assets/js/article-reader.js"></script></head><body class="article-reader-page" data-article-slug="amsterdam-product-discovery-10-seasonality-operating-calendar">
+<div class="article-progress-track" aria-hidden="true"><span data-article-progress></span></div><div class="article-resume" data-reader-resume role="status" hidden><span>Continue reading?</span><button type="button" data-reader-resume-action>Resume</button><button type="button" data-reader-resume-dismiss aria-label="Dismiss saved reading position">×</button></div><a class="skip" href="#article">Skip to article</a><header class="masthead"><a class="brand" href="/#top" aria-label="Ahmed Mahmoud portfolio home"><span class="mark">AM</span><span><strong>Ahmed Mahmoud</strong><small>Tourism Operations × Product × AI</small></span></a><nav aria-label="Primary"><a href="/knowledge/index.html" aria-current="page">Knowledge</a><a href="/learning/index.html">Learning</a><a href="/lab/index.html">Lab</a><a href="/resources/index.html">Resources</a><a href="/#cv-about">Profile</a></nav></header>
+<main class="article-page" id="article" tabindex="-1"><div class="article-topline"><a class="article-back" href="/knowledge/index.html">← Back to Knowledge Hub</a><div class="reader-utilities" aria-label="Reading preferences">
+    <div class="reader-font-controls" role="group" aria-label="Text size"><button type="button" data-reader-font="decrease" aria-label="Decrease article text size">A−</button><button type="button" data-reader-font="reset" aria-label="Reset article text size">A</button><button type="button" data-reader-font="increase" aria-label="Increase article text size">A+</button></div>
+    <button type="button" data-reader-contrast aria-pressed="false">High contrast</button><button type="button" data-reader-theme aria-pressed="false">Dark reading</button><button type="button" data-article-bookmark aria-pressed="false">Save article</button><a href="/saved/index.html">Saved <span data-saved-count>0</span></a><button type="button" data-global-search-open>Search platform</button>
+  </div></div><header class="article-page-header"><span class="eyebrow">Amsterdam Product Discovery · Field guide</span><h1>When Should the Tour Run? Demand, Weather, Seasonality and the Amsterdam Operating Calendar</h1><p>Part 10 of a 12-part Amsterdam tourism product-management case study: demand context, historical climate, live-weather controls, event pressure and a rolling operating calendar for Amsterdam Layers.</p><dl class="article-meta-row"><div><dt>Reading time</dt><dd>11 minutes</dd></div></dl></header><figure class="article-visual article-hero-visual"><img src="/assets/articles/amsterdam-product-discovery-10-seasonality-operating-calendar/amsterdam-product-discovery-10-seasonality-operating-calendar-hero-1600x900.svg" width="1600" height="900" sizes="(max-width: 620px) calc(100vw - 36px), (max-width: 900px) calc(100vw - 48px), 1120px" alt="Amsterdam operating calendar balancing historical climate, live weather, destination demand, product bookings and event pressure" loading="eager" decoding="async" fetchpriority="high"/><figcaption><p>The monthly calendar establishes a planning baseline; current evidence retains authority over every departure.</p></figcaption></figure><section class="article-series-bar" aria-label="Article series information"><div><span>Flagship case study</span><strong>Building a Data-Driven Signature Tour</strong><small>Part 10 of 12</small></div><div class="article-tags"><a href="/series/amsterdam-tourism-product-discovery/index.html">Open series hub</a><a href="/series/amsterdam-tourism-product-discovery/index.html#methodology">Methodology</a><a href="/series/amsterdam-tourism-product-discovery/index.html#artifacts">Project artifacts</a></div></section><section class="article-brief" aria-labelledby="reader-brief-title">
+    <span class="article-brief-number" aria-hidden="true">01</span>
+    <div><span class="eyebrow">Research brief</span><h2 id="reader-brief-title">What you will take away</h2><p>Part 10 of a 12-part Amsterdam tourism product-management case study: demand context, historical climate, live-weather controls, event pressure and a rolling operating calendar for Amsterdam Layers.</p></div>
+    <ul><li><a href="#a-calendar-is-an-operating-hypothesis-not-a-promise-about-the-weather">Explore A calendar is an operating hypothesis, not a promise about the weather</a></li><li><a href="#first-separate-three-evidence-types-that-are-often-mixed-together">Explore First separate three evidence types that are often mixed together</a></li><li><a href="#demand-context-enough-visitors-exist-but-product-demand-still-has-to-be-earned">Explore Demand context: enough visitors exist, but product demand still has to be earned</a></li></ul>
+  </section><div class="article-reader-layout"><aside class="article-toc" aria-label="Article navigation"><details data-reader-toc open><summary>In this article <span>16 sections</span></summary><nav aria-label="Table of contents"><details class="toc-group" open><summary>Sections 01–06</summary><ol><li><a href="#a-calendar-is-an-operating-hypothesis-not-a-promise-about-the-weather" data-toc-link><span>01</span>A calendar is an operating hypothesis, not a promise about the weather</a></li><li><a href="#first-separate-three-evidence-types-that-are-often-mixed-together" data-toc-link><span>02</span>First separate three evidence types that are often mixed together</a></li><li><a href="#demand-context-enough-visitors-exist-but-product-demand-still-has-to-be-earned" data-toc-link><span>03</span>Demand context: enough visitors exist, but product demand still has to be earned</a></li><li><a href="#seasonality-model-combine-demand-context-with-operating-friction" data-toc-link><span>04</span>Seasonality Model: combine demand context with operating friction</a></li><li><a href="#daylight-changes-the-product-clock" data-toc-link><span>05</span>Daylight changes the product clock</a></li><li><a href="#green--amber--red-the-calendar-must-be-overridable" data-toc-link><span>06</span>Green / Amber / Red: the calendar must be overridable</a></li></ol></details><details class="toc-group" ><summary>Sections 07–12</summary><ol><li><a href="#events-are-demand-opportunities-and-operating-disruptions-at-the-same-time" data-toc-link><span>07</span>Events are demand opportunities and operating disruptions at the same time</a></li><li><a href="#attraction-availability-belongs-in-the-calendar-even-when-attractions-are-optional" data-toc-link><span>08</span>Attraction availability belongs in the calendar even when attractions are optional</a></li><li><a href="#the-12-month-operating-calendar-september-2026-to-august-2027" data-toc-link><span>09</span>The 12-month operating calendar: September 2026 to August 2027</a></li><li><a href="#alternative-product-trigger-matrix-resilience-without-feature-creep" data-toc-link><span>10</span>Alternative-product trigger matrix: resilience without feature creep</a></li><li><a href="#weekday-analysis-design-an-experiment-not-a-myth" data-toc-link><span>11</span>Weekday analysis: design an experiment, not a myth</a></li><li><a href="#what-the-calendar-can-and-cannot-tell-management" data-toc-link><span>12</span>What the calendar can and cannot tell management</a></li></ol></details><details class="toc-group" ><summary>Sections 13–16</summary><ol><li><a href="#decision-gate-5" data-toc-link><span>13</span>Decision Gate 5</a></li><li><a href="#human-ai-control-prompts" data-toc-link><span>14</span>Human + AI control prompts</a></li><li><a href="#research-artifacts" data-toc-link><span>15</span>Research artifacts</a></li><li><a href="#article-sources-title" data-toc-link><span>16</span>Official sources</a></li></ol></details></nav></details></aside><div class="article-reading-column"><details class="article-glossary"><summary>Terms used in this article <span>2</span></summary><dl><div><dt>AI</dt><dd>Artificial intelligence: software methods that generate, classify or support decisions from supplied information.</dd></div><div><dt>OTA</dt><dd>Online travel agency: a digital intermediary that sells or distributes travel products.</dd></div></dl></details><article class="article-body"><div class="series-article-meta">
+  <div><span>Series</span><strong>Building a Data-Driven Signature Tour · Part 10 of 12</strong></div>
+  <div><span>Decision</span><strong>When can Amsterdam Layers operate reliably without confusing climate, live weather, destination demand and product bookings?</strong></div>
+  <div><span>Research checked</span><strong>4 September 2026</strong></div>
+  <div><span>Status</span><strong>Operating calendar defined · live weather and pilot demand still required</strong></div>
+</div>
+<h2 id="a-calendar-is-an-operating-hypothesis-not-a-promise-about-the-weather"><a class="heading-anchor" href="#a-calendar-is-an-operating-hypothesis-not-a-promise-about-the-weather" aria-label="Link to A calendar is an operating hypothesis, not a promise about the weather">#</a>A
+calendar is an operating hypothesis, not a promise about the
+weather</h2>
+<p>Article 09 established that Amsterdam Layers can move toward a
+controlled pilot only with legal, accessibility, safety and
+destination-responsibility controls. Article 10 now asks a deceptively
+simple question: <strong>when should the tour actually run?</strong></p>
+<p>The answer cannot be “summer” or “weekends.” The approved concept is
+a live, small-group contextual walk, normally Plantage→Oosterpark,
+110–135 minutes, maximum eight guests. Its commercial model is still
+conditional, its default route is weather exposed, and the same month
+can contain a quiet Tuesday, a citywide festival, a transport disruption
+and a severe-weather warning. A useful calendar therefore needs several
+clocks at once: historical demand, forecast demand, historical climate,
+actual weather forecast, daylight, known events, attraction availability
+and the product’s own booking economics.</p>
+<p>This article builds that operating system without pretending that a
+30-year climate average predicts the weather on a specific departure or
+that Amsterdam's visitor forecast predicts how many people will buy
+Amsterdam Layers.</p>
+<h2 id="first-separate-three-evidence-types-that-are-often-mixed-together"><a class="heading-anchor" href="#first-separate-three-evidence-types-that-are-often-mixed-together" aria-label="Link to First separate three evidence types that are often mixed together">#</a>First
+separate three evidence types that are often mixed together</h2>
+<p><strong>Historical climate</strong> describes what conditions have
+typically looked like over a long period. KNMI's current Schiphol
+normals use 1991–2020 averages. They are appropriate for staffing,
+route-design and seasonal contingency planning; they are not a forecast
+for 15 October 2026. <a
+href="https://www.knmi.nl/klimaat-viewer/grafieken-tabellen/klimaattabellen-per-station/schiphol">KNMI
+climate normals</a>.</p>
+<p><strong>Weather forecast</strong> is the short-horizon operational
+input. The duty manager must check the current KNMI forecast and
+warnings before each departure. A calendar may say August is usually
+mild, but a specific August departure can still be cancelled for a
+severe warning. <a
+href="https://www.knmi.nl/nederland-nu/weer/waarschuwingen">KNMI weather
+warnings</a>.</p>
+<p><strong>Demand forecast</strong> is different again. Amsterdam
+O&amp;S recorded 23.7 million tourist overnight stays in 2025 and
+forecasts 2026 through scenarios: the low scenario is roughly stable
+while the middle/high scenarios reach up to 25.1 million overnight
+stays. By 2028, the scenario range is 25.0–29.4 million. O&amp;S
+explicitly describes this as a forecast based on assumptions and
+uncertainty. It is evidence that Amsterdam remains a large visitor
+economy; it is <em>not</em> a booking forecast for this tour. <a
+href="https://onderzoek.amsterdam.nl/publicatie/bezoekersprognose-amsterdam-2026-2028">Amsterdam
+O&amp;S visitor forecast</a>.</p>
+<h2 id="demand-context-enough-visitors-exist-but-product-demand-still-has-to-be-earned"><a class="heading-anchor" href="#demand-context-enough-visitors-exist-but-product-demand-still-has-to-be-earned" aria-label="Link to Demand context: enough visitors exist, but product demand still has to be earned">#</a>Demand
+context: enough visitors exist, but product demand still has to be
+earned</h2>
+<p>Official city evidence shows the scale. In 2024 Amsterdam had nearly
+10 million staying visitors, who stayed an average 2.36 nights and
+generated nearly 23 million overnight stays. <a
+href="https://onderzoek.amsterdam.nl/artikel/toerisme-in-cijfers-2025">Amsterdam
+O&amp;S — tourism in figures</a>. CBS also publishes Amsterdam hotel
+guests and overnight stays monthly, with 2025 final and 2026 currently
+provisional. <a
+href="https://www.cbs.nl/en-gb/figures/detail/82061ENG?q=amsterdam">CBS
+monthly Amsterdam hotel statistics</a>.</p>
+<p>But Article 10 refuses to turn hotel nights into tour bookings. The
+<a
+href="/resources/amsterdam-product-discovery/article10-monthly-weekday-analysis.csv">monthly/weekday
+analysis</a> therefore labels month bands as planning classifications
+and weekday priorities as <strong>tests</strong>. There is no governed
+Amsterdam Layers booking history yet, and no official dataset answers
+whether this exact product converts better on Friday than Tuesday.</p>
+<p>That means Article 11 must collect departure-level searches,
+bookings, conversion, lead time, cancellations and load factor by
+weekday. Until then, Friday–Sunday are useful test cells, not facts.</p>
+<h2 id="seasonality-model-combine-demand-context-with-operating-friction"><a class="heading-anchor" href="#seasonality-model-combine-demand-context-with-operating-friction" aria-label="Link to Seasonality Model: combine demand context with operating friction">#</a>Seasonality
+Model: combine demand context with operating friction</h2>
+<p>The <a
+href="/resources/amsterdam-product-discovery/article10-seasonality-model.csv">Seasonality
+Model</a> covers all twelve months using KNMI climate normals, a derived
+mid-month daylight estimate, a historical-demand planning band and a 1–5
+weather-operability score. The score is intentionally operational: it
+penalises short daylight, frequent wet days and less comfortable
+temperature ranges. It does not claim to predict sales.</p>
+<table>
+<thead>
+<tr>
+<th>Period</th>
+<th>Operating pattern</th>
+<th>Main constraint</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Jan–Feb</td>
+<td>Lower-demand / controlled winter testing</td>
+<td>Short daylight, cold, rain and economics at low loads</td>
+</tr>
+<tr>
+<td>Mar–Jun</td>
+<td>Strongest general operating window</td>
+<td>Growing crowds and live weather still require checks</td>
+</tr>
+<tr>
+<td>Jul–Aug</td>
+<td>High visitor opportunity, but not automatic GREEN</td>
+<td>Crowd pressure, heat and substantial rain exposure</td>
+</tr>
+<tr>
+<td>Sep–Oct</td>
+<td>Strong shoulder operation</td>
+<td>ADE and shorter daylight increase volatility</td>
+</tr>
+<tr>
+<td>Nov–Dec</td>
+<td>Selective winter operation</td>
+<td>Darkness, wet weather, holidays and attraction availability</td>
+</tr>
+</tbody>
+</table>
+<p>The climate evidence shows why “summer = dry” would be a weak rule.
+At Schiphol, the 1991–2020 normal precipitation is approximately 39.6 mm
+in April, but 98.6 mm in August. August is warm, yet it is also the
+wettest month in this monthly-normal set. December has only about 58
+sunshine hours and around 14 days with at least 1 mm of precipitation.
+Those are planning facts, not departure-day forecasts.</p>
+<h2 id="daylight-changes-the-product-clock"><a class="heading-anchor" href="#daylight-changes-the-product-clock" aria-label="Link to Daylight changes the product clock">#</a>Daylight changes the product
+clock</h2>
+<p>The Netherlands' daylight envelope is substantial: official
+government guidance notes roughly 08:45–16:30 around the shortest days
+and about 05:20–22:00 around the longest. The project converts that into
+a derived mid-month daylight estimate for calendar planning, ranging
+from roughly 7.5–8 hours in December/January to more than 16 hours in
+June. <a
+href="https://www.rijksoverheid.nl/onderwerpen/zomertijd-en-wintertijd/vraag-en-antwoord/wanneer-begint-en-eindigt-de-zomertijd">Rijksoverheid
+daylight/clock context</a>.</p>
+<p>Short-day months therefore shift the default product toward
+11:00–14:00 rather than simply accepting a dark finish. This is
+customer-experience control as much as safety: landmarks, surfaces,
+storytelling cues and orientation are all easier to deliver when the
+route is visible.</p>
+<figure class="article-visual"><img src="/assets/articles/amsterdam-product-discovery-10-seasonality-operating-calendar/amsterdam-product-discovery-10-seasonality-operating-calendar-rag-logic-1600x900.svg" width="1600" height="900" sizes="(max-width: 620px) calc(100vw - 36px), (max-width: 900px) calc(100vw - 48px), 820px" alt="Green Amber Red operating authority based on live weather, route, permit, guide, accessibility and booking evidence" loading="lazy" decoding="async"/><figcaption><p>GREEN permits the approved operation, AMBER requires an owned control and RED stops the normal departure.</p></figcaption></figure><h2 id="green--amber--red-the-calendar-must-be-overridable"><a class="heading-anchor" href="#green--amber--red-the-calendar-must-be-overridable" aria-label="Link to Green / Amber / Red: the calendar must be overridable">#</a>Green /
+Amber / Red: the calendar must be overridable</h2>
+
+<p>Monthly planning never overrides live weather, permit or safety
+conditions.</p>
+<p>The <a
+href="/resources/amsterdam-product-discovery/article10-green-amber-red-operating-logic.csv">Green/Amber/Red
+operating logic</a> is the actual day-of-operation authority. Monthly
+colour is only the baseline.</p>
+<p><strong>GREEN</strong> means there is no relevant KNMI warning, the
+selected route is open, required permits are valid, crowd/event
+conditions are manageable and the guide can deliver an approved
+route.</p>
+<p><strong>AMBER</strong> means the service can normally continue only
+after an explicit control: route switch, earlier start, rain variant,
+crowd variant, customer warning or accessibility adjustment. KNMI code
+yellow is an AMBER trigger, not an automatic invitation to carry on
+unchanged.</p>
+<p><strong>RED</strong> means the normal departure does not operate.
+Examples include relevant KNMI orange/red warnings or clearly unsafe
+field conditions, missing required Centre exemption, an official
+closure/security perimeter with no approved route around it, no
+qualified guide, or a departure that fails the approved commercial
+minimum without an explicitly funded research-pilot exception.</p>
+<p>This last point matters. Article 08 found a six-guest direct
+break-even under its current assumptions, seven for B2B and eight for
+OTA. Article 10 cannot make winter look “operationally ready” by
+scheduling departures that the commercial gate says should not run.</p>
+<h2 id="events-are-demand-opportunities-and-operating-disruptions-at-the-same-time"><a class="heading-anchor" href="#events-are-demand-opportunities-and-operating-disruptions-at-the-same-time" aria-label="Link to Events are demand opportunities and operating disruptions at the same time">#</a>Events
+are demand opportunities and operating disruptions at the same time</h2>
+<p>Amsterdam Dance Event 2026 runs <strong>21–25 October</strong>. It
+can bring demand into the city while simultaneously increasing
+transport, crowd and supplier pressure. <a
+href="https://www.amsterdam-dance-event.nl/en/faq-and-contact/">ADE
+official FAQ</a>. Article 10 therefore marks those dates AMBER by
+default and authorises the peak-crowd route where conditions justify
+it.</p>
+<p>Amsterdam Light Festival Edition 15 runs from <strong>26 November
+2026 to 17 January 2027</strong>. The festival itself says hundreds of
+thousands visited the preceding edition. <a
+href="https://amsterdamlightfestival.com/en/news/the-lights-are-off-edition-14">Amsterdam
+Light Festival</a>. That can strengthen winter destination interest, but
+it also concentrates activity in dark-hour central corridors. It is not
+evidence that Amsterdam Layers should become a light-festival tour.</p>
+<p>King's Day 2027 is Tuesday <strong>27 April</strong>. The City has
+already confirmed the date; detailed operating information will follow.
+<a
+href="https://www.amsterdam.nl/nieuws/evenementen-herdenkingen/koningsdag-2027/">City
+of Amsterdam — King's Day 2027</a>. Because King's Day is one of the
+city's busiest public-space days and transport patterns materially
+change, the normal Amsterdam Layers product is marked RED for 27 April
+unless a separate event-day operating plan is researched and approved.
+That is a stop rule, not lost revenue.</p>
+<h2 id="attraction-availability-belongs-in-the-calendar-even-when-attractions-are-optional"><a class="heading-anchor" href="#attraction-availability-belongs-in-the-calendar-even-when-attractions-are-optional" aria-label="Link to Attraction availability belongs in the calendar even when attractions are optional">#</a>Attraction
+availability belongs in the calendar even when attractions are
+optional</h2>
+<p>Amsterdam Layers is intentionally venue-light, but its resilience
+variants use indoor anchors. The Hortus normally publishes daily
+operating hours around 10:00–17:00 and has known holiday closures
+including Christmas Day and New Year's Day. Eye can support the Noord
+rain/accessibility architecture, but its exhibitions and special
+closures must be checked live. These are optional modules: their closure
+should trigger a route/module change, not destroy the core product.</p>
+<p>The operating rule is therefore simple: <strong>no optional
+attraction is allowed to become a hidden single point of
+failure.</strong></p>
+<figure class="article-visual"><img src="/assets/articles/amsterdam-product-discovery-10-seasonality-operating-calendar/amsterdam-product-discovery-10-seasonality-operating-calendar-rolling-calendar-1600x900.svg" width="1600" height="900" sizes="(max-width: 620px) calc(100vw - 36px), (max-width: 900px) calc(100vw - 48px), 820px" alt="Rolling operating calendar from September 2026 to August 2027 with monthly baseline states and mandatory live checks" loading="lazy" decoding="async"/><figcaption><p>The rolling calendar connects each seasonal baseline to a practical instruction while keeping live checks and commercial permission visible.</p></figcaption></figure><h2 id="the-12-month-operating-calendar-september-2026-to-august-2027"><a class="heading-anchor" href="#the-12-month-operating-calendar-september-2026-to-august-2027" aria-label="Link to The 12-month operating calendar: September 2026 to August 2027">#</a>The
+12-month operating calendar: September 2026 to August 2027</h2>
+
+<p>The annual calendar is booking-led and condition-aware, not a fixed
+daily timetable.</p>
+<p>The <a
+href="/resources/amsterdam-product-discovery/article10-12-month-operating-calendar.csv">rolling
+12-month operating calendar</a> starts with the first full month after
+this research checkpoint. It is a management calendar, not a fixed
+departure timetable.</p>
+<table>
+<thead>
+<tr>
+<th>Month</th>
+<th>Base state</th>
+<th>Operating instruction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sep 2026</td>
+<td><strong>GREEN</strong></td>
+<td>Normal Plantage pilot; test weekday cells.</td>
+</tr>
+<tr>
+<td>Oct</td>
+<td><strong>AMBER</strong></td>
+<td>ADE 21–25 Oct; route/crowd check.</td>
+</tr>
+<tr>
+<td>Nov</td>
+<td><strong>AMBER</strong></td>
+<td>Earlier starts; Light Festival begins 26 Nov.</td>
+</tr>
+<tr>
+<td>Dec</td>
+<td><strong>AMBER</strong></td>
+<td>Short-day/rain logic; holiday attraction checks.</td>
+</tr>
+<tr>
+<td>Jan 2027</td>
+<td><strong>AMBER</strong></td>
+<td>Selective winter operation; Light Festival to 17 Jan.</td>
+</tr>
+<tr>
+<td>Feb</td>
+<td><strong>AMBER</strong></td>
+<td>Controlled lower-demand economics test.</td>
+</tr>
+<tr>
+<td>Mar</td>
+<td><strong>GREEN</strong></td>
+<td>Normal route; expand only from observed bookings.</td>
+</tr>
+<tr>
+<td>Apr</td>
+<td><strong>AMBER</strong></td>
+<td>Strong spring month; normal product RED on 27 Apr.</td>
+</tr>
+<tr>
+<td>May</td>
+<td><strong>GREEN</strong></td>
+<td>Strong daylight/climate window; booking-led scale test.</td>
+</tr>
+<tr>
+<td>Jun</td>
+<td><strong>GREEN</strong></td>
+<td>Long daylight; live heat/thunderstorm check.</td>
+</tr>
+<tr>
+<td>Jul</td>
+<td><strong>AMBER</strong></td>
+<td>Peak-crowd timing/route controls.</td>
+</tr>
+<tr>
+<td>Aug</td>
+<td><strong>AMBER</strong></td>
+<td>Warm but wet climate normal; forecast dominates.</td>
+</tr>
+</tbody>
+</table>
+<p>There is deliberately no row saying “run daily.” The Article 08
+economics are not yet validated, and Article 11 has not measured weekday
+conversion. Frequency remains booking-led until the pilot creates
+evidence.</p>
+<h2 id="alternative-product-trigger-matrix-resilience-without-feature-creep"><a class="heading-anchor" href="#alternative-product-trigger-matrix-resilience-without-feature-creep" aria-label="Link to Alternative-product trigger matrix: resilience without feature creep">#</a>Alternative-product
+trigger matrix: resilience without feature creep</h2>
+<p>The <a
+href="/resources/amsterdam-product-discovery/article10-alternative-product-trigger-matrix.csv">trigger
+matrix</a> maps operational conditions to the five Article 06 route
+architectures rather than inventing new products every time conditions
+change.</p>
+<p>Rain can activate Oosterdok→Noord. Peak crowd can activate
+Oud-West→Westerpark. A confirmed accessibility need can activate the
+candidate Oosterdok→Eye architecture only after the field-audit
+condition is satisfied. Construction can activate Museumplein→De Pijp.
+Short daylight can compress timing while preserving the same core story
+architecture.</p>
+<p>Some triggers correctly produce <strong>no product</strong>. Severe
+weather, missing permit, no guide or exceptional King's Day operations
+can require cancellation. A calendar is responsible only if “do not
+operate” remains a real outcome.</p>
+<h2 id="weekday-analysis-design-an-experiment-not-a-myth"><a class="heading-anchor" href="#weekday-analysis-design-an-experiment-not-a-myth" aria-label="Link to Weekday analysis: design an experiment, not a myth">#</a>Weekday
+analysis: design an experiment, not a myth</h2>
+<p>Tourism teams often inherit rules such as “Saturday is strongest”
+without knowing whether the rule comes from bookings, intuition or
+another destination. This project has no Amsterdam Layers weekday series
+yet. The weekday plan therefore assigns Monday–Thursday as control/test
+cells and Friday–Sunday as priority test cells, but all seven remain
+hypotheses.</p>
+<p>Article 11 should use a balanced pilot design and record, by offered
+departure: impressions or landing-page sessions, bookings, conversion,
+lead time, source channel, guests, cancellation/no-show, contribution,
+weather state and route variant. Only then should frequency be increased
+or a weekday removed.</p>
+<h2 id="what-the-calendar-can-and-cannot-tell-management"><a class="heading-anchor" href="#what-the-calendar-can-and-cannot-tell-management" aria-label="Link to What the calendar can and cannot tell management">#</a>What the
+calendar can and cannot tell management</h2>
+<p>It can tell management that Amsterdam has year-round destination
+demand, that climate friction changes materially by month, that daylight
+constrains winter timing, that major events can simultaneously increase
+demand and operational risk, and that five pre-approved route
+architectures provide resilience.</p>
+<p>It cannot tell management next February's weather, exact 2027 event
+disruption, the number of guests who will book a Tuesday departure, or
+whether a €55 price will convert. Those inputs remain live forecasts or
+pilot evidence.</p>
+<h2 id="decision-gate-5"><a class="heading-anchor" href="#decision-gate-5" aria-label="Link to Decision Gate 5">#</a>Decision Gate 5</h2>
+<p><strong>CONDITIONAL.</strong></p>
+<p>Amsterdam Layers now has a defensible year-round operating
+architecture: historical climate is separated from live weather, demand
+forecasts are separated from product bookings, month/daypart logic is
+explicit, major known events are incorporated, five route variants have
+triggers, and RED conditions can stop a departure.</p>
+<p>It is not yet <strong>OPERATIONALLY READY</strong> because four
+controls remain outside this article: the accompanied
+accessibility/route field audit from Article 09, the real
+supplier/commercial inputs and willingness-to-pay validation from
+Article 08, live KNMI/event/attraction checks for every departure, and
+actual weekday/load-factor evidence from the Article 11 pilot.</p>
+<p>The next step is therefore not another calendar model. It is a
+controlled MVP and operations pilot that tests whether these rules work
+under real bookings and real Amsterdam conditions.</p>
+<h2 id="human-ai-control-prompts"><a class="heading-anchor" href="#human-ai-control-prompts" aria-label="Link to Human + AI control prompts">#</a>Human + AI control prompts</h2>
+<p>These prompts support structured review. They do not replace live KNMI warnings, official event information, commercial approval or the duty manager’s decision.</p>
+<section class="article-prompt">
+  <header class="article-prompt-header"><div><span class="eyebrow">Copy-ready prompt</span><h3 id="review-one-proposed-operating-day"><a class="heading-anchor" href="#review-one-proposed-operating-day" aria-label="Link to Review one proposed operating day">#</a>Review one proposed operating day</h3></div><button class="copy-prompt" type="button" data-copy-target="prompt-operating-day-review-body">Copy prompt</button></header>
+  <pre id="prompt-operating-day-review-body" tabindex="0"><code>ROLE
+Act as a tourism operations control reviewer.
+
+DECISION/TASK
+Assess whether the proposed Amsterdam Layers departure should be GREEN, controlled AMBER or RED.
+
+INPUT
+[Paste the current date, departure time, route, bookings, channel, guide status, permit status, live KNMI warning, event conditions, attraction status and accessibility requirements.]
+
+METHOD
+Separate historical climate from live weather. Check legal, safety, commercial and accessibility hard gates before considering demand opportunity. Name each missing input.
+
+CONSTRAINTS
+Use only supplied current evidence. Do not infer weather, permits, closures, bookings or customer needs.
+
+OUTPUT
+Return the state, reasons, required controls, owner, deadline and evidence that must be recorded.</code></pre>
+</section>
+<section class="article-prompt">
+  <header class="article-prompt-header"><div><span class="eyebrow">Copy-ready prompt</span><h3 id="review-the-rolling-calendar-with-pilot-evidence"><a class="heading-anchor" href="#review-the-rolling-calendar-with-pilot-evidence" aria-label="Link to Review the rolling calendar with pilot evidence">#</a>Review the rolling calendar with pilot evidence</h3></div><button class="copy-prompt" type="button" data-copy-target="prompt-calendar-learning-review-body">Copy prompt</button></header>
+  <pre id="prompt-calendar-learning-review-body" tabindex="0"><code>ROLE
+Act as a tourism product and operations analyst.
+
+DECISION/TASK
+Review whether any month, weekday, daypart or route rule should change after the latest controlled pilot cycle.
+
+INPUT
+[Paste offered departures, sessions, bookings, conversion, guests, lead time, cancellation, contribution, weather state, route variant, incidents and guest feedback.]
+
+METHOD
+Compare like-for-like cells. Keep destination demand, product demand, climate, live weather and operational exceptions separate. Preserve sample size and uncertainty.
+
+CONSTRAINTS
+Do not describe a test result as a seasonal fact. Do not change a hard legal or safety gate based on sales pressure.
+
+OUTPUT
+Return observed signals, unresolved gaps, proposed calendar change, decision owner and the next controlled test.</code></pre>
+</section>
+<blockquote><p><strong>Decision Gate 5: CONDITIONAL — CALENDAR CONTROLLED, PILOT EVIDENCE REQUIRED.</strong></p></blockquote>
+<h2 id="research-artifacts"><a class="heading-anchor" href="#research-artifacts" aria-label="Link to Research artifacts">#</a>Research artifacts</h2>
+<ul>
+<li><a
+href="/resources/amsterdam-product-discovery/article10-seasonality-model.csv">Seasonality
+Model</a></li>
+<li><a
+href="/resources/amsterdam-product-discovery/article10-monthly-weekday-analysis.csv">Monthly
+/ Weekday Analysis</a></li>
+<li><a
+href="/resources/amsterdam-product-discovery/article10-green-amber-red-operating-logic.csv">Green
+/ Amber / Red Operating Logic</a></li>
+<li><a
+href="/resources/amsterdam-product-discovery/article10-12-month-operating-calendar.csv">12-Month
+Operating Calendar</a></li>
+<li><a
+href="/resources/amsterdam-product-discovery/article10-alternative-product-trigger-matrix.csv">Alternative-Product
+Trigger Matrix</a></li>
+<li><a
+href="/resources/amsterdam-product-discovery/article10-official-source-register.csv">Official
+Source Register</a></li>
+</ul>
+<section class="article-sources" aria-labelledby="article-sources-title"><h2 id="article-sources-title"><a class="heading-anchor" href="#article-sources-title" aria-label="Link to Official sources">#</a>Official sources</h2><ul><li><a href="https://www.knmi.nl/klimaat-viewer/grafieken-tabellen/klimaattabellen-per-station/schiphol">KNMI climate normals — Schiphol</a></li><li><a href="https://www.knmi.nl/nederland-nu/weer/waarschuwingen">KNMI current weather warnings</a></li><li><a href="https://onderzoek.amsterdam.nl/publicatie/bezoekersprognose-amsterdam-2026-2028">Amsterdam O&amp;S visitor forecast 2026–2028</a></li><li><a href="https://onderzoek.amsterdam.nl/artikel/toerisme-in-cijfers-2025">Amsterdam O&amp;S tourism figures</a></li><li><a href="https://www.cbs.nl/en-gb/figures/detail/82061ENG?q=amsterdam">CBS Amsterdam hotel statistics</a></li><li><a href="https://www.rijksoverheid.nl/onderwerpen/zomertijd-en-wintertijd/vraag-en-antwoord/wanneer-begint-en-eindigt-de-zomertijd">Government daylight and clock context</a></li><li><a href="https://www.amsterdam-dance-event.nl/en/faq-and-contact/">Amsterdam Dance Event</a></li><li><a href="https://amsterdamlightfestival.com/en/news/the-lights-are-off-edition-14">Amsterdam Light Festival</a></li><li><a href="https://www.amsterdam.nl/nieuws/evenementen-herdenkingen/koningsdag-2027/">City of Amsterdam — King’s Day 2027</a></li></ul><div class="article-sources-note"><strong>Editorial note:</strong> Climate normals support planning but never replace a live forecast. Event dates, closures, warnings and access conditions must be checked again before every departure.</div></section>
+</article><aside class="amsterdam-evidence-pack" id="amsterdam-evidence" aria-labelledby="amsterdam-evidence-title">
+    <div class="amsterdam-evidence-copy"><span class="eyebrow">Research evidence</span><h2 id="amsterdam-evidence-title">Use the data behind the case study.</h2><p>Ten published chapters are supported by a downloadable Excel workbook and the complete governed CSV evidence library.</p></div>
+    <dl><div><dt>Published</dt><dd>10 chapters</dd></div><div><dt>Workbook</dt><dd>8 sheets</dd></div><div><dt>Evidence</dt><dd>75 CSV files</dd></div></dl>
+    <div class="amsterdam-evidence-actions"><a class="is-primary" href="/resources/amsterdam-product-discovery/Amsterdam-Product-Discovery-Evidence-Pack.xlsx" download data-analytics-event="resource_download"><span>Excel evidence pack</span><small>XLSX · 73 KB · verified 28 Aug 2026</small></a><a href="/resources/amsterdam-product-discovery/article10-seasonality-model.csv" download data-analytics-event="resource_download"><span>Seasonality model</span><small>CSV · 3 KB · verified 4 Sep 2026</small></a><a href="/series/amsterdam-tourism-product-discovery/index.html#artifacts"><span>Artifact library</span><small>75 governed evidence files</small></a></div>
+    <details class="evidence-preview"><summary>Preview current chapter data</summary><div class="evidence-preview-scroll"><table><thead><tr><th scope="col">month</th><th scope="col">planning_band</th><th scope="col">daylight_hours_estimate</th><th scope="col">weather_operability_score</th><th scope="col">main_friction</th></tr></thead><tbody><tr><td>January</td><td>Lower</td><td>8.0</td><td>2</td><td>Short daylight cold and wet exposure</td></tr><tr><td>February</td><td>Lower</td><td>10.0</td><td>2</td><td>Cold and wet exposure</td></tr><tr><td>March</td><td>Shoulder</td><td>12.0</td><td>3</td><td>Variable weather</td></tr><tr><td>April</td><td>Strong</td><td>14.0</td><td>4</td><td>Variable weather and event pressure</td></tr></tbody></table></div><small>Preview shows the first 4 records and 5 columns. Download the governed file for the complete dataset.</small></details>
+    <small>Public observations are time-sensitive. Review source, collection date, evidence class and confidence before reuse.</small>
+  </aside><nav class="article-sequence" aria-label="Series navigation"><a href="/articles/amsterdam-product-discovery-09-risk-responsibility/index.html"><span>← Previous in series</span><strong>Can We Operate It Responsibly? Regulation, Accessibility, Sustainability and Product Risk</strong></a><span class="sequence-empty"><small>Next: From Spreadsheet to Street: MVP, Pilot Launch and Operational Readiness · awaiting research</small></span></nav><section class="article-growth" aria-labelledby="article-growth-title" data-article-slug="amsterdam-product-discovery-10-seasonality-operating-calendar"><header><span class="eyebrow">Next useful action</span><h2 id="article-growth-title">Continue, apply or keep the framework.</h2></header><div><a href="/resources/amsterdam-product-discovery/Amsterdam-Product-Discovery-Evidence-Pack.xlsx" data-analytics-event="resource_download"><span>Related resource</span><strong>Amsterdam Product Discovery Evidence Pack</strong><small>Download workbook →</small></a></div></section><section class="article-feedback" id="article-feedback" data-article-feedback data-article-slug="amsterdam-product-discovery-10-seasonality-operating-calendar" data-article-title="When Should the Tour Run? Demand, Weather, Seasonality and the Amsterdam Operating Calendar" aria-labelledby="article-feedback-title">
+    <div class="article-feedback-intro"><div><span class="eyebrow">Quick feedback</span><h2 id="article-feedback-title">Was this article helpful?</h2></div><fieldset class="helpfulness-choice"><legend class="sr-only">Was this article helpful?</legend><button type="button" data-feedback-value="helpful" aria-pressed="false"><span aria-hidden="true">✓</span> Yes</button><button type="button" data-feedback-value="not-helpful" aria-pressed="false"><span aria-hidden="true">×</span> Not yet</button></fieldset></div>
+    <div class="feedback-reasons" data-feedback-reasons hidden><p>What best describes your experience?</p><div role="group" aria-label="Optional reason"><button type="button" data-feedback-reason="clear">Clear explanation</button><button type="button" data-feedback-reason="practical">Practical framework</button><button type="button" data-feedback-reason="examples">Needs more examples</button><button type="button" data-feedback-reason="complex">Too complex</button><button type="button" data-feedback-reason="unclear">Something is unclear</button></div></div>
+    <p class="feedback-status" data-feedback-status aria-live="polite"></p>
+    <details class="article-share"><summary id="article-share-title">Share this article</summary><div class="article-share-actions"><button type="button" data-share="native" hidden>Share…</button><button type="button" data-share="linkedin">LinkedIn</button><button type="button" data-share="facebook">Facebook</button><button type="button" data-share="whatsapp">WhatsApp</button><button type="button" data-share="email">Email</button><button type="button" data-share="copy">Copy URL</button></div><p class="share-status" data-share-status aria-live="polite"></p></details>
+    <details class="feedback-privacy"><summary>Privacy</summary><small>Your choice is stored in this browser. If optional analytics is enabled, an anonymous interaction event may also be recorded. <a href="/privacy/index.html">Privacy details</a>.</small></details>
+  </section></div></div></main>
+<section class="newsletter-signup article-newsletter" aria-labelledby="article-newsletter-title"><div><span class="eyebrow">Tourism Operations Brief</span><h2 id="article-newsletter-title">Keep the useful ideas coming.</h2><p>Occasional, human-reviewed updates on tourism operations, product, AI, destination management and service quality.</p></div><form data-newsletter-form novalidate><label for="article-newsletter-email">Email address</label><div class="newsletter-form-row"><input id="article-newsletter-email" name="email" type="email" autocomplete="email" inputmode="email" placeholder="you@example.com" required/><button type="submit">Subscribe</button></div><input class="newsletter-honeypot" name="company" type="text" tabindex="-1" autocomplete="off" aria-hidden="true"/><input name="startedAt" type="hidden" value=""/><p class="newsletter-consent">By subscribing, you agree to receive occasional updates. You can unsubscribe at any time. <a href="/privacy/index.html">Privacy details</a>.</p><p class="newsletter-status" data-newsletter-status aria-live="polite"></p></form></section><footer class="article-footer">
+    <div class="article-footer-inner">
+      <div class="article-footer-brand"><a class="footer-brand-lockup" href="/#top"><span class="mark">AM</span><span><strong>Ahmed Mahmoud</strong><small>Tourism Operations × Product × AI</small></span></a><p>Field-grounded articles and inspectable product demos for clearer tourism operations, stronger service controls and better decisions.</p></div>
+      <nav aria-label="Article footer exploration links"><span>Explore</span><a href="/knowledge/index.html">Knowledge Hub</a><a href="/learning/index.html">Learning paths</a><a href="/lab/index.html">Operations Lab</a><a href="/#projects">Projects</a><a href="/#cv-about">Profile</a></nav>
+      <nav aria-label="Article footer resource links"><span>Resources</span><a href="/resources/index.html">Downloads & tools</a><a href="/newsletter/index.html">Newsletter</a><a href="/documents/Ahmed-Mahmoud-Managerial-CV.pdf" download>Download CV</a></nav>
+      <nav aria-label="Article footer contact links"><span>Connect</span><a href="mailto:a.mahmoud.0412@gmail.com">Email Ahmed</a><a href="https://www.linkedin.com/in/ahmed-mahmoud-tourism/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://github.com/AhmedElshemyOps" target="_blank" rel="noopener noreferrer">GitHub ↗</a></nav>
+      <div class="article-footer-bottom"><small>© 2026 Ahmed Mahmoud · Abu Dhabi, United Arab Emirates</small><a href="#article">Back to top ↑</a></div>
+    </div>
+  </footer><button class="article-back-to-top" data-back-to-top type="button" aria-label="Back to the beginning of this article">
+    <span class="back-top-progress" aria-hidden="true"><span>↑</span></span>
+    <span class="back-top-label">Back to top</span>
+  </button></body></html>

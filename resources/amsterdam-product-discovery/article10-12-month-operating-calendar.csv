@@ -1,0 +1,13 @@
+month,base_state,default_window,operating_instruction,known_event_or_constraint,mandatory_live_checks,commercial_rule,evidence_class,owner
+2026-09,GREEN,11:00-16:00,Normal Plantage pilot and balanced weekday tests,Shortening daylight,KNMI route guide permits and bookings,Approved minimum or funded research exception,PROPOSED_OPERATING_CONTROL,Duty Manager
+2026-10,AMBER,11:00-15:30,Apply ADE crowd and route control,ADE 21-25 October,KNMI event perimeter transport and bookings,Approved minimum or funded research exception,PROPOSED_OPERATING_CONTROL,Duty Manager
+2026-11,AMBER,11:00-14:30,Use earlier starts and verify indoor options,Light Festival begins 26 November,KNMI daylight attractions route and bookings,Approved minimum or funded research exception,PROPOSED_OPERATING_CONTROL,Duty Manager
+2026-12,AMBER,11:00-14:00,Use short-day and rain logic,Holiday closures and dark hours,KNMI daylight attractions route and bookings,Approved minimum or funded research exception,PROPOSED_OPERATING_CONTROL,Duty Manager
+2027-01,AMBER,11:00-14:00,Selective winter operation,Light Festival to 17 January,KNMI daylight attractions route and bookings,Approved minimum or funded research exception,PROPOSED_OPERATING_CONTROL,Duty Manager
+2027-02,AMBER,11:00-14:30,Controlled lower-demand economics test,Cold and wet exposure,KNMI route guide and bookings,Approved minimum or funded research exception,PROPOSED_OPERATING_CONTROL,Duty Manager
+2027-03,GREEN,11:00-15:30,Normal route and booking-led expansion,Variable spring weather,KNMI route guide permits and bookings,Approved minimum or funded research exception,PROPOSED_OPERATING_CONTROL,Duty Manager
+2027-04,AMBER,10:30-16:00,Spring operation with event stop rule,Normal product RED on 27 April,KNMI event transport route and bookings,Approved minimum or funded research exception,PROPOSED_OPERATING_CONTROL,Duty Manager
+2027-05,GREEN,10:30-17:00,Booking-led scale test,Long daylight and growing crowds,KNMI route guide permits and bookings,Approved minimum or funded research exception,PROPOSED_OPERATING_CONTROL,Duty Manager
+2027-06,GREEN,10:00-18:00,Long-day operation with heat control,Heat or thunderstorm exposure,KNMI route guide permits and bookings,Approved minimum or funded research exception,PROPOSED_OPERATING_CONTROL,Duty Manager
+2027-07,AMBER,10:00-17:30,Peak-crowd timing and route controls,Peak visitor pressure,KNMI crowd transport route and bookings,Approved minimum or funded research exception,PROPOSED_OPERATING_CONTROL,Duty Manager
+2027-08,AMBER,10:30-17:00,Forecast-led operation with rain variant,Wet climate normal and crowds,KNMI crowd route guide and bookings,Approved minimum or funded research exception,PROPOSED_OPERATING_CONTROL,Duty Manager

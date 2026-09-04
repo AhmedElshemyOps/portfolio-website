@@ -1,0 +1,11 @@
+trigger_id,operating_trigger,default_state,approved_response,route_architecture,customer_communication,hard_stop_condition,evidence_class,owner
+TRG-01,Manageable rain forecast,AMBER,Activate rain-resilient route,Oosterdok to Noord,Confirm exposed sections and clothing advice,Orange or red warning or unsafe field condition,PROPOSED_CONTROL,Duty Manager
+TRG-02,Peak central crowd pressure,AMBER,Move away from central pressure,Oud-West to Westerpark,Confirm revised meeting point and route,No safe approved route,PROPOSED_CONTROL,Duty Manager
+TRG-03,Confirmed mobility or access requirement,AMBER,Use audited accessible candidate,Oosterdok to Eye,Confirm surfaces distance rest points and limits,Field audit incomplete for requested need,PROPOSED_CONTROL,Product Owner
+TRG-04,Construction blocks default path,AMBER,Use construction-resilient route,Museumplein to De Pijp,Confirm revised route and duration,Official closure affects all approved variants,PROPOSED_CONTROL,Duty Manager
+TRG-05,Short daylight,AMBER,Compress timing and start earlier,Plantage to Oosterpark,Confirm daylight-led departure time,Route would finish in unsafe darkness,PROPOSED_CONTROL,Duty Manager
+TRG-06,Relevant severe weather warning,RED,Cancel or reschedule,None,Notify guest with recovery options,Relevant KNMI orange or red warning,VERIFIED_RULE,Duty Manager
+TRG-07,Required permit unavailable,RED,Do not operate controlled area,None,Notify guest with recovery options,No lawful approved alternative,VERIFIED_RULE,Operations Manager
+TRG-08,No qualified guide,RED,Cancel or reschedule,None,Notify guest with recovery options,No approved replacement,PROJECT_CONTROL,Operations Manager
+TRG-09,King's Day exceptional operations,RED,Do not operate normal product,None,Explain event-day exclusion,No separate researched and approved event plan,PROPOSED_CONTROL,Product Owner
+TRG-10,Optional attraction unavailable,AMBER,Remove module and continue core route,Approved route without module,Explain substitution before start,Core promise cannot be delivered,PROPOSED_CONTROL,Duty Manager
