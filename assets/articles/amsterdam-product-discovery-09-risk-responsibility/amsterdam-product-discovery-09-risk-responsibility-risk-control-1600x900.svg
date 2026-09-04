@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Risk control architecture</title>
+  <desc id="desc">A four-stage flow connects a risk statement to preventive control, trigger and operational response with accountable ownership.</desc>
+  <rect width="1600" height="900" fill="#071a32"/>
+  <text x="72" y="95" fill="#dfc27d" font-family="Arial,sans-serif" font-size="20" font-weight="700" letter-spacing="4">RISK REGISTER &#xB7; CONTROL LOGIC</text>
+  <text x="72" y="182" fill="#fff" font-family="Georgia,serif" font-size="56" font-weight="700">Every risk needs an operational answer.</text>
+  <g font-family="Arial,sans-serif">
+    <g transform="translate(70 295)">
+      <rect width="320" height="330" fill="#fff"/>
+      <text x="28" y="60" fill="#8b6418" font-size="18" font-weight="700">01 &#xB7; RISK</text>
+      <text x="28" y="126" fill="#071a32" font-size="28" font-weight="700">What could fail?</text>
+      <text x="28" y="180" fill="#52647a" font-size="19">Evidence class</text>
+      <text x="28" y="217" fill="#52647a" font-size="19">Likelihood &#xD7; impact</text>
+    </g>
+    <g transform="translate(450 295)">
+      <rect width="320" height="330" fill="#f5f1e8" stroke="#c79a43" stroke-width="3"/>
+      <text x="28" y="60" fill="#8b6418" font-size="18" font-weight="700">02 &#xB7; CONTROL</text>
+      <text x="28" y="126" fill="#071a32" font-size="28" font-weight="700">How is it prevented?</text>
+      <text x="28" y="180" fill="#52647a" font-size="19">Roster &#xB7; route &#xB7; brief</text>
+      <text x="28" y="217" fill="#52647a" font-size="19">Owner and evidence</text>
+    </g>
+    <g transform="translate(830 295)">
+      <rect width="320" height="330" fill="#fff"/>
+      <text x="28" y="60" fill="#8b6418" font-size="18" font-weight="700">03 &#xB7; TRIGGER</text>
+      <text x="28" y="126" fill="#071a32" font-size="28" font-weight="700">When must we act?</text>
+      <text x="28" y="180" fill="#52647a" font-size="19">Threshold or event</text>
+      <text x="28" y="217" fill="#52647a" font-size="19">Visible at point of work</text>
+    </g>
+    <g transform="translate(1210 295)">
+      <rect width="320" height="330" fill="#c79a43"/>
+      <text x="28" y="60" fill="#071a32" font-size="18" font-weight="700">04 &#xB7; RESPONSE</text>
+      <text x="28" y="116" fill="#071a32" font-size="25" font-weight="700"><tspan x="28">Switch, stop</tspan><tspan x="28" dy="34">or recover</tspan></text>
+      <text x="28" y="180" fill="#071a32" font-size="19">Record the outcome</text>
+      <text x="28" y="217" fill="#071a32" font-size="19">Feed continual improvement</text>
+    </g>
+  </g>
+  <path d="M390 460h60m320 0h60m320 0h60" stroke="#dfc27d" stroke-width="6"/>
+  <text x="72" y="770" fill="#aebed0" font-family="Arial,sans-serif" font-size="21">A score prioritises attention. It never replaces professional judgement or a hard legal gate.</text>
+</svg>

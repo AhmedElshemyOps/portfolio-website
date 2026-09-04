@@ -834,6 +834,35 @@
       }
     ]
   },
+  "amsterdam-product-discovery-09-risk-responsibility": {
+    "hero": {
+      "src": "/assets/articles/amsterdam-product-discovery-09-risk-responsibility/amsterdam-product-discovery-09-risk-responsibility-hero-1600x900.svg",
+      "width": 1600,
+      "height": 900,
+      "alt": "Amsterdam Layers responsible-operation framework balancing regulation, accessibility, safety and measurable destination responsibility",
+      "caption": "Responsible tourism begins with verified rules, owned controls and measurable outcomes—not unsupported adjectives."
+    },
+    "ogImage": "/assets/articles/amsterdam-product-discovery-09-risk-responsibility/amsterdam-product-discovery-09-risk-responsibility-og-1200x630.jpg",
+    "ogAlt": "Amsterdam Layers responsible-operation controls for Article 09",
+    "figures": [
+      {
+        "src": "/assets/articles/amsterdam-product-discovery-09-risk-responsibility/amsterdam-product-discovery-09-risk-responsibility-risk-control-1600x900.svg",
+        "width": 1600,
+        "height": 900,
+        "alt": "Risk statement, preventive control, operational trigger and response connected in an owned control architecture",
+        "caption": "A score prioritises attention; the operating control still needs an owner, a trigger and an executable response.",
+        "beforeHeadingId": "risk-register-what-can-actually-stop-or-damage-the-service"
+      },
+      {
+        "src": "/assets/articles/amsterdam-product-discovery-09-risk-responsibility/amsterdam-product-discovery-09-risk-responsibility-sustainability-scorecard-1600x900.svg",
+        "width": 1600,
+        "height": 900,
+        "alt": "Destination, social, environmental and economic measures arranged as an evidence-led responsibility scorecard",
+        "caption": "A responsible-tourism claim moves from design intention to publishable evidence only after its metric, period, source and owner are recorded.",
+        "beforeHeadingId": "sustainability-scorecard-measure-the-footprint-on-the-city-not-the-adjective"
+      }
+    ]
+  },
   "article-air-connectivity-dmc-market-intelligence": {
     "hero": {
       "src": "/assets/articles/article-air-connectivity-dmc-market-intelligence/article-air-connectivity-dmc-market-intelligence-hero-1600x900.avif",
