@@ -1,0 +1,19 @@
+theme_code,theme_name,definition,role
+GUIDE_KNOWLEDGE,Human expertise,"Accuracy, subject knowledge, ability to answer questions",Experience driver
+STORYTELLING_CONTEXT,Interpretation & storytelling,"Meaningful context, engaging stories, connection between place and history",Experience driver
+HIDDEN_LOCAL_DISCOVERY,Local/less-obvious discovery,"Places, neighbourhoods or insights visitors would not easily find alone",Discovery value
+ORIENTATION_RECOMMENDATIONS,Trip orientation,Bearings and useful recommendations for the rest of the stay,Extended value
+GROUP_INTERACTION,Group dynamics,"Ease of asking questions, social comfort, intimacy and inclusion",Delivery
+ITINERARY_COVERAGE,Promise vs route coverage,Whether delivered sights/stops match expectation and breadth,Pain/risk
+PACE_WALKING,Pace & physical load,"Walking effort, duration, pace and comfort",Accessibility/operations
+MEETING_POINT_CLARITY,Arrival clarity,Ease of locating the guide/start point,Pain/risk
+FOOD_QUALITY_VARIETY,Food quality & variety,"Taste, local relevance and diversity of samples",Experience driver
+FOOD_QUANTITY_VALUE,Food quantity,Whether tasting volume feels sufficient,Value
+DIETARY_INCLUSION,Dietary inclusion,Vegetarian or other dietary accommodation,Accessibility/value
+CULTURE_WITH_FOOD,Food-cultural interpretation,"Explanation of cuisine, neighbourhood and cultural meaning",Experience driver
+VALUE_FOR_MONEY,Value for money,Perceived fairness between price and delivered experience,Commercial signal
+NAVIGATION,Navigation quality,Ability to follow a self-guided route without friction,Digital delivery
+PRODUCTION_QUALITY,Audio/content production,"Script, voiceover and sound quality",Digital delivery
+DEPTH_OF_INFO,Depth of information,Whether content is substantive enough for the visitor job,Experience driver
+ROUTE_QUALITY,Route quality,"Coherence, surprises and usefulness of route design",Design
+SAFETY_BIKES_CROWDING,Street-safety context,"Bicycle, crowd, crossing and street-environment friction",Risk

@@ -1,0 +1,107 @@
+[
+  {
+    "slug": "tourism-operations",
+    "title": "Tourism Operations",
+    "description": "Move from end-to-end operating foundations through guest journeys, role clarity, guide quality and live control systems.",
+    "audience": "Destination managers · DMC operations teams · tour coordinators",
+    "level": "Foundation to advanced",
+    "relatedProjects": [
+      "infradispatch",
+      "infracluster"
+    ],
+    "steps": [
+      "tourism-company-operating-system",
+      "article-destination-experience-journey-map",
+      "article-tourism-operations-roles-real-difference",
+      "article-tour-guide-quality-index",
+      "article-assignment-engine-dmc-operations",
+      "article-fleet-control-tower-operations-dashboard",
+      "capa-tourism-operations"
+    ]
+  },
+  {
+    "slug": "mice-operations",
+    "title": "MICE Operations",
+    "description": "Follow an Abu Dhabi event movement from the control room through airport waves, hotel desks, venue arrival and service recovery.",
+    "audience": "DMC operations · event operations · transport coordinators",
+    "level": "Intermediate",
+    "relatedProjects": [
+      "infracluster",
+      "infradispatch"
+    ],
+    "steps": [
+      "article-abu-dhabi-mice-movement-control-room",
+      "article-mice-arrival-waves-zayed-international-airport",
+      "article-mice-hotel-desks-coach-departures-abu-dhabi",
+      "article-mice-venue-arrivals-registration-abu-dhabi",
+      "article-mice-backup-operations-service-recovery-abu-dhabi"
+    ]
+  },
+  {
+    "slug": "dmc-commercial-quotation",
+    "title": "DMC Commercial & Quotation",
+    "description": "Build a controlled city-tour quotation from cost structure and participant risk through VAT, margin and client-ready presentation.",
+    "audience": "DMC sales · product teams · quotation and finance reviewers",
+    "level": "Foundation to intermediate",
+    "relatedProjects": [
+      "infraquote"
+    ],
+    "steps": [
+      "article-city-tour-quotation-professional",
+      "article-fixed-variable-costs-city-tour-pricing",
+      "article-tour-cost-worksheet-city-tour",
+      "article-participant-estimation-break-even-risk",
+      "article-net-cost-selling-price-markup",
+      "article-transport-tickets-vat-gratuities",
+      "article-professional-client-tour-quotation"
+    ]
+  },
+  {
+    "slug": "ai-for-tourism",
+    "title": "AI for Tourism",
+    "description": "Use the Tourism AI Operations Playbook in sequence, from prompt structure and front-line work to governance and responsible operational adoption.",
+    "audience": "Tourism managers · product teams · AI-enabled operations professionals",
+    "level": "Foundation to applied",
+    "relatedProjects": [
+      "infradispatch",
+      "infraquote"
+    ],
+    "steps": [
+      "tourism-ai-operations-playbook",
+      "tourism-prompting-framework",
+      "front-line-tourism-ai-toolkit",
+      "dmc-operations-ai-prompts",
+      "tourism-transport-dispatch-ai-prompts",
+      "tourism-product-development-ai-prompts",
+      "tourism-itinerary-ai-prompts",
+      "tourism-sales-quotation-ai-prompts",
+      "guest-experience-ai-prompts",
+      "tourism-quality-sop-ai-prompts",
+      "responsible-ai-tourism-guide"
+    ]
+  },
+  {
+    "slug": "quality-sop-management",
+    "title": "Quality & SOP Management",
+    "description": "Build a practical control system from process mapping and risk assessment through SOP writing, implementation, audit, CAPA and governance.",
+    "audience": "Quality managers · process owners · supervisors · internal auditors",
+    "level": "Foundation to advanced",
+    "relatedProjects": [],
+    "steps": [
+      "procedures-processes-process-maps",
+      "map-process-before-writing-sop",
+      "sipoc-tourism-operations",
+      "tourism-operational-risk-assessment-before-sop",
+      "how-to-write-professional-sop-structure",
+      "how-to-write-professional-sop-procedure",
+      "sop-roles-authority-raci",
+      "sop-exception-escalation-management",
+      "sop-evidence-documentation-legal-defensibility",
+      "document-control-version-management-tourism",
+      "how-to-audit-an-sop",
+      "capa-tourism-operations",
+      "root-cause-analysis-tourism-managers",
+      "tourism-operations-manual"
+    ]
+  }
+]

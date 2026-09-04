@@ -1,0 +1,18 @@
+theme_code,theme_name,mentions,importance_score_5,performance_score_5,action_zone
+GUIDE_KNOWLEDGE,Human expertise,13,5.0,4.38,MAINTAIN
+HIDDEN_LOCAL_DISCOVERY,Local/less-obvious discovery,11,4.38,4.64,MAINTAIN
+STORYTELLING_CONTEXT,Interpretation & storytelling,10,4.08,4.6,MAINTAIN
+GROUP_INTERACTION,Group dynamics,9,3.77,3.67,PRIORITY
+FOOD_QUALITY_VARIETY,Food quality & variety,9,3.77,4.56,MAINTAIN
+PACE_WALKING,Pace & physical load,7,3.15,3.86,PRIORITY
+ORIENTATION_RECOMMENDATIONS,Trip orientation,6,2.85,5.0,MONITOR
+ITINERARY_COVERAGE,Promise vs route coverage,5,2.54,1.8,MONITOR
+DEPTH_OF_INFO,Depth of information,5,2.54,2.6,MONITOR
+CULTURE_WITH_FOOD,Food-cultural interpretation,4,2.23,4.0,MONITOR
+FOOD_QUANTITY_VALUE,Food quantity,3,1.92,3.67,MONITOR
+NAVIGATION,Navigation quality,3,1.92,3.67,MONITOR
+PRODUCTION_QUALITY,Audio/content production,3,1.92,3.67,MONITOR
+ROUTE_QUALITY,Route quality,3,1.92,5.0,MONITOR
+VALUE_FOR_MONEY,Value for money,2,1.62,1.0,MONITOR
+MEETING_POINT_CLARITY,Arrival clarity,1,1.31,1.0,MONITOR
+DIETARY_INCLUSION,Dietary inclusion,1,1.31,5.0,MONITOR

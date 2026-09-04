@@ -1,0 +1,41 @@
+{
+  "generatedAt": "2026-09-04T10:44:43.467Z",
+  "ready": true,
+  "checks": [
+    {
+      "name": "Custom domain",
+      "passed": true,
+      "detail": "ahmedqualityops.com"
+    },
+    {
+      "name": "Sitemap host",
+      "passed": true,
+      "detail": "Canonical production host"
+    },
+    {
+      "name": "Robots sitemap",
+      "passed": true,
+      "detail": "Sitemap declared"
+    },
+    {
+      "name": "Homepage canonical",
+      "passed": true,
+      "detail": "Root canonical"
+    },
+    {
+      "name": "Custom social preview",
+      "passed": true,
+      "detail": "1200×630 branded preview"
+    },
+    {
+      "name": "Runtime URL",
+      "passed": true,
+      "detail": "Frontend configuration"
+    },
+    {
+      "name": "Offline reader",
+      "passed": true,
+      "detail": "Service worker registration"
+    }
+  ]
+}

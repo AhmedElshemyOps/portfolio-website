@@ -1,0 +1,13 @@
+{
+  "updated": "2026-08-28",
+  "policy": "Public claims must be supported by supplied evidence or clearly labelled as professional interpretation or static demonstration behavior.",
+  "claims": [
+    { "claim": "73 original articles", "evidence": "/public/articles/ plus protected article sources", "verification": "npm run verify:article-copy", "status": "verified" },
+    { "claim": "Four working browser demonstrations", "evidence": "/public/live-demos/", "verification": "release and browser tests", "status": "verified-static" },
+    { "claim": "Five IATA professional diplomas", "evidence": "/documents/Ahmed-Mahmoud-Credentials-Portfolio.pdf", "verification": "supplied credential evidence", "status": "verified" },
+    { "claim": "Three Egyptian Travel Agents Association (ETAA) courses", "evidence": "/documents/Ahmed-Mahmoud-Credentials-Portfolio.pdf", "verification": "supplied credential evidence", "status": "verified" },
+    { "claim": "CAPM, ITIL 4 Foundation and Lean Six Sigma Black Belt", "evidence": "/documents/Ahmed-Mahmoud-Credentials-Portfolio.pdf", "verification": "supplied credential evidence", "status": "verified" },
+    { "claim": "InfraDispatch is a smart rule-based dispatch planner/demo", "evidence": "/live-demos/infradispatch/index.html", "verification": "static browser inspection", "status": "verified-static" },
+    { "claim": "Newsletter delivery", "evidence": "/worker/index.js", "verification": "requires valid server-side Brevo configuration", "status": "configuration-dependent" }
+  ]
+}

@@ -1,0 +1,24 @@
+dimension,segment,pilot_count,minimum_full_sample,working_target,upper_guidance,coverage_rule,current_gap_note,status
+TOTAL,Valid full-collection listings,24,60,80,100,Stop between 60 and 100 when source/category coverage is adequate and documented.,Phase 2E freeze: 84 FULL observations; 78 reconciled families; all FULL rows analysis-ready for supply fields.,FROZEN_MET
+SOURCE,GYG,16,12,18,28,No single platform >35% of analysis-ready sample; rebalance toward underrepresented accessible sources.,Phase 2C FULL count: 12.,FROZEN_MET
+SOURCE,VIATOR,0,8,12,18,No single platform >35% of analysis-ready sample; rebalance toward underrepresented accessible sources.,Phase 2C FULL count: 10.,FROZEN_MET
+SOURCE,KLOOK,0,5,8,12,No single platform >35% of analysis-ready sample; rebalance toward underrepresented accessible sources.,Phase 2C FULL count: 6.,FROZEN_MET
+SOURCE,TIQETS,0,5,8,12,No single platform >35% of analysis-ready sample; rebalance toward underrepresented accessible sources.,Phase 2C FULL count: 9.,FROZEN_MET
+SOURCE,EXPEDIA,0,5,8,12,No single platform >35% of analysis-ready sample; rebalance toward underrepresented accessible sources.,Phase 2C FULL count: 16.,FROZEN_MET
+SOURCE,I_AMSTERDAM,0,4,6,10,No single platform >35% of analysis-ready sample; rebalance toward underrepresented accessible sources.,Phase 2C FULL count: 7.,FROZEN_MET
+SOURCE,DIRECT,0,8,12,18,No single platform >35% of analysis-ready sample; rebalance toward underrepresented accessible sources.,Phase 2C FULL count: 12.,FROZEN_MET
+SOURCE,OTHER,0,3,5,10,No single platform >35% of analysis-ready sample; rebalance toward underrepresented accessible sources.,Phase 2C FULL count: 12.,FROZEN_MET
+SOURCE,TRIPADVISOR,0,0,0,0,No single platform >35% of analysis-ready sample; rebalance toward underrepresented accessible sources.,Phase 2C FULL count: 0.,NOT_REQUIRED
+CATEGORY,Canal,8,10,14,18,Use primary mutually exclusive category; adjust within 60–100 if saturation or access limits are documented.,Phase 2C FULL count: 15.,FROZEN_MET
+CATEGORY,Walking,2,8,12,16,Use primary mutually exclusive category; adjust within 60–100 if saturation or access limits are documented.,Phase 2C FULL count: 13.,FROZEN_MET
+CATEGORY,Cycling,3,6,9,12,Use primary mutually exclusive category; adjust within 60–100 if saturation or access limits are documented.,Phase 2C FULL count: 9.,FROZEN_MET
+CATEGORY,Food,4,6,9,12,Use primary mutually exclusive category; adjust within 60–100 if saturation or access limits are documented.,Phase 2C FULL count: 7.,FROZEN_MET
+CATEGORY,Hybrid,3,5,8,12,Use primary mutually exclusive category; adjust within 60–100 if saturation or access limits are documented.,Phase 2C FULL count: 8.,FROZEN_MET
+CATEGORY,Bundle,2,4,6,10,Use primary mutually exclusive category; adjust within 60–100 if saturation or access limits are documented.,Phase 2C FULL count: 4.,FROZEN_MET
+CATEGORY,Self-guided,1,4,6,10,Use primary mutually exclusive category; adjust within 60–100 if saturation or access limits are documented.,Phase 2C FULL count: 9.,FROZEN_MET
+CATEGORY,Pass/Attraction,0,4,6,10,Use primary mutually exclusive category; adjust within 60–100 if saturation or access limits are documented.,Phase 2C FULL count: 7.,FROZEN_MET
+CATEGORY,Regional/Day trip,0,5,8,12,Use primary mutually exclusive category; adjust within 60–100 if saturation or access limits are documented.,Phase 2C FULL count: 6.,FROZEN_MET
+CATEGORY,Performance/Other,1,3,5,8,Use primary mutually exclusive category; adjust within 60–100 if saturation or access limits are documented.,Phase 2C FULL count: 6.,FROZEN_MET
+COMPETITOR_CLASS,DIRECT,21,45,60,80,Maintain enough substitutes to test visitor-job competition without letting substitute supply dominate.,Phase 2C FULL count: 64.,FROZEN_MET
+COMPETITOR_CLASS,SUBSTITUTE,3,10,15,25,Maintain enough substitutes to test visitor-job competition without letting substitute supply dominate.,Phase 2C FULL count: 20.,FROZEN_MET
+COMPETITOR_CLASS,UNRESOLVED,0,0,0,5,Maintain enough substitutes to test visitor-job competition without letting substitute supply dominate.,Phase 2C FULL count: 0.,NOT_REQUIRED

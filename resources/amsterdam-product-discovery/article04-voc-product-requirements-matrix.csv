@@ -1,0 +1,11 @@
+requirement_id,customer_need,evidence_themes,priority,applies_to,draft_requirement,confidence
+R01,"Context must be substantive, not decorative",GUIDE_KNOWLEDGE;DEPTH_OF_INFO;STORYTELLING_CONTEXT,High,Any guided or digital format,Define minimum content-depth and fact-check standard; test comprehension,High
+R02,Delivered route must match the customer promise,ITINERARY_COVERAGE;ROUTE_QUALITY,High,All routed experiences,Publish route logic and exception handling; measure stop completion,High
+R03,Support discovery beyond obvious highlights,HIDDEN_LOCAL_DISCOVERY,High,Guided/self-guided/food,Include evidence-backed local discovery moments without manufacturing “hidden gem” claims,Medium
+R04,Make arrival and navigation friction low,MEETING_POINT_CLARITY;NAVIGATION,High,Guided/self-guided,"Clear start-point instructions, recognition cues, route recovery and offline fallback",High
+R05,Design for a human pace and disclose physical effort,PACE_WALKING,Medium,Walking/food/self-guided,"State distance, surface, duration, breaks and accessibility constraints",High
+R06,"If food is included, quantity and cultural meaning must justify the price",FOOD_QUANTITY_VALUE;CULTURE_WITH_FOOD;VALUE_FOR_MONEY,High,Food-led formats,"Define tasting sufficiency, context per stop and transparent inclusions",Medium
+R07,Preserve small-group interaction and inclusion where a live guide is used,GROUP_INTERACTION,Medium,Guided formats,Set group-size hypothesis and facilitation standard; test solo-traveller inclusion,Medium
+R08,"Treat dietary needs as a design input, not an exception",DIETARY_INCLUSION,Medium,Food-led formats,Declare supported dietary needs before booking and supplier fallback rules,Medium
+R09,"For self-guided, navigation and information depth must both pass",NAVIGATION;DEPTH_OF_INFO;PRODUCTION_QUALITY,High,Self-guided digital,Prototype GPS/route recovery and content depth separately; do not trade one off silently,High
+R10,Extend value beyond the paid experience with useful orientation,ORIENTATION_RECOMMENDATIONS,Medium,All formats,Provide curated onward recommendations only when verified and relevant,Medium

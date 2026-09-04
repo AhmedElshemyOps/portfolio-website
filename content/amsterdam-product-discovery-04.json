@@ -1,0 +1,21 @@
+{
+  "meta": {
+    "title": "What Visitors Really Want: Mining Amsterdam Reviews and Voice of Customer",
+    "url": "amsterdam-product-discovery-04-voice-of-customer.html",
+    "category": "Amsterdam Product Discovery",
+    "status": "Published",
+    "source": "Original flagship case study",
+    "slug": "amsterdam-product-discovery-04-voice-of-customer",
+    "summary": "Part 04 of a 12-part Amsterdam tourism product-management case study: human-first review coding, AI-assisted VOC classification, independent validation, JTBD, Pareto and traceable product requirements.",
+    "ogImage": "/assets/projects/infradispatch-interface.png",
+    "seriesTitle": "Building a Data-Driven Signature Tour",
+    "seriesHub": "/series/amsterdam-tourism-product-discovery/index.html",
+    "part": 4,
+    "totalParts": 12,
+    "previousTitle": "Where Is the Real Opportunity? Turning Demand, Supply and Destination Evidence Into a Market Gap",
+    "previousSlug": "amsterdam-product-discovery-03-market-gap",
+    "nextTitle": "Who Should We Build It For? Source Markets, Segmentation, Language and Customer Jobs",
+    "nextSlug": "amsterdam-product-discovery-05-segmentation-language"
+  },
+  "bodyFile": "content-sources/amsterdam-product-discovery-04.html"
+}

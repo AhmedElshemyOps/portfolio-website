@@ -1,0 +1,10 @@
+source,listing_count,family_count,analysis_ready_listings,price_eligible_listings,share_of_full_sample_pct,observed_domains,source_type,freeze_access_note
+DIRECT,12,12,12,0,14.3,lovers.nl;mikesbiketoursamsterdam.com;stromma.com;yellowbike.nl,DIRECT_OPERATOR,Public manual observation only; dynamic/date-dependent checkout prices excluded unless comparison-window verification passed.
+EXPEDIA,16,16,16,0,19.0,expedia.com,OTA_OR_TICKETING_PLATFORM,Public manual observation only; dynamic/date-dependent checkout prices excluded unless comparison-window verification passed.
+GYG,12,12,12,0,14.3,getyourguide.com,OTA_OR_TICKETING_PLATFORM,Public manual observation only; dynamic/date-dependent checkout prices excluded unless comparison-window verification passed.
+IAMSTERDAM,7,7,7,0,8.3,iamsterdam.com,DESTINATION_PLATFORM,Public manual observation only; dynamic/date-dependent checkout prices excluded unless comparison-window verification passed.
+KLOOK,6,6,6,0,7.1,klook.com,OTA_OR_TICKETING_PLATFORM,Public manual observation only; dynamic/date-dependent checkout prices excluded unless comparison-window verification passed.
+TIQETS,9,9,9,0,10.7,tiqets.com,OTA_OR_TICKETING_PLATFORM,Public manual observation only; dynamic/date-dependent checkout prices excluded unless comparison-window verification passed.
+UCPLACES,1,1,1,1,1.2,ucplaces.com,DIGITAL_TOUR_PLATFORM,Public manual observation only; dynamic/date-dependent checkout prices excluded unless comparison-window verification passed.
+VIATOR,10,10,10,0,11.9,viator.com,OTA_OR_TICKETING_PLATFORM,Public manual observation only; dynamic/date-dependent checkout prices excluded unless comparison-window verification passed.
+VOICEMAP,11,11,11,11,13.1,voicemap.me,DIGITAL_TOUR_PLATFORM,Public manual observation only; dynamic/date-dependent checkout prices excluded unless comparison-window verification passed.

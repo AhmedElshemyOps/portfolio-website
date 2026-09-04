@@ -1,0 +1,6 @@
+rule_id,rule,evidence,url,design_implication
+D01,Guided group cap,City-centre guided groups may have up to 15 participants; more than four requires an exemption,https://www.amsterdam.nl/en/business/rules-permit-tours/,Route capacity
+D02,No-stop rule,Guided groups should not stop on busy canal bridges or in front of shop entrances during opening hours,https://www.amsterdam.nl/en/business/rules-permit-tours/,Stop design
+D03,Restricted area,Tours must not pass sex workers windows,https://www.amsterdam.nl/en/business/rules-permit-tours/,Exclusion zone
+D04,Resident respect,Guides must brief participants to respect residents and businesses,https://www.amsterdam.nl/en/business/rules-permit-tours/,Behaviour standard
+D05,Visitor balance,Route design should reduce nuisance and avoid concentrating demand in already pressured central spaces,https://www.amsterdam.nl/en/policy/tourism/,Destination fit

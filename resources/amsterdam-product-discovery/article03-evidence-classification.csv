@@ -1,0 +1,10 @@
+evidence_id,evidence_type,statement,source_or_basis,confidence
+E03-01,OBSERVED,84 FULL listings / 78 reconciled families,Frozen Article 02 pack,High
+E03-02,OBSERVED,2025 Amsterdam tourist overnight stays: 23.7 million,Amsterdam O&S visitor forecast 2026–2028,High
+E03-03,OBSERVED,2024: about 14m unique day visitors and 10m stay visitors,Amsterdam O&S tourism statistics,High
+E03-04,OBSERVED,"Foreign day visitors commonly walk canals, visit museums and take cruises",Amsterdam O&S day-visitor research,High
+E03-05,OBSERVED,Tourism carrying capacity under pressure in six neighbourhoods in 2025,Amsterdam O&S carrying-capacity study,High
+E03-06,DERIVED,Category family counts and review-count medians,Frozen Article 02 dataset; derived by category,Medium
+E03-07,DERIVED,Opportunity scores and sensitivity ranks,Transparent Article 03 ordinal model,Low-Medium
+E03-08,HYPOTHESIS,A richer-context experience may create visitor value,H01,Low
+E03-09,ASSUMPTION,Visitors can be recruited for primary validation,A02,Low

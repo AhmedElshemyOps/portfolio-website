@@ -1,0 +1,41 @@
+scenario,category,weighted_score_5,rank
+Balanced,Self-guided,4.45,1
+Balanced,Walking,4.0,2
+Balanced,Food,3.5,5
+Balanced,Performance/Other,3.55,3
+Balanced,Pass/Attraction,3.55,3
+Balanced,Hybrid,3.3,6
+Balanced,Cycling,3.15,7
+Balanced,Regional/Day trip,3.0,8
+Balanced,Canal,2.7,9
+Balanced,Bundle,2.45,10
+Demand-heavy,Self-guided,4.2,1
+Demand-heavy,Walking,4.05,2
+Demand-heavy,Food,3.4,5
+Demand-heavy,Performance/Other,3.75,3
+Demand-heavy,Pass/Attraction,3.75,3
+Demand-heavy,Hybrid,3.2,6
+Demand-heavy,Cycling,3.1,7
+Demand-heavy,Regional/Day trip,2.95,8
+Demand-heavy,Canal,2.65,9
+Demand-heavy,Bundle,2.25,10
+Destination-heavy,Self-guided,4.55,1
+Destination-heavy,Walking,4.05,2
+Destination-heavy,Food,3.6,5
+Destination-heavy,Performance/Other,3.65,3
+Destination-heavy,Pass/Attraction,3.65,3
+Destination-heavy,Hybrid,3.25,6
+Destination-heavy,Cycling,3.15,7
+Destination-heavy,Regional/Day trip,3.0,8
+Destination-heavy,Canal,2.95,9
+Destination-heavy,Bundle,2.6,10
+Operations-heavy,Self-guided,4.6,1
+Operations-heavy,Walking,4.25,2
+Operations-heavy,Food,3.4,5
+Operations-heavy,Performance/Other,3.75,3
+Operations-heavy,Pass/Attraction,3.75,3
+Operations-heavy,Hybrid,3.2,6
+Operations-heavy,Cycling,3.1,7
+Operations-heavy,Regional/Day trip,2.75,9
+Operations-heavy,Canal,2.85,8
+Operations-heavy,Bundle,2.65,10

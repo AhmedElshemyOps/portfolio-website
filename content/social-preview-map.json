@@ -1,0 +1,12 @@
+{
+  "homepage": "/assets/infradispatch-og.png",
+  "profile": "/assets/profile/ahmed-mahmoud-photo-executive.jpeg",
+  "projects": {
+    "infradispatch": "/assets/projects/infradispatch-interface.png",
+    "infracluster": "/assets/projects/infracluster-interface.png",
+    "infrasky": "/assets/projects/infrasky-interface.png",
+    "infraquote": "/assets/projects/infraquote-interface.png"
+  },
+  "articles": "/assets/infradispatch-og.png",
+  "note": "These files are social metadata assets only and are not article visual banners."
+}

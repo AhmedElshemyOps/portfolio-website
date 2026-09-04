@@ -1,0 +1,79 @@
+product_family,visitor_job,mode,live_guide,audio_or_digital,small_or_private,food_or_drink,attraction_or_pass,multiple_languages,observed_pilot_examples,confidence,status
+PF-AMAZE-ENTRY | Amsterdam: AMAZE Immersive Light & Sound Experience,Spend visitor time on a substitute entertainment/cultural experience,Attraction/performance,No,No,Unknown,No,Yes,Unknown,2,High,PHASE2E_FROZEN
+PF-AMSTERDAM-DUNGEON-ENTRY | The Amsterdam Dungeon Admission Ticket,Spend visitor time on a substitute entertainment/cultural experience,Attraction/performance,No,No,Unknown,No,Yes,Yes,2,High,PHASE2E_FROZEN
+PF-APD02-025 | Amsterdam: Dutch Countryside E-Bike or Bike Tour With Cheese & Clogs,Use Amsterdam as a base for regional discovery,Coach/bike/mixed,Yes,No,Unknown,Yes,No,No,1,Medium,PHASE2E_FROZEN
+PF-APD02-026 | Amsterdam Canal Cruise with Local Guide and Small Group,See Amsterdam from the water,Boat,Yes,No,Yes,Yes,No,Yes,1,Medium,PHASE2E_FROZEN
+PF-APD02-027 | Amsterdam: Sightseeing Canal Cruise With Drinks Upgrades,See Amsterdam from the water,Boat,No,No,Unknown,Yes,No,Unknown,1,Medium,PHASE2E_FROZEN
+PF-APD02-028 | Jordaan Food Tour with Dutch Tastings in Amsterdam,Experience Amsterdam through food,Walking/food,Yes,No,Unknown,Yes,No,No,1,Medium,PHASE2E_FROZEN
+"PF-APD02-029 | Amsterdam Cheese, Windmill & Countryside Bike Tour / E-bike Option",Use Amsterdam as a base for regional discovery,Coach/bike/mixed,Yes,No,Unknown,Yes,No,No,1,Medium,PHASE2E_FROZEN
+PF-APD02-030 | Amsterdam Small-Group Walking Food Tour With 10 Tastings,Experience Amsterdam through food,Walking/food,Yes,No,Unknown,Yes,No,No,1,Medium,PHASE2E_FROZEN
+PF-APD02-031 | Amsterdam Canal Cruise in Open Boat with Unlimited Drinks Option,See Amsterdam from the water,Boat,No,No,Unknown,Yes,No,Yes,1,Medium,PHASE2E_FROZEN
+PF-APD02-032 | Guided Bike Tour of Amsterdam Highlights & Hidden Gems,Cover Amsterdam efficiently by bike,Cycling,Yes,No,Yes,No,No,No,1,Medium,PHASE2E_FROZEN
+PF-APD02-034 | Amsterdam Small-Group or Private Bike Tour With Dutch Snack,Cover Amsterdam efficiently by bike,Cycling,Yes,No,Unknown,No,No,Unknown,1,Medium,PHASE2E_FROZEN
+PF-APD02-035 | STRAAT Museum Ticket in Amsterdam with Canal Cruise,Combine attraction/tour components in one purchase,Bundle,No,Yes,Unknown,No,Yes,Yes,1,Medium,PHASE2E_FROZEN
+PF-APD02-036 | Stedelijk Museum Ticket and Lovers Canal Cruise,Combine attraction/tour components in one purchase,Bundle,No,Yes,Unknown,No,Yes,Unknown,1,Medium,PHASE2E_FROZEN
+PF-APD02-037 | Van Gogh Museum + 1-Hour Canal Cruise,Combine attraction/tour components in one purchase,Bundle,Yes,Yes,Unknown,No,Yes,No,1,Medium,PHASE2E_FROZEN
+"PF-APD02-038 | Keukenhof, Zaanse Schans & Volendam Tour from Amsterdam",Use Amsterdam as a base for regional discovery,Coach/bike/mixed,Yes,No,Unknown,Yes,No,Yes,1,Medium,PHASE2E_FROZEN
+PF-APD02-039 | Moco Museum Ticket and Amsterdam Canal Cruise Experience,Combine attraction/tour components in one purchase,Bundle,No,No,Unknown,No,Yes,Yes,1,Medium,PHASE2E_FROZEN
+"PF-APD02-040 | Volendam, Marken, Edam & Zaanse Schans Windmills Tour from Amsterdam",Use Amsterdam as a base for regional discovery,Coach/bike/mixed,Yes,No,Unknown,Yes,No,Yes,1,Medium,PHASE2E_FROZEN
+PF-APD02-042 | Amsterdam: Luxury Cruise with Onboard Bar,See Amsterdam from the water,Boat,Yes,No,Unknown,No,No,Unknown,1,Medium,PHASE2E_FROZEN
+PF-APD02-043 | Amsterdam: Traditional Evening Canal Cruise,See Amsterdam from the water,Boat,No,No,Unknown,No,No,Unknown,1,Medium,PHASE2E_FROZEN
+PF-APD02-044 | Amsterdam: Luxury Cruise with Cheese & Wine,See Amsterdam from the water,Boat,No,No,Unknown,Yes,No,Unknown,1,Medium,PHASE2E_FROZEN
+PF-APD02-045 | Amsterdam: Canal Cruise with Optional Snack,See Amsterdam from the water,Boat,No,No,Unknown,No,No,Unknown,1,Medium,PHASE2E_FROZEN
+PF-APD02-046 | Amsterdam: Dutch Cheese Tasting at Henri Willig,Experience Amsterdam through food,Walking/food,No,No,Unknown,Yes,No,Unknown,1,Medium,PHASE2E_FROZEN
+PF-APD02-047 | Amsterdam: Audio Guide App,Explore independently at own pace,Digital/self-guided,No,Yes,Unknown,No,No,Unknown,1,Medium,PHASE2E_FROZEN
+"PF-APD02-048 | I amsterdam City Card: 100+ Museums, Sightseeing + Public Transport",Access a specific attraction or bundled city value,Attraction/pass,No,Yes,Unknown,No,Yes,Unknown,1,Medium,PHASE2E_FROZEN
+PF-APD02-049 | Amsterdam Canal Cruise - 100 Highlights,See Amsterdam from the water,Boat,No,Yes,Unknown,No,No,Yes,1,Medium,PHASE2E_FROZEN
+PF-APD02-050 | Small Boat Cruise Amsterdam,See Amsterdam from the water,Boat,Yes,No,Unknown,No,No,Yes,1,Medium,PHASE2E_FROZEN
+PF-APD02-051 | Pedal Boat Amsterdam,Explore independently at own pace,Digital/self-guided,No,No,Unknown,No,No,Yes,1,Medium,PHASE2E_FROZEN
+PF-APD02-052 | Cheese & Wine Cruise Amsterdam,See Amsterdam from the water,Boat,Yes,No,Unknown,Yes,No,No,1,Medium,PHASE2E_FROZEN
+PF-APD02-053 | Pizza Cruise Amsterdam,See Amsterdam from the water,Boat,Yes,No,Unknown,Yes,No,No,1,Medium,PHASE2E_FROZEN
+PF-APD02-054 | Amsterdam Urban Adventure Bike Tour,Cover Amsterdam efficiently by bike,Cycling,Yes,No,Unknown,No,No,No,1,Medium,PHASE2E_FROZEN
+PF-APD02-055 | Countryside North E-Bike Tour,Use Amsterdam as a base for regional discovery,Coach/bike/mixed,Yes,No,Unknown,Yes,No,No,1,Medium,PHASE2E_FROZEN
+PF-APD02-057 | Countryside Bike Tour from Amsterdam,Use Amsterdam as a base for regional discovery,Coach/bike/mixed,Yes,No,Unknown,No,No,No,1,Medium,PHASE2E_FROZEN
+PF-APD02-059 | New York Pizza Cruise by LOVERS,See Amsterdam from the water,Boat,No,No,Unknown,Yes,No,Unknown,1,Medium,PHASE2E_FROZEN
+PF-APD02-060 | Amsterdam Dinner Cruise,See Amsterdam from the water,Boat,No,No,Unknown,Yes,No,Unknown,1,Medium,PHASE2E_FROZEN
+PF-APD02-061 | Amsterdam: City Highlights Walking Tour,Understand Amsterdam on foot,Walking,Yes,No,Unknown,Yes,No,Yes,1,Medium,PHASE2E_FROZEN
+PF-APD02-062 | Amsterdam: Cultural Highlights Walking Tour in EN/DE/IT,Understand Amsterdam on foot,Walking,No,No,Unknown,No,No,Yes,1,Medium,PHASE2E_FROZEN
+PF-APD02-063 | Amsterdam: Walking Tour of Historic Center,Understand Amsterdam on foot,Walking,No,No,Unknown,No,No,Yes,1,Medium,PHASE2E_FROZEN
+PF-APD02-064 | Amsterdam: Jordaan Area Walking Tour,Understand Amsterdam on foot,Walking,No,No,Unknown,No,No,No,1,Medium,PHASE2E_FROZEN
+PF-APD02-065 | Amsterdam: Jordaan Food Tour of 10+ Local Classic Tastings,Experience Amsterdam through food,Walking/food,No,No,Unknown,Yes,No,No,1,Medium,PHASE2E_FROZEN
+"PF-APD02-066 | Amsterdam: Food Tour with Drinks by Spui, Canals and Jordaan",Experience Amsterdam through food,Walking/food,Yes,No,Unknown,Yes,No,No,1,Medium,PHASE2E_FROZEN
+PF-APD02-067 | Amsterdam: Albert Cuyp Market and De Pijp Guided Foodie Tour,Experience Amsterdam through food,Walking/food,No,No,Unknown,Yes,No,No,1,Medium,PHASE2E_FROZEN
+PF-APD02-068 | Amsterdam: Self-Guided Food Tour in De Pijp Neighbourhood,Explore independently at own pace,Digital/self-guided,No,No,Unknown,Yes,No,Unknown,1,Medium,PHASE2E_FROZEN
+PF-APD02-069 | An Amsterdam Introduction: From Fishing Hamlet to Trading Centre,Understand Amsterdam on foot,Walking,No,Yes,Unknown,No,No,No,1,High,PHASE2E_FROZEN
+PF-APD02-070 | Old Amsterdam: A Walking Tour through the East Side and Jewish District,Understand Amsterdam on foot,Walking,No,No,Unknown,No,No,No,1,High,PHASE2E_FROZEN
+PF-APD02-071 | Power and Politics: An Amsterdam Audio Tour with Context,Understand Amsterdam on foot,Walking,No,No,Unknown,No,No,No,1,High,PHASE2E_FROZEN
+"PF-APD02-072 | Red Lights, Trade and Tolerance: A Tour of Amsterdam’s Old Centre",Understand Amsterdam on foot,Walking,No,Yes,Unknown,No,No,No,1,High,PHASE2E_FROZEN
+PF-APD02-073 | The Dutch Invented That: An Irreverent Amsterdam Tour,Understand Amsterdam on foot,Walking,No,No,Unknown,No,No,No,1,High,PHASE2E_FROZEN
+PF-APD02-074 | Vondelpark and Old West Neighbourhood: Amsterdam’s Green Heart,Understand Amsterdam on foot,Walking,No,No,Unknown,No,No,No,1,High,PHASE2E_FROZEN
+PF-APD02-075 | Vibrant Amsterdam East: A Story of Urban Revival Beyond the Canals,Understand Amsterdam on foot,Walking,No,No,Unknown,Yes,No,No,1,High,PHASE2E_FROZEN
+PF-APD02-076 | A Tasty Stroll Around The Cool Spots of the Pijp,Explore independently at own pace,Digital/self-guided,No,No,Unknown,Yes,No,No,1,High,PHASE2E_FROZEN
+PF-APD02-077 | Red Light District,Explore independently at own pace,Digital/self-guided,No,No,Unknown,No,No,No,1,High,PHASE2E_FROZEN
+PF-APD02-078 | Family-Friendly Amsterdam: A Walking Tour for Adults and Kids,Explore independently at own pace,Digital/self-guided,No,No,Unknown,No,No,No,1,High,PHASE2E_FROZEN
+PF-APD02-079 | Amsterdam Walking Tour - Your perfect introduction to the city,Understand Amsterdam on foot,Walking,No,No,Unknown,No,No,Unknown,1,Medium,PHASE2E_FROZEN
+PF-APD02-080 | Free Walking Tours Amsterdam,Understand Amsterdam on foot,Walking,No,No,Unknown,No,Yes,Unknown,1,Medium,PHASE2E_FROZEN
+PF-APD02-081 | Anne Frank Walk,Explore independently at own pace,Digital/self-guided,No,Yes,Unknown,No,No,Unknown,1,Medium,PHASE2E_FROZEN
+PF-APD02-082 | Amsterdam: Red Light District Audio Tour,Explore independently at own pace,Digital/self-guided,No,Yes,Unknown,No,No,Yes,1,Medium,PHASE2E_FROZEN
+"PF-APD02-083 | Amsterdam Walking Tour, Netherlands - History, Culture & Main Sites (Self-Guided / GPS Audio Tour)",Explore independently at own pace,Digital/self-guided,No,Yes,Unknown,No,No,No,1,High,PHASE2E_FROZEN
+PF-APD02-084 | Space Tourist Amsterdam: Explore the City’s Cosmic Side by Public Transport,Combine multiple Amsterdam experience modes,Mixed,No,No,Unknown,No,Yes,No,1,High,PHASE2E_FROZEN
+PF-APD02-085 | Top 10 Tastings of Amsterdam: Food & Culture Bike Tour,Combine multiple Amsterdam experience modes,Mixed,Yes,No,Unknown,Yes,No,No,1,High,PHASE2E_FROZEN
+PF-APD02-086 | Explore Amsterdam canals on iconic Flower Bikes,Cover Amsterdam efficiently by bike,Cycling,No,No,Unknown,No,Yes,No,1,Medium,PHASE2E_FROZEN
+PF-APD02-087 | Amsterdam City Top Highlights Guided Bike Tour,Cover Amsterdam efficiently by bike,Cycling,No,No,Unknown,No,Yes,Unknown,1,Medium,PHASE2E_FROZEN
+PF-APD02-088 | Amsterdam: Explore the City Highlights by Bike,Cover Amsterdam efficiently by bike,Cycling,Yes,No,Unknown,No,No,No,1,High,PHASE2E_FROZEN
+PF-APD02-089 | Amsterdam: 2.5-Hour Bike Tour,Cover Amsterdam efficiently by bike,Cycling,No,No,Unknown,No,No,Yes,1,High,PHASE2E_FROZEN
+"PF-APD02-090 | 10 Tastes of Amsterdam Food Tour: Small Group, Full Meal & Drinks",Experience Amsterdam through food,Walking/food,No,No,Unknown,Yes,No,No,1,High,PHASE2E_FROZEN
+PF-APD02-091 | Amsterdam Explorer Pass: Save up to 50 Percent - Includes Moco Museum,Access a specific attraction or bundled city value,Attraction/pass,No,No,Unknown,No,Yes,Unknown,1,Medium,PHASE2E_FROZEN
+PF-APD02-092 | Amsterdam All-Inclusive Pass: Save up to 50 Percent - Includes Rijksmuseum,Access a specific attraction or bundled city value,Attraction/pass,No,No,Unknown,No,Yes,Unknown,1,Medium,PHASE2E_FROZEN
+PF-APD02-096 | Madame Tussauds Amsterdam Admission Ticket,Access a specific attraction or bundled city value,Attraction/pass,No,No,Unknown,No,Yes,Unknown,1,High,PHASE2E_FROZEN
+PF-APD02-098 | Amsterdam: Exclusive Heineken Experience VIP Tour Ticket,Combine multiple Amsterdam experience modes,Mixed,Yes,No,Unknown,Yes,Yes,No,1,High,PHASE2E_FROZEN
+PF-APD02-099 | Heineken Canal Cruise with Drinks & Heineken Experience,Combine multiple Amsterdam experience modes,Mixed,Yes,No,Unknown,Yes,Yes,Unknown,1,Medium,PHASE2E_FROZEN
+PF-APD02-100 | Amsterdam Combo: Heineken Experience & 1-Hour Canal Cruise,Combine multiple Amsterdam experience modes,Mixed,Yes,Yes,Unknown,No,Yes,Yes,1,Medium,PHASE2E_FROZEN
+PF-APD02-104 | FEBOAT,Combine multiple Amsterdam experience modes,Mixed,No,No,Unknown,Yes,No,Unknown,1,Medium,PHASE2E_FROZEN
+PF-APD02-105 | Amsterdam: Rijksmuseum Entry Ticket,Access a specific attraction or bundled city value,Attraction/pass,No,No,Unknown,No,Yes,Unknown,1,High,PHASE2E_FROZEN
+PF-APD02-106 | Amsterdam: Moco Museum Entry Ticket and Canal Cruise,Combine multiple Amsterdam experience modes,Mixed,Yes,Yes,Unknown,No,Yes,Yes,1,High,PHASE2E_FROZEN
+PF-APD02-108 | Amsterdam: This Is Holland 5D Flight and Canal Cruise Combo,Combine multiple Amsterdam experience modes,Mixed,Yes,Yes,Unknown,No,No,Yes,1,High,PHASE2E_FROZEN
+PF-LOVERS-CLASSIC-CANAL | Traditional 1-hour Canal Cruise,See Amsterdam from the water,Boat,Yes,Yes,Unknown,No,No,Yes,2,High,PHASE2E_FROZEN
+PF-MIKES-CITY-BIKE | Amsterdam Highlights Bike or E-Bike Tour,Cover Amsterdam efficiently by bike,Cycling,No,No,Unknown,No,No,Yes,2,High,PHASE2E_FROZEN
+"PF-MOCO-ENTRY | Moco Museum: Banksy, Basquiat, Warhol, Kusama & More",Access a specific attraction or bundled city value,Attraction/pass,Yes,Yes,Unknown,No,Yes,Yes,2,High,PHASE2E_FROZEN
+PF-THIS-IS-HOLLAND-ENTRY | Amsterdam: THIS IS HOLLAND - The Ultimate Flight Experience,Spend visitor time on a substitute entertainment/cultural experience,Attraction/performance,No,No,Unknown,No,Yes,Yes,2,High,PHASE2E_FROZEN

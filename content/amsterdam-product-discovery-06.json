@@ -1,0 +1,21 @@
+{
+  "meta": {
+    "title": "Where Should the Experience Happen? Attraction Intelligence, Geography and Destination Fit",
+    "url": "amsterdam-product-discovery-06-destination-geography.html",
+    "category": "Amsterdam Product Discovery",
+    "status": "Published",
+    "source": "Original flagship case study",
+    "slug": "amsterdam-product-discovery-06-destination-geography",
+    "summary": "Part 06 of a 12-part Amsterdam tourism product-management case study: verified POI intelligence, destination-fit scoring and resilient route variants across crowd, rain, accessibility and disruption conditions.",
+    "ogImage": "/assets/projects/infradispatch-interface.png",
+    "seriesTitle": "Building a Data-Driven Signature Tour",
+    "seriesHub": "/series/amsterdam-tourism-product-discovery/index.html",
+    "part": 6,
+    "totalParts": 12,
+    "previousTitle": "Who Should We Build It For? Source Markets, Segmentation, Language and Customer Jobs",
+    "previousSlug": "amsterdam-product-discovery-05-segmentation-language",
+    "nextTitle": "From Evidence to Experience: Product Requirements, Supplier Feasibility and the Amsterdam Signature Concept",
+    "nextSlug": "amsterdam-product-discovery-07-product-requirements-concept"
+  },
+  "bodyFile": "content-sources/amsterdam-product-discovery-06.html"
+}

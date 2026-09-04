@@ -1,0 +1,5 @@
+connectivity_id,market,mode,connection,evidence,url,confidence
+C01,United Kingdom,Rail,Direct Eurostar Amsterdam-London,About 4h19 city-centre to city-centre on direct services,https://www.eurostar.com/uk-en/train/amsterdam-to-london,High
+C02,France,Rail,Direct Eurostar Amsterdam-Paris,About 3h20 city-centre to city-centre,https://www.eurostar.com/uk-en/train/amsterdam-to-paris,High
+C03,Germany,Rail,Direct ICE Amsterdam-Berlin,Five direct trains per day; about 5h51,https://www.nsinternational.com/en/trains/ice-to-berlin,High
+C04,Global / US / UK / Europe,Air,Schiphol network,"301 direct destinations in 2025, including 125 intercontinental; UK, US and major European markets are heavily connected",https://nieuws.schiphol.nl/schiphol-verbindt-nederland-met-301-bestemmingen-68-miljoen-reizigers-in-2025/,High

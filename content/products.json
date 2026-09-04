@@ -1,0 +1,62 @@
+[
+  {
+    "slug": "infradispatch",
+    "name": "InfraDispatch",
+    "category": "Dispatch planning",
+    "problem": "Pickup plans are often split across messages, spreadsheets and personal notes, so trip details, people, vehicles, costs and approvals can fall out of sync.",
+    "solution": "A single rule-based workflow that turns operating inputs into an approved pickup plan, route links, team briefs, manifests and printable handover outputs.",
+    "why": "Reduce missed handovers, duplicate coordination and last-minute uncertainty while giving supervisors one reviewable operating picture.",
+    "how": "Enter the trip and team, add pickup and drop-off points, record costs, review the decision, approve the plan, then export the operational brief.",
+    "when": "Use it before city tours, airport transfers, event movements and any multi-stop operation that needs coordinated guide, driver and vehicle assignments.",
+    "role": "I defined the operating rules, information architecture, review gates, interface and static demonstration workflow.",
+    "deliverables": ["Pickup-plan workflow", "Approval and handover controls", "Printable operations brief"],
+    "outcome": "The demonstration shows how one governed plan can replace fragmented coordination and make supervisor review easier before field handover.",
+    "limitations": "Static MVP using mock or browser-local data. It has no live fleet API, authentication, database or production dispatch integration.",
+    "screenshot": "assets/projects/infradispatch-interface.png"
+  },
+  {
+    "slug": "infracluster",
+    "name": "InfraCluster",
+    "category": "Pickup clustering",
+    "problem": "Large hotel pickup lists become difficult to operate when location, guest count, luggage, language, pickup windows and vehicle capacity are planned separately.",
+    "solution": "A clustering workflow that groups hotels into practical operating zones, flags capacity pressure and prepares a clean dispatch handoff to InfraDispatch.",
+    "why": "Make vehicle splits and pickup sequences easier to explain, review and cost before the movement reaches the dispatch team.",
+    "how": "Set the service context, add hotels and guest requirements, compare proposed clusters, review vehicle fit and cost signals, then approve the preferred split.",
+    "when": "Use it for MICE groups, multi-hotel city tours, airport movements and any service where several pickup points must be consolidated into workable routes.",
+    "role": "I translated hotel-pickup constraints into a reviewable clustering method, capacity checks and dispatch-ready output.",
+    "deliverables": ["Constraint-based clusters", "Vehicle-fit warnings", "Dispatch handover summary"],
+    "outcome": "The demonstration makes route grouping, capacity pressure and the reason for each proposed split visible to an operations reviewer.",
+    "limitations": "Static MVP with illustrative clustering rules. It does not use live traffic, mapping optimisation or production booking data.",
+    "screenshot": "assets/projects/infracluster-interface.png"
+  },
+  {
+    "slug": "infrasky",
+    "name": "InfraSky",
+    "category": "Experience readiness",
+    "problem": "Stargazing and desert experiences can be oversold when moon phase, visibility, haze, access, camp readiness and guest comfort are considered too late or in isolation.",
+    "solution": "A condition-aware planner that converts supplied conditions into a sell, watch, avoid or block decision with safer guest wording and field briefings.",
+    "why": "Protect guest trust and operational credibility by aligning the sales promise with conditions the guide, driver and camp team can realistically support.",
+    "how": "Choose the date and product, enter the available sky and field conditions, review the readiness score, then use the generated sales copy, guide notes and checklist.",
+    "when": "Use it before selling, confirming or operating stargazing tours, astronomy programmes, desert dinners and other condition-sensitive outdoor products.",
+    "role": "I designed the condition model, decision language, readiness scoring and the handover between product promise and field delivery.",
+    "deliverables": ["Readiness decision", "Guest-safe sales wording", "Guide and field checklist"],
+    "outcome": "The demonstration shows how a product team can make a bounded sell, watch, avoid or block decision from supplied operating conditions.",
+    "limitations": "Static MVP using user-supplied conditions. It does not claim live weather, astronomy, access or safety data.",
+    "screenshot": "assets/projects/infrasky-interface.png"
+  },
+  {
+    "slug": "infraquote",
+    "name": "InfraQuote",
+    "category": "Commercial workflow",
+    "problem": "Tour quotations become risky when guest requirements, supplier costs, vehicle assumptions, tickets, VAT, margin and client terms live in separate calculations.",
+    "solution": "A controlled quotation workflow that separates the internal cost view from client output while checking break-even logic, margin and readiness warnings.",
+    "why": "Protect commercial discipline, reduce hidden-cost mistakes and make every client price easier to review before it leaves the business.",
+    "how": "Capture the request, build the cost worksheet, validate assumptions, review break-even and margin, resolve warnings, then generate the client-facing quotation.",
+    "when": "Use it for new enquiries, custom itineraries, group quotations, supplier-price changes and every pre-approval review before a proposal is sent.",
+    "role": "I structured the quotation journey, commercial calculations, internal controls and separation between cost review and client output.",
+    "deliverables": ["Controlled cost worksheet", "Margin and break-even review", "Client-ready quotation"],
+    "outcome": "The demonstration makes pricing assumptions and warnings inspectable before a client-facing quotation is generated.",
+    "limitations": "Static MVP with browser-local calculations. It has no live supplier rates, accounting integration, tax service or approval database.",
+    "screenshot": "assets/projects/infraquote-interface.png"
+  }
+]

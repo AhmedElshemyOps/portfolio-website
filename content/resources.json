@@ -1,0 +1,140 @@
+[
+  {
+    "id": "amsterdam-evidence-pack",
+    "title": "Amsterdam Product Discovery Evidence Pack",
+    "type": "Research workbook",
+    "format": "XLSX",
+    "topic": "Tourism Product Discovery",
+    "description": "Eight-sheet workbook covering public competitive products, features, opportunities, voice of customer, language markets, attraction scoring and product requirements.",
+    "url": "/resources/amsterdam-product-discovery/Amsterdam-Product-Discovery-Evidence-Pack.xlsx",
+    "action": "Download workbook",
+    "download": true,
+    "relatedArticles": [
+      "amsterdam-product-discovery-01-research-plan",
+      "amsterdam-product-discovery-02-competitive-landscape",
+      "amsterdam-product-discovery-03-market-gap",
+      "amsterdam-product-discovery-04-voice-of-customer",
+      "amsterdam-product-discovery-05-segmentation-language",
+      "amsterdam-product-discovery-06-destination-geography",
+      "amsterdam-product-discovery-07-product-requirements-concept"
+    ]
+  },
+  {
+    "id": "cv",
+    "title": "Ahmed Mahmoud — Managerial CV",
+    "type": "Professional document",
+    "format": "PDF",
+    "topic": "Profile",
+    "description": "Recruiter-ready overview of experience, capabilities, projects, articles and credentials.",
+    "url": "/documents/Ahmed-Mahmoud-Managerial-CV.pdf",
+    "action": "Download PDF",
+    "download": true,
+    "relatedArticles": []
+  },
+  {
+    "id": "credentials",
+    "title": "Credentials Evidence Portfolio",
+    "type": "Professional document",
+    "format": "PDF",
+    "topic": "Credentials",
+    "description": "Compiled evidence portfolio for Ahmed's supplied diplomas, certifications, licences and safety training.",
+    "url": "/documents/Ahmed-Mahmoud-Credentials-Portfolio.pdf",
+    "action": "Download PDF",
+    "download": true,
+    "relatedArticles": []
+  },
+  {
+    "id": "sop-audit-visual",
+    "title": "SOP Audit Decision Framework",
+    "type": "Educational diagram",
+    "format": "SVG",
+    "topic": "Quality & SOP",
+    "description": "A visual companion to the practical SOP audit method and evidence flow.",
+    "url": "/assets/resources/sop-audit-decision-framework.svg",
+    "action": "Open diagram",
+    "relatedArticles": [
+      "how-to-audit-an-sop"
+    ]
+  },
+  {
+    "id": "quotation-visual",
+    "title": "Tour Quotation Cost Framework",
+    "type": "Educational diagram",
+    "format": "SVG",
+    "topic": "Commercial & Quotation",
+    "description": "A visual companion for structuring cost, price, margin and client quotation decisions.",
+    "url": "/assets/resources/tour-quotation-cost-framework.svg",
+    "action": "Open diagram",
+    "relatedArticles": [
+      "article-city-tour-quotation-professional",
+      "article-tour-cost-worksheet-city-tour"
+    ]
+  },
+  {
+    "id": "mice-control-visual",
+    "title": "MICE Movement Control Framework",
+    "type": "Educational diagram",
+    "format": "SVG",
+    "topic": "MICE Operations",
+    "description": "A visual companion for movement-control roles, signals, decisions and operating handovers.",
+    "url": "/assets/resources/mice-movement-control-framework.svg",
+    "action": "Open diagram",
+    "relatedArticles": [
+      "article-abu-dhabi-mice-movement-control-room"
+    ]
+  },
+  {
+    "id": "infradispatch",
+    "title": "InfraDispatch",
+    "type": "Interactive tool",
+    "format": "Browser demo",
+    "topic": "Tourism Operations & Product Systems",
+    "description": "Smart rule-based dispatch planner and browser demo for trip, team, vehicle, cost, approval and handover decisions.",
+    "url": "/live-demos/infradispatch/index.html",
+    "action": "Open demo",
+    "relatedArticles": [
+      "article-fleet-control-tower-operations-dashboard",
+      "tourism-transport-dispatch-ai-prompts"
+    ]
+  },
+  {
+    "id": "infracluster",
+    "title": "InfraCluster",
+    "type": "Interactive tool",
+    "format": "Browser demo",
+    "topic": "MICE Operations",
+    "description": "Pickup clustering demo for operating constraints, capacity, timing pressure and supervisor review.",
+    "url": "/live-demos/infracluster.html",
+    "action": "Open demo",
+    "relatedArticles": [
+      "article-mice-hotel-desks-coach-departures-abu-dhabi"
+    ]
+  },
+  {
+    "id": "infrasky",
+    "title": "InfraSky",
+    "type": "Interactive tool",
+    "format": "Browser demo",
+    "topic": "DMC & Destination Management",
+    "description": "Condition-aware experience readiness demo for responsible stargazing and desert product decisions.",
+    "url": "/live-demos/infrasky.html",
+    "action": "Open demo",
+    "relatedArticles": [
+      "tourism-product-development-ai-prompts"
+    ]
+  },
+  {
+    "id": "infraquote",
+    "title": "InfraQuote",
+    "type": "Interactive tool",
+    "format": "Browser demo",
+    "topic": "Commercial & Quotation",
+    "description": "Controlled tour-costing, margin, break-even and client quotation workflow demo.",
+    "url": "/live-demos/infraquote.html",
+    "action": "Open demo",
+    "relatedArticles": [
+      "article-city-tour-quotation-professional",
+      "article-tour-cost-worksheet-city-tour"
+    ]
+  }
+]

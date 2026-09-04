@@ -1,0 +1,11 @@
+category,listing_count,family_count,direct_count,substitute_count,analysis_ready_count,price_eligible_count,price_scope_note
+Bundle,4,4,0,4,4,0,No Phase 2E comparable price rows
+Canal,15,14,15,0,15,0,No Phase 2E comparable price rows
+Cycling,9,8,9,0,9,0,No Phase 2E comparable price rows
+Food,7,7,6,1,7,0,No Phase 2E comparable price rows
+Hybrid,8,8,8,0,8,1,Date-independent digital subset only
+Pass/Attraction,7,6,0,7,7,0,No Phase 2E comparable price rows
+Performance/Other,6,3,0,6,6,0,No Phase 2E comparable price rows
+Regional/Day trip,6,6,6,0,6,0,No Phase 2E comparable price rows
+Self-guided,9,9,7,2,9,4,Date-independent digital subset only
+Walking,13,13,13,0,13,7,Date-independent digital subset only

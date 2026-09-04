@@ -1,0 +1,64 @@
+field_name,full_rows,blank_cells,explicit_not_observed_cells,not_applicable_cells,classified_not_observed_in_review,true_missing_critical_cells,article03_readiness,review_note
+record_id,84,0,0,0,0,0,SAFE,Core gate field; true blanks block ANALYSIS_READY.
+product_family_id,84,0,0,0,0,0,SAFE,Core gate field; true blanks block ANALYSIS_READY.
+source,84,0,0,0,0,0,SAFE,Core gate field; true blanks block ANALYSIS_READY.
+source_url,84,0,0,0,0,0,SAFE,Core gate field; true blanks block ANALYSIS_READY.
+collection_date,84,0,0,0,0,0,SAFE,Blank values are treated as NOT_OBSERVED unless the field is structurally not applicable; raw values are not rewritten.
+observed_title,84,0,0,0,0,0,SAFE,Core gate field; true blanks block ANALYSIS_READY.
+category,84,0,0,0,0,0,SAFE,Core gate field; true blanks block ANALYSIS_READY.
+subcategory,84,0,0,0,0,0,CONTEXT_DEPENDENT,Blank values are treated as NOT_OBSERVED unless the field is structurally not applicable; raw values are not rewritten.
+competitor_type,84,0,0,0,0,0,SAFE,Core gate field; true blanks block ANALYSIS_READY.
+display_currency,84,0,20,0,20,0,CONTEXT_DEPENDENT,Blank values are treated as NOT_OBSERVED unless the field is structurally not applicable; raw values are not rewritten.
+original_price,84,0,23,0,23,0,NOT_SAFE_CROSS_PRODUCT,Blank values are treated as NOT_OBSERVED unless the field is structurally not applicable; raw values are not rewritten.
+cleaned_price,84,29,0,0,29,0,NOT_SAFE_CROSS_PRODUCT,Blank values are treated as NOT_OBSERVED unless the field is structurally not applicable; raw values are not rewritten.
+price_basis,84,0,0,0,0,0,CONTEXT_DEPENDENT,Blank values are treated as NOT_OBSERVED unless the field is structurally not applicable; raw values are not rewritten.
+duration_minutes,84,15,0,0,15,0,SAFE_WITH_MISSINGNESS_CAVEAT,Blank values are treated as NOT_OBSERVED unless the field is structurally not applicable; raw values are not rewritten.
+group_model,84,0,0,0,0,0,CONTEXT_DEPENDENT,Blank values are treated as NOT_OBSERVED unless the field is structurally not applicable; raw values are not rewritten.
+language,84,0,28,0,28,0,SAFE_WITH_MISSINGNESS_CAVEAT,Blank values are treated as NOT_OBSERVED unless the field is structurally not applicable; raw values are not rewritten.
+rating_scale,84,46,0,0,46,0,CONTEXT_DEPENDENT,Blank values are treated as NOT_OBSERVED unless the field is structurally not applicable; raw values are not rewritten.
+rating_value,84,46,0,0,46,0,SAFE_WITH_MISSINGNESS_CAVEAT,Blank values are treated as NOT_OBSERVED unless the field is structurally not applicable; raw values are not rewritten.
+review_count,84,35,0,0,35,0,SAFE_WITH_MISSINGNESS_CAVEAT,Blank values are treated as NOT_OBSERVED unless the field is structurally not applicable; raw values are not rewritten.
+positioning,84,0,0,0,0,0,CONTEXT_DEPENDENT,Blank values are treated as NOT_OBSERVED unless the field is structurally not applicable; raw values are not rewritten.
+differentiating_features,84,0,0,0,0,0,CONTEXT_DEPENDENT,Blank values are treated as NOT_OBSERVED unless the field is structurally not applicable; raw values are not rewritten.
+duplicate_note,84,53,0,0,53,0,CONTEXT_DEPENDENT,Blank values are treated as NOT_OBSERVED unless the field is structurally not applicable; raw values are not rewritten.
+missing_data_flag,84,0,0,0,0,0,CONTEXT_DEPENDENT,Blank values are treated as NOT_OBSERVED unless the field is structurally not applicable; raw values are not rewritten.
+evidence_class,84,0,0,0,0,0,CONTEXT_DEPENDENT,Blank values are treated as NOT_OBSERVED unless the field is structurally not applicable; raw values are not rewritten.
+confidence,84,0,0,0,0,0,CONTEXT_DEPENDENT,Blank values are treated as NOT_OBSERVED unless the field is structurally not applicable; raw values are not rewritten.
+status,84,0,0,0,0,0,CONTEXT_DEPENDENT,Blank values are treated as NOT_OBSERVED unless the field is structurally not applicable; raw values are not rewritten.
+source_owner,84,0,0,0,0,0,CONTEXT_DEPENDENT,Blank values are treated as NOT_OBSERVED unless the field is structurally not applicable; raw values are not rewritten.
+product_detail_url,84,0,0,0,0,0,CONTEXT_DEPENDENT,Blank values are treated as NOT_OBSERVED unless the field is structurally not applicable; raw values are not rewritten.
+operator_name,84,27,0,0,27,0,SAFE_WITH_MISSINGNESS_CAVEAT,Blank values are treated as NOT_OBSERVED unless the field is structurally not applicable; raw values are not rewritten.
+operator_product_reference,84,84,0,0,84,0,CONTEXT_DEPENDENT,Blank values are treated as NOT_OBSERVED unless the field is structurally not applicable; raw values are not rewritten.
+observation_datetime,84,0,0,0,0,0,CONTEXT_DEPENDENT,Blank values are treated as NOT_OBSERVED unless the field is structurally not applicable; raw values are not rewritten.
+service_date,84,84,0,0,84,0,CONTEXT_DEPENDENT,Blank values are treated as NOT_OBSERVED unless the field is structurally not applicable; raw values are not rewritten.
+participant_profile,84,32,0,0,32,0,CONTEXT_DEPENDENT,Blank values are treated as NOT_OBSERVED unless the field is structurally not applicable; raw values are not rewritten.
+option_observed,84,0,0,0,0,0,CONTEXT_DEPENDENT,Blank values are treated as NOT_OBSERVED unless the field is structurally not applicable; raw values are not rewritten.
+display_context,84,0,0,0,0,0,CONTEXT_DEPENDENT,Blank values are treated as NOT_OBSERVED unless the field is structurally not applicable; raw values are not rewritten.
+promotion_flag,84,0,0,0,0,0,CONTEXT_DEPENDENT,Blank values are treated as NOT_OBSERVED unless the field is structurally not applicable; raw values are not rewritten.
+reference_price_original,84,71,0,0,71,0,CONTEXT_DEPENDENT,Blank values are treated as NOT_OBSERVED unless the field is structurally not applicable; raw values are not rewritten.
+normalized_currency,84,72,0,0,72,0,CONTEXT_DEPENDENT,Blank values are treated as NOT_OBSERVED unless the field is structurally not applicable; raw values are not rewritten.
+normalized_price,84,72,0,0,72,0,SAFE_SUBSET_ONLY,Blank values are treated as NOT_OBSERVED unless the field is structurally not applicable; raw values are not rewritten.
+fx_rate,84,72,0,0,72,0,CONTEXT_DEPENDENT,Blank values are treated as NOT_OBSERVED unless the field is structurally not applicable; raw values are not rewritten.
+fx_rate_date,84,72,0,0,72,0,CONTEXT_DEPENDENT,Blank values are treated as NOT_OBSERVED unless the field is structurally not applicable; raw values are not rewritten.
+itinerary_summary,84,83,0,0,83,0,CONTEXT_DEPENDENT,Blank values are treated as NOT_OBSERVED unless the field is structurally not applicable; raw values are not rewritten.
+inclusions_summary,84,53,0,0,53,0,CONTEXT_DEPENDENT,Blank values are treated as NOT_OBSERVED unless the field is structurally not applicable; raw values are not rewritten.
+meeting_point,84,42,0,0,42,0,CONTEXT_DEPENDENT,Blank values are treated as NOT_OBSERVED unless the field is structurally not applicable; raw values are not rewritten.
+cancellation_summary,84,68,0,0,68,0,CONTEXT_DEPENDENT,Blank values are treated as NOT_OBSERVED unless the field is structurally not applicable; raw values are not rewritten.
+duplicate_candidate_group,84,29,0,0,29,0,CONTEXT_DEPENDENT,Blank values are treated as NOT_OBSERVED unless the field is structurally not applicable; raw values are not rewritten.
+duplicate_review_status,84,0,0,0,0,0,SAFE,Core gate field; true blanks block ANALYSIS_READY.
+transformation_note,84,0,0,0,0,0,CONTEXT_DEPENDENT,Blank values are treated as NOT_OBSERVED unless the field is structurally not applicable; raw values are not rewritten.
+collection_stage,84,0,0,0,0,0,SAFE,Blank values are treated as NOT_OBSERVED unless the field is structurally not applicable; raw values are not rewritten.
+reviewer,84,0,0,0,0,0,CONTEXT_DEPENDENT,Blank values are treated as NOT_OBSERVED unless the field is structurally not applicable; raw values are not rewritten.
+last_reviewed,84,0,0,0,0,0,CONTEXT_DEPENDENT,Blank values are treated as NOT_OBSERVED unless the field is structurally not applicable; raw values are not rewritten.
+identity_qa_status,84,0,0,0,0,0,SAFE,Core gate field; true blanks block ANALYSIS_READY.
+price_qa_status,84,0,0,0,0,0,CONTEXT_DEPENDENT,Blank values are treated as NOT_OBSERVED unless the field is structurally not applicable; raw values are not rewritten.
+price_analysis_eligible,84,0,0,0,0,0,CONTEXT_DEPENDENT,Blank values are treated as NOT_OBSERVED unless the field is structurally not applicable; raw values are not rewritten.
+second_review_status,84,0,0,0,0,0,CONTEXT_DEPENDENT,Blank values are treated as NOT_OBSERVED unless the field is structurally not applicable; raw values are not rewritten.
+analysis_ready_reason,84,0,0,0,0,0,CONTEXT_DEPENDENT,Blank values are treated as NOT_OBSERVED unless the field is structurally not applicable; raw values are not rewritten.
+price_recheck_date,84,0,0,0,0,0,CONTEXT_DEPENDENT,Blank values are treated as NOT_OBSERVED unless the field is structurally not applicable; raw values are not rewritten.
+comparison_service_window,84,0,0,0,0,0,CONTEXT_DEPENDENT,Blank values are treated as NOT_OBSERVED unless the field is structurally not applicable; raw values are not rewritten.
+rechecked_source_price,84,72,0,0,72,0,CONTEXT_DEPENDENT,Blank values are treated as NOT_OBSERVED unless the field is structurally not applicable; raw values are not rewritten.
+rechecked_source_currency,84,72,0,0,72,0,CONTEXT_DEPENDENT,Blank values are treated as NOT_OBSERVED unless the field is structurally not applicable; raw values are not rewritten.
+rechecked_price_basis,84,72,0,0,72,0,CONTEXT_DEPENDENT,Blank values are treated as NOT_OBSERVED unless the field is structurally not applicable; raw values are not rewritten.
+recheck_provenance_url,84,0,0,0,0,0,CONTEXT_DEPENDENT,Blank values are treated as NOT_OBSERVED unless the field is structurally not applicable; raw values are not rewritten.
+fx_source,84,72,0,0,72,0,CONTEXT_DEPENDENT,Blank values are treated as NOT_OBSERVED unless the field is structurally not applicable; raw values are not rewritten.

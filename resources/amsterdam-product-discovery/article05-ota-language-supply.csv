@@ -1,0 +1,13 @@
+language,ota_listings_with_explicit_language,frozen_ota_listings,share_of_frozen_ota_sample_pct,interpretation
+English,29,53,54.7,"Observed explicit disclosure only; may mix live-guide, audio and interface languages"
+German,6,53,11.3,"Observed explicit disclosure only; may mix live-guide, audio and interface languages"
+French,6,53,11.3,"Observed explicit disclosure only; may mix live-guide, audio and interface languages"
+Spanish,8,53,15.1,"Observed explicit disclosure only; may mix live-guide, audio and interface languages"
+Italian,8,53,15.1,"Observed explicit disclosure only; may mix live-guide, audio and interface languages"
+Dutch,6,53,11.3,"Observed explicit disclosure only; may mix live-guide, audio and interface languages"
+Arabic,5,53,9.4,"Observed explicit disclosure only; may mix live-guide, audio and interface languages"
+Russian,6,53,11.3,"Observed explicit disclosure only; may mix live-guide, audio and interface languages"
+Portuguese,5,53,9.4,"Observed explicit disclosure only; may mix live-guide, audio and interface languages"
+Japanese,5,53,9.4,"Observed explicit disclosure only; may mix live-guide, audio and interface languages"
+Chinese/Mandarin,5,53,9.4,"Observed explicit disclosure only; may mix live-guide, audio and interface languages"
+NOT_DISPLAYED,19,53,35.8,Language not displayed in frozen observation; do not treat as unavailable

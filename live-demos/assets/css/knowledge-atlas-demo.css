@@ -1,0 +1,302 @@
+@font-face{font-family:"IBM Plex Sans";src:url("../fonts/ibm-plex-sans-latin-400-normal.woff2") format("woff2");font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:"IBM Plex Sans";src:url("../fonts/ibm-plex-sans-latin-500-normal.woff2") format("woff2");font-style:normal;font-weight:500;font-display:swap}
+@font-face{font-family:"IBM Plex Sans";src:url("../fonts/ibm-plex-sans-latin-600-normal.woff2") format("woff2");font-style:normal;font-weight:600;font-display:swap}
+@font-face{font-family:"Lora";src:url("../fonts/lora-latin-600-normal.woff2") format("woff2");font-style:normal;font-weight:600;font-display:swap}
+
+:root{
+  --ka-navy-950:#061320;
+  --ka-navy-900:#0a1b2b;
+  --ka-navy-800:#112a3f;
+  --ka-ink:#102435;
+  --ka-muted:#5b6e7e;
+  --ka-teal:#287f7c;
+  --ka-teal-bright:#58b4ae;
+  --ka-gold:#c8a83f;
+  --ka-paper:#f3f6f7;
+  --ka-white:#ffffff;
+  --ka-line:#cbd5dc;
+  --ka-soft:#e9eff1;
+  --ka-danger:#a34141;
+  --ka-shadow:0 16px 40px rgba(7,25,42,.08);
+}
+
+html{scroll-behavior:smooth}
+body.knowledge-atlas-demo{margin:0;color:var(--ka-ink);background:var(--ka-paper);font-family:"IBM Plex Sans",sans-serif;font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.knowledge-atlas-demo *{box-sizing:border-box}
+.knowledge-atlas-demo [hidden]{display:none!important}
+.knowledge-atlas-demo img,.knowledge-atlas-demo svg{max-width:100%;height:auto}
+.knowledge-atlas-demo .container{width:min(1240px,calc(100% - 48px));max-width:none;margin-inline:auto;padding-inline:0}
+.knowledge-atlas-demo :focus-visible{outline:3px solid var(--ka-teal-bright)!important;outline-offset:3px}
+.knowledge-atlas-demo .skip,.knowledge-atlas-demo .skip-link{position:fixed;top:8px;left:8px;z-index:200;transform:translateY(-160%);padding:10px 14px;color:#fff;background:var(--ka-teal);font-weight:600}
+.knowledge-atlas-demo .skip:focus,.knowledge-atlas-demo .skip-link:focus{transform:none}
+
+/* Shared portfolio navigation */
+.knowledge-atlas-demo .site-header{position:sticky;top:0;z-index:60;height:68px;border:0;border-bottom:1px solid #294054;background:var(--ka-navy-950);box-shadow:none}
+.knowledge-atlas-demo .site-header.scrolled{box-shadow:0 10px 28px rgba(5,17,29,.18)}
+.knowledge-atlas-demo .site-header .nav{display:flex;align-items:center;min-height:68px;height:68px;gap:28px}
+.knowledge-atlas-demo .wordmark{display:flex;align-items:center;gap:12px;min-width:255px;color:#fff!important;font-size:15px;font-weight:600;text-decoration:none}
+.knowledge-atlas-demo .wordmark-mark{display:grid;place-items:center;width:44px;height:44px;border:1px solid var(--ka-gold);border-radius:0;color:var(--ka-gold);background:transparent;font:600 15px "IBM Plex Sans",sans-serif;letter-spacing:.06em}
+.knowledge-atlas-demo .wordmark small{display:block;margin-top:1px;color:#98aabb;font-size:9px;font-weight:400;letter-spacing:.02em}
+.knowledge-atlas-demo .nav-links{display:flex;align-items:stretch;justify-content:flex-end;gap:0;margin-left:auto;height:68px}
+.knowledge-atlas-demo .nav-links>a{display:flex;align-items:center;min-height:68px;padding:0 12px;border:0;border-bottom:3px solid transparent;border-radius:0;color:#dbe5eb!important;background:transparent!important;font-size:11px;font-weight:500;text-decoration:none;box-shadow:none!important}
+.knowledge-atlas-demo .nav-links>a:hover,.knowledge-atlas-demo .nav-links>a.active{color:#fff!important;border-bottom-color:var(--ka-teal-bright);background:#0e2436!important}
+.knowledge-atlas-demo .nav-links .demo-case-link{align-self:center;min-height:38px;height:38px;margin-left:8px;border:1px solid var(--ka-teal-bright);padding:0 14px;color:var(--ka-teal-bright)!important}
+.knowledge-atlas-demo .nav-links .demo-case-link:hover{color:#fff!important;border-color:var(--ka-teal-bright);background:var(--ka-teal)!important}
+.knowledge-atlas-demo .menu-button{display:none;min-width:44px;min-height:44px;border:1px solid #52677a;border-radius:0;color:#fff;background:transparent;font:600 11px "IBM Plex Sans",sans-serif}
+.knowledge-atlas-demo .demo-suite{position:sticky;top:68px;z-index:45;display:flex;align-items:center;justify-content:center;min-height:44px;overflow-x:auto;border-bottom:1px solid var(--ka-line);background:rgba(255,255,255,.97);box-shadow:0 8px 22px rgba(7,25,42,.04);scrollbar-width:none}
+.knowledge-atlas-demo .demo-suite::-webkit-scrollbar{display:none}
+.knowledge-atlas-demo .demo-suite span,.knowledge-atlas-demo .demo-suite a{flex:0 0 auto;display:flex;align-items:center;min-height:44px;padding:0 18px;border-right:1px solid var(--ka-line);color:#526677;font-size:10px;font-weight:500;text-decoration:none}
+.knowledge-atlas-demo .demo-suite span{color:var(--ka-teal);font-weight:600;letter-spacing:.12em;text-transform:uppercase}
+.knowledge-atlas-demo .demo-suite a:hover,.knowledge-atlas-demo .demo-suite a[aria-current="page"]{color:var(--ka-ink);background:var(--ka-soft);box-shadow:inset 0 -3px var(--ka-gold)}
+
+/* Editorial project introduction */
+.knowledge-atlas-demo .cluster-hero{position:relative;overflow:hidden;padding:68px 0 64px;border:0;border-bottom:1px solid var(--ka-line);color:var(--ka-ink);background:linear-gradient(120deg,#f7f9fa 0%,#eef3f4 68%,#e3ecec 100%)}
+.knowledge-atlas-demo .cluster-hero::before,.knowledge-atlas-demo .cluster-hero::after{display:none!important}
+.knowledge-atlas-demo .cluster-hero-grid{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(330px,.72fr);align-items:end;gap:70px}
+.knowledge-atlas-demo .cluster-hero .eyebrow{margin:0 0 18px;color:var(--ka-teal);font-size:10px;font-weight:600;letter-spacing:.19em;text-transform:uppercase}
+.knowledge-atlas-demo .cluster-hero h1{max-width:790px;margin:0;color:var(--ka-navy-950);font:600 clamp(46px,5.4vw,72px)/1.02 "Lora",Georgia,serif;letter-spacing:-.045em;text-wrap:balance}
+.knowledge-atlas-demo .cluster-hero>div>div>p:not(.eyebrow),.knowledge-atlas-demo .cluster-hero-grid>div>p:not(.eyebrow){max-width:760px;margin:24px 0 0;color:#4e6374;font-size:15px;line-height:1.72}
+.knowledge-atlas-demo .cluster-hero-card{position:relative;margin:0;border:0;border-top:4px solid var(--ka-gold);border-radius:0;padding:28px 30px;color:#dbe5eb;background:var(--ka-navy-900);box-shadow:var(--ka-shadow);backdrop-filter:none}
+.knowledge-atlas-demo .cluster-hero-card>strong{display:block;margin-bottom:16px;color:#fff;font:600 21px/1.25 "Lora",Georgia,serif}
+.knowledge-atlas-demo .cluster-hero-card p{margin:12px 0;color:#c5d1d9;font-size:11px;line-height:1.62}
+.knowledge-atlas-demo .cluster-hero-card p strong{color:var(--ka-teal-bright)}
+.knowledge-atlas-demo .hero-actions{display:flex;flex-wrap:wrap;gap:9px;margin-top:28px}
+
+/* Shared controls */
+.knowledge-atlas-demo .btn,.knowledge-atlas-demo button.btn,.knowledge-atlas-demo a.btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:44px;border:1px solid var(--ka-teal);border-radius:0;padding:0 16px;color:#fff!important;background:var(--ka-teal)!important;font:600 11px "IBM Plex Sans",sans-serif;text-decoration:none;box-shadow:none;cursor:pointer;transition:background-color .16s ease,border-color .16s ease,color .16s ease,transform .16s ease}
+.knowledge-atlas-demo .btn:hover{border-color:#1d6563;background:#1d6563!important;transform:translateY(-1px)}
+.knowledge-atlas-demo .btn.secondary,.knowledge-atlas-demo .btn.outline,.knowledge-atlas-demo .btn.ghost{border-color:#93a7b4;color:var(--ka-ink)!important;background:#fff!important}
+.knowledge-atlas-demo .cluster-hero .btn.secondary,.knowledge-atlas-demo .cluster-hero .btn.outline{border-color:#8ea0ac;color:var(--ka-ink)!important;background:transparent!important}
+.knowledge-atlas-demo .btn.small{min-height:36px;padding-inline:12px;font-size:10px}
+.knowledge-atlas-demo button:disabled,.knowledge-atlas-demo .btn:disabled{cursor:not-allowed;opacity:.52;transform:none}
+.knowledge-atlas-demo input,.knowledge-atlas-demo select,.knowledge-atlas-demo textarea{width:100%;min-height:44px;border:1px solid #aebdc7;border-radius:0;padding:9px 11px;color:var(--ka-ink);background:#fff;font:400 13px/1.4 "IBM Plex Sans",sans-serif;box-shadow:none}
+.knowledge-atlas-demo textarea{min-height:94px;resize:vertical}
+.knowledge-atlas-demo input:hover,.knowledge-atlas-demo select:hover,.knowledge-atlas-demo textarea:hover{border-color:#7f96a5}
+.knowledge-atlas-demo input:focus,.knowledge-atlas-demo select:focus,.knowledge-atlas-demo textarea:focus{border-color:var(--ka-teal);outline:3px solid rgba(40,127,124,.16);outline-offset:0}
+.knowledge-atlas-demo input[type="checkbox"],.knowledge-atlas-demo input[type="radio"]{width:18px;min-height:18px;height:18px;padding:0;accent-color:var(--ka-teal)}
+.knowledge-atlas-demo label{color:#31495b;font-size:11px;font-weight:500}
+.knowledge-atlas-demo fieldset{border:1px solid var(--ka-line);border-radius:0;background:#fff}
+.knowledge-atlas-demo legend{padding:0 7px;color:var(--ka-teal);font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+
+/* Application shell */
+.knowledge-atlas-demo .planner-shell,.knowledge-atlas-demo .cluster-shell,.knowledge-atlas-demo .quote-shell,.knowledge-atlas-demo #planner.section{padding:52px 0 76px;color:var(--ka-ink);background:var(--ka-paper)}
+.knowledge-atlas-demo .planner-grid,.knowledge-atlas-demo .cluster-app,.knowledge-atlas-demo .quote-app,.knowledge-atlas-demo .sky-planner-grid{gap:24px}
+.knowledge-atlas-demo .planner-sidebar,.knowledge-atlas-demo .cluster-sidebar,.knowledge-atlas-demo .quote-sidebar,.knowledge-atlas-demo .sky-panel{border:1px solid var(--ka-line);border-top:4px solid var(--ka-teal);border-radius:0;color:var(--ka-ink);background:#fff;box-shadow:none}
+.knowledge-atlas-demo .planner-main,.knowledge-atlas-demo .cluster-workspace,.knowledge-atlas-demo .quote-workspace{min-width:0}
+.knowledge-atlas-demo .beta-bar,.knowledge-atlas-demo .sky-app-header{margin:0 0 24px;border:1px solid var(--ka-line);border-left:4px solid var(--ka-teal);border-radius:0;padding:18px 20px;color:var(--ka-ink);background:#fff;box-shadow:none}
+.knowledge-atlas-demo .beta-bar strong,.knowledge-atlas-demo .sky-app-header h2{color:var(--ka-ink)}
+.knowledge-atlas-demo .chip,.knowledge-atlas-demo .sky-data-status{border:1px solid #aac6c5;border-radius:0;color:var(--ka-teal);background:#edf6f5;font-size:9px;font-weight:600}
+.knowledge-atlas-demo .workspace-profile,.knowledge-atlas-demo .cluster-note,.knowledge-atlas-demo .quote-note{border:1px solid var(--ka-line);border-radius:0;color:#526778;background:#f6f8f9}
+.knowledge-atlas-demo .step-nav a,.knowledge-atlas-demo .cluster-progress button,.knowledge-atlas-demo .quote-progress button{border-radius:0;color:#526778;font-size:10px}
+.knowledge-atlas-demo .step-nav a:hover,.knowledge-atlas-demo .step-nav a.active,.knowledge-atlas-demo .cluster-progress button.active,.knowledge-atlas-demo .quote-progress button.active{color:var(--ka-ink);background:#edf3f4;box-shadow:inset 3px 0 var(--ka-gold)}
+.knowledge-atlas-demo .accordion,.knowledge-atlas-demo .cluster-step,.knowledge-atlas-demo .quote-step,.knowledge-atlas-demo .sky-output-card,.knowledge-atlas-demo .sky-section-card,.knowledge-atlas-demo .experience-panel,.knowledge-atlas-demo .vehicle-panel,.knowledge-atlas-demo .upload-panel,.knowledge-atlas-demo .result-card{margin-bottom:18px;border:1px solid var(--ka-line);border-radius:0;color:var(--ka-ink);background:#fff;box-shadow:none}
+.knowledge-atlas-demo .accordion[open],.knowledge-atlas-demo .cluster-step:not([hidden]),.knowledge-atlas-demo .quote-step:not([hidden]){border-top:4px solid var(--ka-teal);box-shadow:var(--ka-shadow)}
+.knowledge-atlas-demo .accordion>summary{padding:19px 22px;color:var(--ka-ink);background:#fff}
+.knowledge-atlas-demo .accordion>summary h2,.knowledge-atlas-demo .step-head h2,.knowledge-atlas-demo .sky-app-header h2{margin:0;color:var(--ka-ink);font:600 clamp(20px,2.2vw,28px)/1.18 "Lora",Georgia,serif;letter-spacing:-.02em}
+.knowledge-atlas-demo .accordion>summary p{color:var(--ka-muted);font-size:11px}
+.knowledge-atlas-demo .accordion-body,.knowledge-atlas-demo .cluster-step,.knowledge-atlas-demo .quote-step{padding:24px}
+.knowledge-atlas-demo .step-head{display:flex;align-items:center;gap:14px;margin:-24px -24px 24px;padding:18px 22px;border-bottom:1px solid var(--ka-line);background:#f7f9fa}
+.knowledge-atlas-demo .step-head>span{display:grid;place-items:center;min-width:56px;min-height:30px;border:1px solid var(--ka-teal);color:var(--ka-teal);font-size:9px;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+.knowledge-atlas-demo .form-grid,.knowledge-atlas-demo .cluster-grid{gap:16px}
+.knowledge-atlas-demo .field,.knowledge-atlas-demo .form-grid>label,.knowledge-atlas-demo .cluster-grid>label,.knowledge-atlas-demo .sky-form>label{display:grid;align-content:start;gap:6px}
+.knowledge-atlas-demo .action-row,.knowledge-atlas-demo .cluster-actions,.knowledge-atlas-demo .quote-actions,.knowledge-atlas-demo .actions{gap:8px}
+
+/* Dense outputs, tables and status states */
+.knowledge-atlas-demo table{width:100%;border-collapse:collapse;color:var(--ka-ink);background:#fff;font-size:11px}
+.knowledge-atlas-demo th{padding:12px;border:1px solid #31495e;color:#fff;background:var(--ka-navy-900);font-weight:600;text-align:left}
+.knowledge-atlas-demo td{padding:11px;border:1px solid var(--ka-line);vertical-align:top}
+.knowledge-atlas-demo tbody tr:nth-child(even){background:#f6f8f9}
+.knowledge-atlas-demo .site-table-shell,.knowledge-atlas-demo .cluster-table-wrap,.knowledge-atlas-demo .quote-table-wrap{max-width:100%;overflow-x:auto;border:1px solid var(--ka-line);border-radius:0;background:#fff;box-shadow:none}
+.knowledge-atlas-demo pre{max-width:100%;overflow:auto;border:1px solid #32495d;border-radius:0;padding:18px;color:#dfe8ee;background:var(--ka-navy-900);font:12px/1.58 "IBM Plex Sans",sans-serif}
+.knowledge-atlas-demo .kpi-grid,.knowledge-atlas-demo .sky-score-grid,.knowledge-atlas-demo .sky-output-grid,.knowledge-atlas-demo .cluster-output-grid{gap:12px}
+.knowledge-atlas-demo .kpi-grid>* ,.knowledge-atlas-demo .sky-score-grid>*{border:1px solid var(--ka-line);border-top:3px solid var(--ka-gold);border-radius:0;color:var(--ka-ink);background:#fff;box-shadow:none}
+.knowledge-atlas-demo .sky-tabs{display:flex;max-width:100%;overflow-x:auto;border:1px solid var(--ka-line);border-radius:0;background:#fff}
+.knowledge-atlas-demo .sky-tabs button{flex:1 0 170px;min-height:46px;border:0;border-right:1px solid var(--ka-line);border-radius:0;color:#526778;background:#fff;font:600 10px "IBM Plex Sans",sans-serif}
+.knowledge-atlas-demo .sky-tabs button.active{color:var(--ka-ink);background:#edf3f4;box-shadow:inset 0 -3px var(--ka-gold)}
+.knowledge-atlas-demo .sky-empty,.knowledge-atlas-demo .sky-loading,.knowledge-atlas-demo .sky-error,.knowledge-atlas-demo .upload-status,.knowledge-atlas-demo .smart-prompts{border-radius:0;font-size:11px}
+.knowledge-atlas-demo .sky-empty,.knowledge-atlas-demo .upload-status{border:1px solid var(--ka-line);color:#526778;background:#f7f9fa}
+.knowledge-atlas-demo .sky-error{border:1px solid #d8aaaa;color:#812f2f;background:#fff3f3}
+.knowledge-atlas-demo .sky-check-grid label,.knowledge-atlas-demo .sky-check-list label,.knowledge-atlas-demo .quote-checks label{display:flex;align-items:flex-start;gap:8px;min-height:44px;border:1px solid var(--ka-line);border-radius:0;padding:10px;color:#405568;background:#fff}
+
+/* Footers */
+.knowledge-atlas-demo .footer,.knowledge-atlas-demo .infrasky-footer{border:0;border-top:1px solid #294054;color:#c8d5de;background:var(--ka-navy-950)}
+.knowledge-atlas-demo .footer a,.knowledge-atlas-demo .infrasky-footer a{color:var(--ka-teal-bright)}
+.knowledge-atlas-demo .github-footer-links{border-top:1px solid #294054;background:transparent}
+
+@media(max-width:980px){
+  .knowledge-atlas-demo .site-header .nav{gap:12px}
+  .knowledge-atlas-demo .wordmark{min-width:0;margin-right:auto}
+  .knowledge-atlas-demo .menu-button{display:inline-flex;align-items:center;justify-content:center}
+  .knowledge-atlas-demo .nav-links{position:absolute;top:68px;right:0;left:0;display:none;height:auto;max-height:calc(100vh - 112px);overflow-y:auto;border-top:1px solid #294054;background:var(--ka-navy-950);box-shadow:0 22px 42px rgba(4,15,25,.3)}
+  .knowledge-atlas-demo .nav-links.open{display:grid}
+  .knowledge-atlas-demo .nav-links>a{min-height:48px;height:auto;border-bottom:1px solid #294054;padding:0 24px}
+  .knowledge-atlas-demo .nav-links .demo-case-link{align-self:auto;height:48px;margin:0;border:0;border-bottom:1px solid #294054}
+  .knowledge-atlas-demo .cluster-hero-grid{grid-template-columns:1fr;gap:34px}
+  .knowledge-atlas-demo .cluster-hero-card{max-width:760px}
+}
+
+@media(max-width:720px){
+  .knowledge-atlas-demo .container{width:calc(100% - 32px)}
+  .knowledge-atlas-demo .site-header,.knowledge-atlas-demo .site-header .nav{height:64px;min-height:64px}
+  .knowledge-atlas-demo .wordmark{gap:9px;font-size:14px}
+  .knowledge-atlas-demo .wordmark-mark{width:40px;height:40px}
+  .knowledge-atlas-demo .wordmark small{display:none}
+  .knowledge-atlas-demo .nav-links{top:64px}
+  .knowledge-atlas-demo .demo-suite{top:64px;justify-content:flex-start}
+  .knowledge-atlas-demo .demo-suite span,.knowledge-atlas-demo .demo-suite a{padding:0 13px}
+  .knowledge-atlas-demo .cluster-hero{padding:45px 0 42px}
+  .knowledge-atlas-demo .cluster-hero h1{font-size:clamp(39px,12vw,54px)}
+  .knowledge-atlas-demo .cluster-hero-grid>div>p:not(.eyebrow){font-size:14px}
+  .knowledge-atlas-demo .cluster-hero-card{padding:23px 20px}
+  .knowledge-atlas-demo .hero-actions,.knowledge-atlas-demo .action-row,.knowledge-atlas-demo .cluster-actions,.knowledge-atlas-demo .quote-actions{align-items:stretch;flex-direction:column}
+  .knowledge-atlas-demo .hero-actions .btn,.knowledge-atlas-demo .action-row .btn,.knowledge-atlas-demo .cluster-actions .btn,.knowledge-atlas-demo .quote-actions .btn{width:100%}
+  .knowledge-atlas-demo .planner-shell,.knowledge-atlas-demo .cluster-shell,.knowledge-atlas-demo .quote-shell,.knowledge-atlas-demo #planner.section{padding:34px 0 58px}
+  .knowledge-atlas-demo .planner-grid,.knowledge-atlas-demo .cluster-app,.knowledge-atlas-demo .quote-app,.knowledge-atlas-demo .sky-planner-grid{grid-template-columns:1fr!important}
+  .knowledge-atlas-demo .planner-sidebar,.knowledge-atlas-demo .cluster-sidebar,.knowledge-atlas-demo .quote-sidebar,.knowledge-atlas-demo .sky-input-panel{position:static!important;max-height:none!important}
+  .knowledge-atlas-demo .accordion-body,.knowledge-atlas-demo .cluster-step,.knowledge-atlas-demo .quote-step{padding:19px 16px}
+  .knowledge-atlas-demo .step-head{align-items:flex-start;margin:-19px -16px 20px;padding:16px}
+  .knowledge-atlas-demo .form-grid,.knowledge-atlas-demo .form-grid.three,.knowledge-atlas-demo .cluster-grid,.knowledge-atlas-demo .sky-field-row,.knowledge-atlas-demo .sky-detail-grid,.knowledge-atlas-demo .sky-decision-lists{grid-template-columns:1fr!important}
+  .knowledge-atlas-demo .beta-bar,.knowledge-atlas-demo .sky-app-header{align-items:flex-start;flex-direction:column}
+  .knowledge-atlas-demo .beta-chips{justify-content:flex-start}
+  .knowledge-atlas-demo input,.knowledge-atlas-demo select,.knowledge-atlas-demo textarea,.knowledge-atlas-demo .btn,.knowledge-atlas-demo button.btn{min-height:44px}
+}
+
+/* Final theme boundary: these project pages historically shipped highly specific
+   visual overrides. Keep their application logic, but make the shared portfolio
+   design system authoritative for the framing experience. */
+body.knowledge-atlas-demo .cluster-hero,
+body.knowledge-atlas-demo .dispatch-hero,
+body.knowledge-atlas-demo .infrasky-hero,
+body.knowledge-atlas-demo .infraquote-hero{
+  padding:68px 0 64px!important;
+  border-bottom:1px solid var(--ka-line)!important;
+  color:var(--ka-ink)!important;
+  background:linear-gradient(120deg,#f7f9fa 0%,#eef3f4 68%,#e3ecec 100%)!important;
+  background-size:100% 100%!important;
+}
+body.knowledge-atlas-demo .cluster-hero::before,
+body.knowledge-atlas-demo .cluster-hero::after{display:none!important;content:none!important}
+body.knowledge-atlas-demo .cluster-hero .cluster-hero-grid{
+  grid-template-columns:minmax(0,1.45fr) minmax(330px,.72fr)!important;
+  align-items:end!important;
+  gap:70px!important;
+}
+body.knowledge-atlas-demo .cluster-hero .eyebrow{margin:0 0 18px!important;color:var(--ka-teal)!important}
+body.knowledge-atlas-demo .cluster-hero h1{
+  max-width:790px!important;
+  margin:0!important;
+  color:var(--ka-navy-950)!important;
+  font-family:"Lora",Georgia,serif!important;
+  font-size:clamp(46px,5.4vw,72px)!important;
+  font-weight:600!important;
+  line-height:1.02!important;
+  letter-spacing:-.045em!important;
+  text-shadow:none!important;
+}
+body.knowledge-atlas-demo .cluster-hero .cluster-hero-grid>div>p:not(.eyebrow){
+  max-width:760px!important;
+  margin:24px 0 0!important;
+  color:#4e6374!important;
+  font-size:15px!important;
+  line-height:1.72!important;
+}
+body.knowledge-atlas-demo .cluster-hero .cluster-hero-card{
+  margin:0!important;
+  border:0!important;
+  border-top:4px solid var(--ka-gold)!important;
+  border-radius:0!important;
+  padding:28px 30px!important;
+  color:#dbe5eb!important;
+  background:var(--ka-navy-900)!important;
+  box-shadow:var(--ka-shadow)!important;
+}
+body.knowledge-atlas-demo .cluster-hero .cluster-hero-card>strong{
+  margin:0 0 16px!important;
+  color:#fff!important;
+  font-family:"Lora",Georgia,serif!important;
+  font-size:21px!important;
+  font-weight:600!important;
+}
+body.knowledge-atlas-demo .cluster-hero .cluster-hero-card p{margin:12px 0!important;color:#c5d1d9!important;font-size:11px!important}
+body.knowledge-atlas-demo .cluster-hero .cluster-hero-card p strong{color:var(--ka-teal-bright)!important}
+body.knowledge-atlas-demo .cluster-hero .hero-actions .btn.secondary,
+body.knowledge-atlas-demo .cluster-hero .hero-actions .btn.outline{
+  border-color:#8ea0ac!important;
+  color:var(--ka-ink)!important;
+  background:transparent!important;
+}
+
+.knowledge-atlas-demo .project-product-logo{display:block;width:min(360px,100%);height:auto;margin:0 0 22px;border:1px solid rgba(229,199,127,.48);background:#fbf8f1;box-shadow:0 18px 42px rgba(0,0,0,.18)}
+
+body.infrasky-page.knowledge-atlas-demo .site-header{
+  height:68px!important;
+  min-height:68px!important;
+  border:0!important;
+  border-bottom:1px solid #294054!important;
+  color:#fff!important;
+  background:var(--ka-navy-950)!important;
+  box-shadow:none!important;
+}
+body.infrasky-page.knowledge-atlas-demo .site-header>.container.nav{
+  width:min(1240px,calc(100% - 48px))!important;
+  height:68px!important;
+  min-height:68px!important;
+  margin-inline:auto!important;
+  padding:0!important;
+  gap:28px!important;
+}
+body.infrasky-page.knowledge-atlas-demo .wordmark{min-width:255px!important;color:#fff!important;font-weight:600!important}
+body.infrasky-page.knowledge-atlas-demo .wordmark-mark{
+  width:44px!important;
+  height:44px!important;
+  border:1px solid var(--ka-gold)!important;
+  border-radius:0!important;
+  color:var(--ka-gold)!important;
+  background:transparent!important;
+  box-shadow:none!important;
+}
+body.infrasky-page.knowledge-atlas-demo .wordmark small{color:#98aabb!important;font-size:9px!important;font-weight:400!important}
+body.infrasky-page.knowledge-atlas-demo .nav-links{height:68px!important;gap:0!important;color:#dbe5eb!important}
+body.infrasky-page.knowledge-atlas-demo .nav-links>a{
+  min-height:68px!important;
+  border:0!important;
+  border-bottom:3px solid transparent!important;
+  border-radius:0!important;
+  padding:0 12px!important;
+  color:#dbe5eb!important;
+  background:transparent!important;
+}
+body.infrasky-page.knowledge-atlas-demo .nav-links>a:hover{color:#fff!important;border-bottom-color:var(--ka-teal-bright)!important;background:#0e2436!important}
+body.infrasky-page.knowledge-atlas-demo .nav-links .demo-case-link{min-height:38px!important;height:38px!important;border:1px solid var(--ka-teal-bright)!important;color:var(--ka-teal-bright)!important}
+body.infrasky-page.knowledge-atlas-demo .v14-mobile-cta{display:none!important}
+
+@media(max-width:980px){
+  body.knowledge-atlas-demo .cluster-hero .cluster-hero-grid{grid-template-columns:1fr!important;gap:34px!important}
+  body.infrasky-page.knowledge-atlas-demo .site-header>.container.nav{gap:12px!important}
+  body.infrasky-page.knowledge-atlas-demo .wordmark{min-width:0!important}
+  body.infrasky-page.knowledge-atlas-demo .nav-links{top:68px!important;display:none!important;height:auto!important}
+  body.infrasky-page.knowledge-atlas-demo .nav-links.open{display:grid!important}
+  body.infrasky-page.knowledge-atlas-demo .nav-links>a{min-height:48px!important;height:auto!important;padding:0 24px!important}
+}
+@media(max-width:720px){
+  body.knowledge-atlas-demo .cluster-hero,
+  body.knowledge-atlas-demo .dispatch-hero,
+  body.knowledge-atlas-demo .infrasky-hero,
+  body.knowledge-atlas-demo .infraquote-hero{padding:45px 0 42px!important}
+  body.knowledge-atlas-demo .cluster-hero h1{font-size:clamp(39px,12vw,54px)!important}
+  body.infrasky-page.knowledge-atlas-demo .site-header,
+  body.infrasky-page.knowledge-atlas-demo .site-header>.container.nav{height:64px!important;min-height:64px!important}
+  body.infrasky-page.knowledge-atlas-demo .site-header>.container.nav{width:calc(100% - 32px)!important}
+  body.infrasky-page.knowledge-atlas-demo .wordmark-mark{width:40px!important;height:40px!important}
+  body.infrasky-page.knowledge-atlas-demo .nav-links{top:64px!important}
+}
+
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.knowledge-atlas-demo *{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
+@media print{
+  .knowledge-atlas-demo .site-header,.knowledge-atlas-demo .demo-suite,.knowledge-atlas-demo .menu-button,.knowledge-atlas-demo .no-print{display:none!important}
+  body.knowledge-atlas-demo{color:#000;background:#fff}
+  .knowledge-atlas-demo .cluster-hero{padding:20px 0;color:#000;background:#fff}
+  .knowledge-atlas-demo .cluster-hero h1{color:#000;font-size:34pt}
+  .knowledge-atlas-demo .cluster-hero-card{color:#000;border:1px solid #aaa;background:#fff;box-shadow:none}
+}

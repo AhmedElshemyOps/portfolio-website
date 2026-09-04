@@ -1,0 +1,19 @@
+{
+  "meta": {
+    "title": "Before You Collect the Data: Destination Strategy, Product Hypotheses and the Amsterdam Research Plan",
+    "url": "amsterdam-product-discovery-01-research-plan.html",
+    "category": "Amsterdam Product Discovery",
+    "status": "Published",
+    "source": "Original flagship case study",
+    "slug": "amsterdam-product-discovery-01-research-plan",
+    "summary": "Part 01 of a 12-part Amsterdam tourism product-management case study: framing the destination decision, hypotheses, research design, data provenance, sampling and ethics before deciding what to build.",
+    "ogImage": "/assets/projects/infradispatch-interface.png",
+    "seriesTitle": "Building a Data-Driven Signature Tour",
+    "seriesHub": "/series/amsterdam-tourism-product-discovery/index.html",
+    "part": 1,
+    "totalParts": 12,
+    "nextTitle": "What Is Amsterdam Already Selling? Mapping the OTA and Competitive Tourism Product Landscape",
+    "nextSlug": "amsterdam-product-discovery-02-competitive-landscape"
+  },
+  "bodyFile": "content-sources/amsterdam-product-discovery-01.html"
+}

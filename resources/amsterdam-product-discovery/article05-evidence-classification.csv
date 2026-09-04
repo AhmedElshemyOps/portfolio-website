@@ -1,0 +1,9 @@
+evidence_id,evidence_class,statement,basis,confidence
+E01,Observed fact,"84 FULL frozen Article 02 records; 53 are OTA observations from GYG, Viator, Klook, Tiqets and Expedia",Frozen internal evidence,High
+E02,Derived metric,English explicitly appears in 29/53 frozen OTA observations; German 6; French 6; Spanish 8; 19 do not display language,Derived from frozen dataset,Medium
+E03,Observed fact,Germany accounted for more than 7.5m Netherlands overnight visitors in 2024 and roughly 35% of international staying visitors,NBTC,High
+E04,Observed fact,Belgium accounted for 12% of Netherlands inbound visitors in 2024,NBTC,High
+E05,Observed fact,Article 04 governed review corpus is English-language; no non-English coded review corpus exists,Article 04 evidence pack,High
+E06,Derived research priority,"English primary, German secondary, French test",Multi-source scoring model,Medium
+E07,Hypothesis,German/French language delivery may create incremental value for visitors who prefer substantive interpretation in their own language,Requires primary demand test,Low-Medium
+E08,Assumption,Qualified multilingual guide capacity can be contracted at viable rates when needed,"Directory proves existence, not commercial availability",Low

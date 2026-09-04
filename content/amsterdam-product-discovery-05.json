@@ -1,0 +1,21 @@
+{
+  "meta": {
+    "title": "Who Should We Build It For? Source Markets, Segmentation, Language and Customer Jobs",
+    "url": "amsterdam-product-discovery-05-segmentation-language.html",
+    "category": "Amsterdam Product Discovery",
+    "status": "Published",
+    "source": "Original flagship case study",
+    "slug": "amsterdam-product-discovery-05-segmentation-language",
+    "summary": "Part 05 of a 12-part Amsterdam tourism product-management case study: source-market segmentation, language supply, connectivity and guide feasibility translated into Primary, Secondary and Test research segments.",
+    "ogImage": "/assets/projects/infradispatch-interface.png",
+    "seriesTitle": "Building a Data-Driven Signature Tour",
+    "seriesHub": "/series/amsterdam-tourism-product-discovery/index.html",
+    "part": 5,
+    "totalParts": 12,
+    "previousTitle": "What Visitors Really Want: Mining Amsterdam Reviews and Voice of Customer",
+    "previousSlug": "amsterdam-product-discovery-04-voice-of-customer",
+    "nextTitle": "Where Should the Experience Happen? Attraction Intelligence, Geography and Destination Fit",
+    "nextSlug": "amsterdam-product-discovery-06-destination-geography"
+  },
+  "bodyFile": "content-sources/amsterdam-product-discovery-05.html"
+}

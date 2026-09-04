@@ -1,0 +1,13 @@
+trace_id,evidence,insight,requirement,feature,kpi,confidence
+T01,"Article04 VOC: contextual storytelling, guide knowledge, depth","Visitors buy understanding, not a recital of landmarks",PRD-01;PRD-05,F01 Evidence-led live interpretation,Context usefulness >=4.5/5; recall >=80%,High
+T02,Article04 VOC: local discovery,Less-obvious discovery adds value when credible,PRD-06,F02 Local-texture modules,Discovery usefulness >=4.3/5,Medium
+T03,Article04 VOC: meeting point/navigation friction,Arrival friction can damage the experience before content starts,PRD-07,F03 Pre-arrival start pack + recovery protocol,Meeting-point failure <2%,High
+T04,Article04 VOC: pace/physical effort,Effort surprises reduce perceived value,PRD-04,F04 Transparent effort + paced route,Expectation accuracy >=90%; pace complaints <5%,High
+T05,Article04 VOC: group interaction,Interaction and question access are valued,PRD-09,F05 Eight-guest pilot capacity + facilitation standard,Interaction >=4.5/5; participation >=80%,Medium
+T06,Article04 VOC: onward recommendations,Orientation can extend value beyond tour duration,PRD-01;PRD-10,F06 Verified onward-value close,Recommendation usefulness >=4/5,Medium
+T07,Article06 C03 strong destination fit,"Plantage→Oosterpark balances story, dispersal, accessibility, transit and resident fit",PRD-03,F07 Default Plantage→Oosterpark modular route,Route completion >=95%; incidents=0,High
+T08,Article06 five route variants,Customer promise must survive crowd/rain/access/disruption,PRD-08;PRD-13,F08 Variant playbook + same-day decision check,Variant switch success >=95%,High
+T09,Article05 segment priorities,English has strongest current VOC evidence; German/French need primary validation,PRD-10,F09 English prototype + German/French research variants,No unsupported language launch,High
+T10,Guidor public booking/guide evidence,Qualified multilingual guide sourcing is operationally plausible,PRD-02;PRD-11,F10 Guide qualification + backup sourcing rule,Guide fill rate tracked; backup available,Medium
+T11,Hortus official group/tour terms,"Optional cultural module can be booked for max 8, multiple languages, advance notice",PRD-09;PRD-11,"F11 Optional Hortus module, not critical path",Optional cancellation preserves >=90% promise,Medium
+T12,Amsterdam guided-tour rules,Large/noisy/static groups create destination and compliance risk,PRD-12,F12 Small-group conduct + moving-interpretation protocol,Regulatory breaches=0,High

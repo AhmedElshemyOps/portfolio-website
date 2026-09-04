@@ -1,11 +1,10 @@
 {
-  "name": "Ahmed Mahmoud Portfolio",
-  "short_name": "Ahmed Mahmoud",
-  "description": "Tourism operations, product operations, dispatch planning, stargazing operations, and quotation systems portfolio.",
+  "name": "Ahmed Mahmoud — Tourism Operations Portfolio",
+  "short_name": "Ahmed Ops",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#071527",
-  "theme_color": "#071527",
+  "background_color": "#fcfaf5",
+  "theme_color": "#07182b",
   "icons": [
     {
       "src": "/assets/brand/favicon-192.png",
@@ -13,8 +12,8 @@
       "type": "image/png"
     },
     {
-      "src": "/assets/brand/favicon-512.png",
-      "sizes": "512x512",
+      "src": "/assets/brand/favicon-32.png",
+      "sizes": "32x32",
       "type": "image/png"
     }
   ]

@@ -1,0 +1,21 @@
+{
+  "meta": {
+    "title": "What Is Amsterdam Already Selling? Mapping the OTA and Competitive Tourism Product Landscape",
+    "url": "amsterdam-product-discovery-02-competitive-landscape.html",
+    "category": "Amsterdam Product Discovery",
+    "status": "Published",
+    "source": "Original flagship case study",
+    "slug": "amsterdam-product-discovery-02-competitive-landscape",
+    "summary": "Part 02 of a 12-part Amsterdam tourism product-management case study: a provenance-controlled pilot mapping public OTA listings, product families, direct competitors, substitutes, features and price-comparison limits.",
+    "ogImage": "/assets/projects/infradispatch-interface.png",
+    "seriesTitle": "Building a Data-Driven Signature Tour",
+    "seriesHub": "/series/amsterdam-tourism-product-discovery/index.html",
+    "part": 2,
+    "totalParts": 12,
+    "previousTitle": "Before You Collect the Data: Destination Strategy, Product Hypotheses and the Amsterdam Research Plan",
+    "previousSlug": "amsterdam-product-discovery-01-research-plan",
+    "nextTitle": "Where Is the Real Opportunity? Turning Demand, Supply and Destination Evidence Into a Market Gap",
+    "nextSlug": "amsterdam-product-discovery-03-market-gap"
+  },
+  "bodyFile": "content-sources/amsterdam-product-discovery-02.html"
+}

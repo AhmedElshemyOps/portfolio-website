@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 96" role="img" aria-labelledby="title desc">
+  <title id="title">InfraDispatch logo</title><desc id="desc">A routed operational path ending in a directional arrow.</desc>
+  <rect width="360" height="96" rx="8" fill="#fbf8f2"/>
+  <rect x="12" y="12" width="72" height="72" rx="8" fill="#07182b"/>
+  <path d="M29 62V48c0-8 6-14 14-14h8c8 0 14-6 14-14" fill="none" stroke="#c79a43" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="29" cy="63" r="5" fill="#fbf8f2" stroke="#c79a43" stroke-width="3"/><circle cx="51" cy="34" r="5" fill="#fbf8f2" stroke="#c79a43" stroke-width="3"/>
+  <path d="m58 20 8-7 8 7" fill="none" stroke="#c79a43" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="104" y="47" fill="#07182b" font-family="Lora, Georgia, serif" font-size="28" font-weight="600">InfraDispatch</text>
+  <text x="105" y="67" fill="#52647a" font-family="IBM Plex Sans, Arial, sans-serif" font-size="10" font-weight="600" letter-spacing="2">OPERATIONS SIGNAL SYSTEM</text>
+</svg>

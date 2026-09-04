@@ -1,0 +1,8 @@
+feasibility_id,language_or_area,feasibility,evidence,url,limitation
+GF01,English,High,Guidor directory includes English across a large share of listed guides; 141-member public index exposes English as a filter,https://joomla.guidor.nl/looking-for-a-guide/guides-and-languages,Directory evidence; availability/price not verified
+GF02,German,High,German is a formal Guidor directory filter and appears repeatedly across listed multilingual guides,https://guidor.nl/en/guides-and-languages/,Directory evidence; availability/price not verified
+GF03,French,Medium-High,French is a formal Guidor directory filter and appears across multiple listed guides,https://guidor.nl/en/guides-and-languages/,Directory evidence; availability/price not verified
+GF04,Spanish,Medium,Spanish is a formal Guidor directory filter and appears across multiple listed guides,https://guidor.nl/en/guides-and-languages/,Directory evidence; availability/price not verified
+GF05,Italian,Medium,Italian is a formal Guidor directory filter and appears across listed guides,https://guidor.nl/en/guides-and-languages/,Directory evidence; availability/price not verified
+GF06,Arabic,Low-Medium,Arabic appears in the Guidor directory language system and at least one displayed multilingual profile; depth of pool is not established,https://joomla.guidor.nl/nl/zoek-een-gids/lijst-gidsen-openbaar-cb/searching,Insufficient supply-depth evidence
+GF07,Guided operations,Constraint,City-centre guided groups may have up to 15 participants; groups over four need an exemption; route and nuisance rules apply,https://www.amsterdam.nl/en/business/rules-permit-tours/,Operational requirement applies regardless of language

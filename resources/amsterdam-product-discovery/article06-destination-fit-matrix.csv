@@ -1,0 +1,6 @@
+corridor_id,corridor,core_job,visitor_relevance_1_5,story_density_1_5,dispersal_value_1_5,accessibility_1_5,weather_resilience_1_5,transit_resilience_1_5,operating_flexibility_1_5,resident_fit_1_5,fit_result,rationale
+C01,Jordaan / Western Canal Belt,Orientation + layered city history,5,5,2,3,2,2,4,3,CONDITIONAL,"Very strong visitor relevance and story density, but severe crowd/resident sensitivity requires small groups, moving interpretation and peak-time avoidance."
+C02,Museumplein → De Pijp,Culture + food + everyday city,5,4,4,4,3,4,4,4,STRONG,Strong cultural recognition plus neighbourhood/food texture; market crowding and weather exposure need time/day controls.
+C03,Plantage → Oosterpark,History + memory + green/east-city context,4,5,5,5,4,5,4,5,STRONG,"Best balance of storytelling, dispersal, transit and lower crowd pressure; sensitive history requires disciplined interpretation."
+C04,Oosterdok → Noord,Waterfront + city transformation + contemporary Amsterdam,4,5,5,5,4,5,5,5,STRONG,"High dispersal, accessibility and contemporary storytelling; ferry/weather/disruption dependencies require fallbacks."
+C05,Oud-West → Westerpark,Neighbourhood life + regeneration + food/culture,4,4,5,5,4,5,4,5,STRONG,Good dispersal and indoor recovery options; less landmark recognition means proposition must earn relevance through story quality.

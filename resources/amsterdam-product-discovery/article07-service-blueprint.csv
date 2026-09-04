@@ -1,0 +1,10 @@
+stage,customer_action,frontstage,backstage,support_dependency,kpi
+1,Discover/Book,"Reads proposition, duration, route style, effort and language",Product page / OTA / direct,Evidence-backed promise; no “hidden gem” overclaim; clear physical effort,Content governance; supplier calendar,Promise clarity >=90%; booking questions tracked
+2,Pre-arrival,"Receives start point, recognition cues, effort/access note, weather/disruption update",Email/web message,"Guide checks route, GVB disruption, weather and optional supplier status",Guide rota; GVB; optional venue,Pre-arrival sent >=24h; meeting-point failure <2%
+3,Meet & orient,"Finds guide, understands plan and conduct expectations",Guide + meeting point,"Identity check, needs check, explain route/flex logic and resident-respect rule",Qualified guide,On-time start >=95%; briefing completion=100%
+4,Anchor,Gets a recognisable reason to care,Live interpretation,Open with one strong city layer and link it to present Amsterdam,Guide content pack,Context usefulness >=4.5/5
+5,Context modules,Builds understanding through 2–3 evidence-led stories,Guide + public realm,Use moving interpretation where stopping creates pressure,Guide; route QA,Content QA=100%; route completion >=95%
+6,Local texture,Experiences less-obvious neighbourhood life without voyeurism,Street/park/market context,Use verified local texture; avoid resident/business obstruction,Guide conduct standard,Discovery usefulness >=4.3/5; incidents=0
+7,Recovery/Flex,Gets rest/toilet/shelter or route swap when needed,Recovery node / transit,Activate A4/A5 module; preserve same customer job,GVB; optional venue/public facility,Variant switch success >=95%
+8,Close/Onward value,Can explain what was learned and choose what to do next,Guide + digital follow-up,Three-question recall; tailored verified recommendations,Owned content,Recall >=80%; recommendation usefulness >=4/5
+9,Post-experience,Provides feedback; issue is recovered if needed,Survey/service recovery,Tag VOC to Article04 taxonomy; log route/supplier incidents,CRM/simple log,Response rate target set in pilot; recovery closure tracked

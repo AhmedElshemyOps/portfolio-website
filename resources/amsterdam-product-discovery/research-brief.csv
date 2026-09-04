@@ -1,0 +1,8 @@
+﻿status,section,field,working_value,source_or_owner,validation_required
+AWAITING DATA,Decision,core_decision,"Determine whether an evidence-supported responsible Amsterdam experience opportunity exists",Product Lead,Yes
+AWAITING DATA,Scope,destination,"Amsterdam and relevant metropolitan alternatives",Research Lead,Yes
+AWAITING DATA,Value,visitor_value,"Meaningful job pain or desired outcome",VOC research,Yes
+AWAITING DATA,Value,commercial_viability,"Sustainable economics under realistic channels and capacity",Commercial Lead,Yes
+AWAITING DATA,Value,operational_feasibility,"Consistent deliverability with controlled dependencies",Operations Lead,Yes
+AWAITING DATA,Value,destination_value,"Positive local contribution without unacceptable pressure",Destination stakeholders,Yes
+AWAITING DATA,Governance,approval_gate,"Authorize research only; no concept approved",Project Sponsor,Yes

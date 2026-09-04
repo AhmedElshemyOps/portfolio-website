@@ -1,0 +1,4 @@
+evidence_id,evidence_layer,language_context,observations,evidence_type,implication
+RL01,Article 04 review-text sample,English-language public marketplace pages,40,Direct coded review paraphrases,High for English VOC; zero comparative evidence for non-English review needs
+RL02,Article 04 self-guided structured feedback,English-language VoiceMap pages,15,"Aggregate feedback dimensions, not individual review language",Medium for self-guided jobs; not a language-demand test
+RL03,Non-English review coding,None in Article 04 governed sample,0,No German/French/Spanish coded review corpus,Critical gap for validating language-specific needs

@@ -1,0 +1,6 @@
+evidence_id,topic,evidence,url,confidence
+T01,GVB accessibility planning,Use journey planner Accessibility option and check live lift/escalator disruptions before an accessibility variant,https://www.gvb.nl/en/step-free-access-public-transport,High
+T02,Network resilience,"Amsterdam network includes tram, metro, bus and ferries; IJ ferries provide free pedestrian/cycle crossings on most services",https://www.gvb.nl/en/visit-amsterdam/gvb-public-transport-company-amsterdam,High
+T03,Summer/disruption rule,GVB explicitly advises checking journeys before departure because works/events can cause diversions and longer times,https://www.gvb.nl/en/summer-2026,High
+T04,City-centre accessibility caveat,"Narrow pavements, cobbles and steep bridges make some centre routes challenging despite accessible public transport",https://www.iamsterdam.com/en/travel-stay/accessibility/public-transportation,High
+T05,Anne Frank corridor disruption,No tram runs to Westermarkt from Feb 2025 through Feb 2028; nearest practical tram access shifts toward Dam,https://www.annefrank.org/en/museum/practical-information/,High

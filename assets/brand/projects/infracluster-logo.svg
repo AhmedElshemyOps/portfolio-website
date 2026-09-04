@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 96" role="img" aria-labelledby="title desc">
+  <title id="title">InfraCluster logo</title><desc id="desc">Four pickup nodes converging into one coordinated operational cluster.</desc>
+  <rect width="360" height="96" rx="8" fill="#fbf8f2"/>
+  <rect x="12" y="12" width="72" height="72" rx="8" fill="#07182b"/>
+  <path d="M29 29 48 48 67 29M29 67l19-19 19 19" fill="none" stroke="#c79a43" stroke-width="3.5" stroke-linecap="round"/>
+  <circle cx="29" cy="29" r="5" fill="#fbf8f2" stroke="#c79a43" stroke-width="3"/><circle cx="67" cy="29" r="5" fill="#fbf8f2" stroke="#c79a43" stroke-width="3"/><circle cx="29" cy="67" r="5" fill="#fbf8f2" stroke="#c79a43" stroke-width="3"/><circle cx="67" cy="67" r="5" fill="#fbf8f2" stroke="#c79a43" stroke-width="3"/>
+  <rect x="41" y="41" width="14" height="14" rx="3" transform="rotate(45 48 48)" fill="#c79a43"/>
+  <text x="104" y="47" fill="#07182b" font-family="Lora, Georgia, serif" font-size="28" font-weight="600">InfraCluster</text>
+  <text x="105" y="67" fill="#52647a" font-family="IBM Plex Sans, Arial, sans-serif" font-size="10" font-weight="600" letter-spacing="2">OPERATIONS SIGNAL SYSTEM</text>
+</svg>

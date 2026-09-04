@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 96" role="img" aria-labelledby="title desc">
+  <title id="title">InfraSky logo</title><desc id="desc">A horizon, orbital arc and star representing condition-aware experience readiness.</desc>
+  <rect width="360" height="96" rx="8" fill="#fbf8f2"/>
+  <rect x="12" y="12" width="72" height="72" rx="8" fill="#07182b"/>
+  <path d="M25 62h46M31 60c5-18 17-28 33-30" fill="none" stroke="#c79a43" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="m60 24 2.4 6.4L69 33l-6.6 2.5L60 42l-2.5-6.5L51 33l6.5-2.6z" fill="#fbf8f2" stroke="#c79a43" stroke-width="2"/>
+  <circle cx="36" cy="58" r="5" fill="#fbf8f2" stroke="#c79a43" stroke-width="3"/>
+  <text x="104" y="47" fill="#07182b" font-family="Lora, Georgia, serif" font-size="28" font-weight="600">InfraSky</text>
+  <text x="105" y="67" fill="#52647a" font-family="IBM Plex Sans, Arial, sans-serif" font-size="10" font-weight="600" letter-spacing="2">OPERATIONS SIGNAL SYSTEM</text>
+</svg>

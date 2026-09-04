@@ -1,0 +1,11 @@
+category,family_count,review_proxy_observations,median_review_count_proxy,demand_signal,supply_whitespace,differentiation,destination_fit,operating_feasibility,seasonal_resilience,base_score_5,confidence,decision
+Self-guided,9,6,35.0,3,5,4,5,5,5,4.5,Medium,INVESTIGATE
+Walking,13,11,48.0,4,3,4,4,5,4,4.0,Medium,INVESTIGATE
+Food,7,4,86.5,3,3,4,4,3,4,3.5,Medium,INVESTIGATE
+Performance/Other,3,3,1042.0,4,2,2,4,4,5,3.5,Medium,INVESTIGATE
+Pass/Attraction,6,2,14951.5,4,2,2,4,4,5,3.5,Low,INVESTIGATE
+Hybrid,8,3,80.0,3,4,4,3,3,3,3.33,Medium,INVESTIGATE
+Cycling,8,3,65.0,3,3,4,3,3,3,3.17,Medium,INVESTIGATE
+Regional/Day trip,6,4,291.0,3,3,4,3,2,3,3.0,Medium,INVESTIGATE
+Canal,14,13,2736.0,2,1,2,4,3,4,2.67,Medium,INVESTIGATE
+Bundle,4,0,,1,2,2,3,3,4,2.5,Low,INVESTIGATE

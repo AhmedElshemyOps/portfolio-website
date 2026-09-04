@@ -1,0 +1,7 @@
+module,role,customer_job,design_rule,example_nodes
+A1,Anchor,Recognisable reason to care,A cultural/urban anchor that gives immediate relevance,P06/P10/P14 depending corridor
+A2,Context,Translate place into meaning,Two to three interpretation stops with moving delivery where space is constrained,Neighbourhood streets / public realm
+A3,Local texture,Deliver less-obvious discovery,"Market, park, courtyard, industrial heritage or contemporary local-life module",P03/P08/P12/P16
+A4,Recovery,Protect comfort and inclusion,"Toilet, seating, shelter, hydration and transit exit within planned interval",P05/P06/P10/P14/P18
+A5,Flex,Keep promise during disruption,Pre-approved swap stop/short route that preserves the same customer job,Variant-specific
+A6,Exit,Give onward value,End at reliable transit plus optional recommendations; avoid dead-end finish,Waterlooplein/Oosterpark/Central/De Pijp etc.

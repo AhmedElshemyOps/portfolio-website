@@ -1,0 +1,8 @@
+language,demand_signal_5,amsterdam_affinity_5,connectivity_5,ota_whitespace_5,guide_feasibility_5,voc_directness_5,weighted_score_5,role,interpretation,confidence
+English,5,5,5,1,5,5,4.4,PRIMARY,"High demand and strongest evidence/feasibility, but very low language whitespace; primary because of addressable demand and research confidence, not because English is underserved.",Medium-High
+German,5,4,5,3,5,1,4.0,SECONDARY,Very large near market with strong operations feasibility and some observed language whitespace; needs German-language VOC and booking tests.,Medium
+French,3,5,5,3,4,1,3.6,TEST,Smaller source market but high Amsterdam affinity and excellent rail access; test before scaling because VOC evidence is absent.,Medium-Low
+Dutch,5,2,5,3,5,1,3.5,MONITOR,"Large domestic day-visitor base, but observed jobs differ from foreign discovery visitors; not a priority for this concept screen.",Medium
+Spanish,2,3,4,2,4,1,2.8,MONITOR,"Supply and guide feasibility exist, but current official Amsterdam-specific market evidence is insufficient for priority status.",Low
+Italian,2,3,4,2,4,1,2.8,MONITOR,"Supply and guide feasibility exist, but current official Amsterdam-specific market evidence is insufficient for priority status.",Low
+Arabic,1,2,4,3,2,1,2.2,RESEARCH_ONLY,"Some multilingual OTA/audio supply is visible, but source-market size, Amsterdam affinity and guide-pool depth are not established.",Low

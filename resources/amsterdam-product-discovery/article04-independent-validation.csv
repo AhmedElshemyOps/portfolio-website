@@ -1,0 +1,13 @@
+voc_id,original_stage,independent_review,theme_agreement,sentiment_agreement,resolution,status
+V003,MANUAL,Separate second-pass review on 2026-08-23,YES,YES,No change,VALIDATED
+V004,MANUAL,Separate second-pass review on 2026-08-23,YES,YES,No change,VALIDATED
+V007,MANUAL,Separate second-pass review on 2026-08-23,YES,YES,No change,VALIDATED
+V015,MANUAL,Separate second-pass review on 2026-08-23,YES,YES,No change,VALIDATED
+V017,MANUAL,Separate second-pass review on 2026-08-23,YES,YES,No change,VALIDATED
+V020,MANUAL,Separate second-pass review on 2026-08-23,YES,NO,Retained Mixed because physical-load comment is cautionary rather than wholly negative,VALIDATED
+V023,MANUAL,Separate second-pass review on 2026-08-23,YES,YES,No change,VALIDATED
+V027,AI_ASSISTED,Separate second-pass review on 2026-08-23,YES,YES,No change,VALIDATED
+V032,AI_ASSISTED,Separate second-pass review on 2026-08-23,YES,YES,No change,VALIDATED
+V036,AI_ASSISTED,Separate second-pass review on 2026-08-23,YES,YES,No change,VALIDATED
+V043,AI_ASSISTED,Separate second-pass review on 2026-08-23,YES,YES,No change,VALIDATED
+V053,AI_ASSISTED,Separate second-pass review on 2026-08-23,YES,YES,No change,VALIDATED

@@ -1,0 +1,15 @@
+rank,theme_code,theme_name,friction_mentions,share_pct,cumulative_pct
+1,ITINERARY_COVERAGE,Promise vs route coverage,4,16.7,16.7
+2,DEPTH_OF_INFO,Depth of information,3,12.5,29.2
+3,GROUP_INTERACTION,Group dynamics,3,12.5,41.7
+4,GUIDE_KNOWLEDGE,Human expertise,2,8.3,50.0
+5,PACE_WALKING,Pace & physical load,2,8.3,58.3
+6,VALUE_FOR_MONEY,Value for money,2,8.3,66.7
+7,STORYTELLING_CONTEXT,Interpretation & storytelling,1,4.2,70.8
+8,MEETING_POINT_CLARITY,Arrival clarity,1,4.2,75.0
+9,FOOD_QUALITY_VARIETY,Food quality & variety,1,4.2,79.2
+10,CULTURE_WITH_FOOD,Food-cultural interpretation,1,4.2,83.3
+11,FOOD_QUANTITY_VALUE,Food quantity,1,4.2,87.5
+12,HIDDEN_LOCAL_DISCOVERY,Local/less-obvious discovery,1,4.2,91.7
+13,NAVIGATION,Navigation quality,1,4.2,95.8
+14,PRODUCTION_QUALITY,Audio/content production,1,4.2,100.0

@@ -1,0 +1,39 @@
+{
+  "generatedAt": "2026-09-04T10:44:43.278Z",
+  "summary": {
+    "articles": 73,
+    "htmlPages": 117,
+    "checkedLocalReferences": 4339,
+    "issues": 0,
+    "largeRasterImages": 6,
+    "flagshipPdfs": 3,
+    "offlineReading": true
+  },
+  "issues": [],
+  "largeImages": [
+    {
+      "file": "assets/credentials/etaa-sales-skills.jpg",
+      "bytes": 392536
+    },
+    {
+      "file": "assets/credentials/etaa-tour-leader-religious-tourism.jpg",
+      "bytes": 504484
+    },
+    {
+      "file": "assets/credentials/etaa-tour-operator.jpg",
+      "bytes": 614753
+    },
+    {
+      "file": "assets/credentials/iata-special-cargo-handling.jpg",
+      "bytes": 353557
+    },
+    {
+      "file": "assets/credentials/iata-tour-production.jpg",
+      "bytes": 364041
+    },
+    {
+      "file": "assets/projects/infraquote-interface.png",
+      "bytes": 356284
+    }
+  ]
+}

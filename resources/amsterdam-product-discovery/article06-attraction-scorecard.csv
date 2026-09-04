@@ -1,0 +1,19 @@
+poi_id,poi_name,zone,weighted_score_100,fit_band,crowding_risk,neighbourhood_sensitivity,dispersal_value,weather_exposure,storytelling_value,accessibility
+P14,Eye Filmmuseum,Amsterdam Noord / IJ,95.0,STRONG,3,1,5,2,5,HIGH
+P16,Westerpark / Westergas,Amsterdam West,92.0,STRONG,3,2,5,4,5,HIGH
+P10,Jewish Museum,Plantage / East Centre,90.0,STRONG,3,4,4,1,5,HIGH
+P05,De Hallen Amsterdam,Oud-West,85.0,STRONG,3,2,5,1,4,HIGH
+P12,Oosterpark,Amsterdam Oost,85.0,STRONG,2,2,5,5,5,MEDIUM-HIGH
+P15,NDSM Wharf,Amsterdam Noord / NDSM,85.0,STRONG,3,2,5,5,5,MEDIUM
+P18,OBA Oosterdok / Central Library,Oosterdok,83.0,STRONG,3,1,4,1,4,HIGH
+P06,Rijksmuseum,Museumplein / Zuid,82.0,STRONG,5,2,2,1,5,HIGH
+P11,Hortus Botanicus Amsterdam,Plantage / East Centre,80.0,STRONG,3,2,4,3,4,HIGH
+P13,NEMO Science Museum,Oosterdok,80.0,STRONG,4,2,4,1,4,HIGH
+P08,Albert Cuyp Market,De Pijp,77.0,CONDITIONAL,5,4,4,4,5,MEDIUM
+P03,Noordermarkt,Jordaan / Western Canal Belt,74.0,CONDITIONAL,4,4,2,3,5,MEDIUM
+P02,Westerkerk / Westermarkt,Jordaan / Western Canal Belt,69.0,CONDITIONAL,5,5,1,2,5,MEDIUM
+P04,Begijnhof,Historic Centre,69.0,CONDITIONAL,4,5,1,2,5,MEDIUM-HIGH
+P07,Museumplein,Museumplein / Zuid,69.0,CONDITIONAL,5,2,2,4,4,HIGH
+P17,Magere Brug,Amstel / East Centre,66.0,CONDITIONAL,4,3,3,5,4,MEDIUM
+P09,Sarphatipark,De Pijp,65.0,CONDITIONAL,3,2,4,5,3,MEDIUM-HIGH
+P01,Anne Frank House,Jordaan / Western Canal Belt,63.0,LIMITED,5,5,1,2,5,LIMITED
