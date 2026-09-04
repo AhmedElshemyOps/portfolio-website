@@ -214,7 +214,7 @@
     });
     filters.forEach(function (filter) { filter.closest("label")?.classList.toggle("is-active", Boolean(filter.value)); });
     knowledgeQuery?.closest("label")?.classList.toggle("is-active", Boolean(query));
-    document.querySelector("[data-knowledge-status]").textContent = "Showing " + visible + " article" + (visible === 1 ? "" : "s") + ".";
+    document.querySelector("[data-knowledge-status]").textContent = visible === knowledgeCards.length && !query && Object.values(selected).every(function (value) { return !value; }) ? "Showing all articles." : "Showing " + visible + " article" + (visible === 1 ? "" : "s") + ".";
     document.querySelector("[data-knowledge-empty]").hidden = visible !== 0;
   }
   filters.forEach(function (filter) { filter.addEventListener("change", filterKnowledge); });
