@@ -1,0 +1,10 @@
+guardrail,proposed_threshold,measurement,trigger,required_action,evidence_class
+Service capacity,Maximum 8 guests,Booked and attended guests,More than 8 requested,Do not oversell; reopen product design only through governance,PROPOSED_PILOT_GUARDRAIL
+Direct departure floor,Minimum 6 guests at base inputs,Expected contribution by booking mix,Fewer than 6 or negative contribution,Do not routinely guarantee; consolidate reschedule or approve exception,PROPOSED_PILOT_GUARDRAIL
+Target capacity,7 guests,Confirmed guests,Repeated operation below target,Review price channel and operating calendar,PROPOSED_PILOT_GUARDRAIL
+Contribution control,No guaranteed negative-contribution departure,Expected departure contribution,Expected contribution below zero,Escalate before confirmation,PROPOSED_PILOT_GUARDRAIL
+OTA concentration,Maximum 40% of pilot guests,Guests by channel,Rolling share exceeds 40%,Pause expansion and test direct or partner acquisition,PROPOSED_PILOT_GUARDRAIL
+OTA commission,Escalate above 25% of ex-VAT revenue,Verified contract rate,Rate exceeds scenario,Recalculate price and break-even before activation,PROPOSED_PILOT_GUARDRAIL
+Discounting,No price below channel-specific break-even floor,Realized price,Promotion crosses floor,Reject or obtain documented commercial approval,PROPOSED_PILOT_GUARDRAIL
+Guide cost,Escalate above EUR 200 base,Comparable contracted cost,Quote exceeds base,Run sensitivity and renegotiate scope before launch,PROPOSED_PILOT_GUARDRAIL
+Evidence substitution,No assumptions promoted without source,Assumption register status,Actual term differs,Update model preserve variance and seek human approval,PROPOSED_PILOT_GUARDRAIL

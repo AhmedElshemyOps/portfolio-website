@@ -1,0 +1,15 @@
+id,input,value,unit,evidence_class,source_or_validation,status,decision_risk
+A08-01,Retail test midpoint,55,EUR VAT-inclusive,HYPOTHESIS,Controlled willingness-to-pay research required,OPEN,Premium may be rejected
+A08-02,VAT planning rate,21,percent,OBSERVED,Belastingdienst general rate checked 2026-09-04,VERIFY_WITH_ADVISER,Exact treatment depends on legal structure
+A08-03,Guide cost base,200,EUR per departure,ASSUMPTION,Obtain three comparable written quotations,OPEN,Largest departure-cost exposure
+A08-04,Guide cost sensitivity low,160,EUR per departure,ASSUMPTION,Supplier quotation,OPEN,Scenario boundary only
+A08-05,Guide cost sensitivity high,240,EUR per departure,ASSUMPTION,Supplier quotation,OPEN,Can eliminate contribution
+A08-06,Departure support cost,15,EUR per departure,ASSUMPTION,Pilot cost capture,OPEN,Route check and materials placeholder
+A08-07,Guest variable cost,1.50,EUR per guest,ASSUMPTION,Pilot cost capture,OPEN,Communication and consumables placeholder
+A08-08,Monthly overhead,450,EUR per month,ASSUMPTION,Accountant-approved cost allocation,OPEN,Software insurance admin marketing contingency
+A08-09,Departures per month,24,departures,ASSUMPTION,Operating-calendar validation,OPEN,Changes allocated overhead
+A08-10,Direct card fee,2.5% + 0.25,per transaction,OBSERVED,Stripe UK-card rate checked 2026-09-04,CURRENT_PUBLIC,Actual card mix may differ
+A08-11,Average direct booking,2,guests per transaction,ASSUMPTION,Booking data,OPEN,Changes fixed transaction-fee allocation
+A08-12,OTA commission base,25,percent of ex-VAT revenue,ASSUMPTION,Obtain actual supplier terms,OPEN,Exact rate unavailable publicly
+A08-13,B2B discount base,20,percent of ex-VAT revenue,ASSUMPTION,Obtain signed partner terms,OPEN,Volume and payment benefits unproven
+A08-14,Maximum service capacity,8,guests,DESIGN_CONSTRAINT,Article 07 approved concept,LOCKED,Cannot increase to repair economics

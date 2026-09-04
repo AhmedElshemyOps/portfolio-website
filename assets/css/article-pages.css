@@ -157,6 +157,11 @@
   .article-related,.article-footer{padding-inline:16px}.article-newsletter{margin-inline:0}
 }
 @media(max-width:360px){.article-meta-row{grid-template-columns:1fr}.reader-utilities{grid-template-columns:1fr}.reader-utilities>button{grid-column:1}.article-search-dialog{width:calc(100% - 16px)}.article-brief{padding:18px}.article-page-header h1{font-size:2.25rem}}
+
+/* Article 08 has a deliberately descriptive commercial title; keep its hierarchy
+   strong without allowing the heading to dominate smaller reading screens. */
+body[data-article-slug="amsterdam-product-discovery-08-commercial-model-unit-economics"] .article-page-header h1{font-size:clamp(2.7rem,4.35vw,4.35rem)}
+@media(max-width:620px){body[data-article-slug="amsterdam-product-discovery-08-commercial-model-unit-economics"] .article-page-header h1{font-size:clamp(2rem,9.6vw,2.55rem);line-height:1.02}}
 @media(pointer:coarse){.article-body a,.article-source-list a{min-height:44px}.article-sequence>a,.article-growth a{min-height:52px}}
 @supports(content-visibility:auto){.article-related,.article-footer,.article-newsletter{content-visibility:auto;contain-intrinsic-size:auto 700px}}
 @media print{@supports(content-visibility:auto){.article-related,.article-footer,.article-newsletter{content-visibility:visible;contain-intrinsic-size:none}}}

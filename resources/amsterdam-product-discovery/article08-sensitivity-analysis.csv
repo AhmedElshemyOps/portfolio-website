@@ -1,0 +1,12 @@
+variable,test_value,channel,guests,departure_contribution_eur,direction,management_interpretation,evidence_class
+Retail price,35,Direct,7,-52.32,DESTROYS,Market-like price cannot support base cost architecture,SCENARIO
+Retail price,45,Direct,7,5.53,NEAR_ZERO,Positive but no operating buffer,SCENARIO
+Retail price,55,Direct,7,63.43,BASE,Direct-led case is viable under assumptions,SCENARIO
+Retail price,65,Direct,7,121.33,IMPROVES,Requires willingness-to-pay evidence,SCENARIO
+Guide cost,160,Direct,7,103.43,IMPROVES,Must be supported by comparable quote and scope,SCENARIO
+Guide cost,240,Direct,7,23.43,WEAKENS,Guide cost is the strongest controllable supplier lever,SCENARIO
+OTA commission,20%,OTA,7,10.30,NEAR_ZERO,Still provides little buffer,SCENARIO
+OTA commission,25%,OTA,7,-5.61,NEGATIVE,Base OTA case misses break-even at target capacity,SCENARIO
+OTA commission,30%,OTA,7,-21.52,DESTROYS,Commission exposure can destroy the case fastest,SCENARIO
+Guests,6,Direct,6,20.98,FLOOR,Minimum viable direct departure under base assumptions,SCENARIO
+Guests,8,Direct,8,105.89,IMPROVES,Maximum permitted service capacity,SCENARIO

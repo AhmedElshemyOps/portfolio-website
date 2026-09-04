@@ -1,0 +1,12 @@
+channel,guests,retail_price_vat_inclusive,ex_vat_revenue_per_guest,channel_cost_per_guest,net_revenue_per_guest,variable_cost_per_guest,contribution_per_guest,departure_cost,allocated_overhead,departure_contribution,contribution_margin_percent,evidence_class
+Direct,4,55.00,45.45,1.50,43.95,1.50,42.45,215.00,18.75,-63.93,-36.4,SCENARIO
+Direct,5,55.00,45.45,1.50,43.95,1.50,42.45,215.00,18.75,-21.48,-9.8,SCENARIO
+Direct,6,55.00,45.45,1.50,43.95,1.50,42.45,215.00,18.75,20.98,8.0,SCENARIO
+Direct,7,55.00,45.45,1.50,43.95,1.50,42.45,215.00,18.75,63.43,20.6,SCENARIO
+Direct,8,55.00,45.45,1.50,43.95,1.50,42.45,215.00,18.75,105.89,30.1,SCENARIO
+B2B,6,55.00,45.45,9.09,36.36,1.50,34.86,215.00,18.75,-24.57,-11.3,SCENARIO
+B2B,7,55.00,45.45,9.09,36.36,1.50,34.86,215.00,18.75,10.30,4.0,SCENARIO
+B2B,8,55.00,45.45,9.09,36.36,1.50,34.86,215.00,18.75,45.16,15.5,SCENARIO
+OTA,6,55.00,45.45,11.36,34.09,1.50,32.59,215.00,18.75,-38.20,-18.7,SCENARIO
+OTA,7,55.00,45.45,11.36,34.09,1.50,32.59,215.00,18.75,-5.61,-2.4,SCENARIO
+OTA,8,55.00,45.45,11.36,34.09,1.50,32.59,215.00,18.75,26.98,9.9,SCENARIO

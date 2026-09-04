@@ -1,0 +1,6 @@
+method,decision_use,sample_or_test,input,output,evidence_class,human_control
+Van Westendorp,Define acceptable price range,English prototype segment first,Too cheap bargain expensive too expensive responses,Four price curves and intersection ranges,HYPOTHESIS_TEST,Review wording sample quality and outliers
+Gabor-Granger,Estimate stated purchase response by price,Randomized exposure across EUR 39 45 49 55 59 65,Concept held constant,Response curve and revenue sensitivity,HYPOTHESIS_TEST,Do not treat stated intent as bookings
+Choice test,Measure attribute trade-offs,Controlled concept variants,Price group size route duration and language,Relative preference structure,HYPOTHESIS_TEST,Approve attributes and experimental balance
+Landing intent,Observe behavioural interest without selling,Traffic with transparent non-bookable test page,Consistent proposition and randomized price,Qualified intent events,HYPOTHESIS_TEST,No fake scarcity or fake booking
+Paid pilot,Validate actual behaviour,Approved controlled departures,Real price channel attendance cancellations and costs,Realized contribution and service evidence,FUTURE_OBSERVED,Human approval legal checks and reconciliation

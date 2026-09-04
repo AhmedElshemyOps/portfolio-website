@@ -1,0 +1,6 @@
+scenario,price_vat_inclusive,channel,channel_rate,guide_cost,variable_cost_per_guest,departure_support,allocated_overhead,break_even_guests,capacity_result,evidence_class
+Conservative,49,Direct,2.5% plus EUR 0.25 per two-guest transaction,240,2.00,20,25,8,Only passes at service ceiling,SCENARIO
+Base planning,55,Direct,2.5% plus EUR 0.25 per two-guest transaction,200,1.50,15,18.75,6,Target seven gives buffer,SCENARIO
+Strong,59,Direct,1.5% plus EUR 0.25 per two-guest transaction,160,1.25,12,15,4,Requires verification of every favourable input,SCENARIO
+Base B2B,55,B2B,20% of ex-VAT revenue,200,1.50,15,18.75,7,Narrow contribution at target,SCENARIO
+Base OTA,55,OTA,25% of ex-VAT revenue,200,1.50,15,18.75,8,Fragile at maximum capacity,SCENARIO
