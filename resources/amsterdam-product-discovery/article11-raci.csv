@@ -1,0 +1,15 @@
+work_item,product_owner,pilot_lead,guide_lead,operations_lead,commercial_lead,research_lead,compliance_safety,decision_evidence
+Pilot scope and baseline,A,R,C,C,C,C,C,Approved baseline
+GO or NO-GO departure,C,A,R,R,C,I,C,Signed departure decision
+Route and accessibility approval,A,C,R,R,I,C,C,Completed field audit
+Live route change,I,A,R,R,I,I,C,Exception record
+Guide roster and replacement,I,A,R,C,I,I,C,Confirmed roster
+Permit and insurance position,A,R,I,C,C,I,R,Current documents
+Supplier quote and channel terms,C,C,I,I,R/A,I,I,Written terms
+Experiment design,A,C,C,C,C,R,C,Frozen experiment protocol
+Feedback and VOC integrity,C,C,C,I,I,R/A,I,Linked research record
+Incident and service recovery,I,A,R,R,I,C,C,Incident record
+CAPA and recurring problem,A,R,C,R,C,C,C,CAPA record
+Material scope or rule change,A,R,C,C,C,C,C,Approved change log
+Departure financial close,I,A,I,I,R,C,I,Reconciled actuals
+Article 12 evidence freeze,A,R,C,C,C,R,C,Frozen dataset and sign-off

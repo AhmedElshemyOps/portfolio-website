@@ -1,0 +1,18 @@
+control_id,control,priority,required_evidence,owner,current_state,closure_rule,departure_gate
+LR01,Named qualified guide and current terms,MUST,Written availability and fee,Guide Lead,OPEN,Evidence reviewed and accepted,NO_GO_IF_OPEN
+LR02,Required guided-tour permit or exemption position,MUST,Current municipal evidence,Compliance Safety,OPEN,Applicable requirement closed,NO_GO_IF_OPEN
+LR03,Insurance appropriate to proposed activity,MUST,Current cover confirmation,Product Owner,OPEN,Cover scope verified,NO_GO_IF_OPEN
+LR04,Default route physical and accessibility audit,MUST,Signed field audit,Operations Lead,OPEN,Critical controls closed,NO_GO_IF_OPEN
+LR05,Approved weather event and route RAG logic,MUST,Article 10 control record,Operations Lead,READY,Current-day review completed,NO_GO_IF_RED
+LR06,Direct booking customer information and cancellation controls,MUST,Tested booking journey,Commercial Lead,OPEN,Required information verified,NO_GO_IF_OPEN
+LR07,Privacy controls for booking and research data,MUST,Data map notice and retention rule,Research Lead,OPEN,Collection limited and approved,NO_GO_IF_OPEN
+LR08,Emergency and service-recovery contacts,MUST,Current contact sheet,Pilot Lead,OPEN,Contacts tested,NO_GO_IF_OPEN
+LR09,Meeting point and arrival instructions,MUST,Tested customer message,Operations Lead,PLANNED,Dry-run success,NO_GO_IF_OPEN
+LR10,Daily operations pack and departure ID,MUST,Prepared controlled template,Pilot Lead,READY,Pack assigned before departure,NO_GO_IF_OPEN
+LR11,Frozen success thresholds,MUST,Approved threshold register,Product Owner,READY,Version locked before pilot,NO_GO_IF_OPEN
+LR12,Experiment IDs assigned,MUST,Experiment backlog mapping,Research Lead,READY,Applicable tests linked,NO_GO_IF_OPEN
+LR13,Actual supplier and channel cost inputs,MUST_FOR_PAID,Written quotes and fee terms,Commercial Lead,OPEN,Departure economics calculated,NO_GO_FOR_PAID_IF_OPEN
+LR14,Commercial minimum or funded research exception,MUST,Approved departure calculation,Product Owner,OPEN,Approval linked to departure,NO_GO_IF_OPEN
+LR15,Customer adjustment needs captured,MUST,Accessible pre-arrival process,Guide Lead,OPEN,Needs checked before confirmation,NO_GO_IF_OPEN
+LR16,Incident and CAPA recording route,MUST,Tested forms and owner,Pilot Lead,PLANNED,Dry-run record completed,NO_GO_IF_OPEN
+LR17,Post-departure data reconciliation,MUST,Named owner and cut-off,Commercial Lead,PLANNED,Closeout process tested,NO_GO_IF_OPEN

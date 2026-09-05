@@ -1,0 +1,13 @@
+threshold_id,area,measure,target,gate_type,data_source,calculation_or_test,owner,evidence_status,decision_use
+T01,Compliance,Critical legal blockers,0,MUST,Readiness checklist,Count open critical blockers,Pilot Lead,NOT_TESTED,Launch authority
+T02,Safety,Preventable severe safety or regulatory incidents,0,MUST,Incident log,Count verified severe incidents,Pilot Lead,NOT_TESTED,Stop or CAPA
+T03,Operations,Departure-day control completion,100%,MUST,Daily operations pack,Completed mandatory controls divided by required controls,Operations Lead,NOT_TESTED,Departure compliance
+T04,Accessibility,Unsupported accessibility claims,0,MUST,Claim and route audit,Count claims without supplied evidence,Product Owner,NOT_TESTED,Claim control
+T05,Delivery,Route completion,>=95%,TARGET,Departure records,Completed approved routes divided by operated departures,Operations Lead,NOT_TESTED,Route readiness
+T06,Customer,Context usefulness,>=4.5/5,TARGET,Post-tour survey,Mean supplied rating,Research Lead,NOT_TESTED,Value proposition
+T07,Learning,Three-layer comprehension recall,>=80%,TARGET,Post-tour recall check,Guests meeting recall definition divided by responses,Research Lead,NOT_TESTED,Content effectiveness
+T08,Expectation,Physical-effort expectation accuracy,>=90%,TARGET,Pre and post comparison,Guests reporting accurate expectation divided by responses,Guide Lead,NOT_TESTED,Pre-arrival clarity
+T09,Interaction,Guest interaction,>=4.5/5,TARGET,Post-tour survey,Mean supplied rating,Guide Lead,NOT_TESTED,Group design
+T10,Meeting point,Meeting-point failures,<2%,TARGET,Incident and attendance log,Instruction-caused misses divided by booked guests,Operations Lead,NOT_TESTED,Arrival design
+T11,Commercial,Paid-departure contribution,>=0 EUR,MUST_FOR_SCALE,Departure financial record,Realised revenue less actual variable costs,Commercial Lead,NOT_TESTED,Recurring viability
+T12,Data,Complete departure-level record,100%,MUST,Departure dataset,Records with all mandatory fields divided by operated departures,Research Lead,NOT_TESTED,Article 12 readiness

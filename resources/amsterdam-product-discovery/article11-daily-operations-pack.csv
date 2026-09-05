@@ -1,0 +1,15 @@
+step_id,timing,control,required_input,action,record,owner,exception_route
+D01,T-24h,Load and channel economics,Bookings channel price and actual costs,Confirm minimum or approved research exception,Departure financial preview,Commercial Lead,Escalate to Product Owner
+D02,T-24h,Weather and event context,KNMI warning forecast and current events,Set provisional RAG and required control,Weather and event check,Operations Lead,Escalate RED to Pilot Lead
+D03,T-24h,Route and transit status,Official closures transport and field updates,Confirm approved route variant,Route selection,Operations Lead,Use approved alternative or stop
+D04,T-24h,Guide readiness,Roster availability and briefing status,Confirm qualified guide and backup,Roster confirmation,Guide Lead,Escalate missing guide
+D05,T-24h,Permit and insurance,Applicable documents,Verify current validity,Document check,Pilot Lead,NO-GO if unresolved
+D06,T-24h,Customer adjustments,Declared needs and communication consent,Confirm feasible approved adjustments,Needs check,Guide Lead,Escalate unsupported request
+D07,T-3h,Final operating review,Live weather transport event route and roster,Sign GREEN AMBER or RED decision,GO or NO-GO record,Pilot Lead,Apply recovery or cancel
+D08,Start,Attendance and timing,Booking list and departure ID,Record headcount and actual start,Attendance record,Guide Lead,Classify no-show or delay
+D09,Start,Guest and resident-respect briefing,Approved briefing and declared needs,Deliver safety expectation and public-space briefing,Briefing completion,Guide Lead,Record refusal or issue
+D10,During,Route and service exceptions,Live conditions and approved variants,Record change incident and recovery,Exception log,Guide Lead,Contact Operations Lead
+D11,Close,Route completion,Actual finish route and recovery,Record completion and deviations,Delivery record,Guide Lead,Open incident if required
+D12,Close,Learning signals,Approved survey and recall definition,Capture feedback comprehension and onward value,Linked feedback record,Research Lead,Record missing data
+D13,End of day,Financial reconciliation,Revenue refunds fees supplier and guide actuals,Reconcile contribution by departure ID,Financial actuals,Commercial Lead,Escalate missing evidence
+D14,Next review,Defect and change disposition,Incidents feedback threshold and experiment records,Assign keep change retest stop or CAPA,Review and change log,Product Owner,Schedule controlled action

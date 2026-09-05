@@ -3911,6 +3911,46 @@
       }
     ]
   },
+  "amsterdam-product-discovery-11-mvp-pilot-operational-readiness": {
+    "hero": {
+      "src": "/assets/articles/amsterdam-product-discovery-11-mvp-pilot-operational-readiness/amsterdam-product-discovery-11-mvp-pilot-operational-readiness-hero-1600x900.svg",
+      "width": 1600,
+      "height": 900,
+      "alt": "Six-stage Amsterdam tourism pilot control board moving from bounded scope through readiness, rehearsal, a soft pilot, paid MVP and evidence review",
+      "caption": "A controlled pilot advances through evidence gates before public exposure, then records departure-level learning for the scale decision."
+    },
+    "ogImage": "/assets/articles/amsterdam-product-discovery-11-mvp-pilot-operational-readiness/amsterdam-product-discovery-11-mvp-pilot-operational-readiness-og-1200x630.jpg",
+    "ogAlt": "Amsterdam product discovery Article 11 pilot launch and operational readiness control board",
+    "figures": [
+      {
+        "src": "/assets/articles/amsterdam-product-discovery-11-mvp-pilot-operational-readiness/amsterdam-product-discovery-11-pilot-gates-1600x900.svg",
+        "width": 1600,
+        "height": 900,
+        "alt": "Six pilot phases with explicit exit gates for scope, build, dry run, soft pilot, paid MVP and review",
+        "label": "Pilot gate model",
+        "caption": "Each phase closes with evidence and an accountable decision; time alone cannot move the pilot forward.",
+        "beforeHeadingId": "pilot-plan-six-phases-each-with-an-exit-gate"
+      },
+      {
+        "src": "/assets/articles/amsterdam-product-discovery-11-mvp-pilot-operational-readiness/amsterdam-product-discovery-11-experiment-backlog-1600x900.svg",
+        "width": 1600,
+        "height": 900,
+        "alt": "Experiment backlog connecting assumptions to safe tests, thresholds, owners and decisions",
+        "label": "Experiment-control artifact",
+        "caption": "Uncertainty becomes manageable when every assumption receives a safe test, measurable threshold, owner and decision date.",
+        "beforeHeadingId": "every-practical-unresolved-assumption-becomes-a-test"
+      },
+      {
+        "src": "/assets/articles/amsterdam-product-discovery-11-mvp-pilot-operational-readiness/amsterdam-product-discovery-11-daily-operations-1600x900.svg",
+        "width": 1600,
+        "height": 900,
+        "alt": "Daily pilot operations flow from pre-departure brief through guest and route checks, live exception control and close-out evidence",
+        "label": "Daily operations workflow",
+        "caption": "One governed departure pack connects readiness, live recovery and approved learning without scripting the human experience.",
+        "beforeHeadingId": "what-data-must-exist-after-every-paid-departure"
+      }
+    ]
+  },
   "tourism-supplier-partner-governance-sops": {
     "hero": {
       "src": "/assets/articles/tourism-supplier-partner-governance-sops/tourism-supplier-partner-governance-sops-hero-1600x900.avif",

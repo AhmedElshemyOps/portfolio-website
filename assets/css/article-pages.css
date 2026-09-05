@@ -452,3 +452,14 @@ body.article-reader-page .article-body :is(.article-sources-note,.aviation-sourc
   body.article-reader-page .article-visual{border-inline:1px solid #c9b98f}
 }
 @media(forced-colors:active){body.article-reader-page :is(a,button,input,select,textarea,summary):focus-visible{outline-color:Highlight}}
+
+body[data-article-slug="amsterdam-product-discovery-11-mvp-pilot-operational-readiness"] .article-page-header h1{
+  font-size:clamp(2.5rem,3.8vw,3.9rem);
+}
+@media(max-width:620px){
+  body[data-article-slug="amsterdam-product-discovery-11-mvp-pilot-operational-readiness"] .article-page-header h1{
+    font-size:clamp(1.88rem,8.65vw,2.35rem);
+    line-height:1.03;
+    hyphens:none;
+  }
+}
