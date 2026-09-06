@@ -28,6 +28,11 @@
     window.gtag("event", name, params || {});
   }
 
+  function cleanUrl(value) {
+    try { var url = new URL(value, window.location.origin); return /^https?:$/.test(url.protocol) ? url.origin + url.pathname : url.protocol; }
+    catch (_error) { return ""; }
+  }
+
   function injectGtag() {
     if ((!hasValidGaId && !hasValidAdsId) || document.querySelector('script[data-ahmed-gtag="true"]')) return;
     var script = document.createElement("script");
@@ -38,7 +43,8 @@
     window.gtag("js", new Date());
     if (hasValidGaId) window.gtag("config", measurementId, {
       page_title: document.title,
-      page_location: window.location.href,
+      page_location: cleanUrl(window.location.href),
+      page_referrer: cleanUrl(document.referrer),
       send_page_view: false,
       allow_google_signals: false,
       allow_ad_personalization_signals: false,
@@ -49,17 +55,12 @@
   }
 
   function trackPageView() {
-    if (!hasValidGaId) return;
-    var campaign = new URLSearchParams(window.location.search);
+    if (!hasValidGaId || consent !== "granted") return;
     window.gtag("event", "page_view", {
       page_title: document.title,
-      page_location: window.location.href,
-      page_path: window.location.pathname + window.location.search + window.location.hash,
-      campaign_source: campaign.get("utm_source") || undefined,
-      campaign_medium: campaign.get("utm_medium") || undefined,
-      campaign_name: campaign.get("utm_campaign") || undefined,
-      campaign_content: campaign.get("utm_content") || undefined,
-      campaign_term: campaign.get("utm_term") || undefined
+      page_location: cleanUrl(window.location.href),
+      page_referrer: cleanUrl(document.referrer),
+      page_path: window.location.pathname
     });
   }
 
@@ -99,8 +100,8 @@
     var path = absoluteUrl.pathname.toLowerCase();
     var host = absoluteUrl.hostname.toLowerCase();
     var base = {
-      link_url: absoluteUrl.href,
-      link_text: label,
+      link_url: cleanUrl(absoluteUrl.href),
+      link_text: /^(mailto:|tel:)/.test(href) ? "Contact" : label,
       page_path: window.location.pathname
     };
 
@@ -109,7 +110,7 @@
     if (/wa\.me|whatsapp/.test(host + path)) return ["whatsapp_click", base];
     if (/linkedin\.com/.test(host)) return ["linkedin_click", base];
     if (path.endsWith(".pdf") || anchor.hasAttribute("download")) return ["file_download", base];
-    if (/article-|articles\.html|insights-city-tour/.test(path)) return ["article_click", base];
+    if (/\/articles\/|article-|articles\.html|insights-city-tour/.test(path)) return ["article_click", base];
     if (/projects\.html|infradispatch|infrasky|infraquote|pickup-planner|pickup-dropoff-planner/.test(path)) {
       return ["project_click", base];
     }
@@ -139,7 +140,7 @@
   function bindReaderTracking() {
     var sentDepths = {};
     window.addEventListener("scroll", function () {
-      if (consent !== "granted" || !document.querySelector(".article-page, .reader-shell")) return;
+      if (consent !== "granted" || !document.querySelector(".article-reader-page, .article-page, .reader-shell")) return;
       var total = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
       var depth = Math.round((window.scrollY / total) * 100);
       [25, 50, 75, 90].forEach(function (threshold) {
@@ -190,15 +191,31 @@
     document.body.appendChild(banner);
   }
 
+  function addPrivacyControl() {
+    if (!hasValidGaId || !window.location.pathname.startsWith('/privacy/')) return;
+    var main = document.querySelector('main');
+    if (!main) return;
+    var button = document.createElement('button');
+    button.type = 'button';
+    button.textContent = 'Change analytics preference';
+    button.style.cssText = 'min-height:44px;padding:12px 18px;background:#071a32;color:#fff;border:1px solid #b68a2f;cursor:pointer';
+    button.addEventListener('click', function () {
+      saveConsent('unset');
+      window.location.reload();
+    });
+    main.appendChild(button);
+  }
+
   bindLinkTracking();
   bindReaderTracking();
   trackWebVitals();
+  addPrivacyControl();
   if (consent === "granted") {
     window.gtag("consent", "update", { analytics_storage: "granted", ad_storage: "denied", ad_user_data: "denied", ad_personalization: "denied" });
     injectGtag();
     trackDiscoverySource();
   } else createConsentBanner();
-  window.addEventListener("hashchange", function () { window.setTimeout(trackPageView, 0); });
+  // In-page heading navigation is not a new page view.
 
   window.AhmedAnalytics = {
     configured: hasValidGaId,

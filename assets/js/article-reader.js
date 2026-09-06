@@ -145,6 +145,12 @@
     }, 250);
   }
   function updateProgress() {
+    // Position-based tracking also handles deep links and jumps past long sections.
+    let activeIndex = 0;
+    headings.forEach((heading,index) => { if (heading.getBoundingClientRect().top <= 150) activeIndex = index; });
+    if (sectionCurrent) sectionCurrent.textContent = String(activeIndex + 1);
+    tocLinks.forEach(link => { const active=link.getAttribute('href')===`#${headings[activeIndex]?.id}`; link.classList.toggle('is-active',active); if(active)link.setAttribute('aria-current','location'); else link.removeAttribute('aria-current'); });
+    sectionButtons.forEach((button,index)=>{button.classList.toggle('is-active',index===activeIndex);if(index===activeIndex)button.setAttribute('aria-current','location');else button.removeAttribute('aria-current');});
     const maximum = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
     const readingColumn = document.querySelector('.article-reading-column') || article;
     const readingStart = readingColumn.getBoundingClientRect().top + window.scrollY;

@@ -156,18 +156,8 @@
   .article-body .article-sources{margin-inline:0}
   .article-related,.article-footer{padding-inline:16px}.article-newsletter{margin-inline:0}
 }
-body[data-article-slug="amsterdam-product-discovery-12-product-analytics-scale-decision"] .article-page-header h1{font-size:clamp(2.35rem,3.55vw,3.65rem)}
-@media(max-width:620px){body[data-article-slug="amsterdam-product-discovery-12-product-analytics-scale-decision"] .article-page-header h1{font-size:clamp(1.78rem,8.2vw,2.25rem);line-height:1.03;hyphens:none}}
 @media(max-width:360px){.article-meta-row{grid-template-columns:1fr}.reader-utilities{grid-template-columns:1fr}.reader-utilities>button{grid-column:1}.article-search-dialog{width:calc(100% - 16px)}.article-brief{padding:18px}.article-page-header h1{font-size:2.25rem}}
 
-/* Article 08 has a deliberately descriptive commercial title; keep its hierarchy
-   strong without allowing the heading to dominate smaller reading screens. */
-body[data-article-slug="amsterdam-product-discovery-08-commercial-model-unit-economics"] .article-page-header h1{font-size:clamp(2.7rem,4.35vw,4.35rem)}
-body[data-article-slug="amsterdam-product-discovery-09-risk-responsibility"] .article-page-header h1{font-size:clamp(2.65rem,4.1vw,4.2rem)}
-body[data-article-slug="amsterdam-product-discovery-10-seasonality-operating-calendar"] .article-page-header h1{font-size:clamp(2.55rem,3.9vw,4rem)}
-@media(max-width:620px){body[data-article-slug="amsterdam-product-discovery-08-commercial-model-unit-economics"] .article-page-header h1{font-size:clamp(2rem,9.6vw,2.55rem);line-height:1.02}}
-@media(max-width:620px){body[data-article-slug="amsterdam-product-discovery-09-risk-responsibility"] .article-page-header h1{font-size:clamp(1.95rem,9.2vw,2.45rem);line-height:1.03}}
-@media(max-width:620px){body[data-article-slug="amsterdam-product-discovery-10-seasonality-operating-calendar"] .article-page-header h1{font-size:clamp(1.9rem,8.8vw,2.4rem);line-height:1.03}}
 @media(pointer:coarse){.article-body a,.article-source-list a{min-height:44px}.article-sequence>a,.article-growth a{min-height:52px}}
 @supports(content-visibility:auto){.article-related,.article-footer,.article-newsletter{content-visibility:auto;contain-intrinsic-size:auto 700px}}
 @media print{@supports(content-visibility:auto){.article-related,.article-footer,.article-newsletter{content-visibility:visible;contain-intrinsic-size:none}}}
@@ -454,14 +444,3 @@ body.article-reader-page .article-body :is(.article-sources-note,.aviation-sourc
   body.article-reader-page .article-visual{border-inline:1px solid #c9b98f}
 }
 @media(forced-colors:active){body.article-reader-page :is(a,button,input,select,textarea,summary):focus-visible{outline-color:Highlight}}
-
-body[data-article-slug="amsterdam-product-discovery-11-mvp-pilot-operational-readiness"] .article-page-header h1{
-  font-size:clamp(2.5rem,3.8vw,3.9rem);
-}
-@media(max-width:620px){
-  body[data-article-slug="amsterdam-product-discovery-11-mvp-pilot-operational-readiness"] .article-page-header h1{
-    font-size:clamp(1.88rem,8.65vw,2.35rem);
-    line-height:1.03;
-    hyphens:none;
-  }
-}
