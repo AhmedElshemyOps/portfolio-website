@@ -5,7 +5,7 @@ window.AHMED_SITE_CONFIG = {
   googleAdsId: "",
   googleAdsConversionLabel: "",
   googleBusinessProfileUrl: "",
-  googleSearchConsoleVerification: "",
+  googleSearchConsoleVerification: "Ii-YhK_VMy_iIZ9r_ifJZiXbk2NtNniOnJTZgCNkAl4",
   // For GitHub Pages, set this to a separately deployed HTTPS Worker endpoint.
   newsletterEndpoint: "/api/newsletter/subscribe",
   analyticsDebug: false
