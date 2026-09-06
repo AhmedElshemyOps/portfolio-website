@@ -3911,6 +3911,46 @@
       }
     ]
   },
+  "amsterdam-product-discovery-12-product-analytics-scale-decision": {
+    "hero": {
+      "src": "/assets/articles/amsterdam-product-discovery-12-product-analytics-scale-decision/amsterdam-product-discovery-12-product-analytics-scale-decision-hero-1600x900.svg",
+      "width": 1600,
+      "height": 900,
+      "alt": "Six-dimension Amsterdam product review leading to SCALE, ITERATE, REPOSITION or STOP with ITERATE selected because pilot evidence is awaiting",
+      "caption": "A scale decision is earned from joined departure evidence, frozen thresholds and hard gates—not from a successful-looking dashboard."
+    },
+    "ogImage": "/assets/articles/amsterdam-product-discovery-12-product-analytics-scale-decision/amsterdam-product-discovery-12-product-analytics-scale-decision-og-1200x630.jpg",
+    "ogAlt": "Amsterdam product analytics and evidence-led scale decision board",
+    "figures": [
+      {
+        "src": "/assets/articles/amsterdam-product-discovery-12-product-analytics-scale-decision/amsterdam-product-discovery-12-measurement-architecture-1600x900.svg",
+        "width": 1600,
+        "height": 900,
+        "alt": "Measurement architecture joining opportunity, booking, attendance, experience, economics and destination impact through one departure ID and product version",
+        "label": "Measurement architecture",
+        "caption": "One immutable departure ID prevents customer, operational and commercial evidence from different tours being presented as one result.",
+        "beforeHeadingId": "build-one-departure-level-source-of-truth"
+      },
+      {
+        "src": "/assets/articles/amsterdam-product-discovery-12-product-analytics-scale-decision/amsterdam-product-discovery-12-improvement-cycle-1600x900.svg",
+        "width": 1600,
+        "height": 900,
+        "alt": "Improvement-method selector using PDCA for bounded changes, root-cause analysis for verified severe or repeated defects and DMAIC only for stable measurable processes",
+        "label": "Improvement method",
+        "caption": "The verified problem and available evidence determine the method; version history keeps every approved change traceable.",
+        "beforeHeadingId": "root-cause-pdca-and-dmaic-use-the-lightest-method-that-fits"
+      },
+      {
+        "src": "/assets/articles/amsterdam-product-discovery-12-product-analytics-scale-decision/amsterdam-product-discovery-12-decision-scorecard-1600x900.svg",
+        "width": 1600,
+        "height": 900,
+        "alt": "Product decision scorecard weighting customer, commercial, operations, safety, destination and learning while preserving hard decision gates",
+        "label": "Product decision scorecard",
+        "caption": "Weights make the review transparent, but safety, compliance, accessibility, commercial and destination gates cannot be averaged away.",
+        "beforeHeadingId": "how-the-product-decision-scorecard-works"
+      }
+    ]
+  },
   "amsterdam-product-discovery-11-mvp-pilot-operational-readiness": {
     "hero": {
       "src": "/assets/articles/amsterdam-product-discovery-11-mvp-pilot-operational-readiness/amsterdam-product-discovery-11-mvp-pilot-operational-readiness-hero-1600x900.svg",

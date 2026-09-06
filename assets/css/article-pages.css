@@ -156,6 +156,8 @@
   .article-body .article-sources{margin-inline:0}
   .article-related,.article-footer{padding-inline:16px}.article-newsletter{margin-inline:0}
 }
+body[data-article-slug="amsterdam-product-discovery-12-product-analytics-scale-decision"] .article-page-header h1{font-size:clamp(2.35rem,3.55vw,3.65rem)}
+@media(max-width:620px){body[data-article-slug="amsterdam-product-discovery-12-product-analytics-scale-decision"] .article-page-header h1{font-size:clamp(1.78rem,8.2vw,2.25rem);line-height:1.03;hyphens:none}}
 @media(max-width:360px){.article-meta-row{grid-template-columns:1fr}.reader-utilities{grid-template-columns:1fr}.reader-utilities>button{grid-column:1}.article-search-dialog{width:calc(100% - 16px)}.article-brief{padding:18px}.article-page-header h1{font-size:2.25rem}}
 
 /* Article 08 has a deliberately descriptive commercial title; keep its hierarchy

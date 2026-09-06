@@ -1,0 +1,7 @@
+dimension,weight,required_evidence,current_result,score_0_to_5,weighted_score,hard_gate,current_status,decision_rule
+Customer value,25%,Usefulness recall expectation interaction and response rate,,,,NO,AWAITING,Meet frozen value thresholds with n disclosed
+Commercial viability,25%,Realised paid revenue fees refunds and all costs,,,,YES,AWAITING,Recurring contribution cannot be negative
+Operational reliability,20%,Route completion timing switches incidents and recovery,,,,NO,AWAITING,Repeatable operation within approved controls
+Safety compliance and accessibility,15%,Closed legal controls incidents and claim performance,,,,YES,AWAITING,No critical or preventable severe failure
+Destination responsibility,10%,Stakeholder public-space and sustainability evidence,,,,YES,AWAITING,No unresolved material impact
+Learning quality,5%,Complete experiment and change records,FRAMEWORK READY,,,NO,PARTIAL,Results must remain traceable to frozen tests

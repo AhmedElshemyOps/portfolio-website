@@ -1,0 +1,9 @@
+improvement_id,trigger,verified_problem,method,approved_change,product_version,owner,measure,retest_window,status
+I01,Threshold failure,,PDCA,,,Product owner,Original failed threshold,Next controlled departure,AWAITING
+I02,Repeated controllable timing variance,,Root cause analysis,,,Operations lead,Start and duration variance,Minimum comparable sequence,AWAITING
+I03,Repeated coded complaint,,Pareto then PDCA,,,Guest experience lead,Frequency impact and recurrence,Next approved cycle,AWAITING
+I04,Severe incident or near miss,,Formal root cause and CAPA,,,Safety owner,Closure and recurrence,Before further authorisation,AWAITING
+I05,Negative recurring contribution,,Commercial root cause,,,Commercial lead,Contribution per paid departure,Next pricing or channel test,AWAITING
+I06,Destination-impact event,,Stakeholder review and PDCA,,,Product owner,Event closure and recurrence,Before affected route reuse,AWAITING
+I07,Segment or channel mismatch,,Repositioning experiment,,,Research lead,Qualified conversion and customer value,Defined research cell,AWAITING
+I08,Stable repeated measurable defect,,DMAIC only if justified,,,Improvement owner,Documented process measure,Sufficient stable observations,NOT_JUSTIFIED_YET

@@ -1,0 +1,11 @@
+data_domain,required_record,current_status,decision_use,owner,validation_rule,limitation,next_action
+Bookings,Source-tagged booking ledger,AWAITING,Channel conversion,Commercial lead,Departure ID and channel required,No real pilot booking file exists,Implement governed booking capture
+Attendance,Attendance by departure,AWAITING,Load factor and show rate,Operations lead,Booked and attended counts reconcile,No real departures exist,Record attendance at close-out
+Cancellations,Cancellation log,AWAITING,Cancellation rate,Guest service lead,Reason and timing required,No cancellation history exists,Use controlled reason codes
+No-shows,No-show log,AWAITING,Operational loss and recovery,Operations lead,Separate from cancellation,No no-show history exists,Capture independently
+Economics,Realised revenue and cost ledger,AWAITING,Contribution and margin,Commercial lead,Actuals only for paid departures,Article 08 contains scenarios only,Reconcile each paid departure
+Customer value,Post-tour survey and recall test,AWAITING,Value thresholds,Research lead,Response rate and sample size shown,Competitor reviews are not product results,Use frozen questions
+Operations,Timing route switch and completion log,AWAITING,Reliability thresholds,Operations lead,Planned and actual timestamps required,No operational history exists,Close daily pack
+Safety,Incident and near-miss log,AWAITING,Hard safety gate,Safety owner,Severity and preventability required,Controls are prospective,Record all events including zero-event days
+Destination,Public-space and stakeholder event log,AWAITING,Destination responsibility,Product owner,Impact and action required,No pilot impact evidence exists,Review after every departure
+Experiments,Article 11 outcome register,AWAITING,Assumption closure,Experiment owner,Link experiment and departure IDs,Planned tests are not results,Complete outcome and decision fields

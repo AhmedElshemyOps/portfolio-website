@@ -1,0 +1,21 @@
+field,definition,data_type,required,source,validation,decision_dimension,example_status
+departure_id,Immutable identifier for one product departure,text,YES,Operations pack,Unique and nonblank,All,AWAITING
+product_version,Approved concept and SOP version,text,YES,Change register,Must exist in version log,Learning quality,AWAITING
+departure_date,Local operating date,date,YES,Operations pack,ISO date,Operational reliability,AWAITING
+route_variant,Approved route used,text,YES,Route plan,Must match approved option,Operational reliability,AWAITING
+rag_state,Departure-day operating state,text,YES,Article 10 control,GREEN AMBER or RED,Operational reliability,AWAITING
+capacity,Approved service capacity,integer,YES,Product baseline,Maximum 8,Customer and commercial,AWAITING
+booked_guests,Confirmed guests before departure,integer,YES,Booking ledger,Between 0 and capacity,Commercial viability,AWAITING
+attended_guests,Guests who attended,integer,YES,Attendance record,Between 0 and booked,Customer and commercial,AWAITING
+gross_revenue_eur,Realised gross revenue,decimal,PAID ONLY,Payment record,Reconciles to booking ledger,Commercial viability,AWAITING
+refunds_eur,Realised refunds,decimal,PAID ONLY,Payment record,Non-negative,Commercial viability,AWAITING
+channel_fees_eur,Commission and payment fees,decimal,PAID ONLY,Channel statement,Non-negative,Commercial viability,AWAITING
+actual_departure_cost_eur,Guide and other variable costs,decimal,PAID ONLY,Cost ledger,Supported by evidence,Commercial viability,AWAITING
+start_variance_minutes,Actual minus planned start,integer,YES,Operations pack,Reason code if outside tolerance,Operational reliability,AWAITING
+duration_minutes,Actual operating duration,integer,YES,Operations pack,Reason code outside 110-135,Operational reliability,AWAITING
+route_completed,Whether approved route outcome was completed,boolean,YES,Guide close-out,True or false with reason,Operational reliability,AWAITING
+context_usefulness_score,Guest usefulness rating 1-5,decimal,IF RESPONSE,Survey,Range 1 to 5,Customer value,AWAITING
+recall_rate,Share recalling core three-layer model,percentage,IF RESPONSE,Recall check,Range 0 to 1,Customer value,AWAITING
+incident_count,Safety or service incidents,integer,YES,Incident log,Include zero,Hard gate,AWAITING
+destination_event_count,Resident or public-space events,integer,YES,Daily pack,Include zero,Destination responsibility,AWAITING
+experiment_ids,Experiments assigned to departure,text,YES,Experiment backlog,Valid IDs only,Learning quality,AWAITING
