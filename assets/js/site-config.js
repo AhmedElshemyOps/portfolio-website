@@ -6,7 +6,9 @@ window.AHMED_SITE_CONFIG = {
   googleAdsConversionLabel: "",
   googleBusinessProfileUrl: "",
   googleSearchConsoleVerification: "Ii-YhK_VMy_iIZ9r_ifJZiXbk2NtNniOnJTZgCNkAl4",
-  // For GitHub Pages, set this to a separately deployed HTTPS Worker endpoint.
+  // Public Brevo form URL, not an API credential. Native POST works on GitHub Pages.
+  newsletterFormUrl: "https://fc829cd5.sibforms.com/serve/MUIFAIzYXqWTSeQT59exjV6IelGSSTvAYfDkj0NCiVb4kxU79dN_MVoYWZpvjJzg4NIWSWaxgWjXfoD-UyL059P9kJOhMaM2jwBbBEX-NHrdXKcW8KabfV_gMUwG45scUABSuUqAeHdCAfXEQD9opdo9qrFbLR_YR_e57Fps7amXLyRdmViaQWeX95zCPXfk8fc6jgt5cBpmFh9imQ==",
+  // Optional fallback for deployments that separately configure the Worker.
   newsletterEndpoint: "/api/newsletter/subscribe",
   analyticsDebug: false
 };

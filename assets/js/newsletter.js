@@ -9,6 +9,30 @@
     var email = form.elements.email;
     var button = form.querySelector('button[type="submit"]');
     var status = form.querySelector("[data-newsletter-status]");
+    var hostedUrl = window.AHMED_SITE_CONFIG?.newsletterFormUrl;
+    if (hostedUrl) {
+      var parsedUrl = new URL(hostedUrl);
+      if (parsedUrl.protocol !== "https:" || parsedUrl.hostname !== "fc829cd5.sibforms.com") hostedUrl = null;
+    }
+    if (hostedUrl) {
+      var help = document.createElement("p");
+      help.className = "newsletter-consent";
+      help.id = "newsletter-help-" + email.id;
+      help.append("Submit securely with Brevo, then confirm by email. ");
+      var fallback = document.createElement("a");
+      fallback.href = hostedUrl;
+      fallback.textContent = "Open signup form";
+      help.append(fallback);
+      form.insertBefore(help, status);
+      email.setAttribute("aria-describedby", help.id);
+      button.textContent = "Join the brief";
+      window.addEventListener("pageshow", function () {
+        button.disabled = false;
+        button.textContent = "Join the brief";
+        form.removeAttribute("aria-busy");
+        status.textContent = "";
+      });
+    }
     function setStatus(message, kind) {
       status.textContent = message;
       status.classList.toggle("is-error", kind === "error");
@@ -21,6 +45,27 @@
       var value = email.value.trim();
       if (!value) { setStatus("Enter your email address to subscribe.", "error"); email.focus(); return; }
       if (!emailPattern.test(value)) { setStatus("Enter a valid email address, such as name@example.com.", "error"); email.focus(); return; }
+      if (hostedUrl) {
+        // Use Brevo's public HTML-form contract, not its secret-key API.
+        // POST keeps the email out of URLs, history and analytics parameters.
+        var submission = document.createElement("form");
+        submission.method = "POST";
+        submission.action = hostedUrl;
+        submission.hidden = true;
+        Object.entries({ EMAIL: value, email_address_check: form.elements.company?.value || "", locale: "en" }).forEach(function (entry) {
+          var input = document.createElement("input");
+          input.type = "hidden";
+          input.name = entry[0];
+          input.value = entry[1];
+          submission.append(input);
+        });
+        document.body.append(submission);
+        setStatus("Opening Brevo securely. Confirm your subscription using the email it sends.");
+        analytics("newsletter_signup_started", { signup_location: window.location.pathname });
+        submission.submit();
+        submission.remove();
+        return;
+      }
       button.disabled = true;
       form.setAttribute("aria-busy", "true");
       button.textContent = "Subscribing…";
