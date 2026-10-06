@@ -16,25 +16,25 @@
 <header class="article-page-header"><span class="eyebrow">Hotel &amp; Serviced Apartment AI Operations · Article 04</span><h1>Reservations AI Toolkit</h1><p>10 professional AI prompts for booking quality, modifications, cancellations, allocation, corporate reservations and exception control.</p><dl class="article-meta-row"><div><dt>Reading time</dt><dd>27 minutes</dd></div><div><dt>Series</dt><dd>4 of 26</dd></div></dl></header>
 <figure class="article-visual article-hero-visual"><img src="/assets/articles/tourism-sales-quotation-ai-prompts/tourism-sales-quotation-ai-prompts-hero-1600x900.avif" width="1600" height="900" sizes="(max-width: 620px) calc(100vw - 36px), (max-width: 900px) calc(100vw - 48px), 1120px" alt="Hotel reservations and commercial control workflow with verified rates, bookings and approval gates" loading="eager" decoding="async" fetchpriority="high"/><figcaption><p>Reservation intelligence is useful only when AI remains anchored to confirmed booking records, approved rates and controlled modification rules.</p></figcaption></figure><section class="article-series-bar" aria-label="Article series information"><div><span>Reading path</span><strong>Hotel &amp; Serviced Apartment AI Operations Playbook</strong><small>Article 4 of 26 · 10 governed prompts</small></div><div class="article-tags"><a href="/series/hotel-ai-operations-playbook/index.html">Series hub</a><a href="https://github.com/AhmedElshemyOps/hotel-ai-operations-playbook" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></section>
 <section class="article-brief"><span class="article-brief-number">04</span><div><span class="eyebrow">Toolkit brief</span><h2>Operational AI, with human authority</h2><p>10 professional AI prompts for booking quality, modifications, cancellations, allocation, corporate reservations and exception control. Every prompt follows the HOTEL framework and separates AI support from operational authority.</p><a class="series-home-link" href="/series/hotel-ai-operations-playbook/index.html">Explore all 26 planned chapters →</a></div></section>
-<details class="article-glossary"><summary>Terms used in this article <span>4</span></summary><dl><div><dt>PMS / CRS</dt><dd>The property-management and central-reservation systems used to confirm booking facts and status.</dd></div><div><dt>Rate plan</dt><dd>The approved commercial conditions attached to a reservation, including rate, inclusions and restrictions.</dd></div><div><dt>Booking modification</dt><dd>An authorized change to an existing reservation that must be verified and recorded in the system of record.</dd></div><div><dt>Duplicate booking</dt><dd>Two or more records that may represent the same intended stay and require controlled verification before cancellation or amendment.</dd></div></dl></details><div class="article-reader-layout"><aside class="article-toc" aria-label="Article navigation"><details data-reader-toc open><summary>In this article <span>18 sections</span></summary><nav aria-label="Table of contents"><ol><li><a href="#1-why-reservation-quality-is-an-operations-issue" data-toc-link><span>01</span>1. Why reservation quality is an operations issue</a></li><li><a href="#2-hotel-framework-for-reservations" data-toc-link><span>02</span>2. HOTEL framework for reservations</a></li><li><a href="#3-the-reservations-ai-control-loop" data-toc-link><span>03</span>3. The reservations AI control loop</a></li><li><a href="#4-fictional-uae-case-one-booking-five-possible-failures" data-toc-link><span>04</span>4. Fictional UAE case: one booking, five possible failures</a></li><li><a href="#5-risk-classification-in-reservations" data-toc-link><span>05</span>5. Risk classification in Reservations</a></li><li><a href="#6-modification-control-compare-before-you-change" data-toc-link><span>06</span>6. Modification control: compare before you change</a></li><li><a href="#7-cancellation-and-no-show-explain-policy-without-becoming-the-policy" data-toc-link><span>07</span>7. Cancellation and no-show: explain policy without becoming the policy</a></li><li><a href="#8-duplicate-detection-probability-is-not-proof" data-toc-link><span>08</span>8. Duplicate detection: probability is not proof</a></li><li><a href="#9-special-requests-protect-the-difference-between-request-and-entitlement" data-toc-link><span>09</span>9. Special requests: protect the difference between request and entitlement</a></li><li><a href="#10-corporate-reservations-contract-before-memory" data-toc-link><span>10</span>10. Corporate reservations: contract before memory</a></li><li><a href="#11-cross-website-knowledge-connections" data-toc-link><span>11</span>11. Cross-website knowledge connections</a></li><li><a href="#12-management-kpis-for-an-ai-supported-reservations-workflow" data-toc-link><span>12</span>12. Management KPIs for an AI-supported reservations workflow</a></li><li><a href="#13-lean-six-sigma-application" data-toc-link><span>13</span>13. Lean Six Sigma application</a></li><li><a href="#14-30-day-implementation-plan" data-toc-link><span>14</span>14. 30-day implementation plan</a></li><li><a href="#15-before-action-after-value-protected" data-toc-link><span>15</span>15. Before → Action → After → value protected</a></li><li><a href="#16-reservations-manager-checklist" data-toc-link><span>16</span>16. Reservations manager checklist</a></li><li><a href="#prompt-031-reservation-file-quality-check" data-toc-link><span>17</span>Prompt 031 — Reservation File Quality Check</a></li><li><a href="#prompt-032-booking-modification-review" data-toc-link><span>18</span>Prompt 032 — Booking Modification Review</a></li></ol></nav></details></aside><div class="article-reading-column"><p>**Track C · Hotel &amp; Serviced Apartment AI Operations Playbook · Reservations chapter**</p>
+<details class="article-glossary"><summary>Terms used in this article <span>4</span></summary><dl><div><dt>PMS / CRS</dt><dd>The property-management and central-reservation systems used to confirm booking facts and status.</dd></div><div><dt>Rate plan</dt><dd>The approved commercial conditions attached to a reservation, including rate, inclusions and restrictions.</dd></div><div><dt>Booking modification</dt><dd>An authorized change to an existing reservation that must be verified and recorded in the system of record.</dd></div><div><dt>Duplicate booking</dt><dd>Two or more records that may represent the same intended stay and require controlled verification before cancellation or amendment.</dd></div></dl></details><div class="article-reader-layout"><aside class="article-toc" aria-label="Article navigation"><details data-reader-toc open><summary>In this article <span>18 sections</span></summary><nav aria-label="Table of contents"><ol><li><a href="#1-why-reservation-quality-is-an-operations-issue" data-toc-link><span>01</span>1. Why reservation quality is an operations issue</a></li><li><a href="#2-hotel-framework-for-reservations" data-toc-link><span>02</span>2. HOTEL framework for reservations</a></li><li><a href="#3-the-reservations-ai-control-loop" data-toc-link><span>03</span>3. The reservations AI control loop</a></li><li><a href="#4-fictional-uae-case-one-booking-five-possible-failures" data-toc-link><span>04</span>4. Fictional UAE case: one booking, five possible failures</a></li><li><a href="#5-risk-classification-in-reservations" data-toc-link><span>05</span>5. Risk classification in Reservations</a></li><li><a href="#6-modification-control-compare-before-you-change" data-toc-link><span>06</span>6. Modification control: compare before you change</a></li><li><a href="#7-cancellation-and-no-show-explain-policy-without-becoming-the-policy" data-toc-link><span>07</span>7. Cancellation and no-show: explain policy without becoming the policy</a></li><li><a href="#8-duplicate-detection-probability-is-not-proof" data-toc-link><span>08</span>8. Duplicate detection: probability is not proof</a></li><li><a href="#9-special-requests-protect-the-difference-between-request-and-entitlement" data-toc-link><span>09</span>9. Special requests: protect the difference between request and entitlement</a></li><li><a href="#10-corporate-reservations-contract-before-memory" data-toc-link><span>10</span>10. Corporate reservations: contract before memory</a></li><li><a href="#11-cross-website-knowledge-connections" data-toc-link><span>11</span>11. Cross-website knowledge connections</a></li><li><a href="#12-management-kpis-for-an-ai-supported-reservations-workflow" data-toc-link><span>12</span>12. Management KPIs for an AI-supported reservations workflow</a></li><li><a href="#13-lean-six-sigma-application" data-toc-link><span>13</span>13. Lean Six Sigma application</a></li><li><a href="#14-30-day-implementation-plan" data-toc-link><span>14</span>14. 30-day implementation plan</a></li><li><a href="#15-before-action-after-value-protected" data-toc-link><span>15</span>15. Before → Action → After → value protected</a></li><li><a href="#16-reservations-manager-checklist" data-toc-link><span>16</span>16. Reservations manager checklist</a></li><li><a href="#prompt-031-reservation-file-quality-check" data-toc-link><span>17</span>Prompt 031 — Reservation File Quality Check</a></li><li><a href="#prompt-032-booking-modification-review" data-toc-link><span>18</span>Prompt 032 — Booking Modification Review</a></li></ol></nav></details></aside><div class="article-reading-column"><p><strong>Track C · Hotel &amp; Serviced Apartment AI Operations Playbook · Reservations chapter</strong></p>
 <p>A reservation is more than a name and an arrival date. It is a compact operating contract connecting inventory, price, room type, occupancy, cancellation conditions, payment or billing arrangements, channel rules, special requests and the promises the property will later be expected to deliver.</p>
 <p>That makes Reservations an excellent use case for AI—and a dangerous place to use AI casually. A model can summarize a booking in seconds, but it can also turn a request into an entitlement, interpret the wrong cancellation rule, assume two similar bookings are duplicates, or suggest a room-type solution without understanding live inventory. The damage may not appear until check-in, when Front Office inherits a promise that was never operationally valid.</p>
 <p>The control principle for this chapter is:</p>
-<blockquote>**AI may organize reservation evidence and prepare a decision. The approved reservation system, commercial terms and authorized human still determine what is confirmed.**</blockquote>
+<blockquote><strong>AI may organize reservation evidence and prepare a decision. The approved reservation system, commercial terms and authorized human still determine what is confirmed.</strong></blockquote>
 <p>The ten prompts follow the reservation-control cycle:</p>
-<blockquote>**Validate → Review change → Explain terms → Review no-show → Support allocation → Structure requests → Detect duplicates → Handover → Validate corporate terms → Escalate**</blockquote>
+<blockquote><strong>Validate → Review change → Explain terms → Review no-show → Support allocation → Structure requests → Detect duplicates → Handover → Validate corporate terms → Escalate</strong></blockquote>
 <p>---</p>
 <h2 id="1-why-reservation-quality-is-an-operations-issue">1. Why reservation quality is an operations issue</h2>
 <p>Reservation errors travel downstream. An incorrect room type becomes a Front Office conflict. A missed child occupancy detail can affect bedding and capacity. An unverified airport-transfer note becomes an arrival failure. A corporate inclusion copied from an old booking can become a billing dispute. A vague cancellation explanation can become a complaint.</p>
-<p>For that reason, the objective of Reservations AI should not be “answer faster.” It should be **reduce ambiguity before the booking reaches the next operating stage**.</p>
+<p>For that reason, the objective of Reservations AI should not be “answer faster.” It should be <strong>reduce ambiguity before the booking reaches the next operating stage</strong>.</p>
 <p>A useful AI workflow can compare supplied records, extract requests, expose contradictions, prepare a structured handover and identify which cases need human intervention. It should not silently resolve a conflict by choosing whichever field looks most likely.</p>
 <h2 id="2-hotel-framework-for-reservations">2. HOTEL framework for reservations</h2>
 <p>The common HOTEL framework applies directly:</p>
-<p>• **H — Hospitality role &amp; human owner:** name the reservations role and the person accountable for the final action.</p>
-<p>• **O — Operational objective &amp; context:** define the booking stage, stay dates, channel, segment and decision deadline.</p>
-<p>• **T — Trusted inputs &amp; sources of truth:** anchor analysis to PMS/CRS, approved channel records, rate plans, contracts, policies and controlled communication logs.</p>
-<p>• **E — Expected output, exceptions &amp; evidence:** require facts, conflicts, unknowns, next actions and closure evidence.</p>
-<p>• **L — Limits, privacy &amp; leadership approval:** prohibit unauthorized changes, commercial promises and unnecessary exposure of guest data.</p>
+<p>• <strong>H — Hospitality role &amp; human owner:</strong> name the reservations role and the person accountable for the final action.</p>
+<p>• <strong>O — Operational objective &amp; context:</strong> define the booking stage, stay dates, channel, segment and decision deadline.</p>
+<p>• <strong>T — Trusted inputs &amp; sources of truth:</strong> anchor analysis to PMS/CRS, approved channel records, rate plans, contracts, policies and controlled communication logs.</p>
+<p>• <strong>E — Expected output, exceptions &amp; evidence:</strong> require facts, conflicts, unknowns, next actions and closure evidence.</p>
+<p>• <strong>L — Limits, privacy &amp; leadership approval:</strong> prohibit unauthorized changes, commercial promises and unnecessary exposure of guest data.</p>
 <h3>Reservation source-of-truth matrix</h3>
 <pre>| Question | Primary approved source | AI role |</pre>
 <pre>|---|---|---|</pre>
@@ -46,7 +46,7 @@
 <pre>| Is a request guaranteed? | Confirmed booking/approved entitlement | Separate entitlement from preference |</pre>
 <pre>| Is inventory available for a change? | Authorized live inventory source | Analyze supplied snapshot; human confirms |</pre>
 <pre>| Can a fee be waived? | Authority matrix + approved policy | Escalate; do not authorize |</pre>
-<p>The word **current** matters. A screenshot, copied email or last week&#x27;s inventory can be useful evidence, but it should not automatically override the live controlled system.</p>
+<p>The word <strong>current</strong> matters. A screenshot, copied email or last week&#x27;s inventory can be useful evidence, but it should not automatically override the live controlled system.</p>
 <h2 id="3-the-reservations-ai-control-loop">3. The reservations AI control loop</h2>
 <pre>| Stage | Control question | Prompt |</pre>
 <pre>|---|---|---|</pre>
@@ -76,18 +76,18 @@
 <p>The difference is important: AI has made the case easier to manage without pretending to possess authority it does not have.</p>
 <h2 id="5-risk-classification-in-reservations">5. Risk classification in Reservations</h2>
 <p>Many reservation tasks move from MEDIUM to HIGH risk because they affect money, inventory, contractual terms or a guest&#x27;s confirmed stay.</p>
-<p>**MEDIUM** examples include extracting requests, preparing a handover or checking file completeness. The output still needs review, but the AI is mainly organizing information.</p>
-<p>**HIGH** examples include modifications, cancellation/no-show interpretation, room-type allocation, duplicate handling and corporate billing terms. A mistake can create a charge dispute, revenue leakage, inventory displacement or a broken guest promise.</p>
+<p><strong>MEDIUM</strong> examples include extracting requests, preparing a handover or checking file completeness. The output still needs review, but the AI is mainly organizing information.</p>
+<p><strong>HIGH</strong> examples include modifications, cancellation/no-show interpretation, room-type allocation, duplicate handling and corporate billing terms. A mistake can create a charge dispute, revenue leakage, inventory displacement or a broken guest promise.</p>
 <p>The practical rule is that AI can prepare the case, but the authorized employee executes the reservation action in the approved system.</p>
 <h2 id="6-modification-control-compare-before-you-change">6. Modification control: compare before you change</h2>
-<p>A professional modification review should show **before**, **requested**, **impact**, **unknown**, and **approval required**. This is more reliable than asking an AI model, “Can we change this booking?”</p>
+<p>A professional modification review should show <strong>before</strong>, <strong>requested</strong>, <strong>impact</strong>, <strong>unknown</strong>, and <strong>approval required</strong>. This is more reliable than asking an AI model, “Can we change this booking?”</p>
 <p>For example, changing a stay from three nights to five may affect more than dates. It can change availability, rate conditions, package eligibility, corporate terms, tax/fee calculations, room continuity and cancellation conditions. The AI should surface those dependencies rather than answer yes or no from incomplete information.</p>
 <h2 id="7-cancellation-and-no-show-explain-policy-without-becoming-the-policy">7. Cancellation and no-show: explain policy without becoming the policy</h2>
 <p>Guest-facing clarity is useful, particularly when rate terms are technical. But rewriting a cancellation rule must not change its meaning. The safest workflow supplies the exact confirmed booking/rate terms, relevant timestamps and approved policy, then asks AI to create a plain-language explanation while preserving the original conditions.</p>
 <p>No-show handling needs even stronger controls. An AI summary should build a chronology of confirmed facts and evidence gaps. It should not authorize a charge, cancellation or reinstatement merely because a narrative says the guest did not arrive.</p>
 <h2 id="8-duplicate-detection-probability-is-not-proof">8. Duplicate detection: probability is not proof</h2>
 <p>Duplicate detection is a strong AI use case because models can compare patterns across names, dates, room types, sources and booking timestamps. But false positives are expensive. A spouse, colleague or family member may have a similar name; a traveler may intentionally hold two rooms; a corporate booker may create related reservations.</p>
-<p>Therefore Prompt 037 produces **possible duplicate clusters for manual review**, never an instruction to cancel.</p>
+<p>Therefore Prompt 037 produces <strong>possible duplicate clusters for manual review</strong>, never an instruction to cancel.</p>
 <h2 id="9-special-requests-protect-the-difference-between-request-and-entitlement">9. Special requests: protect the difference between request and entitlement</h2>
 <p>Reservation notes often contain phrases such as “high floor,” “early check-in,” “airport pickup,” “baby cot,” “quiet room,” “connecting rooms” or “late checkout.” Some may be confirmed paid services, some operational requirements, and some preferences subject to availability.</p>
 <p>The AI should classify them rather than flatten them into a checklist of promises. This is also where Reservations connects directly to Front Office, Housekeeping, Engineering, Transport and Guest Experience.</p>
@@ -96,14 +96,14 @@
 <p>Prompt 039 forces a contract-to-booking comparison and routes discrepancies to the appropriate owner. This supports Sales and Finance without allowing AI to invent negotiated terms.</p>
 <h2 id="11-cross-website-knowledge-connections">11. Cross-website knowledge connections</h2>
 <p>Reservations should not live as an isolated knowledge pillar. On the Ahmed Quality Ops website, this chapter should connect contextually to the broader operating system:</p>
-<p>• **The Tourism AI Operations Playbook** — for the wider responsible-AI and tourism prompting architecture: `/articles/tourism-ai-operations-playbook/index.html`</p>
-<p>• **SOP Exception &amp; Escalation Management** — when a reservation moves outside normal policy or frontline authority: `/articles/sop-exception-escalation-management/index.html`</p>
-<p>• **SOP Roles, Authority &amp; RACI** — when the problem is not missing information but unclear decision ownership: `/articles/sop-roles-authority-raci/index.html`</p>
-<p>• **Professional SOP Procedure Design** — when recurring reservation failures need a controlled process rather than repeated case-by-case fixes: `/articles/how-to-write-professional-sop-procedure/index.html`</p>
-<p>• **MICE operations content** — for group arrivals, rooming-list dependencies and movement coordination where accommodation connects to event operations.</p>
-<p>• **Transport/dispatch knowledge** — when airport transfers or movement services are attached to a reservation; the reservation record should reference a confirmed transport workflow rather than assume fulfillment.</p>
+<p>• <strong>The Tourism AI Operations Playbook</strong> — for the wider responsible-AI and tourism prompting architecture: `/articles/tourism-ai-operations-playbook/index.html`</p>
+<p>• <strong>SOP Exception &amp; Escalation Management</strong> — when a reservation moves outside normal policy or frontline authority: `/articles/sop-exception-escalation-management/index.html`</p>
+<p>• <strong>SOP Roles, Authority &amp; RACI</strong> — when the problem is not missing information but unclear decision ownership: `/articles/sop-roles-authority-raci/index.html`</p>
+<p>• <strong>Professional SOP Procedure Design</strong> — when recurring reservation failures need a controlled process rather than repeated case-by-case fixes: `/articles/how-to-write-professional-sop-procedure/index.html`</p>
+<p>• <strong>MICE operations content</strong> — for group arrivals, rooming-list dependencies and movement coordination where accommodation connects to event operations.</p>
+<p>• <strong>Transport/dispatch knowledge</strong> — when airport transfers or movement services are attached to a reservation; the reservation record should reference a confirmed transport workflow rather than assume fulfillment.</p>
 <p>Future hotel chapters should link back here whenever they rely on reservation truth: Front Office for arrival promises, Revenue for rate/inventory decisions, OTA/Distribution for channel records, Corporate Sales for negotiated terms, Finance for billing controls and Guest Experience for service recovery.</p>
-<p>This creates a knowledge network: **reservation → arrival → stay → service → exception → evidence → improvement**, rather than a set of disconnected articles.</p>
+<p>This creates a knowledge network: <strong>reservation → arrival → stay → service → exception → evidence → improvement</strong>, rather than a set of disconnected articles.</p>
 <h2 id="12-management-kpis-for-an-ai-supported-reservations-workflow">12. Management KPIs for an AI-supported reservations workflow</h2>
 <p>AI should be evaluated against operational quality, not the number of generated messages. Useful measures include:</p>
 <pre>| KPI | What it reveals |</pre>
@@ -119,22 +119,22 @@
 <p>Do not invent benchmark percentages. Establish the property&#x27;s baseline, define the measurement method, then improve from verified internal data.</p>
 <h2 id="13-lean-six-sigma-application">13. Lean Six Sigma application</h2>
 <p>Reservations is well suited to a DMAIC-style improvement project because many defects are measurable.</p>
-<p>**Define:** choose a defect such as incomplete special-request classification, corporate-rate mismatch or unresolved modification at arrival.</p>
-<p>**Measure:** establish a clean operational definition and collect verified cases.</p>
-<p>**Analyze:** stratify by channel, shift, rate plan, booking source, process step or defect category. Do not assume the AI&#x27;s thematic summary is the root cause.</p>
-<p>**Improve:** redesign the input fields, verification checkpoint, authority rule, handover or SOP.</p>
-<p>**Control:** monitor the defect and maintain a clear exception path.</p>
+<p><strong>Define:</strong> choose a defect such as incomplete special-request classification, corporate-rate mismatch or unresolved modification at arrival.</p>
+<p><strong>Measure:</strong> establish a clean operational definition and collect verified cases.</p>
+<p><strong>Analyze:</strong> stratify by channel, shift, rate plan, booking source, process step or defect category. Do not assume the AI&#x27;s thematic summary is the root cause.</p>
+<p><strong>Improve:</strong> redesign the input fields, verification checkpoint, authority rule, handover or SOP.</p>
+<p><strong>Control:</strong> monitor the defect and maintain a clear exception path.</p>
 <p>AI can accelerate coding, summarization and hypothesis generation, but the improvement team validates the data and causal conclusion.</p>
 <h2 id="14-30-day-implementation-plan">14. 30-day implementation plan</h2>
-<p>**Days 1–7 — Control the inputs.** Define approved sources for booking, rate, cancellation, corporate terms, payment-status indicators and special requests. Remove unnecessary personal data from AI workflows.</p>
-<p>**Days 8–14 — Pilot low-to-medium risk.** Start with Prompt 031, 036 and 038: file quality, request extraction and handover. Compare AI output with supervisor review.</p>
-<p>**Days 15–21 — Introduce high-risk decision support.** Pilot modification, cancellation, duplicate, allocation and corporate validation with mandatory supervisor approval and a documented authority matrix.</p>
-<p>**Days 22–30 — Measure and standardize.** Review recurring errors, update prompt instructions, define KPIs, connect the workflow to SOPs and train the team on what AI is explicitly not authorized to do.</p>
+<p><strong>Days 1–7 — Control the inputs.</strong> Define approved sources for booking, rate, cancellation, corporate terms, payment-status indicators and special requests. Remove unnecessary personal data from AI workflows.</p>
+<p><strong>Days 8–14 — Pilot low-to-medium risk.</strong> Start with Prompt 031, 036 and 038: file quality, request extraction and handover. Compare AI output with supervisor review.</p>
+<p><strong>Days 15–21 — Introduce high-risk decision support.</strong> Pilot modification, cancellation, duplicate, allocation and corporate validation with mandatory supervisor approval and a documented authority matrix.</p>
+<p><strong>Days 22–30 — Measure and standardize.</strong> Review recurring errors, update prompt instructions, define KPIs, connect the workflow to SOPs and train the team on what AI is explicitly not authorized to do.</p>
 <h2 id="15-before-action-after-value-protected">15. Before → Action → After → value protected</h2>
-<p>**Before:** a corporate reservation contains unclear billing, a possible duplicate and an early-arrival note. The next shift reads the notes differently and Front Office discovers the gaps at arrival.</p>
-<p>**Action:** the Reservations team uses the controlled prompts to separate confirmed facts from requests, compare contract terms, flag the possible duplicate, verify the transfer and hand over unresolved decisions with owners.</p>
-<p>**After:** Front Office receives a cleaner file, the commercial questions reach authorized owners before arrival and no booking is cancelled or modified based only on AI inference.</p>
-<p>**AED saved/protected:** calculate only from verified avoided refunds, rate leakage, compensation, chargebacks, room displacement or labor rework. Do not publish an invented savings figure.</p>
+<p><strong>Before:</strong> a corporate reservation contains unclear billing, a possible duplicate and an early-arrival note. The next shift reads the notes differently and Front Office discovers the gaps at arrival.</p>
+<p><strong>Action:</strong> the Reservations team uses the controlled prompts to separate confirmed facts from requests, compare contract terms, flag the possible duplicate, verify the transfer and hand over unresolved decisions with owners.</p>
+<p><strong>After:</strong> Front Office receives a cleaner file, the commercial questions reach authorized owners before arrival and no booking is cancelled or modified based only on AI inference.</p>
+<p><strong>AED saved/protected:</strong> calculate only from verified avoided refunds, rate leakage, compensation, chargebacks, room displacement or labor rework. Do not publish an invented savings figure.</p>
 <h2 id="16-reservations-manager-checklist">16. Reservations manager checklist</h2>
 <p>Before operationalizing these prompts, confirm that:</p>
 <p>• PMS/CRS remains the booking system of record;</p>
@@ -148,11 +148,11 @@
 <p>• handovers preserve open ownership and deadlines;</p>
 <p>• final actions are recorded back in the approved system.</p>
 <p>---</p>
-<h1>The 10 copy-ready Reservations AI prompts</h1>
+<h2>The 10 copy-ready Reservations AI prompts</h2>
 <h2 id="prompt-031-reservation-file-quality-check">Prompt 031 — Reservation File Quality Check</h2>
-<p>**Risk:** Medium  </p>
-<p>**Human owner:** Reservations Supervisor  </p>
-<p>**When to use:** Before daily arrival review or after a booking is created/imported.</p>
+<p><strong>Risk:</strong> Medium  </p>
+<p><strong>Human owner:</strong> Reservations Supervisor  </p>
+<p><strong>When to use:</strong> Before daily arrival review or after a booking is created/imported.</p>
 <h3>Why this prompt matters</h3>
 <p>Before arrival review, audit a reservation file for missing, conflicting or unverified operational fields. In reservations, a polished answer is not enough: the team needs traceability back to the booking record, rate or contract that actually governs the case. The prompt therefore exposes uncertainty and preserves the approval boundary before a guest-facing or system action occurs.</p>
 <h3>Copy-ready prompt</h3>
@@ -199,9 +199,9 @@ AI output is decision support and a draft—not the PMS/CRS record, contractual 
 <h3>Human verification before action</h3>
 <p>Confirm the relevant PMS/CRS record is current; resolve any source conflict; verify the applicable policy, rate or contract; check that the proposed action is within the employee&#x27;s authority; and record the final approved action in the proper operational system.</p>
 <h2 id="prompt-032-booking-modification-review">Prompt 032 — Booking Modification Review</h2>
-<p>**Risk:** High  </p>
-<p>**Human owner:** Reservations Supervisor / Revenue or authorized manager  </p>
-<p>**When to use:** When a guest, agent or corporate booker requests a date, occupancy, room-type, name or package change.</p>
+<p><strong>Risk:</strong> High  </p>
+<p><strong>Human owner:</strong> Reservations Supervisor / Revenue or authorized manager  </p>
+<p><strong>When to use:</strong> When a guest, agent or corporate booker requests a date, occupancy, room-type, name or package change.</p>
 <h3>Why this prompt matters</h3>
 <p>Compare an existing confirmed booking with a requested modification and identify operational, rate, inventory and policy dependencies without executing the change. In reservations, a polished answer is not enough: the team needs traceability back to the booking record, rate or contract that actually governs the case. The prompt therefore exposes uncertainty and preserves the approval boundary before a guest-facing or system action occurs.</p>
 <h3>Copy-ready prompt</h3>
@@ -248,9 +248,9 @@ AI output is decision support and a draft—not the PMS/CRS record, contractual 
 <h3>Human verification before action</h3>
 <p>Confirm the relevant PMS/CRS record is current; resolve any source conflict; verify the applicable policy, rate or contract; check that the proposed action is within the employee&#x27;s authority; and record the final approved action in the proper operational system.</p>
 <h2 id="prompt-033-cancellation-policy-explanation-draft">Prompt 033 — Cancellation Policy Explanation Draft</h2>
-<p>**Risk:** High  </p>
-<p>**Human owner:** Reservations Supervisor / authorized commercial role  </p>
-<p>**When to use:** When explaining cancellation conditions before or after a cancellation request.</p>
+<p><strong>Risk:</strong> High  </p>
+<p><strong>Human owner:</strong> Reservations Supervisor / authorized commercial role  </p>
+<p><strong>When to use:</strong> When explaining cancellation conditions before or after a cancellation request.</p>
 <h3>Why this prompt matters</h3>
 <p>Translate the confirmed cancellation terms into clear guest-facing language without changing the contractual meaning or deciding whether a fee should be waived. In reservations, a polished answer is not enough: the team needs traceability back to the booking record, rate or contract that actually governs the case. The prompt therefore exposes uncertainty and preserves the approval boundary before a guest-facing or system action occurs.</p>
 <h3>Copy-ready prompt</h3>
@@ -296,9 +296,9 @@ AI output is decision support and a draft—not the PMS/CRS record, contractual 
 <h3>Human verification before action</h3>
 <p>Confirm the relevant PMS/CRS record is current; resolve any source conflict; verify the applicable policy, rate or contract; check that the proposed action is within the employee&#x27;s authority; and record the final approved action in the proper operational system.</p>
 <h2 id="prompt-034-no-show-review">Prompt 034 — No-Show Review</h2>
-<p>**Risk:** High  </p>
-<p>**Human owner:** Duty Manager / Reservations Supervisor / Finance as policy requires  </p>
-<p>**When to use:** After a reservation appears to qualify for no-show handling.</p>
+<p><strong>Risk:</strong> High  </p>
+<p><strong>Human owner:</strong> Duty Manager / Reservations Supervisor / Finance as policy requires  </p>
+<p><strong>When to use:</strong> After a reservation appears to qualify for no-show handling.</p>
 <h3>Why this prompt matters</h3>
 <p>Structure a no-show case review using confirmed arrival, contact, channel and policy evidence while keeping charge or reinstatement decisions with authorized staff. In reservations, a polished answer is not enough: the team needs traceability back to the booking record, rate or contract that actually governs the case. The prompt therefore exposes uncertainty and preserves the approval boundary before a guest-facing or system action occurs.</p>
 <h3>Copy-ready prompt</h3>
@@ -345,9 +345,9 @@ AI output is decision support and a draft—not the PMS/CRS record, contractual 
 <h3>Human verification before action</h3>
 <p>Confirm the relevant PMS/CRS record is current; resolve any source conflict; verify the applicable policy, rate or contract; check that the proposed action is within the employee&#x27;s authority; and record the final approved action in the proper operational system.</p>
 <h2 id="prompt-035-room-type-allocation-support">Prompt 035 — Room-Type Allocation Support</h2>
-<p>**Risk:** High  </p>
-<p>**Human owner:** Rooms Division / Reservations / Revenue authorized owner  </p>
-<p>**When to use:** During pre-arrival planning, room-type pressure or oversell-risk review.</p>
+<p><strong>Risk:</strong> High  </p>
+<p><strong>Human owner:</strong> Rooms Division / Reservations / Revenue authorized owner  </p>
+<p><strong>When to use:</strong> During pre-arrival planning, room-type pressure or oversell-risk review.</p>
 <h3>Why this prompt matters</h3>
 <p>Analyze room-type demand and constraints and propose allocation options without assigning a specific unit, changing inventory or promising an upgrade. In reservations, a polished answer is not enough: the team needs traceability back to the booking record, rate or contract that actually governs the case. The prompt therefore exposes uncertainty and preserves the approval boundary before a guest-facing or system action occurs.</p>
 <h3>Copy-ready prompt</h3>
@@ -394,9 +394,9 @@ AI output is decision support and a draft—not the PMS/CRS record, contractual 
 <h3>Human verification before action</h3>
 <p>Confirm the relevant PMS/CRS record is current; resolve any source conflict; verify the applicable policy, rate or contract; check that the proposed action is within the employee&#x27;s authority; and record the final approved action in the proper operational system.</p>
 <h2 id="prompt-036-special-request-extraction">Prompt 036 — Special Request Extraction</h2>
-<p>**Risk:** Medium  </p>
-<p>**Human owner:** Reservations Supervisor / Front Office Supervisor  </p>
-<p>**When to use:** When preparing arrivals or cleaning imported reservation notes.</p>
+<p><strong>Risk:</strong> Medium  </p>
+<p><strong>Human owner:</strong> Reservations Supervisor / Front Office Supervisor  </p>
+<p><strong>When to use:</strong> When preparing arrivals or cleaning imported reservation notes.</p>
 <h3>Why this prompt matters</h3>
 <p>Extract guest requests from approved reservation text and classify each as confirmed inclusion, preference/request, operational requirement or unverified item. In reservations, a polished answer is not enough: the team needs traceability back to the booking record, rate or contract that actually governs the case. The prompt therefore exposes uncertainty and preserves the approval boundary before a guest-facing or system action occurs.</p>
 <h3>Copy-ready prompt</h3>
@@ -443,9 +443,9 @@ AI output is decision support and a draft—not the PMS/CRS record, contractual 
 <h3>Human verification before action</h3>
 <p>Confirm the relevant PMS/CRS record is current; resolve any source conflict; verify the applicable policy, rate or contract; check that the proposed action is within the employee&#x27;s authority; and record the final approved action in the proper operational system.</p>
 <h2 id="prompt-037-duplicate-booking-detector">Prompt 037 — Duplicate Booking Detector</h2>
-<p>**Risk:** High  </p>
-<p>**Human owner:** Reservations Supervisor  </p>
-<p>**When to use:** When similar reservations, names, dates or contact details suggest possible duplication.</p>
+<p><strong>Risk:</strong> High  </p>
+<p><strong>Human owner:</strong> Reservations Supervisor  </p>
+<p><strong>When to use:</strong> When similar reservations, names, dates or contact details suggest possible duplication.</p>
 <h3>Why this prompt matters</h3>
 <p>Identify probable duplicate reservations using supplied booking attributes and produce a review queue without cancelling, merging or altering any booking. In reservations, a polished answer is not enough: the team needs traceability back to the booking record, rate or contract that actually governs the case. The prompt therefore exposes uncertainty and preserves the approval boundary before a guest-facing or system action occurs.</p>
 <h3>Copy-ready prompt</h3>
@@ -493,9 +493,9 @@ AI output is decision support and a draft—not the PMS/CRS record, contractual 
 <h3>Human verification before action</h3>
 <p>Confirm the relevant PMS/CRS record is current; resolve any source conflict; verify the applicable policy, rate or contract; check that the proposed action is within the employee&#x27;s authority; and record the final approved action in the proper operational system.</p>
 <h2 id="prompt-038-reservation-handover-summary">Prompt 038 — Reservation Handover Summary</h2>
-<p>**Risk:** Medium  </p>
-<p>**Human owner:** Outgoing and incoming Reservations Supervisors  </p>
-<p>**When to use:** At shift change or transfer of responsibility between reservations teams.</p>
+<p><strong>Risk:</strong> Medium  </p>
+<p><strong>Human owner:</strong> Outgoing and incoming Reservations Supervisors  </p>
+<p><strong>When to use:</strong> At shift change or transfer of responsibility between reservations teams.</p>
 <h3>Why this prompt matters</h3>
 <p>Convert open reservation work into a concise handover showing facts, pending actions, owners, deadlines and escalation conditions. In reservations, a polished answer is not enough: the team needs traceability back to the booking record, rate or contract that actually governs the case. The prompt therefore exposes uncertainty and preserves the approval boundary before a guest-facing or system action occurs.</p>
 <h3>Copy-ready prompt</h3>
@@ -542,9 +542,9 @@ AI output is decision support and a draft—not the PMS/CRS record, contractual 
 <h3>Human verification before action</h3>
 <p>Confirm the relevant PMS/CRS record is current; resolve any source conflict; verify the applicable policy, rate or contract; check that the proposed action is within the employee&#x27;s authority; and record the final approved action in the proper operational system.</p>
 <h2 id="prompt-039-corporate-booking-validation">Prompt 039 — Corporate Booking Validation</h2>
-<p>**Risk:** High  </p>
-<p>**Human owner:** Reservations Supervisor / Sales / Finance authorized owner  </p>
-<p>**When to use:** For corporate, long-stay or contracted-account reservations before confirmation or arrival.</p>
+<p><strong>Risk:</strong> High  </p>
+<p><strong>Human owner:</strong> Reservations Supervisor / Sales / Finance authorized owner  </p>
+<p><strong>When to use:</strong> For corporate, long-stay or contracted-account reservations before confirmation or arrival.</p>
 <h3>Why this prompt matters</h3>
 <p>Validate a corporate reservation against supplied approved account terms without inventing negotiated rates, inclusions, credit status or billing authority. In reservations, a polished answer is not enough: the team needs traceability back to the booking record, rate or contract that actually governs the case. The prompt therefore exposes uncertainty and preserves the approval boundary before a guest-facing or system action occurs.</p>
 <h3>Copy-ready prompt</h3>
@@ -591,9 +591,9 @@ AI output is decision support and a draft—not the PMS/CRS record, contractual 
 <h3>Human verification before action</h3>
 <p>Confirm the relevant PMS/CRS record is current; resolve any source conflict; verify the applicable policy, rate or contract; check that the proposed action is within the employee&#x27;s authority; and record the final approved action in the proper operational system.</p>
 <h2 id="prompt-040-reservation-exception-escalation">Prompt 040 — Reservation Exception Escalation</h2>
-<p>**Risk:** High  </p>
-<p>**Human owner:** Reservations Manager / Duty Manager / authorized commercial owner  </p>
-<p>**When to use:** When a reservation cannot be resolved within normal SOP or frontline authority.</p>
+<p><strong>Risk:</strong> High  </p>
+<p><strong>Human owner:</strong> Reservations Manager / Duty Manager / authorized commercial owner  </p>
+<p><strong>When to use:</strong> When a reservation cannot be resolved within normal SOP or frontline authority.</p>
 <h3>Why this prompt matters</h3>
 <p>Turn a reservation exception into a decision-ready escalation brief with evidence, guest impact, options and authority boundary. In reservations, a polished answer is not enough: the team needs traceability back to the booking record, rate or contract that actually governs the case. The prompt therefore exposes uncertainty and preserves the approval boundary before a guest-facing or system action occurs.</p>
 <h3>Copy-ready prompt</h3>
@@ -653,12 +653,12 @@ AI output is decision support and a draft—not the PMS/CRS record, contractual 
 <p>9. Does the employee have authority for the proposed action?</p>
 <p>10. Has the final approved action been recorded in the proper system?</p>
 <h2 id="key-takeaway">Key takeaway</h2>
-<p>Reservations AI is most valuable before a problem reaches the guest. Its job is to make the booking **clearer, more complete, more traceable and easier to govern**. It should not become a shadow reservation system.</p>
-<blockquote>**Use AI to find the question that still needs an answer—not to manufacture the answer that the system or authorized person has not yet confirmed.**</blockquote>
+<p>Reservations AI is most valuable before a problem reaches the guest. Its job is to make the booking <strong>clearer, more complete, more traceable and easier to govern</strong>. It should not become a shadow reservation system.</p>
+<blockquote><strong>Use AI to find the question that still needs an answer—not to manufacture the answer that the system or authorized person has not yet confirmed.</strong></blockquote>
 <h2 id="series-navigation">Series navigation</h2>
-<p>**Previous:** Article 03 — Front Office AI Toolkit  </p>
-<p>**Series:** Hotel &amp; Serviced Apartment AI Operations Playbook  </p>
-<p>**Next:** Article 05 — Hotel Apartment &amp; Extended-Stay AI Toolkit</p>
+<p><strong>Previous:</strong> Article 03 — Front Office AI Toolkit  </p>
+<p><strong>Series:</strong> Hotel &amp; Serviced Apartment AI Operations Playbook  </p>
+<p><strong>Next:</strong> Article 05 — Hotel Apartment &amp; Extended-Stay AI Toolkit</p>
 <section class="reader-next-block" aria-labelledby="connected-knowledge-title"><header><span class="reader-next-eyebrow">Across the knowledge platform</span><h2 id="connected-knowledge-title">Connected knowledge</h2><p>Continue into related operating systems beyond this Hotel AI series.</p></header><div class="reader-next-grid"><a class="reader-next-card" href="/articles/sop-exception-escalation-management/index.html"><span class="reader-next-index">01</span><span class="reader-next-title">SOP Exception &amp; Escalation Management</span><small>Related framework on Ahmed Quality Ops.</small><span class="reader-next-action">Read related article <span aria-hidden="true">↗</span></span></a><a class="reader-next-card" href="/articles/article-abu-dhabi-mice-movement-control-room/index.html"><span class="reader-next-index">02</span><span class="reader-next-title">Abu Dhabi MICE Movement Control Room</span><small>Related framework on Ahmed Quality Ops.</small><span class="reader-next-action">Read related article <span aria-hidden="true">↗</span></span></a><a class="reader-next-card" href="/articles/tourism-transport-dispatch-ai-prompts/index.html"><span class="reader-next-index">03</span><span class="reader-next-title">Tourism Transport &amp; Dispatch AI Toolkit</span><small>Related framework on Ahmed Quality Ops.</small><span class="reader-next-action">Read related article <span aria-hidden="true">↗</span></span></a><a class="reader-next-card" href="/articles/tourism-ai-operations-playbook/index.html"><span class="reader-next-index">04</span><span class="reader-next-title">Tourism AI Operations Playbook</span><small>Related framework on Ahmed Quality Ops.</small><span class="reader-next-action">Read related article <span aria-hidden="true">↗</span></span></a></div></section>
 <section class="reader-next-block" aria-labelledby="series-navigation-title"><header><span class="reader-next-eyebrow">Hotel AI series</span><h2 id="series-navigation-title">Continue the playbook</h2></header><div class="reader-next-grid"><a class="reader-next-card" href="/articles/hotel-front-office-ai-toolkit/index.html"><span class="reader-next-index">PREV</span><span class="reader-next-title">Front Office AI Toolkit</span><small>10 professional AI prompts for arrivals, check-in, room readiness, guest requests, VIPs, checkout and front-desk control.</small><span class="reader-next-action">Read article <span aria-hidden="true">→</span></span></a><a class="reader-next-card" href="/articles/hotel-apartment-extended-stay-ai-toolkit/index.html"><span class="reader-next-index">NEXT</span><span class="reader-next-title">Hotel Apartment &amp; Extended-Stay AI Toolkit</span><small>10 professional AI prompts for long-stay readiness, resident service, housekeeping, utilities, defects and move-in/move-out control.</small><span class="reader-next-action">Read article <span aria-hidden="true">→</span></span></a></div><a class="reader-next-library" href="/series/hotel-ai-operations-playbook/index.html">See the complete 26-article roadmap <span>Open series hub →</span></a></section>
 </div></div><section class="article-feedback" id="article-feedback" data-article-feedback data-article-slug="hotel-reservations-ai-toolkit" data-article-title="Reservations AI Toolkit" aria-labelledby="article-feedback-title"><div class="article-feedback-intro"><div><span class="eyebrow">Quick feedback</span><h2 id="article-feedback-title">Was this article helpful?</h2></div><fieldset class="helpfulness-choice"><legend class="sr-only">Was this article helpful?</legend><button type="button" data-feedback-value="helpful" aria-pressed="false"><span aria-hidden="true">✓</span> Yes</button><button type="button" data-feedback-value="not-helpful" aria-pressed="false"><span aria-hidden="true">×</span> Not yet</button></fieldset></div><div class="feedback-reasons" data-feedback-reasons hidden><p>What best describes your experience?</p><div role="group" aria-label="Optional reason"><button type="button" data-feedback-reason="clear">Clear explanation</button><button type="button" data-feedback-reason="practical">Practical framework</button><button type="button" data-feedback-reason="examples">Needs more examples</button><button type="button" data-feedback-reason="complex">Too complex</button><button type="button" data-feedback-reason="unclear">Something is unclear</button></div></div><p class="feedback-status" data-feedback-status aria-live="polite"></p><details class="article-share"><summary>Share this article</summary><div class="article-share-actions"><button type="button" data-share="native" hidden>Share…</button><button type="button" data-share="linkedin">LinkedIn</button><button type="button" data-share="facebook">Facebook</button><button type="button" data-share="whatsapp">WhatsApp</button><button type="button" data-share="email">Email</button><button type="button" data-share="copy">Copy URL</button></div><p class="share-status" data-share-status aria-live="polite"></p></details><details class="feedback-privacy"><summary>Privacy</summary><small>Your choice is stored in this browser. If optional analytics is enabled, an anonymous interaction event may also be recorded. <a href="/privacy/index.html">Privacy details</a>.</small></details></section></main>
