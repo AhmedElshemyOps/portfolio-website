@@ -233,33 +233,7 @@
 </ol>
 <p>If those six conditions are present, the prompt is usually far more operationally useful than a long “expert persona” instruction filled with decorative language.</p>
 <hr>
-<h2 id="10-the-first-10-foundation-prompts">10. The first 10 foundation prompts</h2>
-<p>The prompts below are the controls used to design, improve and approve the remaining 250 prompts in the playbook. They are intentionally cross-functional.</p>
-<h3>Prompt 01 — General Hotel Prompt Builder</h3>
-<p><strong>Purpose:</strong> Turn a rough hotel request into a controlled HOTEL-format prompt.</p>
-<p><strong>Risk level:</strong> Medium  </p>
-<p><strong>Human approval required:</strong> Yes</p>
-<p><strong>Required inputs</strong></p>
-<ul>
-<li>rough request</li>
-<li>department</li>
-<li>property type</li>
-<li>audience</li>
-<li>verified facts</li>
-<li>constraints</li>
-<li>deadline</li>
-<li>approver</li>
-</ul>
-<p><strong>Expected outputs</strong></p>
-<ul>
-<li>improved prompt</li>
-<li>missing information</li>
-<li>risk flags</li>
-<li>source-of-truth plan</li>
-<li>approval point</li>
-</ul>
-<p><strong>Copy-ready HOTEL prompt</strong></p>
-<pre class="prompt-code"><code>ROLE
+<section class="prompt-intro"><div class="section-kicker">Copy-ready working library</div><h2 id="ten-professional-prompt-templates"><a class="heading-anchor" href="#ten-professional-prompt-templates" aria-label="Link to Ten professional prompt templates">#</a>Ten professional prompt templates</h2><p>Each prompt contains editable placeholders and a built-in stop rule for missing information. Copy it, replace the placeholders with approved hotel facts and keep the verification and human-approval sections intact. The templates are intentionally detailed because omitted operational detail is often where a hospitality failure begins.</p></section><section class="prompt-section" id="prompt-1-general-hotel-prompt-builder"><div class="prompt-heading"><span class="prompt-index">Prompt 01</span><div><h2 id="general-hotel-prompt-builder"><a class="heading-anchor" href="#general-hotel-prompt-builder" aria-label="Link to General Hotel Prompt Builder">#</a>General Hotel Prompt Builder</h2><p>Turn a rough hotel request into a controlled HOTEL-format prompt.</p></div></div><div class="prompt-use-grid"><div><h3 id="when-to-use-it-1"><a class="heading-anchor" href="#when-to-use-it-1" aria-label="Link to When to use it">#</a>When to use it</h3><p>Turn a rough hotel request into a controlled HOTEL-format prompt.</p><p class="scenario"><strong>Hotel control:</strong> Use only with approved property information and a named human owner.</p></div><div><h3 id="required-inputs-1"><a class="heading-anchor" href="#required-inputs-1" aria-label="Link to Required inputs">#</a>Required inputs</h3><ul class="compact-list"><li>rough request</li><li>department</li><li>property type</li><li>audience</li><li>verified facts</li><li>constraints</li><li>deadline</li><li>approver</li></ul></div><div><h3 id="expected-outputs-1"><a class="heading-anchor" href="#expected-outputs-1" aria-label="Link to Expected outputs">#</a>Expected outputs</h3><ul class="compact-list"><li>improved prompt</li><li>missing information</li><li>risk flags</li><li>source-of-truth plan</li><li>approval point</li></ul></div></div><div class="prompt-card" data-prompt-card=""><div class="prompt-card-top"><div><span class="copy-label">Copy-and-Paste Template</span><h3 id="general-hotel-prompt-builder-template"><a class="heading-anchor" href="#general-hotel-prompt-builder-template" aria-label="Link to General Hotel Prompt Builder template">#</a>General Hotel Prompt Builder</h3></div><button aria-describedby="prompt-1-general-hotel-prompt-builder-status" class="copy-prompt" data-copy-target="prompt-1-general-hotel-prompt-builder-text" type="button">Copy Prompt</button></div><pre id="prompt-1-general-hotel-prompt-builder-text" tabindex="0">ROLE
 Act as a senior hotel operations prompt architect supporting professional hotel and serviced-apartment teams.
 
 H — HOSPITALITY ROLE &amp; HUMAN OWNER
@@ -285,31 +259,7 @@ Where inputs conflict, show the conflict and proposed verification action.
 L — LIMITS, PRIVACY &amp; LEADERSHIP APPROVAL
 Do not add operational facts that were not supplied.
 Do not include unnecessary personal data, payment data, credentials, security-sensitive information, confidential contracts or employee records.
-The output remains a draft until the accountable human owner verifies it against approved sources and authorizes any operational action.</code></pre>
-<p><strong>Trainer note:</strong> Test the prompt with one normal case and one missing/contradictory-information case before approving it for repeat use.</p>
-<h3>Prompt 02 — Prompt Improvement and Rewriting</h3>
-<p><strong>Purpose:</strong> Diagnose and rebuild an existing hotel prompt so it is specific, reviewable and safe.</p>
-<p><strong>Risk level:</strong> Medium  </p>
-<p><strong>Human approval required:</strong> Yes</p>
-<p><strong>Required inputs</strong></p>
-<ul>
-<li>original prompt</li>
-<li>intended task</li>
-<li>known failure</li>
-<li>approved inputs</li>
-<li>prohibited data</li>
-<li>desired output</li>
-</ul>
-<p><strong>Expected outputs</strong></p>
-<ul>
-<li>weakness analysis</li>
-<li>revised prompt</li>
-<li>change log</li>
-<li>test cases</li>
-<li>reviewer checklist</li>
-</ul>
-<p><strong>Copy-ready HOTEL prompt</strong></p>
-<pre class="prompt-code"><code>ROLE
+The output remains a draft until the accountable human owner verifies it against approved sources and authorizes any operational action.</pre><p aria-live="polite" class="copy-status" id="prompt-1-general-hotel-prompt-builder-status" role="status"></p></div><div class="trainer-note"><strong>Professional hotel trainer’s note</strong><p>Test the prompt with one normal case and one missing/contradictory-information case before approving it for repeat use.</p></div></section><section class="prompt-section" id="prompt-2-prompt-improvement-and-rewriting"><div class="prompt-heading"><span class="prompt-index">Prompt 02</span><div><h2 id="prompt-improvement-and-rewriting"><a class="heading-anchor" href="#prompt-improvement-and-rewriting" aria-label="Link to Prompt Improvement and Rewriting">#</a>Prompt Improvement and Rewriting</h2><p>Diagnose and rebuild an existing hotel prompt so it is specific, reviewable and safe.</p></div></div><div class="prompt-use-grid"><div><h3 id="when-to-use-it-2"><a class="heading-anchor" href="#when-to-use-it-2" aria-label="Link to When to use it">#</a>When to use it</h3><p>Diagnose and rebuild an existing hotel prompt so it is specific, reviewable and safe.</p><p class="scenario"><strong>Hotel control:</strong> Use only with approved property information and a named human owner.</p></div><div><h3 id="required-inputs-2"><a class="heading-anchor" href="#required-inputs-2" aria-label="Link to Required inputs">#</a>Required inputs</h3><ul class="compact-list"><li>original prompt</li><li>intended task</li><li>known failure</li><li>approved inputs</li><li>prohibited data</li><li>desired output</li></ul></div><div><h3 id="expected-outputs-2"><a class="heading-anchor" href="#expected-outputs-2" aria-label="Link to Expected outputs">#</a>Expected outputs</h3><ul class="compact-list"><li>weakness analysis</li><li>revised prompt</li><li>change log</li><li>test cases</li><li>reviewer checklist</li></ul></div></div><div class="prompt-card" data-prompt-card=""><div class="prompt-card-top"><div><span class="copy-label">Copy-and-Paste Template</span><h3 id="prompt-improvement-and-rewriting-template"><a class="heading-anchor" href="#prompt-improvement-and-rewriting-template" aria-label="Link to Prompt Improvement and Rewriting template">#</a>Prompt Improvement and Rewriting</h3></div><button aria-describedby="prompt-2-prompt-improvement-and-rewriting-status" class="copy-prompt" data-copy-target="prompt-2-prompt-improvement-and-rewriting-text" type="button">Copy Prompt</button></div><pre id="prompt-2-prompt-improvement-and-rewriting-text" tabindex="0">ROLE
 Act as a senior hotel operations prompt architect supporting professional hotel and serviced-apartment teams.
 
 H — HOSPITALITY ROLE &amp; HUMAN OWNER
@@ -335,29 +285,7 @@ Where inputs conflict, show the conflict and proposed verification action.
 L — LIMITS, PRIVACY &amp; LEADERSHIP APPROVAL
 Preserve the legitimate objective while removing ambiguity and unsafe authority.
 Do not include unnecessary personal data, payment data, credentials, security-sensitive information, confidential contracts or employee records.
-The output remains a draft until the accountable human owner verifies it against approved sources and authorizes any operational action.</code></pre>
-<p><strong>Trainer note:</strong> Test the prompt with one normal case and one missing/contradictory-information case before approving it for repeat use.</p>
-<h3>Prompt 03 — Missing-Information Detection</h3>
-<p><strong>Purpose:</strong> Identify missing inputs that could affect service, safety, cost, timing or authority.</p>
-<p><strong>Risk level:</strong> Medium  </p>
-<p><strong>Human approval required:</strong> Yes</p>
-<p><strong>Required inputs</strong></p>
-<ul>
-<li>draft request</li>
-<li>confirmed inputs</li>
-<li>source systems</li>
-<li>decision required</li>
-<li>deadline</li>
-</ul>
-<p><strong>Expected outputs</strong></p>
-<ul>
-<li>critical missing data</li>
-<li>important missing data</li>
-<li>optional enhancements</li>
-<li>owner/source for each item</li>
-</ul>
-<p><strong>Copy-ready HOTEL prompt</strong></p>
-<pre class="prompt-code"><code>ROLE
+The output remains a draft until the accountable human owner verifies it against approved sources and authorizes any operational action.</pre><p aria-live="polite" class="copy-status" id="prompt-2-prompt-improvement-and-rewriting-status" role="status"></p></div><div class="trainer-note"><strong>Professional hotel trainer’s note</strong><p>Test the prompt with one normal case and one missing/contradictory-information case before approving it for repeat use.</p></div></section><section class="prompt-section" id="prompt-3-missing-information-detection"><div class="prompt-heading"><span class="prompt-index">Prompt 03</span><div><h2 id="missing-information-detection"><a class="heading-anchor" href="#missing-information-detection" aria-label="Link to Missing-Information Detection">#</a>Missing-Information Detection</h2><p>Identify missing inputs that could affect service, safety, cost, timing or authority.</p></div></div><div class="prompt-use-grid"><div><h3 id="when-to-use-it-3"><a class="heading-anchor" href="#when-to-use-it-3" aria-label="Link to When to use it">#</a>When to use it</h3><p>Identify missing inputs that could affect service, safety, cost, timing or authority.</p><p class="scenario"><strong>Hotel control:</strong> Use only with approved property information and a named human owner.</p></div><div><h3 id="required-inputs-3"><a class="heading-anchor" href="#required-inputs-3" aria-label="Link to Required inputs">#</a>Required inputs</h3><ul class="compact-list"><li>draft request</li><li>confirmed inputs</li><li>source systems</li><li>decision required</li><li>deadline</li></ul></div><div><h3 id="expected-outputs-3"><a class="heading-anchor" href="#expected-outputs-3" aria-label="Link to Expected outputs">#</a>Expected outputs</h3><ul class="compact-list"><li>critical missing data</li><li>important missing data</li><li>optional enhancements</li><li>owner/source for each item</li></ul></div></div><div class="prompt-card" data-prompt-card=""><div class="prompt-card-top"><div><span class="copy-label">Copy-and-Paste Template</span><h3 id="missing-information-detection-template"><a class="heading-anchor" href="#missing-information-detection-template" aria-label="Link to Missing-Information Detection template">#</a>Missing-Information Detection</h3></div><button aria-describedby="prompt-3-missing-information-detection-status" class="copy-prompt" data-copy-target="prompt-3-missing-information-detection-text" type="button">Copy Prompt</button></div><pre id="prompt-3-missing-information-detection-text" tabindex="0">ROLE
 Act as a senior hotel operations prompt architect supporting professional hotel and serviced-apartment teams.
 
 H — HOSPITALITY ROLE &amp; HUMAN OWNER
@@ -383,32 +311,7 @@ Where inputs conflict, show the conflict and proposed verification action.
 L — LIMITS, PRIVACY &amp; LEADERSHIP APPROVAL
 Do not solve the business task; stop after the information request and prioritization.
 Do not include unnecessary personal data, payment data, credentials, security-sensitive information, confidential contracts or employee records.
-The output remains a draft until the accountable human owner verifies it against approved sources and authorizes any operational action.</code></pre>
-<p><strong>Trainer note:</strong> Test the prompt with one normal case and one missing/contradictory-information case before approving it for repeat use.</p>
-<h3>Prompt 04 — Hotel Operating Context Builder</h3>
-<p><strong>Purpose:</strong> Convert scattered notes into a precise hotel operating context.</p>
-<p><strong>Risk level:</strong> Medium  </p>
-<p><strong>Human approval required:</strong> Yes</p>
-<p><strong>Required inputs</strong></p>
-<ul>
-<li>property type</li>
-<li>location</li>
-<li>department</li>
-<li>guest journey stage</li>
-<li>occupancy context</li>
-<li>service window</li>
-<li>dependencies</li>
-<li>known exceptions</li>
-</ul>
-<p><strong>Expected outputs</strong></p>
-<ul>
-<li>context statement</li>
-<li>boundary conditions</li>
-<li>dependencies</li>
-<li>assumptions requiring approval</li>
-</ul>
-<p><strong>Copy-ready HOTEL prompt</strong></p>
-<pre class="prompt-code"><code>ROLE
+The output remains a draft until the accountable human owner verifies it against approved sources and authorizes any operational action.</pre><p aria-live="polite" class="copy-status" id="prompt-3-missing-information-detection-status" role="status"></p></div><div class="trainer-note"><strong>Professional hotel trainer’s note</strong><p>Test the prompt with one normal case and one missing/contradictory-information case before approving it for repeat use.</p></div></section><section class="prompt-section" id="prompt-4-hotel-operating-context-builder"><div class="prompt-heading"><span class="prompt-index">Prompt 04</span><div><h2 id="hotel-operating-context-builder"><a class="heading-anchor" href="#hotel-operating-context-builder" aria-label="Link to Hotel Operating Context Builder">#</a>Hotel Operating Context Builder</h2><p>Convert scattered notes into a precise hotel operating context.</p></div></div><div class="prompt-use-grid"><div><h3 id="when-to-use-it-4"><a class="heading-anchor" href="#when-to-use-it-4" aria-label="Link to When to use it">#</a>When to use it</h3><p>Convert scattered notes into a precise hotel operating context.</p><p class="scenario"><strong>Hotel control:</strong> Use only with approved property information and a named human owner.</p></div><div><h3 id="required-inputs-4"><a class="heading-anchor" href="#required-inputs-4" aria-label="Link to Required inputs">#</a>Required inputs</h3><ul class="compact-list"><li>property type</li><li>location</li><li>department</li><li>guest journey stage</li><li>occupancy context</li><li>service window</li><li>dependencies</li><li>known exceptions</li></ul></div><div><h3 id="expected-outputs-4"><a class="heading-anchor" href="#expected-outputs-4" aria-label="Link to Expected outputs">#</a>Expected outputs</h3><ul class="compact-list"><li>context statement</li><li>boundary conditions</li><li>dependencies</li><li>assumptions requiring approval</li></ul></div></div><div class="prompt-card" data-prompt-card=""><div class="prompt-card-top"><div><span class="copy-label">Copy-and-Paste Template</span><h3 id="hotel-operating-context-builder-template"><a class="heading-anchor" href="#hotel-operating-context-builder-template" aria-label="Link to Hotel Operating Context Builder template">#</a>Hotel Operating Context Builder</h3></div><button aria-describedby="prompt-4-hotel-operating-context-builder-status" class="copy-prompt" data-copy-target="prompt-4-hotel-operating-context-builder-text" type="button">Copy Prompt</button></div><pre id="prompt-4-hotel-operating-context-builder-text" tabindex="0">ROLE
 Act as a senior hotel operations prompt architect supporting professional hotel and serviced-apartment teams.
 
 H — HOSPITALITY ROLE &amp; HUMAN OWNER
@@ -434,31 +337,7 @@ Where inputs conflict, show the conflict and proposed verification action.
 L — LIMITS, PRIVACY &amp; LEADERSHIP APPROVAL
 Do not present changing property conditions as confirmed unless sourced.
 Do not include unnecessary personal data, payment data, credentials, security-sensitive information, confidential contracts or employee records.
-The output remains a draft until the accountable human owner verifies it against approved sources and authorizes any operational action.</code></pre>
-<p><strong>Trainer note:</strong> Test the prompt with one normal case and one missing/contradictory-information case before approving it for repeat use.</p>
-<h3>Prompt 05 — Guest and Stakeholder Profile Definition</h3>
-<p><strong>Purpose:</strong> Create an operationally useful audience profile without stereotypes or unnecessary personal data.</p>
-<p><strong>Risk level:</strong> Medium  </p>
-<p><strong>Human approval required:</strong> Yes</p>
-<p><strong>Required inputs</strong></p>
-<ul>
-<li>guest/stakeholder type</li>
-<li>language</li>
-<li>service level</li>
-<li>needs</li>
-<li>accessibility requirements</li>
-<li>trip purpose</li>
-<li>communication channel</li>
-</ul>
-<p><strong>Expected outputs</strong></p>
-<ul>
-<li>needs summary</li>
-<li>communication implications</li>
-<li>operational implications</li>
-<li>unanswered questions</li>
-</ul>
-<p><strong>Copy-ready HOTEL prompt</strong></p>
-<pre class="prompt-code"><code>ROLE
+The output remains a draft until the accountable human owner verifies it against approved sources and authorizes any operational action.</pre><p aria-live="polite" class="copy-status" id="prompt-4-hotel-operating-context-builder-status" role="status"></p></div><div class="trainer-note"><strong>Professional hotel trainer’s note</strong><p>Test the prompt with one normal case and one missing/contradictory-information case before approving it for repeat use.</p></div></section><section class="prompt-section" id="prompt-5-guest-and-stakeholder-profile-definition"><div class="prompt-heading"><span class="prompt-index">Prompt 05</span><div><h2 id="guest-and-stakeholder-profile-definition"><a class="heading-anchor" href="#guest-and-stakeholder-profile-definition" aria-label="Link to Guest and Stakeholder Profile Definition">#</a>Guest and Stakeholder Profile Definition</h2><p>Create an operationally useful audience profile without stereotypes or unnecessary personal data.</p></div></div><div class="prompt-use-grid"><div><h3 id="when-to-use-it-5"><a class="heading-anchor" href="#when-to-use-it-5" aria-label="Link to When to use it">#</a>When to use it</h3><p>Create an operationally useful audience profile without stereotypes or unnecessary personal data.</p><p class="scenario"><strong>Hotel control:</strong> Use only with approved property information and a named human owner.</p></div><div><h3 id="required-inputs-5"><a class="heading-anchor" href="#required-inputs-5" aria-label="Link to Required inputs">#</a>Required inputs</h3><ul class="compact-list"><li>guest/stakeholder type</li><li>language</li><li>service level</li><li>needs</li><li>accessibility requirements</li><li>trip purpose</li><li>communication channel</li></ul></div><div><h3 id="expected-outputs-5"><a class="heading-anchor" href="#expected-outputs-5" aria-label="Link to Expected outputs">#</a>Expected outputs</h3><ul class="compact-list"><li>needs summary</li><li>communication implications</li><li>operational implications</li><li>unanswered questions</li></ul></div></div><div class="prompt-card" data-prompt-card=""><div class="prompt-card-top"><div><span class="copy-label">Copy-and-Paste Template</span><h3 id="guest-and-stakeholder-profile-definition-template"><a class="heading-anchor" href="#guest-and-stakeholder-profile-definition-template" aria-label="Link to Guest and Stakeholder Profile Definition template">#</a>Guest and Stakeholder Profile Definition</h3></div><button aria-describedby="prompt-5-guest-and-stakeholder-profile-definition-status" class="copy-prompt" data-copy-target="prompt-5-guest-and-stakeholder-profile-definition-text" type="button">Copy Prompt</button></div><pre id="prompt-5-guest-and-stakeholder-profile-definition-text" tabindex="0">ROLE
 Act as a senior hotel operations prompt architect supporting professional hotel and serviced-apartment teams.
 
 H — HOSPITALITY ROLE &amp; HUMAN OWNER
@@ -484,32 +363,7 @@ Where inputs conflict, show the conflict and proposed verification action.
 L — LIMITS, PRIVACY &amp; LEADERSHIP APPROVAL
 Avoid assumptions based on nationality, age, disability, religion or spending level.
 Do not include unnecessary personal data, payment data, credentials, security-sensitive information, confidential contracts or employee records.
-The output remains a draft until the accountable human owner verifies it against approved sources and authorizes any operational action.</code></pre>
-<p><strong>Trainer note:</strong> Test the prompt with one normal case and one missing/contradictory-information case before approving it for repeat use.</p>
-<h3>Prompt 06 — Output-Format Specification</h3>
-<p><strong>Purpose:</strong> Design the exact output structure an AI should follow for a hotel workflow.</p>
-<p><strong>Risk level:</strong> Medium  </p>
-<p><strong>Human approval required:</strong> Yes</p>
-<p><strong>Required inputs</strong></p>
-<ul>
-<li>business task</li>
-<li>receiving role</li>
-<li>channel</li>
-<li>required sections</li>
-<li>fields</li>
-<li>priority logic</li>
-<li>examples</li>
-</ul>
-<p><strong>Expected outputs</strong></p>
-<ul>
-<li>numbered output specification</li>
-<li>mandatory fields</li>
-<li>optional fields</li>
-<li>validation rules</li>
-<li>rejected-output conditions</li>
-</ul>
-<p><strong>Copy-ready HOTEL prompt</strong></p>
-<pre class="prompt-code"><code>ROLE
+The output remains a draft until the accountable human owner verifies it against approved sources and authorizes any operational action.</pre><p aria-live="polite" class="copy-status" id="prompt-5-guest-and-stakeholder-profile-definition-status" role="status"></p></div><div class="trainer-note"><strong>Professional hotel trainer’s note</strong><p>Test the prompt with one normal case and one missing/contradictory-information case before approving it for repeat use.</p></div></section><section class="prompt-section" id="prompt-6-output-format-specification"><div class="prompt-heading"><span class="prompt-index">Prompt 06</span><div><h2 id="output-format-specification"><a class="heading-anchor" href="#output-format-specification" aria-label="Link to Output-Format Specification">#</a>Output-Format Specification</h2><p>Design the exact output structure an AI should follow for a hotel workflow.</p></div></div><div class="prompt-use-grid"><div><h3 id="when-to-use-it-6"><a class="heading-anchor" href="#when-to-use-it-6" aria-label="Link to When to use it">#</a>When to use it</h3><p>Design the exact output structure an AI should follow for a hotel workflow.</p><p class="scenario"><strong>Hotel control:</strong> Use only with approved property information and a named human owner.</p></div><div><h3 id="required-inputs-6"><a class="heading-anchor" href="#required-inputs-6" aria-label="Link to Required inputs">#</a>Required inputs</h3><ul class="compact-list"><li>business task</li><li>receiving role</li><li>channel</li><li>required sections</li><li>fields</li><li>priority logic</li><li>examples</li></ul></div><div><h3 id="expected-outputs-6"><a class="heading-anchor" href="#expected-outputs-6" aria-label="Link to Expected outputs">#</a>Expected outputs</h3><ul class="compact-list"><li>numbered output specification</li><li>mandatory fields</li><li>optional fields</li><li>validation rules</li><li>rejected-output conditions</li></ul></div></div><div class="prompt-card" data-prompt-card=""><div class="prompt-card-top"><div><span class="copy-label">Copy-and-Paste Template</span><h3 id="output-format-specification-template"><a class="heading-anchor" href="#output-format-specification-template" aria-label="Link to Output-Format Specification template">#</a>Output-Format Specification</h3></div><button aria-describedby="prompt-6-output-format-specification-status" class="copy-prompt" data-copy-target="prompt-6-output-format-specification-text" type="button">Copy Prompt</button></div><pre id="prompt-6-output-format-specification-text" tabindex="0">ROLE
 Act as a senior hotel operations prompt architect supporting professional hotel and serviced-apartment teams.
 
 H — HOSPITALITY ROLE &amp; HUMAN OWNER
@@ -535,31 +389,7 @@ Where inputs conflict, show the conflict and proposed verification action.
 L — LIMITS, PRIVACY &amp; LEADERSHIP APPROVAL
 Do not write the final business content; define the controlled format.
 Do not include unnecessary personal data, payment data, credentials, security-sensitive information, confidential contracts or employee records.
-The output remains a draft until the accountable human owner verifies it against approved sources and authorizes any operational action.</code></pre>
-<p><strong>Trainer note:</strong> Test the prompt with one normal case and one missing/contradictory-information case before approving it for repeat use.</p>
-<h3>Prompt 07 — Source-of-Truth and Evidence Planner</h3>
-<p><strong>Purpose:</strong> Define which hotel systems and documents must support a task.</p>
-<p><strong>Risk level:</strong> Medium  </p>
-<p><strong>Human approval required:</strong> Yes</p>
-<p><strong>Required inputs</strong></p>
-<ul>
-<li>task</li>
-<li>decisions</li>
-<li>candidate systems</li>
-<li>document owners</li>
-<li>data freshness</li>
-<li>approval rules</li>
-</ul>
-<p><strong>Expected outputs</strong></p>
-<ul>
-<li>source hierarchy</li>
-<li>evidence gaps</li>
-<li>conflict rules</li>
-<li>verification actions</li>
-<li>data freshness requirements</li>
-</ul>
-<p><strong>Copy-ready HOTEL prompt</strong></p>
-<pre class="prompt-code"><code>ROLE
+The output remains a draft until the accountable human owner verifies it against approved sources and authorizes any operational action.</pre><p aria-live="polite" class="copy-status" id="prompt-6-output-format-specification-status" role="status"></p></div><div class="trainer-note"><strong>Professional hotel trainer’s note</strong><p>Test the prompt with one normal case and one missing/contradictory-information case before approving it for repeat use.</p></div></section><section class="prompt-section" id="prompt-7-source-of-truth-and-evidence-planner"><div class="prompt-heading"><span class="prompt-index">Prompt 07</span><div><h2 id="source-of-truth-and-evidence-planner"><a class="heading-anchor" href="#source-of-truth-and-evidence-planner" aria-label="Link to Source-of-Truth and Evidence Planner">#</a>Source-of-Truth and Evidence Planner</h2><p>Define which hotel systems and documents must support a task.</p></div></div><div class="prompt-use-grid"><div><h3 id="when-to-use-it-7"><a class="heading-anchor" href="#when-to-use-it-7" aria-label="Link to When to use it">#</a>When to use it</h3><p>Define which hotel systems and documents must support a task.</p><p class="scenario"><strong>Hotel control:</strong> Use only with approved property information and a named human owner.</p></div><div><h3 id="required-inputs-7"><a class="heading-anchor" href="#required-inputs-7" aria-label="Link to Required inputs">#</a>Required inputs</h3><ul class="compact-list"><li>task</li><li>decisions</li><li>candidate systems</li><li>document owners</li><li>data freshness</li><li>approval rules</li></ul></div><div><h3 id="expected-outputs-7"><a class="heading-anchor" href="#expected-outputs-7" aria-label="Link to Expected outputs">#</a>Expected outputs</h3><ul class="compact-list"><li>source hierarchy</li><li>evidence gaps</li><li>conflict rules</li><li>verification actions</li><li>data freshness requirements</li></ul></div></div><div class="prompt-card" data-prompt-card=""><div class="prompt-card-top"><div><span class="copy-label">Copy-and-Paste Template</span><h3 id="source-of-truth-and-evidence-planner-template"><a class="heading-anchor" href="#source-of-truth-and-evidence-planner-template" aria-label="Link to Source-of-Truth and Evidence Planner template">#</a>Source-of-Truth and Evidence Planner</h3></div><button aria-describedby="prompt-7-source-of-truth-and-evidence-planner-status" class="copy-prompt" data-copy-target="prompt-7-source-of-truth-and-evidence-planner-text" type="button">Copy Prompt</button></div><pre id="prompt-7-source-of-truth-and-evidence-planner-text" tabindex="0">ROLE
 Act as a senior hotel operations prompt architect supporting professional hotel and serviced-apartment teams.
 
 H — HOSPITALITY ROLE &amp; HUMAN OWNER
@@ -585,31 +415,7 @@ Where inputs conflict, show the conflict and proposed verification action.
 L — LIMITS, PRIVACY &amp; LEADERSHIP APPROVAL
 Do not treat emails or chat messages as authoritative when a controlled system exists.
 Do not include unnecessary personal data, payment data, credentials, security-sensitive information, confidential contracts or employee records.
-The output remains a draft until the accountable human owner verifies it against approved sources and authorizes any operational action.</code></pre>
-<p><strong>Trainer note:</strong> Test the prompt with one normal case and one missing/contradictory-information case before approving it for repeat use.</p>
-<h3>Prompt 08 — Exception and Escalation Prompt Builder</h3>
-<p><strong>Purpose:</strong> Add explicit exception handling and escalation logic to an AI-supported workflow.</p>
-<p><strong>Risk level:</strong> Medium  </p>
-<p><strong>Human approval required:</strong> Yes</p>
-<p><strong>Required inputs</strong></p>
-<ul>
-<li>normal process</li>
-<li>known exceptions</li>
-<li>thresholds</li>
-<li>roles</li>
-<li>authority limits</li>
-<li>escalation contacts by role</li>
-</ul>
-<p><strong>Expected outputs</strong></p>
-<ul>
-<li>exception categories</li>
-<li>trigger conditions</li>
-<li>stabilization actions</li>
-<li>escalation path</li>
-<li>evidence record</li>
-</ul>
-<p><strong>Copy-ready HOTEL prompt</strong></p>
-<pre class="prompt-code"><code>ROLE
+The output remains a draft until the accountable human owner verifies it against approved sources and authorizes any operational action.</pre><p aria-live="polite" class="copy-status" id="prompt-7-source-of-truth-and-evidence-planner-status" role="status"></p></div><div class="trainer-note"><strong>Professional hotel trainer’s note</strong><p>Test the prompt with one normal case and one missing/contradictory-information case before approving it for repeat use.</p></div></section><section class="prompt-section" id="prompt-8-exception-and-escalation-prompt-builder"><div class="prompt-heading"><span class="prompt-index">Prompt 08</span><div><h2 id="exception-and-escalation-prompt-builder"><a class="heading-anchor" href="#exception-and-escalation-prompt-builder" aria-label="Link to Exception and Escalation Prompt Builder">#</a>Exception and Escalation Prompt Builder</h2><p>Add explicit exception handling and escalation logic to an AI-supported workflow.</p></div></div><div class="prompt-use-grid"><div><h3 id="when-to-use-it-8"><a class="heading-anchor" href="#when-to-use-it-8" aria-label="Link to When to use it">#</a>When to use it</h3><p>Add explicit exception handling and escalation logic to an AI-supported workflow.</p><p class="scenario"><strong>Hotel control:</strong> Use only with approved property information and a named human owner.</p></div><div><h3 id="required-inputs-8"><a class="heading-anchor" href="#required-inputs-8" aria-label="Link to Required inputs">#</a>Required inputs</h3><ul class="compact-list"><li>normal process</li><li>known exceptions</li><li>thresholds</li><li>roles</li><li>authority limits</li><li>escalation contacts by role</li></ul></div><div><h3 id="expected-outputs-8"><a class="heading-anchor" href="#expected-outputs-8" aria-label="Link to Expected outputs">#</a>Expected outputs</h3><ul class="compact-list"><li>exception categories</li><li>trigger conditions</li><li>stabilization actions</li><li>escalation path</li><li>evidence record</li></ul></div></div><div class="prompt-card" data-prompt-card=""><div class="prompt-card-top"><div><span class="copy-label">Copy-and-Paste Template</span><h3 id="exception-and-escalation-prompt-builder-template"><a class="heading-anchor" href="#exception-and-escalation-prompt-builder-template" aria-label="Link to Exception and Escalation Prompt Builder template">#</a>Exception and Escalation Prompt Builder</h3></div><button aria-describedby="prompt-8-exception-and-escalation-prompt-builder-status" class="copy-prompt" data-copy-target="prompt-8-exception-and-escalation-prompt-builder-text" type="button">Copy Prompt</button></div><pre id="prompt-8-exception-and-escalation-prompt-builder-text" tabindex="0">ROLE
 Act as a senior hotel operations prompt architect supporting professional hotel and serviced-apartment teams.
 
 H — HOSPITALITY ROLE &amp; HUMAN OWNER
@@ -635,32 +441,7 @@ Where inputs conflict, show the conflict and proposed verification action.
 L — LIMITS, PRIVACY &amp; LEADERSHIP APPROVAL
 Do not invent escalation contacts or authority limits.
 Do not include unnecessary personal data, payment data, credentials, security-sensitive information, confidential contracts or employee records.
-The output remains a draft until the accountable human owner verifies it against approved sources and authorizes any operational action.</code></pre>
-<p><strong>Trainer note:</strong> Test the prompt with one normal case and one missing/contradictory-information case before approving it for repeat use.</p>
-<h3>Prompt 09 — Prompt Risk and Authority Classifier</h3>
-<p><strong>Purpose:</strong> Classify an AI hotel use case by operational risk and required human authority.</p>
-<p><strong>Risk level:</strong> Medium  </p>
-<p><strong>Human approval required:</strong> Yes</p>
-<p><strong>Required inputs</strong></p>
-<ul>
-<li>use case</li>
-<li>data involved</li>
-<li>guest impact</li>
-<li>financial impact</li>
-<li>safety impact</li>
-<li>decision authority</li>
-</ul>
-<p><strong>Expected outputs</strong></p>
-<ul>
-<li>risk level</li>
-<li>reason</li>
-<li>prohibited actions</li>
-<li>minimum reviewer</li>
-<li>approval requirement</li>
-<li>controls</li>
-</ul>
-<p><strong>Copy-ready HOTEL prompt</strong></p>
-<pre class="prompt-code"><code>ROLE
+The output remains a draft until the accountable human owner verifies it against approved sources and authorizes any operational action.</pre><p aria-live="polite" class="copy-status" id="prompt-8-exception-and-escalation-prompt-builder-status" role="status"></p></div><div class="trainer-note"><strong>Professional hotel trainer’s note</strong><p>Test the prompt with one normal case and one missing/contradictory-information case before approving it for repeat use.</p></div></section><section class="prompt-section" id="prompt-9-prompt-risk-and-authority-classifier"><div class="prompt-heading"><span class="prompt-index">Prompt 09</span><div><h2 id="prompt-risk-and-authority-classifier"><a class="heading-anchor" href="#prompt-risk-and-authority-classifier" aria-label="Link to Prompt Risk and Authority Classifier">#</a>Prompt Risk and Authority Classifier</h2><p>Classify an AI hotel use case by operational risk and required human authority.</p></div></div><div class="prompt-use-grid"><div><h3 id="when-to-use-it-9"><a class="heading-anchor" href="#when-to-use-it-9" aria-label="Link to When to use it">#</a>When to use it</h3><p>Classify an AI hotel use case by operational risk and required human authority.</p><p class="scenario"><strong>Hotel control:</strong> Use only with approved property information and a named human owner.</p></div><div><h3 id="required-inputs-9"><a class="heading-anchor" href="#required-inputs-9" aria-label="Link to Required inputs">#</a>Required inputs</h3><ul class="compact-list"><li>use case</li><li>data involved</li><li>guest impact</li><li>financial impact</li><li>safety impact</li><li>decision authority</li></ul></div><div><h3 id="expected-outputs-9"><a class="heading-anchor" href="#expected-outputs-9" aria-label="Link to Expected outputs">#</a>Expected outputs</h3><ul class="compact-list"><li>risk level</li><li>reason</li><li>prohibited actions</li><li>minimum reviewer</li><li>approval requirement</li><li>controls</li></ul></div></div><div class="prompt-card" data-prompt-card=""><div class="prompt-card-top"><div><span class="copy-label">Copy-and-Paste Template</span><h3 id="prompt-risk-and-authority-classifier-template"><a class="heading-anchor" href="#prompt-risk-and-authority-classifier-template" aria-label="Link to Prompt Risk and Authority Classifier template">#</a>Prompt Risk and Authority Classifier</h3></div><button aria-describedby="prompt-9-prompt-risk-and-authority-classifier-status" class="copy-prompt" data-copy-target="prompt-9-prompt-risk-and-authority-classifier-text" type="button">Copy Prompt</button></div><pre id="prompt-9-prompt-risk-and-authority-classifier-text" tabindex="0">ROLE
 Act as a senior hotel operations prompt architect supporting professional hotel and serviced-apartment teams.
 
 H — HOSPITALITY ROLE &amp; HUMAN OWNER
@@ -686,33 +467,7 @@ Where inputs conflict, show the conflict and proposed verification action.
 L — LIMITS, PRIVACY &amp; LEADERSHIP APPROVAL
 Do not downgrade safety, privacy, financial or legal risk for convenience.
 Do not include unnecessary personal data, payment data, credentials, security-sensitive information, confidential contracts or employee records.
-The output remains a draft until the accountable human owner verifies it against approved sources and authorizes any operational action.</code></pre>
-<p><strong>Trainer note:</strong> Test the prompt with one normal case and one missing/contradictory-information case before approving it for repeat use.</p>
-<h3>Prompt 10 — Prompt Verification and Approval Checklist</h3>
-<p><strong>Purpose:</strong> Create a repeatable verification checklist before AI output enters hotel operations.</p>
-<p><strong>Risk level:</strong> Medium  </p>
-<p><strong>Human approval required:</strong> Yes</p>
-<p><strong>Required inputs</strong></p>
-<ul>
-<li>prompt</li>
-<li>output</li>
-<li>sources used</li>
-<li>department</li>
-<li>decision</li>
-<li>approver</li>
-<li>known risks</li>
-</ul>
-<p><strong>Expected outputs</strong></p>
-<ul>
-<li>fact checks</li>
-<li>system checks</li>
-<li>privacy checks</li>
-<li>authority checks</li>
-<li>exception checks</li>
-<li>approval record</li>
-</ul>
-<p><strong>Copy-ready HOTEL prompt</strong></p>
-<pre class="prompt-code"><code>ROLE
+The output remains a draft until the accountable human owner verifies it against approved sources and authorizes any operational action.</pre><p aria-live="polite" class="copy-status" id="prompt-9-prompt-risk-and-authority-classifier-status" role="status"></p></div><div class="trainer-note"><strong>Professional hotel trainer’s note</strong><p>Test the prompt with one normal case and one missing/contradictory-information case before approving it for repeat use.</p></div></section><section class="prompt-section" id="prompt-10-prompt-verification-and-approval-checklist"><div class="prompt-heading"><span class="prompt-index">Prompt 10</span><div><h2 id="prompt-verification-and-approval-checklist"><a class="heading-anchor" href="#prompt-verification-and-approval-checklist" aria-label="Link to Prompt Verification and Approval Checklist">#</a>Prompt Verification and Approval Checklist</h2><p>Create a repeatable verification checklist before AI output enters hotel operations.</p></div></div><div class="prompt-use-grid"><div><h3 id="when-to-use-it-10"><a class="heading-anchor" href="#when-to-use-it-10" aria-label="Link to When to use it">#</a>When to use it</h3><p>Create a repeatable verification checklist before AI output enters hotel operations.</p><p class="scenario"><strong>Hotel control:</strong> Use only with approved property information and a named human owner.</p></div><div><h3 id="required-inputs-10"><a class="heading-anchor" href="#required-inputs-10" aria-label="Link to Required inputs">#</a>Required inputs</h3><ul class="compact-list"><li>prompt</li><li>output</li><li>sources used</li><li>department</li><li>decision</li><li>approver</li><li>known risks</li></ul></div><div><h3 id="expected-outputs-10"><a class="heading-anchor" href="#expected-outputs-10" aria-label="Link to Expected outputs">#</a>Expected outputs</h3><ul class="compact-list"><li>fact checks</li><li>system checks</li><li>privacy checks</li><li>authority checks</li><li>exception checks</li><li>approval record</li></ul></div></div><div class="prompt-card" data-prompt-card=""><div class="prompt-card-top"><div><span class="copy-label">Copy-and-Paste Template</span><h3 id="prompt-verification-and-approval-checklist-template"><a class="heading-anchor" href="#prompt-verification-and-approval-checklist-template" aria-label="Link to Prompt Verification and Approval Checklist template">#</a>Prompt Verification and Approval Checklist</h3></div><button aria-describedby="prompt-10-prompt-verification-and-approval-checklist-status" class="copy-prompt" data-copy-target="prompt-10-prompt-verification-and-approval-checklist-text" type="button">Copy Prompt</button></div><pre id="prompt-10-prompt-verification-and-approval-checklist-text" tabindex="0">ROLE
 Act as a senior hotel operations prompt architect supporting professional hotel and serviced-apartment teams.
 
 H — HOSPITALITY ROLE &amp; HUMAN OWNER
@@ -738,9 +493,7 @@ Where inputs conflict, show the conflict and proposed verification action.
 L — LIMITS, PRIVACY &amp; LEADERSHIP APPROVAL
 Do not mark an output approved; only define the verification and approval steps.
 Do not include unnecessary personal data, payment data, credentials, security-sensitive information, confidential contracts or employee records.
-The output remains a draft until the accountable human owner verifies it against approved sources and authorizes any operational action.</code></pre>
-<p><strong>Trainer note:</strong> Test the prompt with one normal case and one missing/contradictory-information case before approving it for repeat use.</p>
-<hr>
+The output remains a draft until the accountable human owner verifies it against approved sources and authorizes any operational action.</pre><p aria-live="polite" class="copy-status" id="prompt-10-prompt-verification-and-approval-checklist-status" role="status"></p></div><div class="trainer-note"><strong>Professional hotel trainer’s note</strong><p>Test the prompt with one normal case and one missing/contradictory-information case before approving it for repeat use.</p></div></section><hr>
 <h2 id="11-prompt-verification-checklist">11. Prompt verification checklist</h2>
 <p>Before operational use, ask:</p>
 <ul>
