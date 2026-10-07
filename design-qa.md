@@ -33,3 +33,5 @@ Keyboard traversal and skip link; Travel Desk dialog opening, Escape closing and
 Minor image crop and font-rendering differences remain [P3]; this is not a pixel-exact reproduction. Existing static demos have not been converted into production integrations. Deployment verification follows local QA.
 
 final result: passed
+
+Footer refinement: recognisable LinkedIn and GitHub icons and labelled controls checked in the browser, existing destination URLs retained. Static link and unchanged article-main-content checks repeated successfully. Changed stylesheet and sprite references carry revision queries to avoid stale styling.

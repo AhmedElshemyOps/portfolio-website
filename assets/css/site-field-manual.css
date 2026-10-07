@@ -49,3 +49,5 @@ body{font-family:var(--sans);background:var(--paper)}
 .hero-availability{max-width:60ch;color:#dce3eb;font-size:15px;line-height:1.6}
 .hero-contact-actions{display:flex;flex-wrap:wrap;gap:12px 24px;margin-top:16px}
 .hero-contact-actions a{color:var(--gold-light);overflow-wrap:anywhere;text-underline-offset:4px;min-height:44px;display:inline-flex;align-items:center}
+
+.platform-footer .professional-social{display:inline-flex;align-items:center;gap:10px;font-weight:600}.platform-footer .professional-social svg{width:20px;height:20px;fill:currentColor;flex-shrink:0}.platform-footer .professional-social:hover{text-decoration:underline;text-underline-offset:4px}
