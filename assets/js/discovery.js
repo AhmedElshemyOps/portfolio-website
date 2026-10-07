@@ -216,6 +216,14 @@
     document.querySelector("[data-knowledge-status]").textContent = visible === knowledgeCards.length && !query && Object.values(selected).every(function (value) { return !value; }) ? "Showing all articles." : "Showing " + visible + " article" + (visible === 1 ? "" : "s") + ".";
     document.querySelector("[data-knowledge-empty]").hidden = visible !== 0;
   }
+  // Deep links from topic chips and series cards initialize the actual filters.
+  var initialFilters = new URLSearchParams(location.search);
+  filters.forEach(function (filter) {
+    var value = initialFilters.get(filter.dataset.knowledgeFilter);
+    if (value && Array.from(filter.options).some(function (option) { return option.value === value; })) filter.value = value;
+  });
+  if (knowledgeQuery) knowledgeQuery.value = initialFilters.get("q") || "";
+  filterKnowledge();
   filters.forEach(function (filter) { filter.addEventListener("change", filterKnowledge); });
   knowledgeQuery?.addEventListener("input", filterKnowledge);
   document.querySelector("[data-knowledge-reset]")?.addEventListener("click", function () { filters.forEach(function (filter) { filter.value = ""; }); if (knowledgeQuery) knowledgeQuery.value = ""; filterKnowledge(); });
