@@ -77,8 +77,9 @@
   updateTocMode();
   mobileToc.addEventListener?.('change', updateTocMode);
 
-  const headings = [...document.querySelectorAll('.article-body h2[id]')].filter((heading) => !heading.closest('.article-read-time-card') && !/estimated article reading time/i.test(heading.textContent || ''));
   const tocLinks = [...document.querySelectorAll('[data-toc-link]')];
+  // Use the table of contents as the single section registry, including introductory sections.
+  const headings = tocLinks.length ? [...new Set(tocLinks.map(link => document.getElementById(link.getAttribute('href').slice(1))).filter(Boolean))] : [...document.querySelectorAll('.article-body h2[id]')].filter(heading => !heading.closest('.article-read-time-card'));
   const sectionMap = document.createElement('nav');
   sectionMap.className = 'article-section-map';
   sectionMap.setAttribute('aria-label', 'Article section navigation');
@@ -105,24 +106,6 @@
     sectionToggle.setAttribute('aria-expanded', String(open));
   });
   if (sectionButtons.length > 1) document.body.appendChild(sectionMap);
-  if ('IntersectionObserver' in window && headings.length) {
-    const observer = new IntersectionObserver((entries) => {
-      const visible = entries.filter((entry) => entry.isIntersecting).sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)[0];
-      if (!visible) return;
-      tocLinks.forEach((link) => {
-        const active = link.getAttribute('href') === `#${visible.target.id}`;
-        link.classList.toggle('is-active', active);
-        if (active) link.setAttribute('aria-current', 'location'); else link.removeAttribute('aria-current');
-      });
-      sectionButtons.forEach((button, index) => {
-        const active = headings[index] === visible.target;
-        button.classList.toggle('is-active', active);
-        if (active) button.setAttribute('aria-current', 'location'); else button.removeAttribute('aria-current');
-        if (active && sectionCurrent) sectionCurrent.textContent = String(index + 1);
-      });
-    }, { rootMargin: '-18% 0px -70% 0px', threshold: 0 });
-    headings.forEach((heading) => observer.observe(heading));
-  }
 
   headings.forEach((heading) => {
     if (!/how to|steps|process|workflow|roadmap|checklist|implementation|method/i.test(heading.textContent || '')) return;

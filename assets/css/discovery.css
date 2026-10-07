@@ -105,3 +105,12 @@ body{background:var(--paper);color:var(--ink)}
 .platform-footer .brand{width:max-content;color:#fff}.platform-footer .brand .mark{border:1px solid var(--gold-line);border-right:1px solid var(--gold-line);color:var(--gold-light);background:rgba(255,255,255,.035)}
 .platform-footer .brand strong{color:#fff}.platform-footer .brand small{color:#aebed0}.platform-footer .brand:hover strong,.platform-footer .brand:focus-visible strong{color:var(--gold-light)}
 @media(prefers-reduced-motion:reduce){.discovery-hero .hero-actions .button{transition:none}.discovery-hero .hero-actions .button:hover,.discovery-hero .hero-actions .button:focus-visible{transform:none}}
+
+/* Editorial hierarchy: keep catalogue navigation and content within reach. */
+.discovery-hero{padding-top:clamp(2.5rem,5vw,4.5rem);padding-bottom:clamp(2rem,4vw,3.5rem)}
+.discovery-hero h1{font-size:clamp(2.25rem,4.7vw,4rem);line-height:1.1;letter-spacing:-.035em;max-width:1050px}
+.discovery-page h2{font-size:clamp(1.65rem,2.6vw,2.25rem);line-height:1.2}
+.discovery-page .knowledge-card h2{font-size:1.35rem;line-height:1.35}
+.discovery-page .eyebrow,.discovery-page small{font-size:max(.8125rem,13px)}
+.discovery-page :focus-visible{outline:3px solid #815f17;outline-offset:4px}
+@media(max-width:600px){.discovery-hero h1{font-size:2.25rem}.discovery-page .hero-actions{align-items:stretch}.discovery-page .hero-actions a{white-space:normal}}

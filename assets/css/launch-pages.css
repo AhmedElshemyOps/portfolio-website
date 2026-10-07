@@ -25,14 +25,7 @@ body{background-color:var(--paper);background-image:radial-gradient(circle at 12
 
 .masthead nav a[aria-current="page"]{color:#815f17}.masthead nav a[aria-current="page"]::after{transform:scaleX(1)}
 
-/* Selected Swiss-grid visual system. */
-:root{--navy:#050505;--navy-soft:#242424;--gold:#ef1b16;--gold-light:#ff4a45;--paper:#fff;--paper-deep:#f3f3f1;--muted:#555;--line:#151515;--serif:'IBM Plex Sans',Arial,sans-serif}
-body{background:#fff;background-image:none;color:#050505}
-a:focus-visible,button:focus-visible{outline-color:#ef1b16}
-.masthead{min-height:96px;padding-inline:max(28px,3vw);border-bottom:2px solid #050505;background:#fff;box-shadow:none;backdrop-filter:none}
-.mark{width:62px;height:56px;border:0;border-right:3px solid #ef1b16;color:#050505;font:600 1.85rem 'IBM Plex Sans',Arial,sans-serif;letter-spacing:-.08em}
-.brand strong{font:600 1.08rem 'IBM Plex Sans',Arial,sans-serif;text-transform:uppercase}.brand small{margin-top:5px;color:#222;letter-spacing:.08em;text-transform:uppercase}
-.masthead nav{gap:0}.masthead nav a{min-height:42px;padding:11px 20px;border-right:1px solid #050505}.masthead nav a:first-child{border-left:1px solid #050505}.masthead nav a::after{height:3px;background:#ef1b16}.masthead nav a:hover,.masthead nav a[aria-current="page"]{color:#050505}
-.hero{background:#fff;border-bottom:2px solid #050505}.hero h1{font-family:'IBM Plex Sans',Arial,sans-serif;font-weight:600;text-transform:uppercase}.hero .eyebrow,.section .eyebrow,.card small{color:#ef1b16}
-.facts span,.card{border-color:#050505;border-radius:0}.section{border-color:#050505}.section.alt{background:#f3f3f1}.section-head{padding-top:25px;border-top:2px solid #050505}.section h2,.card h3,.evidence h3,.cta h2{font-family:'IBM Plex Sans',Arial,sans-serif;font-weight:600;text-transform:uppercase}.card:hover,.card:focus-within{border-color:#ef1b16;box-shadow:none;transform:none}.evidence article{border-left-color:#ef1b16}.cta{background:#ef1b16}.button{border-color:#050505;background:#050505;color:#fff;border-radius:0}.button:hover,.button:focus-visible{background:#fff;color:#050505;box-shadow:none;transform:none}.footer{background:#050505}
-@media(max-width:760px){.masthead{min-height:auto}.mark{width:48px;height:46px;font-size:1.35rem}.masthead nav a{padding-inline:14px}.hero{background:#fff}}
+
+:root{--gold:#815f17;--serif:"Lora",Georgia,serif}
+.masthead nav :is(a,button){font-size:.8125rem;min-height:44px}
+.masthead nav button{border:0;background:transparent;color:var(--navy);font:inherit;cursor:pointer}

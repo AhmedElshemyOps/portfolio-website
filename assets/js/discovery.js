@@ -109,8 +109,7 @@
       var tokens = searchTokens(cleaned);
       var matches = items.map(function (item) { return { item: item, score: score(item, cleaned) }; })
         .filter(function (match) { return match.score > 0; })
-        .sort(function (a, b) { return b.score - a.score || a.item.title.localeCompare(b.item.title); })
-        .slice(0, 18);
+        .sort(function (a, b) { return b.score - a.score || a.item.title.localeCompare(b.item.title); });
       groups.replaceChildren();
       if (!matches.length) {
         status.textContent = "No results for “" + cleaned + "”.";
@@ -123,14 +122,14 @@
       matches.forEach(function (match) {
         var type = match.item.type || "Other";
         if (!grouped[type]) grouped[type] = [];
-        if (grouped[type].length < 5) grouped[type].push(match.item);
+        grouped[type].push(match.item);
       });
       var shown = 0;
       Object.keys(grouped).forEach(function (type) {
         var section = document.createElement("section");
         section.className = "search-group";
         var heading = document.createElement("h3");
-        heading.textContent = type === "Article" ? "Articles" : type + (type.endsWith("s") ? "" : "s");
+        heading.textContent = type === "Article" ? "Articles" : type === "Series index" ? "Series" : type + (type.endsWith("s") ? "" : "s");
         section.appendChild(heading);
         grouped[type].forEach(function (item) { section.appendChild(resultLink(item, tokens)); shown += 1; });
         groups.appendChild(section);

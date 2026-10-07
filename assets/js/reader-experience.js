@@ -81,7 +81,8 @@
     code.replaceChildren(fragment);
   });
   const body = document.querySelector('.article-body');
-  const headings = body ? [...body.querySelectorAll('h2[id]')].filter(h => !h.closest('.article-read-time-card') && !/estimated article reading time/i.test(h.textContent)) : [];
+  const tocLinks = [...document.querySelectorAll('[data-toc-link]')];
+  const headings = body ? (tocLinks.length ? [...new Set(tocLinks.map(link => document.getElementById(link.getAttribute('href').slice(1))).filter(Boolean))] : [...body.querySelectorAll('h2[id]')].filter(heading => !heading.closest('.article-read-time-card'))) : [];
   headings.forEach((heading,index) => {
     const content = []; let next = heading.nextElementSibling;
     while (next && next.tagName !== 'H2') { content.push(next); next = next.nextElementSibling; }
