@@ -40,3 +40,12 @@ body{font-family:var(--sans);background:var(--paper)}
 /* Keep intrinsic image attributes from creating tall project thumbnails. */
 .project-index .project-index-visual>img:not(.project-logo){height:auto;aspect-ratio:16/9;object-fit:contain;background:#fff}
 .growth-section h2,.lab-section h2{font-size:clamp(28px,3vw,40px);line-height:1.3}
+
+/* Contact actions remain readable with the longer professional email. */
+.platform-footer a,.professional-phone{overflow-wrap:anywhere}
+.platform-footer .professional-availability{max-width:36rem;font-size:13px;line-height:1.6}
+[data-contact-summary]{max-width:65ch;line-height:1.65}
+
+.hero-availability{max-width:60ch;color:#dce3eb;font-size:15px;line-height:1.6}
+.hero-contact-actions{display:flex;flex-wrap:wrap;gap:12px 24px;margin-top:16px}
+.hero-contact-actions a{color:var(--gold-light);overflow-wrap:anywhere;text-underline-offset:4px;min-height:44px;display:inline-flex;align-items:center}

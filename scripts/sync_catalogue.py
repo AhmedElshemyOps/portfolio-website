@@ -118,3 +118,7 @@ import subprocess, sys
 subprocess.run([sys.executable, str(ROOT/'scripts/apply_field_manual.py')], check=True)
 subprocess.run([sys.executable, str(ROOT/'scripts/clean_article_openings.py')], check=True)
 subprocess.run([sys.executable, str(ROOT/"scripts/simplify_article_toc.py")], check=True)
+
+# Reapply authorized public contact fields after shared chrome generation.
+from update_site_contact import apply as apply_site_contact
+apply_site_contact(ROOT)
