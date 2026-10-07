@@ -1,37 +1,35 @@
-# Field Manual pilot QA
+# Homepage design verification
 
-final result: passed
+Date: 8 October 2026
 
-Scope: desktop pilot visual and article interactions. No production rollout.
+Source visual truth: selected generated design exec-5d5f28ed-2a2d-4d27-8b67-5cc1bbed0b49.png (946 x 1663 pixels).
+Implementation: homepage served locally; viewport 1440 x 1024 CSS pixels. Full-page screenshot is 1425 pixels wide because the browser reserves 15 pixels for the scrollbar. Comparison normalizes both images to 720 pixels wide, preserving aspect ratio.
+Full-view comparison evidence: task outputs transformation/home-desktop.png and transformation/design-comparison-final.png. Focused comparison: transformation/hero-comparison.png. Additional views: home-phone.png (390 x 844 viewport) and home-tablet.png (834 x 1194 viewport). State: homepage, dialog closed, analytics preference dismissed using Only necessary.
 
-Source visual truth: /workspace/scratch/47cb44b52ac2/generated_images/exec-4c668341-8db9-4bff-9412-040fdd2cd112.png (1374×1145px).
-Implementation screenshot: docs/design-evidence/article-option3-final.jpg (1348×926px). Browser CSS viewport1363×936; screenshot excludes scrollbar/browser margin. Source proportionally rescaled to screenshot width and cropped to matching visible height; no stretching. Full-view comparison: docs/design-evidence/article-option3-comparison.jpg. State: article start, light theme, contents first group open. Optional resume chip shown from interaction history; absent for first-time readers.
+## User-authorized refinements
+
+Travel and Tourism Operations; 13 years in travel, tourism and hospitality; removed dated availability wording; four existing Infra projects; employer history, IATA diplomas, certifications and education; library topics instead of article count; real article titles and existing URLs. Learning, Lab, Saved Reading and Resources remain accessible. These additions intentionally increase page length relative to the original reference.
 
 ## Comparison history
 
-Initial review: P1 navy header inherited1000px max-width, P2 reading controls and legacy heading padding pushed content down, P2 duplicate footer. Fixed max-width, relocated controls/glossary below reading body, removed legacy heading padding/top borders, removed duplicate footer. Post-fix screenshot and combined comparison show full-width navy band, aligned readable column and right contents rail. No actionable P0/P1/P2 remains in the inspected desktop state.
+Initial review found a blank masthead favicon [P1], missing regular serif weight [P2], and incorrect icon fill [P2]. Replaced the masthead image with an AM monogram asset, added regular Lora, and made icon fills inherit the visible foreground color. After terminology correction the desktop headline wrapped to three lines [P2]; expanded its available width and recaptured it with two lines.
 
-## Required surfaces
+Final comparison has no actionable P0/P1/P2 issues. The warm-white surface, navy editorial headings, gold rules, real portrait, horizontal project rows, grouped article previews and navy contact panel follow the selected visual direction. Career evidence and expanded project/topic sections reflect subsequent user requests.
 
-- Typography: existing locally hosted Lora600 and IBM Plex Sans; title44px at desktop, sections32px, body18px/1.75. Title retains intended two-line hierarchy. Exact original text takes precedence over mock-generated prose.
-- Layout: 1200px maximum frame, right290px sticky rail,52px gap, navy title band. Prompt block is full-width in reading column. No horizontal overflow at tested viewport.
-- Colors: existing navy/paper/gold tokens retained; muted text and gold accents on paper; white title on navy. Solid band follows existing system rather than generated image shading.
-- Assets: existing AM brand retained. Decorative article hero omitted; original educational diagrams retained below introductory sections. No new raster assets needed for the selected text-first design.
-- Copy: exact title/standfirst retained. All10 sample preformatted prompt texts compared to base and unchanged. Real22 contents destinations replace mock's invented13section outline; all anchors resolve. This is an intentional content-fidelity difference.
+## Fidelity surfaces
 
-## Functional checks
+Typography: Lora display headings and regular serif introduction; IBM Plex Sans navigation and operational descriptions. Regular font loads. Main body text is readable with secondary labels at least 14px. Headline wrapping checked on desktop, tablet and phone.
+Spacing: aligned desktop split introduction and career strip; two-column career evidence; full-width project rows. Tablet and phone reflow without horizontal overflow. No clipping or overlapping controls observed.
+Colors: warm-white, navy and muted gold; visible focus outlines and icons.
+Assets: supplied portrait, generated AM monogram and official Bootstrap Icons with MIT licence. No placeholder photographs.
+Content: grounded employer roles and qualifications, projected Travel Desk opportunity, pre-pilot Amsterdam research, static Infra demonstrations and current Dutch contact details.
 
-- Opened local browser implementation, inspected screenshot and DOM.
-- Expanded contents group07–12; SOP Creation link navigated to#sop-creation.
-- Copy action displayed Prompt copied and complete-prompt success message. Browser clipboard bridge returned empty, so end-to-end clipboard bytes could not be independently verified through that bridge; original tested copy implementation retained.
-- Python validator passed all377article copy targets.
-- All10sample prompt bodies unchanged after HTML decoding.
-- No website console errors in checked log; cloud Chrome extension emitted unrelated metadata errors.
+## Functional verification
 
-## Residual gaps
-
-Actual phone/tablet screenshots and keyboard walkthrough are still required before site-wide rollout. Responsive CSS collapses contents below900px and stacks the reading surface; browser exposes no documented viewport resize control here. Search, bookmark, preferences and newsletter preserve existing scripts but have not had complete end-to-end verification in this pilot.
+Keyboard traversal and skip link; Travel Desk dialog opening, Escape closing and restored focus; MICE deep link initializes the actual library filter; CV link retains its original path. Refreshed PDF and DOCX rendered: exactly two pages, corrected contact, dates and 13 years wording. Email and phone targets inspected without sending messages or calls. No console errors observed in tested homepage/library states. All 178 HTML pages pass local target, fragment and duplicate-ID validation. All 133 catalogue paths retained and all article main-content sections unchanged.
 
 ## Follow-up polish
 
-P3: compare additional long prompt and table states at actual mobile viewports before batching migration. Integrate opt-in contract into original article generator to prevent regeneration overwriting the pilot.
+Minor image crop and font-rendering differences remain [P3]; this is not a pixel-exact reproduction. Existing static demos have not been converted into production integrations. Deployment verification follows local QA.
+
+final result: passed
