@@ -440,6 +440,17 @@
     "source": "Published article registry"
   },
   {
+    "title": "Asset Lifecycle Management",
+    "slug": "hotel-apartment-asset-lifecycle-management",
+    "url": "hotel-apartment-asset-lifecycle-management.html",
+    "category": "Hotel Apartment Operational Excellence",
+    "pillar": "Operational Excellence & SOPs",
+    "summary": "Manage hotel-apartment assets from specification and commissioning through operation, condition monitoring, renewal and disposal using one evidence trail.",
+    "status": "Published",
+    "readingTime": 3,
+    "source": "Published article registry"
+  },
+  {
     "title": "The Cost of Poor Quality",
     "slug": "hotel-apartment-cost-of-poor-quality",
     "url": "hotel-apartment-cost-of-poor-quality.html",
@@ -473,6 +484,17 @@
     "source": "Published article registry"
   },
   {
+    "title": "Hotel Apartment KPI Architecture",
+    "slug": "hotel-apartment-kpi-architecture",
+    "url": "hotel-apartment-kpi-architecture.html",
+    "category": "Hotel Apartment Operational Excellence",
+    "pillar": "Operational Excellence & SOPs",
+    "summary": "Build a hotel-apartment KPI architecture that connects strategic outcomes to operational drivers, definitions, owners, data sources, review cadence and action rules.",
+    "status": "Published",
+    "readingTime": 3,
+    "source": "Published article registry"
+  },
+  {
     "title": "Building the Hotel Apartment Operating System",
     "slug": "hotel-apartment-operating-system",
     "url": "hotel-apartment-operating-system.html",
@@ -484,6 +506,17 @@
     "source": "Published article registry"
   },
   {
+    "title": "The Hotel Apartment Operations Control Tower",
+    "slug": "hotel-apartment-operations-control-tower",
+    "url": "hotel-apartment-operations-control-tower.html",
+    "category": "Hotel Apartment Operational Excellence",
+    "pillar": "Operational Excellence & SOPs",
+    "summary": "Create a cross-functional hotel-apartment control tower that turns readiness, maintenance, guest, workforce and inventory exceptions into one prioritized management queue.",
+    "status": "Published",
+    "readingTime": 3,
+    "source": "Published article registry"
+  },
+  {
     "title": "Preventive Maintenance Strategy for Hotel Apartments",
     "slug": "hotel-apartment-preventive-maintenance-strategy",
     "url": "hotel-apartment-preventive-maintenance-strategy.html",
@@ -492,6 +525,28 @@
     "summary": "Build a preventive maintenance strategy for hotel and serviced apartments using asset criticality, PM frequencies, work-order control, compliance, backlog and effectiveness KPIs.",
     "status": "Published",
     "readingTime": 6,
+    "source": "Published article registry"
+  },
+  {
+    "title": "SOP Architecture for Hotel Apartments",
+    "slug": "hotel-apartment-sop-architecture",
+    "url": "hotel-apartment-sop-architecture.html",
+    "category": "Hotel Apartment Operational Excellence",
+    "pillar": "Operational Excellence & SOPs",
+    "summary": "Design a controlled SOP architecture for hotel apartments using process hierarchy, ownership, RACI, exceptions, evidence, revision control and connected work instructions.",
+    "status": "Published",
+    "readingTime": 3,
+    "source": "Published article registry"
+  },
+  {
+    "title": "Total Cost of Ownership (TCO)",
+    "slug": "hotel-apartment-total-cost-of-ownership",
+    "url": "hotel-apartment-total-cost-of-ownership.html",
+    "category": "Hotel Apartment Operational Excellence",
+    "pillar": "Operational Excellence & SOPs",
+    "summary": "Make repair, replace and procurement decisions using acquisition cost plus verified operating, maintenance, downtime and end-of-life costs rather than purchase price alone.",
+    "status": "Published",
+    "readingTime": 3,
     "source": "Published article registry"
   },
   {
@@ -514,6 +569,39 @@
     "summary": "10 professional AI prompts for integrated hotel control towers, exception prioritization, reliability, alerts, escalation and executive decision support.",
     "status": "Published",
     "readingTime": 29,
+    "source": "Published article registry"
+  },
+  {
+    "title": "Critical Spare Parts Management",
+    "slug": "hotel-critical-spare-parts-management",
+    "url": "hotel-critical-spare-parts-management.html",
+    "category": "Hotel Apartment Operational Excellence",
+    "pillar": "Operational Excellence & SOPs",
+    "summary": "Protect hotel-apartment asset availability by linking spare-part criticality, failure risk, lead time, stock policy, traceability and emergency sourcing.",
+    "status": "Published",
+    "readingTime": 3,
+    "source": "Published article registry"
+  },
+  {
+    "title": "Downtime & Out-of-Service Management",
+    "slug": "hotel-downtime-out-of-service-management",
+    "url": "hotel-downtime-out-of-service-management.html",
+    "category": "Hotel Apartment Operational Excellence",
+    "pillar": "Operational Excellence & SOPs",
+    "summary": "Control apartment and asset downtime with explicit OOS/OOO logic, downtime clocks, priority, recovery ownership, verification and lost-capacity evidence.",
+    "status": "Published",
+    "readingTime": 3,
+    "source": "Published article registry"
+  },
+  {
+    "title": "The Economics of Service Failure",
+    "slug": "hotel-economics-of-service-failure",
+    "url": "hotel-economics-of-service-failure.html",
+    "category": "Hotel Apartment Operational Excellence",
+    "pillar": "Operational Excellence & SOPs",
+    "summary": "Measure the operational and financial consequences of hotel service failure across containment, recovery, rework, compensation, downtime and recurrence.",
+    "status": "Published",
+    "readingTime": 3,
     "source": "Published article registry"
   },
   {
@@ -561,6 +649,17 @@
     "source": "Published article registry"
   },
   {
+    "title": "First-Time-Right Operations",
+    "slug": "hotel-first-time-right-operations",
+    "url": "hotel-first-time-right-operations.html",
+    "category": "Hotel Apartment Operational Excellence",
+    "pillar": "Operational Excellence & SOPs",
+    "summary": "Reduce hotel-apartment rework by designing quality at the source, defining completion criteria, measuring first-pass performance and learning from repeat defects.",
+    "status": "Published",
+    "readingTime": 3,
+    "source": "Published article registry"
+  },
+  {
     "title": "Front Office AI Toolkit",
     "slug": "hotel-front-office-ai-toolkit",
     "url": "hotel-front-office-ai-toolkit.html",
@@ -605,6 +704,17 @@
     "source": "Published article registry"
   },
   {
+    "title": "Guest Experience Quality Management",
+    "slug": "hotel-guest-experience-quality-management",
+    "url": "hotel-guest-experience-quality-management.html",
+    "category": "Hotel Apartment Operational Excellence",
+    "pillar": "Operational Excellence & SOPs",
+    "summary": "Manage guest experience as a quality system by translating voice-of-customer signals into CTQs, operational standards, failure evidence, recovery and closed-loop improvement.",
+    "status": "Published",
+    "readingTime": 3,
+    "source": "Published article registry"
+  },
+  {
     "title": "Housekeeping Management AI Toolkit",
     "slug": "hotel-housekeeping-management-ai-toolkit",
     "url": "hotel-housekeeping-management-ai-toolkit.html",
@@ -622,6 +732,28 @@
     "category": "Hotel Apartment Operational Excellence",
     "pillar": "Operational Excellence & SOPs",
     "summary": "Build a housekeeping quality-control system for hotel apartments using inspection design, defect taxonomy, first-pass quality, sampling, coaching and recurrence control.",
+    "status": "Published",
+    "readingTime": 3,
+    "source": "Published article registry"
+  },
+  {
+    "title": "Housekeeping Standardization",
+    "slug": "hotel-housekeeping-standardization",
+    "url": "hotel-housekeeping-standardization.html",
+    "category": "Hotel Apartment Operational Excellence",
+    "pillar": "Operational Excellence & SOPs",
+    "summary": "Standardize hotel-apartment housekeeping through defined work sequence, apartment-type standards, visual controls, training, verification and controlled improvement.",
+    "status": "Published",
+    "readingTime": 3,
+    "source": "Published article registry"
+  },
+  {
+    "title": "Inventory & PAR Level Management",
+    "slug": "hotel-inventory-par-level-management",
+    "url": "hotel-inventory-par-level-management.html",
+    "category": "Hotel Apartment Operational Excellence",
+    "pillar": "Operational Excellence & SOPs",
+    "summary": "Design inventory and PAR controls for hotel apartments using consumption, lead time, service risk, count accuracy, reorder logic and exception review.",
     "status": "Published",
     "readingTime": 3,
     "source": "Published article registry"
@@ -671,6 +803,17 @@
     "source": "Published article registry"
   },
   {
+    "title": "Operational Excellence Maturity Model",
+    "slug": "hotel-operational-excellence-maturity-model",
+    "url": "hotel-operational-excellence-maturity-model.html",
+    "category": "Hotel Apartment Operational Excellence",
+    "pillar": "Operational Excellence & SOPs",
+    "summary": "Assess hotel-apartment operational maturity through evidence-based levels covering governance, standards, reliability, quality, data, improvement and management control.",
+    "status": "Published",
+    "readingTime": 3,
+    "source": "Published article registry"
+  },
+  {
     "title": "Hotel Operations Manager AI Toolkit",
     "slug": "hotel-operations-manager-ai-toolkit",
     "url": "hotel-operations-manager-ai-toolkit.html",
@@ -679,6 +822,17 @@
     "summary": "10 professional AI prompts for daily hotel operations, priorities, handovers, exceptions and management control.",
     "status": "Published",
     "readingTime": 16,
+    "source": "Published article registry"
+  },
+  {
+    "title": "Operations Planning & Daily Control",
+    "slug": "hotel-operations-planning-daily-control",
+    "url": "hotel-operations-planning-daily-control.html",
+    "category": "Hotel Apartment Operational Excellence",
+    "pillar": "Operational Excellence & SOPs",
+    "summary": "Run hotel-apartment operations through a disciplined daily control rhythm that connects demand, readiness, defects, staffing, guest commitments, exceptions and accountable follow-up.",
+    "status": "Published",
+    "readingTime": 3,
     "source": "Published article registry"
   },
   {
@@ -704,6 +858,17 @@
     "source": "Published article registry"
   },
   {
+    "title": "Preventive Maintenance KPIs",
+    "slug": "hotel-preventive-maintenance-kpis",
+    "url": "hotel-preventive-maintenance-kpis.html",
+    "category": "Hotel Apartment Operational Excellence",
+    "pillar": "Operational Excellence & SOPs",
+    "summary": "Build a preventive-maintenance KPI system that separates schedule compliance from reliability, repeat failures, backlog, downtime and maintenance effectiveness.",
+    "status": "Published",
+    "readingTime": 3,
+    "source": "Published article registry"
+  },
+  {
     "title": "Hotel Procurement AI Toolkit",
     "slug": "hotel-procurement-ai-toolkit",
     "url": "hotel-procurement-ai-toolkit.html",
@@ -712,6 +877,28 @@
     "summary": "10 Professional AI Prompts for Requisitions, RFQs, Bid Evaluation, Total Cost, Negotiation, Contracts, Supplier Risk and Performance",
     "status": "Published",
     "readingTime": 37,
+    "source": "Published article registry"
+  },
+  {
+    "title": "Procurement & Supplier Quality Control",
+    "slug": "hotel-procurement-supplier-quality-control",
+    "url": "hotel-procurement-supplier-quality-control.html",
+    "category": "Hotel Apartment Operational Excellence",
+    "pillar": "Operational Excellence & SOPs",
+    "summary": "Control hotel-apartment suppliers through clear specifications, qualification, delivery inspection, SLA evidence, scorecards and corrective action.",
+    "status": "Published",
+    "readingTime": 3,
+    "source": "Published article registry"
+  },
+  {
+    "title": "Property Reliability Score",
+    "slug": "hotel-property-reliability-score",
+    "url": "hotel-property-reliability-score.html",
+    "category": "Hotel Apartment Operational Excellence",
+    "pillar": "Operational Excellence & SOPs",
+    "summary": "Design a transparent composite reliability score for hotel apartments using controlled measures, documented weighting, evidence quality and drill-down rather than a black-box rating.",
+    "status": "Published",
+    "readingTime": 3,
     "source": "Published article registry"
   },
   {
@@ -767,6 +954,17 @@
     "summary": "10 professional AI prompts for SOP structure, procedures, RACI, exceptions, evidence, KPIs, work instructions, checklists, gap audits and revision control.",
     "status": "Published",
     "readingTime": 40,
+    "source": "Published article registry"
+  },
+  {
+    "title": "Productivity & Workforce Efficiency",
+    "slug": "hotel-workforce-productivity-efficiency",
+    "url": "hotel-workforce-productivity-efficiency.html",
+    "category": "Hotel Apartment Operational Excellence",
+    "pillar": "Operational Excellence & SOPs",
+    "summary": "Plan hotel-apartment labor around workload, demand, productive capacity, service standards and quality rather than crude output-per-person targets.",
+    "status": "Published",
+    "readingTime": 3,
     "source": "Published article registry"
   },
   {

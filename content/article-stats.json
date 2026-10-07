@@ -160,6 +160,10 @@
     "wordCount": 7771
   },
   {
+    "slug": "hotel-apartment-asset-lifecycle-management",
+    "wordCount": 600
+  },
+  {
     "slug": "hotel-apartment-cost-of-poor-quality",
     "wordCount": 665
   },
@@ -172,12 +176,28 @@
     "wordCount": 8926
   },
   {
+    "slug": "hotel-apartment-kpi-architecture",
+    "wordCount": 561
+  },
+  {
     "slug": "hotel-apartment-operating-system",
     "wordCount": 772
   },
   {
+    "slug": "hotel-apartment-operations-control-tower",
+    "wordCount": 567
+  },
+  {
     "slug": "hotel-apartment-preventive-maintenance-strategy",
     "wordCount": 1113
+  },
+  {
+    "slug": "hotel-apartment-sop-architecture",
+    "wordCount": 593
+  },
+  {
+    "slug": "hotel-apartment-total-cost-of-ownership",
+    "wordCount": 626
   },
   {
     "slug": "hotel-complaint-root-cause-analysis",
@@ -186,6 +206,18 @@
   {
     "slug": "hotel-control-tower-ai-decision-support-toolkit",
     "wordCount": 6188
+  },
+  {
+    "slug": "hotel-critical-spare-parts-management",
+    "wordCount": 591
+  },
+  {
+    "slug": "hotel-downtime-out-of-service-management",
+    "wordCount": 573
+  },
+  {
+    "slug": "hotel-economics-of-service-failure",
+    "wordCount": 618
   },
   {
     "slug": "hotel-energy-utility-management-ai-toolkit",
@@ -204,6 +236,10 @@
     "wordCount": 7278
   },
   {
+    "slug": "hotel-first-time-right-operations",
+    "wordCount": 559
+  },
+  {
     "slug": "hotel-front-office-ai-toolkit",
     "wordCount": 8056
   },
@@ -220,12 +256,24 @@
     "wordCount": 9106
   },
   {
+    "slug": "hotel-guest-experience-quality-management",
+    "wordCount": 565
+  },
+  {
     "slug": "hotel-housekeeping-management-ai-toolkit",
     "wordCount": 8439
   },
   {
     "slug": "hotel-housekeeping-quality-control",
     "wordCount": 641
+  },
+  {
+    "slug": "hotel-housekeeping-standardization",
+    "wordCount": 559
+  },
+  {
+    "slug": "hotel-inventory-par-level-management",
+    "wordCount": 592
   },
   {
     "slug": "hotel-inventory-par-management-ai-toolkit",
@@ -244,8 +292,16 @@
     "wordCount": 651
   },
   {
+    "slug": "hotel-operational-excellence-maturity-model",
+    "wordCount": 564
+  },
+  {
     "slug": "hotel-operations-manager-ai-toolkit",
     "wordCount": 5228
+  },
+  {
+    "slug": "hotel-operations-planning-daily-control",
+    "wordCount": 567
   },
   {
     "slug": "hotel-ota-distribution-review-management-ai-toolkit",
@@ -256,8 +312,20 @@
     "wordCount": 8075
   },
   {
+    "slug": "hotel-preventive-maintenance-kpis",
+    "wordCount": 607
+  },
+  {
     "slug": "hotel-procurement-ai-toolkit",
     "wordCount": 7996
+  },
+  {
+    "slug": "hotel-procurement-supplier-quality-control",
+    "wordCount": 564
+  },
+  {
+    "slug": "hotel-property-reliability-score",
+    "wordCount": 554
   },
   {
     "slug": "hotel-quality-audit-ai-toolkit",
@@ -278,6 +346,10 @@
   {
     "slug": "hotel-sop-process-design-ai-toolkit",
     "wordCount": 7741
+  },
+  {
+    "slug": "hotel-workforce-productivity-efficiency",
+    "wordCount": 580
   },
   {
     "slug": "how-to-audit-an-sop",

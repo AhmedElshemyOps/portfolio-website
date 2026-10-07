@@ -2779,6 +2779,37 @@
     "updated": "2026-10-06"
   },
   {
+    "id": "hotel-apartment-asset-lifecycle-management",
+    "title": "Asset Lifecycle Management",
+    "url": "/articles/hotel-apartment-asset-lifecycle-management/index.html",
+    "description": "Manage hotel-apartment assets from specification and commissioning through operation, condition monitoring, renewal and disposal using one evidence trail.",
+    "category": "Hotel Apartment Operational Excellence",
+    "pillar": "Operational Excellence & SOPs",
+    "series": "Hotel Apartment Operational Excellence",
+    "type": "Article",
+    "contentType": "Field guide",
+    "readingTime": 3,
+    "wordCount": 600,
+    "headings": [
+      "What this article builds",
+      "Asset Lifecycle Management must connect decisions to evidence",
+      "Avoid isolated decisions",
+      "Build a repeatable decision path",
+      "Assign accountable ownership",
+      "Separate facts, assumptions and interpretation",
+      "Use a small set of decision-relevant measures",
+      "A quantified serviced-apartment scenario",
+      "Move from fragmented data to management control",
+      "Use governed AI as analysis support",
+      "Before calling the system controlled",
+      "Next in Track B"
+    ],
+    "tags": [
+      "Hotel Apartment Operational Excellence"
+    ],
+    "learningPaths": []
+  },
+  {
     "id": "hotel-apartment-cost-of-poor-quality",
     "title": "The Cost of Poor Quality",
     "url": "/articles/hotel-apartment-cost-of-poor-quality/index.html",
@@ -2902,6 +2933,37 @@
     "updated": "2026-10-06"
   },
   {
+    "id": "hotel-apartment-kpi-architecture",
+    "title": "Hotel Apartment KPI Architecture",
+    "url": "/articles/hotel-apartment-kpi-architecture/index.html",
+    "description": "Build a hotel-apartment KPI architecture that connects strategic outcomes to operational drivers, definitions, owners, data sources, review cadence and action rules.",
+    "category": "Hotel Apartment Operational Excellence",
+    "pillar": "Operational Excellence & SOPs",
+    "series": "Hotel Apartment Operational Excellence",
+    "type": "Article",
+    "contentType": "Field guide",
+    "readingTime": 3,
+    "wordCount": 561,
+    "headings": [
+      "What this article builds",
+      "Hotel Apartment KPI Architecture converts operational signals into controlled decisions",
+      "Visibility without control is still operational risk",
+      "Build from operational truth, not presentation",
+      "Make decision rights visible",
+      "Preserve the path from signal to closure",
+      "Measure what changes a management decision",
+      "A quantified serviced-apartment scenario",
+      "Build control in layers",
+      "Use governed AI for decision support",
+      "Before calling the system controlled",
+      "Next in Track B"
+    ],
+    "tags": [
+      "Hotel Apartment Operational Excellence"
+    ],
+    "learningPaths": []
+  },
+  {
     "id": "hotel-apartment-operating-system",
     "title": "Building the Hotel Apartment Operating System",
     "url": "/articles/hotel-apartment-operating-system/index.html",
@@ -2926,6 +2988,37 @@
       "From reactive property to operational excellence",
       "Put this operating system into practice with AI",
       "What a property should define first",
+      "Next in Track B"
+    ],
+    "tags": [
+      "Hotel Apartment Operational Excellence"
+    ],
+    "learningPaths": []
+  },
+  {
+    "id": "hotel-apartment-operations-control-tower",
+    "title": "The Hotel Apartment Operations Control Tower",
+    "url": "/articles/hotel-apartment-operations-control-tower/index.html",
+    "description": "Create a cross-functional hotel-apartment control tower that turns readiness, maintenance, guest, workforce and inventory exceptions into one prioritized management queue.",
+    "category": "Hotel Apartment Operational Excellence",
+    "pillar": "Operational Excellence & SOPs",
+    "series": "Hotel Apartment Operational Excellence",
+    "type": "Article",
+    "contentType": "Field guide",
+    "readingTime": 3,
+    "wordCount": 567,
+    "headings": [
+      "What this article builds",
+      "The Hotel Apartment Operations Control Tower converts operational signals into controlled decisions",
+      "Visibility without control is still operational risk",
+      "Build from operational truth, not presentation",
+      "Make decision rights visible",
+      "Preserve the path from signal to closure",
+      "Measure what changes a management decision",
+      "A quantified serviced-apartment scenario",
+      "Build control in layers",
+      "Use governed AI for decision support",
+      "Before calling the system controlled",
       "Next in Track B"
     ],
     "tags": [
@@ -2959,6 +3052,68 @@
       "A practical 30-day PM reset",
       "Put preventive maintenance into practice with governed AI",
       "Before calling the PM system controlled",
+      "Next in Track B"
+    ],
+    "tags": [
+      "Hotel Apartment Operational Excellence"
+    ],
+    "learningPaths": []
+  },
+  {
+    "id": "hotel-apartment-sop-architecture",
+    "title": "SOP Architecture for Hotel Apartments",
+    "url": "/articles/hotel-apartment-sop-architecture/index.html",
+    "description": "Design a controlled SOP architecture for hotel apartments using process hierarchy, ownership, RACI, exceptions, evidence, revision control and connected work instructions.",
+    "category": "Hotel Apartment Operational Excellence",
+    "pillar": "Operational Excellence & SOPs",
+    "series": "Hotel Apartment Operational Excellence",
+    "type": "Article",
+    "contentType": "Field guide",
+    "readingTime": 3,
+    "wordCount": 593,
+    "headings": [
+      "What this article builds",
+      "SOP Architecture for Hotel Apartments must connect decisions to evidence",
+      "Avoid isolated decisions",
+      "Build a repeatable decision path",
+      "Assign accountable ownership",
+      "Separate facts, assumptions and interpretation",
+      "Use a small set of decision-relevant measures",
+      "A quantified serviced-apartment scenario",
+      "Move from fragmented data to management control",
+      "Use governed AI as analysis support",
+      "Before calling the system controlled",
+      "Next in Track B"
+    ],
+    "tags": [
+      "Hotel Apartment Operational Excellence"
+    ],
+    "learningPaths": []
+  },
+  {
+    "id": "hotel-apartment-total-cost-of-ownership",
+    "title": "Total Cost of Ownership (TCO)",
+    "url": "/articles/hotel-apartment-total-cost-of-ownership/index.html",
+    "description": "Make repair, replace and procurement decisions using acquisition cost plus verified operating, maintenance, downtime and end-of-life costs rather than purchase price alone.",
+    "category": "Hotel Apartment Operational Excellence",
+    "pillar": "Operational Excellence & SOPs",
+    "series": "Hotel Apartment Operational Excellence",
+    "type": "Article",
+    "contentType": "Field guide",
+    "readingTime": 3,
+    "wordCount": 626,
+    "headings": [
+      "What this article builds",
+      "Total Cost of Ownership (TCO) must connect decisions to evidence",
+      "Avoid isolated decisions",
+      "Build a repeatable decision path",
+      "Assign accountable ownership",
+      "Separate facts, assumptions and interpretation",
+      "Use a small set of decision-relevant measures",
+      "A quantified serviced-apartment scenario",
+      "Move from fragmented data to management control",
+      "Use governed AI as analysis support",
+      "Before calling the system controlled",
       "Next in Track B"
     ],
     "tags": [
@@ -3048,6 +3203,99 @@
     ],
     "tags": [
       "Hotel AI Operations Playbook"
+    ],
+    "learningPaths": []
+  },
+  {
+    "id": "hotel-critical-spare-parts-management",
+    "title": "Critical Spare Parts Management",
+    "url": "/articles/hotel-critical-spare-parts-management/index.html",
+    "description": "Protect hotel-apartment asset availability by linking spare-part criticality, failure risk, lead time, stock policy, traceability and emergency sourcing.",
+    "category": "Hotel Apartment Operational Excellence",
+    "pillar": "Operational Excellence & SOPs",
+    "series": "Hotel Apartment Operational Excellence",
+    "type": "Article",
+    "contentType": "Field guide",
+    "readingTime": 3,
+    "wordCount": 591,
+    "headings": [
+      "What this article builds",
+      "Critical Spare Parts Management converts operational signals into controlled decisions",
+      "Visibility without control is still operational risk",
+      "Build from operational truth, not presentation",
+      "Make decision rights visible",
+      "Preserve the path from signal to closure",
+      "Measure what changes a management decision",
+      "A quantified serviced-apartment scenario",
+      "Build control in layers",
+      "Use governed AI for decision support",
+      "Before calling the system controlled",
+      "Next in Track B"
+    ],
+    "tags": [
+      "Hotel Apartment Operational Excellence"
+    ],
+    "learningPaths": []
+  },
+  {
+    "id": "hotel-downtime-out-of-service-management",
+    "title": "Downtime & Out-of-Service Management",
+    "url": "/articles/hotel-downtime-out-of-service-management/index.html",
+    "description": "Control apartment and asset downtime with explicit OOS/OOO logic, downtime clocks, priority, recovery ownership, verification and lost-capacity evidence.",
+    "category": "Hotel Apartment Operational Excellence",
+    "pillar": "Operational Excellence & SOPs",
+    "series": "Hotel Apartment Operational Excellence",
+    "type": "Article",
+    "contentType": "Field guide",
+    "readingTime": 3,
+    "wordCount": 573,
+    "headings": [
+      "What this article builds",
+      "Downtime & Out-of-Service Management converts operational signals into controlled decisions",
+      "Visibility without control is still operational risk",
+      "Build from operational truth, not presentation",
+      "Make decision rights visible",
+      "Preserve the path from signal to closure",
+      "Measure what changes a management decision",
+      "A quantified serviced-apartment scenario",
+      "Build control in layers",
+      "Use governed AI for decision support",
+      "Before calling the system controlled",
+      "Next in Track B"
+    ],
+    "tags": [
+      "Hotel Apartment Operational Excellence"
+    ],
+    "learningPaths": []
+  },
+  {
+    "id": "hotel-economics-of-service-failure",
+    "title": "The Economics of Service Failure",
+    "url": "/articles/hotel-economics-of-service-failure/index.html",
+    "description": "Measure the operational and financial consequences of hotel service failure across containment, recovery, rework, compensation, downtime and recurrence.",
+    "category": "Hotel Apartment Operational Excellence",
+    "pillar": "Operational Excellence & SOPs",
+    "series": "Hotel Apartment Operational Excellence",
+    "type": "Article",
+    "contentType": "Field guide",
+    "readingTime": 3,
+    "wordCount": 618,
+    "headings": [
+      "What this article builds",
+      "The Economics of Service Failure must connect decisions to evidence",
+      "Avoid isolated decisions",
+      "Build a repeatable decision path",
+      "Assign accountable ownership",
+      "Separate facts, assumptions and interpretation",
+      "Use a small set of decision-relevant measures",
+      "A quantified serviced-apartment scenario",
+      "Move from fragmented data to management control",
+      "Use governed AI as analysis support",
+      "Before calling the system controlled",
+      "Next in Track B"
+    ],
+    "tags": [
+      "Hotel Apartment Operational Excellence"
     ],
     "learningPaths": []
   },
@@ -3278,6 +3526,37 @@
     ],
     "tags": [
       "Hotel AI Operations Playbook"
+    ],
+    "learningPaths": []
+  },
+  {
+    "id": "hotel-first-time-right-operations",
+    "title": "First-Time-Right Operations",
+    "url": "/articles/hotel-first-time-right-operations/index.html",
+    "description": "Reduce hotel-apartment rework by designing quality at the source, defining completion criteria, measuring first-pass performance and learning from repeat defects.",
+    "category": "Hotel Apartment Operational Excellence",
+    "pillar": "Operational Excellence & SOPs",
+    "series": "Hotel Apartment Operational Excellence",
+    "type": "Article",
+    "contentType": "Field guide",
+    "readingTime": 3,
+    "wordCount": 559,
+    "headings": [
+      "What this article builds",
+      "First-Time-Right Operations starts with a controlled operating definition",
+      "Local optimization can damage the whole operation",
+      "Standardize what should be stable; manage what should vary",
+      "Make ownership and authority explicit",
+      "Measure the work using operational records",
+      "Build a balanced KPI set",
+      "A quantified serviced-apartment scenario",
+      "A practical improvement cycle",
+      "Use governed AI to support the operating system",
+      "Before calling the process controlled",
+      "Next in Track B"
+    ],
+    "tags": [
+      "Hotel Apartment Operational Excellence"
     ],
     "learningPaths": []
   },
@@ -3516,6 +3795,37 @@
     "updated": "2026-10-06"
   },
   {
+    "id": "hotel-guest-experience-quality-management",
+    "title": "Guest Experience Quality Management",
+    "url": "/articles/hotel-guest-experience-quality-management/index.html",
+    "description": "Manage guest experience as a quality system by translating voice-of-customer signals into CTQs, operational standards, failure evidence, recovery and closed-loop improvement.",
+    "category": "Hotel Apartment Operational Excellence",
+    "pillar": "Operational Excellence & SOPs",
+    "series": "Hotel Apartment Operational Excellence",
+    "type": "Article",
+    "contentType": "Field guide",
+    "readingTime": 3,
+    "wordCount": 565,
+    "headings": [
+      "What this article builds",
+      "Guest Experience Quality Management converts operational signals into controlled decisions",
+      "Visibility without control is still operational risk",
+      "Build from operational truth, not presentation",
+      "Make decision rights visible",
+      "Preserve the path from signal to closure",
+      "Measure what changes a management decision",
+      "A quantified serviced-apartment scenario",
+      "Build control in layers",
+      "Use governed AI for decision support",
+      "Before calling the system controlled",
+      "Next in Track B"
+    ],
+    "tags": [
+      "Hotel Apartment Operational Excellence"
+    ],
+    "learningPaths": []
+  },
+  {
     "id": "hotel-housekeeping-management-ai-toolkit",
     "type": "Article",
     "title": "Housekeeping Management AI Toolkit",
@@ -3601,6 +3911,68 @@
       "A practical control rollout",
       "Put the management system into practice with governed AI",
       "Before calling this process controlled",
+      "Next in Track B"
+    ],
+    "tags": [
+      "Hotel Apartment Operational Excellence"
+    ],
+    "learningPaths": []
+  },
+  {
+    "id": "hotel-housekeeping-standardization",
+    "title": "Housekeeping Standardization",
+    "url": "/articles/hotel-housekeeping-standardization/index.html",
+    "description": "Standardize hotel-apartment housekeeping through defined work sequence, apartment-type standards, visual controls, training, verification and controlled improvement.",
+    "category": "Hotel Apartment Operational Excellence",
+    "pillar": "Operational Excellence & SOPs",
+    "series": "Hotel Apartment Operational Excellence",
+    "type": "Article",
+    "contentType": "Field guide",
+    "readingTime": 3,
+    "wordCount": 559,
+    "headings": [
+      "What this article builds",
+      "Housekeeping Standardization starts with a controlled operating definition",
+      "Local optimization can damage the whole operation",
+      "Standardize what should be stable; manage what should vary",
+      "Make ownership and authority explicit",
+      "Measure the work using operational records",
+      "Build a balanced KPI set",
+      "A quantified serviced-apartment scenario",
+      "A practical improvement cycle",
+      "Use governed AI to support the operating system",
+      "Before calling the process controlled",
+      "Next in Track B"
+    ],
+    "tags": [
+      "Hotel Apartment Operational Excellence"
+    ],
+    "learningPaths": []
+  },
+  {
+    "id": "hotel-inventory-par-level-management",
+    "title": "Inventory & PAR Level Management",
+    "url": "/articles/hotel-inventory-par-level-management/index.html",
+    "description": "Design inventory and PAR controls for hotel apartments using consumption, lead time, service risk, count accuracy, reorder logic and exception review.",
+    "category": "Hotel Apartment Operational Excellence",
+    "pillar": "Operational Excellence & SOPs",
+    "series": "Hotel Apartment Operational Excellence",
+    "type": "Article",
+    "contentType": "Field guide",
+    "readingTime": 3,
+    "wordCount": 592,
+    "headings": [
+      "What this article builds",
+      "Inventory & PAR Level Management starts with a controlled operating definition",
+      "Local optimization can damage the whole operation",
+      "Standardize what should be stable; manage what should vary",
+      "Make ownership and authority explicit",
+      "Measure the work using operational records",
+      "Build a balanced KPI set",
+      "A quantified serviced-apartment scenario",
+      "A practical improvement cycle",
+      "Use governed AI to support the operating system",
+      "Before calling the process controlled",
       "Next in Track B"
     ],
     "tags": [
@@ -3815,6 +4187,37 @@
     "learningPaths": []
   },
   {
+    "id": "hotel-operational-excellence-maturity-model",
+    "title": "Operational Excellence Maturity Model",
+    "url": "/articles/hotel-operational-excellence-maturity-model/index.html",
+    "description": "Assess hotel-apartment operational maturity through evidence-based levels covering governance, standards, reliability, quality, data, improvement and management control.",
+    "category": "Hotel Apartment Operational Excellence",
+    "pillar": "Operational Excellence & SOPs",
+    "series": "Hotel Apartment Operational Excellence",
+    "type": "Article",
+    "contentType": "Field guide",
+    "readingTime": 3,
+    "wordCount": 564,
+    "headings": [
+      "What this article builds",
+      "Operational Excellence Maturity Model converts operational signals into controlled decisions",
+      "Visibility without control is still operational risk",
+      "Build from operational truth, not presentation",
+      "Make decision rights visible",
+      "Preserve the path from signal to closure",
+      "Measure what changes a management decision",
+      "A quantified serviced-apartment scenario",
+      "Build control in layers",
+      "Use governed AI for decision support",
+      "Before calling the system controlled",
+      "Track B complete"
+    ],
+    "tags": [
+      "Hotel Apartment Operational Excellence"
+    ],
+    "learningPaths": []
+  },
+  {
     "id": "hotel-operations-manager-ai-toolkit",
     "type": "Article",
     "title": "Hotel Operations Manager AI Toolkit",
@@ -3874,6 +4277,37 @@
     "wordCount": 5228,
     "contentType": "Field guide",
     "updated": "2026-10-06"
+  },
+  {
+    "id": "hotel-operations-planning-daily-control",
+    "title": "Operations Planning & Daily Control",
+    "url": "/articles/hotel-operations-planning-daily-control/index.html",
+    "description": "Run hotel-apartment operations through a disciplined daily control rhythm that connects demand, readiness, defects, staffing, guest commitments, exceptions and accountable follow-up.",
+    "category": "Hotel Apartment Operational Excellence",
+    "pillar": "Operational Excellence & SOPs",
+    "series": "Hotel Apartment Operational Excellence",
+    "type": "Article",
+    "contentType": "Field guide",
+    "readingTime": 3,
+    "wordCount": 567,
+    "headings": [
+      "What this article builds",
+      "Operations Planning & Daily Control converts operational signals into controlled decisions",
+      "Visibility without control is still operational risk",
+      "Build from operational truth, not presentation",
+      "Make decision rights visible",
+      "Preserve the path from signal to closure",
+      "Measure what changes a management decision",
+      "A quantified serviced-apartment scenario",
+      "Build control in layers",
+      "Use governed AI for decision support",
+      "Before calling the system controlled",
+      "Next in Track B"
+    ],
+    "tags": [
+      "Hotel Apartment Operational Excellence"
+    ],
+    "learningPaths": []
   },
   {
     "id": "hotel-ota-distribution-review-management-ai-toolkit",
@@ -3994,6 +4428,37 @@
     "updated": "2026-10-06"
   },
   {
+    "id": "hotel-preventive-maintenance-kpis",
+    "title": "Preventive Maintenance KPIs",
+    "url": "/articles/hotel-preventive-maintenance-kpis/index.html",
+    "description": "Build a preventive-maintenance KPI system that separates schedule compliance from reliability, repeat failures, backlog, downtime and maintenance effectiveness.",
+    "category": "Hotel Apartment Operational Excellence",
+    "pillar": "Operational Excellence & SOPs",
+    "series": "Hotel Apartment Operational Excellence",
+    "type": "Article",
+    "contentType": "Field guide",
+    "readingTime": 3,
+    "wordCount": 607,
+    "headings": [
+      "What this article builds",
+      "Preventive Maintenance KPIs must connect decisions to evidence",
+      "Avoid isolated decisions",
+      "Build a repeatable decision path",
+      "Assign accountable ownership",
+      "Separate facts, assumptions and interpretation",
+      "Use a small set of decision-relevant measures",
+      "A quantified serviced-apartment scenario",
+      "Move from fragmented data to management control",
+      "Use governed AI as analysis support",
+      "Before calling the system controlled",
+      "Next in Track B"
+    ],
+    "tags": [
+      "Hotel Apartment Operational Excellence"
+    ],
+    "learningPaths": []
+  },
+  {
     "id": "hotel-procurement-ai-toolkit",
     "title": "Hotel Procurement AI Toolkit",
     "url": "/articles/hotel-procurement-ai-toolkit/index.html",
@@ -4044,6 +4509,68 @@
     ],
     "tags": [
       "Hotel AI Operations Playbook"
+    ],
+    "learningPaths": []
+  },
+  {
+    "id": "hotel-procurement-supplier-quality-control",
+    "title": "Procurement & Supplier Quality Control",
+    "url": "/articles/hotel-procurement-supplier-quality-control/index.html",
+    "description": "Control hotel-apartment suppliers through clear specifications, qualification, delivery inspection, SLA evidence, scorecards and corrective action.",
+    "category": "Hotel Apartment Operational Excellence",
+    "pillar": "Operational Excellence & SOPs",
+    "series": "Hotel Apartment Operational Excellence",
+    "type": "Article",
+    "contentType": "Field guide",
+    "readingTime": 3,
+    "wordCount": 564,
+    "headings": [
+      "What this article builds",
+      "Procurement & Supplier Quality Control starts with a controlled operating definition",
+      "Local optimization can damage the whole operation",
+      "Standardize what should be stable; manage what should vary",
+      "Make ownership and authority explicit",
+      "Measure the work using operational records",
+      "Build a balanced KPI set",
+      "A quantified serviced-apartment scenario",
+      "A practical improvement cycle",
+      "Use governed AI to support the operating system",
+      "Before calling the process controlled",
+      "Next in Track B"
+    ],
+    "tags": [
+      "Hotel Apartment Operational Excellence"
+    ],
+    "learningPaths": []
+  },
+  {
+    "id": "hotel-property-reliability-score",
+    "title": "Property Reliability Score",
+    "url": "/articles/hotel-property-reliability-score/index.html",
+    "description": "Design a transparent composite reliability score for hotel apartments using controlled measures, documented weighting, evidence quality and drill-down rather than a black-box rating.",
+    "category": "Hotel Apartment Operational Excellence",
+    "pillar": "Operational Excellence & SOPs",
+    "series": "Hotel Apartment Operational Excellence",
+    "type": "Article",
+    "contentType": "Field guide",
+    "readingTime": 3,
+    "wordCount": 554,
+    "headings": [
+      "What this article builds",
+      "Property Reliability Score converts operational signals into controlled decisions",
+      "Visibility without control is still operational risk",
+      "Build from operational truth, not presentation",
+      "Make decision rights visible",
+      "Preserve the path from signal to closure",
+      "Measure what changes a management decision",
+      "A quantified serviced-apartment scenario",
+      "Build control in layers",
+      "Use governed AI for decision support",
+      "Before calling the system controlled",
+      "Next in Track B"
+    ],
+    "tags": [
+      "Hotel Apartment Operational Excellence"
     ],
     "learningPaths": []
   },
@@ -4342,6 +4869,37 @@
     "wordCount": 7741,
     "contentType": "Field guide",
     "updated": "2026-10-07"
+  },
+  {
+    "id": "hotel-workforce-productivity-efficiency",
+    "title": "Productivity & Workforce Efficiency",
+    "url": "/articles/hotel-workforce-productivity-efficiency/index.html",
+    "description": "Plan hotel-apartment labor around workload, demand, productive capacity, service standards and quality rather than crude output-per-person targets.",
+    "category": "Hotel Apartment Operational Excellence",
+    "pillar": "Operational Excellence & SOPs",
+    "series": "Hotel Apartment Operational Excellence",
+    "type": "Article",
+    "contentType": "Field guide",
+    "readingTime": 3,
+    "wordCount": 580,
+    "headings": [
+      "What this article builds",
+      "Productivity & Workforce Efficiency starts with a controlled operating definition",
+      "Local optimization can damage the whole operation",
+      "Standardize what should be stable; manage what should vary",
+      "Make ownership and authority explicit",
+      "Measure the work using operational records",
+      "Build a balanced KPI set",
+      "A quantified serviced-apartment scenario",
+      "A practical improvement cycle",
+      "Use governed AI to support the operating system",
+      "Before calling the process controlled",
+      "Next in Track B"
+    ],
+    "tags": [
+      "Hotel Apartment Operational Excellence"
+    ],
+    "learningPaths": []
   },
   {
     "id": "how-to-audit-an-sop",

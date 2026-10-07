@@ -334,6 +334,14 @@
       "readingMinutes": 18
     },
     {
+      "title": "Asset Lifecycle Management",
+      "slug": "hotel-apartment-asset-lifecycle-management",
+      "category": "Hotel Apartment Operational Excellence",
+      "summary": "Manage hotel-apartment assets from specification and commissioning through operation, condition monitoring, renewal and disposal using one evidence trail.",
+      "canonical": "https://ahmedqualityops.com/articles/hotel-apartment-asset-lifecycle-management/index.html",
+      "readingMinutes": 3
+    },
+    {
       "title": "The Cost of Poor Quality",
       "slug": "hotel-apartment-cost-of-poor-quality",
       "category": "Hotel Apartment Operational Excellence",
@@ -358,6 +366,14 @@
       "readingMinutes": 31
     },
     {
+      "title": "Hotel Apartment KPI Architecture",
+      "slug": "hotel-apartment-kpi-architecture",
+      "category": "Hotel Apartment Operational Excellence",
+      "summary": "Build a hotel-apartment KPI architecture that connects strategic outcomes to operational drivers, definitions, owners, data sources, review cadence and action rules.",
+      "canonical": "https://ahmedqualityops.com/articles/hotel-apartment-kpi-architecture/index.html",
+      "readingMinutes": 3
+    },
+    {
       "title": "Building the Hotel Apartment Operating System",
       "slug": "hotel-apartment-operating-system",
       "category": "Hotel Apartment Operational Excellence",
@@ -366,12 +382,36 @@
       "readingMinutes": 4
     },
     {
+      "title": "The Hotel Apartment Operations Control Tower",
+      "slug": "hotel-apartment-operations-control-tower",
+      "category": "Hotel Apartment Operational Excellence",
+      "summary": "Create a cross-functional hotel-apartment control tower that turns readiness, maintenance, guest, workforce and inventory exceptions into one prioritized management queue.",
+      "canonical": "https://ahmedqualityops.com/articles/hotel-apartment-operations-control-tower/index.html",
+      "readingMinutes": 3
+    },
+    {
       "title": "Preventive Maintenance Strategy for Hotel Apartments",
       "slug": "hotel-apartment-preventive-maintenance-strategy",
       "category": "Hotel Apartment Operational Excellence",
       "summary": "Build a preventive maintenance strategy for hotel and serviced apartments using asset criticality, PM frequencies, work-order control, compliance, backlog and effectiveness KPIs.",
       "canonical": "https://ahmedqualityops.com/articles/hotel-apartment-preventive-maintenance-strategy/index.html",
       "readingMinutes": 6
+    },
+    {
+      "title": "SOP Architecture for Hotel Apartments",
+      "slug": "hotel-apartment-sop-architecture",
+      "category": "Hotel Apartment Operational Excellence",
+      "summary": "Design a controlled SOP architecture for hotel apartments using process hierarchy, ownership, RACI, exceptions, evidence, revision control and connected work instructions.",
+      "canonical": "https://ahmedqualityops.com/articles/hotel-apartment-sop-architecture/index.html",
+      "readingMinutes": 3
+    },
+    {
+      "title": "Total Cost of Ownership (TCO)",
+      "slug": "hotel-apartment-total-cost-of-ownership",
+      "category": "Hotel Apartment Operational Excellence",
+      "summary": "Make repair, replace and procurement decisions using acquisition cost plus verified operating, maintenance, downtime and end-of-life costs rather than purchase price alone.",
+      "canonical": "https://ahmedqualityops.com/articles/hotel-apartment-total-cost-of-ownership/index.html",
+      "readingMinutes": 3
     },
     {
       "title": "Complaint Root-Cause Analysis",
@@ -388,6 +428,30 @@
       "summary": "10 professional AI prompts for integrated hotel control towers, exception prioritization, reliability, alerts, escalation and executive decision support.",
       "canonical": "https://ahmedqualityops.com/articles/hotel-control-tower-ai-decision-support-toolkit/index.html",
       "readingMinutes": 29
+    },
+    {
+      "title": "Critical Spare Parts Management",
+      "slug": "hotel-critical-spare-parts-management",
+      "category": "Hotel Apartment Operational Excellence",
+      "summary": "Protect hotel-apartment asset availability by linking spare-part criticality, failure risk, lead time, stock policy, traceability and emergency sourcing.",
+      "canonical": "https://ahmedqualityops.com/articles/hotel-critical-spare-parts-management/index.html",
+      "readingMinutes": 3
+    },
+    {
+      "title": "Downtime & Out-of-Service Management",
+      "slug": "hotel-downtime-out-of-service-management",
+      "category": "Hotel Apartment Operational Excellence",
+      "summary": "Control apartment and asset downtime with explicit OOS/OOO logic, downtime clocks, priority, recovery ownership, verification and lost-capacity evidence.",
+      "canonical": "https://ahmedqualityops.com/articles/hotel-downtime-out-of-service-management/index.html",
+      "readingMinutes": 3
+    },
+    {
+      "title": "The Economics of Service Failure",
+      "slug": "hotel-economics-of-service-failure",
+      "category": "Hotel Apartment Operational Excellence",
+      "summary": "Measure the operational and financial consequences of hotel service failure across containment, recovery, rework, compensation, downtime and recurrence.",
+      "canonical": "https://ahmedqualityops.com/articles/hotel-economics-of-service-failure/index.html",
+      "readingMinutes": 3
     },
     {
       "title": "Energy & Utility Management AI Toolkit",
@@ -422,6 +486,14 @@
       "readingMinutes": 34
     },
     {
+      "title": "First-Time-Right Operations",
+      "slug": "hotel-first-time-right-operations",
+      "category": "Hotel Apartment Operational Excellence",
+      "summary": "Reduce hotel-apartment rework by designing quality at the source, defining completion criteria, measuring first-pass performance and learning from repeat defects.",
+      "canonical": "https://ahmedqualityops.com/articles/hotel-first-time-right-operations/index.html",
+      "readingMinutes": 3
+    },
+    {
       "title": "Front Office AI Toolkit",
       "slug": "hotel-front-office-ai-toolkit",
       "category": "Hotel & Serviced Apartment AI Operations",
@@ -454,6 +526,14 @@
       "readingMinutes": 32
     },
     {
+      "title": "Guest Experience Quality Management",
+      "slug": "hotel-guest-experience-quality-management",
+      "category": "Hotel Apartment Operational Excellence",
+      "summary": "Manage guest experience as a quality system by translating voice-of-customer signals into CTQs, operational standards, failure evidence, recovery and closed-loop improvement.",
+      "canonical": "https://ahmedqualityops.com/articles/hotel-guest-experience-quality-management/index.html",
+      "readingMinutes": 3
+    },
+    {
       "title": "Housekeeping Management AI Toolkit",
       "slug": "hotel-housekeeping-management-ai-toolkit",
       "category": "Hotel & Serviced Apartment AI Operations",
@@ -467,6 +547,22 @@
       "category": "Hotel Apartment Operational Excellence",
       "summary": "Build a housekeeping quality-control system for hotel apartments using inspection design, defect taxonomy, first-pass quality, sampling, coaching and recurrence control.",
       "canonical": "https://ahmedqualityops.com/articles/hotel-housekeeping-quality-control/index.html",
+      "readingMinutes": 3
+    },
+    {
+      "title": "Housekeeping Standardization",
+      "slug": "hotel-housekeeping-standardization",
+      "category": "Hotel Apartment Operational Excellence",
+      "summary": "Standardize hotel-apartment housekeeping through defined work sequence, apartment-type standards, visual controls, training, verification and controlled improvement.",
+      "canonical": "https://ahmedqualityops.com/articles/hotel-housekeeping-standardization/index.html",
+      "readingMinutes": 3
+    },
+    {
+      "title": "Inventory & PAR Level Management",
+      "slug": "hotel-inventory-par-level-management",
+      "category": "Hotel Apartment Operational Excellence",
+      "summary": "Design inventory and PAR controls for hotel apartments using consumption, lead time, service risk, count accuracy, reorder logic and exception review.",
+      "canonical": "https://ahmedqualityops.com/articles/hotel-inventory-par-level-management/index.html",
       "readingMinutes": 3
     },
     {
@@ -502,12 +598,28 @@
       "readingMinutes": 3
     },
     {
+      "title": "Operational Excellence Maturity Model",
+      "slug": "hotel-operational-excellence-maturity-model",
+      "category": "Hotel Apartment Operational Excellence",
+      "summary": "Assess hotel-apartment operational maturity through evidence-based levels covering governance, standards, reliability, quality, data, improvement and management control.",
+      "canonical": "https://ahmedqualityops.com/articles/hotel-operational-excellence-maturity-model/index.html",
+      "readingMinutes": 3
+    },
+    {
       "title": "Hotel Operations Manager AI Toolkit",
       "slug": "hotel-operations-manager-ai-toolkit",
       "category": "Hotel & Serviced Apartment AI Operations",
       "summary": "10 professional AI prompts for daily hotel operations, priorities, handovers, exceptions and management control.",
       "canonical": "https://ahmedqualityops.com/articles/hotel-operations-manager-ai-toolkit/index.html",
       "readingMinutes": 16
+    },
+    {
+      "title": "Operations Planning & Daily Control",
+      "slug": "hotel-operations-planning-daily-control",
+      "category": "Hotel Apartment Operational Excellence",
+      "summary": "Run hotel-apartment operations through a disciplined daily control rhythm that connects demand, readiness, defects, staffing, guest commitments, exceptions and accountable follow-up.",
+      "canonical": "https://ahmedqualityops.com/articles/hotel-operations-planning-daily-control/index.html",
+      "readingMinutes": 3
     },
     {
       "title": "Hotel OTA, Distribution & Review Management AI Toolkit",
@@ -526,12 +638,36 @@
       "readingMinutes": 26
     },
     {
+      "title": "Preventive Maintenance KPIs",
+      "slug": "hotel-preventive-maintenance-kpis",
+      "category": "Hotel Apartment Operational Excellence",
+      "summary": "Build a preventive-maintenance KPI system that separates schedule compliance from reliability, repeat failures, backlog, downtime and maintenance effectiveness.",
+      "canonical": "https://ahmedqualityops.com/articles/hotel-preventive-maintenance-kpis/index.html",
+      "readingMinutes": 3
+    },
+    {
       "title": "Hotel Procurement AI Toolkit",
       "slug": "hotel-procurement-ai-toolkit",
       "category": "Hotel & Serviced Apartment AI Operations",
       "summary": "10 Professional AI Prompts for Requisitions, RFQs, Bid Evaluation, Total Cost, Negotiation, Contracts, Supplier Risk and Performance",
       "canonical": "https://ahmedqualityops.com/articles/hotel-procurement-ai-toolkit/index.html",
       "readingMinutes": 37
+    },
+    {
+      "title": "Procurement & Supplier Quality Control",
+      "slug": "hotel-procurement-supplier-quality-control",
+      "category": "Hotel Apartment Operational Excellence",
+      "summary": "Control hotel-apartment suppliers through clear specifications, qualification, delivery inspection, SLA evidence, scorecards and corrective action.",
+      "canonical": "https://ahmedqualityops.com/articles/hotel-procurement-supplier-quality-control/index.html",
+      "readingMinutes": 3
+    },
+    {
+      "title": "Property Reliability Score",
+      "slug": "hotel-property-reliability-score",
+      "category": "Hotel Apartment Operational Excellence",
+      "summary": "Design a transparent composite reliability score for hotel apartments using controlled measures, documented weighting, evidence quality and drill-down rather than a black-box rating.",
+      "canonical": "https://ahmedqualityops.com/articles/hotel-property-reliability-score/index.html",
+      "readingMinutes": 3
     },
     {
       "title": "Hotel Quality Audit AI Toolkit",
@@ -572,6 +708,14 @@
       "summary": "10 professional AI prompts for SOP structure, procedures, RACI, exceptions, evidence, KPIs, work instructions, checklists, gap audits and revision control.",
       "canonical": "https://ahmedqualityops.com/articles/hotel-sop-process-design-ai-toolkit/index.html",
       "readingMinutes": 40
+    },
+    {
+      "title": "Productivity & Workforce Efficiency",
+      "slug": "hotel-workforce-productivity-efficiency",
+      "category": "Hotel Apartment Operational Excellence",
+      "summary": "Plan hotel-apartment labor around workload, demand, productive capacity, service standards and quality rather than crude output-per-person targets.",
+      "canonical": "https://ahmedqualityops.com/articles/hotel-workforce-productivity-efficiency/index.html",
+      "readingMinutes": 3
     },
     {
       "title": "How to Audit an SOP",
