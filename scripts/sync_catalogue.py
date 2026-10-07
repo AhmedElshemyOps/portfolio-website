@@ -53,6 +53,8 @@ content['articles']=[dict(title=x['title'],slug=x['id'],category=x['category'],s
 write_json('content-index.json',content)
 # Generate Knowledge Hub cards and filters from the same records used by search.
 p=ROOT/'knowledge/index.html';s=p.read_text()
+# Release batches are now represented in the unified catalogue, not duplicated grids.
+s=re.sub(r'<section class="knowledge-browser"><header><span class="eyebrow">Track B · New release</span>.*?</section>', '', s, flags=re.S)
 for field in ['pillar','series','type']:
  key='contentType' if field=='type' else field
  values=sorted({x[key] if x['type']!='Series index' or field!='type' else 'Series index' for x in registry})
