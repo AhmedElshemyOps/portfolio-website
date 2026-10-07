@@ -1,5 +1,8 @@
 /* Shared reader geometry and interaction tokens. Loaded after legacy styles. */
 .article-reader-page{scroll-padding-top:100px}
+/* Dark prompt cards need explicit heading/link colors after shared reader rules. */
+.article-reader-page .article-body .prompt-card .prompt-card-top h3{color:#fff}
+.article-reader-page .article-body .prompt-card .prompt-card-top .heading-anchor{color:#e5c77f}
 /* The table of contents already provides section navigation on narrow screens. */
 @media(max-width:620px){.article-reader-page .article-section-map{display:none!important}}
 .article-reader-page .article-body .faq-section>details{margin:10px 0;border:1px solid #d9d1c1;background:#fff;color:#071a32}

@@ -6,6 +6,9 @@ from pathlib import Path
 from html import escape, unescape
 import json, re, math
 ROOT=Path(__file__).resolve().parents[1]
+# Validate before writing any catalogue outputs; never publish an empty template.
+from sync_hotel_prompts import check as check_prompt_content
+check_prompt_content(ROOT)
 def clean(s): return unescape(re.sub('<[^>]+>', ' ', s)).strip()
 def match(pattern,s,default=''):
  m=re.search(pattern,s,re.S|re.I);return clean(m.group(1)) if m else default

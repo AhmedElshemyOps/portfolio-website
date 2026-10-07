@@ -1,0 +1,58 @@
+{
+  "repository": "https://github.com/AhmedElshemyOps/hotel-ai-operations-playbook",
+  "commit": "aa03b1ed9499736ebd00b1cedd1b2e48fc3180d9",
+  "license": "CC BY 4.0",
+  "attribution": "Ahmed Mahmoud \u2014 Hotel AI Operations Playbook",
+  "prompts": [
+    {
+      "file": "011-daily-operations-briefing.md",
+      "sha256": "a612aa2d00754f5380c33abf8f317565c47c45f6cbd5b334d4f4af64257957c0",
+      "source_path": "prompt-library/011-daily-operations-briefing.md"
+    },
+    {
+      "file": "012-shift-handover-analyzer.md",
+      "sha256": "e1d4c9281ae3c35fd3861e146763503d492764320ddab5b69929181358bedd6b",
+      "source_path": "prompt-library/012-shift-handover-analyzer.md"
+    },
+    {
+      "file": "013-operational-priority-planner.md",
+      "sha256": "32cd5ffcfc7d2d4db5ee4f16029724d34d7e94ef56ca8718b206deaf9bf978f3",
+      "source_path": "prompt-library/013-operational-priority-planner.md"
+    },
+    {
+      "file": "014-department-dependency-mapper.md",
+      "sha256": "90bcadf34779eae32d58c3c16eed1e4fddebd2f9b4c8f35877f106a15f118f51",
+      "source_path": "prompt-library/014-department-dependency-mapper.md"
+    },
+    {
+      "file": "015-exception-escalation-analyzer.md",
+      "sha256": "b9139ea780d43e54d2ea072200e00e57647926a8fbee5871523a2c5ab9273c2c",
+      "source_path": "prompt-library/015-exception-escalation-analyzer.md"
+    },
+    {
+      "file": "016-daily-action-tracker.md",
+      "sha256": "2cd9371336096abd54bcd81f1ed2575af3a49455cb9b4b83dc445650ea9e75ba",
+      "source_path": "prompt-library/016-daily-action-tracker.md"
+    },
+    {
+      "file": "017-manager-walk-around-planner.md",
+      "sha256": "064c25e59c55b9ecf0daecfd05f75d811379ee038aeabaef70ef3bc2286d101f",
+      "source_path": "prompt-library/017-manager-walk-around-planner.md"
+    },
+    {
+      "file": "018-service-recovery-coordination-brief.md",
+      "sha256": "15bbdf91ef64e0d9dcb01a96c3d6e16706fb26f96e954c7c426c361d580f0334",
+      "source_path": "prompt-library/018-service-recovery-coordination-brief.md"
+    },
+    {
+      "file": "019-cross-department-meeting-summary.md",
+      "sha256": "ce8410b6cb335a4587fa5499a7856f087ee017730c89a383a750230f4361b09c",
+      "source_path": "prompt-library/019-cross-department-meeting-summary.md"
+    },
+    {
+      "file": "020-end-of-day-operations-report.md",
+      "sha256": "11e7e2c229e2d6392862360b39cd390bceb2dea9fd3ab38b8566f3e65e34693f",
+      "source_path": "prompt-library/020-end-of-day-operations-report.md"
+    }
+  ]
+}
