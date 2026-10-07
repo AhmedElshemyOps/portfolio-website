@@ -27,7 +27,7 @@
   const clamp = (value, min, max) => Math.min(max, Math.max(min, value));
 
   const savedPreferences = (() => {
-    try { return JSON.parse(storage.get(preferenceKey) || '{}'); } catch (_error) { return {}; }
+    try { const value = JSON.parse(storage.get(preferenceKey) || '{}'); return value && typeof value === 'object' && !Array.isArray(value) ? value : {}; } catch (_error) { return {}; }
   })();
   let readerScale = clamp(Number(savedPreferences.scale) || 1, .9, 1.25);
   let highContrast = savedPreferences.contrast === true;
@@ -78,6 +78,19 @@
   mobileToc.addEventListener?.('change', updateTocMode);
 
   const tocLinks = [...document.querySelectorAll('[data-toc-link]')];
+  const tocGroups = [...document.querySelectorAll('.article-toc .toc-children')];
+  function revealTocTarget(hash) {
+    const link = tocLinks.find(link => link.getAttribute('href') === hash);
+    if (!link) return;
+    let group = link.closest('details');
+    while (group) {
+      group.open = group === toc ? !mobileToc.matches : true;
+      group = group.parentElement?.closest('details');
+    }
+  }
+  revealTocTarget(window.location.hash);
+  window.addEventListener('hashchange', () => revealTocTarget(window.location.hash));
+
   // Use the table of contents as the single section registry, including introductory sections.
   const headings = tocLinks.length ? [...new Set(tocLinks.map(link => document.getElementById(link.getAttribute('href').slice(1))).filter(Boolean))] : [...document.querySelectorAll('.article-body h2[id]')].filter(heading => !heading.closest('.article-read-time-card'));
   const sectionMap = document.createElement('nav');
@@ -133,6 +146,11 @@
     headings.forEach((heading,index) => { if (heading.getBoundingClientRect().top <= 150) activeIndex = index; });
     if (sectionCurrent) sectionCurrent.textContent = String(activeIndex + 1);
     tocLinks.forEach(link => { const active=link.getAttribute('href')===`#${headings[activeIndex]?.id}`; link.classList.toggle('is-active',active); if(active)link.setAttribute('aria-current','location'); else link.removeAttribute('aria-current'); });
+    tocGroups.forEach(group => {
+      const current = !!group.querySelector('a.is-active');
+      group.classList.toggle('is-current', current);
+      group.closest('.toc-main-item')?.querySelector(':scope > a')?.classList.toggle('is-parent-current', current);
+    });
     sectionButtons.forEach((button,index)=>{button.classList.toggle('is-active',index===activeIndex);if(index===activeIndex)button.setAttribute('aria-current','location');else button.removeAttribute('aria-current');});
     const maximum = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
     const readingColumn = document.querySelector('.article-reading-column') || article;

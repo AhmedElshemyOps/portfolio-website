@@ -1,314 +1,514 @@
 [
   {
-    "slug": "tourism-ai-operations-playbook",
-    "wordCount": 1930
-  },
-  {
-    "slug": "article-air-connectivity-dmc-market-intelligence",
-    "wordCount": 4625
-  },
-  {
-    "slug": "article-assignment-engine-dmc-operations",
-    "wordCount": 4559
-  },
-  {
-    "slug": "article-fleet-control-tower-operations-dashboard",
-    "wordCount": 4052
-  },
-  {
-    "slug": "article-tour-guide-storytelling-system",
-    "wordCount": 4197
-  },
-  {
-    "slug": "article-rfi-rfq-rfp-erfp-nda-tourism-sales",
-    "wordCount": 11647
-  },
-  {
-    "slug": "article-destination-experience-journey-map",
-    "wordCount": 4214
-  },
-  {
-    "slug": "article-tour-guide-quality-index",
-    "wordCount": 2775
-  },
-  {
-    "slug": "article-tourism-operations-roles-real-difference",
-    "wordCount": 5834
-  },
-  {
-    "slug": "article-city-tour-quotation-professional",
-    "wordCount": 3341
-  },
-  {
-    "slug": "article-fixed-variable-costs-city-tour-pricing",
-    "wordCount": 3198
-  },
-  {
-    "slug": "article-net-cost-selling-price-markup",
-    "wordCount": 2952
-  },
-  {
-    "slug": "article-participant-estimation-break-even-risk",
-    "wordCount": 3431
-  },
-  {
-    "slug": "article-professional-client-tour-quotation",
-    "wordCount": 2529
-  },
-  {
-    "slug": "article-tour-cost-worksheet-city-tour",
-    "wordCount": 2952
-  },
-  {
-    "slug": "article-transport-tickets-vat-gratuities",
-    "wordCount": 2799
-  },
-  {
-    "slug": "insights-city-tour-quotation-pricing-masterclass",
-    "wordCount": 275
-  },
-  {
-    "slug": "tourism-prompting-framework",
-    "wordCount": 4194
-  },
-  {
-    "slug": "front-line-tourism-ai-toolkit",
-    "wordCount": 4087
-  },
-  {
-    "slug": "dmc-operations-ai-prompts",
-    "wordCount": 4052
-  },
-  {
-    "slug": "tourism-transport-dispatch-ai-prompts",
-    "wordCount": 4093
-  },
-  {
-    "slug": "tourism-product-development-ai-prompts",
-    "wordCount": 4051
-  },
-  {
-    "slug": "tourism-itinerary-ai-prompts",
-    "wordCount": 4046
-  },
-  {
-    "slug": "tourism-sales-quotation-ai-prompts",
-    "wordCount": 3993
-  },
-  {
-    "slug": "guest-experience-ai-prompts",
-    "wordCount": 4026
-  },
-  {
-    "slug": "tourism-quality-sop-ai-prompts",
-    "wordCount": 4008
-  },
-  {
-    "slug": "responsible-ai-tourism-guide",
-    "wordCount": 4211
-  },
-  {
-    "slug": "abu-dhabi-mice-operations-series",
-    "wordCount": 325
-  },
-  {
-    "slug": "article-abu-dhabi-mice-movement-control-room",
-    "wordCount": 5449
-  },
-  {
-    "slug": "article-mice-arrival-waves-zayed-international-airport",
-    "wordCount": 7626
-  },
-  {
-    "slug": "article-mice-hotel-desks-coach-departures-abu-dhabi",
-    "wordCount": 7621
-  },
-  {
-    "slug": "article-mice-venue-arrivals-registration-abu-dhabi",
-    "wordCount": 7707
-  },
-  {
-    "slug": "article-mice-backup-operations-service-recovery-abu-dhabi",
-    "wordCount": 7730
-  },
-  {
-    "slug": "tourism-company-operating-system",
-    "wordCount": 2768
-  },
-  {
-    "slug": "policy-vs-sop-work-instruction-checklist-form-template",
-    "wordCount": 2682
-  },
-  {
-    "slug": "where-stp-fits-tourism-operations",
-    "wordCount": 2380
-  },
-  {
-    "slug": "procedures-processes-process-maps",
-    "wordCount": 2446
-  },
-  {
-    "slug": "tourism-document-hierarchy",
-    "wordCount": 2386
-  },
-  {
-    "slug": "map-process-before-writing-sop",
-    "wordCount": 2509
-  },
-  {
-    "slug": "sipoc-tourism-operations",
-    "wordCount": 2481
-  },
-  {
-    "slug": "tourism-operational-risk-assessment-before-sop",
-    "wordCount": 2325
-  },
-  {
-    "slug": "customer-journey-mapping-sop-design",
-    "wordCount": 2299
-  },
-  {
-    "slug": "how-to-write-professional-sop-structure",
-    "wordCount": 2648
-  },
-  {
-    "slug": "how-to-write-professional-sop-procedure",
-    "wordCount": 2470
-  },
-  {
-    "slug": "sop-roles-authority-raci",
-    "wordCount": 2424
-  },
-  {
-    "slug": "sop-exception-escalation-management",
-    "wordCount": 3077
-  },
-  {
-    "slug": "sop-evidence-documentation-legal-defensibility",
-    "wordCount": 2434
-  },
-  {
-    "slug": "professional-operational-form",
-    "wordCount": 2445
-  },
-  {
-    "slug": "operational-checklist-employees-use",
-    "wordCount": 2434
-  },
-  {
-    "slug": "how-to-write-work-instructions",
-    "wordCount": 2438
-  },
-  {
-    "slug": "standard-communication-templates",
-    "wordCount": 2452
-  },
-  {
-    "slug": "standard-test-procedures-tourism-operations",
-    "wordCount": 2407
-  },
-  {
-    "slug": "itil-4-tourism-operations",
-    "wordCount": 2443
-  },
-  {
-    "slug": "pmp-thinking-sop-implementation",
-    "wordCount": 2404
-  },
-  {
-    "slug": "lean-thinking-tourism-operations",
-    "wordCount": 2421
-  },
-  {
-    "slug": "six-sigma-tourism-complaints-data",
-    "wordCount": 2399
-  },
-  {
-    "slug": "integrated-sop-creation-model",
-    "wordCount": 2407
-  },
-  {
-    "slug": "document-control-version-management-tourism",
-    "wordCount": 3041
-  },
-  {
-    "slug": "how-to-audit-an-sop",
-    "wordCount": 2408
-  },
-  {
-    "slug": "capa-tourism-operations",
-    "wordCount": 2388
-  },
-  {
-    "slug": "root-cause-analysis-tourism-managers",
-    "wordCount": 2405
-  },
-  {
-    "slug": "tourism-operations-manual",
-    "wordCount": 2410
-  },
-  {
-    "slug": "tourism-operational-excellence-management-system",
-    "wordCount": 2409
-  },
-  {
-    "slug": "tourism-sop-training-competency-adoption",
-    "wordCount": 2438
-  },
-  {
-    "slug": "tourism-operations-kpis-control-dashboards",
-    "wordCount": 2394
-  },
-  {
-    "slug": "tourism-supplier-partner-governance-sops",
-    "wordCount": 2437
-  },
-  {
     "slug": "amsterdam-product-discovery-01-research-plan",
-    "wordCount": 3000
+    "wordCount": 3170
   },
   {
     "slug": "amsterdam-product-discovery-02-competitive-landscape",
-    "wordCount": 2846
+    "wordCount": 3022
   },
   {
     "slug": "amsterdam-product-discovery-03-market-gap",
-    "wordCount": 2711
+    "wordCount": 2804
   },
   {
     "slug": "amsterdam-product-discovery-04-voice-of-customer",
-    "wordCount": 2106
+    "wordCount": 2213
   },
   {
     "slug": "amsterdam-product-discovery-05-segmentation-language",
-    "wordCount": 2585
+    "wordCount": 2718
   },
   {
     "slug": "amsterdam-product-discovery-06-destination-geography",
-    "wordCount": 2562
+    "wordCount": 2691
   },
   {
     "slug": "amsterdam-product-discovery-07-product-requirements-concept",
-    "wordCount": 1953
+    "wordCount": 2060
   },
   {
     "slug": "amsterdam-product-discovery-08-commercial-model-unit-economics",
-    "wordCount": 3434
+    "wordCount": 3546
   },
   {
     "slug": "amsterdam-product-discovery-09-risk-responsibility",
-    "wordCount": 2756
+    "wordCount": 2835
   },
   {
     "slug": "amsterdam-product-discovery-10-seasonality-operating-calendar",
-    "wordCount": 2305
+    "wordCount": 2345
   },
   {
     "slug": "amsterdam-product-discovery-11-mvp-pilot-operational-readiness",
-    "wordCount": 2382
+    "wordCount": 2473
   },
   {
     "slug": "amsterdam-product-discovery-12-product-analytics-scale-decision",
-    "wordCount": 2479
+    "wordCount": 2591
+  },
+  {
+    "slug": "article-abu-dhabi-mice-movement-control-room",
+    "wordCount": 7232
+  },
+  {
+    "slug": "article-air-connectivity-dmc-market-intelligence",
+    "wordCount": 4751
+  },
+  {
+    "slug": "article-assignment-engine-dmc-operations",
+    "wordCount": 4661
+  },
+  {
+    "slug": "article-city-tour-quotation-professional",
+    "wordCount": 3495
+  },
+  {
+    "slug": "article-destination-experience-journey-map",
+    "wordCount": 4441
+  },
+  {
+    "slug": "article-fixed-variable-costs-city-tour-pricing",
+    "wordCount": 3430
+  },
+  {
+    "slug": "article-fleet-control-tower-operations-dashboard",
+    "wordCount": 4247
+  },
+  {
+    "slug": "article-mice-arrival-waves-zayed-international-airport",
+    "wordCount": 9771
+  },
+  {
+    "slug": "article-mice-backup-operations-service-recovery-abu-dhabi",
+    "wordCount": 10891
+  },
+  {
+    "slug": "article-mice-hotel-desks-coach-departures-abu-dhabi",
+    "wordCount": 10355
+  },
+  {
+    "slug": "article-mice-venue-arrivals-registration-abu-dhabi",
+    "wordCount": 10768
+  },
+  {
+    "slug": "article-net-cost-selling-price-markup",
+    "wordCount": 3171
+  },
+  {
+    "slug": "article-participant-estimation-break-even-risk",
+    "wordCount": 3665
+  },
+  {
+    "slug": "article-professional-client-tour-quotation",
+    "wordCount": 2664
+  },
+  {
+    "slug": "article-rfi-rfq-rfp-erfp-nda-tourism-sales",
+    "wordCount": 12194
+  },
+  {
+    "slug": "article-tour-cost-worksheet-city-tour",
+    "wordCount": 3088
+  },
+  {
+    "slug": "article-tour-guide-quality-index",
+    "wordCount": 2353
+  },
+  {
+    "slug": "article-tour-guide-storytelling-system",
+    "wordCount": 4478
+  },
+  {
+    "slug": "article-tourism-operations-roles-real-difference",
+    "wordCount": 5681
+  },
+  {
+    "slug": "article-transport-tickets-vat-gratuities",
+    "wordCount": 3052
+  },
+  {
+    "slug": "capa-tourism-operations",
+    "wordCount": 2633
+  },
+  {
+    "slug": "customer-journey-mapping-sop-design",
+    "wordCount": 2430
+  },
+  {
+    "slug": "dmc-operations-ai-prompts",
+    "wordCount": 5094
+  },
+  {
+    "slug": "document-control-version-management-tourism",
+    "wordCount": 3172
+  },
+  {
+    "slug": "front-line-tourism-ai-toolkit",
+    "wordCount": 5120
+  },
+  {
+    "slug": "guest-experience-ai-prompts",
+    "wordCount": 5071
+  },
+  {
+    "slug": "guest-ready-apartment-standard",
+    "wordCount": 1096
+  },
+  {
+    "slug": "hotel-ai-prompting-framework",
+    "wordCount": 6414
+  },
+  {
+    "slug": "hotel-apartment-asset-lifecycle-management",
+    "wordCount": 739
+  },
+  {
+    "slug": "hotel-apartment-cost-of-poor-quality",
+    "wordCount": 798
+  },
+  {
+    "slug": "hotel-apartment-end-to-end-guest-journey",
+    "wordCount": 769
+  },
+  {
+    "slug": "hotel-apartment-extended-stay-ai-toolkit",
+    "wordCount": 7808
+  },
+  {
+    "slug": "hotel-apartment-kpi-architecture",
+    "wordCount": 700
+  },
+  {
+    "slug": "hotel-apartment-operating-system",
+    "wordCount": 802
+  },
+  {
+    "slug": "hotel-apartment-operations-control-tower",
+    "wordCount": 706
+  },
+  {
+    "slug": "hotel-apartment-preventive-maintenance-strategy",
+    "wordCount": 1140
+  },
+  {
+    "slug": "hotel-apartment-sop-architecture",
+    "wordCount": 727
+  },
+  {
+    "slug": "hotel-apartment-total-cost-of-ownership",
+    "wordCount": 765
+  },
+  {
+    "slug": "hotel-complaint-root-cause-analysis",
+    "wordCount": 772
+  },
+  {
+    "slug": "hotel-control-tower-ai-decision-support-toolkit",
+    "wordCount": 5962
+  },
+  {
+    "slug": "hotel-critical-spare-parts-management",
+    "wordCount": 724
+  },
+  {
+    "slug": "hotel-downtime-out-of-service-management",
+    "wordCount": 712
+  },
+  {
+    "slug": "hotel-economics-of-service-failure",
+    "wordCount": 753
+  },
+  {
+    "slug": "hotel-energy-utility-management-ai-toolkit",
+    "wordCount": 5127
+  },
+  {
+    "slug": "hotel-engineering-maintenance-ai-toolkit",
+    "wordCount": 7541
+  },
+  {
+    "slug": "hotel-esg-sustainability-ai-toolkit",
+    "wordCount": 9476
+  },
+  {
+    "slug": "hotel-finance-cost-control-ai-toolkit",
+    "wordCount": 7049
+  },
+  {
+    "slug": "hotel-first-time-right-operations",
+    "wordCount": 697
+  },
+  {
+    "slug": "hotel-front-office-ai-toolkit",
+    "wordCount": 6903
+  },
+  {
+    "slug": "hotel-general-manager-ai-toolkit",
+    "wordCount": 3206
+  },
+  {
+    "slug": "hotel-guest-complaint-service-recovery-ai-toolkit",
+    "wordCount": 8797
+  },
+  {
+    "slug": "hotel-guest-experience-ai-toolkit",
+    "wordCount": 7806
+  },
+  {
+    "slug": "hotel-guest-experience-quality-management",
+    "wordCount": 703
+  },
+  {
+    "slug": "hotel-housekeeping-management-ai-toolkit",
+    "wordCount": 7118
+  },
+  {
+    "slug": "hotel-housekeeping-quality-control",
+    "wordCount": 784
+  },
+  {
+    "slug": "hotel-housekeeping-standardization",
+    "wordCount": 698
+  },
+  {
+    "slug": "hotel-inventory-par-level-management",
+    "wordCount": 721
+  },
+  {
+    "slug": "hotel-inventory-par-management-ai-toolkit",
+    "wordCount": 7723
+  },
+  {
+    "slug": "hotel-kpi-dashboard-ai-toolkit",
+    "wordCount": 6122
+  },
+  {
+    "slug": "hotel-lean-six-sigma-ai-toolkit",
+    "wordCount": 9521
+  },
+  {
+    "slug": "hotel-maintenance-work-order-management",
+    "wordCount": 782
+  },
+  {
+    "slug": "hotel-operational-excellence-maturity-model",
+    "wordCount": 692
+  },
+  {
+    "slug": "hotel-operations-manager-ai-toolkit",
+    "wordCount": 8737
+  },
+  {
+    "slug": "hotel-operations-planning-daily-control",
+    "wordCount": 708
+  },
+  {
+    "slug": "hotel-ota-distribution-review-management-ai-toolkit",
+    "wordCount": 6677
+  },
+  {
+    "slug": "hotel-predictive-maintenance-ai-toolkit",
+    "wordCount": 6828
+  },
+  {
+    "slug": "hotel-preventive-maintenance-kpis",
+    "wordCount": 738
+  },
+  {
+    "slug": "hotel-procurement-ai-toolkit",
+    "wordCount": 7617
+  },
+  {
+    "slug": "hotel-procurement-supplier-quality-control",
+    "wordCount": 701
+  },
+  {
+    "slug": "hotel-property-reliability-score",
+    "wordCount": 687
+  },
+  {
+    "slug": "hotel-quality-audit-ai-toolkit",
+    "wordCount": 9744
+  },
+  {
+    "slug": "hotel-reservations-ai-toolkit",
+    "wordCount": 6977
+  },
+  {
+    "slug": "hotel-revenue-management-ai-toolkit",
+    "wordCount": 7402
+  },
+  {
+    "slug": "hotel-sales-corporate-accounts-ai-toolkit",
+    "wordCount": 6824
+  },
+  {
+    "slug": "hotel-sop-process-design-ai-toolkit",
+    "wordCount": 6254
+  },
+  {
+    "slug": "hotel-workforce-productivity-efficiency",
+    "wordCount": 723
+  },
+  {
+    "slug": "how-to-audit-an-sop",
+    "wordCount": 2665
+  },
+  {
+    "slug": "how-to-write-professional-sop-procedure",
+    "wordCount": 2696
+  },
+  {
+    "slug": "how-to-write-professional-sop-structure",
+    "wordCount": 2778
+  },
+  {
+    "slug": "how-to-write-work-instructions",
+    "wordCount": 2682
+  },
+  {
+    "slug": "integrated-sop-creation-model",
+    "wordCount": 2652
+  },
+  {
+    "slug": "itil-4-tourism-operations",
+    "wordCount": 2690
+  },
+  {
+    "slug": "lean-thinking-tourism-operations",
+    "wordCount": 2689
+  },
+  {
+    "slug": "map-process-before-writing-sop",
+    "wordCount": 2681
+  },
+  {
+    "slug": "operational-checklist-employees-use",
+    "wordCount": 2669
+  },
+  {
+    "slug": "pmp-thinking-sop-implementation",
+    "wordCount": 2647
+  },
+  {
+    "slug": "policy-vs-sop-work-instruction-checklist-form-template",
+    "wordCount": 2825
+  },
+  {
+    "slug": "procedures-processes-process-maps",
+    "wordCount": 2596
+  },
+  {
+    "slug": "professional-operational-form",
+    "wordCount": 2690
+  },
+  {
+    "slug": "responsible-ai-governance-hotels",
+    "wordCount": 6381
+  },
+  {
+    "slug": "responsible-ai-tourism-guide",
+    "wordCount": 5227
+  },
+  {
+    "slug": "root-cause-analysis-tourism-managers",
+    "wordCount": 2644
+  },
+  {
+    "slug": "sipoc-tourism-operations",
+    "wordCount": 2709
+  },
+  {
+    "slug": "six-sigma-tourism-complaints-data",
+    "wordCount": 2653
+  },
+  {
+    "slug": "sop-evidence-documentation-legal-defensibility",
+    "wordCount": 2667
+  },
+  {
+    "slug": "sop-exception-escalation-management",
+    "wordCount": 3216
+  },
+  {
+    "slug": "sop-roles-authority-raci",
+    "wordCount": 2651
+  },
+  {
+    "slug": "standard-communication-templates",
+    "wordCount": 2705
+  },
+  {
+    "slug": "standard-test-procedures-tourism-operations",
+    "wordCount": 2662
+  },
+  {
+    "slug": "tourism-ai-operations-playbook",
+    "wordCount": 797
+  },
+  {
+    "slug": "tourism-company-operating-system",
+    "wordCount": 2885
+  },
+  {
+    "slug": "tourism-document-hierarchy",
+    "wordCount": 2619
+  },
+  {
+    "slug": "tourism-itinerary-ai-prompts",
+    "wordCount": 5071
+  },
+  {
+    "slug": "tourism-operational-excellence-management-system",
+    "wordCount": 2646
+  },
+  {
+    "slug": "tourism-operational-risk-assessment-before-sop",
+    "wordCount": 2446
+  },
+  {
+    "slug": "tourism-operations-kpis-control-dashboards",
+    "wordCount": 2638
+  },
+  {
+    "slug": "tourism-operations-manual",
+    "wordCount": 2653
+  },
+  {
+    "slug": "tourism-product-development-ai-prompts",
+    "wordCount": 5081
+  },
+  {
+    "slug": "tourism-prompting-framework",
+    "wordCount": 5239
+  },
+  {
+    "slug": "tourism-quality-sop-ai-prompts",
+    "wordCount": 5034
+  },
+  {
+    "slug": "tourism-sales-quotation-ai-prompts",
+    "wordCount": 5027
+  },
+  {
+    "slug": "tourism-sop-training-competency-adoption",
+    "wordCount": 2689
+  },
+  {
+    "slug": "tourism-supplier-partner-governance-sops",
+    "wordCount": 2688
+  },
+  {
+    "slug": "tourism-transport-dispatch-ai-prompts",
+    "wordCount": 5144
+  },
+  {
+    "slug": "where-stp-fits-tourism-operations",
+    "wordCount": 2617
+  },
+  {
+    "slug": "workforce-rostering-productivity-ai-toolkit",
+    "wordCount": 3230
   }
 ]

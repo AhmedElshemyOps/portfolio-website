@@ -24,12 +24,18 @@
   buttons.forEach((button, index) => {
     if (button.dataset.copyReady === "true") return;
     const target = document.getElementById(button.dataset.copyTarget);
-    if (!target) return;
     const card = button.closest(".prompt-card, .article-prompt");
     const status = card?.querySelector(
       "[data-copy-status], .copy-status, .article-copy-status",
     );
-    const promptText = target.textContent.trim();
+    const promptText = target?.textContent.trim() || "";
+    if (!promptText) {
+      button.disabled = true;
+      button.setAttribute("aria-label", "Prompt unavailable");
+      button.textContent = "Prompt unavailable";
+      if (status) status.textContent = "The prompt could not be loaded. Please try again later.";
+      return;
+    }
     const words = promptText.match(/\b[\w’'-]+\b/g)?.length || 0;
     card?.classList.remove("is-collapsed", "is-expanded");
 
@@ -66,7 +72,9 @@
         if (status)
           status.textContent =
             "Copy was blocked. Select the prompt text and copy it manually.";
-        target.focus();
+        const readableTarget = target.closest('pre') || target;
+        readableTarget.setAttribute('tabindex', '0');
+        readableTarget.focus();
       }
     });
   });

@@ -1,0 +1,704 @@
+[
+  {
+    "article": "hotel-apartment-operating-system",
+    "title": "Building the Hotel Apartment Operating System",
+    "prompts": [
+      {
+        "article": "hotel-operations-manager-ai-toolkit",
+        "fragment": "prompt-4-department-dependency-mapper",
+        "title": "Department Dependency Mapper",
+        "section": "layers",
+        "when": "Use after mapping departments and handoffs to identify dependencies and the accountable owner of each operating interface."
+      },
+      {
+        "article": "hotel-apartment-extended-stay-ai-toolkit",
+        "fragment": "prompt-7-move-in-move-out-checklist",
+        "title": "Move-In / Move-Out Checklist",
+        "section": "evidence",
+        "when": "Use before move-in or move-out to turn approved apartment requirements into a checklist with recorded evidence."
+      },
+      {
+        "article": "hotel-sop-process-design-ai-toolkit",
+        "fragment": "prompt-3-raci-designer",
+        "title": "RACI Designer",
+        "section": "ownership",
+        "when": "Use when allocating responsibilities across the operating system; management must approve the proposed RACI."
+      }
+    ]
+  },
+  {
+    "article": "guest-ready-apartment-standard",
+    "title": "The Guest-Ready Apartment Standard",
+    "prompts": [
+      {
+        "article": "hotel-apartment-extended-stay-ai-toolkit",
+        "fragment": "prompt-2-apartment-readiness-review",
+        "title": "Apartment Readiness Review",
+        "section": "standard",
+        "when": "Use when inspection and defect records are available to prepare an apartment-readiness review; physical release stays with the authorized team."
+      },
+      {
+        "article": "hotel-housekeeping-management-ai-toolkit",
+        "fragment": "prompt-3-inspection-checklist-builder",
+        "title": "Inspection Checklist Builder",
+        "section": "evidence",
+        "when": "Use when translating the approved guest-ready criteria into inspection checks and evidence requirements."
+      },
+      {
+        "article": "hotel-quality-audit-ai-toolkit",
+        "fragment": "prompt-2-room-audit-checklist",
+        "title": "Room Audit Checklist",
+        "section": "roadmap",
+        "when": "Use before auditing guest-ready performance to draft room checks against the approved property standard."
+      }
+    ]
+  },
+  {
+    "article": "hotel-apartment-preventive-maintenance-strategy",
+    "title": "Preventive Maintenance Strategy for Hotel Apartments",
+    "prompts": [
+      {
+        "article": "hotel-engineering-maintenance-ai-toolkit",
+        "fragment": "prompt-2-preventive-maintenance-planner",
+        "title": "Preventive Maintenance Planner",
+        "section": "criticality",
+        "when": "Use when planning preventive work from approved manufacturer requirements, asset criticality and verified maintenance history."
+      },
+      {
+        "article": "hotel-predictive-maintenance-ai-toolkit",
+        "fragment": "prompt-4-pm-interval-review",
+        "title": "PM Interval Review",
+        "section": "work-order",
+        "when": "Use when reviewing whether a PM interval needs investigation; a competent engineer approves any interval change."
+      },
+      {
+        "article": "hotel-kpi-dashboard-ai-toolkit",
+        "fragment": "prompt-3",
+        "title": "Metric Definition Checker",
+        "section": "kpis",
+        "when": "Use before reporting PM compliance to check metric definitions, denominators, exclusions and source records."
+      }
+    ]
+  },
+  {
+    "article": "hotel-apartment-cost-of-poor-quality",
+    "title": "The Cost of Poor Quality",
+    "prompts": [
+      {
+        "article": "hotel-lean-six-sigma-ai-toolkit",
+        "fragment": "prompt-7-cost-of-poor-quality-analyzer",
+        "title": "Cost of Poor Quality Analyzer",
+        "section": "evidence",
+        "when": "Use after collecting verified rework, failure and prevention costs to structure the cost-of-poor-quality analysis without double counting."
+      },
+      {
+        "article": "hotel-finance-cost-control-ai-toolkit",
+        "fragment": "prompt-1",
+        "title": "Department Cost Variance Analyzer",
+        "section": "controls",
+        "when": "Use when an actual cost differs from budget and you need to separate supported causes from assumptions."
+      },
+      {
+        "article": "hotel-kpi-dashboard-ai-toolkit",
+        "fragment": "prompt-6",
+        "title": "Variance and Trend Analyzer",
+        "section": "kpis",
+        "when": "Use when comparing quality-cost trends across periods with consistent definitions and verified source data."
+      }
+    ]
+  },
+  {
+    "article": "hotel-maintenance-work-order-management",
+    "title": "Maintenance Control & Work Order Management",
+    "prompts": [
+      {
+        "article": "hotel-engineering-maintenance-ai-toolkit",
+        "fragment": "prompt-1-work-order-triage",
+        "title": "Work Order Triage",
+        "section": "controls",
+        "when": "Use when triaging an incoming work order against approved priority and escalation rules."
+      },
+      {
+        "article": "hotel-predictive-maintenance-ai-toolkit",
+        "fragment": "prompt-7-maintenance-data-quality-audit",
+        "title": "Maintenance Data Quality Audit",
+        "section": "evidence",
+        "when": "Use before analyzing the backlog to identify missing asset IDs, timestamps and closure evidence."
+      },
+      {
+        "article": "hotel-kpi-dashboard-ai-toolkit",
+        "fragment": "prompt-10",
+        "title": "KPI Action Tracker",
+        "section": "kpis",
+        "when": "Use after a maintenance KPI breach to turn the verified exception into an owner, deadline and follow-up action."
+      }
+    ]
+  },
+  {
+    "article": "hotel-complaint-root-cause-analysis",
+    "title": "Complaint Root-Cause Analysis",
+    "prompts": [
+      {
+        "article": "hotel-guest-complaint-service-recovery-ai-toolkit",
+        "fragment": "prompt-2-complaint-root-cause-analyzer",
+        "title": "Complaint Root-Cause Analyzer",
+        "section": "evidence",
+        "when": "Use once complaint facts and operating records are assembled to build hypotheses; verify the cause before approving corrective action."
+      },
+      {
+        "article": "hotel-lean-six-sigma-ai-toolkit",
+        "fragment": "prompt-5-fishbone-facilitator",
+        "title": "Fishbone Facilitator",
+        "section": "controls",
+        "when": "Use during a root-cause workshop to organize possible causes without treating the fishbone as proof."
+      },
+      {
+        "article": "hotel-quality-audit-ai-toolkit",
+        "fragment": "prompt-10-corrective-action-effectiveness-review",
+        "title": "Corrective Action Effectiveness Review",
+        "section": "roadmap",
+        "when": "Use after corrective action to review whether evidence demonstrates effectiveness and prevents recurrence."
+      }
+    ]
+  },
+  {
+    "article": "hotel-apartment-asset-lifecycle-management",
+    "title": "Asset Lifecycle Management",
+    "prompts": [
+      {
+        "article": "hotel-engineering-maintenance-ai-toolkit",
+        "fragment": "prompt-5-asset-history-summary",
+        "title": "Asset History Summary",
+        "section": "evidence",
+        "when": "Use when consolidating an asset’s verified work orders, failures and inspections into a lifecycle history."
+      },
+      {
+        "article": "hotel-predictive-maintenance-ai-toolkit",
+        "fragment": "prompt-5-high-risk-asset-prioritizer",
+        "title": "High-Risk Asset Prioritizer",
+        "section": "architecture",
+        "when": "Use when prioritizing assets for engineering review using approved criticality rules and current evidence."
+      },
+      {
+        "article": "hotel-finance-cost-control-ai-toolkit",
+        "fragment": "prompt-7",
+        "title": "Cost-Saving Business Case",
+        "section": "roadmap",
+        "when": "Use when drafting a repair-or-replace business case from verified costs and explicitly stated assumptions."
+      }
+    ]
+  },
+  {
+    "article": "hotel-apartment-total-cost-of-ownership",
+    "title": "Total Cost of Ownership (TCO)",
+    "prompts": [
+      {
+        "article": "hotel-procurement-ai-toolkit",
+        "fragment": "prompt-5",
+        "title": "Total Cost of Ownership Analyzer",
+        "section": "architecture",
+        "when": "Use when comparing purchase options across acquisition, operation, maintenance and end-of-life costs on a common basis."
+      },
+      {
+        "article": "hotel-finance-cost-control-ai-toolkit",
+        "fragment": "prompt-4",
+        "title": "Budget Assumption Checker",
+        "section": "evidence",
+        "when": "Use before approving the comparison to challenge unsupported budget assumptions and missing cost inputs."
+      },
+      {
+        "article": "hotel-predictive-maintenance-ai-toolkit",
+        "fragment": "prompt-8-downtime-forecast-scenario",
+        "title": "Downtime Forecast Scenario",
+        "section": "roadmap",
+        "when": "Use when testing the downtime component of a lifecycle scenario; keep forecast assumptions separate from observed losses."
+      }
+    ]
+  },
+  {
+    "article": "hotel-apartment-sop-architecture",
+    "title": "SOP Architecture for Hotel Apartments",
+    "prompts": [
+      {
+        "article": "hotel-sop-process-design-ai-toolkit",
+        "fragment": "prompt-1-sop-structure-builder",
+        "title": "SOP Structure Builder",
+        "section": "architecture",
+        "when": "Use after defining the operating scope to draft an SOP structure with roles, controls, exceptions and retained evidence."
+      },
+      {
+        "article": "responsible-ai-governance-hotels",
+        "fragment": "prompt-4",
+        "title": "Prompt Approval Workflow",
+        "section": "ownership",
+        "when": "Use when the SOP includes AI assistance to define who reviews and approves a prompt before operational use."
+      },
+      {
+        "article": "hotel-quality-audit-ai-toolkit",
+        "fragment": "prompt-3-process-compliance-review",
+        "title": "Process Compliance Review",
+        "section": "evidence",
+        "when": "Use when checking whether operating records demonstrate compliance with the approved SOP."
+      }
+    ]
+  },
+  {
+    "article": "hotel-economics-of-service-failure",
+    "title": "The Economics of Service Failure",
+    "prompts": [
+      {
+        "article": "hotel-guest-complaint-service-recovery-ai-toolkit",
+        "fragment": "prompt-3-service-recovery-options-draft",
+        "title": "Service Recovery Options Draft",
+        "section": "architecture",
+        "when": "Use when comparing recovery options against the confirmed service failure and approved authority limits."
+      },
+      {
+        "article": "hotel-finance-cost-control-ai-toolkit",
+        "fragment": "prompt-9",
+        "title": "Cash Impact Prioritizer",
+        "section": "evidence",
+        "when": "Use when prioritizing verified failure costs by cash impact; confirm values with finance before making a decision."
+      },
+      {
+        "article": "hotel-lean-six-sigma-ai-toolkit",
+        "fragment": "prompt-7-cost-of-poor-quality-analyzer",
+        "title": "Cost of Poor Quality Analyzer",
+        "section": "kpis",
+        "when": "Use to separate recurring service-failure costs from prevention and appraisal costs before setting improvement priorities."
+      }
+    ]
+  },
+  {
+    "article": "hotel-housekeeping-standardization",
+    "title": "Housekeeping Standardization",
+    "prompts": [
+      {
+        "article": "hotel-housekeeping-management-ai-toolkit",
+        "fragment": "prompt-3-inspection-checklist-builder",
+        "title": "Inspection Checklist Builder",
+        "section": "design",
+        "when": "Use to turn approved housekeeping standards into observable inspection criteria and evidence checks."
+      },
+      {
+        "article": "hotel-sop-process-design-ai-toolkit",
+        "fragment": "prompt-7-work-instruction-builder",
+        "title": "Work Instruction Builder",
+        "section": "roadmap",
+        "when": "Use when a cleaning task needs a step-by-step work instruction with approved methods and limits."
+      },
+      {
+        "article": "hotel-quality-audit-ai-toolkit",
+        "fragment": "prompt-3-process-compliance-review",
+        "title": "Process Compliance Review",
+        "section": "evidence",
+        "when": "Use when testing whether actual housekeeping records and observations match the approved standard."
+      }
+    ]
+  },
+  {
+    "article": "hotel-housekeeping-quality-control",
+    "title": "Housekeeping Quality Control",
+    "prompts": [
+      {
+        "article": "hotel-housekeeping-management-ai-toolkit",
+        "fragment": "prompt-4-reclean-root-cause-analyzer",
+        "title": "Reclean Root-Cause Analyzer",
+        "section": "evidence",
+        "when": "Use after recording reclean events to investigate recurring defects without guessing their causes."
+      },
+      {
+        "article": "hotel-quality-audit-ai-toolkit",
+        "fragment": "prompt-6-quality-trend-analyzer",
+        "title": "Quality Trend Analyzer",
+        "section": "kpis",
+        "when": "Use when comparing inspection findings over time to identify supported quality trends and evidence gaps."
+      },
+      {
+        "article": "hotel-lean-six-sigma-ai-toolkit",
+        "fragment": "prompt-9-control-plan-builder",
+        "title": "Control Plan Builder",
+        "section": "roadmap",
+        "when": "Use after an improvement is agreed to draft the checks, owners and reactions needed to sustain it."
+      }
+    ]
+  },
+  {
+    "article": "hotel-workforce-productivity-efficiency",
+    "title": "Productivity & Workforce Efficiency",
+    "prompts": [
+      {
+        "article": "workforce-rostering-productivity-ai-toolkit",
+        "fragment": "prompt-2",
+        "title": "Workload vs Staffing Review",
+        "section": "design",
+        "when": "Use when comparing verified workload with available staffing while retaining service-quality and safety constraints."
+      },
+      {
+        "article": "hotel-kpi-dashboard-ai-toolkit",
+        "fragment": "prompt-3",
+        "title": "Metric Definition Checker",
+        "section": "kpis",
+        "when": "Use before publishing productivity figures to confirm the unit of work, denominator and exclusions."
+      },
+      {
+        "article": "hotel-housekeeping-management-ai-toolkit",
+        "fragment": "prompt-7-housekeeping-productivity-review",
+        "title": "Housekeeping Productivity Review",
+        "section": "evidence",
+        "when": "Use when reviewing housekeeping output alongside room complexity, staffing and inspection results."
+      }
+    ]
+  },
+  {
+    "article": "hotel-first-time-right-operations",
+    "title": "First-Time-Right Operations",
+    "prompts": [
+      {
+        "article": "hotel-quality-audit-ai-toolkit",
+        "fragment": "prompt-10-corrective-action-effectiveness-review",
+        "title": "Corrective Action Effectiveness Review",
+        "section": "roadmap",
+        "when": "Use after changing a process to check whether follow-up evidence shows fewer repeat defects."
+      },
+      {
+        "article": "hotel-lean-six-sigma-ai-toolkit",
+        "fragment": "prompt-9-control-plan-builder",
+        "title": "Control Plan Builder",
+        "section": "design",
+        "when": "Use when defining acceptance checks and reaction rules that protect first-pass quality."
+      },
+      {
+        "article": "hotel-sop-process-design-ai-toolkit",
+        "fragment": "prompt-8-checklist-generator",
+        "title": "Checklist Generator",
+        "section": "evidence",
+        "when": "Use when converting approved completion criteria into a checklist; a completed checklist still requires the specified evidence."
+      }
+    ]
+  },
+  {
+    "article": "hotel-guest-experience-quality-management",
+    "title": "Guest Experience Quality Management",
+    "prompts": [
+      {
+        "article": "hotel-guest-experience-ai-toolkit",
+        "fragment": "prompt-9-service-touchpoint-audit",
+        "title": "Service Touchpoint Audit",
+        "section": "design",
+        "when": "Use when auditing service touchpoints against an agreed guest-experience standard."
+      },
+      {
+        "article": "hotel-guest-complaint-service-recovery-ai-toolkit",
+        "fragment": "prompt-7-repeat-complaint-pattern-review",
+        "title": "Repeat Complaint Pattern Review",
+        "section": "evidence",
+        "when": "Use when reviewing repeat complaint themes alongside verified guest and operating records."
+      },
+      {
+        "article": "hotel-quality-audit-ai-toolkit",
+        "fragment": "prompt-6-quality-trend-analyzer",
+        "title": "Quality Trend Analyzer",
+        "section": "kpis",
+        "when": "Use when combining audit findings into a trend review without losing source evidence or changing definitions."
+      }
+    ]
+  },
+  {
+    "article": "hotel-apartment-end-to-end-guest-journey",
+    "title": "Designing the End-to-End Guest Journey",
+    "prompts": [
+      {
+        "article": "hotel-front-office-ai-toolkit",
+        "fragment": "prompt-1-arrival-readiness-brief",
+        "title": "Arrival Readiness Brief",
+        "section": "controls",
+        "when": "Use before arrivals to compare reservations, room status and unresolved dependencies without promising unverified readiness."
+      },
+      {
+        "article": "hotel-apartment-extended-stay-ai-toolkit",
+        "fragment": "prompt-7-move-in-move-out-checklist",
+        "title": "Move-In / Move-Out Checklist",
+        "section": "evidence",
+        "when": "Use when controlling move-in and move-out handoffs with approved apartment checks and records."
+      },
+      {
+        "article": "hotel-guest-experience-ai-toolkit",
+        "fragment": "prompt-1-guest-journey-review",
+        "title": "Guest Journey Review",
+        "section": "roadmap",
+        "when": "Use when reviewing the full journey for gaps between the promised service and the verified delivery."
+      }
+    ]
+  },
+  {
+    "article": "hotel-procurement-supplier-quality-control",
+    "title": "Procurement & Supplier Quality Control",
+    "prompts": [
+      {
+        "article": "hotel-procurement-ai-toolkit",
+        "fragment": "prompt-4",
+        "title": "Supplier Evaluation & Weighted Scoring Builder",
+        "section": "design",
+        "when": "Use when evaluating suppliers against agreed criteria and weights rather than price alone."
+      },
+      {
+        "article": "hotel-quality-audit-ai-toolkit",
+        "fragment": "prompt-9-evidence-gap-detector",
+        "title": "Evidence Gap Detector",
+        "section": "evidence",
+        "when": "Use before accepting a supplier assessment to identify missing inspection, compliance or performance evidence."
+      },
+      {
+        "article": "hotel-finance-cost-control-ai-toolkit",
+        "fragment": "prompt-7",
+        "title": "Cost-Saving Business Case",
+        "section": "roadmap",
+        "when": "Use when proposing a procurement improvement and comparing verified savings with quality and continuity risks."
+      }
+    ]
+  },
+  {
+    "article": "hotel-inventory-par-level-management",
+    "title": "Inventory & PAR Level Management",
+    "prompts": [
+      {
+        "article": "hotel-inventory-par-management-ai-toolkit",
+        "fragment": "prompt-1",
+        "title": "PAR Level Calculator Assistant",
+        "section": "design",
+        "when": "Use when setting PAR levels from verified consumption, replenishment time and approved service assumptions."
+      },
+      {
+        "article": "hotel-procurement-ai-toolkit",
+        "fragment": "prompt-1",
+        "title": "Purchase Requisition Quality Checker",
+        "section": "ownership",
+        "when": "Use before raising a purchase request to check specifications, quantities, need and approval information."
+      },
+      {
+        "article": "hotel-finance-cost-control-ai-toolkit",
+        "fragment": "prompt-1",
+        "title": "Department Cost Variance Analyzer",
+        "section": "kpis",
+        "when": "Use when stock costs differ from budget and a supported variance explanation is required."
+      }
+    ]
+  },
+  {
+    "article": "hotel-critical-spare-parts-management",
+    "title": "Critical Spare Parts Management",
+    "prompts": [
+      {
+        "article": "hotel-inventory-par-management-ai-toolkit",
+        "fragment": "prompt-7",
+        "title": "Critical Spares Register Builder",
+        "section": "design",
+        "when": "Use when building a critical-spares register from approved asset criticality and verified spare-part details."
+      },
+      {
+        "article": "hotel-engineering-maintenance-ai-toolkit",
+        "fragment": "prompt-7-critical-spare-parts-planner",
+        "title": "Critical Spare Parts Planner",
+        "section": "evidence",
+        "when": "Use when planning spare availability against current asset risks, lead times and approved maintenance requirements."
+      },
+      {
+        "article": "hotel-predictive-maintenance-ai-toolkit",
+        "fragment": "prompt-5-high-risk-asset-prioritizer",
+        "title": "High-Risk Asset Prioritizer",
+        "section": "roadmap",
+        "when": "Use when deciding which high-risk assets need further review before adjusting spare coverage."
+      }
+    ]
+  },
+  {
+    "article": "hotel-downtime-out-of-service-management",
+    "title": "Downtime & Out-of-Service Management",
+    "prompts": [
+      {
+        "article": "hotel-engineering-maintenance-ai-toolkit",
+        "fragment": "prompt-8-room-out-of-service-risk-review",
+        "title": "Room Out-of-Service Risk Review",
+        "section": "design",
+        "when": "Use when reviewing an out-of-service room’s dependencies and risks before considering release."
+      },
+      {
+        "article": "hotel-predictive-maintenance-ai-toolkit",
+        "fragment": "prompt-8-downtime-forecast-scenario",
+        "title": "Downtime Forecast Scenario",
+        "section": "evidence",
+        "when": "Use when comparing downtime scenarios from verified failure history; label forecasts and assumptions explicitly."
+      },
+      {
+        "article": "hotel-finance-cost-control-ai-toolkit",
+        "fragment": "prompt-9",
+        "title": "Cash Impact Prioritizer",
+        "section": "kpis",
+        "when": "Use when ranking confirmed downtime costs and cash impacts for management attention."
+      }
+    ]
+  },
+  {
+    "article": "hotel-operations-planning-daily-control",
+    "title": "Operations Planning & Daily Control",
+    "prompts": [
+      {
+        "article": "hotel-operations-manager-ai-toolkit",
+        "fragment": "prompt-1-daily-operations-briefing",
+        "title": "Daily Operations Briefing",
+        "section": "design",
+        "when": "Use before the daily briefing to combine verified priorities, dependencies and exceptions into a controlled operating picture."
+      },
+      {
+        "article": "hotel-general-manager-ai-toolkit",
+        "fragment": "prompt-10",
+        "title": "GM Weekly Operating Review",
+        "section": "roadmap",
+        "when": "Use at weekly review to challenge unresolved actions and recurring exceptions across departments."
+      },
+      {
+        "article": "hotel-kpi-dashboard-ai-toolkit",
+        "fragment": "prompt-10",
+        "title": "KPI Action Tracker",
+        "section": "kpis",
+        "when": "Use after a KPI exception to document the accountable owner, next action and review checkpoint."
+      }
+    ]
+  },
+  {
+    "article": "hotel-apartment-kpi-architecture",
+    "title": "Hotel Apartment KPI Architecture",
+    "prompts": [
+      {
+        "article": "hotel-kpi-dashboard-ai-toolkit",
+        "fragment": "prompt-1",
+        "title": "KPI Architecture Builder",
+        "section": "design",
+        "when": "Use after agreeing operating objectives to draft a balanced KPI hierarchy and source requirements."
+      },
+      {
+        "article": "hotel-general-manager-ai-toolkit",
+        "fragment": "prompt-3",
+        "title": "Department Performance Challenge",
+        "section": "ownership",
+        "when": "Use when challenging department performance against verified measures and agreed accountability."
+      },
+      {
+        "article": "hotel-control-tower-ai-decision-support-toolkit",
+        "fragment": "prompt-6",
+        "title": "Control Tower Alert Logic Builder",
+        "section": "kpis",
+        "when": "Use once KPI definitions and escalation thresholds are approved to draft control-tower alert logic."
+      }
+    ]
+  },
+  {
+    "article": "hotel-property-reliability-score",
+    "title": "Property Reliability Score",
+    "prompts": [
+      {
+        "article": "hotel-predictive-maintenance-ai-toolkit",
+        "fragment": "prompt-9-early-warning-indicator-designer",
+        "title": "Early-Warning Indicator Designer",
+        "section": "design",
+        "when": "Use when proposing early-warning indicators from verified condition and failure evidence."
+      },
+      {
+        "article": "hotel-kpi-dashboard-ai-toolkit",
+        "fragment": "prompt-3",
+        "title": "Metric Definition Checker",
+        "section": "kpis",
+        "when": "Use before scoring reliability to verify each input’s definition, denominator and source."
+      },
+      {
+        "article": "hotel-control-tower-ai-decision-support-toolkit",
+        "fragment": "prompt-5",
+        "title": "Apartment Reliability Heatmap Planner",
+        "section": "evidence",
+        "when": "Use when turning verified apartment risk and reliability data into a heatmap for human review."
+      }
+    ]
+  },
+  {
+    "article": "hotel-preventive-maintenance-kpis",
+    "title": "Preventive Maintenance KPIs",
+    "prompts": [
+      {
+        "article": "hotel-engineering-maintenance-ai-toolkit",
+        "fragment": "prompt-2-preventive-maintenance-planner",
+        "title": "Preventive Maintenance Planner",
+        "section": "architecture",
+        "when": "Use when checking that the reported PM programme reflects approved tasks, intervals and owners."
+      },
+      {
+        "article": "hotel-predictive-maintenance-ai-toolkit",
+        "fragment": "prompt-7-maintenance-data-quality-audit",
+        "title": "Maintenance Data Quality Audit",
+        "section": "evidence",
+        "when": "Use before calculating PM metrics to detect incomplete, inconsistent or unverified maintenance records."
+      },
+      {
+        "article": "hotel-kpi-dashboard-ai-toolkit",
+        "fragment": "prompt-3",
+        "title": "Metric Definition Checker",
+        "section": "kpis",
+        "when": "Use when defining PM measures so planned, completed, overdue and excluded work are counted consistently."
+      }
+    ]
+  },
+  {
+    "article": "hotel-apartment-operations-control-tower",
+    "title": "The Hotel Apartment Operations Control Tower",
+    "prompts": [
+      {
+        "article": "hotel-control-tower-ai-decision-support-toolkit",
+        "fragment": "prompt-1",
+        "title": "Hotel Control Tower Daily Brief",
+        "section": "design",
+        "when": "Use when preparing the daily operating picture from verified departmental records and current exceptions."
+      },
+      {
+        "article": "hotel-kpi-dashboard-ai-toolkit",
+        "fragment": "prompt-2",
+        "title": "Dashboard Requirement Designer",
+        "section": "kpis",
+        "when": "Use after agreeing management decisions to specify the dashboard views, sources and action requirements."
+      },
+      {
+        "article": "hotel-general-manager-ai-toolkit",
+        "fragment": "prompt-8",
+        "title": "Decision Memo Builder",
+        "section": "ownership",
+        "when": "Use when an escalated exception needs a decision memo showing evidence, options and approving authority."
+      }
+    ]
+  },
+  {
+    "article": "hotel-operational-excellence-maturity-model",
+    "title": "Operational Excellence Maturity Model",
+    "prompts": [
+      {
+        "article": "hotel-general-manager-ai-toolkit",
+        "fragment": "prompt-5",
+        "title": "Strategic Priority Planner",
+        "section": "roadmap",
+        "when": "Use after an evidence-based maturity assessment to draft improvement priorities for leadership review."
+      },
+      {
+        "article": "hotel-control-tower-ai-decision-support-toolkit",
+        "fragment": "prompt-10",
+        "title": "Control Tower Governance Checklist",
+        "section": "design",
+        "when": "Use when testing whether the proposed control tower has verified data, ownership and governed escalation."
+      },
+      {
+        "article": "responsible-ai-governance-hotels",
+        "fragment": "prompt-9",
+        "title": "Human Oversight Design",
+        "section": "ownership",
+        "when": "Use when assessing AI-supported maturity to define human checks, decision authority and oversight evidence."
+      }
+    ]
+  }
+]

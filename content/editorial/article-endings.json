@@ -1,0 +1,1952 @@
+[
+  {
+    "slug": "abu-dhabi-mice-operations-series",
+    "checklist": [
+      "Follow one delegate movement from the sales promise to venue entry.",
+      "Check the airport, hotel, coach and registration handoffs.",
+      "Name the owner and backup decision for each material exception.",
+      "Use the case study to test your own programme’s controls."
+    ],
+    "next": {
+      "kind": "continue",
+      "url": "/articles/article-abu-dhabi-mice-movement-control-room/index.html",
+      "label": "Continue to The Abu Dhabi MICE Movement Control Room",
+      "why": "Use this connected method when you are ready to structure a movement control room with a shared operating picture, clear ownership and coordinated decisions across the delegate journey."
+    }
+  },
+  {
+    "slug": "amsterdam-product-discovery-01-research-plan",
+    "checklist": [
+      "State the product decision and record the hypotheses that research must test.",
+      "Approve the sources, sampling boundaries and data-provenance rules.",
+      "Separate evidence from assumptions and define the stop rules.",
+      "Name the owner who decides whether the evidence justifies the next stage."
+    ],
+    "next": {
+      "kind": "continue",
+      "url": "/articles/amsterdam-product-discovery-02-competitive-landscape/index.html",
+      "label": "Continue to What Is Amsterdam Already Selling? Mapping the OTA and Competitive Tourism Product Landscape",
+      "why": "Carry the verified findings, assumptions and open questions into the next research stage."
+    }
+  },
+  {
+    "slug": "amsterdam-product-discovery-02-competitive-landscape",
+    "checklist": [
+      "Keep a source URL and observation date for each competitor record.",
+      "Compare products using the same scope, inclusions and price conditions.",
+      "Review duplicate families and uncertain matches before counting supply.",
+      "State what public listings cannot prove about demand or performance."
+    ],
+    "next": {
+      "kind": "continue",
+      "url": "/articles/amsterdam-product-discovery-03-market-gap/index.html",
+      "label": "Continue to Finding the Amsterdam Tourism Market Gap",
+      "why": "Carry the verified findings, assumptions and open questions into the next research stage."
+    }
+  },
+  {
+    "slug": "amsterdam-product-discovery-03-market-gap",
+    "checklist": [
+      "Separate a visible supply gap from evidence of customer demand.",
+      "Check the opportunity against destination policy and delivery feasibility.",
+      "Record model weights, source limitations and unresolved assumptions.",
+      "Approve the next research question before proposing a product."
+    ],
+    "next": {
+      "kind": "continue",
+      "url": "/articles/amsterdam-product-discovery-04-voice-of-customer/index.html",
+      "label": "Continue to What Visitors Really Want: Mining Amsterdam Reviews and Voice of Customer",
+      "why": "Carry the verified findings, assumptions and open questions into the next research stage."
+    }
+  },
+  {
+    "slug": "amsterdam-product-discovery-04-voice-of-customer",
+    "checklist": [
+      "Retain the source and sampling context for each customer observation.",
+      "Distinguish stated preferences, complaints and observed behaviour.",
+      "Test themes against contradictory evidence and sampling limitations.",
+      "Translate supported needs into research questions rather than promises."
+    ],
+    "next": {
+      "kind": "continue",
+      "url": "/articles/amsterdam-product-discovery-05-segmentation-language/index.html",
+      "label": "Continue to Who Should We Build It For? Source Markets, Segmentation, Language and Customer Jobs",
+      "why": "Carry the verified findings, assumptions and open questions into the next research stage."
+    }
+  },
+  {
+    "slug": "amsterdam-product-discovery-05-segmentation-language",
+    "checklist": [
+      "Define the segment’s trip context, customer job and language need.",
+      "Check language requirements against actual delivery capability.",
+      "Record booking behaviour and evidence gaps for each segment.",
+      "Select a segment only after testing feasibility and demand evidence."
+    ],
+    "next": {
+      "kind": "continue",
+      "url": "/articles/amsterdam-product-discovery-06-destination-geography/index.html",
+      "label": "Continue to Where Should the Experience Happen? Attraction Intelligence, Geography and Destination Fit",
+      "why": "Carry the verified findings, assumptions and open questions into the next research stage."
+    }
+  },
+  {
+    "slug": "amsterdam-product-discovery-06-destination-geography",
+    "checklist": [
+      "Check route geography, access and travel-time assumptions.",
+      "Record destination constraints and accessibility evidence.",
+      "Keep attraction facts separate from untested route promises.",
+      "Assign an owner to verify the proposed journey in the field."
+    ],
+    "next": {
+      "kind": "continue",
+      "url": "/articles/amsterdam-product-discovery-07-product-requirements-concept/index.html",
+      "label": "Continue to Amsterdam Product Requirements and Signature Concept",
+      "why": "Carry the verified findings, assumptions and open questions into the next research stage."
+    }
+  },
+  {
+    "slug": "amsterdam-product-discovery-07-product-requirements-concept",
+    "checklist": [
+      "Translate verified customer needs into testable product requirements.",
+      "Define inclusions, constraints and acceptance criteria.",
+      "Check supplier, route, accessibility and operating dependencies.",
+      "Keep unresolved assumptions visible before approving the concept."
+    ],
+    "next": {
+      "kind": "continue",
+      "url": "/articles/amsterdam-product-discovery-08-commercial-model-unit-economics/index.html",
+      "label": "Continue to Will the Product Make Money? Pricing, Distribution, Capacity and Tourism Unit Economics",
+      "why": "Carry the verified findings, assumptions and open questions into the next research stage."
+    }
+  },
+  {
+    "slug": "amsterdam-product-discovery-08-commercial-model-unit-economics",
+    "checklist": [
+      "Trace every cost and price input to its source and date.",
+      "Use consistent units, capacity and participant assumptions.",
+      "Recalculate contribution and break-even under the stated scenarios.",
+      "Record commercial risks and obtain approval before committing."
+    ],
+    "next": {
+      "kind": "continue",
+      "url": "/articles/amsterdam-product-discovery-09-risk-responsibility/index.html",
+      "label": "Continue to Can We Operate It Responsibly? Regulation, Accessibility, Sustainability and Product Risk",
+      "why": "Carry the verified findings, assumptions and open questions into the next research stage."
+    }
+  },
+  {
+    "slug": "amsterdam-product-discovery-09-risk-responsibility",
+    "checklist": [
+      "Distinguish verified rules from project controls and assumptions.",
+      "Assign an owner, trigger and response to each material risk.",
+      "Verify accessibility, privacy, safety and public-claim evidence.",
+      "Record qualified human approval before authorizing operation."
+    ],
+    "next": {
+      "kind": "continue",
+      "url": "/articles/amsterdam-product-discovery-10-seasonality-operating-calendar/index.html",
+      "label": "Continue to When Should the Tour Run? Demand, Weather, Seasonality and the Amsterdam Operating Calendar",
+      "why": "Carry the verified findings, assumptions and open questions into the next research stage."
+    }
+  },
+  {
+    "slug": "amsterdam-product-discovery-10-seasonality-operating-calendar",
+    "checklist": [
+      "Check each operating date against supplied demand and constraint evidence.",
+      "Confirm staffing, supplier and route availability for that date.",
+      "Record the operating decision, dependencies and approving owner.",
+      "Update the calendar when pilot evidence changes an assumption."
+    ],
+    "next": {
+      "kind": "continue",
+      "url": "/articles/amsterdam-product-discovery-11-mvp-pilot-operational-readiness/index.html",
+      "label": "Continue to From Spreadsheet to Street: MVP, Pilot Launch and Operational Readiness",
+      "why": "Carry the verified findings, assumptions and open questions into the next research stage."
+    }
+  },
+  {
+    "slug": "amsterdam-product-discovery-11-mvp-pilot-operational-readiness",
+    "checklist": [
+      "Verify critical readiness evidence before releasing the pilot.",
+      "Confirm the roster, route, suppliers and escalation arrangements.",
+      "Define the pilot measures and stop conditions before departure.",
+      "Record the human launch decision and follow-up review."
+    ],
+    "next": {
+      "kind": "continue",
+      "url": "/articles/amsterdam-product-discovery-12-product-analytics-scale-decision/index.html",
+      "label": "Continue to After the First Guests: Product Analytics, Continuous Improvement and the Scale Decision",
+      "why": "Carry the verified findings, assumptions and open questions into the next research stage."
+    }
+  },
+  {
+    "slug": "amsterdam-product-discovery-12-product-analytics-scale-decision",
+    "checklist": [
+      "Audit the departure dataset before interpreting performance.",
+      "Keep metric definitions and observation periods consistent.",
+      "Compare evidence against the approved scale criteria.",
+      "Record the scale, revise or stop decision and its accountable owner."
+    ],
+    "next": {
+      "kind": "apply",
+      "url": "#amsterdam-prompt-12-01",
+      "label": "Apply the complete research prompt",
+      "why": "Supply the required inputs, copy the complete prompt and verify the output before using it in the operation."
+    }
+  },
+  {
+    "slug": "article-abu-dhabi-mice-movement-control-room",
+    "checklist": [
+      "Reconcile the delegate, airport, hotel, coach and venue records.",
+      "Assign owners to each movement handoff and exception.",
+      "Define release thresholds, escalation timing and backup authority.",
+      "Test that all desks can communicate the same current operating picture."
+    ],
+    "next": {
+      "kind": "continue",
+      "url": "/articles/article-mice-arrival-waves-zayed-international-airport/index.html",
+      "label": "Continue to Before the Delegate Reaches the Hotel",
+      "why": "Use this connected method when you are ready to plan arrival waves with passenger readiness, representative handovers and transfer controls before releasing each movement."
+    }
+  },
+  {
+    "slug": "article-air-connectivity-dmc-market-intelligence",
+    "checklist": [
+      "Assess route signals and turn them into product, guide-language and guest-service planning questions.",
+      "Verify the supplied facts and record any missing evidence before acting.",
+      "Name the accountable owner and confirm the decision or approval limits.",
+      "Test the result in the operating context and retain the verification record."
+    ],
+    "next": {
+      "kind": "apply",
+      "url": "#air-connectivity-ai-prompt",
+      "label": "Apply the complete research prompt",
+      "why": "Supply the required inputs, copy the complete prompt and verify the output before using it in the operation."
+    }
+  },
+  {
+    "slug": "article-assignment-engine-dmc-operations",
+    "checklist": [
+      "Confirm the service’s language, skills and operating requirements.",
+      "Verify staff capability, availability and assignment constraints.",
+      "Check backup coverage and exception authority before confirming.",
+      "Record the approved assignment and monitor readiness changes."
+    ],
+    "next": {
+      "kind": "review",
+      "url": "/articles/article-fleet-control-tower-operations-dashboard/index.html",
+      "label": "Review The Fleet Control Tower: What Operations Managers Should See on One Screen",
+      "why": "Use this connected method when you are ready to organise the dashboard around exceptions, ownership and the decisions needed to keep movements under control."
+    }
+  },
+  {
+    "slug": "article-city-tour-quotation-professional",
+    "checklist": [
+      "Build a quotation that connects verified costs, explicit assumptions and a clear client presentation.",
+      "Verify the supplied facts and record any missing evidence before acting.",
+      "Name the accountable owner and confirm the decision or approval limits.",
+      "Test the result in the operating context and retain the verification record."
+    ],
+    "next": {
+      "kind": "review",
+      "url": "/articles/tourism-sales-quotation-ai-prompts/index.html",
+      "label": "Review Tourism Sales and Quotation AI Toolkit",
+      "why": "Use this connected method when you are ready to use approved commercial inputs to structure quotation drafts and client communication for authorised review."
+    }
+  },
+  {
+    "slug": "article-destination-experience-journey-map",
+    "checklist": [
+      "Map the guest’s actual journey and moments of truth.",
+      "Connect each touchpoint to an operating owner and service promise.",
+      "Check how dispatch, guide quality, recovery and pricing affect the experience.",
+      "Choose a measurable improvement and verify its effect on the journey."
+    ],
+    "next": {
+      "kind": "review",
+      "url": "/articles/article-tour-guide-quality-index/index.html",
+      "label": "Review Tour Guide Quality Index",
+      "why": "Use this connected method when you are ready to use a ten-pillar framework to define guide-quality measures, review field evidence and target coaching and improvement."
+    }
+  },
+  {
+    "slug": "article-fixed-variable-costs-city-tour-pricing",
+    "checklist": [
+      "Separate fixed and variable costs and explain how participant numbers affect the cost base and pricing review.",
+      "Verify the supplied facts and record any missing evidence before acting.",
+      "Name the accountable owner and confirm the decision or approval limits.",
+      "Test the result in the operating context and retain the verification record."
+    ],
+    "next": {
+      "kind": "review",
+      "url": "/articles/article-transport-tickets-vat-gratuities/index.html",
+      "label": "Review Transport, Tickets, VAT and Gratuities in Tour Quotation",
+      "why": "Use this connected method when you are ready to identify and review these cost components separately using verified inputs before approving the quotation."
+    }
+  },
+  {
+    "slug": "article-fleet-control-tower-operations-dashboard",
+    "checklist": [
+      "Use verified movement statuses and a consistent clock.",
+      "Give each exception an owner, next action and deadline.",
+      "Check that dashboard alerts lead to approved operating decisions.",
+      "Verify closure and retain the source movement record."
+    ],
+    "next": {
+      "kind": "review",
+      "url": "/articles/dmc-operations-ai-prompts/index.html",
+      "label": "Review The DMC Operations AI Toolkit: 10 Ready-to-Use Prompts for Daily Tour Operations",
+      "why": "Use this connected method when you are ready to use the prompts to structure operating briefs, expose missing inputs and prepare handovers for human verification in approved systems."
+    }
+  },
+  {
+    "slug": "article-mice-arrival-waves-zayed-international-airport",
+    "checklist": [
+      "Confirm flight information and passenger readiness from approved sources.",
+      "Reconcile representative handovers with the current manifest.",
+      "Check coach, luggage and accessibility arrangements before release.",
+      "Record departure and receiving-team confirmation for each wave."
+    ],
+    "next": {
+      "kind": "continue",
+      "url": "/articles/article-mice-hotel-desks-coach-departures-abu-dhabi/index.html",
+      "label": "Continue to From Hotel Lobby to Coach Door",
+      "why": "Use this connected method when you are ready to connect delegate readiness, hospitality-desk records and controlled coach departures in one hotel movement process."
+    }
+  },
+  {
+    "slug": "article-mice-backup-operations-service-recovery-abu-dhabi",
+    "checklist": [
+      "Prepare backup options, escalation decisions and recovery communication for changes to the approved programme.",
+      "Define amendment deadlines.",
+      "Define emergency approval authority.",
+      "Price standby vehicles."
+    ],
+    "next": {
+      "kind": "continue",
+      "url": "/articles/capa-tourism-operations/index.html",
+      "label": "Continue to CAPA: Corrective and Preventive Action in Tourism",
+      "why": "Use this connected method when you are ready to build a CAPA workflow that separates containment, verified cause, corrective action and effectiveness checks."
+    }
+  },
+  {
+    "slug": "article-mice-hotel-desks-coach-departures-abu-dhabi",
+    "checklist": [
+      "Connect delegate readiness, hospitality-desk records and controlled coach departures in one hotel movement process.",
+      "Confirm the approved programme version.",
+      "Confirm guest movement allocations.",
+      "Confirm coach and driver assignments."
+    ],
+    "next": {
+      "kind": "continue",
+      "url": "/articles/article-mice-venue-arrivals-registration-abu-dhabi/index.html",
+      "label": "Continue to From Coach Bay to Conference Seat",
+      "why": "Use this connected method when you are ready to control the handover from coach arrival through delegate flow to registration and conference entry."
+    }
+  },
+  {
+    "slug": "article-mice-venue-arrivals-registration-abu-dhabi",
+    "checklist": [
+      "Control the handover from coach arrival through delegate flow to registration and conference entry.",
+      "Complete the physical venue inspection.",
+      "Confirm contracted spaces.",
+      "Confirm coach access."
+    ],
+    "next": {
+      "kind": "continue",
+      "url": "/articles/article-mice-backup-operations-service-recovery-abu-dhabi/index.html",
+      "label": "Continue to When the MICE Plan Changes",
+      "why": "Use this connected method when you are ready to prepare backup options, escalation decisions and recovery communication for changes to the approved programme."
+    }
+  },
+  {
+    "slug": "article-net-cost-selling-price-markup",
+    "checklist": [
+      "Distinguish net cost, selling price, markup and margin and apply the calculations consistently in a quotation review.",
+      "Verify the supplied facts and record any missing evidence before acting.",
+      "Name the accountable owner and confirm the decision or approval limits.",
+      "Test the result in the operating context and retain the verification record."
+    ],
+    "next": {
+      "kind": "review",
+      "url": "/articles/article-tour-cost-worksheet-city-tour/index.html",
+      "label": "Review Tour Cost Worksheet for City Tours",
+      "why": "Use this connected method when you are ready to assemble a cost worksheet that makes supplier inputs and the commercial review traceable."
+    }
+  },
+  {
+    "slug": "article-participant-estimation-break-even-risk",
+    "checklist": [
+      "Test participant assumptions against break-even and demand risk before making operating commitments.",
+      "Verify the supplied facts and record any missing evidence before acting.",
+      "Name the accountable owner and confirm the decision or approval limits.",
+      "Test the result in the operating context and retain the verification record."
+    ],
+    "next": {
+      "kind": "review",
+      "url": "/articles/article-net-cost-selling-price-markup/index.html",
+      "label": "Review Net Cost, Selling Price, Markup and Margin",
+      "why": "Use this connected method when you are ready to distinguish net cost, selling price, markup and margin and apply the calculations consistently in a quotation review."
+    }
+  },
+  {
+    "slug": "article-professional-client-tour-quotation",
+    "checklist": [
+      "Present a client-ready quotation with explicit scope, assumptions and commercial terms.",
+      "Verify the supplied facts and record any missing evidence before acting.",
+      "Name the accountable owner and confirm the decision or approval limits.",
+      "Test the result in the operating context and retain the verification record."
+    ],
+    "next": {
+      "kind": "review",
+      "url": "/articles/article-city-tour-quotation-professional/index.html",
+      "label": "Review How to Quote a City Tour Professionally for DMCs",
+      "why": "Use this connected method when you are ready to build a quotation that connects verified costs, explicit assumptions and a clear client presentation."
+    }
+  },
+  {
+    "slug": "article-rfi-rfq-rfp-erfp-nda-tourism-sales",
+    "checklist": [
+      "Choose between RFI, RFQ, RFP, eRFP and NDA and follow the worked email journey from introduction to confirmed operation.",
+      "Did we answer all client questions?",
+      "Did we introduce our company clearly?",
+      "Did we attach the company profile?"
+    ],
+    "next": {
+      "kind": "review",
+      "url": "/articles/tourism-sales-quotation-ai-prompts/index.html",
+      "label": "Review Tourism Sales and Quotation AI Toolkit",
+      "why": "Use this connected method when you are ready to use approved commercial inputs to structure quotation drafts and client communication for authorised review."
+    }
+  },
+  {
+    "slug": "article-tour-cost-worksheet-city-tour",
+    "checklist": [
+      "Assemble a cost worksheet that makes supplier inputs and the commercial review traceable.",
+      "Verify the supplied facts and record any missing evidence before acting.",
+      "Name the accountable owner and confirm the decision or approval limits.",
+      "Test the result in the operating context and retain the verification record."
+    ],
+    "next": {
+      "kind": "review",
+      "url": "/articles/article-professional-client-tour-quotation/index.html",
+      "label": "Review Professional Client Tour Quotation",
+      "why": "Use this connected method when you are ready to present a client-ready quotation with explicit scope, assumptions and commercial terms."
+    }
+  },
+  {
+    "slug": "article-tour-guide-quality-index",
+    "checklist": [
+      "Define the quality criteria before assessing a guide.",
+      "Collect field observations and guest evidence across the ten pillars.",
+      "Calibrate scoring and separate a single incident from a recurring pattern.",
+      "Agree a coaching action and a follow-up observation with an owner."
+    ],
+    "next": {
+      "kind": "review",
+      "url": "/articles/article-tour-guide-storytelling-system/index.html",
+      "label": "Review Beyond the Script: How Great Tour Guides Turn Key Facts into Experiences Guests Remember",
+      "why": "Use this connected method when you are ready to prepare a storytelling system that supports accurate content, flexible delivery and guest engagement."
+    }
+  },
+  {
+    "slug": "article-tour-guide-storytelling-system",
+    "checklist": [
+      "Verify the source and accuracy of each story and cultural claim.",
+      "Prepare shorter and longer versions for the group and available time.",
+      "Plan questions and transitions that support guest participation.",
+      "Test the delivery and update it from observed guest feedback."
+    ],
+    "next": {
+      "kind": "review",
+      "url": "/articles/front-line-tourism-ai-toolkit/index.html",
+      "label": "Review Front-Line Tourism AI Toolkit",
+      "why": "Use this connected method when you are ready to use verified context to prepare briefings, practise responses and draft communication for an employee to check before use."
+    }
+  },
+  {
+    "slug": "article-tourism-operations-roles-real-difference",
+    "checklist": [
+      "Map each role to the service decision it owns.",
+      "Define handoffs, deputies and authority limits.",
+      "Check that partners understand the same status and escalation rules.",
+      "Test a disrupted-service handoff before approving the role model."
+    ],
+    "next": {
+      "kind": "review",
+      "url": "/articles/sop-roles-authority-raci/index.html",
+      "label": "Review SOP Writing Part 3: Roles, Authority and RACI",
+      "why": "Use this connected method when you are ready to define RACI roles, decision rights and escalation boundaries for the procedure and its handovers."
+    }
+  },
+  {
+    "slug": "article-transport-tickets-vat-gratuities",
+    "checklist": [
+      "Identify and review these cost components separately using verified inputs before approving the quotation.",
+      "Verify the supplied facts and record any missing evidence before acting.",
+      "Name the accountable owner and confirm the decision or approval limits.",
+      "Test the result in the operating context and retain the verification record."
+    ],
+    "next": {
+      "kind": "review",
+      "url": "/articles/article-participant-estimation-break-even-risk/index.html",
+      "label": "Review Participant Estimation and Break-Even Risk",
+      "why": "Use this connected method when you are ready to test participant assumptions against break-even and demand risk before making operating commitments."
+    }
+  },
+  {
+    "slug": "capa-tourism-operations",
+    "checklist": [
+      "Build a CAPA workflow that separates containment, verified cause, corrective action and effectiveness checks.",
+      "The purpose, service value, scope, owner, users, authority, and required outcome are explicit.",
+      "The method reflects observed work, current systems, representative data, guest needs, partners, risk, and disrupted conditions.",
+      "Definitions, roles, thresholds, evidence, privacy, accessibility, safety, exceptions, and escalation are controlled at the appropriate level."
+    ],
+    "next": {
+      "kind": "review",
+      "url": "/articles/root-cause-analysis-tourism-managers/index.html",
+      "label": "Review Root Cause Analysis for Tourism Managers",
+      "why": "Use this connected method when you are ready to investigate the failure with evidence, test possible causes and connect verified findings to corrective action."
+    }
+  },
+  {
+    "slug": "customer-journey-mapping-sop-design",
+    "checklist": [
+      "Map the guest experience and turn pain points and moments of truth into operational requirements for the SOP.",
+      "Verify the supplied facts and record any missing evidence before acting.",
+      "Name the accountable owner and confirm the decision or approval limits.",
+      "Test the result in the operating context and retain the verification record."
+    ],
+    "next": {
+      "kind": "review",
+      "url": "/articles/how-to-write-professional-sop-structure/index.html",
+      "label": "Review How to Write a Professional SOP: Part 1 — Structure",
+      "why": "Use this connected method when you are ready to build a consistent SOP structure that connects roles, procedure, exceptions, records, measures and revision control."
+    }
+  },
+  {
+    "slug": "dmc-operations-ai-prompts",
+    "checklist": [
+      "Use the prompts to structure operating briefs, expose missing inputs and prepare handovers for human verification in approved systems.",
+      "Verify the supplied facts and record any missing evidence before acting.",
+      "Name the accountable owner and confirm the decision or approval limits.",
+      "Test the result in the operating context and retain the verification record."
+    ],
+    "next": {
+      "kind": "apply",
+      "url": "#prompt-1-daily-operations-briefing",
+      "label": "Apply Daily Operations Briefing",
+      "why": "Supply the required inputs, copy the complete prompt and verify the output before using it in the operation."
+    }
+  },
+  {
+    "slug": "document-control-version-management-tourism",
+    "checklist": [
+      "Define approval, versioning, access, revision and withdrawal controls so employees can identify the current approved document.",
+      "purpose, scope, and owner are clear;",
+      "current sources and external requirements were checked;",
+      "affected users and interfaces reviewed the content;"
+    ],
+    "next": {
+      "kind": "review",
+      "url": "/articles/tourism-sop-training-competency-adoption/index.html",
+      "label": "Review Training, Competency, and SOP Adoption in Tourism",
+      "why": "Use this connected method when you are ready to define competence, practise the task, authorise employees and verify adoption through operating evidence."
+    }
+  },
+  {
+    "slug": "front-line-tourism-ai-toolkit",
+    "checklist": [
+      "Use verified context to prepare briefings, practise responses and draft communication for an employee to check before use.",
+      "Verify the supplied facts and record any missing evidence before acting.",
+      "Name the accountable owner and confirm the decision or approval limits.",
+      "Test the result in the operating context and retain the verification record."
+    ],
+    "next": {
+      "kind": "apply",
+      "url": "#prompt-1-pre-tour-preparation",
+      "label": "Apply Pre-Tour Preparation",
+      "why": "Supply the required inputs, copy the complete prompt and verify the output before using it in the operation."
+    }
+  },
+  {
+    "slug": "guest-experience-ai-prompts",
+    "checklist": [
+      "Structure guest communication and feedback analysis with verified facts, privacy controls and human recovery authority.",
+      "Verify the supplied facts and record any missing evidence before acting.",
+      "Name the accountable owner and confirm the decision or approval limits.",
+      "Test the result in the operating context and retain the verification record."
+    ],
+    "next": {
+      "kind": "apply",
+      "url": "#prompt-1-pre-arrival-welcome-message",
+      "label": "Apply Pre-Arrival Welcome Message",
+      "why": "Supply the required inputs, copy the complete prompt and verify the output before using it in the operation."
+    }
+  },
+  {
+    "slug": "guest-ready-apartment-standard",
+    "checklist": [
+      "Define a release standard that checks cleanliness, functionality, safety, presentation, access and evidence before guest arrival.",
+      "One authoritative guest-ready definition exists.",
+      "Cleanliness is treated as one component, not final release.",
+      "Release-blocking defects are defined before inspection."
+    ],
+    "next": {
+      "kind": "continue",
+      "url": "/articles/hotel-maintenance-work-order-management/index.html",
+      "label": "Continue to Maintenance Control & Work Order Management",
+      "why": "Use the next Track B method to extend the operating system after completing the checklist above."
+    }
+  },
+  {
+    "slug": "hotel-ai-prompting-framework",
+    "checklist": [
+      "Use the HOTEL framework to specify the task, verified context, inputs, output and review controls.",
+      "Is the accountable human owner named?",
+      "Is the operating objective specific?",
+      "Are the approved sources of truth identified?"
+    ],
+    "next": {
+      "kind": "apply",
+      "url": "#prompt-1-general-hotel-prompt-builder",
+      "label": "Apply General Hotel Prompt Builder",
+      "why": "Supply the required inputs, copy the complete prompt and verify the output before using it in the operation."
+    }
+  },
+  {
+    "slug": "hotel-apartment-asset-lifecycle-management",
+    "checklist": [
+      "Connect commissioning, operating condition, maintenance, renewal and disposal in a traceable asset lifecycle.",
+      "Definitions and scope are explicit.",
+      "Source records are identifiable and owned.",
+      "Facts and assumptions are separated."
+    ],
+    "next": {
+      "kind": "continue",
+      "url": "/articles/hotel-apartment-total-cost-of-ownership/index.html",
+      "label": "Continue to Total Cost of Ownership (TCO)",
+      "why": "Use the next Track B method to extend the operating system after completing the checklist above."
+    }
+  },
+  {
+    "slug": "hotel-apartment-cost-of-poor-quality",
+    "checklist": [
+      "Classify and measure poor-quality costs so improvement priorities reflect their operational and financial impact.",
+      "The process has one documented start and end state.",
+      "Ownership and exception authority are explicit.",
+      "Priority/severity rules are defined before cases occur."
+    ],
+    "next": {
+      "kind": "continue",
+      "url": "/articles/hotel-apartment-sop-architecture/index.html",
+      "label": "Continue to SOP Architecture for Hotel Apartments",
+      "why": "Use the next Track B method to extend the operating system after completing the checklist above."
+    }
+  },
+  {
+    "slug": "hotel-apartment-end-to-end-guest-journey",
+    "checklist": [
+      "Map promises, handovers, evidence and recovery controls across the complete guest journey.",
+      "The process has one documented start and end state.",
+      "Ownership and exception authority are explicit.",
+      "Priority/severity rules are defined before cases occur."
+    ],
+    "next": {
+      "kind": "continue",
+      "url": "/articles/hotel-apartment-cost-of-poor-quality/index.html",
+      "label": "Continue to The Cost of Poor Quality",
+      "why": "Use the next Track B method to extend the operating system after completing the checklist above."
+    }
+  },
+  {
+    "slug": "hotel-apartment-extended-stay-ai-toolkit",
+    "checklist": [
+      "Use the prompts to prepare long-stay readiness, service plans, defect follow-up and move-in or move-out controls for review.",
+      "Verify the supplied facts and record any missing evidence before acting.",
+      "Name the accountable owner and confirm the decision or approval limits.",
+      "Test the result in the operating context and retain the verification record."
+    ],
+    "next": {
+      "kind": "apply",
+      "url": "#prompt-1-extended-stay-arrival-planner",
+      "label": "Apply Extended-Stay Arrival Planner",
+      "why": "Supply the required inputs, copy the complete prompt and verify the output before using it in the operation."
+    }
+  },
+  {
+    "slug": "hotel-apartment-kpi-architecture",
+    "checklist": [
+      "Connect strategic outcomes to operational drivers with defined measures, owners, sources and action rules.",
+      "Authoritative statuses and definitions exist.",
+      "Source data can be traced to operational records.",
+      "Owners and escalation rights are explicit."
+    ],
+    "next": {
+      "kind": "continue",
+      "url": "/articles/hotel-property-reliability-score/index.html",
+      "label": "Continue to Property Reliability Score",
+      "why": "Use the next Track B method to extend the operating system after completing the checklist above."
+    }
+  },
+  {
+    "slug": "hotel-apartment-operating-system",
+    "checklist": [
+      "Design a connected operating system that turns guest expectations and controlled standards into daily execution.",
+      "Map the end-to-end guest and apartment lifecycle.",
+      "Name process owners for every critical cross-functional flow.",
+      "Define readiness, defect, escalation and closure standards."
+    ],
+    "next": {
+      "kind": "continue",
+      "url": "/articles/hotel-apartment-preventive-maintenance-strategy/index.html",
+      "label": "Continue to Preventive Maintenance Strategy for Hotel Apartments",
+      "why": "Use the next Track B method to extend the operating system after completing the checklist above."
+    }
+  },
+  {
+    "slug": "hotel-apartment-operations-control-tower",
+    "checklist": [
+      "Create one prioritised exception queue with clear ownership, escalation and management review.",
+      "Authoritative statuses and definitions exist.",
+      "Source data can be traced to operational records.",
+      "Owners and escalation rights are explicit."
+    ],
+    "next": {
+      "kind": "continue",
+      "url": "/articles/hotel-operational-excellence-maturity-model/index.html",
+      "label": "Continue to Operational Excellence Maturity Model",
+      "why": "Use the next Track B method to extend the operating system after completing the checklist above."
+    }
+  },
+  {
+    "slug": "hotel-apartment-preventive-maintenance-strategy",
+    "checklist": [
+      "Build a preventive-maintenance strategy around asset risk, failure consequences and reliability evidence.",
+      "Every critical asset has a unique identity and accountable owner.",
+      "Criticality logic is documented and consistently applied.",
+      "PM tasks and frequencies have an approved basis."
+    ],
+    "next": {
+      "kind": "continue",
+      "url": "/articles/guest-ready-apartment-standard/index.html",
+      "label": "Continue to The Guest-Ready Apartment Standard",
+      "why": "Use the next Track B method to extend the operating system after completing the checklist above."
+    }
+  },
+  {
+    "slug": "hotel-apartment-sop-architecture",
+    "checklist": [
+      "Organise process hierarchy, RACI, exceptions, records and revision control into a coherent SOP architecture.",
+      "Definitions and scope are explicit.",
+      "Source records are identifiable and owned.",
+      "Facts and assumptions are separated."
+    ],
+    "next": {
+      "kind": "continue",
+      "url": "/articles/hotel-apartment-asset-lifecycle-management/index.html",
+      "label": "Continue to Asset Lifecycle Management",
+      "why": "Use the next Track B method to extend the operating system after completing the checklist above."
+    }
+  },
+  {
+    "slug": "hotel-apartment-total-cost-of-ownership",
+    "checklist": [
+      "Compare repair, replacement and procurement options using verified lifecycle costs and explicit assumptions.",
+      "Definitions and scope are explicit.",
+      "Source records are identifiable and owned.",
+      "Facts and assumptions are separated."
+    ],
+    "next": {
+      "kind": "continue",
+      "url": "/articles/hotel-preventive-maintenance-kpis/index.html",
+      "label": "Continue to Preventive Maintenance KPIs",
+      "why": "Use the next Track B method to extend the operating system after completing the checklist above."
+    }
+  },
+  {
+    "slug": "hotel-complaint-root-cause-analysis",
+    "checklist": [
+      "Classify complaint evidence, test causes with 5 Whys and connect verified findings to CAPA and effectiveness review.",
+      "The process has one documented start and end state.",
+      "Ownership and exception authority are explicit.",
+      "Priority/severity rules are defined before cases occur."
+    ],
+    "next": {
+      "kind": "continue",
+      "url": "/articles/hotel-housekeeping-quality-control/index.html",
+      "label": "Continue to Housekeeping Quality Control",
+      "why": "Use the next Track B method to extend the operating system after completing the checklist above."
+    }
+  },
+  {
+    "slug": "hotel-control-tower-ai-decision-support-toolkit",
+    "checklist": [
+      "Use the prompts to structure verified signals, exceptions, alerts and escalations into decision briefs for accountable managers.",
+      "Verify the supplied facts and record any missing evidence before acting.",
+      "Name the accountable owner and confirm the decision or approval limits.",
+      "Test the result in the operating context and retain the verification record."
+    ],
+    "next": {
+      "kind": "apply",
+      "url": "#prompt-1",
+      "label": "Apply Hotel Control Tower Daily Brief",
+      "why": "Supply the required inputs, copy the complete prompt and verify the output before using it in the operation."
+    }
+  },
+  {
+    "slug": "hotel-critical-spare-parts-management",
+    "checklist": [
+      "Set spare-part priorities and stock controls using failure consequences, lead times, traceability and emergency sourcing.",
+      "Authoritative statuses and definitions exist.",
+      "Source data can be traced to operational records.",
+      "Owners and escalation rights are explicit."
+    ],
+    "next": {
+      "kind": "continue",
+      "url": "/articles/hotel-operations-planning-daily-control/index.html",
+      "label": "Continue to Operations Planning & Daily Control",
+      "why": "Use the next Track B method to extend the operating system after completing the checklist above."
+    }
+  },
+  {
+    "slug": "hotel-downtime-out-of-service-management",
+    "checklist": [
+      "Define OOS and OOO controls, downtime clocks, recovery ownership and verified release evidence.",
+      "Authoritative statuses and definitions exist.",
+      "Source data can be traced to operational records.",
+      "Owners and escalation rights are explicit."
+    ],
+    "next": {
+      "kind": "continue",
+      "url": "/articles/hotel-apartment-kpi-architecture/index.html",
+      "label": "Continue to Hotel Apartment KPI Architecture",
+      "why": "Use the next Track B method to extend the operating system after completing the checklist above."
+    }
+  },
+  {
+    "slug": "hotel-economics-of-service-failure",
+    "checklist": [
+      "Build a service-failure cost view that connects recovery activity, downtime and recurrence to the financial review.",
+      "Definitions and scope are explicit.",
+      "Source records are identifiable and owned.",
+      "Facts and assumptions are separated."
+    ],
+    "next": {
+      "kind": "continue",
+      "url": "/articles/hotel-first-time-right-operations/index.html",
+      "label": "Continue to First-Time-Right Operations",
+      "why": "Use the next Track B method to extend the operating system after completing the checklist above."
+    }
+  },
+  {
+    "slug": "hotel-energy-utility-management-ai-toolkit",
+    "checklist": [
+      "Use the prompts to structure baselines, consumption analysis and measurement plans with verified data and stated limits.",
+      "Verify the supplied facts and record any missing evidence before acting.",
+      "Name the accountable owner and confirm the decision or approval limits.",
+      "Test the result in the operating context and retain the verification record."
+    ],
+    "next": {
+      "kind": "apply",
+      "url": "#prompt-1",
+      "label": "Apply Utility Baseline & Normalization Builder",
+      "why": "Supply the required inputs, copy the complete prompt and verify the output before using it in the operation."
+    }
+  },
+  {
+    "slug": "hotel-engineering-maintenance-ai-toolkit",
+    "checklist": [
+      "Use the prompts to draft work-order reviews, preventive-maintenance plans, defect analysis and incident controls for technical verification.",
+      "Verify the supplied facts and record any missing evidence before acting.",
+      "Name the accountable owner and confirm the decision or approval limits.",
+      "Test the result in the operating context and retain the verification record."
+    ],
+    "next": {
+      "kind": "apply",
+      "url": "#prompt-1-work-order-triage",
+      "label": "Apply Work Order Triage",
+      "why": "Supply the required inputs, copy the complete prompt and verify the output before using it in the operation."
+    }
+  },
+  {
+    "slug": "hotel-esg-sustainability-ai-toolkit",
+    "checklist": [
+      "Use the prompts to structure materiality, environmental data, procurement, social impact and reporting with evidence and review controls.",
+      "organizational/reporting boundary is defined;",
+      "data sources and periods are traceable;",
+      "normalization logic is appropriate;"
+    ],
+    "next": {
+      "kind": "apply",
+      "url": "#prompt-1-esg-materiality-baseline-builder",
+      "label": "Apply ESG Materiality & Baseline Builder",
+      "why": "Supply the required inputs, copy the complete prompt and verify the output before using it in the operation."
+    }
+  },
+  {
+    "slug": "hotel-finance-cost-control-ai-toolkit",
+    "checklist": [
+      "Use the prompts to structure variance analysis, P&L commentary, forecasts and savings reviews with explicit definitions and verified inputs.",
+      "Verify the supplied facts and record any missing evidence before acting.",
+      "Name the accountable owner and confirm the decision or approval limits.",
+      "Test the result in the operating context and retain the verification record."
+    ],
+    "next": {
+      "kind": "apply",
+      "url": "#prompt-1",
+      "label": "Apply Department Cost Variance Analyzer",
+      "why": "Supply the required inputs, copy the complete prompt and verify the output before using it in the operation."
+    }
+  },
+  {
+    "slug": "hotel-first-time-right-operations",
+    "checklist": [
+      "Define acceptance criteria, measure first-pass performance and target the causes of rework.",
+      "Requirements and definitions are explicit.",
+      "Source data is owned and traceable.",
+      "Quality, cost and productivity are considered together."
+    ],
+    "next": {
+      "kind": "continue",
+      "url": "/articles/hotel-procurement-supplier-quality-control/index.html",
+      "label": "Continue to Procurement & Supplier Quality Control",
+      "why": "Use the next Track B method to extend the operating system after completing the checklist above."
+    }
+  },
+  {
+    "slug": "hotel-front-office-ai-toolkit",
+    "checklist": [
+      "Use the prompts to prepare arrival briefs, readiness checks, handovers and exception plans for staff to verify before service.",
+      "Verify the supplied facts and record any missing evidence before acting.",
+      "Name the accountable owner and confirm the decision or approval limits.",
+      "Test the result in the operating context and retain the verification record."
+    ],
+    "next": {
+      "kind": "apply",
+      "url": "#prompt-1-arrival-readiness-brief",
+      "label": "Apply Arrival Readiness Brief",
+      "why": "Supply the required inputs, copy the complete prompt and verify the output before using it in the operation."
+    }
+  },
+  {
+    "slug": "hotel-general-manager-ai-toolkit",
+    "checklist": [
+      "Use the prompts to structure decision briefs and challenge assumptions while keeping authority and accountability with management.",
+      "Verify the supplied facts and record any missing evidence before acting.",
+      "Name the accountable owner and confirm the decision or approval limits.",
+      "Test the result in the operating context and retain the verification record."
+    ],
+    "next": {
+      "kind": "apply",
+      "url": "#prompt-1",
+      "label": "Apply GM Morning Brief",
+      "why": "Supply the required inputs, copy the complete prompt and verify the output before using it in the operation."
+    }
+  },
+  {
+    "slug": "hotel-guest-complaint-service-recovery-ai-toolkit",
+    "checklist": [
+      "Use the prompts to structure triage, recovery options, escalation, root-cause review and verified complaint closure.",
+      "Verify the supplied facts and record any missing evidence before acting.",
+      "Name the accountable owner and confirm the decision or approval limits.",
+      "Test the result in the operating context and retain the verification record."
+    ],
+    "next": {
+      "kind": "apply",
+      "url": "#prompt-1-complaint-triage",
+      "label": "Apply Complaint Triage",
+      "why": "Supply the required inputs, copy the complete prompt and verify the output before using it in the operation."
+    }
+  },
+  {
+    "slug": "hotel-guest-experience-ai-toolkit",
+    "checklist": [
+      "Use the prompts to map touchpoints, prepare pre-arrival plans and review accessibility and guest needs with privacy controls.",
+      "Verify the supplied facts and record any missing evidence before acting.",
+      "Name the accountable owner and confirm the decision or approval limits.",
+      "Test the result in the operating context and retain the verification record."
+    ],
+    "next": {
+      "kind": "apply",
+      "url": "#prompt-1-guest-journey-review",
+      "label": "Apply Guest Journey Review",
+      "why": "Supply the required inputs, copy the complete prompt and verify the output before using it in the operation."
+    }
+  },
+  {
+    "slug": "hotel-guest-experience-quality-management",
+    "checklist": [
+      "Translate voice-of-customer evidence into CTQs, operating standards and closed-loop improvement.",
+      "Authoritative statuses and definitions exist.",
+      "Source data can be traced to operational records.",
+      "Owners and escalation rights are explicit."
+    ],
+    "next": {
+      "kind": "continue",
+      "url": "/articles/hotel-apartment-operations-control-tower/index.html",
+      "label": "Continue to The Hotel Apartment Operations Control Tower",
+      "why": "Use the next Track B method to extend the operating system after completing the checklist above."
+    }
+  },
+  {
+    "slug": "hotel-housekeeping-management-ai-toolkit",
+    "checklist": [
+      "Use the prompts to structure readiness, inspections, linen plans, defect follow-up and department handovers.",
+      "Verify the supplied facts and record any missing evidence before acting.",
+      "Name the accountable owner and confirm the decision or approval limits.",
+      "Test the result in the operating context and retain the verification record."
+    ],
+    "next": {
+      "kind": "apply",
+      "url": "#prompt-1-room-readiness-planner",
+      "label": "Apply Room Readiness Planner",
+      "why": "Supply the required inputs, copy the complete prompt and verify the output before using it in the operation."
+    }
+  },
+  {
+    "slug": "hotel-housekeeping-quality-control",
+    "checklist": [
+      "Design inspections and defect categories, measure first-pass quality and connect findings to coaching and recurrence control.",
+      "The process has one documented start and end state.",
+      "Ownership and exception authority are explicit.",
+      "Priority/severity rules are defined before cases occur."
+    ],
+    "next": {
+      "kind": "continue",
+      "url": "/articles/hotel-apartment-end-to-end-guest-journey/index.html",
+      "label": "Continue to Designing the End-to-End Guest Journey",
+      "why": "Use the next Track B method to extend the operating system after completing the checklist above."
+    }
+  },
+  {
+    "slug": "hotel-housekeeping-standardization",
+    "checklist": [
+      "Define work sequences, visual controls, training and verification that support consistent apartment preparation.",
+      "Requirements and definitions are explicit.",
+      "Source data is owned and traceable.",
+      "Quality, cost and productivity are considered together."
+    ],
+    "next": {
+      "kind": "continue",
+      "url": "/articles/hotel-workforce-productivity-efficiency/index.html",
+      "label": "Continue to Productivity & Workforce Efficiency",
+      "why": "Use the next Track B method to extend the operating system after completing the checklist above."
+    }
+  },
+  {
+    "slug": "hotel-inventory-par-level-management",
+    "checklist": [
+      "Design PAR levels, reorder rules, count controls and exception reviews from verified demand and supply conditions.",
+      "Requirements and definitions are explicit.",
+      "Source data is owned and traceable.",
+      "Quality, cost and productivity are considered together."
+    ],
+    "next": {
+      "kind": "continue",
+      "url": "/articles/hotel-housekeeping-standardization/index.html",
+      "label": "Continue to Housekeeping Standardization",
+      "why": "Use the next Track B method to extend the operating system after completing the checklist above."
+    }
+  },
+  {
+    "slug": "hotel-inventory-par-management-ai-toolkit",
+    "checklist": [
+      "Use the prompts to draft PAR and reorder reviews, investigate stock variance and prioritise inventory exceptions.",
+      "Is the SKU/UOM correct?",
+      "Is the physical count recent?",
+      "Does the ledger reconcile?"
+    ],
+    "next": {
+      "kind": "apply",
+      "url": "#prompt-1",
+      "label": "Apply PAR Level Calculator Assistant",
+      "why": "Supply the required inputs, copy the complete prompt and verify the output before using it in the operation."
+    }
+  },
+  {
+    "slug": "hotel-kpi-dashboard-ai-toolkit",
+    "checklist": [
+      "Use the prompts to define KPI governance, dashboard requirements, scorecards and management action rules.",
+      "Verify the supplied facts and record any missing evidence before acting.",
+      "Name the accountable owner and confirm the decision or approval limits.",
+      "Test the result in the operating context and retain the verification record."
+    ],
+    "next": {
+      "kind": "apply",
+      "url": "#prompt-1",
+      "label": "Apply KPI Architecture Builder",
+      "why": "Supply the required inputs, copy the complete prompt and verify the output before using it in the operation."
+    }
+  },
+  {
+    "slug": "hotel-lean-six-sigma-ai-toolkit",
+    "checklist": [
+      "Use the prompts to structure DMAIC, VOC, Pareto, cause analysis and control plans using evidence for human review.",
+      "Verify the supplied facts and record any missing evidence before acting.",
+      "Name the accountable owner and confirm the decision or approval limits.",
+      "Test the result in the operating context and retain the verification record."
+    ],
+    "next": {
+      "kind": "apply",
+      "url": "#prompt-1-dmaic-project-charter-builder",
+      "label": "Apply DMAIC Project Charter Builder",
+      "why": "Supply the required inputs, copy the complete prompt and verify the output before using it in the operation."
+    }
+  },
+  {
+    "slug": "hotel-maintenance-work-order-management",
+    "checklist": [
+      "Control work orders from request through priority, SLA tracking, ownership and verified closure.",
+      "The process has one documented start and end state.",
+      "Ownership and exception authority are explicit.",
+      "Priority/severity rules are defined before cases occur."
+    ],
+    "next": {
+      "kind": "continue",
+      "url": "/articles/hotel-complaint-root-cause-analysis/index.html",
+      "label": "Continue to Complaint Root-Cause Analysis",
+      "why": "Use the next Track B method to extend the operating system after completing the checklist above."
+    }
+  },
+  {
+    "slug": "hotel-operational-excellence-maturity-model",
+    "checklist": [
+      "Assess governance, reliability, quality, data and improvement against evidence-based maturity levels.",
+      "Authoritative statuses and definitions exist.",
+      "Source data can be traced to operational records.",
+      "Owners and escalation rights are explicit."
+    ],
+    "next": {
+      "kind": "apply",
+      "url": "/articles/hotel-general-manager-ai-toolkit/index.html#prompt-5",
+      "label": "Apply Strategic Priority Planner",
+      "why": "Use verified maturity gaps to draft improvement priorities, then have leadership review and approve them."
+    }
+  },
+  {
+    "slug": "hotel-operations-manager-ai-toolkit",
+    "checklist": [
+      "Use the prompts to prepare daily control briefs, prioritise verified exceptions and assign follow-up with clear ownership.",
+      "Is the business date and shift window correct?",
+      "Are room/apartment status and occupancy figures sourced from the approved system?",
+      "Are guest-impacting open issues clearly separated from closed items?"
+    ],
+    "next": {
+      "kind": "apply",
+      "url": "#prompt-1-daily-operations-briefing",
+      "label": "Apply Daily Operations Briefing",
+      "why": "Supply the required inputs, copy the complete prompt and verify the output before using it in the operation."
+    }
+  },
+  {
+    "slug": "hotel-operations-planning-daily-control",
+    "checklist": [
+      "Set a daily control rhythm that joins readiness, workload, exceptions and accountable follow-up.",
+      "Authoritative statuses and definitions exist.",
+      "Source data can be traced to operational records.",
+      "Owners and escalation rights are explicit."
+    ],
+    "next": {
+      "kind": "continue",
+      "url": "/articles/hotel-downtime-out-of-service-management/index.html",
+      "label": "Continue to Downtime & Out-of-Service Management",
+      "why": "Use the next Track B method to extend the operating system after completing the checklist above."
+    }
+  },
+  {
+    "slug": "hotel-ota-distribution-review-management-ai-toolkit",
+    "checklist": [
+      "Use the prompts to review listing quality, channel mix, commissions, parity questions and reputation evidence.",
+      "Verify the supplied facts and record any missing evidence before acting.",
+      "Name the accountable owner and confirm the decision or approval limits.",
+      "Test the result in the operating context and retain the verification record."
+    ],
+    "next": {
+      "kind": "apply",
+      "url": "#prompt-1",
+      "label": "Apply OTA Listing Quality Audit",
+      "why": "Supply the required inputs, copy the complete prompt and verify the output before using it in the operation."
+    }
+  },
+  {
+    "slug": "hotel-predictive-maintenance-ai-toolkit",
+    "checklist": [
+      "Use the prompts to examine failure patterns, anomalies and downtime scenarios with explicit technical validation limits.",
+      "Verify the supplied facts and record any missing evidence before acting.",
+      "Name the accountable owner and confirm the decision or approval limits.",
+      "Test the result in the operating context and retain the verification record."
+    ],
+    "next": {
+      "kind": "apply",
+      "url": "#prompt-1-failure-pattern-detector",
+      "label": "Apply Failure Pattern Detector",
+      "why": "Supply the required inputs, copy the complete prompt and verify the output before using it in the operation."
+    }
+  },
+  {
+    "slug": "hotel-preventive-maintenance-kpis",
+    "checklist": [
+      "Select KPIs that distinguish task completion from backlog, failure recurrence and maintenance effectiveness.",
+      "Definitions and scope are explicit.",
+      "Source records are identifiable and owned.",
+      "Facts and assumptions are separated."
+    ],
+    "next": {
+      "kind": "continue",
+      "url": "/articles/hotel-economics-of-service-failure/index.html",
+      "label": "Continue to The Economics of Service Failure",
+      "why": "Use the next Track B method to extend the operating system after completing the checklist above."
+    }
+  },
+  {
+    "slug": "hotel-procurement-ai-toolkit",
+    "checklist": [
+      "Use the prompts to structure requisitions, RFQs, bid comparisons and supplier reviews using verified requirements and approvals.",
+      "Is the business need approved?",
+      "Is the specification complete?",
+      "Are bids genuinely comparable?"
+    ],
+    "next": {
+      "kind": "apply",
+      "url": "#prompt-1",
+      "label": "Apply Purchase Requisition Quality Checker",
+      "why": "Supply the required inputs, copy the complete prompt and verify the output before using it in the operation."
+    }
+  },
+  {
+    "slug": "hotel-procurement-supplier-quality-control",
+    "checklist": [
+      "Define supplier qualification, delivery inspection, SLA evidence, scorecards and corrective-action controls.",
+      "Requirements and definitions are explicit.",
+      "Source data is owned and traceable.",
+      "Quality, cost and productivity are considered together."
+    ],
+    "next": {
+      "kind": "continue",
+      "url": "/articles/hotel-inventory-par-level-management/index.html",
+      "label": "Continue to Inventory & PAR Level Management",
+      "why": "Use the next Track B method to extend the operating system after completing the checklist above."
+    }
+  },
+  {
+    "slug": "hotel-property-reliability-score",
+    "checklist": [
+      "Build a transparent composite score with controlled measures, documented weights and drill-down to source evidence.",
+      "Authoritative statuses and definitions exist.",
+      "Source data can be traced to operational records.",
+      "Owners and escalation rights are explicit."
+    ],
+    "next": {
+      "kind": "continue",
+      "url": "/articles/hotel-guest-experience-quality-management/index.html",
+      "label": "Continue to Guest Experience Quality Management",
+      "why": "Use the next Track B method to extend the operating system after completing the checklist above."
+    }
+  },
+  {
+    "slug": "hotel-quality-audit-ai-toolkit",
+    "checklist": [
+      "Use the prompts to plan evidence-led audits, classify findings and verify corrective-action effectiveness.",
+      "☐ current requirement/standard revision is identified;",
+      "☐ audit scope and sample are stated;",
+      "☐ objective evidence is traceable;"
+    ],
+    "next": {
+      "kind": "apply",
+      "url": "#prompt-1-quality-audit-planner",
+      "label": "Apply Quality Audit Planner",
+      "why": "Supply the required inputs, copy the complete prompt and verify the output before using it in the operation."
+    }
+  },
+  {
+    "slug": "hotel-reservations-ai-toolkit",
+    "checklist": [
+      "Use the prompts to review booking quality, modifications, cancellations and allocation exceptions before confirmation.",
+      "Verify the supplied facts and record any missing evidence before acting.",
+      "Name the accountable owner and confirm the decision or approval limits.",
+      "Test the result in the operating context and retain the verification record."
+    ],
+    "next": {
+      "kind": "apply",
+      "url": "#prompt-1-reservation-file-quality-check",
+      "label": "Apply Reservation File Quality Check",
+      "why": "Supply the required inputs, copy the complete prompt and verify the output before using it in the operation."
+    }
+  },
+  {
+    "slug": "hotel-revenue-management-ai-toolkit",
+    "checklist": [
+      "Use the prompts to structure daily revenue briefs, forecast assumptions and rate-review scenarios from verified commercial inputs.",
+      "Is the stay-date period clear?",
+      "Is the booking snapshot timestamped?",
+      "Do rooms sold/available reconcile?"
+    ],
+    "next": {
+      "kind": "apply",
+      "url": "#prompt-1",
+      "label": "Apply Daily Revenue Brief",
+      "why": "Supply the required inputs, copy the complete prompt and verify the output before using it in the operation."
+    }
+  },
+  {
+    "slug": "hotel-sales-corporate-accounts-ai-toolkit",
+    "checklist": [
+      "Use the prompts to prepare account research, proposals, RFP responses and performance reviews with verified terms and assumptions.",
+      "Is the account factually identified?",
+      "Are contacts and roles verified?",
+      "Is production reconciled?"
+    ],
+    "next": {
+      "kind": "apply",
+      "url": "#prompt-1",
+      "label": "Apply Corporate Account Research Brief",
+      "why": "Supply the required inputs, copy the complete prompt and verify the output before using it in the operation."
+    }
+  },
+  {
+    "slug": "hotel-sop-process-design-ai-toolkit",
+    "checklist": [
+      "Use the prompts to draft SOP structures, RACI, procedures, checklists and gap reviews for operational validation.",
+      "Verify the supplied facts and record any missing evidence before acting.",
+      "Name the accountable owner and confirm the decision or approval limits.",
+      "Test the result in the operating context and retain the verification record."
+    ],
+    "next": {
+      "kind": "apply",
+      "url": "#prompt-1-sop-structure-builder",
+      "label": "Apply SOP Structure Builder",
+      "why": "Supply the required inputs, copy the complete prompt and verify the output before using it in the operation."
+    }
+  },
+  {
+    "slug": "hotel-workforce-productivity-efficiency",
+    "checklist": [
+      "Compare workload and productive capacity against demand, service standards and quality before changing staffing plans.",
+      "Requirements and definitions are explicit.",
+      "Source data is owned and traceable.",
+      "Quality, cost and productivity are considered together."
+    ],
+    "next": {
+      "kind": "continue",
+      "url": "/articles/hotel-critical-spare-parts-management/index.html",
+      "label": "Continue to Critical Spare Parts Management",
+      "why": "Use the next Track B method to extend the operating system after completing the checklist above."
+    }
+  },
+  {
+    "slug": "how-to-audit-an-sop",
+    "checklist": [
+      "Assess currency, understanding, execution, records and effectiveness using an evidence-led audit approach.",
+      "The purpose, service value, scope, owner, users, authority, and required outcome are explicit.",
+      "The method reflects observed work, current systems, representative data, guest needs, partners, risk, and disrupted conditions.",
+      "Definitions, roles, thresholds, evidence, privacy, accessibility, safety, exceptions, and escalation are controlled at the appropriate level."
+    ],
+    "next": {
+      "kind": "review",
+      "url": "/articles/capa-tourism-operations/index.html",
+      "label": "Review CAPA: Corrective and Preventive Action in Tourism",
+      "why": "Use this connected method when you are ready to build a CAPA workflow that separates containment, verified cause, corrective action and effectiveness checks."
+    }
+  },
+  {
+    "slug": "how-to-write-professional-sop-procedure",
+    "checklist": [
+      "Write steps with clear roles, sequence, decision rules, timing, evidence and escalation.",
+      "The purpose, boundary, users, owner, and approval authority are explicit.",
+      "The content matches the approved process map, risk assessment, customer journey, and current systems.",
+      "Roles, deputies, thresholds, evidence, privacy, accessibility, supplier interfaces, and exceptions have been tested."
+    ],
+    "next": {
+      "kind": "review",
+      "url": "/articles/sop-roles-authority-raci/index.html",
+      "label": "Review SOP Writing Part 3: Roles, Authority and RACI",
+      "why": "Use this connected method when you are ready to define RACI roles, decision rights and escalation boundaries for the procedure and its handovers."
+    }
+  },
+  {
+    "slug": "how-to-write-professional-sop-structure",
+    "checklist": [
+      "Build a consistent SOP structure that connects roles, procedure, exceptions, records, measures and revision control.",
+      "Verify the supplied facts and record any missing evidence before acting.",
+      "Name the accountable owner and confirm the decision or approval limits.",
+      "Test the result in the operating context and retain the verification record."
+    ],
+    "next": {
+      "kind": "apply",
+      "url": "#practical-tool-professional-tourism-sop-master-template",
+      "label": "Apply the Professional Tourism SOP Master Template",
+      "why": "Complete the worksheet with verified operating information and review it with the accountable owner."
+    }
+  },
+  {
+    "slug": "how-to-write-work-instructions",
+    "checklist": [
+      "Write and user-test precise task steps with preparation, safety warnings, evidence and a link to the governing SOP.",
+      "The purpose, boundary, users, owner, and approval authority are explicit.",
+      "The content matches the approved process map, risk assessment, customer journey, and current systems.",
+      "Roles, deputies, thresholds, evidence, privacy, accessibility, supplier interfaces, and exceptions have been tested."
+    ],
+    "next": {
+      "kind": "review",
+      "url": "/articles/operational-checklist-employees-use/index.html",
+      "label": "Review How to Write an Operational Checklist That Employees Actually Use",
+      "why": "Use this connected method when you are ready to choose critical pause points, write observable checks and define what staff should do when a check fails."
+    }
+  },
+  {
+    "slug": "insights-city-tour-quotation-pricing-masterclass",
+    "checklist": [
+      "Record the tour scope and verified supplier inputs.",
+      "Separate fixed and variable costs using consistent units.",
+      "Test participant assumptions, break-even, markup and margin.",
+      "Release the quotation only after checking scope and commercial terms."
+    ],
+    "next": {
+      "kind": "continue",
+      "url": "/articles/article-fixed-variable-costs-city-tour-pricing/index.html",
+      "label": "Continue to Fixed vs Variable Costs in Tour Pricing",
+      "why": "Use this connected method when you are ready to separate fixed and variable costs and explain how participant numbers affect the cost base and pricing review."
+    }
+  },
+  {
+    "slug": "integrated-sop-creation-model",
+    "checklist": [
+      "Connect service value, risk, design, testing, training, measurement and improvement in one SOP lifecycle.",
+      "The purpose, service value, scope, owner, users, authority, and required outcome are explicit.",
+      "The method reflects observed work, current systems, representative data, guest needs, partners, risk, and disrupted conditions.",
+      "Definitions, roles, thresholds, evidence, privacy, accessibility, safety, exceptions, and escalation are controlled at the appropriate level."
+    ],
+    "next": {
+      "kind": "review",
+      "url": "/articles/map-process-before-writing-sop/index.html",
+      "label": "Review Never Write an SOP Before Mapping the Process",
+      "why": "Use this connected method when you are ready to map observed work, decisions, delays and handoffs before converting the process into controlled instructions."
+    }
+  },
+  {
+    "slug": "itil-4-tourism-operations",
+    "checklist": [
+      "Map value streams and apply service-management thinking to incidents, requests, changes, knowledge and supplier interfaces.",
+      "The purpose, service value, scope, owner, users, authority, and required outcome are explicit.",
+      "The method reflects observed work, current systems, representative data, guest needs, partners, risk, and disrupted conditions.",
+      "Definitions, roles, thresholds, evidence, privacy, accessibility, safety, exceptions, and escalation are controlled at the appropriate level."
+    ],
+    "next": {
+      "kind": "review",
+      "url": "/articles/tourism-operational-excellence-management-system/index.html",
+      "label": "Review From SOP Library to Tourism Operational Excellence Management System",
+      "why": "Use this connected method when you are ready to build a management system that links value, execution, evidence and improvement to sustained service performance."
+    }
+  },
+  {
+    "slug": "lean-thinking-tourism-operations",
+    "checklist": [
+      "Identify guest value, waste, unevenness and overburden, then improve flow while preserving service resilience.",
+      "The purpose, service value, scope, owner, users, authority, and required outcome are explicit.",
+      "The method reflects observed work, current systems, representative data, guest needs, partners, risk, and disrupted conditions.",
+      "Definitions, roles, thresholds, evidence, privacy, accessibility, safety, exceptions, and escalation are controlled at the appropriate level."
+    ],
+    "next": {
+      "kind": "review",
+      "url": "/articles/six-sigma-tourism-complaints-data/index.html",
+      "label": "Review Six Sigma for Tourism: From Complaints to Data",
+      "why": "Use this connected method when you are ready to use DMAIC to translate complaint evidence into measures, verified causes, controlled improvements and ongoing monitoring."
+    }
+  },
+  {
+    "slug": "map-process-before-writing-sop",
+    "checklist": [
+      "Map observed work, decisions, delays and handoffs before converting the process into controlled instructions.",
+      "Verify the supplied facts and record any missing evidence before acting.",
+      "Name the accountable owner and confirm the decision or approval limits.",
+      "Test the result in the operating context and retain the verification record."
+    ],
+    "next": {
+      "kind": "apply",
+      "url": "#practical-tool-as-is-to-be-tourism-process-mapping-worksheet",
+      "label": "Apply the As-Is/To-Be Tourism Process Mapping Worksheet",
+      "why": "Complete the worksheet with verified operating information and review it with the accountable owner."
+    }
+  },
+  {
+    "slug": "operational-checklist-employees-use",
+    "checklist": [
+      "Choose critical pause points, write observable checks and define what staff should do when a check fails.",
+      "The purpose, boundary, users, owner, and approval authority are explicit.",
+      "The content matches the approved process map, risk assessment, customer journey, and current systems.",
+      "Roles, deputies, thresholds, evidence, privacy, accessibility, supplier interfaces, and exceptions have been tested."
+    ],
+    "next": {
+      "kind": "review",
+      "url": "/articles/professional-operational-form/index.html",
+      "label": "Review How to Design a Professional Operational Form",
+      "why": "Use this connected method when you are ready to design fields that collect usable facts, guide decisions and become reliable records after completion."
+    }
+  },
+  {
+    "slug": "pmp-thinking-sop-implementation",
+    "checklist": [
+      "Plan the SOP launch as a change project with sponsorship, scope, resources, risk, pilot and go-live controls.",
+      "The purpose, service value, scope, owner, users, authority, and required outcome are explicit.",
+      "The method reflects observed work, current systems, representative data, guest needs, partners, risk, and disrupted conditions.",
+      "Definitions, roles, thresholds, evidence, privacy, accessibility, safety, exceptions, and escalation are controlled at the appropriate level."
+    ],
+    "next": {
+      "kind": "review",
+      "url": "/articles/tourism-sop-training-competency-adoption/index.html",
+      "label": "Review Training, Competency, and SOP Adoption in Tourism",
+      "why": "Use this connected method when you are ready to define competence, practise the task, authorise employees and verify adoption through operating evidence."
+    }
+  },
+  {
+    "slug": "policy-vs-sop-work-instruction-checklist-form-template",
+    "checklist": [
+      "Give each document type a clear purpose and connect it to the work and evidence it supports.",
+      "Verify the supplied facts and record any missing evidence before acting.",
+      "Name the accountable owner and confirm the decision or approval limits.",
+      "Test the result in the operating context and retain the verification record."
+    ],
+    "next": {
+      "kind": "review",
+      "url": "/articles/tourism-document-hierarchy/index.html",
+      "label": "Review Building a Document Hierarchy for a Tourism Company",
+      "why": "Use this connected method when you are ready to design a hierarchy that connects policy, SOPs, instructions, checklists and records around real operating tasks."
+    }
+  },
+  {
+    "slug": "procedures-processes-process-maps",
+    "checklist": [
+      "Distinguish process, procedure and process map and select the right tool for boundaries, flow and execution.",
+      "Verify the supplied facts and record any missing evidence before acting.",
+      "Name the accountable owner and confirm the decision or approval limits.",
+      "Test the result in the operating context and retain the verification record."
+    ],
+    "next": {
+      "kind": "review",
+      "url": "/articles/map-process-before-writing-sop/index.html",
+      "label": "Review Never Write an SOP Before Mapping the Process",
+      "why": "Use this connected method when you are ready to map observed work, decisions, delays and handoffs before converting the process into controlled instructions."
+    }
+  },
+  {
+    "slug": "professional-operational-form",
+    "checklist": [
+      "Design fields that collect usable facts, guide decisions and become reliable records after completion.",
+      "The purpose, boundary, users, owner, and approval authority are explicit.",
+      "The content matches the approved process map, risk assessment, customer journey, and current systems.",
+      "Roles, deputies, thresholds, evidence, privacy, accessibility, supplier interfaces, and exceptions have been tested."
+    ],
+    "next": {
+      "kind": "review",
+      "url": "/articles/sop-evidence-documentation-legal-defensibility/index.html",
+      "label": "Review SOP Writing Part 5: Evidence, Documentation and Legal Defensibility",
+      "why": "Use this connected method when you are ready to define timely factual records for observations, actions, authority and closure while keeping interpretation and review responsibilities clear."
+    }
+  },
+  {
+    "slug": "responsible-ai-governance-hotels",
+    "checklist": [
+      "Use the prompts to define approved use, access, privacy, review, version control and accountable human oversight.",
+      "Verify the supplied facts and record any missing evidence before acting.",
+      "Name the accountable owner and confirm the decision or approval limits.",
+      "Test the result in the operating context and retain the verification record."
+    ],
+    "next": {
+      "kind": "apply",
+      "url": "#prompt-1",
+      "label": "Apply AI Use-Case Risk Assessment",
+      "why": "Supply the required inputs, copy the complete prompt and verify the output before using it in the operation."
+    }
+  },
+  {
+    "slug": "responsible-ai-tourism-guide",
+    "checklist": [
+      "Set approved use cases, minimum-data rules, verification steps and named decision owners for tourism AI use.",
+      "Verify the supplied facts and record any missing evidence before acting.",
+      "Name the accountable owner and confirm the decision or approval limits.",
+      "Test the result in the operating context and retain the verification record."
+    ],
+    "next": {
+      "kind": "apply",
+      "url": "#prompt-1-ai-use-case-risk-assessment",
+      "label": "Apply AI Use-Case Risk Assessment",
+      "why": "Supply the required inputs, copy the complete prompt and verify the output before using it in the operation."
+    }
+  },
+  {
+    "slug": "root-cause-analysis-tourism-managers",
+    "checklist": [
+      "Investigate the failure with evidence, test possible causes and connect verified findings to corrective action.",
+      "The purpose, service value, scope, owner, users, authority, and required outcome are explicit.",
+      "The method reflects observed work, current systems, representative data, guest needs, partners, risk, and disrupted conditions.",
+      "Definitions, roles, thresholds, evidence, privacy, accessibility, safety, exceptions, and escalation are controlled at the appropriate level."
+    ],
+    "next": {
+      "kind": "review",
+      "url": "/articles/capa-tourism-operations/index.html",
+      "label": "Review CAPA: Corrective and Preventive Action in Tourism",
+      "why": "Use this connected method when you are ready to build a CAPA workflow that separates containment, verified cause, corrective action and effectiveness checks."
+    }
+  },
+  {
+    "slug": "sipoc-tourism-operations",
+    "checklist": [
+      "Build a SIPOC that establishes scope, exposes missing inputs and clarifies the service output before mapping or SOP writing.",
+      "The purpose, boundary, users, owner, and approval authority are explicit.",
+      "The content matches the approved process map, risk assessment, customer journey, and current systems.",
+      "Roles, deputies, thresholds, evidence, privacy, accessibility, supplier interfaces, and exceptions have been tested."
+    ],
+    "next": {
+      "kind": "review",
+      "url": "/articles/map-process-before-writing-sop/index.html",
+      "label": "Review Never Write an SOP Before Mapping the Process",
+      "why": "Use this connected method when you are ready to map observed work, decisions, delays and handoffs before converting the process into controlled instructions."
+    }
+  },
+  {
+    "slug": "six-sigma-tourism-complaints-data",
+    "checklist": [
+      "Use DMAIC to translate complaint evidence into measures, verified causes, controlled improvements and ongoing monitoring.",
+      "The purpose, service value, scope, owner, users, authority, and required outcome are explicit.",
+      "The method reflects observed work, current systems, representative data, guest needs, partners, risk, and disrupted conditions.",
+      "Definitions, roles, thresholds, evidence, privacy, accessibility, safety, exceptions, and escalation are controlled at the appropriate level."
+    ],
+    "next": {
+      "kind": "review",
+      "url": "/articles/capa-tourism-operations/index.html",
+      "label": "Review CAPA: Corrective and Preventive Action in Tourism",
+      "why": "Use this connected method when you are ready to build a CAPA workflow that separates containment, verified cause, corrective action and effectiveness checks."
+    }
+  },
+  {
+    "slug": "sop-evidence-documentation-legal-defensibility",
+    "checklist": [
+      "Define timely factual records for observations, actions, authority and closure while keeping interpretation and review responsibilities clear.",
+      "The purpose, boundary, users, owner, and approval authority are explicit.",
+      "The content matches the approved process map, risk assessment, customer journey, and current systems.",
+      "Roles, deputies, thresholds, evidence, privacy, accessibility, supplier interfaces, and exceptions have been tested."
+    ],
+    "next": {
+      "kind": "apply",
+      "url": "#practical-tool-evidence-architecture-and-factual-operational-log-templat",
+      "label": "Apply the Evidence architecture and factual operational log template",
+      "why": "Complete the worksheet with verified operating information and review it with the accountable owner."
+    }
+  },
+  {
+    "slug": "sop-exception-escalation-management",
+    "checklist": [
+      "Write exception triggers, stabilisation steps, authority limits, escalation timing and recovery records into the procedure.",
+      "Verify the supplied facts and record any missing evidence before acting.",
+      "Name the accountable owner and confirm the decision or approval limits.",
+      "Test the result in the operating context and retain the verification record."
+    ],
+    "next": {
+      "kind": "review",
+      "url": "/articles/sop-evidence-documentation-legal-defensibility/index.html",
+      "label": "Review SOP Writing Part 5: Evidence, Documentation and Legal Defensibility",
+      "why": "Use this connected method when you are ready to define timely factual records for observations, actions, authority and closure while keeping interpretation and review responsibilities clear."
+    }
+  },
+  {
+    "slug": "sop-roles-authority-raci",
+    "checklist": [
+      "Define RACI roles, decision rights and escalation boundaries for the procedure and its handovers.",
+      "The purpose, boundary, users, owner, and approval authority are explicit.",
+      "The content matches the approved process map, risk assessment, customer journey, and current systems.",
+      "Roles, deputies, thresholds, evidence, privacy, accessibility, supplier interfaces, and exceptions have been tested."
+    ],
+    "next": {
+      "kind": "review",
+      "url": "/articles/sop-exception-escalation-management/index.html",
+      "label": "Review SOP Writing Part 4: Exception and Escalation Management",
+      "why": "Use this connected method when you are ready to write exception triggers, stabilisation steps, authority limits, escalation timing and recovery records into the procedure."
+    }
+  },
+  {
+    "slug": "standard-communication-templates",
+    "checklist": [
+      "Design message templates with verified inputs, clear limits and escalation guidance for routine and disrupted service.",
+      "The purpose, boundary, users, owner, and approval authority are explicit.",
+      "The content matches the approved process map, risk assessment, customer journey, and current systems.",
+      "Roles, deputies, thresholds, evidence, privacy, accessibility, supplier interfaces, and exceptions have been tested."
+    ],
+    "next": {
+      "kind": "apply",
+      "url": "#practical-tool-message-architecture-approval-matrix-and-eight-template-l",
+      "label": "Apply the Message architecture, approval matrix, and eight-template library design",
+      "why": "Complete the worksheet with verified operating information and review it with the accountable owner."
+    }
+  },
+  {
+    "slug": "standard-test-procedures-tourism-operations",
+    "checklist": [
+      "Write controlled tests with preconditions, steps, expected results, evidence, defect handling and release decisions.",
+      "The purpose, service value, scope, owner, users, authority, and required outcome are explicit.",
+      "The method reflects observed work, current systems, representative data, guest needs, partners, risk, and disrupted conditions.",
+      "Definitions, roles, thresholds, evidence, privacy, accessibility, safety, exceptions, and escalation are controlled at the appropriate level."
+    ],
+    "next": {
+      "kind": "apply",
+      "url": "#practical-tool-tourism-stp-template-with-traceability-defect-and-approva",
+      "label": "Apply the Tourism STP template with traceability, defect, and approval fields",
+      "why": "Complete the worksheet with verified operating information and review it with the accountable owner."
+    }
+  },
+  {
+    "slug": "tourism-ai-operations-playbook",
+    "checklist": [
+      "Choose the relevant toolkit and structure tourism AI tasks around operating context, evidence and human review.",
+      "The source of every dynamic fact is known and current.",
+      "Missing inputs are visible and assigned to an owner.",
+      "Confirmed facts are separated from assumptions and recommendations."
+    ],
+    "next": {
+      "kind": "review",
+      "url": "/articles/tourism-prompting-framework/index.html",
+      "label": "Review The Tourism Prompting Framework: How to Write Professional AI Prompts for Travel and Tourism",
+      "why": "Use this connected method when you are ready to specify the task, operating context, verified inputs, output requirements and human checks in a professional prompt."
+    }
+  },
+  {
+    "slug": "tourism-company-operating-system",
+    "checklist": [
+      "Connect governance, process ownership, execution, evidence, measures and improvement in a company operating system.",
+      "Verify the supplied facts and record any missing evidence before acting.",
+      "Name the accountable owner and confirm the decision or approval limits.",
+      "Test the result in the operating context and retain the verification record."
+    ],
+    "next": {
+      "kind": "review",
+      "url": "/articles/tourism-document-hierarchy/index.html",
+      "label": "Review Building a Document Hierarchy for a Tourism Company",
+      "why": "Use this connected method when you are ready to design a hierarchy that connects policy, SOPs, instructions, checklists and records around real operating tasks."
+    }
+  },
+  {
+    "slug": "tourism-document-hierarchy",
+    "checklist": [
+      "Design a hierarchy that connects policy, SOPs, instructions, checklists and records around real operating tasks.",
+      "Verify the supplied facts and record any missing evidence before acting.",
+      "Name the accountable owner and confirm the decision or approval limits.",
+      "Test the result in the operating context and retain the verification record."
+    ],
+    "next": {
+      "kind": "review",
+      "url": "/articles/policy-vs-sop-work-instruction-checklist-form-template/index.html",
+      "label": "Review Policy vs SOP vs Work Instruction vs Checklist vs Form vs Template",
+      "why": "Use this connected method when you are ready to give each document type a clear purpose and connect it to the work and evidence it supports."
+    }
+  },
+  {
+    "slug": "tourism-itinerary-ai-prompts",
+    "checklist": [
+      "Use the prompts to structure itinerary options and surface verification tasks before sale or operation.",
+      "Verify the supplied facts and record any missing evidence before acting.",
+      "Name the accountable owner and confirm the decision or approval limits.",
+      "Test the result in the operating context and retain the verification record."
+    ],
+    "next": {
+      "kind": "apply",
+      "url": "#prompt-1-one-day-city-itinerary",
+      "label": "Apply One-Day City Itinerary",
+      "why": "Supply the required inputs, copy the complete prompt and verify the output before using it in the operation."
+    }
+  },
+  {
+    "slug": "tourism-operational-excellence-management-system",
+    "checklist": [
+      "Build a management system that links value, execution, evidence and improvement to sustained service performance.",
+      "The purpose, service value, scope, owner, users, authority, and required outcome are explicit.",
+      "The method reflects observed work, current systems, representative data, guest needs, partners, risk, and disrupted conditions.",
+      "Definitions, roles, thresholds, evidence, privacy, accessibility, safety, exceptions, and escalation are controlled at the appropriate level."
+    ],
+    "next": {
+      "kind": "review",
+      "url": "/articles/tourism-operations-kpis-control-dashboards/index.html",
+      "label": "Review Tourism Operations KPIs and Control Dashboards",
+      "why": "Use this connected method when you are ready to design balanced measures with definitions, sources, owners and review rules that lead to operating decisions."
+    }
+  },
+  {
+    "slug": "tourism-operational-risk-assessment-before-sop",
+    "checklist": [
+      "Assess consequences, existing controls, uncertainty and authority requirements before translating the work into a procedure.",
+      "Verify the supplied facts and record any missing evidence before acting.",
+      "Name the accountable owner and confirm the decision or approval limits.",
+      "Test the result in the operating context and retain the verification record."
+    ],
+    "next": {
+      "kind": "review",
+      "url": "/articles/customer-journey-mapping-sop-design/index.html",
+      "label": "Review How to Apply Customer Journey Mapping to SOP Design",
+      "why": "Use this connected method when you are ready to map the guest experience and turn pain points and moments of truth into operational requirements for the SOP."
+    }
+  },
+  {
+    "slug": "tourism-operations-kpis-control-dashboards",
+    "checklist": [
+      "Design balanced measures with definitions, sources, owners and review rules that lead to operating decisions.",
+      "The purpose, service value, scope, owner, users, authority, and required outcome are explicit.",
+      "The method reflects observed work, current systems, representative data, guest needs, partners, risk, and disrupted conditions.",
+      "Definitions, roles, thresholds, evidence, privacy, accessibility, safety, exceptions, and escalation are controlled at the appropriate level."
+    ],
+    "next": {
+      "kind": "review",
+      "url": "/articles/capa-tourism-operations/index.html",
+      "label": "Review CAPA: Corrective and Preventive Action in Tourism",
+      "why": "Use this connected method when you are ready to build a CAPA workflow that separates containment, verified cause, corrective action and effectiveness checks."
+    }
+  },
+  {
+    "slug": "tourism-operations-manual",
+    "checklist": [
+      "Organise a navigable manual connecting governance, departmental procedures, safety, escalation and crisis response.",
+      "The purpose, service value, scope, owner, users, authority, and required outcome are explicit.",
+      "The method reflects observed work, current systems, representative data, guest needs, partners, risk, and disrupted conditions.",
+      "Definitions, roles, thresholds, evidence, privacy, accessibility, safety, exceptions, and escalation are controlled at the appropriate level."
+    ],
+    "next": {
+      "kind": "review",
+      "url": "/articles/document-control-version-management-tourism/index.html",
+      "label": "Review Document Control & Version Management",
+      "why": "Use this connected method when you are ready to define approval, versioning, access, revision and withdrawal controls so employees can identify the current approved document."
+    }
+  },
+  {
+    "slug": "tourism-product-development-ai-prompts",
+    "checklist": [
+      "Use the prompts to organise research, compare options and expose feasibility questions before committing to a product.",
+      "Verify the supplied facts and record any missing evidence before acting.",
+      "Name the accountable owner and confirm the decision or approval limits.",
+      "Test the result in the operating context and retain the verification record."
+    ],
+    "next": {
+      "kind": "apply",
+      "url": "#prompt-1-new-tour-concept-development",
+      "label": "Apply New Tour Concept Development",
+      "why": "Supply the required inputs, copy the complete prompt and verify the output before using it in the operation."
+    }
+  },
+  {
+    "slug": "tourism-prompting-framework",
+    "checklist": [
+      "Specify the task, operating context, verified inputs, output requirements and human checks in a professional prompt.",
+      "Verify the supplied facts and record any missing evidence before acting.",
+      "Name the accountable owner and confirm the decision or approval limits.",
+      "Test the result in the operating context and retain the verification record."
+    ],
+    "next": {
+      "kind": "apply",
+      "url": "#prompt-1-general-tourism-prompt-builder",
+      "label": "Apply General Tourism Prompt Builder",
+      "why": "Supply the required inputs, copy the complete prompt and verify the output before using it in the operation."
+    }
+  },
+  {
+    "slug": "tourism-quality-sop-ai-prompts",
+    "checklist": [
+      "Use the prompts to structure process mapping, SOP drafts and quality analysis while keeping evidence and validation with the process owner.",
+      "Verify the supplied facts and record any missing evidence before acting.",
+      "Name the accountable owner and confirm the decision or approval limits.",
+      "Test the result in the operating context and retain the verification record."
+    ],
+    "next": {
+      "kind": "apply",
+      "url": "#prompt-1-sop-creation",
+      "label": "Apply SOP Creation",
+      "why": "Supply the required inputs, copy the complete prompt and verify the output before using it in the operation."
+    }
+  },
+  {
+    "slug": "tourism-sales-quotation-ai-prompts",
+    "checklist": [
+      "Use approved commercial inputs to structure quotation drafts and client communication for authorised review.",
+      "Verify the supplied facts and record any missing evidence before acting.",
+      "Name the accountable owner and confirm the decision or approval limits.",
+      "Test the result in the operating context and retain the verification record."
+    ],
+    "next": {
+      "kind": "apply",
+      "url": "#prompt-1-tour-quotation-structure",
+      "label": "Apply Tour Quotation Structure",
+      "why": "Supply the required inputs, copy the complete prompt and verify the output before using it in the operation."
+    }
+  },
+  {
+    "slug": "tourism-sop-training-competency-adoption",
+    "checklist": [
+      "Define competence, practise the task, authorise employees and verify adoption through operating evidence.",
+      "The purpose, boundary, users, owner, and approval authority are explicit.",
+      "The content matches the approved process map, risk assessment, customer journey, and current systems.",
+      "Roles, deputies, thresholds, evidence, privacy, accessibility, supplier interfaces, and exceptions have been tested."
+    ],
+    "next": {
+      "kind": "review",
+      "url": "/articles/how-to-audit-an-sop/index.html",
+      "label": "Review How to Audit an SOP",
+      "why": "Use this connected method when you are ready to assess currency, understanding, execution, records and effectiveness using an evidence-led audit approach."
+    }
+  },
+  {
+    "slug": "tourism-supplier-partner-governance-sops",
+    "checklist": [
+      "Translate service promises into partner requirements, readiness checks, escalation routes and performance reviews.",
+      "The purpose, boundary, users, owner, and approval authority are explicit.",
+      "The content matches the approved process map, risk assessment, customer journey, and current systems.",
+      "Roles, deputies, thresholds, evidence, privacy, accessibility, supplier interfaces, and exceptions have been tested."
+    ],
+    "next": {
+      "kind": "review",
+      "url": "/articles/standard-communication-templates/index.html",
+      "label": "Review How to Create Standard Communication Templates",
+      "why": "Use this connected method when you are ready to design message templates with verified inputs, clear limits and escalation guidance for routine and disrupted service."
+    }
+  },
+  {
+    "slug": "tourism-transport-dispatch-ai-prompts",
+    "checklist": [
+      "Use the prompts to test supplied transport constraints, identify missing inputs and prepare plans for dispatcher verification.",
+      "Verify the supplied facts and record any missing evidence before acting.",
+      "Name the accountable owner and confirm the decision or approval limits.",
+      "Test the result in the operating context and retain the verification record."
+    ],
+    "next": {
+      "kind": "apply",
+      "url": "#prompt-1-hotel-pickup-sequencing",
+      "label": "Apply Hotel Pickup Sequencing",
+      "why": "Supply the required inputs, copy the complete prompt and verify the output before using it in the operation."
+    }
+  },
+  {
+    "slug": "where-stp-fits-tourism-operations",
+    "checklist": [
+      "Place standard test procedures alongside SOPs and define what evidence is needed to accept operational readiness.",
+      "The purpose, service value, scope, owner, users, authority, and required outcome are explicit.",
+      "The method reflects observed work, current systems, representative data, guest needs, partners, risk, and disrupted conditions.",
+      "Definitions, roles, thresholds, evidence, privacy, accessibility, safety, exceptions, and escalation are controlled at the appropriate level."
+    ],
+    "next": {
+      "kind": "review",
+      "url": "/articles/how-to-audit-an-sop/index.html",
+      "label": "Review How to Audit an SOP",
+      "why": "Use this connected method when you are ready to assess currency, understanding, execution, records and effectiveness using an evidence-led audit approach."
+    }
+  },
+  {
+    "slug": "workforce-rostering-productivity-ai-toolkit",
+    "checklist": [
+      "Use the prompts to compare staffing with demand and capability and review productivity alongside service and safety constraints.",
+      "Verify the supplied facts and record any missing evidence before acting.",
+      "Name the accountable owner and confirm the decision or approval limits.",
+      "Test the result in the operating context and retain the verification record."
+    ],
+    "next": {
+      "kind": "apply",
+      "url": "#prompt-1",
+      "label": "Apply Roster Demand Planner",
+      "why": "Supply the required inputs, copy the complete prompt and verify the output before using it in the operation."
+    }
+  }
+]
