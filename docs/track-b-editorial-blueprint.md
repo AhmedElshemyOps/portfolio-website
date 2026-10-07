@@ -66,6 +66,26 @@ Track B is the management-system layer of Ahmed Mahmoud's hotel and serviced-apa
 | B25 | The Hotel Apartment Operations Control Tower | Cross-functional signal model, exception queue, daily brief and decision rights | C25 Control Tower; C22 KPI Dashboard; C24 General Manager |
 | B26 | Operational Excellence Maturity Model | Five-level maturity assessment, evidence, roadmap and governance | C24 General Manager; C25 Control Tower; C26 Responsible AI Governance |
 
+## Evidence, scenarios and numbers — mandatory rule
+Every Track B article must teach through operational reality, not abstract theory.
+
+- Use realistic hotel/serviced-apartment scenarios throughout the explanation: arrivals, departures, occupancy, apartment readiness, work orders, housekeeping inspections, repeat defects, guest complaints, downtime, staffing, inventory, utilities, supplier performance and financial impact.
+- Quantify examples wherever numbers improve understanding: units, occupancy %, minutes/hours, SLA, defect counts, recurrence %, labor hours, AED/EUR cost, stock quantities, PAR levels, downtime, conversion or quality scores.
+- Never present an invented number as a verified industry fact.
+- **Verified external fact/benchmark:** cite a credible source and preserve the correct context, geography, date and definition.
+- **Property/user data:** use only when legitimately available and appropriate; do not expose confidential or personal information.
+- **Worked example:** when real property data is unavailable, use a realistic fictional property/scenario and label it clearly as “Worked example”, “Illustrative scenario” or “Assumption”.
+- Show calculations when they teach the management method. Example: 8 repeat defects × AED 180 average labor/material/recovery cost = AED 1,440 monthly visible cost, before indirect guest/reputation cost.
+- Do not manufacture guest cases, financial results, benchmark percentages, ROI claims or performance improvements.
+- Separate **fact**, **assumption**, **calculation**, **management interpretation** and **recommended action** whenever confusion is possible.
+- Prefer examples that carry across several articles so readers see one operating system rather than disconnected stories.
+- Use UAE/GCC and Netherlands/European operational context when genuinely relevant, but do not imply local legal/regulatory requirements without verified sources.
+
+## Tone and website consistency — mandatory rule
+Track B must sound like the existing Ahmed Quality Ops knowledge system: professional, practical, evidence-led, operational and human. Avoid generic AI prose, exaggerated claims, motivational filler and unnecessary jargon. Explain the management logic first, then the tool or framework. Keep headings direct, examples operational, controls explicit and conclusions actionable.
+
+Maintain the established website reading experience: article masthead, series identity, reading utilities, progress, article brief, TOC, glossary where useful, direct-answer block, section kickers, risk/control callouts, related cards, implementation checklist, Track C bridge and previous/next navigation.
+
 ## Standard Track B article anatomy
 1. SEO title + description + canonical + OG + Article schema.
 2. Track/module/article number and reading path.
