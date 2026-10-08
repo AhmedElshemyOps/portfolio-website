@@ -2,6 +2,7 @@
 from pathlib import Path
 from html import escape
 import json,re
+from urllib.parse import quote
 def display_topic(s): return s.replace('Hotel & Serviced Apartment AI','AI for Hotel Apartments')
 def refresh(ROOT, registry):
  old=json.loads((ROOT/'content/discovery-index.json').read_text())
@@ -17,6 +18,9 @@ def refresh(ROOT, registry):
  write_json('content-index.json',content)
  # Generate Knowledge Hub cards and filters from the same records used by search.
  p=ROOT/'knowledge/index.html';s=p.read_text()
+ topics=sorted({x['pillar'] for x in registry})
+ topic_cards=''.join('<a class="topic-card" href="/knowledge/index.html?pillar='+quote(topic)+'#all-knowledge-title"><strong>'+escape(display_topic(topic))+'</strong><span>Explore this topic →</span></a>' for topic in topics)
+ s=re.sub(r'(<nav class="topic-grid" aria-label="Article topics">).*?(</nav>)',lambda m:m[1]+topic_cards+m[2],s,flags=re.S)
  # Release batches are now represented in the unified catalogue, not duplicated grids.
  s=re.sub(r'<section class="knowledge-browser"><header><span class="eyebrow">Track B · New release</span>.*?</section>', '', s, flags=re.S)
  for field in ['pillar','series','type']:

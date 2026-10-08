@@ -200,7 +200,8 @@
   });
 
   var filters = Array.from(document.querySelectorAll("[data-knowledge-filter]"));
-  var knowledgeQuery = document.querySelector("[data-knowledge-query]");
+  var knowledgeQueries = Array.from(document.querySelectorAll("[data-knowledge-query]"));
+  var knowledgeQuery = knowledgeQueries[0];
   var knowledgeCards = Array.from(document.querySelectorAll("[data-knowledge-card]"));
   function filterKnowledge() {
     if (!knowledgeCards.length) return;
@@ -223,9 +224,9 @@
     var value = initialFilters.get(filter.dataset.knowledgeFilter) || (filter.dataset.knowledgeFilter === "pillar" ? initialFilters.get("topic") : "");
     if (value && Array.from(filter.options).some(function (option) { return option.value === value; })) filter.value = value;
   });
-  if (knowledgeQuery) knowledgeQuery.value = initialFilters.get("q") || "";
+  knowledgeQueries.forEach(function (field) { field.value = initialFilters.get("q") || ""; });
   filterKnowledge();
   filters.forEach(function (filter) { filter.addEventListener("change", filterKnowledge); });
-  knowledgeQuery?.addEventListener("input", filterKnowledge);
-  document.querySelector("[data-knowledge-reset]")?.addEventListener("click", function () { filters.forEach(function (filter) { filter.value = ""; }); if (knowledgeQuery) knowledgeQuery.value = ""; filterKnowledge(); });
+  knowledgeQueries.forEach(function (field) { field.addEventListener("input", function () { knowledgeQueries.forEach(function (other) { other.value = field.value; }); filterKnowledge(); }); });
+  document.querySelector("[data-knowledge-reset]")?.addEventListener("click", function () { filters.forEach(function (filter) { filter.value = ""; }); knowledgeQueries.forEach(function (field) { field.value = ""; }); filterKnowledge(); });
 }());

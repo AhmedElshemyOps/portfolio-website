@@ -219,3 +219,10 @@
  .editorial-masthead[data-navigation-ready] .brand{font-size:21px;gap:12px}
  .editorial-masthead[data-navigation-ready] .brand img{width:48px;height:48px}
 }
+
+/* Short landscape screens need the full viewport for forms and reading. */
+@media(max-height:500px) and (max-width:1000px){.masthead[data-navigation-ready],.editorial-masthead[data-navigation-ready]{position:relative!important}}
+.platform-footer>*{min-width:0;max-width:100%;box-sizing:border-box}
+.platform-footer nav{grid-template-columns:minmax(0,1fr)}
+.platform-footer .brand>*{min-width:0;overflow-wrap:anywhere}
+@media(max-width:760px){.platform-footer{grid-template-columns:minmax(0,1fr)}}

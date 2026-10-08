@@ -12,7 +12,7 @@ from apply_field_manual import parse
 
 ROOT = Path(__file__).resolve().parents[1]
 EXCLUDED = {'.git', 'node_modules', 'docs', 'templates'}
-SHARED_CSS = '<link rel="stylesheet" href="/assets/css/site-chrome.css?v=20261008-navigation"/>'
+SHARED_CSS = '<link rel="stylesheet" href="/assets/css/site-chrome.css?v=20261008-usability"/>'
 NAV_SCRIPT = '<script src="/assets/js/site-navigation.js?v=20261008-navigation"></script>'
 
 
