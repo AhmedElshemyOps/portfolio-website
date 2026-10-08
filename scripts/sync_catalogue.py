@@ -87,7 +87,7 @@ for x in registry:
  typ='Series index' if x['type']=='Series index' else x['contentType']
  attrs=' '.join('data-'+k+'="'+escape(str(v),quote=True)+'"' for k,v in dict(pillar=x['pillar'],series=x['series'],type=typ,search=' '.join([x['title'],x['description'],*x['tags']]).lower()).items())
  label=x['series']+' · '+('Series index' if typ=='Series index' else str(x['readingTime'])+' min read')
- cards.append('<article class="knowledge-card" data-knowledge-card '+attrs+'><a href="'+escape(x['url'])+'"><span>'+escape(x['pillar'])+'</span><h2>'+escape(x['title'])+'</h2><p>'+escape(x['description'])+'</p><small>'+escape(label)+'</small></a></article>')
+ cards.append('<article class="knowledge-card" data-knowledge-card '+attrs+'><a href="'+escape(x['url'])+'"><span>'+escape(display_topic(x['pillar']))+'</span><h2>'+escape(x['title'])+'</h2><p>'+escape(x['description'])+'</p><small>'+escape(label)+'</small></a></article>')
 s=re.sub(r'<div class="knowledge-grid">.*?</div>(?=<div class="knowledge-empty")','<div class="knowledge-grid">'+''.join(cards)+'</div>',s,flags=re.S)
 s=re.sub(r'"numberOfItems":\s*\d+','"numberOfItems":'+str(len(registry)),s)
 p.write_text(s)
