@@ -1,5 +1,5 @@
 /* Offline reading cache for previously opened public pages and assets. */
-const VERSION = "ahmed-portfolio-v12-editorial-polish";
+const VERSION = "ahmed-portfolio-v13-editorial-polish";
 const STATIC_CACHE = `${VERSION}-static`;
 const READING_CACHE = `${VERSION}-reading`;
 const APP_SHELL = ["/", "/knowledge/index.html", "/saved/index.html", "/offline/index.html", "/assets/css/design-tokens.css", "/assets/css/launch-pages.css", "/assets/js/site-config.js", "/assets/js/saved-reading.js"];
@@ -15,7 +15,7 @@ self.addEventListener("fetch", (event) => {
     const cache = await caches.open(isPage ? READING_CACHE : STATIC_CACHE);
     const cached = await cache.match(request);
     const network = fetch(request).then((response) => { if (response.ok) cache.put(request, response.clone()); return response; });
-    if (isPage) {
+    if (isPage || /\.(pdf|docx)$/.test(url.pathname)) {
       try { return await network; } catch (_error) { return cached || (await caches.match("/offline/index.html")); }
     }
     if (cached) { event.waitUntil(network.catch(() => undefined)); return cached; }

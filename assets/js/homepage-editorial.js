@@ -36,7 +36,7 @@
       const arrow = document.createElement('span'); arrow.className = 'direction'; arrow.textContent = '↗'; arrow.setAttribute('aria-hidden', 'true');
       link.append(content, arrow); return link;
     }));
-    controls.querySelector('[data-article-status]').textContent = offset === 0 ? 'Selected reading across different topics' : 'More reading across the knowledge library';
+    controls.querySelector('[data-article-status]').textContent = 'Reading selection ' + (offset / 4 + 1) + '. Four articles shown.';
   }
   controls.hidden = false;
   controls.querySelector('[data-article-prev]').addEventListener('click', () => show(-1));

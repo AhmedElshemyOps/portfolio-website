@@ -68,4 +68,4 @@ for this release so returning visitors can receive the refreshed files.
 
 The homepage article browser reads its inline JSON list, showing four original article URLs per click. Keep its curated first group and include every registry Article exactly once. Display labels may change; the legacy hotel-topic filter value and existing URLs stay fixed. `discovery.js` recognises both labels.
 
-Navigations use network-first service-worker caching with offline fallback; assets use stale-while-revalidate. Increment the cache version when releasing shared assets.
+Navigations and CV documents use network-first service-worker caching with offline fallback; assets use stale-while-revalidate. Increment the cache version when releasing shared assets.
