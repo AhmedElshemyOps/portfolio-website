@@ -220,7 +220,7 @@
   // Deep links from topic chips and series cards initialize the actual filters.
   var initialFilters = new URLSearchParams(location.search);
   filters.forEach(function (filter) {
-    var value = initialFilters.get(filter.dataset.knowledgeFilter);
+    var value = initialFilters.get(filter.dataset.knowledgeFilter) || (filter.dataset.knowledgeFilter === "pillar" ? initialFilters.get("topic") : "");
     if (value && Array.from(filter.options).some(function (option) { return option.value === value; })) filter.value = value;
   });
   if (knowledgeQuery) knowledgeQuery.value = initialFilters.get("q") || "";

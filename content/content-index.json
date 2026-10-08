@@ -1,15 +1,16 @@
 {
-  "name": "Ahmed Mahmoud — Tourism Operations × Product × AI",
+  "name": "Ahmed Mahmoud — Travel and Tourism Operations",
   "canonical": "https://ahmedqualityops.com",
-  "updated": "2026-08-28",
+  "updated": "2026-10-08",
   "author": {
     "name": "Ahmed Mahmoud",
     "profile": "https://ahmedqualityops.com/profile/index.html",
-    "location": "Abu Dhabi, United Arab Emirates",
+    "location": "Netherlands",
     "roles": [
-      "Operations Manager",
-      "Product Manager",
-      "AI Implementation"
+      "Travel and Tourism Operations",
+      "DMC and MICE Operations",
+      "Reservations and B2B Operations",
+      "Operational Improvement"
     ]
   },
   "articles": [
@@ -505,7 +506,7 @@
       "title": "Hotel General Manager AI Toolkit",
       "slug": "hotel-general-manager-ai-toolkit",
       "category": "Hotel & Serviced Apartment AI Operations",
-      "summary": "",
+      "summary": "Ten governed AI prompts for hotel general managers to prioritise departmental reports, operating risks, service issues and management decisions.",
       "canonical": "https://ahmedqualityops.com/articles/hotel-general-manager-ai-toolkit/index.html",
       "readingMinutes": 15
     },
@@ -1033,7 +1034,7 @@
       "title": "Workforce, Rostering & Productivity AI Toolkit",
       "slug": "workforce-rostering-productivity-ai-toolkit",
       "category": "Hotel & Serviced Apartment AI Operations",
-      "summary": "",
+      "summary": "Ten governed AI prompts for hotel workforce planning, rostering, workload, skills, productivity and fatigue-risk review.",
       "canonical": "https://ahmedqualityops.com/articles/workforce-rostering-productivity-ai-toolkit/index.html",
       "readingMinutes": 15
     }

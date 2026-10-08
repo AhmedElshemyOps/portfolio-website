@@ -1,0 +1,146 @@
+{
+  "timestamp_utc": "2026-10-08T07:56:13Z",
+  "repository_commit": "47aaa1df95fca4d17461c8fcf92a33fa93afcdcb",
+  "mode": "live HTTP GET plus source comparison",
+  "discovered_urls": 321,
+  "status_counts": {
+    "200": 193,
+    "404": 128
+  },
+  "repository_html_pages": 182,
+  "sitemap_urls": 145,
+  "feed_xml_error": "not well-formed (invalid token): line 1, column 447",
+  "production_mismatches": [],
+  "duplicate_titles": {
+    "Ahmed Mahmoud | Travel and Tourism Operations, Projects & Articles": [
+      "https://ahmedqualityops.com/",
+      "https://ahmedqualityops.com/index.html"
+    ],
+    "Knowledge Hub | Ahmed Mahmoud": [
+      "https://ahmedqualityops.com/knowledge/index.html",
+      "https://ahmedqualityops.com/knowledge/index.html?pillar=AI%20for%20Tourism",
+      "https://ahmedqualityops.com/knowledge/index.html?pillar=Commercial%20Pricing%20%26%20DMC%20Sales",
+      "https://ahmedqualityops.com/knowledge/index.html?pillar=Destination%20Experience%20%26%20Guide%20Quality",
+      "https://ahmedqualityops.com/knowledge/index.html?pillar=Hotel%20%26%20Serviced%20Apartment%20AI",
+      "https://ahmedqualityops.com/knowledge/index.html?pillar=MICE%20%26%20Event%20Operations",
+      "https://ahmedqualityops.com/knowledge/index.html?pillar=Market%20Intelligence%20%26%20Product%20Discovery",
+      "https://ahmedqualityops.com/knowledge/index.html?pillar=Operational%20Excellence%20%26%20SOPs",
+      "https://ahmedqualityops.com/knowledge/index.html?pillar=Operations%20Systems%20%26%20Dispatch",
+      "https://ahmedqualityops.com/knowledge/index.html?topic=Market+Intelligence+%26+Product+Discovery",
+      "https://ahmedqualityops.com/knowledge/index.html?topic=Operational+Excellence+%26+SOPs"
+    ],
+    "": [
+      "https://ahmedqualityops.com/templates/footer.html",
+      "https://ahmedqualityops.com/templates/header.html",
+      "https://ahmedqualityops.com/templates/home-footer.html",
+      "https://ahmedqualityops.com/templates/home-header.html"
+    ]
+  },
+  "duplicate_descriptions": {
+    "13 years in travel, tourism and hospitality across Egypt and the UAE. Destination management, service quality, process improvement, projects and a professional knowledge library.": [
+      "https://ahmedqualityops.com/",
+      "https://ahmedqualityops.com/index.html"
+    ],
+    "": [
+      "https://ahmedqualityops.com/articles/hotel-general-manager-ai-toolkit/index.html",
+      "https://ahmedqualityops.com/articles/workforce-rostering-productivity-ai-toolkit/index.html",
+      "https://ahmedqualityops.com/templates/footer.html",
+      "https://ahmedqualityops.com/templates/header.html",
+      "https://ahmedqualityops.com/templates/home-footer.html",
+      "https://ahmedqualityops.com/templates/home-header.html"
+    ],
+    "Discover all original articles, five structured learning paths and practical tourism operations tools by Ahmed Mahmoud.": [
+      "https://ahmedqualityops.com/knowledge/index.html",
+      "https://ahmedqualityops.com/knowledge/index.html?pillar=AI%20for%20Tourism",
+      "https://ahmedqualityops.com/knowledge/index.html?pillar=Commercial%20Pricing%20%26%20DMC%20Sales",
+      "https://ahmedqualityops.com/knowledge/index.html?pillar=Destination%20Experience%20%26%20Guide%20Quality",
+      "https://ahmedqualityops.com/knowledge/index.html?pillar=Hotel%20%26%20Serviced%20Apartment%20AI",
+      "https://ahmedqualityops.com/knowledge/index.html?pillar=MICE%20%26%20Event%20Operations",
+      "https://ahmedqualityops.com/knowledge/index.html?pillar=Market%20Intelligence%20%26%20Product%20Discovery",
+      "https://ahmedqualityops.com/knowledge/index.html?pillar=Operational%20Excellence%20%26%20SOPs",
+      "https://ahmedqualityops.com/knowledge/index.html?pillar=Operations%20Systems%20%26%20Dispatch",
+      "https://ahmedqualityops.com/knowledge/index.html?topic=Market+Intelligence+%26+Product+Discovery",
+      "https://ahmedqualityops.com/knowledge/index.html?topic=Operational+Excellence+%26+SOPs"
+    ]
+  },
+  "missing_descriptions": [
+    "https://ahmedqualityops.com/articles/hotel-general-manager-ai-toolkit/index.html",
+    "https://ahmedqualityops.com/articles/workforce-rostering-productivity-ai-toolkit/index.html",
+    "https://ahmedqualityops.com/templates/footer.html",
+    "https://ahmedqualityops.com/templates/header.html",
+    "https://ahmedqualityops.com/templates/home-footer.html",
+    "https://ahmedqualityops.com/templates/home-header.html"
+  ],
+  "missing_canonical": [
+    "https://ahmedqualityops.com/404.html",
+    "https://ahmedqualityops.com/maintenance/index.html",
+    "https://ahmedqualityops.com/templates/footer.html",
+    "https://ahmedqualityops.com/templates/header.html",
+    "https://ahmedqualityops.com/templates/home-footer.html",
+    "https://ahmedqualityops.com/templates/home-header.html"
+  ],
+  "h1_issues": [
+    "https://ahmedqualityops.com/templates/footer.html",
+    "https://ahmedqualityops.com/templates/header.html",
+    "https://ahmedqualityops.com/templates/home-footer.html",
+    "https://ahmedqualityops.com/templates/home-header.html"
+  ],
+  "heading_jump_pages": [],
+  "missing_alt_pages": [],
+  "unsized_image_pages": [],
+  "orphan_candidates": [
+    "https://ahmedqualityops.com/404.html",
+    "https://ahmedqualityops.com/maintenance/index.html",
+    "https://ahmedqualityops.com/templates/footer.html",
+    "https://ahmedqualityops.com/templates/header.html",
+    "https://ahmedqualityops.com/templates/home-footer.html"
+  ],
+  "unsitemapped_source_pages": [
+    "https://ahmedqualityops.com/404.html",
+    "https://ahmedqualityops.com/articles/guest-ready-apartment-standard/index.html",
+    "https://ahmedqualityops.com/articles/hotel-apartment-asset-lifecycle-management/index.html",
+    "https://ahmedqualityops.com/articles/hotel-apartment-cost-of-poor-quality/index.html",
+    "https://ahmedqualityops.com/articles/hotel-apartment-end-to-end-guest-journey/index.html",
+    "https://ahmedqualityops.com/articles/hotel-apartment-kpi-architecture/index.html",
+    "https://ahmedqualityops.com/articles/hotel-apartment-operating-system/index.html",
+    "https://ahmedqualityops.com/articles/hotel-apartment-operations-control-tower/index.html",
+    "https://ahmedqualityops.com/articles/hotel-apartment-preventive-maintenance-strategy/index.html",
+    "https://ahmedqualityops.com/articles/hotel-apartment-sop-architecture/index.html",
+    "https://ahmedqualityops.com/articles/hotel-apartment-total-cost-of-ownership/index.html",
+    "https://ahmedqualityops.com/articles/hotel-complaint-root-cause-analysis/index.html",
+    "https://ahmedqualityops.com/articles/hotel-critical-spare-parts-management/index.html",
+    "https://ahmedqualityops.com/articles/hotel-downtime-out-of-service-management/index.html",
+    "https://ahmedqualityops.com/articles/hotel-economics-of-service-failure/index.html",
+    "https://ahmedqualityops.com/articles/hotel-first-time-right-operations/index.html",
+    "https://ahmedqualityops.com/articles/hotel-guest-experience-quality-management/index.html",
+    "https://ahmedqualityops.com/articles/hotel-housekeeping-quality-control/index.html",
+    "https://ahmedqualityops.com/articles/hotel-housekeeping-standardization/index.html",
+    "https://ahmedqualityops.com/articles/hotel-inventory-par-level-management/index.html",
+    "https://ahmedqualityops.com/articles/hotel-maintenance-work-order-management/index.html",
+    "https://ahmedqualityops.com/articles/hotel-operational-excellence-maturity-model/index.html",
+    "https://ahmedqualityops.com/articles/hotel-operations-planning-daily-control/index.html",
+    "https://ahmedqualityops.com/articles/hotel-preventive-maintenance-kpis/index.html",
+    "https://ahmedqualityops.com/articles/hotel-procurement-supplier-quality-control/index.html",
+    "https://ahmedqualityops.com/articles/hotel-property-reliability-score/index.html",
+    "https://ahmedqualityops.com/articles/hotel-workforce-productivity-efficiency/index.html",
+    "https://ahmedqualityops.com/index.html",
+    "https://ahmedqualityops.com/maintenance/index.html",
+    "https://ahmedqualityops.com/newsletter/confirmed/index.html",
+    "https://ahmedqualityops.com/newsletter/index.html",
+    "https://ahmedqualityops.com/offline/index.html",
+    "https://ahmedqualityops.com/saved/index.html",
+    "https://ahmedqualityops.com/series/hotel-apartment-operational-excellence/index.html",
+    "https://ahmedqualityops.com/templates/footer.html",
+    "https://ahmedqualityops.com/templates/header.html",
+    "https://ahmedqualityops.com/templates/home-footer.html",
+    "https://ahmedqualityops.com/templates/home-header.html"
+  ],
+  "invalid_schema_json": [],
+  "coverage_limits": [
+    "No Search Console, Bing Webmaster or GA4 report access/export supplied. A public verification token is not account access.",
+    "HTTP fetch timing is audit transport timing, not Lighthouse, LCP, INP, CLS or field Core Web Vitals.",
+    "Automated content classification and keyword intent are editorial hypotheses; not independent validation of all factual claims.",
+    "Robots policy checked; actual requests from verified crawler IPs not simulated.",
+    "Legacy URLs from public publishing data are candidates, not proof of prior indexing; one legacy pricing URL was observed in search results."
+  ]
+}

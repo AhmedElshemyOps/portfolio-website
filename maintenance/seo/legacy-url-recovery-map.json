@@ -1,0 +1,898 @@
+[
+  {
+    "existing_legacy_path": "/amsterdam-product-discovery-01-research-plan.html",
+    "matching_current_path": "/articles/amsterdam-product-discovery-01-research-plan/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/amsterdam-product-discovery-02-competitive-landscape.html",
+    "matching_current_path": "/articles/amsterdam-product-discovery-02-competitive-landscape/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/amsterdam-product-discovery-03-market-gap.html",
+    "matching_current_path": "/articles/amsterdam-product-discovery-03-market-gap/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/amsterdam-product-discovery-04-voice-of-customer.html",
+    "matching_current_path": "/articles/amsterdam-product-discovery-04-voice-of-customer/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/amsterdam-product-discovery-05-segmentation-language.html",
+    "matching_current_path": "/articles/amsterdam-product-discovery-05-segmentation-language/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/amsterdam-product-discovery-06-destination-geography.html",
+    "matching_current_path": "/articles/amsterdam-product-discovery-06-destination-geography/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/amsterdam-product-discovery-07-product-requirements-concept.html",
+    "matching_current_path": "/articles/amsterdam-product-discovery-07-product-requirements-concept/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/amsterdam-product-discovery-08-commercial-model-unit-economics.html",
+    "matching_current_path": "/articles/amsterdam-product-discovery-08-commercial-model-unit-economics/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/amsterdam-product-discovery-09-risk-responsibility.html",
+    "matching_current_path": "/articles/amsterdam-product-discovery-09-risk-responsibility/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/amsterdam-product-discovery-10-seasonality-operating-calendar.html",
+    "matching_current_path": "/articles/amsterdam-product-discovery-10-seasonality-operating-calendar/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/amsterdam-product-discovery-11-mvp-pilot-operational-readiness.html",
+    "matching_current_path": "/articles/amsterdam-product-discovery-11-mvp-pilot-operational-readiness/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/amsterdam-product-discovery-12-product-analytics-scale-decision.html",
+    "matching_current_path": "/articles/amsterdam-product-discovery-12-product-analytics-scale-decision/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/article-abu-dhabi-mice-movement-control-room.html",
+    "matching_current_path": "/articles/article-abu-dhabi-mice-movement-control-room/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/article-air-connectivity-dmc-market-intelligence.html",
+    "matching_current_path": "/articles/article-air-connectivity-dmc-market-intelligence/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/article-assignment-engine-dmc-operations.html",
+    "matching_current_path": "/articles/article-assignment-engine-dmc-operations/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/article-city-tour-quotation-professional.html",
+    "matching_current_path": "/articles/article-city-tour-quotation-professional/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/article-destination-experience-journey-map.html",
+    "matching_current_path": "/articles/article-destination-experience-journey-map/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/article-fixed-variable-costs-city-tour-pricing.html",
+    "matching_current_path": "/articles/article-fixed-variable-costs-city-tour-pricing/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/article-fleet-control-tower-operations-dashboard.html",
+    "matching_current_path": "/articles/article-fleet-control-tower-operations-dashboard/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/article-mice-arrival-waves-zayed-international-airport.html",
+    "matching_current_path": "/articles/article-mice-arrival-waves-zayed-international-airport/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/article-mice-backup-operations-service-recovery-abu-dhabi.html",
+    "matching_current_path": "/articles/article-mice-backup-operations-service-recovery-abu-dhabi/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/article-mice-hotel-desks-coach-departures-abu-dhabi.html",
+    "matching_current_path": "/articles/article-mice-hotel-desks-coach-departures-abu-dhabi/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/article-mice-venue-arrivals-registration-abu-dhabi.html",
+    "matching_current_path": "/articles/article-mice-venue-arrivals-registration-abu-dhabi/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/article-net-cost-selling-price-markup.html",
+    "matching_current_path": "/articles/article-net-cost-selling-price-markup/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": true,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/article-participant-estimation-break-even-risk.html",
+    "matching_current_path": "/articles/article-participant-estimation-break-even-risk/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/article-professional-client-tour-quotation.html",
+    "matching_current_path": "/articles/article-professional-client-tour-quotation/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/article-rfi-rfq-rfp-erfp-nda-tourism-sales.html",
+    "matching_current_path": "/articles/article-rfi-rfq-rfp-erfp-nda-tourism-sales/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/article-tour-cost-worksheet-city-tour.html",
+    "matching_current_path": "/articles/article-tour-cost-worksheet-city-tour/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/article-tour-guide-quality-index.html",
+    "matching_current_path": "/articles/article-tour-guide-quality-index/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/article-tour-guide-storytelling-system.html",
+    "matching_current_path": "/articles/article-tour-guide-storytelling-system/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/article-tourism-operations-roles-real-difference.html",
+    "matching_current_path": "/articles/article-tourism-operations-roles-real-difference/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/article-transport-tickets-vat-gratuities.html",
+    "matching_current_path": "/articles/article-transport-tickets-vat-gratuities/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/capa-tourism-operations.html",
+    "matching_current_path": "/articles/capa-tourism-operations/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/customer-journey-mapping-sop-design.html",
+    "matching_current_path": "/articles/customer-journey-mapping-sop-design/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/dmc-operations-ai-prompts.html",
+    "matching_current_path": "/articles/dmc-operations-ai-prompts/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/document-control-version-management-tourism.html",
+    "matching_current_path": "/articles/document-control-version-management-tourism/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/front-line-tourism-ai-toolkit.html",
+    "matching_current_path": "/articles/front-line-tourism-ai-toolkit/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/guest-experience-ai-prompts.html",
+    "matching_current_path": "/articles/guest-experience-ai-prompts/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/guest-ready-apartment-standard.html",
+    "matching_current_path": "/articles/guest-ready-apartment-standard/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/hotel-ai-prompting-framework.html",
+    "matching_current_path": "/articles/hotel-ai-prompting-framework/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/hotel-apartment-asset-lifecycle-management.html",
+    "matching_current_path": "/articles/hotel-apartment-asset-lifecycle-management/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/hotel-apartment-cost-of-poor-quality.html",
+    "matching_current_path": "/articles/hotel-apartment-cost-of-poor-quality/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/hotel-apartment-end-to-end-guest-journey.html",
+    "matching_current_path": "/articles/hotel-apartment-end-to-end-guest-journey/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/hotel-apartment-extended-stay-ai-toolkit.html",
+    "matching_current_path": "/articles/hotel-apartment-extended-stay-ai-toolkit/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/hotel-apartment-kpi-architecture.html",
+    "matching_current_path": "/articles/hotel-apartment-kpi-architecture/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/hotel-apartment-operating-system.html",
+    "matching_current_path": "/articles/hotel-apartment-operating-system/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/hotel-apartment-operations-control-tower.html",
+    "matching_current_path": "/articles/hotel-apartment-operations-control-tower/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/hotel-apartment-preventive-maintenance-strategy.html",
+    "matching_current_path": "/articles/hotel-apartment-preventive-maintenance-strategy/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/hotel-apartment-sop-architecture.html",
+    "matching_current_path": "/articles/hotel-apartment-sop-architecture/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/hotel-apartment-total-cost-of-ownership.html",
+    "matching_current_path": "/articles/hotel-apartment-total-cost-of-ownership/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/hotel-complaint-root-cause-analysis.html",
+    "matching_current_path": "/articles/hotel-complaint-root-cause-analysis/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/hotel-control-tower-ai-decision-support-toolkit.html",
+    "matching_current_path": "/articles/hotel-control-tower-ai-decision-support-toolkit/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/hotel-critical-spare-parts-management.html",
+    "matching_current_path": "/articles/hotel-critical-spare-parts-management/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/hotel-downtime-out-of-service-management.html",
+    "matching_current_path": "/articles/hotel-downtime-out-of-service-management/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/hotel-economics-of-service-failure.html",
+    "matching_current_path": "/articles/hotel-economics-of-service-failure/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/hotel-energy-utility-management-ai-toolkit.html",
+    "matching_current_path": "/articles/hotel-energy-utility-management-ai-toolkit/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/hotel-engineering-maintenance-ai-toolkit.html",
+    "matching_current_path": "/articles/hotel-engineering-maintenance-ai-toolkit/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/hotel-esg-sustainability-ai-toolkit.html",
+    "matching_current_path": "/articles/hotel-esg-sustainability-ai-toolkit/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/hotel-finance-cost-control-ai-toolkit.html",
+    "matching_current_path": "/articles/hotel-finance-cost-control-ai-toolkit/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/hotel-first-time-right-operations.html",
+    "matching_current_path": "/articles/hotel-first-time-right-operations/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/hotel-front-office-ai-toolkit.html",
+    "matching_current_path": "/articles/hotel-front-office-ai-toolkit/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/hotel-general-manager-ai-toolkit.html",
+    "matching_current_path": "/articles/hotel-general-manager-ai-toolkit/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/hotel-guest-complaint-service-recovery-ai-toolkit.html",
+    "matching_current_path": "/articles/hotel-guest-complaint-service-recovery-ai-toolkit/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/hotel-guest-experience-ai-toolkit.html",
+    "matching_current_path": "/articles/hotel-guest-experience-ai-toolkit/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/hotel-guest-experience-quality-management.html",
+    "matching_current_path": "/articles/hotel-guest-experience-quality-management/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/hotel-housekeeping-management-ai-toolkit.html",
+    "matching_current_path": "/articles/hotel-housekeeping-management-ai-toolkit/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/hotel-housekeeping-quality-control.html",
+    "matching_current_path": "/articles/hotel-housekeeping-quality-control/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/hotel-housekeeping-standardization.html",
+    "matching_current_path": "/articles/hotel-housekeeping-standardization/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/hotel-inventory-par-level-management.html",
+    "matching_current_path": "/articles/hotel-inventory-par-level-management/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/hotel-inventory-par-management-ai-toolkit.html",
+    "matching_current_path": "/articles/hotel-inventory-par-management-ai-toolkit/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/hotel-kpi-dashboard-ai-toolkit.html",
+    "matching_current_path": "/articles/hotel-kpi-dashboard-ai-toolkit/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/hotel-lean-six-sigma-ai-toolkit.html",
+    "matching_current_path": "/articles/hotel-lean-six-sigma-ai-toolkit/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/hotel-maintenance-work-order-management.html",
+    "matching_current_path": "/articles/hotel-maintenance-work-order-management/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/hotel-operational-excellence-maturity-model.html",
+    "matching_current_path": "/articles/hotel-operational-excellence-maturity-model/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/hotel-operations-manager-ai-toolkit.html",
+    "matching_current_path": "/articles/hotel-operations-manager-ai-toolkit/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/hotel-operations-planning-daily-control.html",
+    "matching_current_path": "/articles/hotel-operations-planning-daily-control/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/hotel-ota-distribution-review-management-ai-toolkit.html",
+    "matching_current_path": "/articles/hotel-ota-distribution-review-management-ai-toolkit/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/hotel-predictive-maintenance-ai-toolkit.html",
+    "matching_current_path": "/articles/hotel-predictive-maintenance-ai-toolkit/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/hotel-preventive-maintenance-kpis.html",
+    "matching_current_path": "/articles/hotel-preventive-maintenance-kpis/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/hotel-procurement-ai-toolkit.html",
+    "matching_current_path": "/articles/hotel-procurement-ai-toolkit/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/hotel-procurement-supplier-quality-control.html",
+    "matching_current_path": "/articles/hotel-procurement-supplier-quality-control/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/hotel-property-reliability-score.html",
+    "matching_current_path": "/articles/hotel-property-reliability-score/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/hotel-quality-audit-ai-toolkit.html",
+    "matching_current_path": "/articles/hotel-quality-audit-ai-toolkit/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/hotel-reservations-ai-toolkit.html",
+    "matching_current_path": "/articles/hotel-reservations-ai-toolkit/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/hotel-revenue-management-ai-toolkit.html",
+    "matching_current_path": "/articles/hotel-revenue-management-ai-toolkit/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/hotel-sales-corporate-accounts-ai-toolkit.html",
+    "matching_current_path": "/articles/hotel-sales-corporate-accounts-ai-toolkit/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/hotel-sop-process-design-ai-toolkit.html",
+    "matching_current_path": "/articles/hotel-sop-process-design-ai-toolkit/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/hotel-workforce-productivity-efficiency.html",
+    "matching_current_path": "/articles/hotel-workforce-productivity-efficiency/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/how-to-audit-an-sop.html",
+    "matching_current_path": "/articles/how-to-audit-an-sop/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/how-to-write-professional-sop-procedure.html",
+    "matching_current_path": "/articles/how-to-write-professional-sop-procedure/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/how-to-write-professional-sop-structure.html",
+    "matching_current_path": "/articles/how-to-write-professional-sop-structure/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/how-to-write-work-instructions.html",
+    "matching_current_path": "/articles/how-to-write-work-instructions/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/integrated-sop-creation-model.html",
+    "matching_current_path": "/articles/integrated-sop-creation-model/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/itil-4-tourism-operations.html",
+    "matching_current_path": "/articles/itil-4-tourism-operations/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/lean-thinking-tourism-operations.html",
+    "matching_current_path": "/articles/lean-thinking-tourism-operations/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/map-process-before-writing-sop.html",
+    "matching_current_path": "/articles/map-process-before-writing-sop/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/operational-checklist-employees-use.html",
+    "matching_current_path": "/articles/operational-checklist-employees-use/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/pmp-thinking-sop-implementation.html",
+    "matching_current_path": "/articles/pmp-thinking-sop-implementation/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/policy-vs-sop-work-instruction-checklist-form-template.html",
+    "matching_current_path": "/articles/policy-vs-sop-work-instruction-checklist-form-template/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/procedures-processes-process-maps.html",
+    "matching_current_path": "/articles/procedures-processes-process-maps/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/professional-operational-form.html",
+    "matching_current_path": "/articles/professional-operational-form/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/responsible-ai-governance-hotels.html",
+    "matching_current_path": "/articles/responsible-ai-governance-hotels/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/responsible-ai-tourism-guide.html",
+    "matching_current_path": "/articles/responsible-ai-tourism-guide/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/root-cause-analysis-tourism-managers.html",
+    "matching_current_path": "/articles/root-cause-analysis-tourism-managers/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/sipoc-tourism-operations.html",
+    "matching_current_path": "/articles/sipoc-tourism-operations/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/six-sigma-tourism-complaints-data.html",
+    "matching_current_path": "/articles/six-sigma-tourism-complaints-data/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/sop-evidence-documentation-legal-defensibility.html",
+    "matching_current_path": "/articles/sop-evidence-documentation-legal-defensibility/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/sop-exception-escalation-management.html",
+    "matching_current_path": "/articles/sop-exception-escalation-management/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/sop-roles-authority-raci.html",
+    "matching_current_path": "/articles/sop-roles-authority-raci/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/standard-communication-templates.html",
+    "matching_current_path": "/articles/standard-communication-templates/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/standard-test-procedures-tourism-operations.html",
+    "matching_current_path": "/articles/standard-test-procedures-tourism-operations/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/tourism-ai-operations-playbook.html",
+    "matching_current_path": "/articles/tourism-ai-operations-playbook/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/tourism-company-operating-system.html",
+    "matching_current_path": "/articles/tourism-company-operating-system/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/tourism-document-hierarchy.html",
+    "matching_current_path": "/articles/tourism-document-hierarchy/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/tourism-itinerary-ai-prompts.html",
+    "matching_current_path": "/articles/tourism-itinerary-ai-prompts/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/tourism-operational-excellence-management-system.html",
+    "matching_current_path": "/articles/tourism-operational-excellence-management-system/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/tourism-operational-risk-assessment-before-sop.html",
+    "matching_current_path": "/articles/tourism-operational-risk-assessment-before-sop/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/tourism-operations-kpis-control-dashboards.html",
+    "matching_current_path": "/articles/tourism-operations-kpis-control-dashboards/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/tourism-operations-manual.html",
+    "matching_current_path": "/articles/tourism-operations-manual/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/tourism-product-development-ai-prompts.html",
+    "matching_current_path": "/articles/tourism-product-development-ai-prompts/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/tourism-prompting-framework.html",
+    "matching_current_path": "/articles/tourism-prompting-framework/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/tourism-quality-sop-ai-prompts.html",
+    "matching_current_path": "/articles/tourism-quality-sop-ai-prompts/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/tourism-sales-quotation-ai-prompts.html",
+    "matching_current_path": "/articles/tourism-sales-quotation-ai-prompts/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/tourism-sop-training-competency-adoption.html",
+    "matching_current_path": "/articles/tourism-sop-training-competency-adoption/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/tourism-supplier-partner-governance-sops.html",
+    "matching_current_path": "/articles/tourism-supplier-partner-governance-sops/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/tourism-transport-dispatch-ai-prompts.html",
+    "matching_current_path": "/articles/tourism-transport-dispatch-ai-prompts/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/where-stp-fits-tourism-operations.html",
+    "matching_current_path": "/articles/where-stp-fits-tourism-operations/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  },
+  {
+    "existing_legacy_path": "/workforce-rostering-productivity-ai-toolkit.html",
+    "matching_current_path": "/articles/workforce-rostering-productivity-ai-toolkit/index.html",
+    "observed_http_status": 404,
+    "search_result_observed": false,
+    "proposed_action": "Serve matching article content at this exact path; retain existing current canonical; no redirects"
+  }
+]

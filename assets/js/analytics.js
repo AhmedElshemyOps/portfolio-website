@@ -72,17 +72,35 @@
     if (aiSource) sendEvent("ai_referral", { referral_source: aiSource, landing_page: window.location.pathname });
   }
 
-  function trackWebVitals() {
+  // Raw observer signals are diagnostics, not validated field Core Web Vitals.
+  function trackPerformanceObservations() {
     if (!("PerformanceObserver" in window)) return;
-    var cls = 0;
-    try {
-      new PerformanceObserver(function (list) { list.getEntries().forEach(function (entry) { if (!entry.hadRecentInput) cls += entry.value; }); }).observe({ type: "layout-shift", buffered: true });
-      new PerformanceObserver(function (list) { var entries = list.getEntries(); var last = entries[entries.length - 1]; if (last) window.__ahmedLcp = last.startTime; }).observe({ type: "largest-contentful-paint", buffered: true });
-      new PerformanceObserver(function (list) { var longest = Math.max.apply(null, list.getEntries().map(function (entry) { return entry.duration || 0; })); if (Number.isFinite(longest) && longest > (window.__ahmedInp || 0)) window.__ahmedInp = longest; }).observe({ type: "event", buffered: true, durationThreshold: 40 });
-    } catch (_error) { /* unsupported entry types are ignored */ }
+    var lcp = null;
+    var layoutShiftSum = null;
+    var longestEvent = null;
+    function observe(type, callback, options) {
+      try { new PerformanceObserver(callback).observe(Object.assign({ type: type, buffered: true }, options || {})); }
+      catch (_error) { /* Unsupported signals stay unmeasured. */ }
+    }
+    observe("layout-shift", function (list) {
+      list.getEntries().forEach(function (entry) {
+        if (!entry.hadRecentInput) layoutShiftSum = (layoutShiftSum || 0) + entry.value;
+      });
+    });
+    observe("largest-contentful-paint", function (list) {
+      var entries = list.getEntries();
+      if (entries.length) lcp = entries[entries.length - 1].startTime;
+    });
+    observe("event", function (list) {
+      list.getEntries().forEach(function (entry) { longestEvent = Math.max(longestEvent || 0, entry.duration || 0); });
+    }, { durationThreshold: 40 });
     document.addEventListener("visibilitychange", function () {
       if (document.visibilityState !== "hidden") return;
-      sendEvent("web_vitals", { lcp_ms: Math.round(window.__ahmedLcp || 0), cls: Number(cls.toFixed(4)), inp_ms: Math.round(window.__ahmedInp || 0), page_path: window.location.pathname });
+      var signals = { page_path: window.location.pathname, measurement_method: "raw_observers_not_core_web_vitals" };
+      if (lcp !== null) signals.lcp_observed_ms = Math.round(lcp);
+      if (layoutShiftSum !== null) signals.layout_shift_sum = Number(layoutShiftSum.toFixed(4));
+      if (longestEvent !== null) signals.longest_observed_event_ms = Math.round(longestEvent);
+      if (lcp !== null || layoutShiftSum !== null || longestEvent !== null) sendEvent("performance_observations", signals);
     }, { once: true });
   }
 
@@ -208,7 +226,7 @@
 
   bindLinkTracking();
   bindReaderTracking();
-  trackWebVitals();
+  trackPerformanceObservations();
   addPrivacyControl();
   if (consent === "granted") {
     window.gtag("consent", "update", { analytics_storage: "granted", ad_storage: "denied", ad_user_data: "denied", ad_personalization: "denied" });

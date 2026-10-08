@@ -68,7 +68,7 @@ assert len({x['url'] for x in registry})==len(registry)
 write_json('article-registry.json',registry)
 write_json('discovery-index.json',[x for x in old if x.get('type') not in ['Article','Series index']]+registry)
 articles=[x for x in registry if x['type']=='Article']
-write_json('articles.json',[dict(title=x['title'],slug=x['id'],url=x['id']+'.html',category=x['category'],pillar=x['pillar'],summary=x['description'],status='Published',readingTime=x['readingTime'],source='Published article registry') for x in articles])
+write_json('articles.json',[dict(title=x['title'],slug=x['id'],url=x['url'],category=x['category'],pillar=x['pillar'],summary=x['description'],status='Published',readingTime=x['readingTime'],source='Published article registry') for x in articles])
 write_json('article-stats.json',[dict(slug=x['id'],wordCount=x['wordCount']) for x in articles])
 content=json.loads((ROOT/'content/content-index.json').read_text())
 content['articles']=[dict(title=x['title'],slug=x['id'],category=x['category'],summary=x['description'],canonical='https://ahmedqualityops.com'+x['url'],readingMinutes=x['readingTime']) for x in articles]
