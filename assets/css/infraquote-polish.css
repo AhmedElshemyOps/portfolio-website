@@ -178,3 +178,7 @@ body.infraquote-page .client-document{padding:30px;background:#fff;border:1px so
 .quote-city-choice h2{margin:0 0 16px}.quote-city-choice label{display:block;max-width:420px;font-weight:600}.quote-city-choice select{display:block;width:100%;min-height:48px;margin-top:8px;padding:12px;background:#fff;border:1px solid #b8c0c6;border-radius:8px;color:#10283f}.quote-city-choice p{font-size:.9rem;line-height:1.6}
 #nlRequirements{grid-column:1 / -1;padding:20px;background:#f7f4ed;border:1px solid #ded5c5;border-radius:12px}#nlRequirements .quote-checks{display:grid;gap:12px}#nlRequirements input[type=checkbox]{width:20px;height:20px;flex-shrink:0}
 @media(max-width:600px){.quote-city-choice,#nlRequirements{padding:16px}}
+
+/* Keep the dated-fare acknowledgement readable beside its control. */
+.quote-item .fare-confirmation { display:flex; align-items:flex-start; gap:.65rem; margin-top:.8rem; line-height:1.5; }
+.quote-item .fare-confirmation input[type="checkbox"] { width:1.1rem; flex:0 0 1.1rem; margin:.2rem 0 0; }

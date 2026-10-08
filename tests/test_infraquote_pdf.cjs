@@ -9,3 +9,11 @@ assert.ok(pdf.output('arraybuffer').byteLength>10000);
 const long=generator.create({...sample,itinerary:Array.from({length:24},(_,i)=>({name:'Extended cultural stop '+i,status:'Included',note:'An extended client note. '.repeat(12)})),description:'An extended description. '.repeat(30)},jsPDF,fonts);
 assert.ok(long.getNumberOfPages()>2,'Long quotations should paginate without truncation');
 console.log('Client PDF font embedding and variable-length pagination checks passed.');
+
+const printed=[];
+function TrackedPDF(options){const doc=new jsPDF(options);const original=doc.text.bind(doc);doc.text=function(value,...rest){printed.push({page:doc.internal.getCurrentPageInfo().pageNumber,value:Array.isArray(value)?value.join(" "):String(value)});return original(value,...rest);};return doc;}
+generator.create({...sample,title:"Amsterdam Highlights & Canal Cruise",client:"Fictional pilot",total:"EUR 300.00",hideVat:true,vatLabel:"bijzondere regeling reisbureaus",exclusions:"Meals unless stated\nPersonal expenses\nOptional attractions not listed as included\nGratuities unless stated"},TrackedPDF,fonts);
+const exclusionsHeading=printed.find(x=>x.value==="Not included");
+for(const line of ["Meals unless stated","Personal expenses","Optional attractions not listed as included","Gratuities unless stated"])
+ assert.equal(printed.find(x=>x.value===line).page,exclusionsHeading.page,"Short exclusion list stays with its heading");
+console.log("Short PDF sections stay together across page boundaries.");

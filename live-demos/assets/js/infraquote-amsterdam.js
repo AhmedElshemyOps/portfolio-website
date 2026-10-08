@@ -423,18 +423,21 @@
       ageBands: [],
       timedEntry: true,
       centreWalk: false,
+      dateDependent: true,
       note: "Confirm selected product, visit date, group access, cancellation and accessibility with the operator.",
       reference: {
         source: "https://www.stedelijk.nl/en/visit",
         hoursSource: "https://www.stedelijk.nl/en/visit",
         termsSource: "https://www.stedelijk.nl/en/visit",
         checked: "",
-        basis: "Research candidate; current product and price pending",
+        policyChecked: "",
+        basis:
+          "Exact product and service-date fare required; automatic price pending",
         price:
-          "Price not confirmed. Enter the selected product rate; blank does not mean free.",
-        hours: "Opening hours and exceptions require service-date review.",
+          "Official visit page could not be verified because it presents a browser verification challenge. Confirm the selected exhibition and every guest category directly before entering a rate.",
+        hours: "Service-date visit information remains pending.",
         terms:
-          "Review current booking, group, amendment and cancellation conditions before confirmation.",
+          "Confirm opening hours, exhibition supplements, group access and cancellation terms directly.",
       },
     },
     {
@@ -450,18 +453,21 @@
       ageBands: [],
       timedEntry: true,
       centreWalk: false,
+      dateDependent: true,
       note: "Confirm selected product, visit date, group access, cancellation and accessibility with the operator.",
       reference: {
-        source: "https://www.mocomuseum.com/",
-        hoursSource: "https://www.mocomuseum.com/",
-        termsSource: "https://www.mocomuseum.com/",
+        source: "https://www.mocomuseum.com/amsterdam/tickets/",
+        hoursSource: "https://www.mocomuseum.com/amsterdam/tickets/",
+        termsSource: "https://tickets.mocomuseum.com/nl/tickets",
         checked: "",
-        basis: "Research candidate; current product and price pending",
+        policyChecked: "2026-10-08",
+        basis:
+          "Exact product and service-date fare required; automatic price pending",
         price:
-          "Price not confirmed. Enter the selected product rate; blank does not mean free.",
-        hours: "Opening hours and exceptions require service-date review.",
+          "General admission advertised from EUR 11.48; the Dutch ticket portal displays adult EUR 19.95 and youth 7–17 EUR 17.95 before date selection. These are not a confirmed dated fare. The portal lists 0–6 free while the landing page says up to four; confirm the selected product age policy.",
+        hours: "Confirm selected date and opening exceptions.",
         terms:
-          "Review current booking, group, amendment and cancellation conditions before confirmation.",
+          "Non-refundable purchased tickets; review rebooking conditions. Visitors under 16 require adult supervision; strollers are not permitted according to the Dutch ticket portal. Do not mix General, Flex, Priority or combination products.",
       },
     },
     {
@@ -511,18 +517,23 @@
       ageBands: [],
       timedEntry: true,
       centreWalk: false,
+      dateDependent: true,
+      closedMonthDays: ["04-27"],
       note: "Confirm selected product, visit date, group access, cancellation and accessibility with the operator.",
       reference: {
-        source: "https://www.hartmuseum.nl/",
-        hoursSource: "https://www.hartmuseum.nl/",
-        termsSource: "https://www.hartmuseum.nl/",
+        source: "https://www.hartmuseum.nl/plan-je-bezoek/",
+        hoursSource: "https://www.hartmuseum.nl/plan-je-bezoek/",
+        termsSource: "https://www.hartmuseum.nl/plan-je-bezoek/",
         checked: "",
-        basis: "Research candidate; current product and price pending",
+        policyChecked: "2026-10-08",
+        basis:
+          "Exact product and service-date fare required; automatic price pending",
         price:
-          "Price not confirmed. Enter the selected product rate; blank does not mean free.",
-        hours: "Opening hours and exceptions require service-date review.",
+          "Current Chez Matisse admission including exhibition supplement: adult 18+ EUR 29.50; through age 17 free. Exhibition-dependent reference: confirm the selected exhibition and date, including pass-holder supplements.",
+        hours:
+          "Daily 10:00–17:00; last entry 16:30. On 1 January and 25 December 12:00–17:00; closed 27 April.",
         terms:
-          "Review current booking, group, amendment and cancellation conditions before confirmation.",
+          "Confirm exhibition, group booking, time slot and cancellation conditions. Do not assume Museumkaart or city cards remove the exhibition supplement.",
       },
     },
     {
@@ -669,25 +680,32 @@
       ageBands: [],
       timedEntry: true,
       centreWalk: false,
+      dateDependent: true,
       note: "Confirm selected product, visit date, group access, cancellation and accessibility with the operator.",
       reference: {
-        source: "https://www.blueboat.nl/en/",
-        hoursSource: "https://www.blueboat.nl/en/",
-        termsSource: "https://www.blueboat.nl/en/",
+        source:
+          "https://www.blueboat.nl/en/canal-cruise-amsterdam/canal-tour-amsterdam/",
+        hoursSource:
+          "https://www.blueboat.nl/en/canal-cruise-amsterdam/canal-tour-amsterdam/",
+        termsSource:
+          "https://www.blueboat.nl/en/canal-cruise-amsterdam/canal-tour-amsterdam/",
         checked: "",
-        basis: "Research candidate; current product and price pending",
+        policyChecked: "2026-10-08",
+        basis:
+          "Exact product and service-date fare required; automatic price pending",
         price:
-          "Price not confirmed. Enter the selected product rate; blank does not mean free.",
-        hours: "Opening hours and exceptions require service-date review.",
+          "City Canal Cruise currently advertises a EUR 13.50 promotion against EUR 26. Promotional and tax-exclusive listings must not be treated as an all-in dated rate. Confirm checkout total, guest categories and compulsory fees.",
+        hours:
+          "75-minute cruise. Exact departure dock, date and slot must match the ticket; general opening hours are not a sailing schedule.",
         terms:
-          "Review current booking, group, amendment and cancellation conditions before confirmation.",
+          "Selected City Canal Cruise advertises cancellation up to 24 hours in advance; confirm the exact ticket channel/product terms. Check in 15 minutes early. Wheelchair-accessible departures require advance reservation at Stadhouderskade 501; confirm the actual slot.",
       },
     },
     {
       id: "lovers",
       name: "LOVERS · canal cruise",
       type: "Canal cruise",
-      defaultDuration: 75,
+      defaultDuration: 60,
       ticketRequired: true,
       verification: "Pending verification",
       adult: null,
@@ -696,18 +714,25 @@
       ageBands: [],
       timedEntry: true,
       centreWalk: false,
+      dateDependent: true,
       note: "Confirm selected product, visit date, group access, cancellation and accessibility with the operator.",
       reference: {
-        source: "https://www.lovers.nl/en/",
-        hoursSource: "https://www.lovers.nl/en/",
-        termsSource: "https://www.lovers.nl/en/",
+        source:
+          "https://www.lovers.nl/amsterdam-city-canal-cruises/1-h-amsterdam-day-canal-cruise/",
+        hoursSource:
+          "https://www.lovers.nl/amsterdam-city-canal-cruises/1-h-amsterdam-day-canal-cruise/",
+        termsSource:
+          "https://www.lovers.nl/amsterdam-city-canal-cruises/1-h-amsterdam-day-canal-cruise/",
         checked: "",
-        basis: "Research candidate; current product and price pending",
+        policyChecked: "2026-10-08",
+        basis:
+          "Exact product and service-date fare required; automatic price pending",
         price:
-          "Price not confirmed. Enter the selected product rate; blank does not mean free.",
-        hours: "Opening hours and exceptions require service-date review.",
+          "Classic one-hour product: children 4–13; ages 0–3 free with a paying adult. Enter the exact dated fare for the chosen departure, including compulsory charges.",
+        hours:
+          "60-minute cruise; generally daily 09:00–21:00. Confirm departure dock and actual service-date schedule.",
         terms:
-          "Review current booking, group, amendment and cancellation conditions before confirmation.",
+          "Selected classic cruise can be cancelled/rescheduled up to eight hours in advance; self-service rebooking has a 24-hour limit. Combination tickets may differ. Not wheelchair accessible. Arrive 15 minutes early.",
       },
     },
     {
@@ -723,25 +748,31 @@
       ageBands: [],
       timedEntry: true,
       centreWalk: false,
+      dateDependent: true,
       note: "Confirm selected product, visit date, group access, cancellation and accessibility with the operator.",
       reference: {
-        source: "https://www.stromma.com/en-nl/amsterdam/",
-        hoursSource: "https://www.stromma.com/en-nl/amsterdam/",
-        termsSource: "https://www.stromma.com/en-nl/amsterdam/",
+        source: "https://www.stromma.com/en-nl/amsterdam/customer-service/faq/",
+        hoursSource:
+          "https://www.stromma.com/en-nl/amsterdam/customer-service/faq/",
+        termsSource:
+          "https://www.stromma.com/en-nl/amsterdam/customer-service/faq/",
         checked: "",
-        basis: "Research candidate; current product and price pending",
+        policyChecked: "2026-10-08",
+        basis:
+          "Exact product and service-date fare required; automatic price pending",
         price:
-          "Price not confirmed. Enter the selected product rate; blank does not mean free.",
-        hours: "Opening hours and exceptions require service-date review.",
+          "100 Highlights advertised from adult EUR 13.50 and child 4–12 EUR 9.30; ages 0–3 free. From prices vary by season/product and are not confirmed date prices. Enter the all-in selected fare.",
+        hours:
+          "Schedules vary; check the exact selected sailing. A general catalogue duration is a planning estimate.",
         terms:
-          "Review current booking, group, amendment and cancellation conditions before confirmation.",
+          "Select the exact cruise, dock, date and departure. Arrive 15 minutes early; review cancellation and accessible boarding with the operator. Strollers are not allowed on board; heat procedures may restrict admission.",
       },
     },
     {
       id: "this-is-holland",
       name: "THIS IS HOLLAND",
       type: "Experience",
-      defaultDuration: 75,
+      defaultDuration: 60,
       ticketRequired: true,
       verification: "Pending verification",
       adult: null,
@@ -750,18 +781,23 @@
       ageBands: [],
       timedEntry: true,
       centreWalk: false,
+      dateDependent: true,
+      minimumAge: 4,
       note: "Confirm selected product, visit date, group access, cancellation and accessibility with the operator.",
       reference: {
-        source: "https://www.thisisholland.com/",
-        hoursSource: "https://www.thisisholland.com/",
-        termsSource: "https://www.thisisholland.com/",
+        source: "https://tickets.thisisholland.com/?lang=en",
+        hoursSource: "https://tickets.thisisholland.com/?lang=en",
+        termsSource: "https://www.thisisholland.com/en/terms-and-conditions/",
         checked: "",
-        basis: "Research candidate; current product and price pending",
+        policyChecked: "2026-10-08",
+        basis:
+          "Exact product and service-date fare required; automatic price pending",
         price:
-          "Price not confirmed. Enter the selected product rate; blank does not mean free.",
-        hours: "Opening hours and exceptions require service-date review.",
+          "Regular tickets advertised from EUR 22 and advance offers from EUR 19; family products differ. Enter the exact dated product total and fees; no flat rate is assumed.",
+        hours:
+          "Approximately 60 minutes; reserve and confirm the requested slot, arriving 15 minutes early.",
         terms:
-          "Review current booking, group, amendment and cancellation conditions before confirmation.",
+          "Flight minimum age four and supplier height/accompaniment/safety requirements apply. Review eligibility with the venue without recording private medical details. Pre-booked tickets are non-refundable/non-transferable; group products have separate cancellation conditions.",
       },
     },
     {
@@ -777,19 +813,25 @@
       ageBands: [],
       timedEntry: true,
       centreWalk: false,
+      dateDependent: true,
       note: "Admission is strictly 18+, including accompanied guests. Current product price remains pending.",
       reference: {
-        source: "https://www.heinekenexperience.com/",
-        hoursSource: "https://www.heinekenexperience.com/",
+        source:
+          "https://www.heinekenexperience.com/en/discover-our-tours/heineken-tour",
+        hoursSource:
+          "https://www.heinekenexperience.com/en/discover-our-tours/heineken-tour",
         termsSource:
-          "https://www.heinekenexperience.com/en/children-and-minors",
+          "https://www.heinekenexperience.com/en/rescheduling-and-refund",
         checked: "",
-        basis: "Research candidate; current product and price pending",
+        policyChecked: "2026-10-08",
+        basis:
+          "Exact product and service-date fare required; automatic price pending",
         price:
-          "Price not confirmed. Enter the selected product rate; blank does not mean free.",
-        hours: "Opening hours and exceptions require service-date review.",
+          "Standard tour page shows EUR 19.95/EUR 24.95 offers; general experience page says from EUR 24.95. Exact dated fare remains pending. Rooftop/VIP/combination products are separate.",
+        hours:
+          "Standard tour approximately 90 minutes. Monday–Thursday/Sunday 10:30–19:30, last entry 17:15; Friday/Saturday 10:30–21:00, last entry 18:45. Confirm service-date exceptions.",
         terms:
-          "Review current booking, group, amendment and cancellation conditions before confirmation.",
+          "Strictly 18+, including accompanied guests; valid ID required. No refunds; standard tour rebooking normally up to one hour beforehand. Confirm selected product terms and accessibility with the venue.",
       },
     },
     {
@@ -1037,6 +1079,35 @@
           s.name +
             ": closed on the selected service date; choose another date or attraction.",
         );
+      if (
+        admission?.dateDependent &&
+        s.ticketRequired &&
+        s.ticketVerification !== "Client pays directly" &&
+        (!s.priceConfirmed ||
+          s.priceConfirmedDate !== q.serviceDate ||
+          !String(s.priceEvidence || "").trim())
+      )
+        blocking.push(
+          s.name +
+            ": confirm the exact service-date product price, all compulsory fees and the booking reference/source.",
+        );
+      if (admission?.minimumAge) {
+        const listedAges = ages(q.guestAges);
+        if (
+          listedAges.length !==
+          Number(q.adults || 0) +
+            Number(q.children || 0) +
+            Number(q.infants || 0)
+        )
+          blocking.push(
+            s.name + ": enter every guest age to check minimum admission age.",
+          );
+        else if (listedAges.some((a) => a < admission.minimumAge))
+          blocking.push(
+            s.name +
+              ": the flight experience requires guests aged four or above; select another experience for younger guests.",
+          );
+      }
       if (s.attractionId === "heineken") {
         const guestAges = ages(q.guestAges);
         if (

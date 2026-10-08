@@ -26,7 +26,7 @@
       y+=after;
     }
     function heading(value){ensure(20);y+=3;text(value,{size:12,bold:true,after:4});}
-    function section(title,values){if(!values?.length)return;heading(title);for(const value of values)text(value,{size:9.1,color:muted,after:3});}
+    function section(title,values){if(!values?.length)return;const height=3+split(title,width,12,true).length*12*.48+4+values.reduce((sum,value)=>sum+split(value,width,9.1).length*9.1*.48+3,0);if(height<=100)ensure(height+2);heading(title);for(const value of values)text(value,{size:9.1,color:muted,after:3});}
     header();
     text(`${model.theme} tour quotation`,{size:8,bold:true,color:gold,after:4});
     text(model.title,{size:21,bold:true,after:4});

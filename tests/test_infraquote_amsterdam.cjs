@@ -211,3 +211,167 @@ assert(
     ],
   }).blocking.some((x) => x.includes("closed")),
 );
+
+const cruise = {
+  ...find("blue-boat"),
+  attractionId: "blue-boat",
+  status: "Included",
+  ticketVerification: "Verified",
+  adultTicket: 20,
+  childTicket: 10,
+  infantTicket: 0,
+  availabilityConfirmed: true,
+  availabilityDate: base.serviceDate,
+  entryTime: "13:00",
+  conditionsReviewed: true,
+  conditionsReviewedDate: base.serviceDate,
+};
+const cruiseQuote = { ...dated, itinerary: [cruise] };
+assert(
+  NL.checks(cruiseQuote).blocking.some((x) => x.includes("product price")),
+  "A filled rate is not a dated fare confirmation",
+);
+const confirmedCruise = {
+  ...cruise,
+  priceConfirmed: true,
+  priceConfirmedDate: base.serviceDate,
+  priceEvidence:
+    "Fictional pilot fare; Classic City Cruise, 22 October 2026, all fees included",
+};
+assert.equal(
+  NL.checks({ ...cruiseQuote, itinerary: [confirmedCruise] }).blocking.length,
+  0,
+);
+assert(
+  NL.checks({
+    ...cruiseQuote,
+    itinerary: [{ ...confirmedCruise, priceEvidence: " " }],
+  }).blocking.some((x) => x.includes("product price")),
+);
+assert(
+  NL.checks({
+    ...cruiseQuote,
+    itinerary: [{ ...confirmedCruise, priceConfirmedDate: "2026-10-23" }],
+  }).blocking.some((x) => x.includes("product price")),
+);
+assert(
+  !NL.checks({
+    ...cruiseQuote,
+    itinerary: [{ ...cruise, ticketVerification: "Client pays directly" }],
+  }).blocking.some((x) => x.includes("product price")),
+  "Client-paid admission has no included fare to attest",
+);
+assert(
+  NL.checks({
+    ...dated,
+    adults: 1,
+    children: 1,
+    guestAges: "40,3",
+    itinerary: [{ ...cruise, attractionId: "this-is-holland" }],
+  }).blocking.some((x) => x.includes("four or above")),
+);
+assert(
+  NL.checks({
+    ...dated,
+    serviceDate: "2027-04-27",
+    itinerary: [{ ...cruise, attractionId: "hart" }],
+  }).blocking.some((x) => x.includes("closed")),
+);
+assert(
+  NL.city.attractions
+    .filter((a) => a.dateDependent)
+    .every((a) => a.adult === null),
+  "Indicative prices never become guaranteed fares",
+);
+console.log(
+  "Date-specific fare evidence, age restrictions and exhibition closures passed.",
+);
+
+// Full synthetic template scenarios: no supplier rates are represented as real offers.
+for (const [templateIndex, expectedNet] of [
+  [0, 220],
+  [1, 277],
+  [2, 364.5],
+  [3, 213],
+]) {
+  const template = NL.setup(templateIndex);
+  const scenario = {
+    ...base,
+    ...template,
+    adults: 2,
+    children: 0,
+    infants: 0,
+    guestAges: "40,35",
+    nlGuideRate: 180,
+    taxReviewed: true,
+    vatMode: "margin",
+  };
+  if (templateIndex === 2) {
+    scenario.children = 2;
+    scenario.guestAges = "40,35,10,3";
+  }
+  scenario.itinerary = template.itineraryIds.map((id) => ({
+    ...find(id),
+    attractionId: id,
+    status: "Included",
+    ticketVerification: "Verified",
+    adultTicket: id === "blue-boat" ? 20 : find(id).adult,
+    childTicket: null,
+    infantTicket: null,
+    entryTime: "13:00",
+    availabilityConfirmed: true,
+    availabilityDate: scenario.serviceDate,
+    conditionsReviewed: true,
+    conditionsReviewedDate: scenario.serviceDate,
+    referenceChecked: find(id).reference.checked,
+    priceConfirmed: true,
+    priceConfirmedDate: scenario.serviceDate,
+    priceEvidence: "Synthetic all-in fare for testing only",
+  }));
+  assert.equal(
+    NL.checks(scenario, new Date("2026-10-08")).blocking.length,
+    0,
+    template.tourTitle,
+  );
+  const net =
+    180 +
+    scenario.itinerary
+      .filter((stop) => stop.ticketRequired)
+      .reduce(
+        (sum, stop) =>
+          sum +
+          NL.tickets(stop, scenario).groups.reduce(
+            (n, g) => n + g.quantity * g.price,
+            0,
+          ),
+        0,
+      );
+  assert.equal(net, expectedNet, template.tourTitle + " costing");
+  const price = C.pricing({
+    netCost: net,
+    method: "margin",
+    targetMarginPct: 22,
+    vatMode: "margin",
+    vatRate: 0.21,
+    totalGuests: scenario.adults + scenario.children + scenario.infants,
+    adults: 2,
+    children: scenario.children,
+    rounding: 5,
+  });
+  assert(price.finalPrice > net);
+  assert(price.actualMargin >= 22);
+  assert.equal(
+    Math.round((price.finalPrice - net - price.vatAmount) * 100),
+    Math.round(price.profit * 100),
+  );
+  assert(
+    NL.checks(
+      { ...scenario, serviceDate: "2026-10-23" },
+      new Date("2026-10-08"),
+    ).blocking.some((x) => x.includes("availability")),
+    "Date changes require reconfirmation",
+  );
+}
+console.log(
+  "Four complete Amsterdam template scenarios passed: costing, margin VAT and date reconfirmation.",
+);
