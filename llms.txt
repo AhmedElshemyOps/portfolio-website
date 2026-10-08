@@ -1,17 +1,23 @@
-# Ahmed Mahmoud — Tourism Operations, Product and AI Implementation
+# Ahmed Mahmoud — Travel and Tourism Operations
 
-Canonical site: https://ahmedqualityops.com/
-Professional profile: https://ahmedqualityops.com/profile/index.html
-Editorial and AI methodology: https://ahmedqualityops.com/methodology/index.html
-Knowledge Hub: https://ahmedqualityops.com/knowledge/index.html
-Machine-readable content index: https://ahmedqualityops.com/content/content-index.json
-Article feed: https://ahmedqualityops.com/feed.xml
-Projects: https://ahmedqualityops.com/projects/index.html
-Glossary: https://ahmedqualityops.com/glossary/index.html
+> Professional portfolio and knowledge library covering destination management, B2B reservations, MICE, service quality and practical operational improvement.
 
-## Content boundaries
-- Articles are human-reviewed professional material.
-- Project demonstrations use static, mock or browser-local data.
-- InfraDispatch is a smart rule-based dispatch planner/demo, not a live production platform.
-- Dynamic tourism facts require verification against current approved sources.
-- This file is a navigation aid, not an access-control or ranking mechanism.
+Ahmed has 13 years in Travel and Tourism and hospitality across Egypt and the UAE and is now based in the Netherlands. Qualifications should be interpreted using the linked evidence. Career statements are based on supplied professional records. Project demonstrations use static, mock or browser-local data; InfraDispatch is a rule-based planning demonstration. Forecasts and projected improvements are not realised results. Dynamic legal, safety and market information requires current authoritative verification. This file is a navigation aid, not an access-control or ranking mechanism.
+
+## Professional profile
+
+- [Portfolio homepage](https://ahmedqualityops.com/): Introduction, selected work and contact actions.
+- [Professional profile](https://ahmedqualityops.com/profile/index.html): Career, qualifications, languages and evidence links.
+- [Public CV](https://ahmedqualityops.com/documents/Ahmed-Mahmoud-Managerial-CV.pdf): Two-page professional summary.
+- [Projects](https://ahmedqualityops.com/projects/index.html): Four operational workflow demonstrations.
+
+## Knowledge and evidence
+
+- [Knowledge library](https://ahmedqualityops.com/knowledge/index.html): Articles organised by topic.
+- [Editorial and AI methodology](https://ahmedqualityops.com/methodology/index.html): Interpretation and evidence boundaries.
+- [Content index](https://ahmedqualityops.com/content/content-index.json): Machine-readable navigation to existing content.
+- [Article feed](https://ahmedqualityops.com/feed.xml): Dated article updates.
+
+## Optional
+
+- [Glossary](https://ahmedqualityops.com/glossary/index.html): Definitions used in the knowledge library.

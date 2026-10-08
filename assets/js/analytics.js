@@ -129,7 +129,7 @@
     if (/linkedin\.com/.test(host)) return ["linkedin_click", base];
     if (path.endsWith(".pdf") || anchor.hasAttribute("download")) return ["file_download", base];
     if (/\/articles\/|article-|articles\.html|insights-city-tour/.test(path)) return ["article_click", base];
-    if (/projects\.html|infradispatch|infrasky|infraquote|pickup-planner|pickup-dropoff-planner/.test(path)) {
+    if (/\/projects\/|projects\.html|infracluster|infradispatch|infrasky|infraquote|pickup-planner|pickup-dropoff-planner/.test(path)) {
       return ["project_click", base];
     }
     if (absoluteUrl.origin !== window.location.origin && !href.startsWith("#")) return ["outbound_click", base];
@@ -183,7 +183,7 @@
   function createConsentBanner() {
     if (!hasValidGaId || consent !== "unset" || document.querySelector("[data-analytics-consent]")) return;
     var style = document.createElement("style");
-    style.textContent = ".analytics-consent{position:fixed;z-index:9999;left:18px;right:18px;bottom:18px;max-width:780px;margin:auto;padding:18px 20px;display:grid;grid-template-columns:1fr auto;gap:16px 22px;align-items:center;border:1px solid #b68a2f;background:#071a32;color:#fff;box-shadow:0 20px 55px rgba(7,26,50,.3);font-family:Arial,sans-serif}.analytics-consent strong{display:block;margin-bottom:5px;font-family:Georgia,serif}.analytics-consent p{margin:0;color:#c7d2df;font-size:12px;line-height:1.55}.analytics-consent a{color:#dfc27d}.analytics-consent-actions{display:flex;gap:8px}.analytics-consent button{min-height:42px;padding:8px 12px;border:1px solid #dfc27d;background:transparent;color:#fff;font-weight:700;cursor:pointer}.analytics-consent button[data-consent=granted]{background:#dfc27d;color:#071a32}@media(max-width:650px){.analytics-consent{grid-template-columns:1fr}.analytics-consent-actions{display:grid;grid-template-columns:1fr 1fr}.analytics-consent button{width:100%}}";
+    style.textContent = ".analytics-consent{position:fixed;z-index:9999;left:18px;right:18px;bottom:18px;max-width:780px;margin:auto;padding:18px 20px;display:grid;grid-template-columns:1fr auto;gap:16px 22px;align-items:center;border:1px solid #b68a2f;background:#071a32;color:#fff;box-shadow:0 20px 55px rgba(7,26,50,.3);font-family:Arial,sans-serif}.analytics-consent strong{display:block;margin-bottom:5px;font-family:Georgia,serif}.analytics-consent p{margin:0;color:#c7d2df;font-size:12px;line-height:1.55}.analytics-consent a{color:#dfc27d;text-decoration:underline;text-underline-offset:3px}.analytics-consent-actions{display:flex;gap:8px}.analytics-consent button{min-height:42px;padding:8px 12px;border:1px solid #dfc27d;background:transparent;color:#fff;font-weight:700;cursor:pointer}.analytics-consent button[data-consent=granted]{background:#dfc27d;color:#071a32}@media(max-width:650px){.analytics-consent{grid-template-columns:1fr}.analytics-consent-actions{display:grid;grid-template-columns:1fr 1fr}.analytics-consent button{width:100%}}";
     document.head.appendChild(style);
     var banner = document.createElement("aside");
     banner.className = "analytics-consent";

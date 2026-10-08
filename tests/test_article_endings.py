@@ -1,3 +1,5 @@
+# Preservation baseline: verified 8 October release, before evidence corrections.
+# Earlier migration commits are unavailable; this checks release content, not historical migration provenance.
 import sys,unittest,re,subprocess,collections
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
@@ -25,7 +27,7 @@ class ArticleEndingTests(unittest.TestCase):
  def test_reapply_and_source_preservation(self):
   for slug,row in load_rows().items():
    path=ROOT/'articles'/slug/'index.html';s=path.read_text();self.assertEqual(apply(s,row),s,slug)
-   old=subprocess.check_output(['git','show','8148a95:'+str(path.relative_to(ROOT))],cwd=ROOT,text=True)
+   old=subprocess.check_output(['git','show','6f8f6f6f9324c83b3c63e915ac31a633bdf31d53:'+str(path.relative_to(ROOT))],cwd=ROOT,text=True)
    first=apply(old,row);self.assertEqual(apply(first,row),first,slug)
    for pattern in [r'<pre\b[^>]*>.*?</pre>',r'<td\b[^>]*>.*?</td>',r'<img\b[^>]*>']:
     self.assertEqual(re.findall(pattern,old,re.S),re.findall(pattern,s,re.S),slug)

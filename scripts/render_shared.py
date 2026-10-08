@@ -65,6 +65,13 @@ def render(source, path, root=ROOT):
         source = source[:masthead['end']] + NAV_SCRIPT + source[masthead['end']:]
     if assets:
         source = source.replace('</head>', assets + '</head>', 1)
+    # Start imported shared styles in parallel rather than waiting for nested CSS discovery.
+    for name in ['fonts', 'design-tokens']:
+        source = re.sub(r'<link\b[^>]*rel="preload"[^>]*href="/assets/css/'+name+r'\.css[^\"]*"[^>]*>', '', source)
+    hints = '<link rel="preload" href="/assets/css/fonts.css?v=20261008-polish" as="style"/>' if '/assets/css/launch-pages.css' in source or '/assets/css/homepage-editorial.css' in source else ''
+    if '/assets/css/launch-pages.css' in source:
+        hints += '<link rel="preload" href="/assets/css/design-tokens.css?v=20261008-polish" as="style"/>'
+    source = source.replace('</head>', hints + '</head>', 1)
     from apply_library_navigation import render as render_library_navigation
     return render_library_navigation(source, path, root)
 
