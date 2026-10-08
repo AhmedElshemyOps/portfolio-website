@@ -47,7 +47,10 @@ def load_prompts():
                             verification=section(markdown, 'Human verification')))
     if [p['number'] for p in prompts] != list(range(11, 21)):
         raise ValueError('Chapter 02 requires the ordered original prompts 011–020')
-    return prompts
+    # Keep pinned source files and their checksums intact; apply the user-approved
+    # accommodation scope consistently to display text and copy templates.
+    from scope_accommodation import wording
+    return [{key:wording(value) if isinstance(value,str) else value for key,value in prompt.items()} for prompt in prompts]
 
 
 def render(prompts, original):
@@ -80,7 +83,7 @@ def render(prompts, original):
         body, count = re.subn(r'(<pre\b[^>]*>).*?(</pre>)', lambda m: m[1] + escape(prompt['text'], quote=False) + m[2], body, count=1, flags=re.S)
         if count != 1:
             raise ValueError(f'Missing template slot {index}')
-        body, count = re.subn(r'(<div class="trainer-note"><h4>Human verification</h4><strong>Professional hotel trainer’s note</strong><p>).*?(</p>)', lambda m: m[1] + escape(prompt['verification']) + m[2], body, count=1, flags=re.S)
+        body, count = re.subn(r'(<div class="trainer-note"><h4>Human verification</h4><strong>Professional hotel(?: apartment)? trainer’s note</strong><p>).*?(</p>)', lambda m: m[1] + escape(prompt['verification']) + m[2], body, count=1, flags=re.S)
         if count != 1:
             raise ValueError(f'Missing verification slot {index}')
         result = result[:match.start()] + match[1] + body + match[3] + result[match.end():]
