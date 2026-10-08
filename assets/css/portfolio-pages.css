@@ -159,3 +159,5 @@
 
 /* Portfolio library uses a warm-white hero, so its secondary action needs dark text. */
 .portfolio-page .discovery-hero .hero-actions .button.is-secondary { color: var(--navy); border-color: var(--navy); background: transparent; }
+
+.portfolio-page .newsletter-signup .eyebrow { color: #dfc27d; }
