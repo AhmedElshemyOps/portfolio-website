@@ -8,7 +8,7 @@ Full-view comparison evidence: task outputs transformation/home-desktop.png and 
 
 ## User-authorized refinements
 
-Travel and Tourism Operations; 13 years in travel, tourism and hospitality; removed dated availability wording; four existing Infra projects; employer history, IATA diplomas, certifications and education; library topics instead of article count; real article titles and existing URLs. Learning, Lab, Saved Reading and Resources remain accessible. These additions intentionally increase page length relative to the original reference.
+Travel and Tourism Operations; 13 years in Travel and Tourism and hospitality; removed dated availability wording; four existing Infra projects; employer history, IATA diplomas, certifications and education; library topics instead of article count; real article titles and existing URLs. Learning, Lab, Saved Reading and Resources remain accessible. These additions intentionally increase page length relative to the original reference.
 
 ## Comparison history
 
