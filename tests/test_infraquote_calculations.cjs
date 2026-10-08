@@ -9,3 +9,8 @@ const totals=c.classifyCosts([{include:true,type:'Fixed',quantity:1,unitCost:100
 const be=c.breakEven({fixedCost:100,variableCost:20,payingGuests:2,sellingPerGuest:60,minimumTarget:2});assert.equal(be.breakEvenGuests,2);assert.equal(be.profit,0);
 const quote={adults:0,children:0,infants:0,rounding:0,pricingMethod:'margin',targetMargin:100,clientCompany:' ',serviceDate:'2026-01-01',quoteDate:'2026-02-01',validityDate:'2026-01-01',pickupLocation:'Hotel',dropoffLocation:'Hotel',itinerary:[],terms:{cancellation:'Terms'}};const ready=c.readiness(quote,totals,noVat,null);assert.ok(ready.blocking.some(x=>x.includes('At least one guest')));assert.ok(ready.blocking.some(x=>x.includes('Target margin')));assert.ok(ready.blocking.some(x=>x.includes('Validity date')));
 console.log('InfraQuote pricing, verification counts, break-even and draft checks passed.');
+const tooSmall=c.selectedVehicleChecks(12,{maxGuests:6,comfortGuests:5},1,true);assert.equal(tooSmall.blocking.length,1);assert.match(tooSmall.blocking[0],/6 configured passenger places for 12 guests/);
+assert.equal(c.selectedVehicleChecks(12,{maxGuests:6,comfortGuests:5},2,false).blocking.length,0);
+assert.equal(c.selectedVehicleChecks(12,{maxGuests:6,comfortGuests:5},2,true).warnings.length,1);
+assert.equal(c.selectedVehicleChecks(12,{maxGuests:18,comfortGuests:15},1,true).blocking.length,0);
+console.log('Selected vehicle capacity regression checks passed.');

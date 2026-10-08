@@ -134,6 +134,9 @@
     const riskLevel = (be?.risk === 'Red' || totals.pending > 2 || rec.warnings.length > 1) ? 'High' : (be?.risk === 'Amber' || totals.pending || rec.warnings.length) ? 'Medium' : 'Controlled';
     const marginStatus = CALC.marginStatus(price.actualMargin, quote.reviewMargin, riskLevel, price.profit);
     const ready = CALC.readiness(quote, totals, price, be);
+    const capacity = CALC.selectedVehicleChecks(totalGuests(), vehicle(), quote.vehicleQty, quote.luggage || ['Comfort','Premium','VIP'].includes(quote.comfortLevel));
+    ready.blocking.push(...capacity.blocking); ready.warnings.push(...capacity.warnings);
+    ready.score = Math.max(0, ready.score - 25 * capacity.blocking.length - 10 * capacity.warnings.length);
     if (lines.some(line => Number(line.quantity) < 0 || Number(line.unitCost) < 0)) { ready.blocking.push('Cost quantities and unit costs must not be negative.'); ready.score = Math.max(0, ready.score - 25); }
     return { lines, totals, price, be, rec, riskLevel, marginStatus, ready };
   }
@@ -232,16 +235,39 @@
     if (hasAirportService() && (!quote.flightNumber || !quote.flightTime)) extraWarnings.push('Airport service requires flight number and flight time before dispatch.');
     if (!quote.guestInterests?.length) extraWarnings.push('No guest interest tags selected; quote may feel generic.');
     const guestCare = experienceInsights().filter(item => !item.startsWith('Planned experience'));
-    const group = (title, items, cls) => `<div class="${cls}"><h3>${title}</h3>${items.length ? `<ul>${items.map(i => `<li>${escape(i)}</li>`).join('')}</ul>` : '<p>None.</p>'}</div>`;
-    $('validationPanel').innerHTML = `<div class="validation-grid">${group('Blocking issues', r.ready.blocking, 'block')}${group('Warnings', [...r.ready.warnings, ...extraWarnings], 'warn')}${group('Guest-experience checks', [...r.ready.suggestions, ...guestCare], 'suggest')}</div>`;
+    const group = (title, items, cls, closed = false) => `<details class="review-check ${cls}" ${closed && items.length ? '' : 'open'}><summary><span>${title}</span><span class="review-count">${items.length}</span></summary>${items.length ? `<ul>${items.map(i => `<li>${escape(i)}</li>`).join('')}</ul>` : '<p class="review-clear">No issues found in these configured checks.</p>'}</details>`;
+    $('validationPanel').innerHTML = `<div class="worksheet-readiness"><strong>${r.ready.blocking.length ? 'Incomplete draft' : escape(r.marginStatus)}</strong><span>Readiness ${r.ready.score}/100</span><span>${r.totals.pending} items awaiting verification</span><span>Experience ${plannedMinutes()} min</span></div><div class="review-checks">${group('Blocking issues', r.ready.blocking, 'block')}${group('Warnings', [...r.ready.warnings, ...extraWarnings], 'warn')}${group('Guest-experience checks', [...r.ready.suggestions, ...guestCare], 'suggest', true)}</div>`;
   }
 
-  function costRows(lines) {
-    return lines.map(l => `<tr><td>${escape(l.name)}</td><td>${escape(l.category)}</td><td>${escape(l.type)}</td><td>${escape(l.quantity)}</td><td>${money(l.unitCost)}</td><td>${money(CALC.costLineTotal(l))}</td><td>${l.include ? 'Yes' : 'No'}</td><td>${escape(l.verification)}</td><td>${escape(l.supplier || '')}</td><td>${escape(l.internalNote || '')}</td></tr>`).join('');
+  function countedCost(line) {
+    return line.include !== false && (line.type !== 'Conditional' || ['Included','Estimated risk'].includes(line.conditionStatus || 'Included'));
   }
-
+  function costDetails(line, expanded = false) {
+    return `<details class="cost-detail" ${expanded ? 'open' : ''}><summary>${expanded ? 'Supplier and cost notes' : 'Details'}</summary><dl><div><dt>Cost treatment</dt><dd>${countedCost(line) ? 'Included in net cost' : 'Not included in net cost'}</dd></div><div><dt>Supplier</dt><dd>${escape(line.supplier || 'To confirm')}</dd></div><div><dt>Internal note</dt><dd>${escape(line.internalNote || 'No additional note')}</dd></div>${line.clientNote ? `<div><dt>Client note</dt><dd>${escape(line.clientNote)}</dd></div>` : ''}</dl></details>`;
+  }
+  function verificationBadge(line) {
+    const verified = line.verification === 'Verified';
+    const label = verified ? 'Verified' : line.verification === 'Internal estimate' ? 'Internal estimate' : 'Needs verification';
+    return `<span class="cost-status ${verified ? 'is-verified' : 'is-pending'}">${label}</span>`;
+  }
+  function costRows(lines, groupIndex) {
+    return lines.map((l, index) => `<tr class="${countedCost(l) ? '' : 'cost-not-included'}"><th scope="row"><strong>${escape(l.name)}</strong><small>${escape(l.type)}${l.type === 'Conditional' ? ' · '+escape(l.conditionStatus || 'Included') : ''}</small></th><td class="cost-number">${escape(l.quantity)}</td><td class="cost-number">${money(l.unitCost)}</td><td class="cost-number"><strong>${money(countedCost(l) ? CALC.costLineTotal(l) : 0)}</strong>${countedCost(l) ? '' : '<small>Not priced</small>'}</td><td>${verificationBadge(l)}</td><td><button type="button" class="cost-note-toggle" aria-expanded="false" aria-controls="cost-notes-${groupIndex}-${index}">Details</button></td></tr><tr id="cost-notes-${groupIndex}-${index}" class="cost-notes-row" hidden><td colspan="6">${costDetails(l, true)}</td></tr>`).join('');
+  }
+  function mobileCostCards(lines) {
+    return lines.map(l => `<article class="cost-mobile-card"><header><h5>${escape(l.name)}</h5>${verificationBadge(l)}</header><p class="cost-type">${escape(l.type)}${l.type === 'Conditional' ? ' · '+escape(l.conditionStatus || 'Included') : ''}</p><dl class="cost-mobile-values"><div><dt>Quantity</dt><dd>${escape(l.quantity)}</dd></div><div><dt>Unit cost</dt><dd>${money(l.unitCost)}</dd></div><div><dt>Total</dt><dd>${money(countedCost(l) ? CALC.costLineTotal(l) : 0)}</dd></div></dl>${countedCost(l) ? '' : '<p>Not included in net cost.</p>'}${costDetails(l)}</article>`).join('');
+  }
   function renderWorksheet(r) {
-    $('internalWorksheet').innerHTML = `<h3>Internal worksheet</h3><div class="worksheet-grid"><div><span>Quote</span><strong>${escape(quote.quoteNo)}</strong></div><div><span>Client</span><strong>${escape(quote.clientCompany || 'Missing')}</strong></div><div><span>Nationality</span><strong>${escape(quote.nationality || 'Missing')}</strong></div><div><span>Guests</span><strong>${totalGuests()}</strong></div><div><span>Vehicle</span><strong>${vehicle().name} x ${escape(quote.vehicleQty)}</strong></div><div><span>Net cost</span><strong>${money(r.totals.netCost)}</strong></div><div><span>Selling before VAT</span><strong>${money(r.price.beforeVat)}</strong></div><div><span>VAT</span><strong>${money(r.price.vatAmount)}</strong></div><div><span>Final price</span><strong>${money(r.price.finalPrice)}</strong></div></div><p class="quote-note">${currencyInfo().note}. Base sample costs are maintained in AED for calculation consistency.</p><div class="table-wrap" tabindex="0" role="region" aria-label="Internal costing worksheet"><table><thead><tr><th>Cost Item</th><th>Category</th><th>Type</th><th>Qty</th><th>Unit</th><th>Total</th><th>Client?</th><th>Verification</th><th>Supplier</th><th>Internal Notes</th></tr></thead><tbody>${costRows(r.lines)}</tbody></table></div>`;
+    const identity = [['Quote reference',quote.quoteNo],['Client',quote.clientCompany || 'Missing'],['Nationality / market',quote.nationality || 'To confirm'],['Guests',`${totalGuests()} (${quote.adults} adults · ${quote.children} children · ${quote.infants} infants)`],['Vehicle',`${vehicle().name} × ${quote.vehicleQty}`],['Service date',quote.serviceDate || 'Missing']];
+    const totals = [['Net cost',r.totals.netCost],['Selling before VAT',r.price.beforeVat],['VAT',r.price.vatAmount],['Final price',r.price.finalPrice]];
+    const groups = new Map();
+    for (const line of r.lines) { const category = line.category || 'Other'; if (!groups.has(category)) groups.set(category,[]); groups.get(category).push(line); }
+    const sections = Array.from(groups,([category,lines],index) => {
+      const subtotal = lines.reduce((sum,line) => sum + (countedCost(line) ? CALC.costLineTotal(line) : 0),0);
+      return `<section class="cost-category" aria-labelledby="cost-category-${index}"><header class="cost-category-header"><h4 id="cost-category-${index}">${escape(category)}</h4><p>${lines.length} item${lines.length === 1 ? '' : 's'} <strong>${money(subtotal)}</strong></p></header><div class="cost-table-wrap" tabindex="0" role="region" aria-label="${escape(category)} costs"><table class="cost-review-table"><caption>${escape(category)} cost breakdown</caption><thead><tr><th scope="col">Cost item</th><th scope="col">Qty</th><th scope="col">Unit cost</th><th scope="col">Total</th><th scope="col">Verification</th><th scope="col">Notes</th></tr></thead><tbody>${costRows(lines,index)}</tbody></table></div><div class="cost-mobile-list">${mobileCostCards(lines)}</div></section>`;
+    }).join('');
+    $('internalWorksheet').innerHTML = `<header class="worksheet-heading"><div><span class="eyebrow">Internal review · Not client output</span><h3>Quotation overview</h3></div><button class="btn secondary" id="exportWorksheetStep7" type="button">Download costs CSV</button></header><dl class="worksheet-identity">${identity.map(([label,value]) => `<div><dt>${label}</dt><dd>${escape(value)}</dd></div>`).join('')}</dl><div class="worksheet-totals">${totals.map(([label,value],i) => `<div class="${i === 3 ? 'is-final' : ''}"><span>${label}</span><strong>${money(value)}</strong></div>`).join('')}</div><div class="worksheet-profit"><span>Profit before VAT <strong>${money(r.price.profit)}</strong></span><span>Margin <strong>${r.price.actualMargin}%</strong></span></div><header class="cost-breakdown-heading"><h3>Cost breakdown</h3><p>Grouped by category. Open Details for supplier and cost-treatment notes.</p></header>${sections}<div class="worksheet-reconciliation"><span>Cost items <strong>${money(r.totals.netCost - r.totals.riskBuffer)}</strong></span><span>Risk buffer <strong>${money(r.totals.riskBuffer)}</strong></span><span>Net cost <strong>${money(r.totals.netCost)}</strong></span></div><details class="worksheet-basis"><summary>Pricing basis and sample-data limits</summary><p>${escape(currencyInfo().note)}. Base sample costs are maintained in AED. Category totals include priced items only; the risk buffer is added separately. Supplier verification and configured vehicle capacities need operational confirmation.</p></details>`;
+    $('exportWorksheetStep7').addEventListener('click',exportWorksheet);
+    $('internalWorksheet').querySelectorAll('.cost-note-toggle').forEach(button => button.addEventListener('click', () => { const row = $(button.getAttribute('aria-controls')); row.hidden = !row.hidden; button.setAttribute('aria-expanded', String(!row.hidden)); button.textContent = row.hidden ? 'Details' : 'Close'; }));
   }
 
   function clientText(r) {
@@ -276,6 +302,7 @@
   function render() {
     fillForm(); renderProgress();
     $$('.quote-step').forEach((s, i) => { s.hidden = i !== step; });
+    document.querySelector('.quote-summary').hidden = step === 6;
     $('prevStep').disabled = step === 0; $('nextStep').textContent = step === 7 ? 'Review again' : 'Next';
     renderItinerary(); renderCosts(); smartPrompts(); renderSummaryOnly();
   }
@@ -289,6 +316,8 @@
     } catch (e) { quote = defaultQuote(); }
   }
   function download(name, content, type = 'text/plain') { const blob = new Blob([content], { type }); const url = URL.createObjectURL(blob); const a = document.createElement('a'); a.href = url; a.download = name; document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url); }
+
+  function exportWorksheet() { const r = results(); const csv = [`Cost Item,Category,Type,Qty,Unit (${quote.currency}),Total (${quote.currency}),Included,Verification,Supplier,Internal Notes`, ...r.lines.map(l => [l.name,l.category,l.type,l.quantity,convert(l.unitCost),convert(CALC.costLineTotal(l)),l.include?'Yes':'No',l.verification,l.supplier||'',l.internalNote||''].map(v => `"${String(v).replace(/"/g,'""')}"`).join(','))].join('\n'); download(`${quote.quoteNo}-worksheet.csv`, csv, 'text/csv'); }
 
   function bind() {
     $('quoteForm').addEventListener('input', () => { readForm(); save(); smartPrompts(); renderSummaryOnly(); });
@@ -304,7 +333,7 @@
     $('addCondition').addEventListener('click', () => { quote.costs.push(costLine('Conditional cost', 'Operations', 'Conditional', 1, 0, true, 'Pending verification', 'Review before sending.', '', 'Pending confirmation')); save(); render(); });
     $('printQuote').addEventListener('click', () => { readForm(); renderSummaryOnly(); window.print(); });
     $('copyClientQuote').addEventListener('click', async () => { readForm(); try { if (!navigator.clipboard) throw new Error('unavailable'); await navigator.clipboard.writeText(clientText(results())); feedback('Client quote text copied.'); } catch (_) { feedback('Copy unavailable. Select the client preview text or use Print client quote / PDF.'); } });
-    $('exportWorksheet').addEventListener('click', () => { const r = results(); const csv = [`Cost Item,Category,Type,Qty,Unit (${quote.currency}),Total (${quote.currency}),Included,Verification,Supplier,Internal Notes`, ...r.lines.map(l => [l.name,l.category,l.type,l.quantity,convert(l.unitCost),convert(CALC.costLineTotal(l)),l.include?'Yes':'No',l.verification,l.supplier||'',l.internalNote||''].map(v => `"${String(v).replace(/"/g,'""')}"`).join(','))].join('\n'); download(`${quote.quoteNo}-worksheet.csv`, csv, 'text/csv'); });
+    $('exportWorksheet').addEventListener('click',exportWorksheet);
     $('exportJson').addEventListener('click', () => { readForm(); download(`${quote.quoteNo}.json`, JSON.stringify({ quote, results: results() }, null, 2), 'application/json'); });
     $('prepareDispatch').addEventListener('click', () => { readForm(); const payload = { serviceDate: quote.serviceDate, tourName: quote.tourTitle, guestCount: totalGuests(), nationality: quote.nationality, guestProfile: quote.guestProfile, comfortLevel: quote.comfortLevel, tourPace: quote.tourPace, tourDifficulty: quote.tourDifficulty, guestInterests: quote.guestInterests, specialOccasion: quote.specialOccasion, mealPreference: quote.mealPreference, pickupLocation: quote.pickupLocation, dropoffLocation: quote.dropoffLocation, pickupTime: quote.pickupTime, itineraryStops: quote.itinerary.map(s => s.name), plannedMinutes: plannedMinutes(), vehicleRecommendation: vehicle().name, guideLanguage: quote.guideLanguage, luggageRequired: quote.luggage, airportPickup: quote.airportPickup || ['Airport pickup', 'Airport pickup and drop-off'].includes(quote.transportMode), airportDropoff: quote.airportDropoff || ['Airport drop-off', 'Airport pickup and drop-off'].includes(quote.transportMode), flightNumber: quote.flightNumber, flightTime: quote.flightTime, terminalNote: quote.terminalNote, waitingPolicy: quote.waitingPolicy, specialRequirements: quote.accessibility, operationalNotes: [...experienceInsights(), ...quote.itinerary.map(s => s.operationalNote).filter(Boolean)], clientConfirmationStatus: quote.quoteStatus }; download(`${quote.quoteNo}-infradispatch-payload.json`, JSON.stringify(payload, null, 2), 'application/json'); });
   }

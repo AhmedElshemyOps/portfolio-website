@@ -68,3 +68,55 @@ body.infraquote-page .step-head{padding-bottom:16px;margin-bottom:20px;border-bo
 /* Long worksheets cannot rely on a percentage-based scroll reveal. */
 body.infraquote-page .quote-step.reveal-on-scroll{opacity:1;transform:none;transition:none}
 body.infraquote-page .quote-actions #saveDraft{background:#e5c77f;color:#10283f;border-color:#e5c77f}
+/* Step 7: compact review checks and a grouped, readable costing ledger. */
+body.infraquote-page .quote-summary[hidden]{display:none!important}
+.review-checks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-bottom:28px;align-items:start}
+.review-check{border:1px solid #ded5c5;border-top:3px solid #795b20;border-radius:3px;background:#fff;min-width:0}
+.review-check.block{border-top-color:#a32828!important}.review-check.warn{border-top-color:#a85c0b!important}.review-check.suggest{grid-column:1/-1;border-top-color:#244057!important;background:#fcfaf5}
+.review-check summary{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:14px 16px;cursor:pointer;font-weight:600;list-style:revert;min-height:48px;color:#10283f}
+.review-check summary::after{content:'+';font-size:1.2rem}.review-check[open] summary::after{content:'−'}
+.review-count{margin-left:auto;padding:2px 9px;border:1px solid #ded5c5;border-radius:3px;font-size:.875rem;font-variant-numeric:tabular-nums;background:#fcfaf5}
+.review-check ul{padding:0 18px 0 34px;margin:0 0 16px}.review-check li{padding:4px 0;line-height:1.6;font-size:.95rem;overflow-wrap:anywhere}
+.review-check .review-clear{padding:0 16px 16px;margin:0;color:#526054;font-size:.95rem}
+.worksheet-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:20px;flex-wrap:wrap}
+.worksheet-heading h3,.cost-breakdown-heading h3{font:600 1.65rem/1.25 var(--serif,Georgia);color:#10283f;margin:8px 0}
+.worksheet-heading .btn{font-size:.875rem;min-height:44px}
+.worksheet-identity{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px 24px;margin:0 0 24px;padding:20px 0;border-block:1px solid #ded5c5}
+.worksheet-identity div{min-width:0}.worksheet-identity dt{color:#596572;font-size:.8rem;line-height:1.5;margin-bottom:7px}.worksheet-identity dd{margin:0;color:#10283f;font-size:1rem;line-height:1.55;font-weight:600;overflow-wrap:anywhere}
+.worksheet-totals{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:0 0 12px}
+.worksheet-totals>div{padding:16px;background:#f3eee4;border:1px solid #ded5c5;border-radius:3px;min-width:0}
+.worksheet-totals span{display:block;font-size:.8rem;color:#596572;line-height:1.4;margin-bottom:10px}
+.worksheet-totals strong{display:block;font-size:clamp(1rem,1.5vw,1.3rem);font-weight:700;line-height:1.4;overflow-wrap:anywhere;font-variant-numeric:tabular-nums}
+.worksheet-totals .is-final{background:#10283f;color:#fff;border-color:#10283f}.worksheet-totals .is-final span{color:#e5c77f}
+.worksheet-profit{display:flex;gap:12px 28px;flex-wrap:wrap;padding:8px 0 20px;font-size:.95rem;color:#596572}.worksheet-profit strong{margin-left:8px;color:#10283f;font-variant-numeric:tabular-nums}
+.cost-breakdown-heading{margin:18px 0 20px}.cost-breakdown-heading p{font-size:.95rem;line-height:1.6;color:#596572;margin:8px 0}
+.cost-category{margin:0 0 24px;border:1px solid #ded5c5;border-radius:3px;background:#fff;min-width:0}
+.cost-category-header{padding:14px 18px;display:flex;justify-content:space-between;align-items:center;gap:12px;background:#f3eee4;border-bottom:1px solid #ded5c5}
+.cost-category-header h4{font:600 1.15rem/1.4 var(--sans,Arial);margin:0;color:#10283f}.cost-category-header p{margin:0;font-size:.85rem;color:#596572}.cost-category-header strong{display:inline-block;margin-left:12px;color:#10283f;font-size:1rem;font-variant-numeric:tabular-nums}
+.cost-table-wrap{max-width:100%;overflow:auto}.cost-table-wrap:focus-visible{outline:3px solid #795b20;outline-offset:3px}
+body.infraquote-page table.cost-review-table{width:100%;min-width:0;table-layout:fixed;border-collapse:collapse;background:#fff}
+.cost-review-table caption{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip-path:inset(50%)}
+body.infraquote-page .cost-review-table th,body.infraquote-page .cost-review-table td{padding:14px 10px;font-size:.875rem;line-height:1.5;border:0;border-bottom:1px solid #e7e0d4;vertical-align:top;color:#10283f;background:#fff;overflow-wrap:anywhere;text-align:left}
+body.infraquote-page .cost-review-table thead th{background:#fcfaf5;color:#596572;font-size:.75rem;font-weight:600;text-transform:none;letter-spacing:0}
+.cost-review-table thead th:first-child{width:30%}.cost-review-table thead th:nth-child(2){width:6%}.cost-review-table thead th:nth-child(3),.cost-review-table thead th:nth-child(4){width:14%}.cost-review-table thead th:nth-child(5){width:23%}.cost-review-table thead th:nth-child(6){width:13%}
+.cost-review-table tbody th{font-weight:400}.cost-review-table tbody th strong{font-size:.95rem;font-weight:600}.cost-review-table small{display:block;margin-top:6px;color:#596572;font-size:.75rem;line-height:1.4}.cost-review-table .cost-number{font-variant-numeric:tabular-nums;text-align:right}.cost-review-table tbody tr:last-child>*{border-bottom:0}.cost-review-table tbody tr:hover>*{background:#fcfaf5}
+.cost-status{display:inline-flex;align-items:center;padding:5px 8px;border:1px solid #c9b58d;color:#715119;background:#fbf4e5;border-radius:3px;font-size:.75rem;line-height:1.4;max-width:100%;box-sizing:border-box}.cost-status.is-verified{border-color:#a8bcab;color:#28523b;background:#f0f6ef}
+.cost-detail summary{padding:0;min-height:44px;color:#795b20;cursor:pointer;font-size:.85rem;font-weight:600;line-height:1.5}
+.cost-detail[open]{background:#fcfaf5}.cost-detail dl{margin:0;font-size:.85rem}.cost-detail dl>div{margin:0 0 12px}.cost-detail dt{font-weight:600;color:#10283f}.cost-detail dd{margin:4px 0 0;line-height:1.6;color:#596572;overflow-wrap:anywhere}
+.cost-mobile-list{display:none}
+.worksheet-reconciliation{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:14px 24px;padding:20px;background:#f3eee4;border:1px solid #ded5c5;border-radius:3px}.worksheet-reconciliation span{font-size:.9rem}.worksheet-reconciliation strong{display:block;margin-top:7px;font-size:1.1rem;color:#10283f;font-variant-numeric:tabular-nums}
+.worksheet-basis{margin:20px 0 0;border-top:1px solid #ded5c5}.worksheet-basis summary{padding:16px 0;min-height:44px;font-size:.95rem;font-weight:600;cursor:pointer;color:#10283f}.worksheet-basis p{font-size:.9rem;line-height:1.7;color:#596572}
+@media(max-width:760px){.review-checks{grid-template-columns:minmax(0,1fr)}.review-check.suggest{grid-column:1}.worksheet-identity{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.worksheet-totals{grid-template-columns:repeat(2,minmax(0,1fr))}.cost-table-wrap{display:none}.cost-mobile-list{display:grid}.cost-mobile-card{padding:18px;border-bottom:1px solid #ded5c5}.cost-mobile-card:last-child{border-bottom:0}.cost-mobile-card header{display:flex;align-items:start;justify-content:space-between;gap:12px;flex-wrap:wrap}.cost-mobile-card h5{font:600 1rem/1.5 var(--sans,Arial);margin:0;color:#10283f}.cost-type{font-size:.8rem;color:#596572;margin:10px 0 14px}.cost-mobile-values{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:0 0 16px}.cost-mobile-values dt{font-size:.75rem;color:#596572;margin-bottom:6px}.cost-mobile-values dd{font-size:.9rem;font-weight:600;font-variant-numeric:tabular-nums;margin:0;overflow-wrap:anywhere;color:#10283f}.cost-detail summary{padding:10px 0;box-sizing:border-box}.cost-category-header{padding:14px;align-items:start;flex-wrap:wrap}.worksheet-reconciliation{justify-content:space-between}.cost-detail[open]{padding:0 10px 12px}.worksheet-heading .btn{width:100%}}
+@media(max-width:380px){.worksheet-identity{grid-template-columns:minmax(0,1fr)}.worksheet-totals strong{font-size:1rem}.worksheet-totals>div{padding:12px}.worksheet-profit span{display:block;width:100%}}
+
+body.infraquote-page .cost-review-table td.cost-number{text-align:right}
+body.infraquote-page .cost-review-table tbody th{text-transform:none;letter-spacing:0;font-weight:400}
+.cost-notes-row[hidden]{display:none!important}
+.cost-note-toggle{min-height:44px;padding:6px 10px;border:1px solid #ded5c5;border-radius:3px;background:#fcfaf5;color:#795b20;font:600 .8rem/1.4 Arial;cursor:pointer}
+.cost-note-toggle:focus-visible{outline:3px solid #795b20;outline-offset:3px}
+body.infraquote-page .cost-review-table .cost-notes-row td{padding:18px;background:#fcfaf5}
+.cost-notes-row .cost-detail summary{display:none}
+.cost-notes-row .cost-detail dl{display:grid;grid-template-columns:1fr 1fr 2fr;gap:20px}
+.cost-notes-row .cost-detail dl>div{margin:0}
+
+.worksheet-readiness{display:flex;flex-wrap:wrap;align-items:center;gap:10px 20px;padding:14px 18px;margin:0 0 18px;background:#f3eee4;border:1px solid #ded5c5;color:#10283f;font-size:.85rem}.worksheet-readiness strong{margin-right:auto;font-size:.95rem}

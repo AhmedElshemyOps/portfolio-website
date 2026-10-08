@@ -97,6 +97,12 @@ window.INFRAQUOTE_CALC = (() => {
     return { variablePerGuest: money(variablePerGuest), contributionPerGuest: money(contribution), breakEvenGuests, revenue, variableAtCurrent, contributionAtCurrent, profit, risk };
   }
 
+  function selectedVehicleChecks(guests, vehicle, quantity, comfortRequired = false) {
+    const capacity = Number(vehicle.maxGuests) * Number(quantity);
+    const comfortCapacity = Number(vehicle.comfortGuests) * Number(quantity);
+    return { blocking: guests > capacity ? [`Selected transport has ${capacity} configured passenger places for ${guests} guests. Increase vehicle quantity or select a larger vehicle.`] : [], warnings: guests <= capacity && comfortRequired && guests > comfortCapacity ? [`Selected transport exceeds the configured comfort capacity of ${comfortCapacity}. Review luggage and comfort requirements.`] : [] };
+  }
+
   function readiness(quote, totals, pricingResult, breakEvenResult) {
     const blocking = [];
     const warnings = [];
@@ -126,5 +132,5 @@ window.INFRAQUOTE_CALC = (() => {
     return { blocking, warnings, suggestions, score: Math.max(0, 100 - blocking.length * 25 - warnings.length * 10 - suggestions.length * 3) };
   }
 
-  return { money, quoteReference, recommendVehicle, costLineTotal, classifyCosts, priceFromMarkup, priceFromMargin, pricing, marginStatus, breakEven, readiness };
+  return { money, quoteReference, recommendVehicle, selectedVehicleChecks, costLineTotal, classifyCosts, priceFromMarkup, priceFromMargin, pricing, marginStatus, breakEven, readiness };
 })();
