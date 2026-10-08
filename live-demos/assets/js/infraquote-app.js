@@ -49,7 +49,7 @@
   }
 
   function stopFromAttraction(item) {
-    return { id: crypto.randomUUID ? crypto.randomUUID() : String(Date.now() + Math.random()), attractionId: item.id, name: item.name, duration: item.defaultDuration, drive: 20, status: 'Included', ticketRequired: item.ticketRequired, ticketVerification: item.verification, adultTicket: item.adult, childTicket: item.child, infantTicket: item.infant, operationalNote: item.note, clientNote: item.ticketRequired ? 'Entrance subject to official availability and ticket policy.' : item.note };
+    return { id: crypto.randomUUID ? crypto.randomUUID() : String(Date.now() + Math.random()), attractionId: item.id, name: item.name, duration: item.defaultDuration, drive: 20, status: 'Included', ticketRequired: item.ticketRequired, ticketVerification: ['Verified', 'Pending verification', 'Not required', 'Client pays directly'].includes(item.verification) ? item.verification : 'Pending verification', adultTicket: item.adult, childTicket: item.child, infantTicket: item.infant, operationalNote: item.note, clientNote: item.ticketRequired ? 'Entrance subject to official availability and ticket policy.' : item.note };
   }
 
   function costLine(name, category, type, quantity, unitCost, include = true, verification = 'Pending verification', internalNote = '', clientNote = '', conditionStatus = 'Included') {
@@ -134,6 +134,7 @@
     const riskLevel = (be?.risk === 'Red' || totals.pending > 2 || rec.warnings.length > 1) ? 'High' : (be?.risk === 'Amber' || totals.pending || rec.warnings.length) ? 'Medium' : 'Controlled';
     const marginStatus = CALC.marginStatus(price.actualMargin, quote.reviewMargin, riskLevel, price.profit);
     const ready = CALC.readiness(quote, totals, price, be);
+    if (lines.some(line => Number(line.quantity) < 0 || Number(line.unitCost) < 0)) { ready.blocking.push('Cost quantities and unit costs must not be negative.'); ready.score = Math.max(0, ready.score - 25); }
     return { lines, totals, price, be, rec, riskLevel, marginStatus, ready };
   }
 

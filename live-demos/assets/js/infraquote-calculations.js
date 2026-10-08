@@ -104,6 +104,8 @@ window.INFRAQUOTE_CALC = (() => {
     const guests = Number(quote.adults || 0) + Number(quote.children || 0) + Number(quote.infants || 0);
     if (guests <= 0) blocking.push('At least one guest is required.');
     if ([quote.adults, quote.children, quote.infants].some(n => Number(n) < 0 || !Number.isInteger(Number(n)))) blocking.push('Guest counts must be non-negative whole numbers.');
+    if (!(quote.vehicleQty >= 1) || !Number.isInteger(Number(quote.vehicleQty))) blocking.push('Vehicle quantity must be a positive whole number.');
+    if (Number(quote.handlingFee) < 0 || Number(quote.riskBuffer) < 0) blocking.push('Handling fee and risk buffer must not be negative.');
     if (!(quote.rounding > 0)) blocking.push('Rounding increment must be greater than zero.');
     if (quote.pricingMethod === 'margin' && !(quote.targetMargin >= 0 && quote.targetMargin < 100)) blocking.push('Target margin must be between 0 and less than 100%.');
     if (quote.quoteDate && quote.validityDate && quote.validityDate < quote.quoteDate) blocking.push('Validity date cannot precede the quotation date.');
