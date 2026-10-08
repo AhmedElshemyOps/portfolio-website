@@ -21,7 +21,7 @@ assert.equal(NL.city.attractions.length, 25);
 assert.equal(
   NL.city.attractions.filter((a) => a.ticketRequired && a.reference.checked)
     .length,
-  9,
+  15,
 );
 assert(
   NL.city.attractions
@@ -167,4 +167,47 @@ assert(NL.setup(2).itineraryIds.includes("nemo"));
 assert.equal(NL.setup().vatMode, "pending");
 console.log(
   "Amsterdam age bands, unknown prices, date confirmation, local operating rules, native currency and tax calculations passed.",
+);
+
+assert.equal(
+  total("van-gogh"),
+  75,
+  "18-year-olds pay adult admission at Van Gogh",
+);
+assert.equal(total("hortus"), 52.75);
+assert.equal(total("resistance"), 62);
+assert.equal(
+  total("foam"),
+  48,
+  "13+ use the standard rate unless a discount is confirmed",
+);
+assert(
+  NL.checks({
+    ...base,
+    adults: 1,
+    children: 1,
+    guestAges: "40,17",
+    itinerary: [
+      {
+        attractionId: "heineken",
+        name: "Heineken",
+        status: "Included",
+        ticketRequired: false,
+      },
+    ],
+  }).blocking.some((x) => x.includes("restricted")),
+);
+assert(
+  NL.checks({
+    ...base,
+    serviceDate: "2026-12-25",
+    itinerary: [
+      {
+        attractionId: "hortus",
+        name: "Hortus",
+        status: "Included",
+        ticketRequired: false,
+      },
+    ],
+  }).blocking.some((x) => x.includes("closed")),
 );

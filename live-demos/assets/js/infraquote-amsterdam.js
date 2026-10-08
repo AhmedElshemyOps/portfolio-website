@@ -386,27 +386,28 @@
       defaultDuration: 120,
       ticketRequired: true,
       verification: "Pending verification",
-      adult: null,
+      adult: 25,
       child: null,
       infant: null,
-      ageBands: [],
+      ageBands: [
+        { min: 0, max: 17, price: 0 },
+        { min: 18, max: 120, price: 25 },
+      ],
       timedEntry: true,
       centreWalk: false,
       note: "Confirm selected product, visit date, group access, cancellation and accessibility with the operator.",
       reference: {
-        source:
-          "https://www.vangoghmuseum.nl/en/visit/tickets-and-ticket-prices",
-        hoursSource:
-          "https://www.vangoghmuseum.nl/en/visit/tickets-and-ticket-prices",
-        termsSource:
-          "https://www.vangoghmuseum.nl/en/visit/tickets-and-ticket-prices",
-        checked: "",
-        basis: "Research candidate; current product and price pending",
+        source: "https://tickets.vangoghmuseum.nl/en/tickets",
+        hoursSource: "https://tickets.vangoghmuseum.nl/en/tickets",
+        termsSource: "https://tickets.vangoghmuseum.nl/en/tickets",
+        checked: "2026-10-08",
+        basis:
+          "Dated public admission reference; availability and supplier confirmation pending",
         price:
-          "Price not confirmed. Enter the selected product rate; blank does not mean free.",
+          "Adult EUR 25; under 18 free. Optional audio guides and eligibility discounts excluded.",
         hours: "Opening hours and exceptions require service-date review.",
         terms:
-          "Review current booking, group, amendment and cancellation conditions before confirmation.",
+          "Every visitor needs a dated, timed ticket, including free admission. Tickets are non-refundable. Groups must use the group booking route; individual tickets are not valid for group bookings.",
       },
     },
     {
@@ -470,24 +471,31 @@
       defaultDuration: 90,
       ticketRequired: true,
       verification: "Pending verification",
-      adult: null,
+      adult: 14.75,
       child: null,
       infant: null,
-      ageBands: [],
-      timedEntry: true,
+      ageBands: [
+        { min: 0, max: 4, price: 0 },
+        { min: 5, max: 17, price: 8.5 },
+        { min: 18, max: 120, price: 14.75 },
+      ],
+      timedEntry: false,
       centreWalk: false,
+      closedMonthDays: ["01-01", "12-25"],
       note: "Confirm selected product, visit date, group access, cancellation and accessibility with the operator.",
       reference: {
-        source: "https://www.dehortus.nl/",
-        hoursSource: "https://www.dehortus.nl/",
-        termsSource: "https://www.dehortus.nl/",
-        checked: "",
-        basis: "Research candidate; current product and price pending",
+        source: "https://www.dehortus.nl/bezoek/",
+        hoursSource: "https://www.dehortus.nl/bezoek/",
+        termsSource: "https://www.dehortus.nl/bezoek/",
+        checked: "2026-10-08",
+        basis:
+          "Dated public admission reference; availability and supplier confirmation pending",
         price:
-          "Price not confirmed. Enter the selected product rate; blank does not mean free.",
-        hours: "Opening hours and exceptions require service-date review.",
+          "Adult EUR 14.75; ages 5–17 EUR 8.50; ages 0–4 free, following the Dutch visitor page.",
+        hours:
+          "Daily 10:00–17:00; closed 1 January and 25 December. Confirm special-event exceptions.",
         terms:
-          "Review current booking, group, amendment and cancellation conditions before confirmation.",
+          "Card payments only. Museumkaart is not accepted. Confirm group arrangements and current amendment/cancellation terms separately.",
       },
     },
     {
@@ -524,51 +532,66 @@
       defaultDuration: 90,
       ticketRequired: true,
       verification: "Pending verification",
-      adult: null,
+      adult: 17.5,
       child: null,
       infant: null,
-      ageBands: [],
-      timedEntry: true,
+      ageBands: [
+        { min: 0, max: 6, price: 0 },
+        { min: 7, max: 17, price: 9.5 },
+        { min: 18, max: 120, price: 17.5 },
+      ],
+      timedEntry: false,
       centreWalk: false,
       note: "Confirm selected product, visit date, group access, cancellation and accessibility with the operator.",
       reference: {
-        source: "https://www.verzetsmuseum.org/",
-        hoursSource: "https://www.verzetsmuseum.org/",
-        termsSource: "https://www.verzetsmuseum.org/",
-        checked: "",
-        basis: "Research candidate; current product and price pending",
+        source: "https://www.verzetsmuseum.org/nl/tickets-en-prijzen",
+        hoursSource: "https://www.verzetsmuseum.org/nl/tickets-en-prijzen",
+        termsSource: "https://www.verzetsmuseum.org/nl/tickets-en-prijzen",
+        checked: "2026-10-08",
+        basis:
+          "Dated public admission reference; availability and supplier confirmation pending",
         price:
-          "Price not confirmed. Enter the selected product rate; blank does not mean free.",
+          "Adult EUR 17.50; ages 7–17 EUR 9.50; ages 0–6 free. Standard admission includes an audio tour.",
         hours: "Opening hours and exceptions require service-date review.",
         terms:
-          "Review current booking, group, amendment and cancellation conditions before confirmation.",
+          "Tickets available online or on arrival. Family and card-holder products have separate eligibility. Confirm group and cancellation terms before booking.",
       },
     },
     {
       id: "jewish-museum",
-      name: "Jewish Museum / Cultural Quarter",
+      name: "Jewish Museum + Portuguese Synagogue · duoticket",
       type: "Museum",
       defaultDuration: 120,
       ticketRequired: true,
       verification: "Pending verification",
-      adult: null,
+      adult: 20,
       child: null,
       infant: null,
-      ageBands: [],
+      ageBands: [
+        { min: 0, max: 5, price: 0 },
+        { min: 6, max: 12, price: 6 },
+        { min: 13, max: 17, price: 8 },
+        { min: 18, max: 120, price: 20 },
+      ],
       timedEntry: true,
       centreWalk: false,
       note: "Confirm selected product, visit date, group access, cancellation and accessibility with the operator.",
       reference: {
-        source: "https://jck.nl/",
-        hoursSource: "https://jck.nl/",
-        termsSource: "https://jck.nl/",
-        checked: "",
-        basis: "Research candidate; current product and price pending",
+        source:
+          "https://ticket.jck.nl/nl/joods-museum-portugese-synagoge/tickets",
+        hoursSource:
+          "https://ticket.jck.nl/nl/joods-museum-portugese-synagoge/tickets",
+        termsSource:
+          "https://ticket.jck.nl/nl/joods-museum-portugese-synagoge/tickets",
+        checked: "2026-10-08",
+        basis:
+          "Dated public admission reference; availability and supplier confirmation pending",
         price:
-          "Price not confirmed. Enter the selected product rate; blank does not mean free.",
-        hours: "Opening hours and exceptions require service-date review.",
+          "Online duoticket: adult EUR 20; ages 13–17 EUR 8; ages 6–12 EUR 6; ages 0–5 free. This is not the four-venue combiticket.",
+        hours:
+          "Normally 11:00–17:00; Portuguese Synagogue closed Saturdays and some Jewish holidays. Museum access is separate; check each venue.",
         terms:
-          "Review current booking, group, amendment and cancellation conditions before confirmation.",
+          "Includes Jewish Museum/Junior and Portuguese Synagogue; valid one week from the selected date. Groups of eight or more must reserve through the group route. Review cancellation conditions separately.",
       },
     },
     {
@@ -578,24 +601,28 @@
       defaultDuration: 90,
       ticketRequired: true,
       verification: "Pending verification",
-      adult: null,
+      adult: 16.5,
       child: null,
       infant: null,
-      ageBands: [],
-      timedEntry: true,
+      ageBands: [
+        { min: 0, max: 17, price: 0 },
+        { min: 18, max: 120, price: 16.5 },
+      ],
+      timedEntry: false,
       centreWalk: false,
       note: "Confirm selected product, visit date, group access, cancellation and accessibility with the operator.",
       reference: {
-        source: "https://www.eyefilm.nl/en",
-        hoursSource: "https://www.eyefilm.nl/en",
-        termsSource: "https://www.eyefilm.nl/en",
-        checked: "",
-        basis: "Research candidate; current product and price pending",
+        source: "https://www.eyefilm.nl/en/plan-your-visit",
+        hoursSource: "https://www.eyefilm.nl/en/plan-your-visit",
+        termsSource: "https://www.eyefilm.nl/en/plan-your-visit",
+        checked: "2026-10-08",
+        basis:
+          "Dated public admission reference; availability and supplier confirmation pending",
         price:
-          "Price not confirmed. Enter the selected product rate; blank does not mean free.",
+          "Exhibition adult EUR 16.50; ages 0–17 free. Film tickets are a different product; temporary exhibitions may have supplements.",
         hours: "Opening hours and exceptions require service-date review.",
         terms:
-          "Review current booking, group, amendment and cancellation conditions before confirmation.",
+          "Purchased tickets cannot be exchanged or refunded. Card payments only. Groups above eight should register in advance; confirm the selected exhibition and any supplement.",
       },
     },
     {
@@ -605,24 +632,28 @@
       defaultDuration: 75,
       ticketRequired: true,
       verification: "Pending verification",
-      adult: null,
+      adult: 16,
       child: null,
       infant: null,
-      ageBands: [],
-      timedEntry: true,
+      ageBands: [
+        { min: 0, max: 12, price: 0 },
+        { min: 13, max: 120, price: 16 },
+      ],
+      timedEntry: false,
       centreWalk: false,
       note: "Confirm selected product, visit date, group access, cancellation and accessibility with the operator.",
       reference: {
-        source: "https://www.foam.org/",
-        hoursSource: "https://www.foam.org/",
-        termsSource: "https://www.foam.org/",
-        checked: "",
-        basis: "Research candidate; current product and price pending",
+        source: "https://www.foam.org/visit",
+        hoursSource: "https://www.foam.org/visit",
+        termsSource: "https://www.foam.org/visit",
+        checked: "2026-10-08",
+        basis:
+          "Dated public admission reference; availability and supplier confirmation pending",
         price:
-          "Price not confirmed. Enter the selected product rate; blank does not mean free.",
+          "Standard admission EUR 16; ages 0–12 free. Discounted student/CJP products require eligibility and are not a general youth rate.",
         hours: "Opening hours and exceptions require service-date review.",
         terms:
-          "Review current booking, group, amendment and cancellation conditions before confirmation.",
+          "Card payments only. Historic premises are not fully wheelchair accessible; confirm suitability with the venue. Review group and cancellation conditions before booking.",
       },
     },
     {
@@ -746,11 +777,12 @@
       ageBands: [],
       timedEntry: true,
       centreWalk: false,
-      note: "Confirm selected product, visit date, group access, cancellation and accessibility with the operator.",
+      note: "Admission is strictly 18+, including accompanied guests. Current product price remains pending.",
       reference: {
         source: "https://www.heinekenexperience.com/",
         hoursSource: "https://www.heinekenexperience.com/",
-        termsSource: "https://www.heinekenexperience.com/",
+        termsSource:
+          "https://www.heinekenexperience.com/en/children-and-minors",
         checked: "",
         basis: "Research candidate; current product and price pending",
         price:
@@ -995,13 +1027,32 @@
           s.name +
             ": public reference is older than 30 days; refresh before quoting.",
         );
+      const admission = attractions.find((a) => a.id === s.attractionId);
       if (
-        s.attractionId === "heineken" &&
-        ages(q.guestAges).some((a) => a < 18)
+        admission &&
+        admission.closedMonthDays &&
+        admission.closedMonthDays.includes(String(q.serviceDate || "").slice(5))
       )
-        warnings.push(
-          "Heineken Experience: verify minimum admission age before inclusion.",
+        blocking.push(
+          s.name +
+            ": closed on the selected service date; choose another date or attraction.",
         );
+      if (s.attractionId === "heineken") {
+        const guestAges = ages(q.guestAges);
+        if (
+          guestAges.length !==
+          Number(q.adults || 0) +
+            Number(q.children || 0) +
+            Number(q.infants || 0)
+        )
+          blocking.push(
+            "Heineken Experience: enter every guest age to check 18+ admission.",
+          );
+        else if (guestAges.some((a) => a < 18))
+          blocking.push(
+            "Heineken Experience: admission is restricted to ages 18 and above, including accompanied guests.",
+          );
+      }
     }
     return { blocking, warnings };
   }
