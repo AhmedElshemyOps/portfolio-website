@@ -64,33 +64,9 @@ for p in sorted((ROOT/'series').glob('*/index.html')):
  item.update(id=item.get('id',p.parent.name),type='Series index',contentType='Series index',url=url,title=title,description=match(r'<meta\s+name="description"\s+content="([^"]*)"',page),pillar='Operational Excellence & SOPs' if track_b else 'Hotel & Serviced Apartment AI' if hotel else 'Market Intelligence & Product Discovery',series='Hotel Apartment Operational Excellence' if track_b else 'Hotel AI Operations Playbook' if hotel else 'Amsterdam Product Discovery')
  item.setdefault('category',item['series']);item.setdefault('tags',[item['series']]);item.setdefault('readingTime',1);item.setdefault('wordCount',0)
  registry.append(item)
-assert len({x['url'] for x in registry})==len(registry)
-write_json('article-registry.json',registry)
-write_json('discovery-index.json',[x for x in old if x.get('type') not in ['Article','Series index']]+registry)
+from article_catalogue import refresh
+refresh(ROOT,registry)
 articles=[x for x in registry if x['type']=='Article']
-write_json('articles.json',[dict(title=x['title'],slug=x['id'],url=x['url'],category=x['category'],pillar=x['pillar'],summary=x['description'],status='Published',readingTime=x['readingTime'],source='Published article registry') for x in articles])
-write_json('article-stats.json',[dict(slug=x['id'],wordCount=x['wordCount']) for x in articles])
-content=json.loads((ROOT/'content/content-index.json').read_text())
-content['articles']=[dict(title=x['title'],slug=x['id'],category=x['category'],summary=x['description'],canonical='https://ahmedqualityops.com'+x['url'],readingMinutes=x['readingTime']) for x in articles]
-write_json('content-index.json',content)
-# Generate Knowledge Hub cards and filters from the same records used by search.
-p=ROOT/'knowledge/index.html';s=p.read_text()
-# Release batches are now represented in the unified catalogue, not duplicated grids.
-s=re.sub(r'<section class="knowledge-browser"><header><span class="eyebrow">Track B · New release</span>.*?</section>', '', s, flags=re.S)
-for field in ['pillar','series','type']:
- key='contentType' if field=='type' else field
- values=sorted({x[key] if x['type']!='Series index' or field!='type' else 'Series index' for x in registry})
- options='<option value="">All '+{'pillar':'topics','series':'series','type':'types'}[field]+'</option>'+''.join('<option value="'+escape(v,quote=True)+'">'+escape(display_topic(v))+'</option>' for v in values)
- s=re.sub(r'(<select data-knowledge-filter="'+field+r'">).*?(</select>)',lambda m:m[1]+options+m[2],s,flags=re.S)
-cards=[]
-for x in registry:
- typ='Series index' if x['type']=='Series index' else x['contentType']
- attrs=' '.join('data-'+k+'="'+escape(str(v),quote=True)+'"' for k,v in dict(pillar=x['pillar'],series=x['series'],type=typ,search=' '.join([x['title'],x['description'],*x['tags']]).lower()).items())
- label=x['series']+' · '+('Series index' if typ=='Series index' else str(x['readingTime'])+' min read')
- cards.append('<article class="knowledge-card" data-knowledge-card '+attrs+'><a href="'+escape(x['url'])+'"><span>'+escape(display_topic(x['pillar']))+'</span><h2>'+escape(x['title'])+'</h2><p>'+escape(x['description'])+'</p><small>'+escape(label)+'</small></a></article>')
-s=re.sub(r'<div class="knowledge-grid">.*?</div>(?=<div class="knowledge-empty")','<div class="knowledge-grid">'+''.join(cards)+'</div>',s,flags=re.S)
-s=re.sub(r'"numberOfItems":\s*\d+','"numberOfItems":'+str(len(registry)),s)
-p.write_text(s)
 # All editorial pages use the same header/footer; demos retain their app controls.
 count=0
 for p in ROOT.rglob('*.html'):

@@ -141,19 +141,7 @@
 .path-steps button{width:100%}
 .newsletter-signup{padding-inline:18px}
 .global-search{width:calc(100% - 16px)}}
-.discovery-page{background:#fff}
-.discovery-hero{border-bottom:2px solid #050505;background:#fff}
-.discovery-hero h1,.featured-strip h2,.knowledge-browser h2,.path-card h2,.knowledge-card h2,.resource-grid h2{font-family:'IBM Plex Sans',Arial,sans-serif;font-weight:600;text-transform:uppercase}
-.featured-strip>div,.featured-strip a,.knowledge-browser,.knowledge-filters,.knowledge-card,.path-card,.resource-grid article{border-color:#050505}
-.featured-strip a:hover,.featured-strip a:focus-visible{background:#050505}
-.featured-strip small,.featured-strip span,.path-card>span,.knowledge-card>a>span,.resource-grid article>span{color:#ef1b16}
-.knowledge-filters{background:#f3f3f1}
-.knowledge-filters select,.knowledge-filters input,.knowledge-filters button{border-color:#050505;border-radius:0}
-.knowledge-grid{gap:28px 22px}
-.knowledge-card{border-top:4px solid #ef1b16}
-.knowledge-card a{grid-template-rows:auto auto 1fr auto;padding:18px 0 0}
-.knowledge-card a:hover h2,.knowledge-card a:focus-visible h2{color:#ef1b16}
-.path-card,.resource-grid article{border-radius:0;box-shadow:none}
+/* The shared navy, warm-white and gold theme owns these components. */
 html{scroll-padding-top:104px}
 body{background:var(--paper);color:var(--ink)}
 .discovery-page{background:var(--paper)}
