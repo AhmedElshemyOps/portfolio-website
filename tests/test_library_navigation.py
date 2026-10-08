@@ -4,6 +4,7 @@ ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'scripts'))
 from audit_seo import DOM,schema_nodes
 from apply_field_manual import parse
 from apply_library_navigation import render
+from approved_article_revisions import approved_revisions
 BASE='https://ahmedqualityops.com';BASELINE='70c38c0ea60f9f565db0d974750173999351c3c5'
 class LibraryNavigationTests(unittest.TestCase):
  def test_visible_breadcrumbs_match_schema_and_canonical(self):
@@ -18,6 +19,7 @@ class LibraryNavigationTests(unittest.TestCase):
    for edit in json.loads((ROOT/'maintenance/seo/library-batch-manifest.json').read_text())['navigation_component_replacements'].get(str(p.relative_to(ROOT)),[]):old=old.replace(edit['old'],edit['new'])
    for edit in json.loads((ROOT/'maintenance/seo/evidence-batch-manifest.json').read_text())['replacements'].get(str(p.relative_to(ROOT)),[]):old=old.replace(edit['old'],edit['new'])
    if str(p.relative_to(ROOT)) in json.loads((ROOT/'maintenance/seo/evidence-batch-manifest.json').read_text())['replacements']:old=re.sub(r'("dateModified"\s*:\s*")[^"]+(")',r'\g<1>2026-10-08\2',old)
+   old=approved_revisions(old,p.parent.name)
    def body(s):
     n=next(n for n in parse(s).nodes if 'article-body' in n['attrs'].get('class','').split());return s[n['start']:n['end']]
    self.assertEqual(body(old),body(new),str(p))

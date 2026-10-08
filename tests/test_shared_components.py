@@ -13,6 +13,42 @@ from update_site_contact import apply as update_contact
 
 
 class SharedComponents(unittest.TestCase):
+    def test_duplicate_reader_assets_are_removed_without_changing_content_or_order(self):
+        css = '<link rel="stylesheet" href="/assets/css/reader-experience.css"/>'
+        script = '<script defer src="/assets/js/reader-experience.js"></script>'
+        preload = '<link rel="preload" href="/assets/css/reader-experience.css" as="style"/>'
+        other = '<script src="/assets/js/example.js"></script>'
+        body = '<main><h1>Research</h1><a href="#evidence">Evidence</a><p id="evidence">Unchanged.</p></main>'
+        source = '<html><head>' + preload + css + script + other + (css + script) * 12 + other + '</head><body>' + body + '</body></html>'
+        result = render(source, ROOT / 'resources/index.html')
+        self.assertEqual(result.count(css), 1)
+        self.assertEqual(result.count(script), 1)
+        self.assertEqual(result.count(other), 2, 'Unrelated scripts must not be silently removed.')
+        self.assertIn(preload + css + script + other, result)
+        self.assertIn(body, result)
+        self.assertEqual(result, render(result, ROOT / 'resources/index.html'))
+
+    def test_current_collection_pages_load_the_reader_once(self):
+        from apply_field_manual import parse
+        from render_shared import pages
+        consumers = []
+        for page in pages():
+            assets = []
+            for node in parse(page.read_text()).nodes:
+                if node['tag'] == 'script':
+                    value = node['attrs'].get('src', '')
+                elif node['tag'] == 'link' and node['attrs'].get('rel') == 'stylesheet':
+                    value = node['attrs'].get('href', '')
+                else:
+                    continue
+                if value.split('?')[0] in {'/assets/css/reader-experience.css', '/assets/js/reader-experience.js'}:
+                    assets.append(value.split('?')[0])
+            self.assertEqual(len(assets), len(set(assets)), str(page.relative_to(ROOT)))
+            if assets:
+                self.assertEqual(len(assets), 2, str(page.relative_to(ROOT)))
+                consumers.append(page.relative_to(ROOT).as_posix())
+        self.assertEqual(set(consumers), {'resources/index.html', 'visuals/index.html', 'series/amsterdam-tourism-product-discovery/index.html'})
+
     def test_project_updates_reach_both_static_listings(self):
         from render_projects import render as render_projects
         with tempfile.TemporaryDirectory() as directory:

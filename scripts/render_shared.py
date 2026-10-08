@@ -26,9 +26,22 @@ def render(source, path, root=ROOT):
     homepage = path == root / 'index.html'
     nodes = parse(source).nodes
     replacements = []
+    reader_assets = set()
     shared_header = False
     shared_footer = False
     for node in nodes:
+        # Reader assets are single-entry enhancements: repeated script tags run
+        # the collection/filter setup again even when the response is cached.
+        asset = node['attrs'].get('src' if node['tag'] == 'script' else 'href', '')
+        is_reader_load = node['tag'] == 'script' or (node['tag'] == 'link' and node['attrs'].get('rel') == 'stylesheet')
+        if is_reader_load and asset.split('?')[0] in {
+            '/assets/css/reader-experience.css', '/assets/js/reader-experience.js'
+        }:
+            key = (node['tag'], asset)
+            if key in reader_assets:
+                replacements.append((node['start'], node['end'], ''))
+                continue
+            reader_assets.add(key)
         classes = set(node['attrs'].get('class', '').split())
         name = None
         if node['tag'] == 'header':

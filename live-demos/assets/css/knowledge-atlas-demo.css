@@ -26,7 +26,6 @@ body.knowledge-atlas-demo{margin:0;color:var(--ka-ink);background:var(--ka-paper
 .knowledge-atlas-demo [hidden]{display:none!important}
 .knowledge-atlas-demo img,.knowledge-atlas-demo svg{max-width:100%;height:auto}
 .knowledge-atlas-demo .container{width:min(1240px,calc(100% - 48px));max-width:none;margin-inline:auto;padding-inline:0}
-.knowledge-atlas-demo :focus-visible{outline:3px solid var(--ka-teal-bright)!important;outline-offset:3px}
 .knowledge-atlas-demo .skip,.knowledge-atlas-demo .skip-link{position:fixed;top:8px;left:8px;z-index:200;transform:translateY(-160%);padding:10px 14px;color:#fff;background:var(--ka-teal);font-weight:600}
 .knowledge-atlas-demo .skip:focus,.knowledge-atlas-demo .skip-link:focus{transform:none}
 

@@ -28,6 +28,11 @@ class Scope(HTMLParser):
         for i,h in enumerate(headings):
             if re.search(r'sources|references|bibliography',re.sub(r'<[^>]+>',' ',h[0]),re.I):
                 self.protected.append((h.start(),headings[i+1].start() if i+1<len(headings) else len(source)))
+        # An inline citation supports the whole paragraph, including text before
+        # its anchor. Preserve source populations, terminology and quoted claims.
+        for paragraph in re.finditer(r'<p\b[^>]*>.*?</p>',source,re.S):
+            if re.search(r'<a\b[^>]*\bhref=[\"\']https?://',paragraph[0],re.I):
+                self.protected.append((paragraph.start(),paragraph.end()))
         self.lines += [m.end() for m in re.finditer('\n',source)]
     def position(self):line,col=self.getpos();return self.lines[line-1]+col
     def handle_starttag(self,tag,attrs):

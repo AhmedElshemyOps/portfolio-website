@@ -3,8 +3,35 @@
   "use strict";
   var storageKey = "ahmed-saved-reading-v1";
   var analytics = function (name, params) { window.AhmedAnalytics?.event(name, params || {}); };
-  function read() { try { var value = JSON.parse(localStorage.getItem(storageKey) || "[]"); return Array.isArray(value) ? value : []; } catch (_error) { return []; } }
-  function write(items) { try { localStorage.setItem(storageKey, JSON.stringify(items)); } catch (_error) { /* Optional browser feature. */ } updateCounts(items); }
+  function read() {
+    try {
+      var value = JSON.parse(localStorage.getItem(storageKey) || "[]");
+      if (!Array.isArray(value)) return [];
+      var seen = new Set();
+      return value.filter(function (item) {
+        if (!item || typeof item !== 'object' || !['slug', 'title', 'url'].every(function (key) { return typeof item[key] === 'string' && item[key].trim(); }) || seen.has(item.slug)) return false;
+        try {
+          var url = new URL(item.url, location.href);
+          if (url.origin !== location.origin || !/^https?:$/.test(url.protocol)) return false;
+        } catch (_) { return false; }
+        seen.add(item.slug); return true;
+      }).slice(0, 100);
+    } catch (_error) { return []; }
+  }
+  function write(items) {
+    try { localStorage.setItem(storageKey, JSON.stringify(items)); }
+    catch (_error) { return false; }
+    document.querySelectorAll('[data-saved-feedback]').forEach(function (node) { node.remove(); });
+    updateCounts(items); return true;
+  }
+  function storageFailure(button) {
+    var feedback = button.parentElement.querySelector('[data-saved-feedback]');
+    if (!feedback) {
+      feedback = document.createElement('p'); feedback.dataset.savedFeedback = '';
+      feedback.setAttribute('role', 'status'); button.after(feedback);
+    }
+    feedback.textContent = 'Your reading list could not be updated. Check your browser’s storage settings.';
+  }
   function updateCounts(items) { document.querySelectorAll("[data-saved-count]").forEach(function (node) { node.textContent = String(items.length); }); }
   function currentArticle() {
     var slug = document.body.dataset.articleSlug;
@@ -29,9 +56,10 @@
     button.addEventListener("click", function () {
       var items = read();
       var existing = items.findIndex(function (item) { return item.slug === article.slug; });
-      if (existing >= 0) { items.splice(existing, 1); analytics("article_bookmark_removed", { article_slug: article.slug }); }
-      else { items.unshift(article); analytics("article_bookmark_added", { article_slug: article.slug }); }
-      write(items.slice(0, 100));
+      if (existing >= 0) items.splice(existing, 1);
+      else items.unshift(article);
+      if (!write(items.slice(0, 100))) { storageFailure(button); return; }
+      analytics(existing >= 0 ? "article_bookmark_removed" : "article_bookmark_added", { article_slug: article.slug });
       render();
     });
     render();
@@ -52,12 +80,21 @@
       items.forEach(function (item, index) {
         var article = document.createElement("article"); article.className = "saved-reading-card";
         var copy = document.createElement("div");
-        var small = document.createElement("small"); small.textContent = String(index + 1).padStart(2, "0") + " · " + item.category;
+        var small = document.createElement("small"); small.textContent = String(index + 1).padStart(2, "0") + " · " + (typeof item.category === 'string' ? item.category : 'Article');
         var title = document.createElement("h2"); var link = document.createElement("a"); link.href = item.url; link.textContent = item.title; title.appendChild(link);
-        var time = document.createElement("time"); time.dateTime = item.savedAt; time.textContent = "Saved " + new Intl.DateTimeFormat("en", { dateStyle: "medium" }).format(new Date(item.savedAt));
+        var date = typeof item.savedAt === 'string' ? new Date(item.savedAt) : null;
+        var time = document.createElement("time");
+        if (date && Number.isFinite(date.getTime())) { time.dateTime = item.savedAt; time.textContent = "Saved " + new Intl.DateTimeFormat("en", { dateStyle: "medium" }).format(date); }
+        else time.textContent = 'Saved article';
         copy.append(small, title, time);
         var remove = document.createElement("button"); remove.type = "button"; remove.textContent = "Remove"; remove.setAttribute("aria-label", "Remove " + item.title + " from saved reading");
-        remove.addEventListener("click", function () { write(read().filter(function (saved) { return saved.slug !== item.slug; })); render(); });
+        remove.addEventListener("click", function () {
+          if (!write(read().filter(function (saved) { return saved.slug !== item.slug; }))) { status.textContent = 'Your reading list could not be updated. Check your browser’s storage settings.'; return; }
+          render();
+          var remaining = container.querySelectorAll('.saved-reading-card button');
+          if (remaining.length) remaining[Math.min(index, remaining.length - 1)].focus();
+          else container.querySelector('.saved-reading-empty a')?.focus();
+        });
         article.append(copy, remove); container.appendChild(article);
       });
     }
@@ -69,7 +106,8 @@
       button.addEventListener("click", function () {
         var items = read(); var existing = items.findIndex(function (item) { return item.slug === button.dataset.slug; });
         if (existing >= 0) items.splice(existing, 1); else items.unshift({ slug: button.dataset.slug, title: button.dataset.title, category: button.dataset.category, url: button.dataset.url, savedAt: new Date().toISOString() });
-        write(items.slice(0, 100)); render();
+        if (!write(items.slice(0, 100))) { storageFailure(button); return; }
+        render();
       });
       render();
     });

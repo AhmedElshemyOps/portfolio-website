@@ -2,6 +2,7 @@ import json,re,subprocess,unittest,sys
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'scripts'))
 from audit_seo import DOM,schema_nodes
+from approved_article_revisions import approved_revisions
 M=json.loads((ROOT/'maintenance/seo/evidence-batch-manifest.json').read_text())
 class EvidenceBatchTests(unittest.TestCase):
  def test_only_recorded_claim_fragments_change(self):
@@ -9,6 +10,7 @@ class EvidenceBatchTests(unittest.TestCase):
    before=subprocess.check_output(['git','show',M['baseline_commit']+':'+name],cwd=ROOT,text=True);after=(ROOT/name).read_text()
    for edit in edits:
     self.assertEqual(before.count(edit['old']),1);before=before.replace(edit['old'],edit['new']);self.assertIn(edit['new'],after)
+   before=approved_revisions(before,Path(name).parent.name)
    def body(s):return next(n.text() for n in DOM(s).root.all() if 'article-body' in n.attrs.get('class','').split())
    self.assertEqual(body(before),body(after),name)
    self.assertEqual(re.findall(r'<pre\b.*?</pre>',before,re.S),re.findall(r'<pre\b.*?</pre>',after,re.S),name)

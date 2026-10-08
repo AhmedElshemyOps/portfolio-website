@@ -52,6 +52,23 @@ catalogue data and maintenance scripts: no references remained. Removed obsolete
 homepage/availability style rules and duplicate font declarations. Retained
 `lab-formulas.js`, which is dynamically imported by `lab-tools.js`.
 
+On 9 October 2026, removed `profile-evidence.css` after checking all 178 public
+HTML pages, CSS imports, JavaScript, catalogue/build JSON, templates and maintenance
+scripts: no reference remained. The active career and credentials styles already
+live in `homepage-editorial.css`. This removes an unused second source; it does
+not claim a current-page download saving.
+
+The Amsterdam research index contained 13 identical reader stylesheet/script
+pairs. Shared rendering now retains the first identical reader asset tag and
+removes repeated entries, preserving asset order and page content. Keep one pair
+on the Resources, Visuals and Amsterdam index pages; the current Field Manual
+article template intentionally does not load the legacy reader-experience assets.
+
+The common demo theme owns the keyboard focus indicator: a dark gold outline
+and light halo remain visible on light forms and navy panels. Its focused-state
+priority overrides legacy decorative/input shadows, with a system Highlight
+outline in forced-colour mode.
+
 `site-navigation.css` and `growth-navigation.css` remain compatibility imports
 for previously published pages. Current generated pages use `site-chrome.css`
 directly. Old hashed application bundles and their assets remain available for
@@ -69,3 +86,9 @@ for this release so returning visitors can receive the refreshed files.
 The homepage article browser reads its inline JSON list, showing four original article URLs per click. Keep its curated first group and include every registry Article exactly once. Display labels may change; the legacy hotel-topic filter value and existing URLs stay fixed. `discovery.js` recognises both labels.
 
 Navigations and CV documents use network-first service-worker caching with offline fallback; assets use stale-while-revalidate. Increment the cache version when releasing shared assets.
+
+## Repeatable whole-site health check
+
+Install the locked development dependency with `pnpm install --frozen-lockfile --ignore-scripts`, then run `pnpm check:health` (or `node scripts/check_health.mjs`). Node.js and Python 3 are required. `PORTFOLIO_PYTHON` can select a Python executable. The runner executes Python tests, every JavaScript test file, pinned-prompt validation, shared rendering checks, local links and article navigation sequentially. It returns failure if any group fails, including the backend test when its dependency is absent.
+
+`pnpm-lock.yaml` pins the test database package; `node_modules/` is ignored and must not be committed. The Postgres test uses a local embedded database; passing it does not mean a hosted backend has been provisioned or penetration-tested. Browser and real-device checks remain separate from the command. Private editorial drafts belong outside this repository and are not part of publication.

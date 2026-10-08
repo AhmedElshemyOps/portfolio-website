@@ -21,11 +21,15 @@
   const grid = document.getElementById('homepage-articles');
   const controls = document.querySelector('[data-article-controls]');
   if (!data || !grid || !controls) return;
-  const articles = JSON.parse(data.textContent);
-  let offset = 0;
+  let articles;
+  try { articles = JSON.parse(data.textContent); } catch (_) { return; }
+  if (!Array.isArray(articles) || !articles.length) return;
+  const selectionCount = Math.ceil(articles.length / 4);
+  let selection = 0;
   function show(direction) {
-    offset = (offset + direction * 4 + articles.length) % articles.length;
-    grid.replaceChildren(...articles.slice(offset, offset + 4).map(item => {
+    selection = (selection + direction + selectionCount) % selectionCount;
+    const batch = Array.from({ length: Math.min(4, articles.length) }, (_, index) => articles[(selection * 4 + index) % articles.length]);
+    grid.replaceChildren(...batch.map(item => {
       const link = document.createElement('a'); link.className = 'article'; link.href = item.url;
       const content = document.createElement('div');
       const topic = document.createElement('span'); topic.className = 'article-topic';
@@ -36,7 +40,7 @@
       const arrow = document.createElement('span'); arrow.className = 'direction'; arrow.textContent = '↗'; arrow.setAttribute('aria-hidden', 'true');
       link.append(content, arrow); return link;
     }));
-    controls.querySelector('[data-article-status]').textContent = 'Reading selection ' + (offset / 4 + 1) + '. Four articles shown.';
+    controls.querySelector('[data-article-status]').textContent = 'Reading selection ' + (selection + 1) + '. ' + batch.length + ' article' + (batch.length === 1 ? '' : 's') + ' shown.';
   }
   controls.hidden = false;
   controls.querySelector('[data-article-prev]').addEventListener('click', () => show(-1));
