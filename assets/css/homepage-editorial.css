@@ -251,3 +251,10 @@ h1{font-size:40px}
 .contact-copy-status{margin:8px 0 0;min-height:1.5em;font-size:.875rem}
 
 .contact-copy-actions .contact-linkedin{display:inline-flex;align-items:center;min-height:44px;padding:8px 14px;color:#fff;border:1px solid #dfc27d;box-sizing:border-box;font-size:.875rem}
+
+/* Contact channels are grouped above secondary footer resources. */
+.contact-details{min-width:0}.contact-details>a{overflow-wrap:anywhere}.contact-copy-actions .contact-social{display:inline-flex;align-items:center;min-height:44px;padding:10px 14px;border:1px solid currentColor;border-radius:4px;text-decoration:none}.contact-inner{gap:28px}.contact-inner>.button{align-self:start}.footer nav{gap:12px 20px}.footer-professional p span{display:block;margin-top:6px}@media(max-width:720px){.contact-inner{grid-template-columns:1fr}.contact-details{width:100%}.contact-copy-actions{gap:10px;flex-wrap:wrap}.footer{gap:24px}.footer nav{display:flex;flex-wrap:wrap}}
+
+.contact-inner{grid-template-columns:minmax(0,1.1fr) minmax(0,1fr)}.contact-details>.button{width:max-content;max-width:100%;margin-top:12px}.contact-details>a.button{color:var(--navy);background:var(--gold)}@media(max-width:720px){.contact-inner{grid-template-columns:minmax(0,1fr)}}
+
+.contact-details .contact-copy-status{margin:4px 0;min-height:1.4em;font-size:.875rem;line-height:1.4}.contact-details>.button{margin-top:4px}

@@ -21,7 +21,7 @@ class EvidenceBatchTests(unittest.TestCase):
    found+=1;start=s.index('<script src="/assets/js/site-navigation.js?');self.assertLess(s.index('</header>'),start);self.assertLess(start,s.index('<main'))
   self.assertGreater(found,100)
  def test_public_evidence_labels_and_projection(self):
-  d=json.loads((ROOT/'content/professional-profile.json').read_text());self.assertEqual(d['iata'][0]['name'],'Travel Operations (self-study)')
+  d=json.loads((ROOT/'content/professional-profile.json').read_text());self.assertEqual(d['iata'][0]['name'],'Travel Operations')
   for c in d['certifications']:
    if not c.get('evidence_url'):self.assertIn('individual certificate has not been supplied',c['description'])
   self.assertEqual(14*12*(12500-8059),746088)

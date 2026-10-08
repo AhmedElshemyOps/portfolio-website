@@ -4,43 +4,230 @@
   "experience_years": 13,
   "location": "Netherlands",
   "work_authorisation": "Authorised to work in the Netherlands. No employer sponsorship required.",
-  "summary": "13 years in Travel and Tourism and hospitality across Egypt and the UAE, now based in the Netherlands. My work connects destination and DMC operations, B2B reservations, guest and supplier coordination, transport planning and process improvement.",
+  "summary": "13 years in Travel & Tourism and Hospitality across Egypt and the UAE, now based in the Netherlands. Experience in destination and DMC operations, B2B reservations, guest and supplier coordination, transport planning and process improvement.",
   "career": [
-    {"company":"Masarra DMC - Miral Experiences","department":"Operations Department","scope":"Destination management and cross-functional DMC support","location":"Abu Dhabi, UAE","dates":"From December 2024","contributions":["Supported approximately 350 guests per month and groups up to 45 through destination services, transport, ticketing, supplier coordination and service recovery.","Contributed to MICE, FAM and industry-event operations, including airport and hotel representation, guest movements, venues and live stakeholder communication.","Developed airport-representative procedures and operational handovers; supported Strapi Arabic localisation, BOS and Otolo Homes workflows, colleague coaching and a Travel Desk DMAIC project."]},
-    {"company":"Oceanair Travels","department":"Operations Department","scope":"Destination services and guest coordination","location":"Dubai, UAE","dates":"September 2022 - November 2024","contributions":["Coordinated destination programmes for international groups up to 35, including hotel pickups, transport, tickets, attractions, timing and supplier interfaces.","Protected itinerary continuity during delays and live changes through multilingual guest communication and service recovery."]},
-    {"company":"WebBeds Middle East & Africa","department":"Reservations and B2B Operations","scope":"Accommodation distribution and partner support","location":"Cairo, Egypt","dates":"June 2022 - September 2022","contributions":["Handled approximately 120 B2B booking and case transactions per day using Juniper and Freshdesk.","Supported French-speaking hotel markets in Tunisia, Morocco and Algeria; resolved booking discrepancies, amendments, rates, refunds and relocations through partner and internal-team coordination."]},
-    {"company":"Fun & Sun / TUI CIS","department":"Operations Department","scope":"Excursions, airport transfers and guest services","location":"Sharm El Sheikh, Egypt","dates":"July 2021 - April 2022","contributions":["Coordinated daily destination programmes, excursions, airport arrivals, departures and transfers for multinational groups up to 19.","Handled guest issues and programme changes while maintaining timing, safety and service standards, including support for CIS and Russian-speaking markets."]},
-    {"company":"Alnatalie Red Sea Tours","department":"Operations Department","scope":"Transport and fleet coordination","location":"Cairo, Egypt","dates":"January 2020 - June 2021","contributions":["Coordinated approximately 15 vehicles and drivers, daily allocation, GPS follow-up, maintenance schedules, insurance administration and operational readiness.","Supported transport operations connected to the 2021 IHF Men's World Championship, including movements between airports, hotels and competition venues."]},
-    {"company":"Elmadina Tours","department":"Travel and Tourism Consultant","scope":"Leisure packages and Hajj and Umrah group travel","location":"Cairo, Egypt","dates":"January 2013 - January 2020","contributions":["Designed, quoted and sold leisure, honeymoon and couple packages; coordinated itineraries, hotels, suppliers and customer follow-up.","Managed Hajj and Umrah arrangements, flights, visas and documentation, accommodation in Makkah and Madinah, and programme coordination using SAFA and Amadeus workflows."]}
+    {
+      "company": "Masarra DMC - Miral Experiences",
+      "department": "Operations Department",
+      "scope": "Destination management and cross-functional DMC support",
+      "location": "Abu Dhabi, UAE",
+      "dates": "From December 2024",
+      "contributions": [
+        "Supported approximately 350 guests per month and groups up to 45 through destination services, transport, ticketing, supplier coordination and service recovery.",
+        "Contributed to MICE, FAM and industry-event operations, including airport and hotel representation, guest movements, venues and live stakeholder communication.",
+        "Developed airport-representative procedures and operational handovers; supported Strapi Arabic localisation, BOS and Otolo Homes workflows, colleague coaching and a Travel Desk DMAIC project."
+      ]
+    },
+    {
+      "company": "Oceanair Travels",
+      "department": "Operations Department",
+      "scope": "Destination services and guest coordination",
+      "location": "Dubai, UAE",
+      "dates": "September 2022 - November 2024",
+      "contributions": [
+        "Coordinated destination programmes for international groups up to 35, including hotel pickups, transport, tickets, attractions, timing and supplier interfaces.",
+        "Protected itinerary continuity during delays and live changes through multilingual guest communication and service recovery."
+      ]
+    },
+    {
+      "company": "WebBeds Middle East & Africa",
+      "department": "Reservations and B2B Operations",
+      "scope": "Accommodation distribution and partner support",
+      "location": "Cairo, Egypt",
+      "dates": "June 2022 - September 2022",
+      "contributions": [
+        "Handled approximately 120 B2B booking and case transactions per day using Juniper and Freshdesk.",
+        "Supported French-speaking hotel markets in Tunisia, Morocco and Algeria; resolved booking discrepancies, amendments, rates, refunds and relocations through partner and internal-team coordination."
+      ]
+    },
+    {
+      "company": "Fun & Sun / TUI CIS",
+      "department": "Operations Department",
+      "scope": "Excursions, airport transfers and guest services",
+      "location": "Sharm El Sheikh, Egypt",
+      "dates": "July 2021 - April 2022",
+      "contributions": [
+        "Coordinated daily destination programmes, excursions, airport arrivals, departures and transfers for multinational groups up to 19.",
+        "Handled guest issues and programme changes while maintaining timing, safety and service standards, including support for CIS and Russian-speaking markets."
+      ]
+    },
+    {
+      "company": "Alnatalie Red Sea Tours",
+      "department": "Operations Department",
+      "scope": "Transport and fleet coordination",
+      "location": "Cairo, Egypt",
+      "dates": "January 2020 - June 2021",
+      "contributions": [
+        "Coordinated approximately 15 vehicles and drivers, daily allocation, GPS follow-up, maintenance schedules, insurance administration and operational readiness.",
+        "Supported transport operations connected to the 2021 IHF Men's World Championship, including movements between airports, hotels and competition venues."
+      ]
+    },
+    {
+      "company": "Elmadina Tours",
+      "department": "Travel and Tourism Consultant",
+      "scope": "Leisure packages and Hajj and Umrah group travel",
+      "location": "Cairo, Egypt",
+      "dates": "January 2013 - January 2020",
+      "contributions": [
+        "Designed, quoted and sold leisure, honeymoon and couple packages; coordinated itineraries, hotels, suppliers and customer follow-up.",
+        "Managed Hajj and Umrah arrangements, flights, visas and documentation, accommodation in Makkah and Madinah, and programme coordination using SAFA and Amadeus workflows."
+      ]
+    }
   ],
   "certifications": [
-    {"name":"Certified Associate in Project Management (CAPM)","short_name":"CAPM","issuer":"Project Management Institute","date":"26 April 2024 - 26 April 2027","description":"Project management fundamentals, predictive methods, agile principles and business analysis.","evidence_url":"/documents/credentials/capm-pmi.pdf","image":"/assets/credentials/capm-pmi.webp","source":"PMI certificate"},
-    {"name":"Lean Six Sigma Black Belt","short_name":"Lean Six Sigma Black Belt","issuer":"Anexas Europe / Miral LLC","date":"July 2025","description":"Black Belt training certificate, supported by a workplace DMAIC project on Travel Desk performance.","evidence_url":"/documents/credentials/lean-six-sigma-black-belt.jpeg","image":"/assets/credentials/lean-six-sigma-black-belt.webp","source":"Anexas training certificate"},
-    {"name":"ITIL 4 Foundation","short_name":"ITIL 4 Foundation","issuer":"PeopleCert / AXELOS","date":"1 August 2024 - 1 August 2027","description":"IT service management foundations applied to ownership, handovers, service quality and operational procedures.","evidence_url":"/documents/credentials/itil-4-foundation.jpeg","image":"/assets/credentials/itil-4-foundation.webp","source":"PeopleCert certificate"},
-    {"name":"Professional Certified Marketer (PCM)","short_name":"Professional Certified Marketer","issuer":"American Marketing Association","date":"July 2025 - July 2028","description":"Marketing qualification supporting customer understanding, commercial communication and product positioning. Recorded in the supplied master CV; an individual certificate has not been supplied for this review.","source":"Master CV"},
-    {"name":"CompTIA IT Fundamentals (ITF+)","short_name":"CompTIA ITF+","issuer":"CompTIA","date":"June 2024","description":"IT foundations supporting practical systems use and digital workflow development. Recorded in the supplied master CV; an individual certificate has not been supplied for this review.","source":"Master CV"}
+    {
+      "name": "Certified Associate in Project Management (CAPM)",
+      "short_name": "CAPM",
+      "issuer": "Project Management Institute",
+      "date": "26 April 2024 - 26 April 2027",
+      "description": "Project management fundamentals, predictive methods, agile principles and business analysis.",
+      "evidence_url": "/documents/credentials/capm-pmi.pdf",
+      "image": "/assets/credentials/capm-pmi.webp",
+      "source": "PMI certificate"
+    },
+    {
+      "name": "Lean Six Sigma Black Belt",
+      "short_name": "Lean Six Sigma Black Belt",
+      "issuer": "Anexas Europe / Miral LLC",
+      "date": "July 2025",
+      "description": "Black Belt training certificate, supported by a workplace DMAIC project on Travel Desk performance.",
+      "evidence_url": "/documents/credentials/lean-six-sigma-black-belt.jpeg",
+      "image": "/assets/credentials/lean-six-sigma-black-belt.webp",
+      "source": "Anexas training certificate"
+    },
+    {
+      "name": "ITIL V4 Foundation",
+      "short_name": "ITIL V4 Foundation",
+      "issuer": "PeopleCert / AXELOS",
+      "date": "1 August 2024 - 1 August 2027",
+      "description": "IT service management foundations applied to ownership, handovers, service quality and operational procedures.",
+      "evidence_url": "/documents/credentials/itil-4-foundation.jpeg",
+      "image": "/assets/credentials/itil-4-foundation.webp",
+      "source": "PeopleCert certificate"
+    },
+    {
+      "name": "Professional Certified Marketer (PCM)",
+      "short_name": "Professional Certified Marketer",
+      "issuer": "American Marketing Association",
+      "date": "July 2025 - July 2028",
+      "description": "Marketing qualification supporting customer understanding, commercial communication and product positioning. Recorded in the supplied master CV; an individual certificate has not been supplied for this review.",
+      "source": "Master CV"
+    },
+    {
+      "name": "CompTIA IT Fundamentals (ITF+)",
+      "short_name": "CompTIA ITF+",
+      "issuer": "CompTIA",
+      "date": "June 2024",
+      "description": "IT foundations supporting practical systems use and digital workflow development. Recorded in the supplied master CV; an individual certificate has not been supplied for this review.",
+      "source": "Master CV"
+    }
   ],
   "iata": [
-    {"name":"Travel Operations (self-study)","date":"March 2026","evidence_url":"/documents/credentials/iata-travel-operations.pdf"},
-    {"name":"MICE and Sales","date":"July 2025","evidence_url":"/documents/credentials/iata-mice-and-sales.pdf"},
-    {"name":"Special Cargo Handling","date":"January 2025","evidence_url":"/documents/credentials/iata-special-cargo-handling.pdf"},
-    {"name":"Tour Production","date":"September 2024","evidence_url":"/documents/credentials/iata-tour-production.pdf"},
-    {"name":"Travel and Tourism Consultant","date":"May 2021","evidence_url":"/documents/credentials/iata-travel-tourism-consultant.pdf"}
+    {
+      "name": "Travel Operations",
+      "date": "March 2026",
+      "evidence_url": "/documents/credentials/iata-travel-operations.pdf"
+    },
+    {
+      "name": "MICE and Sales",
+      "date": "July 2025",
+      "evidence_url": "/documents/credentials/iata-mice-and-sales.pdf"
+    },
+    {
+      "name": "Special Cargo Handling",
+      "date": "January 2025",
+      "evidence_url": "/documents/credentials/iata-special-cargo-handling.pdf"
+    },
+    {
+      "name": "Tour Production",
+      "date": "September 2024",
+      "evidence_url": "/documents/credentials/iata-tour-production.pdf"
+    },
+    {
+      "name": "Travel and Tourism Consultant",
+      "date": "May 2021",
+      "evidence_url": "/documents/credentials/iata-travel-tourism-consultant.pdf"
+    }
   ],
   "additional_training": [
-    {"name":"First Time Leading Others","detail":"Miral Experiences · 8-hour leadership programme · February 2025","url":"/documents/credentials/first-time-leading-others.pdf"},
-    {"name":"Highfield Level 2 COSHH","detail":"Merit · 29 October 2025","url":"/documents/credentials/highfield-coshh.pdf"},
-    {"name":"AHA Heartsaver First Aid CPR AED","detail":"Child and infant CPR modules · August 2025 · Renew by August 2027","url":"/documents/credentials/first-aid-cpr-aed.pdf"},
-    {"name":"IATA Pharma Products and Vaccines by Air","detail":"Additional IATA course · May 2024","url":"/documents/credentials/iata-transport-pharma-products-vaccines.png"},
-    {"name":"Risk Assessment and Work at Height","detail":"Miral Experiences / Highfield field-safety training","url":"/documents/credentials/highfield-risk-assessment.pdf"},
-    {"name":"Safe Moving and Handling","detail":"Miral Experiences / Highfield field-safety training","url":"/documents/credentials/highfield-safe-moving-handling.pdf"},
-    {"name":"ETAA travel operations and sales courses","detail":"Tour operations, religious travel and sales skills · 2019","url":"/documents/credentials/etaa-tour-operator.pdf"}
+    {
+      "name": "First Time Leading Others",
+      "detail": "Miral Experiences · 8-hour leadership programme · February 2025",
+      "url": "/documents/credentials/first-time-leading-others.pdf"
+    },
+    {
+      "name": "Highfield Level 2 COSHH",
+      "detail": "Merit · 29 October 2025",
+      "url": "/documents/credentials/highfield-coshh.pdf"
+    },
+    {
+      "name": "AHA Heartsaver First Aid CPR AED",
+      "detail": "Child and infant CPR modules · August 2025 · Renew by August 2027",
+      "url": "/documents/credentials/first-aid-cpr-aed.pdf"
+    },
+    {
+      "name": "IATA Pharma Products and Vaccines by Air",
+      "detail": "Additional IATA course · May 2024",
+      "url": "/documents/credentials/iata-transport-pharma-products-vaccines.png"
+    },
+    {
+      "name": "Risk Assessment and Work at Height",
+      "detail": "Miral Experiences / Highfield field-safety training",
+      "url": "/documents/credentials/highfield-risk-assessment.pdf"
+    },
+    {
+      "name": "Safe Moving and Handling",
+      "detail": "Miral Experiences / Highfield field-safety training",
+      "url": "/documents/credentials/highfield-safe-moving-handling.pdf"
+    },
+    {
+      "name": "ETAA travel operations and sales courses",
+      "detail": "Tour operations, religious travel and sales skills · 2019",
+      "url": "/documents/credentials/etaa-tour-operator.pdf"
+    }
   ],
-  "education":{"institution":"Cairo University","faculty":"Faculty of Law","degree":"Licence / Bachelor of Law","dates":"2006 - 2010"},
-  "languages":["Arabic - native","English - advanced professional","French - professional working proficiency; DELF B1 and approximately 450 study hours","Russian - working knowledge; approximately 250 study hours","Dutch - A1, actively studying"],
-  "systems":["BOS System","Otolo Homes","Juniper","Freshdesk","Sriggle","SAFA","Amadeus","Strapi CMS","Excel and Microsoft Office","Google Workspace","GitHub","HTML and JavaScript"],
-  "methods":["DMAIC and root-cause analysis","SOPs, process mapping and RACI","Service recovery and KPI controls","Voice of Customer and requirements traceability","Supplier feasibility and unit economics","MVP and pilot planning"],
-  "field_readiness":"Five UAE destination authorisations, UAE manual driving licence, intermediate desert-driving training and RYA Powerboat Level 2. Further food safety, maritime, vehicle-assessment and insurance training are detailed in the CV.",
-  "updated":"2026-10-08",
-  "source_notes":["CAPM dates follow the actual PMI certificate; the master CV lists a different date range.","Masarra end date is not confirmed; the timeline uses From December 2024 rather than inventing an end date.","PCM and CompTIA details are supported by the master CV; individual certificate images are not in the website archive.","Experience is presented by department and contribution scope, not as a statement of official job titles."]
+  "education": {
+    "institution": "Cairo University",
+    "faculty": "Faculty of Law",
+    "degree": "Licence / Bachelor of Law",
+    "dates": "2006 - 2010"
+  },
+  "languages": [
+    "Arabic - native",
+    "French - B1+; DELF B1 and approximately 450 study hours",
+    "English - advanced professional",
+    "Russian - A2; approximately 250 study hours",
+    "Dutch - A1, actively studying"
+  ],
+  "systems": [
+    "BOS System",
+    "Otolo Homes",
+    "Juniper",
+    "Freshdesk",
+    "Sriggle",
+    "SAFA",
+    "Amadeus",
+    "Strapi CMS",
+    "Excel and Microsoft Office",
+    "Google Workspace",
+    "GitHub",
+    "HTML and JavaScript"
+  ],
+  "methods": [
+    "DMAIC and root-cause analysis",
+    "SOPs, process mapping and RACI",
+    "Service recovery and KPI controls",
+    "Voice of Customer and requirements traceability",
+    "Supplier feasibility and unit economics",
+    "MVP and pilot planning"
+  ],
+  "field_readiness": "Five UAE destination authorisations, UAE manual driving licence, intermediate desert-driving training and RYA Powerboat Level 2. Further food safety, maritime, vehicle-assessment and insurance training are detailed in the CV.",
+  "updated": "2026-10-08",
+  "source_notes": [
+    "CAPM dates follow the actual PMI certificate; the master CV lists a different date range.",
+    "Masarra end date is not confirmed; the timeline uses From December 2024 rather than inventing an end date.",
+    "PCM and CompTIA details are supported by the master CV; individual certificate images are not in the website archive.",
+    "Experience is presented by department and contribution scope, not as a statement of official job titles.",
+    "French B1+ and Russian A2 are self-reported language levels supplied by Ahmed on 8 October 2026; the documented French qualification remains DELF B1."
+  ]
 }
