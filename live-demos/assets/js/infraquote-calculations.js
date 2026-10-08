@@ -103,11 +103,40 @@ window.INFRAQUOTE_CALC = (() => {
     return { blocking: guests > capacity ? [`Selected transport has ${capacity} configured passenger places for ${guests} guests. Increase vehicle quantity or select a larger vehicle.`] : [], warnings: guests <= capacity && comfortRequired && guests > comfortCapacity ? [`Selected transport exceeds the configured comfort capacity of ${comfortCapacity}. Review luggage and comfort requirements.`] : [] };
   }
 
+  function stepIssues(quote, stepIndex) {
+    const issues = [];
+    const add = (field, message) => issues.push({field, message});
+    if (stepIndex === 0) {
+      if (!String(quote.clientCompany || '').trim()) add('clientCompany', 'Enter a client or company name.');
+      if (!quote.serviceDate) add('serviceDate', 'Choose a service date.');
+      if (!quote.validityDate) add('validityDate', 'Choose a quotation validity date.');
+      if (quote.quoteDate && quote.serviceDate && quote.serviceDate < quote.quoteDate) add('serviceDate', 'Service date cannot precede the quotation date.');
+      if (quote.quoteDate && quote.validityDate && quote.validityDate < quote.quoteDate) add('validityDate', 'Validity date cannot precede the quotation date.');
+    }
+    if (stepIndex === 1) {
+      const counts = [quote.adults, quote.children, quote.infants].map(Number);
+      if (counts.some(n => !Number.isInteger(n) || n < 0) || counts.reduce((a,b) => a+b,0) < 1) add('adults', 'Enter at least one guest using non-negative whole numbers.');
+      if (!['Half day','Full day','Custom'].includes(quote.tourDuration)) add('tourDuration', 'Choose Half day, Full day or Custom.');
+      if (quote.tourDuration === 'Custom' && !(Number(quote.customHours) >= 1)) add('customHours', 'Enter at least one hour for a custom tour.');
+      if (!String(quote.pickupLocation || '').trim()) add('pickupLocation', 'Enter a pickup location.');
+      if (!String(quote.dropoffLocation || '').trim()) add('dropoffLocation', 'Enter a drop-off location.');
+    }
+    if (stepIndex === 2 && !quote.itinerary.some(s => ['Included','To be confirmed'].includes(s.status))) add('addStop', 'Add at least one included itinerary stop.');
+    if (stepIndex === 3 && (!(quote.vehicleQty >= 1) || !Number.isInteger(Number(quote.vehicleQty)))) add('vehicleQty', 'Use a positive whole number of vehicles.');
+    if (stepIndex === 5) {
+      if (!(quote.rounding > 0)) add('rounding', 'Rounding increment must be greater than zero.');
+      if (quote.pricingMethod === 'margin' && !(quote.targetMargin >= 0 && quote.targetMargin < 100)) add('targetMargin', 'Target margin must be below 100% and not negative.');
+    }
+    return issues;
+  }
+
   function readiness(quote, totals, pricingResult, breakEvenResult) {
     const blocking = [];
     const warnings = [];
     const suggestions = [];
     const guests = Number(quote.adults || 0) + Number(quote.children || 0) + Number(quote.infants || 0);
+    if (!['Half day','Full day','Custom'].includes(quote.tourDuration)) blocking.push('Tour duration must be selected.');
+    if (quote.tourDuration === 'Custom' && !(Number(quote.customHours) >= 1)) blocking.push('Custom tour hours must be at least one.');
     if (guests <= 0) blocking.push('At least one guest is required.');
     if ([quote.adults, quote.children, quote.infants].some(n => Number(n) < 0 || !Number.isInteger(Number(n)))) blocking.push('Guest counts must be non-negative whole numbers.');
     if (!(quote.vehicleQty >= 1) || !Number.isInteger(Number(quote.vehicleQty))) blocking.push('Vehicle quantity must be a positive whole number.');
@@ -132,5 +161,5 @@ window.INFRAQUOTE_CALC = (() => {
     return { blocking, warnings, suggestions, score: Math.max(0, 100 - blocking.length * 25 - warnings.length * 10 - suggestions.length * 3) };
   }
 
-  return { money, quoteReference, recommendVehicle, selectedVehicleChecks, costLineTotal, classifyCosts, priceFromMarkup, priceFromMargin, pricing, marginStatus, breakEven, readiness };
+  return { money, quoteReference, recommendVehicle, selectedVehicleChecks, costLineTotal, classifyCosts, priceFromMarkup, priceFromMargin, pricing, marginStatus, breakEven, stepIssues, readiness };
 })();

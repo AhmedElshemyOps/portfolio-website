@@ -14,3 +14,12 @@ assert.equal(c.selectedVehicleChecks(12,{maxGuests:6,comfortGuests:5},2,false).b
 assert.equal(c.selectedVehicleChecks(12,{maxGuests:6,comfortGuests:5},2,true).warnings.length,1);
 assert.equal(c.selectedVehicleChecks(12,{maxGuests:18,comfortGuests:15},1,true).blocking.length,0);
 console.log('Selected vehicle capacity regression checks passed.');
+const flowQuote={clientCompany:'Ahmed',serviceDate:'2026-10-22',validityDate:'2026-10-15',quoteDate:'2026-10-08',adults:2,children:0,infants:0,tourDuration:'',customHours:0,pickupLocation:'Hotel',dropoffLocation:'Hotel',itinerary:[{status:'Included'}],vehicleQty:1,rounding:5,targetMargin:22,pricingMethod:'margin'};
+assert.equal(c.stepIssues(flowQuote,0).length,0);
+assert.ok(c.stepIssues(flowQuote,1).some(i=>i.field==='tourDuration'));
+assert.ok(c.stepIssues({...flowQuote,tourDuration:'Custom'},1).some(i=>i.field==='customHours'));
+assert.equal(c.stepIssues({...flowQuote,tourDuration:'Full day'},1).length,0);
+assert.equal(c.stepIssues({...flowQuote,tourDuration:'Custom',customHours:6.5},1).length,0);
+assert.ok(c.stepIssues({...flowQuote,clientCompany:' '},0).some(i=>i.field==='clientCompany'));
+assert.ok(c.stepIssues({...flowQuote,itinerary:[]},2).length);
+console.log('Essential-field and conditional-duration flow checks passed.');

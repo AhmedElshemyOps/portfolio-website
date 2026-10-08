@@ -11,7 +11,29 @@
   let quote = null;
   const escape = value => String(value ?? '').replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
   const feedback = message => { $('quoteFeedback').textContent = message; };
-  function goStep(next) { readForm(); step = next; save(); render(); const heading = document.querySelector(`.quote-step[data-step="${step}"] h2`); heading.tabIndex = -1; heading.focus({preventScroll:true}); heading.scrollIntoView({block:'start',behavior:'instant'}); }
+  function focusStep() { const heading = document.querySelector(`.quote-step[data-step="${step}"] h2`); heading.tabIndex = -1; heading.focus({preventScroll:true}); heading.scrollIntoView({block:'start',behavior:'instant'}); }
+  function clearFormErrors() { $('quoteFormErrors').hidden = true; $('quoteFormErrors').innerHTML = ''; $$('[aria-invalid="true"]', $('quoteForm')).forEach(el => { el.removeAttribute('aria-invalid'); el.removeAttribute('aria-describedby'); }); }
+  function showFormErrors(issues) {
+    const panel = $('quoteFormErrors'); panel.hidden = false;
+    panel.innerHTML = `<strong>Complete the required information to continue.</strong><ul>${issues.map((issue,i) => `<li id="quote-error-${i}">${escape(issue.message)}</li>`).join('')}</ul>`;
+    issues.forEach((issue,i) => { const field = $(issue.field); if (field) { field.setAttribute('aria-invalid','true'); field.setAttribute('aria-describedby',`quote-error-${i}`); } });
+    $(issues[0].field)?.focus(); panel.scrollIntoView({block:'center',behavior:'instant'});
+  }
+  function goStep(next) {
+    readForm();
+    if (next > step) {
+      for (let index = 0; index < next; index++) {
+        const issues = CALC.stepIssues(quote,index);
+        if (issues.length) { step = index; save(); render(); showFormErrors(issues); return; }
+      }
+    }
+    clearFormErrors(); step = next; save(); render(); focusStep();
+  }
+  function syncConditionalFields() {
+    $('customHoursField').hidden = quote.tourDuration !== 'Custom'; $('customHours').required = quote.tourDuration === 'Custom';
+    $('airportDetails').hidden = !hasAirportService();
+  }
+
 
   function today(offset = 0) {
     const date = new Date();
@@ -26,7 +48,7 @@
       clientCompany: '', contactPerson: '', clientEmail: '', clientPhone: '', enquiryRef: '', preparedBy: 'Ahmed Mahmoud', nationality: '',
       marketSource: 'Direct enquiry', currency: 'AED', serviceType: 'Private tour', quoteStatus: 'Draft',
       adults: 2, children: 0, infants: 0, guestProfile: 'Leisure', guideLanguage: 'English', pickupLocation: 'Abu Dhabi hotel', dropoffLocation: 'Abu Dhabi hotel', pickupPoints: 1, pickupTime: '09:00',
-      tourDuration: 'Full day', customHours: 8, sellingStyle: 'FIT', comfortLevel: 'Comfort', tourPace: 'Balanced', tourDifficulty: 'Easy', specialOccasion: '', mealPreference: 'No meal required', guestInterests: ['Culture', 'Photography'], accessibility: '', wheelchair: false, childSeat: false, luggage: false, airportPickup: false, airportDropoff: false, transportMode: 'Tour only',
+      tourDuration: '', customHours: '', sellingStyle: 'FIT', comfortLevel: 'Comfort', tourPace: 'Balanced', tourDifficulty: 'Easy', specialOccasion: '', mealPreference: 'No meal required', guestInterests: ['Culture', 'Photography'], accessibility: '', wheelchair: false, childSeat: false, luggage: false, airportPickup: false, airportDropoff: false, transportMode: 'Tour only',
       itinerary: [
         stopFromAttraction(city.attractions[0]),
         stopFromAttraction(city.attractions[1]),
@@ -49,7 +71,7 @@
   }
 
   function stopFromAttraction(item) {
-    return { id: crypto.randomUUID ? crypto.randomUUID() : String(Date.now() + Math.random()), attractionId: item.id, name: item.name, duration: item.defaultDuration, drive: 20, status: 'Included', ticketRequired: item.ticketRequired, ticketVerification: ['Verified', 'Pending verification', 'Not required', 'Client pays directly'].includes(item.verification) ? item.verification : 'Pending verification', adultTicket: item.adult, childTicket: item.child, infantTicket: item.infant, operationalNote: item.note, clientNote: item.ticketRequired ? 'Entrance subject to official availability and ticket policy.' : item.note };
+    return { id: crypto.randomUUID ? crypto.randomUUID() : String(Date.now() + Math.random()), attractionId: item.id, referenceReviewed:item.reference?.checked || '', name: item.name, duration: item.defaultDuration, drive: 20, status: 'Included', ticketRequired: item.ticketRequired, ticketVerification: ['Verified', 'Pending verification', 'Not required', 'Client pays directly'].includes(item.verification) ? item.verification : 'Pending verification', adultTicket: item.adult, childTicket: item.child, infantTicket: item.infant, operationalNote: item.note, clientNote: item.ticketRequired ? 'Entrance subject to official availability and ticket policy.' : 'Visit subject to access and current venue arrangements.' };
   }
 
   function costLine(name, category, type, quantity, unitCost, include = true, verification = 'Pending verification', internalNote = '', clientNote = '', conditionStatus = 'Included') {
@@ -57,6 +79,7 @@
   }
 
   function totalGuests() { return Number(quote.adults || 0) + Number(quote.children || 0) + Number(quote.infants || 0); }
+  function guestBreakdown() { return `${quote.adults} adult${quote.adults === 1 ? '' : 's'}, ${quote.children} child${quote.children === 1 ? '' : 'ren'}, ${quote.infants} infant${quote.infants === 1 ? '' : 's'}`; }
   function payingGuests() { return Number(quote.adults || 0) + Number(quote.children || 0); }
   function city() { return DATA.cities[quote.city] || DATA.cities.abuDhabi; }
   function vehicle() { return DATA.vehicles.find(v => v.id === quote.vehicleId) || DATA.vehicles[0]; }
@@ -67,8 +90,8 @@
   function hours() { return quote.tourDuration === 'Half day' ? 5 : quote.tourDuration === 'Full day' ? 8 : Number(quote.customHours || 0); }
   function currencyInfo() { return DATA.currencyRates?.[quote.currency] || DATA.currencyRates?.AED || { rate: 1, note: 'Base costing currency' }; }
   function convert(value) { return Math.round(Number(value || 0) * currencyInfo().rate * 100) / 100; }
-  function money(value) { return `${quote.currency} ${convert(value).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 2 })}`; }
-  function hasAirportService() { return quote.airportPickup || quote.airportDropoff || quote.transportMode !== 'Tour only'; }
+  function money(value) { return `${quote.currency} ${convert(value).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`; }
+  function hasAirportService() { return quote.airportPickup || quote.airportDropoff; }
   function plannedMinutes() {
     const stopMinutes = quote.itinerary.reduce((sum, stop) => sum + Number(stop.duration || 0) + Number(stop.drive || 0), 0);
     const pickupBuffer = Math.max(0, Number(quote.pickupPoints || 1) - 1) * 15;
@@ -134,10 +157,12 @@
     const riskLevel = (be?.risk === 'Red' || totals.pending > 2 || rec.warnings.length > 1) ? 'High' : (be?.risk === 'Amber' || totals.pending || rec.warnings.length) ? 'Medium' : 'Controlled';
     const marginStatus = CALC.marginStatus(price.actualMargin, quote.reviewMargin, riskLevel, price.profit);
     const ready = CALC.readiness(quote, totals, price, be);
+    quote.itinerary.filter(stop => ['Included','To be confirmed'].includes(stop.status)).forEach(stop => { const item = city().attractions.find(a => a.id === stop.attractionId); if (item?.reference?.unavailable) ready.warnings.push(`${stop.name}: official source reports a closure; confirm reopening before inclusion.`); if (item?.reference?.checked && stop.referenceReviewed !== item.reference.checked) ready.warnings.push(`${stop.name}: stored draft predates the current attraction review. Check rates and access.`); if (stop.ticketRequired && quote.adults > 0 && !(stop.adultTicket > 0) && stop.ticketVerification !== 'Client pays directly' && stop.ticketVerification !== 'Verified') ready.blocking.push(`${stop.name}: paid admission has no adult rate. Enter a rate or confirm the ticket arrangement.`); });
     const capacity = CALC.selectedVehicleChecks(totalGuests(), vehicle(), quote.vehicleQty, quote.luggage || ['Comfort','Premium','VIP'].includes(quote.comfortLevel));
     ready.blocking.push(...capacity.blocking); ready.warnings.push(...capacity.warnings);
     ready.score = Math.max(0, ready.score - 25 * capacity.blocking.length - 10 * capacity.warnings.length);
     if (lines.some(line => Number(line.quantity) < 0 || Number(line.unitCost) < 0)) { ready.blocking.push('Cost quantities and unit costs must not be negative.'); ready.score = Math.max(0, ready.score - 25); }
+    ready.score = Math.max(0,100 - ready.blocking.length * 25 - ready.warnings.length * 10 - ready.suggestions.length * 3);
     return { lines, totals, price, be, rec, riskLevel, marginStatus, ready };
   }
 
@@ -149,19 +174,24 @@
   }
 
   function fillForm() {
-    ['clientCompany','contactPerson','clientEmail','clientPhone','enquiryRef','quoteNo','quoteDate','serviceDate','validityDate','preparedBy','marketSource','nationality','currency','serviceType','quoteStatus','adults','children','infants','guestProfile','guideLanguage','pickupLocation','dropoffLocation','pickupPoints','pickupTime','tourDuration','customHours','sellingStyle','comfortLevel','tourPace','tourDifficulty','specialOccasion','mealPreference','accessibility','transportMode','flightNumber','terminalNote','flightTime','waitingPolicy','vehicleQty','vehicleOverride','guideType','handlingFee','riskBuffer','vatMode','gratuities','pricingMethod','markupPct','targetMargin','reviewMargin','minimumGuests','rounding','quoteTheme','tourTitle','tourDescription','inclusions','exclusions','cancellation'].forEach(id => setField(id, quote[id]));
+    ['clientCompany','contactPerson','clientEmail','clientPhone','enquiryRef','quoteNo','quoteDate','serviceDate','validityDate','preparedBy','marketSource','nationality','currency','serviceType','quoteStatus','adults','children','infants','guestProfile','guideLanguage','pickupLocation','dropoffLocation','pickupPoints','pickupTime','tourDuration','customHours','sellingStyle','comfortLevel','tourPace','tourDifficulty','specialOccasion','mealPreference','accessibility','flightNumber','terminalNote','flightTime','waitingPolicy','vehicleQty','vehicleOverride','guideType','handlingFee','riskBuffer','vatMode','gratuities','pricingMethod','markupPct','targetMargin','reviewMargin','minimumGuests','rounding','quoteTheme','tourTitle','tourDescription','inclusions','exclusions','cancellation'].forEach(id => setField(id, quote[id]));
     setField('vehicleSelect', quote.vehicleId);
-    ['wheelchair','childSeat','luggage','airportPickup','airportDropoff'].forEach(id => setField(id, quote[id]));
+    ['wheelchair','childSeat','luggage'].forEach(id => setField(id, quote[id]));
+    ['airportPickup','airportDropoff'].forEach(id => setField(id, String(Boolean(quote[id]))));
+    syncConditionalFields();
     $$('[data-interest]').forEach(el => { el.checked = (quote.guestInterests || []).includes(el.dataset.interest); });
     $('totalGuests').value = totalGuests();
     if ($('currencyHint')) $('currencyHint').textContent = currencyInfo().note;
   }
 
   function readForm() {
-    ['clientCompany','contactPerson','clientEmail','clientPhone','enquiryRef','quoteNo','quoteDate','serviceDate','validityDate','preparedBy','marketSource','nationality','currency','serviceType','quoteStatus','guestProfile','guideLanguage','pickupLocation','dropoffLocation','pickupTime','tourDuration','sellingStyle','comfortLevel','tourPace','tourDifficulty','specialOccasion','mealPreference','accessibility','transportMode','flightNumber','terminalNote','flightTime','waitingPolicy','vehicleOverride','guideType','vatMode','gratuities','pricingMethod','quoteTheme','tourTitle','tourDescription','inclusions','exclusions','cancellation'].forEach(id => { quote[id] = $(id).value; });
+    ['clientCompany','contactPerson','clientEmail','clientPhone','enquiryRef','quoteNo','quoteDate','serviceDate','validityDate','preparedBy','marketSource','nationality','currency','serviceType','quoteStatus','guestProfile','guideLanguage','pickupLocation','dropoffLocation','pickupTime','tourDuration','sellingStyle','comfortLevel','tourPace','tourDifficulty','specialOccasion','mealPreference','accessibility','flightNumber','terminalNote','flightTime','waitingPolicy','vehicleOverride','guideType','vatMode','gratuities','pricingMethod','quoteTheme','tourTitle','tourDescription','inclusions','exclusions','cancellation'].forEach(id => { quote[id] = $(id).value; });
     quote.vehicleId = $('vehicleSelect').value;
     ['adults','children','infants','pickupPoints','customHours','vehicleQty','handlingFee','riskBuffer','markupPct','targetMargin','reviewMargin','minimumGuests','rounding'].forEach(id => { quote[id] = Number($(id).value || 0); });
-    ['wheelchair','childSeat','luggage','airportPickup','airportDropoff'].forEach(id => { quote[id] = $(id).checked; });
+    ['wheelchair','childSeat','luggage'].forEach(id => { quote[id] = $(id).checked; });
+    ['airportPickup','airportDropoff'].forEach(id => { quote[id] = $(id).value === 'true'; });
+    quote.transportMode = quote.airportPickup && quote.airportDropoff ? 'Airport pickup and drop-off' : quote.airportPickup ? 'Airport pickup' : quote.airportDropoff ? 'Airport drop-off' : 'Tour only';
+    syncConditionalFields();
     quote.guestInterests = $$('[data-interest]:checked').map(el => el.dataset.interest);
     quote.terms.cancellation = quote.cancellation;
     $('totalGuests').value = totalGuests();
@@ -174,8 +204,19 @@
     $$('[data-go-step]').forEach(btn => btn.addEventListener('click', () => goStep(Number(btn.dataset.goStep))));
   }
 
+  function attractionReference(stop) {
+    const ref = city().attractions.find(item => item.id === stop.attractionId)?.reference;
+    if (!ref) return '';
+    const stale = ref.checked && stop.referenceReviewed !== ref.checked;
+    const dateStale = ref.checked && Date.now() - new Date(ref.checked+'T00:00:00Z').getTime() > 30 * 86400000;
+    const link = (url,label) => url && /^https:\/\//.test(url) ? `<a href="${escape(url)}" target="_blank" rel="noopener noreferrer">${label} ↗</a>` : '';
+    return `<details class="attraction-reference" ${ref.unavailable ? 'open' : ''}><summary>Admission, timing &amp; booking reference${stale ? ' · draft needs review' : ''}</summary><p class="reference-status">${escape(ref.basis)} · ${ref.checked ? 'Source reviewed '+escape(ref.checked) : 'Supplier confirmation pending'}</p>${stale ? '<p class="reference-warning">This saved stop predates the latest reference. Your entered prices are preserved; use Apply latest reference rates if appropriate.</p>' : ''}${dateStale ? '<p class="reference-warning">Reference is over 30 days old. Recheck the official source before quoting.</p>' : ''}<dl><div><dt>Admission / recommended costing basis</dt><dd>${escape(ref.price)}</dd></div><div><dt>Operating information</dt><dd>${escape(ref.hours)}</dd></div><div><dt>Booking conditions</dt><dd>${escape(ref.terms)}</dd></div></dl><p class="reference-links">${link(ref.source,'Official admission / venue source')} ${link(ref.hoursSource,'Official visit information')} ${link(ref.termsSource,'Official ticket terms')}</p><p class="field-help">Use the public admission rate as a planning allowance only. Replace it with your contracted supplier rate when confirmed; review tax treatment and age/height categories.</p></details>`;
+  }
+
+  function renderAttractionPreview() { $('attractionPreview').innerHTML = attractionReference({attractionId:$('attractionSelect').value,referenceReviewed:city().attractions.find(a => a.id === $('attractionSelect').value)?.reference?.checked}); }
   function renderItinerary() {
-    $('itineraryList').innerHTML = quote.itinerary.map((stop, index) => `<article class="quote-item"><div class="item-head"><strong>${index + 1}. ${escape(stop.name)}</strong><button type="button" data-remove-stop="${escape(stop.id)}">Remove</button></div><div class="mini-grid"><label>Duration min<input data-stop="${escape(stop.id)}" data-key="duration" type="number" value="${escape(stop.duration)}"/></label><label>Drive min<input data-stop="${escape(stop.id)}" data-key="drive" type="number" value="${escape(stop.drive)}"/></label><label>Status<select data-stop="${escape(stop.id)}" data-key="status"><option ${stop.status==='Included'?'selected':''}>Included</option><option ${stop.status==='Optional'?'selected':''}>Optional</option><option ${stop.status==='Excluded'?'selected':''}>Excluded</option><option ${stop.status==='To be confirmed'?'selected':''}>To be confirmed</option></select></label><label>Ticket status<select data-stop="${escape(stop.id)}" data-key="ticketVerification"><option ${stop.ticketVerification==='Verified'?'selected':''}>Verified</option><option ${stop.ticketVerification==='Pending verification'?'selected':''}>Pending verification</option><option ${stop.ticketVerification==='Not required'?'selected':''}>Not required</option><option ${stop.ticketVerification==='Client pays directly'?'selected':''}>Client pays directly</option></select></label><label>Adult ticket<input data-stop="${escape(stop.id)}" data-key="adultTicket" type="number" value="${escape(stop.adultTicket)}"/></label><label>Child ticket<input data-stop="${escape(stop.id)}" data-key="childTicket" type="number" value="${escape(stop.childTicket)}"/></label></div><label>Operational note<textarea data-stop="${escape(stop.id)}" data-key="operationalNote">${escape(stop.operationalNote || '')}</textarea></label><label>Client-facing note<textarea data-stop="${escape(stop.id)}" data-key="clientNote">${escape(stop.clientNote || '')}</textarea></label></article>`).join('');
+    renderAttractionPreview();
+    $('itineraryList').innerHTML = quote.itinerary.map((stop, index) => `<article class="quote-item"><div class="item-head"><strong>${index + 1}. ${escape(stop.name)}</strong><button type="button" data-remove-stop="${escape(stop.id)}">Remove</button></div>${attractionReference(stop)}<div class="mini-grid"><label>Duration min<input data-stop="${escape(stop.id)}" data-key="duration" type="number" value="${escape(stop.duration)}"/></label><label>Drive min<input data-stop="${escape(stop.id)}" data-key="drive" type="number" value="${escape(stop.drive)}"/></label><label>Status<select data-stop="${escape(stop.id)}" data-key="status"><option ${stop.status==='Included'?'selected':''}>Included</option><option ${stop.status==='Optional'?'selected':''}>Optional</option><option ${stop.status==='Excluded'?'selected':''}>Excluded</option><option ${stop.status==='To be confirmed'?'selected':''}>To be confirmed</option></select></label><label>Ticket status<select data-stop="${escape(stop.id)}" data-key="ticketVerification"><option ${stop.ticketVerification==='Verified'?'selected':''}>Verified</option><option ${stop.ticketVerification==='Pending verification'?'selected':''}>Pending verification</option><option ${stop.ticketVerification==='Not required'?'selected':''}>Not required</option><option ${stop.ticketVerification==='Client pays directly'?'selected':''}>Client pays directly</option></select></label><label>Adult ticket<input data-stop="${escape(stop.id)}" data-key="adultTicket" type="number" value="${escape(stop.adultTicket)}"/></label><label>Child ticket<input data-stop="${escape(stop.id)}" data-key="childTicket" type="number" value="${escape(stop.childTicket)}"/></label></div><label>Operational note<textarea data-stop="${escape(stop.id)}" data-key="operationalNote">${escape(stop.operationalNote || '')}</textarea></label><label>Client-facing note<textarea data-stop="${escape(stop.id)}" data-key="clientNote">${escape(stop.clientNote || '')}</textarea></label></article>`).join('');
     $$('[data-stop]').forEach(el => el.addEventListener('input', () => { const stop = quote.itinerary.find(s => s.id === el.dataset.stop); if (stop) stop[el.dataset.key] = el.type === 'number' ? Number(el.value || 0) : el.value; save(); renderSummaryOnly(); }));
     $$('[data-remove-stop]').forEach(btn => btn.addEventListener('click', () => { quote.itinerary = quote.itinerary.filter(s => s.id !== btn.dataset.removeStop); save(); render(); }));
   }
@@ -257,7 +298,7 @@
     return lines.map(l => `<article class="cost-mobile-card"><header><h5>${escape(l.name)}</h5>${verificationBadge(l)}</header><p class="cost-type">${escape(l.type)}${l.type === 'Conditional' ? ' · '+escape(l.conditionStatus || 'Included') : ''}</p><dl class="cost-mobile-values"><div><dt>Quantity</dt><dd>${escape(l.quantity)}</dd></div><div><dt>Unit cost</dt><dd>${money(l.unitCost)}</dd></div><div><dt>Total</dt><dd>${money(countedCost(l) ? CALC.costLineTotal(l) : 0)}</dd></div></dl>${countedCost(l) ? '' : '<p>Not included in net cost.</p>'}${costDetails(l)}</article>`).join('');
   }
   function renderWorksheet(r) {
-    const identity = [['Quote reference',quote.quoteNo],['Client',quote.clientCompany || 'Missing'],['Nationality / market',quote.nationality || 'To confirm'],['Guests',`${totalGuests()} (${quote.adults} adults · ${quote.children} children · ${quote.infants} infants)`],['Vehicle',`${vehicle().name} × ${quote.vehicleQty}`],['Service date',quote.serviceDate || 'Missing']];
+    const identity = [['Quote reference',quote.quoteNo],['Client',quote.clientCompany || 'Missing'],['Nationality / market',quote.nationality || 'To confirm'],['Guests',`${totalGuests()} (${guestBreakdown()})`],['Vehicle',`${vehicle().name} × ${quote.vehicleQty}`],['Service date',quote.serviceDate || 'Missing']];
     const totals = [['Net cost',r.totals.netCost],['Selling before VAT',r.price.beforeVat],['VAT',r.price.vatAmount],['Final price',r.price.finalPrice]];
     const groups = new Map();
     for (const line of r.lines) { const category = line.category || 'Other'; if (!groups.has(category)) groups.set(category,[]); groups.get(category).push(line); }
@@ -270,18 +311,32 @@
     $('internalWorksheet').querySelectorAll('.cost-note-toggle').forEach(button => button.addEventListener('click', () => { const row = $(button.getAttribute('aria-controls')); row.hidden = !row.hidden; button.setAttribute('aria-expanded', String(!row.hidden)); button.textContent = row.hidden ? 'Details' : 'Close'; }));
   }
 
-  function clientText(r) {
-    const itinerary = quote.itinerary.filter(s => s.status !== 'Excluded').map((s, i) => `${i + 1}. ${s.name} - ${s.status}. ${s.clientNote || ''}`).join('\n');
-    const guestNotes = [`Comfort level: ${quote.comfortLevel}`, `Tour pace: ${quote.tourPace}`, `Tour difficulty: ${quote.tourDifficulty}`];
-    if (quote.specialOccasion) guestNotes.push(`Special occasion: ${quote.specialOccasion}`);
-    if (quote.mealPreference !== 'No meal required') guestNotes.push(`Meal preference: ${quote.mealPreference}`);
-    if (quote.guestInterests?.length) guestNotes.push(`Guest interests: ${quote.guestInterests.join(', ')}`);
-    return `INFRAQUOTE — DRAFT FOR REVIEW\nSample pricing; subject to supplier confirmation.\n${quote.quoteNo}\n\nClient: ${quote.clientCompany}\nDate: ${quote.quoteDate}\nValid until: ${quote.validityDate}\n\n${quote.tourTitle}\n${quote.tourDescription}\n\nService date: ${quote.serviceDate}\nNationality/source market: ${quote.nationality || 'To be confirmed'}\nGuests: ${totalGuests()} (${quote.adults} adults, ${quote.children} children, ${quote.infants} infants)\nPickup: ${quote.pickupLocation} at ${quote.pickupTime}\nDrop-off: ${quote.dropoffLocation}\nDuration: ${quote.tourDuration === 'Custom' ? `${quote.customHours} hours` : quote.tourDuration}\nGuide language: ${quote.guideLanguage}\n${guestNotes.join('\n')}\n\nItinerary:\n${itinerary}\n\nInclusions:\n${quote.inclusions}\n\nExclusions:\n${quote.exclusions}\n\nPrice: ${money(r.price.finalPrice)}\nPrice per guest: ${money(r.price.pricePerGuest)}\n${quote.vatMode === 'exclusive' ? `VAT: ${money(r.price.vatAmount)} added as applicable.` : quote.vatMode === 'inclusive' ? 'VAT is included where applicable.' : 'VAT/tax outside scope or not applied as selected.'}\n${quote.gratuities}\n\n${DATA.defaultTerms.validity}\n${DATA.defaultTerms.revision}\n${DATA.defaultTerms.access}\n${DATA.defaultTerms.cultural}\n${DATA.defaultTerms.overtime}\n${quote.cancellation}`;
+  function clientDocument(r) {
+    const date = value => value ? new Date(value+'T12:00:00').toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'}) : 'To confirm';
+    const guestNotes = [];
+    if (quote.mealPreference !== 'No meal required') guestNotes.push(`Meal arrangement: ${quote.mealPreference}. Venue and availability to be confirmed.`);
+    if (quote.specialOccasion) guestNotes.push(`Special occasion: ${quote.specialOccasion}. Personal touches can be arranged on request.`);
+    if (quote.accessibility) guestNotes.push(`Accessibility requests: ${quote.accessibility}`);
+    if (hasAirportService()) guestNotes.push(`Transfer arrangement: ${quote.transportMode}. Flight and meeting details to be confirmed separately.`);
+    return { reference:quote.quoteNo, title:quote.tourTitle, description:quote.tourDescription, theme:quote.quoteTheme,
+      client:quote.clientCompany || 'Client to confirm', preparedBy:quote.preparedBy || 'Ahmed Mahmoud', quoteDate:date(quote.quoteDate), validity:date(quote.validityDate),
+      details:[['Service date',date(quote.serviceDate)],['Guests',`${totalGuests()} (${guestBreakdown()})`],['Duration',quote.tourDuration === 'Custom' ? `${quote.customHours} hours` : quote.tourDuration || 'To confirm'],['Guide',quote.guideLanguage || 'To confirm'],['Pickup',`${quote.pickupLocation || 'To confirm'}${quote.pickupTime ? ' at '+quote.pickupTime : ''}`],['Drop-off',quote.dropoffLocation || 'To confirm']],
+      total:money(r.price.finalPrice), beforeVat:money(r.price.beforeVat), vat:money(r.price.vatAmount), vatLabel:quote.vatMode === 'none' ? 'VAT not applied as selected' : 'VAT included in total',
+      itinerary:quote.itinerary.filter(stop => stop.status !== 'Excluded').map(stop => ({name:stop.name,status:stop.status,note:stop.clientNote || ''})), guestNotes,
+      inclusions:quote.inclusions, exclusions:quote.exclusions, cancellation:quote.cancellation,
+      notes:[DATA.defaultTerms.validity, DATA.defaultTerms.revision, DATA.defaultTerms.access, DATA.defaultTerms.cultural, DATA.defaultTerms.overtime,quote.gratuities],
+      draft:'Draft for review. Prices and services are subject to supplier confirmation.',
+      contact:'InfraQuote by Ahmed Mahmoud | ahmedqualityops.com',
+      unresolved:r.ready.blocking.length > 0 ? 'Incomplete draft - operational checks remain unresolved.' : '' };
   }
-
+  function clientText(r) {
+    const d = clientDocument(r);
+    return ['INFRAQUOTE - CLIENT QUOTATION',d.draft,d.unresolved,d.reference,d.title,d.description,`Client: ${d.client}`,`Valid until: ${d.validity}`,`Total: ${d.total} (${d.vatLabel})`,...d.details.map(([label,value]) => `${label}: ${value}`),'ITINERARY',...d.itinerary.map((stop,i) => `${i+1}. ${stop.name} (${stop.status}) - ${stop.note}`),'GUEST ARRANGEMENTS',...d.guestNotes,'INCLUSIONS',d.inclusions,'EXCLUSIONS',d.exclusions,'CANCELLATION AND AMENDMENTS',d.cancellation,'BOOKING NOTES',...d.notes,d.contact].filter(Boolean).join('\n');
+  }
   function renderClientQuote(r) {
-    const tags = [quote.comfortLevel, quote.tourPace, quote.tourDifficulty, ...(quote.guestInterests || [])].filter(Boolean);
-    $('clientQuote').innerHTML = `<div class="quote-paper theme-${String(quote.quoteTheme || 'Standard').toLowerCase()}"><p class="eyebrow dark">${escape(quote.quoteTheme)} client-facing quotation</p><h2>${escape(quote.tourTitle)}</h2><p>${escape(quote.tourDescription)}</p><div class="paper-meta"><span>${escape(quote.quoteNo)}</span><span>${escape(quote.clientCompany || 'Client name missing')}</span><span>${escape(quote.nationality || 'Nationality TBC')}</span><span>Valid until ${escape(quote.validityDate || 'missing')}</span></div><div class="paper-tags">${tags.map(tag => `<span>${escape(tag)}</span>`).join('')}</div><p class="quote-output-note">Draft quotation · Sample pricing · Subject to supplier confirmation</p><h3>Service details</h3><p>Service date: ${escape(quote.serviceDate)}<br>Guests: ${totalGuests()}<br>Pickup: ${escape(quote.pickupLocation)} at ${escape(quote.pickupTime)}<br>Drop-off: ${escape(quote.dropoffLocation)}<br>Guide language: ${escape(quote.guideLanguage)}</p><h3>Guest experience notes</h3><ul>${experienceInsights().slice(1).map(note => `<li>${escape(note)}</li>`).join('')}</ul><h3>Itinerary</h3><ol>${quote.itinerary.filter(s => s.status !== 'Excluded').map(s => `<li><strong>${escape(s.name)}</strong> (${escape(s.status)})<br/><span>${escape(s.clientNote || '')}</span></li>`).join('')}</ol><h3>Inclusions</h3><p>${escape(quote.inclusions)}</p><h3>Exclusions</h3><p>${escape(quote.exclusions)}</p><h3>Price</h3><p class="paper-price">${money(r.price.finalPrice)}</p><p>${quote.vatMode === 'exclusive' ? `VAT amount: ${money(r.price.vatAmount)}.` : quote.vatMode === 'inclusive' ? 'VAT included where applicable.' : 'VAT not applied as selected.'}</p><p>${escape(quote.gratuities)}</p><h3>Cancellation and amendments</h3><p>${escape(quote.cancellation)}</p><h3>Important notes</h3><p>${DATA.defaultTerms.validity}</p><p>${DATA.defaultTerms.revision}</p><p>${DATA.defaultTerms.access}</p><p>${DATA.defaultTerms.cultural}</p><p>${DATA.defaultTerms.overtime}</p></div>`;
+    const d = clientDocument(r);
+    const section = (title,content) => `<section class="client-section"><h3>${title}</h3>${content}</section>`;
+    $('clientQuote').innerHTML = `<article class="quote-paper client-document"><header class="client-doc-header"><strong>InfraQuote</strong><span>Tour quotation · ${escape(d.reference)}</span></header><p class="client-doc-kicker">${escape(d.theme)} experience</p><h2>${escape(d.title)}</h2><p class="client-doc-description">${escape(d.description)}</p><div class="client-doc-meta"><span>Prepared for <strong>${escape(d.client)}</strong></span><span>Issued ${escape(d.quoteDate)}</span><span>Valid until ${escape(d.validity)}</span></div><div class="client-price-panel"><div><span>Total quotation</span><strong>${escape(d.total)}</strong></div><p>Before VAT: ${escape(d.beforeVat)}<br>VAT: ${escape(d.vat)}<br>${escape(d.vatLabel)}</p></div><p class="client-draft-note">${escape(d.draft)}${d.unresolved ? ' '+escape(d.unresolved) : ''}</p><dl class="client-service-grid">${d.details.map(([label,value]) => `<div><dt>${escape(label)}</dt><dd>${escape(value)}</dd></div>`).join('')}</dl>${section('Your itinerary',`<ol class="client-itinerary">${d.itinerary.map(stop => `<li><strong>${escape(stop.name)}</strong><span>${escape(stop.status)}</span><p>${escape(stop.note)}</p></li>`).join('')}</ol>`)}${d.guestNotes.length ? section('Guest arrangements',`<ul>${d.guestNotes.map(note => `<li>${escape(note)}</li>`).join('')}</ul>`) : ''}<div class="client-scope-grid">${section('Included',`<p>${escape(d.inclusions)}</p>`)}${section('Not included',`<p>${escape(d.exclusions)}</p>`)}</div>${section('Cancellation and amendments',`<p>${escape(d.cancellation)}</p>`)}${section('Booking notes',`<ul>${d.notes.map(note => `<li>${escape(note)}</li>`).join('')}</ul>`)}<footer class="client-doc-footer"><span>Prepared by ${escape(d.preparedBy)}</span><span>${escape(d.contact)}</span></footer></article>`;
   }
 
   function smartPrompts() {
@@ -313,6 +368,8 @@
       const saved = JSON.parse(localStorage.getItem(STORAGE) || 'null');
       if (saved) quote = { ...defaultQuote(), ...saved, terms: { ...DATA.defaultTerms, ...(saved.terms || {}) } };
       else quote = defaultQuote();
+      quote.airportPickup = Boolean(quote.airportPickup || ['Airport pickup','Airport pickup and drop-off'].includes(quote.transportMode));
+      quote.airportDropoff = Boolean(quote.airportDropoff || ['Airport drop-off','Airport pickup and drop-off'].includes(quote.transportMode));
     } catch (e) { quote = defaultQuote(); }
   }
   function download(name, content, type = 'text/plain') { const blob = new Blob([content], { type }); const url = URL.createObjectURL(blob); const a = document.createElement('a'); a.href = url; a.download = name; document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url); }
@@ -320,22 +377,25 @@
   function exportWorksheet() { const r = results(); const csv = [`Cost Item,Category,Type,Qty,Unit (${quote.currency}),Total (${quote.currency}),Included,Verification,Supplier,Internal Notes`, ...r.lines.map(l => [l.name,l.category,l.type,l.quantity,convert(l.unitCost),convert(CALC.costLineTotal(l)),l.include?'Yes':'No',l.verification,l.supplier||'',l.internalNote||''].map(v => `"${String(v).replace(/"/g,'""')}"`).join(','))].join('\n'); download(`${quote.quoteNo}-worksheet.csv`, csv, 'text/csv'); }
 
   function bind() {
-    $('quoteForm').addEventListener('input', () => { readForm(); save(); smartPrompts(); renderSummaryOnly(); });
-    $('quoteForm').addEventListener('change', () => { readForm(); save(); smartPrompts(); renderSummaryOnly(); });
+    $('quoteForm').addEventListener('input', () => { readForm(); if (!CALC.stepIssues(quote,step).length) clearFormErrors(); save(); smartPrompts(); renderSummaryOnly(); });
+    $('quoteForm').addEventListener('change', () => { readForm(); if (!CALC.stepIssues(quote,step).length) clearFormErrors(); save(); smartPrompts(); renderSummaryOnly(); });
     $('quoteStepSelect').addEventListener('change', () => goStep(Number($('quoteStepSelect').value)));
     $('nextStep').addEventListener('click', () => goStep(step === 7 ? 0 : step + 1));
     $('prevStep').addEventListener('click', () => goStep(Math.max(0,step - 1)));
     $('saveDraft').addEventListener('click', () => { readForm(); if (save()) feedback('Draft saved in this browser.'); });
     $('duplicateQuote').addEventListener('click', () => { readForm(); quote.quoteNo = CALC.quoteReference(city().code); quote.quoteStatus = 'Draft'; save(); render(); });
     $('resetQuote').addEventListener('click', () => { if (confirm('Reset InfraQuote draft?')) { try { localStorage.removeItem(STORAGE); } catch (_) {} quote = defaultQuote(); step = 0; save(); render(); } });
+    $('attractionSelect').addEventListener('change', renderAttractionPreview);
     $('addStop').addEventListener('click', () => { const item = city().attractions.find(a => a.id === $('attractionSelect').value); if (item) quote.itinerary.push(stopFromAttraction(item)); save(); render(); });
     $('addCost').addEventListener('click', () => { quote.costs.push(costLine('Custom internal cost', 'Custom', 'Fixed', 1, 0, true, 'Pending verification')); save(); render(); });
     $('addCondition').addEventListener('click', () => { quote.costs.push(costLine('Conditional cost', 'Operations', 'Conditional', 1, 0, true, 'Pending verification', 'Review before sending.', '', 'Pending confirmation')); save(); render(); });
+    $('downloadQuotePdf').addEventListener('click', async () => { readForm(); renderSummaryOnly(); const button = $('downloadQuotePdf'); button.disabled = true; button.textContent = 'Preparing PDF…'; try { await window.INFRAQUOTE_PDF.download(clientDocument(results())); feedback('Client PDF downloaded. Review supplier availability before sending.'); } catch (error) { feedback('PDF download could not complete. Use Print client quote as a fallback.'); } finally { button.disabled = false; button.textContent = 'Download client PDF'; } });
+    $('refreshAttractionRates').addEventListener('click', () => { quote.itinerary = quote.itinerary.map(stop => { const item = city().attractions.find(a => a.id === stop.attractionId); if (!item || item.id === 'custom') return stop; return {...stop, adultTicket:item.adult, childTicket:item.child, infantTicket:item.infant, ticketRequired:item.ticketRequired, ticketVerification:item.ticketRequired ? 'Pending verification' : 'Not required', referenceReviewed:item.reference?.checked || ''}; }); save(); render(); feedback('Latest reference rates applied. Confirm the visit date and supplier conditions before marking tickets verified.'); });
     $('printQuote').addEventListener('click', () => { readForm(); renderSummaryOnly(); window.print(); });
     $('copyClientQuote').addEventListener('click', async () => { readForm(); try { if (!navigator.clipboard) throw new Error('unavailable'); await navigator.clipboard.writeText(clientText(results())); feedback('Client quote text copied.'); } catch (_) { feedback('Copy unavailable. Select the client preview text or use Print client quote / PDF.'); } });
     $('exportWorksheet').addEventListener('click',exportWorksheet);
     $('exportJson').addEventListener('click', () => { readForm(); download(`${quote.quoteNo}.json`, JSON.stringify({ quote, results: results() }, null, 2), 'application/json'); });
-    $('prepareDispatch').addEventListener('click', () => { readForm(); const payload = { serviceDate: quote.serviceDate, tourName: quote.tourTitle, guestCount: totalGuests(), nationality: quote.nationality, guestProfile: quote.guestProfile, comfortLevel: quote.comfortLevel, tourPace: quote.tourPace, tourDifficulty: quote.tourDifficulty, guestInterests: quote.guestInterests, specialOccasion: quote.specialOccasion, mealPreference: quote.mealPreference, pickupLocation: quote.pickupLocation, dropoffLocation: quote.dropoffLocation, pickupTime: quote.pickupTime, itineraryStops: quote.itinerary.map(s => s.name), plannedMinutes: plannedMinutes(), vehicleRecommendation: vehicle().name, guideLanguage: quote.guideLanguage, luggageRequired: quote.luggage, airportPickup: quote.airportPickup || ['Airport pickup', 'Airport pickup and drop-off'].includes(quote.transportMode), airportDropoff: quote.airportDropoff || ['Airport drop-off', 'Airport pickup and drop-off'].includes(quote.transportMode), flightNumber: quote.flightNumber, flightTime: quote.flightTime, terminalNote: quote.terminalNote, waitingPolicy: quote.waitingPolicy, specialRequirements: quote.accessibility, operationalNotes: [...experienceInsights(), ...quote.itinerary.map(s => s.operationalNote).filter(Boolean)], clientConfirmationStatus: quote.quoteStatus }; download(`${quote.quoteNo}-infradispatch-payload.json`, JSON.stringify(payload, null, 2), 'application/json'); });
+    $('prepareDispatch').addEventListener('click', () => { readForm(); const payload = { serviceDate: quote.serviceDate, tourName: quote.tourTitle, guestCount: totalGuests(), nationality: quote.nationality, guestProfile: quote.guestProfile, comfortLevel: quote.comfortLevel, tourPace: quote.tourPace, tourDifficulty: quote.tourDifficulty, guestInterests: quote.guestInterests, specialOccasion: quote.specialOccasion, mealPreference: quote.mealPreference, pickupLocation: quote.pickupLocation, dropoffLocation: quote.dropoffLocation, pickupTime: quote.pickupTime, itineraryStops: quote.itinerary.map(s => s.name), plannedMinutes: plannedMinutes(), vehicleRecommendation: vehicle().name, guideLanguage: quote.guideLanguage, luggageRequired: quote.luggage, airportPickup: quote.airportPickup || ['Airport pickup', 'Airport pickup and drop-off'].includes(quote.transportMode), airportDropoff: quote.airportDropoff || ['Airport drop-off', 'Airport pickup and drop-off'].includes(quote.transportMode), flightNumber: hasAirportService() ? quote.flightNumber : '', flightTime: hasAirportService() ? quote.flightTime : '', terminalNote: hasAirportService() ? quote.terminalNote : '', waitingPolicy: hasAirportService() ? quote.waitingPolicy : '', specialRequirements: quote.accessibility, operationalNotes: [...experienceInsights(), ...quote.itinerary.map(s => s.operationalNote).filter(Boolean)], clientConfirmationStatus: quote.quoteStatus }; download(`${quote.quoteNo}-infradispatch-payload.json`, JSON.stringify(payload, null, 2), 'application/json'); });
   }
 
   function initOptions() {

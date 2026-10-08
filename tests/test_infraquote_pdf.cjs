@@ -1,0 +1,11 @@
+const fs=require('node:fs'),assert=require('node:assert/strict');
+const {jsPDF}=require('../assets/vendor/jspdf-4.2.1.umd.min.js');
+const generator=require('../live-demos/assets/js/infraquote-pdf.js');
+const fonts={regular:fs.readFileSync('assets/vendor/fonts/DejaVuSans.ttf').toString('base64'),bold:fs.readFileSync('assets/vendor/fonts/DejaVuSans-Bold.ttf').toString('base64')};
+const sample={reference:'IQ-TEST',title:'Abu Dhabi Cultural City Tour',description:'A private cultural tour with selected highlights.',theme:'Standard',client:'Ahmed',preparedBy:'Ahmed Mahmoud',quoteDate:'8 Oct 2026',validity:'15 Oct 2026',details:[['Service date','22 Oct 2026'],['Guests','12 guests'],['Duration','Full day'],['Guide','English'],['Pickup','Hotel at 09:00'],['Drop-off','Hotel']],total:'AED 6,135.00',beforeVat:'AED 5,842.86',vat:'AED 292.14',vatLabel:'VAT included in total',itinerary:Array.from({length:4},(_,i)=>({name:'Cultural stop '+(i+1),status:'Included',note:'Entrance subject to availability.'})),guestNotes:['Special occasion: Honeymoon.'],inclusions:'Private vehicle\nLicensed guide\nWater',exclusions:'Meals\nPersonal expenses',cancellation:'Subject to final supplier conditions.',notes:['Availability must be confirmed.','Changes may require a revised quotation.'],draft:'Draft for review. Subject to supplier confirmation.',contact:'InfraQuote by Ahmed Mahmoud | ahmedqualityops.com'};
+const pdf=generator.create(sample,jsPDF,fonts);
+assert.ok(pdf.getNumberOfPages()<=2);
+assert.ok(pdf.output('arraybuffer').byteLength>10000);
+const long=generator.create({...sample,itinerary:Array.from({length:24},(_,i)=>({name:'Extended cultural stop '+i,status:'Included',note:'An extended client note. '.repeat(12)})),description:'An extended description. '.repeat(30)},jsPDF,fonts);
+assert.ok(long.getNumberOfPages()>2,'Long quotations should paginate without truncation');
+console.log('Client PDF font embedding and variable-length pagination checks passed.');

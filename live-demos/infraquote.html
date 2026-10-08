@@ -21,7 +21,7 @@
 <script data-schema="seo-geo" type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"InfraQuote","url":"https://ahmedqualityops.com/live-demos/infraquote.html","applicationCategory":"BusinessApplication","operatingSystem":"Web","isAccessibleForFree":true,"description":"Static MVP for DMC city-tour costing, margin review, guest requirements, transport assumptions and client-ready quotations.","author":{"@type":"Person","name":"Ahmed Mahmoud","url":"https://ahmedqualityops.com/"}}</script>
 <link href="assets/css/github-integration.css?v=20260711" rel="stylesheet"/><link href="assets/css/portfolio-bridge.css" rel="stylesheet"/>
 <link href="assets/css/table-responsive-v16.css?v=20260721" rel="stylesheet"/>
-<link rel="stylesheet" href="/assets/css/global-search.css"/><script defer src="/assets/js/discovery.js?v=20261008-next"></script><link rel="stylesheet" href="/assets/css/site-field-manual.css?v=20261008-polish"/><link rel="stylesheet" href="/assets/css/project-demo-theme.css?v=20261008-polish"/><link rel="stylesheet" href="/assets/css/browse-products.css?v=20261008-next"/><script defer src="/assets/js/browse-products.js?v=20261008-browse"></script><link rel="stylesheet" href="/assets/css/infraquote-polish.css?v=20261008-worksheet"/><link rel="stylesheet" href="/assets/css/site-chrome.css?v=20261008-usability"/></head>
+<link rel="stylesheet" href="/assets/css/global-search.css"/><script defer src="/assets/js/discovery.js?v=20261008-next"></script><link rel="stylesheet" href="/assets/css/site-field-manual.css?v=20261008-polish"/><link rel="stylesheet" href="/assets/css/project-demo-theme.css?v=20261008-polish"/><link rel="stylesheet" href="/assets/css/browse-products.css?v=20261008-next"/><script defer src="/assets/js/browse-products.js?v=20261008-browse"></script><link rel="stylesheet" href="/assets/css/infraquote-polish.css?v=20261008-flow"/><link rel="stylesheet" href="/assets/css/site-chrome.css?v=20261008-usability"/></head>
 <body class="infraquote-page knowledge-atlas-demo">
 <a class="skip" href="#main">Skip to content</a>
 <header class="masthead">
@@ -73,18 +73,19 @@
 <button class="btn secondary" id="duplicateQuote" type="button">Duplicate</button>
 <button class="btn secondary" id="resetQuote" type="button">Reset</button>
 </div>
-<p class="quote-note">Drafts save automatically in this browser. Demo supplier/ticket rates are editable sample data only.</p>
+<p class="quote-note">Drafts save automatically in this browser. Supplier costs are sample data. Attraction references show their source and review status.</p>
 </aside>
 <section class="quote-workspace">
-<form class="quote-form" id="quoteForm" onsubmit="return false">
+<form class="quote-form" id="quoteForm" onsubmit="return false" novalidate>
+<div id="quoteFormErrors" class="quote-form-errors" role="alert" hidden></div>
 <section class="quote-step" data-step="0">
 <div class="step-head"><span>Step 1</span><h2>Client &amp; booking details</h2></div>
 <div class="form-grid">
-<label>Client company<input id="clientCompany"/></label><label>Contact person<input id="contactPerson"/></label>
+<label>Client / company <span class="required-mark">Required</span><input id="clientCompany" required/></label><label>Contact person<input id="contactPerson"/></label>
 <label>Email<input id="clientEmail" type="email"/></label><label>Phone<input id="clientPhone"/></label>
 <label>Enquiry reference<input id="enquiryRef"/></label><label>Quotation number<input id="quoteNo"/></label>
-<label>Quotation date<input id="quoteDate" type="date"/></label><label>Service date<input id="serviceDate" type="date"/></label>
-<label>Validity date<input id="validityDate" type="date"/></label><label>Prepared by<input id="preparedBy"/></label>
+<label>Quotation date<input id="quoteDate" type="date"/></label><label>Service date <span class="required-mark">Required</span><input required id="serviceDate" type="date"/></label>
+<label>Validity date <span class="required-mark">Required</span><input required id="validityDate" type="date"/></label><label>Prepared by<input id="preparedBy"/></label>
 <label>Market/source<input id="marketSource"/></label><label>Nationality<input id="nationality" placeholder="Guest nationality or source market"/></label>
 <label>Currency<select id="currency"><option>AED</option><option>USD</option><option>EUR</option><option>GBP</option><option>SAR</option></select><small id="currencyHint"></small></label>
 <label>Service type<select id="serviceType"><option>Private tour</option><option>Shared tour</option><option>Corporate group</option><option>School group</option><option>VIP tour</option><option>Custom tour</option></select></label>
@@ -94,11 +95,11 @@
 <section class="quote-step" data-step="1" hidden="">
 <div class="step-head"><span>Step 2</span><h2>Guests &amp; service requirements</h2></div>
 <div class="form-grid">
-<label>Adults<input id="adults" min="0" type="number"/></label><label>Children<input id="children" min="0" type="number"/></label><label>Infants<input id="infants" min="0" type="number"/></label><label>Total guests<input id="totalGuests" readonly=""/></label>
+<label>Adults<input id="adults" min="0" type="number"/></label><label>Children<input id="children" min="0" type="number"/></label><label>Infants<input id="infants" min="0" type="number"/></label><label>Total guests <span class="required-mark">At least one</span><input id="totalGuests" readonly=""/></label>
 <label>Guest profile<select id="guestProfile"><option>Leisure</option><option>Family</option><option>Corporate</option><option>VIP</option><option>School</option><option>Senior guests</option><option>Mixed group</option></select></label>
-<label>Pickup location<input id="pickupLocation"/></label><label>Drop-off location<input id="dropoffLocation"/></label>
+<label>Pickup location <span class="required-mark">Required</span><input required id="pickupLocation"/></label><label>Drop-off location <span class="required-mark">Required</span><input required id="dropoffLocation"/></label>
 <label>Pickup points<input id="pickupPoints" min="1" type="number"/></label><label>Pickup time<input id="pickupTime" type="time"/></label>
-<label>Tour duration<select id="tourDuration"><option>Half day</option><option>Full day</option><option>Custom</option></select></label><label>Custom hours<input id="customHours" min="1" step="0.5" type="number"/></label>
+<label>Tour duration <span class="required-mark">Required</span><select id="tourDuration" required><option value="">Choose duration</option><option>Half day</option><option>Full day</option><option>Custom</option></select><small>Half day: 5 hours. Full day: 8 hours. Custom: enter your agreed hours.</small></label><label id="customHoursField" hidden>Custom hours <span class="required-mark">Required</span><input id="customHours" min="1" step="0.5" type="number"/></label>
 <label>Selling style<select id="sellingStyle"><option>FIT</option><option>MICE</option><option>Group</option></select></label>
 <label>Comfort level<select id="comfortLevel"><option>Standard</option><option>Comfort</option><option>Premium</option><option>VIP</option></select></label>
 <label>Tour pace<select id="tourPace"><option>Relaxed</option><option>Balanced</option><option>Fast</option></select></label>
@@ -128,6 +129,8 @@
 <div class="step-head"><span>Step 3</span><h2>Itinerary builder</h2></div>
 <details class="advanced-settings"><summary>Itinerary guidance and suggestions</summary><div class="experience-panel" id="itineraryAdvisor"></div></details>
 <div class="quote-toolbar"><select id="attractionSelect" aria-label="Attraction to add"></select><button class="btn secondary" id="addStop" type="button">Add stop</button></div>
+<div id="attractionPreview"></div>
+<p class="field-help">Reference prices are public admission prices, not contracted DMC rates. Check the date, age/height policy and ticket conditions before confirming.</p><button id="refreshAttractionRates" class="btn secondary" type="button">Apply latest reference rates to itinerary</button>
 <div class="item-list" id="itineraryList"></div>
 </section>
 <section class="quote-step" data-step="3" hidden="">
@@ -135,13 +138,14 @@
 <div class="vehicle-panel" id="vehiclePanel"></div>
 <div class="form-grid">
 <label>Guide language<input id="guideLanguage" list="guideLanguageOptions" placeholder="English, French, Arabic, German..."/><datalist id="guideLanguageOptions"></datalist></label>
-<label>Transport service flags<select id="transportMode"><option>Tour only</option><option>Airport pickup</option><option>Airport drop-off</option><option>Airport pickup and drop-off</option></select></label>
+<label>Airport pickup needed?<select id="airportPickup"><option value="false">No</option><option value="true">Yes</option></select></label><label>Airport drop-off needed?<select id="airportDropoff"><option value="false">No</option><option value="true">Yes</option></select></label>
+<div id="airportDetails" class="form-grid full" hidden><p class="field-help full">Transfer details can be completed later, before dispatch. They are not needed for a tour-only quotation.</p>
 <label>Flight number<input id="flightNumber" placeholder="Optional for airport services"/></label><label>Terminal / airport note<input id="terminalNote" placeholder="Terminal, gate, arrival hall, meeting point"/></label>
-<label>Arrival/departure time<input id="flightTime" type="time"/></label><label>Waiting policy<select id="waitingPolicy"><option>Standard waiting policy</option><option>Extended waiting buffer</option><option>VIP meet-and-greet buffer</option></select></label>
+<label>Arrival/departure time<input id="flightTime" type="time"/></label><label>Waiting policy<select id="waitingPolicy"><option>Standard waiting policy</option><option>Extended waiting buffer</option><option>VIP meet-and-greet buffer</option></select></label></div>
 <label>Selected vehicle<select id="vehicleSelect"></select></label><label>Vehicle quantity<input id="vehicleQty" min="1" type="number"/></label>
 <label>Override reason<input id="vehicleOverride"/></label><label>Guide type<select id="guideType"><option>Licensed guide</option><option>Tour leader</option><option>Driver-guide</option><option>Hostess</option><option>Assistant guide</option><option>Interpreter</option></select></label>
 <label>Coordinator / handling fee<input id="handlingFee" min="0" type="number"/></label><label>Risk buffer<input id="riskBuffer" min="0" type="number"/></label>
-<div class="quote-checks full"><label><input id="luggage" type="checkbox"/>Luggage requirement affects vehicle comfort</label><label><input id="airportPickup" type="checkbox"/>Airport pickup required</label><label><input id="airportDropoff" type="checkbox"/>Airport drop-off required</label></div>
+<div class="quote-checks full"><label><input id="luggage" type="checkbox"/>Luggage requirement affects vehicle comfort</label></div>
 </div>
 </section>
 <section class="quote-step" data-step="4" hidden="">
@@ -175,7 +179,7 @@
 <section class="quote-step" data-step="7" hidden="">
 <div class="step-head"><span>Step 8</span><h2>Client quotation preview &amp; export</h2></div>
 <div class="form-grid"><label>Quote theme<select id="quoteTheme"><option>Standard</option><option>Premium</option><option>Corporate</option><option>VIP</option></select></label><label>Tour title<input id="tourTitle"/></label><label class="full">Tour description<textarea id="tourDescription"></textarea></label><label class="full">Inclusions<textarea id="inclusions"></textarea></label><label class="full">Exclusions<textarea id="exclusions"></textarea></label><label class="full">Cancellation / amendment terms<textarea id="cancellation"></textarea></label></div>
-<p class="quote-output-note">Client output is a draft for review. Supplier rates and exchange rates are sample data. Internal costs stay in the worksheet exports.</p><div class="quote-toolbar"><button class="btn" id="printQuote" type="button">Print client quote / PDF</button><button class="btn secondary" id="copyClientQuote" type="button">Copy quote text</button><button class="btn secondary" id="exportWorksheet" type="button">Export worksheet CSV</button><button class="btn secondary" id="exportJson" type="button">Export JSON</button><button class="btn secondary" id="prepareDispatch" type="button">Prepare for InfraDispatch</button></div>
+<p class="quote-output-note">Client output is a draft for review. Supplier costs and exchange rates are sample data; public attraction rates require date and category confirmation. Internal costs stay in the worksheet exports.</p><div class="quote-toolbar"><button class="btn" id="downloadQuotePdf" type="button">Download client PDF</button><button class="btn secondary" id="printQuote" type="button">Print client quote</button><button class="btn secondary" id="copyClientQuote" type="button">Copy quote text</button><button class="btn secondary" id="exportWorksheet" type="button">Export worksheet CSV</button><button class="btn secondary" id="exportJson" type="button">Export JSON</button><button class="btn secondary" id="prepareDispatch" type="button">Prepare for InfraDispatch</button></div>
 <div class="client-quote" id="clientQuote"></div>
 </section>
 <div class="step-controls"><button class="btn secondary" id="prevStep" type="button">Back</button><button class="btn" id="nextStep" type="button">Next</button></div>
@@ -191,9 +195,10 @@
 <aside class="ai-playbook-context-link" style="margin:32px 0;padding:24px;border:1px solid #d9d1c1;border-left:5px solid #b68a2f;border-radius:14px;background:#fcfaf5;"><h2 style="margin:0 0 8px;color:#071527;font-size:1.35rem;">Connect InfraQuote with the Sales AI Toolkit</h2><p>Use AI for commercial structure and quality review while keeping calculations and terms in approved sources.</p><a href="/articles/tourism-sales-quotation-ai-prompts/index.html" style="display:inline-block;margin-top:8px;font-weight:800;color:#815f17;">Explore the connected playbook article →</a></aside></main>
 <section class="quote-product-note" id="footer-contact"><p>InfraQuote by Ahmed Mahmoud · Static MVP · Abu Dhabi sample workflow</p><a href="/projects/infraquote/index.html#product-research">Research and product details</a></section>
 <script defer="" src="assets/js/site.js"></script>
-<script defer="" src="assets/js/infraquote-data.js"></script>
-<script defer="" src="assets/js/infraquote-calculations.js?v=20261008-worksheet"></script>
-<script defer="" src="assets/js/infraquote-app.js?v=20261008-worksheet"></script>
+<script defer="" src="assets/js/infraquote-data.js?v=20261008-flow"></script>
+<script defer="" src="assets/js/infraquote-calculations.js?v=20261008-flow"></script>
+<script defer="" src="assets/js/infraquote-pdf.js?v=20261008-flow"></script>
+<script defer="" src="assets/js/infraquote-app.js?v=20261008-flow"></script>
 <script defer="" src="assets/js/site-config.js"></script>
 <script defer="" src="/assets/js/site-config.js?v=20261008-polish"></script><script defer="" src="/assets/js/analytics.js?v=20261008-usability"></script>
 <footer class="platform-footer">
