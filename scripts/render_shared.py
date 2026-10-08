@@ -60,7 +60,8 @@ def render(source, path, root=ROOT):
     assets = (SHARED_CSS if shared_footer or shared_header else '') + (NAV_SCRIPT if shared_header else '')
     if assets:
         source = source.replace('</head>', assets + '</head>', 1)
-    return source
+    from apply_library_navigation import render as render_library_navigation
+    return render_library_navigation(source, path, root)
 
 
 def apply(root=ROOT, check=False):

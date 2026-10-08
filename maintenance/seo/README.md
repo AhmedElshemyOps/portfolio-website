@@ -10,4 +10,6 @@ Run audit_seo.py for a read-only HTTP inventory, build_search_feeds.py for deter
 
 Second batch: 12 reviewed hotel scenario controls, three official reference replacements and two CollectionPage schemas. The exact body fragments and preserved original publication dates are recorded in editorial-batch-manifest.json. The owner explicitly chose to leave legacy restoration pending on 8 October 2026. Four editorial regression tests check unchanged routes/indexing/canonicals, prompt/publication-date preservation, collection links and illustrative property controls.
 
-Remaining: deferred legacy recovery; public-template policy; broader claim-level editorial review; breadcrumb navigation review; dedicated social images; actual Search Console/Bing/GA4/CrUX access and recorded AI citation samples. No rankings or traffic metrics were inferred.
+Third batch: 133 registered article/series pages have one visible Home/Knowledge/title breadcrumb and matching schema. Seven original 1200×630 sharing covers and seven missing method/project connections are added. The library manifest records the exact replacement of three older breadcrumb components; all other teaching bodies, prompts and dates are preserved against 70c38c0. Four library regression tests verify these boundaries and deterministic regeneration.
+
+Remaining: deferred legacy recovery; public-template policy; broader claim-level editorial review; actual Search Console/Bing/GA4/CrUX access and recorded AI citation samples. No rankings or traffic metrics were inferred.

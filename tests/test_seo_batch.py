@@ -9,6 +9,7 @@ class SeoBatchTests(unittest.TestCase):
    manifest=json.loads((ROOT/'maintenance/seo/editorial-batch-manifest.json').read_text())
    expected=old
    for edit in manifest['body_replacements'].get(str(p.relative_to(ROOT)),[]):expected=expected.replace(edit['old'],edit['new'])
+   for edit in json.loads((ROOT/'maintenance/seo/library-batch-manifest.json').read_text())['navigation_component_replacements'].get(str(p.relative_to(ROOT)),[]):expected=expected.replace(edit['old'],edit['new'])
    for pattern in [r'<article class="article-body".*?</article>',r'<link[^>]*rel="canonical"[^>]*>']:
     a=re.search(pattern,expected,re.S);b=re.search(pattern,new,re.S);self.assertEqual(a[0] if a else None,b[0] if b else None,str(p))
    for href in re.findall(r'href="([^"]+)"',old):

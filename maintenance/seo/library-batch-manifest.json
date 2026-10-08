@@ -1,0 +1,31 @@
+{
+  "baseline_commit": "70c38c0ea60f9f565db0d974750173999351c3c5",
+  "date": "2026-10-08",
+  "navigation_component_replacements": {
+    "articles/article-rfi-rfq-rfp-erfp-nda-tourism-sales/index.html": [
+      {
+        "old": "<nav aria-label=\"Breadcrumb\" class=\"breadcrumb\"><a href=\"/\">Home</a> › <a href=\"/knowledge/index.html?pillar=Commercial%20Pricing%20%26%20DMC%20Sales\">Insights</a> › <span>DMC Sales Scenario</span></nav>",
+        "new": "",
+        "reason": "Replace the old embedded navigation component with the single shared breadcrumb above the article header; teaching text and existing article URLs stay intact."
+      }
+    ],
+    "articles/insights-city-tour-quotation-pricing-masterclass/index.html": [
+      {
+        "old": "<nav aria-label=\"Breadcrumb\" class=\"breadcrumb\"><a href=\"/\">Home</a> › <a href=\"/knowledge/index.html?pillar=Commercial%20Pricing%20%26%20DMC%20Sales\">Insights</a> › <span>Quotation Masterclass</span></nav>",
+        "new": "",
+        "reason": "Replace the old embedded navigation component with the single shared breadcrumb above the article header; teaching text and existing article URLs stay intact."
+      }
+    ],
+    "articles/tourism-ai-operations-playbook/index.html": [
+      {
+        "old": "<nav aria-label=\"Breadcrumb\" class=\"breadcrumbs\"><a href=\"/\">Home</a><span>›</span><span>Tourism AI Operations Playbook</span></nav>",
+        "new": "",
+        "reason": "Replace the old embedded navigation component with the single shared breadcrumb above the article header; teaching text and existing article URLs stay intact."
+      }
+    ]
+  },
+  "breadcrumb_pages": 133,
+  "sharing_covers": 7,
+  "selected_reading_connections": 7,
+  "legacy_restoration": "Deferred; no route changes."
+}
