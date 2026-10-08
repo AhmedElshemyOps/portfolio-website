@@ -11,6 +11,7 @@ class BrowseProducts(unittest.TestCase):
    first=(root/'knowledge/index.html').read_text();refresh(root,registry)
    self.assertEqual(first,(root/'knowledge/index.html').read_text())
    self.assertEqual(first.count('data-knowledge-query'),2)
+   self.assertEqual(first.count('data-knowledge-more'),1)
    self.assertEqual(first.count('class="topic-card"'),len({x['pillar'] for x in registry}))
    self.assertLess(first.index('class="library-topics"'),first.index('class="featured-strip"'))
    self.assertNotIn('data-knowledge-query',re.search(r'<details class="library-filter-disclosure">.*?</details>',first,re.S)[0])
@@ -21,3 +22,13 @@ class BrowseProducts(unittest.TestCase):
    self.assertIn('Who it is for:',hero);self.assertIn('The problem:',hero);self.assertIn('Try the demo',hero)
    self.assertIn('id="product-research"',source)
    self.assertIn('browse-products.js',source)
+
+ def test_home_iata_summary_uses_verified_profile_record(self):
+  from render_profile import home_iata_summary
+  profile=json.loads((ROOT/'content/professional-profile.json').read_text())
+  source='<div class="credential-summary"><h3>Five IATA professional diplomas</h3><ul><li>Travel Operations Management</li></ul>'
+  result=home_iata_summary(source,profile)
+  self.assertNotIn('Travel Operations Management',result)
+  for qualification in profile['iata']:
+   self.assertIn(qualification['name'],result)
+  self.assertEqual(result,home_iata_summary(result,profile))

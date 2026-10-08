@@ -244,3 +244,10 @@ h1{font-size:40px}
 .hero-copy{min-width:0}
 .hero-copy h1{overflow-wrap:anywhere}
 @media(max-width:760px){.hero{grid-template-columns:minmax(0,1fr)}}
+.home-work-location{margin-top:20px;padding-left:14px;border-left:2px solid var(--gold);font-size:1rem;line-height:1.6;color:var(--ink)}
+.contact-copy-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+.contact-copy-actions button{min-height:44px;padding:10px 14px;border:1px solid #dfc27d;background:transparent;color:#fff;font:inherit;font-size:.875rem;cursor:pointer}
+.contact-copy-actions button:focus-visible{outline:3px solid #dfc27d;outline-offset:3px}
+.contact-copy-status{margin:8px 0 0;min-height:1.5em;font-size:.875rem}
+
+.contact-copy-actions .contact-linkedin{display:inline-flex;align-items:center;min-height:44px;padding:8px 14px;color:#fff;border:1px solid #dfc27d;box-sizing:border-box;font-size:.875rem}

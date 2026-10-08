@@ -203,30 +203,55 @@
   var knowledgeQueries = Array.from(document.querySelectorAll("[data-knowledge-query]"));
   var knowledgeQuery = knowledgeQueries[0];
   var knowledgeCards = Array.from(document.querySelectorAll("[data-knowledge-card]"));
-  function filterKnowledge() {
-    if (!knowledgeCards.length) return;
-    var selected = Object.fromEntries(filters.map(function (filter) { return [filter.dataset.knowledgeFilter, filter.value]; }));
-    var query = (knowledgeQuery?.value || "").trim().toLowerCase();
-    var visible = 0;
-    knowledgeCards.forEach(function (card) {
-      var show = (!selected.pillar || card.dataset.pillar === selected.pillar) && (!selected.series || card.dataset.series === selected.series) && (!selected.type || card.dataset.type === selected.type) && (!query || (card.dataset.search + " " + topicLabel(card.dataset.search + " " + card.dataset.pillar)).toLowerCase().includes(query));
-      card.hidden = !show;
-      if (show) visible += 1;
-    });
-    filters.forEach(function (filter) { filter.closest("label")?.classList.toggle("is-active", Boolean(filter.value)); });
-    knowledgeQuery?.closest("label")?.classList.toggle("is-active", Boolean(query));
-    document.querySelector("[data-knowledge-status]").textContent = visible === knowledgeCards.length && !query && Object.values(selected).every(function (value) { return !value; }) ? "Showing all articles." : "Showing " + visible + " article" + (visible === 1 ? "" : "s") + ".";
-    document.querySelector("[data-knowledge-empty]").hidden = visible !== 0;
-  }
-  // Deep links from topic chips and series cards initialize the actual filters.
+  var moreButton = document.querySelector('[data-knowledge-more]');
+  var pageStatus = document.querySelector('[data-knowledge-page-status]');
+  var sort = document.querySelector('[data-knowledge-sort]');
+  var limit = 12;
+  var matched = [];
+  var saved = null;
+  try { saved = JSON.parse(sessionStorage.getItem('ahmed-library-browse-v1') || 'null'); } catch (_) {}
   var initialFilters = new URLSearchParams(location.search);
+  var explicit = ['pillar', 'topic', 'series', 'type', 'q', 'sort'].some(function (key) { return initialFilters.has(key); });
   filters.forEach(function (filter) {
-    var value = initialFilters.get(filter.dataset.knowledgeFilter) || (filter.dataset.knowledgeFilter === "pillar" ? initialFilters.get("topic") : "");
+    var value = explicit ? (initialFilters.get(filter.dataset.knowledgeFilter) || (filter.dataset.knowledgeFilter === 'pillar' ? initialFilters.get('topic') : '')) : saved?.filters?.[filter.dataset.knowledgeFilter];
     if (value && Array.from(filter.options).some(function (option) { return option.value === value; })) filter.value = value;
   });
-  knowledgeQueries.forEach(function (field) { field.value = initialFilters.get("q") || ""; });
+  knowledgeQueries.forEach(function (field) { field.value = explicit ? initialFilters.get('q') || '' : saved?.query || ''; });
+  if (sort) sort.value = (explicit ? initialFilters.get('sort') : saved?.sort) || 'recommended';
+  if (saved?.limit && saved.query === (knowledgeQuery?.value || '') && saved.sort === (sort?.value || 'recommended') && filters.every(function (field) { return (saved.filters?.[field.dataset.knowledgeFilter] || '') === field.value; })) limit = Math.max(12, Math.min(knowledgeCards.length, Number(saved.limit) || 12));
+  function filterKnowledge(resetBatch) {
+    if (!knowledgeCards.length) return;
+    if (resetBatch === true) limit = 12;
+    var selected = Object.fromEntries(filters.map(function (filter) { return [filter.dataset.knowledgeFilter, filter.value]; }));
+    var query = (knowledgeQuery?.value || '').trim().toLowerCase();
+    matched = knowledgeCards.filter(function (card) {
+      return (!selected.pillar || card.dataset.pillar === selected.pillar) && (!selected.series || card.dataset.series === selected.series) && (!selected.type || card.dataset.type === selected.type) && (!query || (card.dataset.search + ' ' + topicLabel(card.dataset.search + ' ' + card.dataset.pillar)).toLowerCase().includes(query));
+    });
+    if (sort?.value === 'title') matched.sort(function (a, b) { return a.querySelector('h2').textContent.localeCompare(b.querySelector('h2').textContent); });
+    if (sort?.value === 'updated') matched.sort(function (a, b) { return (b.dataset.updated || '').localeCompare(a.dataset.updated || ''); });
+    var visible = moreButton ? matched.slice(0, limit) : matched;
+    knowledgeCards.forEach(function (card) { card.hidden = !visible.includes(card); });
+    var grid = document.querySelector('.knowledge-grid');
+    if (grid && sort) matched.forEach(function (card) { grid.appendChild(card); });
+    filters.forEach(function (filter) { filter.closest('label')?.classList.toggle('is-active', Boolean(filter.value)); });
+    knowledgeQueries.forEach(function (field) { field.closest('label')?.classList.toggle('is-active', Boolean(query)); });
+    document.querySelector('[data-knowledge-status]').textContent = matched.length ? 'Showing ' + visible.length + (visible.length < matched.length ? ' results. More articles are available below.' : ' matching results.') : 'No matching articles.';
+    document.querySelector('[data-knowledge-empty]').hidden = matched.length !== 0;
+    if (moreButton) moreButton.hidden = visible.length >= matched.length;
+    if (pageStatus) pageStatus.textContent = visible.length < matched.length ? 'Continue exploring this selection.' : matched.length ? 'You have reached the end of this selection.' : '';
+    var address = new URL(location.href);
+    address.searchParams.delete('topic');
+    Object.entries(selected).forEach(function (entry) { if (entry[1]) address.searchParams.set(entry[0], entry[1]); else address.searchParams.delete(entry[0]); });
+    if (query) address.searchParams.set('q', knowledgeQuery.value); else address.searchParams.delete('q');
+    if (sort?.value && sort.value !== 'recommended') address.searchParams.set('sort', sort.value); else address.searchParams.delete('sort');
+    window.history.replaceState(window.history.state, '', address);
+    try { sessionStorage.setItem('ahmed-library-browse-v1', JSON.stringify({ filters: selected, query: knowledgeQuery?.value || '', sort: sort?.value || 'recommended', limit: limit })); } catch (_) {}
+  }
   filterKnowledge();
-  filters.forEach(function (filter) { filter.addEventListener("change", filterKnowledge); });
-  knowledgeQueries.forEach(function (field) { field.addEventListener("input", function () { knowledgeQueries.forEach(function (other) { other.value = field.value; }); filterKnowledge(); }); });
-  document.querySelector("[data-knowledge-reset]")?.addEventListener("click", function () { filters.forEach(function (filter) { filter.value = ""; }); knowledgeQueries.forEach(function (field) { field.value = ""; }); filterKnowledge(); });
+  filters.forEach(function (filter) { filter.addEventListener('change', function () { filterKnowledge(true); }); });
+  sort?.addEventListener('change', function () { filterKnowledge(true); });
+  knowledgeQueries.forEach(function (field) { field.addEventListener('input', function () { knowledgeQueries.forEach(function (other) { other.value = field.value; }); filterKnowledge(true); }); });
+  moreButton?.addEventListener('click', function () { var next = matched[limit]; limit += 12; filterKnowledge(); next?.querySelector('a')?.focus(); });
+  document.querySelector('[data-knowledge-reset]')?.addEventListener('click', function () { filters.forEach(function (filter) { filter.value = ''; }); knowledgeQueries.forEach(function (field) { field.value = ''; }); if (sort) sort.value = 'recommended'; filterKnowledge(true); });
+
 }());

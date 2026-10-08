@@ -18,6 +18,11 @@ def cards(items):
 def section(title,id,content,subtitle=''):
  return '<section class="profile-section" id="'+id+'" aria-labelledby="'+id+'-title"><div class="wrap"><div class="portfolio-section-heading"><h2 id="'+id+'-title">'+title+'</h2><span aria-hidden="true"></span></div>'+('<p class="section-lead">'+subtitle+'</p>' if subtitle else '')+content+'</div></section>'
 
+def home_iata_summary(source, profile):
+ import re
+ items=''.join('<li>'+E(x['name'])+' <span>'+E(x['date'].split()[-1])+'</span></li>' for x in profile['iata'])
+ return re.sub(r'(<div class="credential-summary"><h3>Five IATA professional diplomas</h3><ul>).*?(</ul>)',lambda m:m[1]+items+m[2],source,flags=re.S)
+
 def main():
  d=json.loads((ROOT/'content/professional-profile.json').read_text());contact=json.loads((ROOT/'content/site-contact.json').read_text())
  hero='<section class="profile-intro"><div class="wrap profile-intro-grid"><div><span class="eyebrow">Professional profile</span><h1>'+E(d['headline'])+'</h1><p class="profile-lead">'+E(d['summary'])+'</p><p class="work-authorisation"><span aria-hidden="true">✓</span> Based in the Netherlands · '+E(d['work_authorisation'])+'</p><div class="action-row"><a class="button" href="'+CV+'">View my CV</a><a class="button secondary" href="#qualifications">Explore qualifications</a></div></div><figure><img src="/assets/profile/ahmed-mahmoud-photo-executive.webp" alt="Ahmed Mahmoud" width="911" height="911" fetchpriority="high"></figure></div></section>'
@@ -37,6 +42,6 @@ def main():
  contact_section=section('Let’s connect','profile-contact','<div class="profile-contact"><div><p>'+E(d['work_authorisation'])+'</p><p>Open to conversations about Travel and Tourism operations, destination management, reservations and operational improvement.</p></div><div><a href="mailto:'+contact['email']+'">'+contact['email']+'</a><a href="tel:'+contact['phone_e164']+'">'+contact['phone_display']+'</a><a class="button" href="'+CV+'">View my CV</a></div></div>')
  p=ROOT/'profile/index.html';s=p.read_text();node=next(n for n in parse(s).nodes if n['tag']=='main');s=s[:node['start']]+'<main id="content">'+hero+quals+iata+career+work+training+foundation+contact_section+'</main>'+s[node['end']:];p.write_text(s)
  # Homepage retains its concise two-column summary and links into the detailed profile.
- p=ROOT/'index.html';s=p.read_text();node=next(n for n in parse(s).nodes if n['tag']=='div' and 'employers' in n['attrs'].get('class','').split());html='<div class="employers">'+''.join('<div><strong>'+E(x['company'])+'</strong><span>'+E(x['department'])+' · '+E(x['scope'])+'</span></div>' for x in d['career'])+'</div>';s=s[:node['start']]+html+s[node['end']:];p.write_text(s)
+ p=ROOT/'index.html';s=p.read_text();node=next(n for n in parse(s).nodes if n['tag']=='div' and 'employers' in n['attrs'].get('class','').split());html='<div class="employers">'+''.join('<div><strong>'+E(x['company'])+'</strong><span>'+E(x['department'])+' · '+E(x['scope'])+'</span></div>' for x in d['career'])+'</div>';s=s[:node['start']]+html+s[node['end']:];s=home_iata_summary(s,d);p.write_text(s)
  print('Professional record rendered: Profile and homepage career summary.')
 if __name__=='__main__':main()
