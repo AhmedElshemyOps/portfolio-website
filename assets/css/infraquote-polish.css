@@ -172,3 +172,9 @@ body.infraquote-page .client-document{padding:30px;background:#fff;border:1px so
 .infraquote-page .quotation-advanced{border:1px solid #ded6c7;border-radius:12px;padding:16px}.infraquote-page .quotation-advanced summary{font-weight:700;cursor:pointer;min-height:44px}.infraquote-page .quotation-advanced[open] summary{margin-bottom:16px}
 .infraquote-page #versionDiff pre{white-space:pre-wrap;overflow-wrap:anywhere;max-height:350px;overflow:auto;font-size:.8rem;padding:12px;background:white;border:1px solid #ded6c7;border-radius:8px}
 .infraquote-page .workflow-tools .eyebrow{color:#815f17}
+
+/* Destination-specific quotation setup. */
+.quote-city-choice{padding:24px;margin:0 0 24px;background:#f7f4ed;border:1px solid #ded5c5;border-radius:14px}
+.quote-city-choice h2{margin:0 0 16px}.quote-city-choice label{display:block;max-width:420px;font-weight:600}.quote-city-choice select{display:block;width:100%;min-height:48px;margin-top:8px;padding:12px;background:#fff;border:1px solid #b8c0c6;border-radius:8px;color:#10283f}.quote-city-choice p{font-size:.9rem;line-height:1.6}
+#nlRequirements{grid-column:1 / -1;padding:20px;background:#f7f4ed;border:1px solid #ded5c5;border-radius:12px}#nlRequirements .quote-checks{display:grid;gap:12px}#nlRequirements input[type=checkbox]{width:20px;height:20px;flex-shrink:0}
+@media(max-width:600px){.quote-city-choice,#nlRequirements{padding:16px}}

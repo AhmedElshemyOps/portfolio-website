@@ -221,6 +221,13 @@ await rejected("insert into public.iq_members values($1,$2,$3)", [
   other,
   "admin",
 ]);
+await db.query("insert into public.iq_rates(workspace_id,name,unit_cost,quantity,currency,valid_from,valid_to) values($1,'Amsterdam guide',180,1,'EUR','2026-10-01','2026-12-01')",[workspace]);
+const dutch={...payload,quote:{...payload.quote,quoteNo:'AMS-TEST',city:'amsterdam',currency:'EUR',taxReviewed:true,vatMode:'margin'}};
+await rejected("select public.iq_save_version($1,$2,true)",[workspace,{...dutch,quote:{...dutch.quote,currency:'AED'}}]);
+await rejected("select public.iq_save_version($1,$2,true)",[workspace,{...dutch,quote:{...dutch.quote,taxReviewed:false}}]);
+const dutchVersion=(await db.query("select public.iq_save_version($1,$2,true) id",[workspace,dutch])).rows[0].id;
+const dutchHandover=(await db.query("select service from public.iq_handovers where version_id=$1",[dutchVersion])).rows[0].service;
+assert.equal(dutchHandover.country,'netherlands');assert.equal(dutchHandover.city,'amsterdam');assert.equal(dutchHandover.costs,undefined);
 await as(null, "anon");
 for (const table of [
   "iq_workspaces",

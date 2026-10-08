@@ -21,7 +21,7 @@
 <script data-schema="seo-geo" type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"InfraQuote","url":"https://ahmedqualityops.com/live-demos/infraquote.html","applicationCategory":"BusinessApplication","operatingSystem":"Web","isAccessibleForFree":true,"description":"Static MVP for DMC city-tour costing, margin review, guest requirements, transport assumptions and client-ready quotations.","author":{"@type":"Person","name":"Ahmed Mahmoud","url":"https://ahmedqualityops.com/"}}</script>
 <link href="assets/css/github-integration.css?v=20260711" rel="stylesheet"/><link href="assets/css/portfolio-bridge.css" rel="stylesheet"/>
 <link href="assets/css/table-responsive-v16.css?v=20260721" rel="stylesheet"/>
-<link rel="stylesheet" href="/assets/css/global-search.css"/><script defer src="/assets/js/discovery.js?v=20261008-next"></script><link rel="stylesheet" href="/assets/css/site-field-manual.css?v=20261008-polish"/><link rel="stylesheet" href="/assets/css/project-demo-theme.css?v=20261008-polish"/><link rel="stylesheet" href="/assets/css/browse-products.css?v=20261008-next"/><script defer src="/assets/js/browse-products.js?v=20261008-browse"></script><link rel="stylesheet" href="/assets/css/infraquote-polish.css?v=20261008-workspace"/><link rel="stylesheet" href="/assets/css/site-chrome.css?v=20261008-usability"/></head>
+<link rel="stylesheet" href="/assets/css/global-search.css"/><script defer src="/assets/js/discovery.js?v=20261008-next"></script><link rel="stylesheet" href="/assets/css/site-field-manual.css?v=20261008-polish"/><link rel="stylesheet" href="/assets/css/project-demo-theme.css?v=20261008-polish"/><link rel="stylesheet" href="/assets/css/browse-products.css?v=20261008-next"/><script defer src="/assets/js/browse-products.js?v=20261008-browse"></script><link rel="stylesheet" href="/assets/css/infraquote-polish.css?v=20261008-amsterdam"/><link rel="stylesheet" href="/assets/css/site-chrome.css?v=20261008-usability"/></head>
 <body class="infraquote-page knowledge-atlas-demo">
 <a class="skip" href="#main">Skip to content</a>
 <header class="masthead">
@@ -60,7 +60,7 @@
 <strong>Problem, solution, use case</strong>
 <p><strong>Problem:</strong> Tour quotations become risky when guest requirements, vehicle assumptions, attraction tickets, guide costs, VAT, margin and client wording are handled in separate notes.</p>
 <p><strong>Solution:</strong> A browser workspace that converts request details into controlled costing, margin review, internal worksheet logic, readiness warnings and a clean client quotation.</p>
-<p><strong>Use case:</strong> DMC sales teams, tour operators, travel desks and product managers preparing Abu Dhabi city-tour quotations with clearer commercial control.</p>
+<p><strong>Use case:</strong> DMC sales teams, tour operators, travel desks and product managers preparing Amsterdam and Abu Dhabi city-tour quotations with clearer commercial control.</p>
 </aside>
 </div>
 </section>
@@ -73,11 +73,11 @@
 <button class="btn secondary" id="duplicateQuote" type="button">Duplicate</button>
 <button class="btn secondary" id="resetQuote" type="button">Reset</button>
 </div>
-<p class="quote-note">Drafts save automatically in this browser. Supplier costs are sample data. Attraction references show their source and review status.</p>
+<p class="quote-note">Drafts save automatically in this browser. Enter destination-specific supplier costs. Attraction references show their source and review status.</p>
 </aside>
 <section class="quote-workspace">
-<div id="workflowTools"></div>
-<form class="quote-form" id="quoteForm" onsubmit="return false" novalidate>
+<section class="quote-city-choice" aria-label="Destination workspace"><h2>Choose your city</h2><label>Choose your city<select id="quoteCity"><option value="abuDhabi">UAE · Abu Dhabi</option><option value="amsterdam">Netherlands · Amsterdam</option></select></label><p>Load the city’s attractions, currency, templates and operating checks. Each city keeps its own draft on this device.</p></section><div id="workflowTools"></div>
+<p id="sampleNotice" class="quote-note"></p><form class="quote-form" id="quoteForm" onsubmit="return false" novalidate>
 <div id="quoteFormErrors" class="quote-form-errors" role="alert" hidden></div>
 <section class="quote-step" data-step="0">
 <div class="step-head"><span>Request</span><h2>Client &amp; booking details</h2></div>
@@ -86,7 +86,7 @@
 <div class="step-head"><span>Request</span><h2>Guests &amp; service requirements</h2></div>
 <div class="form-grid">
 <label>Adults<input id="adults" min="0" type="number"/></label><label>Children<input id="children" min="0" type="number"/></label><label>Infants<input id="infants" min="0" type="number"/></label><label>Total guests <span class="required-mark">At least one</span><input id="totalGuests" readonly=""/></label>
-<label>Guest profile<select id="guestProfile"><option>Leisure</option><option>Family</option><option>Corporate</option><option>VIP</option><option>School</option><option>Senior guests</option><option>Mixed group</option></select></label>
+<div id="nlRequirements" class="full" hidden><h3>Amsterdam requirements</h3><p>Enter EUR supplier costs for the agreed duration. Public ticket references do not confirm availability. Keep private net rates in your browser or private workspace.</p><div class="form-grid"><label>Guest ages · one per guest<input id="guestAges" placeholder="Example: 42, 39, 12, 2"/><small>Needed for included age-based tickets; no names or birth dates required.</small></label><label>Tour transport<select id="transportPlan"><option value="walking">Walking / independently arranged transport</option><option value="vehicle">Private vehicle / coach</option></select></label><label>Guide included<select id="guideIncluded"><option value="true">Yes</option><option value="false">No · self-guided</option></select></label><label>Transport cost · EUR per vehicle<input id="nlVehicleRate" type="number" min="0" step="0.01"/></label><label>Transport included hours<input id="nlVehicleHours" type="number" min="0" step="0.5"/></label><label>Overtime · EUR per vehicle/hour<input id="nlOvertimeRate" type="number" min="0" step="0.01"/></label><label>Guide cost · EUR for this tour<input id="nlGuideRate" type="number" min="0" step="0.01"/></label></div><div class="quote-checks"><label><input id="walkExemption" type="checkbox"/> Required city-centre guided-tour exemption confirmed</label><label><input id="coachAccess" type="checkbox"/> Vehicle access, permitted stops and any required exemptions confirmed</label><label><input id="taxReviewed" type="checkbox"/> Dutch tax treatment confirmed with the operator’s accountant</label></div><details class="quotation-advanced"><summary>Amsterdam templates and operating sources</summary><label>Tour template<select id="amsterdamTemplate"><option value="0">Highlights and canal cruise</option><option value="1">Museums and culture</option><option value="2">Family discovery</option><option value="3">Private / corporate tour</option></select></label><button type="button" class="btn secondary" id="applyAmsterdamTemplate">Start Amsterdam template · resets current costs</button><p>Templates are planning examples. Durations, travel time, admissions and supplier availability require review.</p><p><a href="https://www.amsterdam.nl/en/business/rules-permit-tours/" target="_blank" rel="noopener">Guided-tour operating rules</a> · <a href="https://www.amsterdam.nl/verkeer-vervoer/touringcar/" target="_blank" rel="noopener">Coach access and stops</a> · <a href="https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/bijzondere_regelingen/reisbureauregeling/wanneer_geldt_de_reisbureauregeling/" target="_blank" rel="noopener">Dutch travel agency tax scheme</a></p></details></div><label>Guest profile<select id="guestProfile"><option>Leisure</option><option>Family</option><option>Corporate</option><option>VIP</option><option>School</option><option>Senior guests</option><option>Mixed group</option></select></label>
 <label>Pickup location <span class="required-mark">Required</span><input required id="pickupLocation"/></label><label>Drop-off location <span class="required-mark">Required</span><input required id="dropoffLocation"/></label>
 <label>Pickup points<input id="pickupPoints" min="1" type="number"/></label><label>Pickup time<input id="pickupTime" type="time"/></label>
 <label>Tour duration <span class="required-mark">Required</span><select id="tourDuration" required><option value="">Choose duration</option><option>Half day</option><option>Full day</option><option>Custom</option></select><small>Half day: 5 hours. Full day: 8 hours. Custom: enter your agreed hours.</small></label><label id="customHoursField" hidden>Custom hours <span class="required-mark">Required</span><input id="customHours" min="1" step="0.5" type="number"/></label>
@@ -118,7 +118,7 @@
 <section class="quote-step" data-step="2" hidden="">
 <div class="step-head"><span>Build & price</span><h2>Itinerary builder</h2></div>
 <details class="advanced-settings"><summary>Itinerary guidance and suggestions</summary><div class="experience-panel" id="itineraryAdvisor"></div></details>
-<div class="quote-toolbar"><select id="attractionSelect" aria-label="Attraction to add"></select><button class="btn secondary" id="addStop" type="button">Add stop</button></div>
+<div class="form-grid"><label>Search attractions<input id="attractionSearch" type="search" placeholder="Museum, cruise, family…"/></label><label>Attraction topic<select id="attractionCategory"><option value="">All topics</option></select></label></div><div class="quote-toolbar"><select id="attractionSelect" aria-label="Attraction to add"></select><button class="btn secondary" id="addStop" type="button">Add stop</button></div>
 <div id="attractionPreview"></div>
 <p class="field-help">Reference prices are public admission prices, not contracted DMC rates. Check the date, age/height policy and ticket conditions before confirming.</p><button id="refreshAttractionRates" class="btn secondary" type="button">Apply latest reference rates to itinerary</button>
 <div class="item-list" id="itineraryList"></div>
@@ -133,7 +133,7 @@
 <label>Flight number<input id="flightNumber" placeholder="Optional for airport services"/></label><label>Terminal / airport note<input id="terminalNote" placeholder="Terminal, gate, arrival hall, meeting point"/></label>
 <label>Arrival/departure time<input id="flightTime" type="time"/></label><label>Waiting policy<select id="waitingPolicy"><option>Standard waiting policy</option><option>Extended waiting buffer</option><option>VIP meet-and-greet buffer</option></select></label></div>
 <label>Selected vehicle<select id="vehicleSelect"></select></label><label>Vehicle quantity<input id="vehicleQty" min="1" type="number"/></label>
-<label>Override reason<input id="vehicleOverride"/></label><label>Guide type<select id="guideType"><option>Licensed guide</option><option>Tour leader</option><option>Driver-guide</option><option>Hostess</option><option>Assistant guide</option><option>Interpreter</option></select></label>
+<label>Override reason<input id="vehicleOverride"/></label><label>Guide type<select id="guideType"><option>Local guide</option><option>Licensed guide</option><option>Tour leader</option><option>Driver-guide</option><option>Hostess</option><option>Assistant guide</option><option>Interpreter</option></select></label>
 <label>Coordinator / handling fee<input id="handlingFee" min="0" type="number"/></label><label>Risk buffer<input id="riskBuffer" min="0" type="number"/></label>
 <div class="quote-checks full"><label><input id="luggage" type="checkbox"/>Luggage requirement affects vehicle comfort</label></div>
 </div>
@@ -143,7 +143,7 @@
 <div class="quote-toolbar"><button class="btn secondary" id="addCost" type="button">Add custom cost</button><button class="btn secondary" id="addCondition" type="button">Add conditional cost</button></div>
 <div class="item-list" id="costList"></div>
 <div class="form-grid">
-<label>VAT treatment<select id="vatMode"><option value="exclusive">VAT exclusive</option><option value="inclusive">VAT inclusive</option><option value="none">No VAT / outside scope</option></select></label>
+<label>VAT treatment<select id="vatMode"><option id="nlPendingTaxOption" value="pending" hidden>Dutch treatment · pending review</option><option id="nlTaxOption" value="margin" hidden>Travel agency margin scheme · confirmed applicable</option><option value="exclusive">VAT exclusive</option><option value="inclusive">VAT inclusive</option><option value="none">No VAT / outside scope</option></select></label>
 <label>Gratuities wording<select id="gratuities"><option>Gratuities are not included and remain at the guest’s discretion.</option><option>Gratuities are included.</option><option>Gratuities are optional and not included in the quoted price.</option></select></label>
 </div>
 </details></section>
@@ -169,28 +169,29 @@
 <section class="quote-step" data-step="7" hidden="">
 <div class="step-head"><span>Review & share</span><h2>Client quotation preview &amp; export</h2></div>
 <details class="quotation-advanced"><summary>Edit client wording and terms</summary><div class="form-grid"><label>Quote theme<select id="quoteTheme"><option>Standard</option><option>Premium</option><option>Corporate</option><option>VIP</option></select></label><label>Tour title<input id="tourTitle"/></label><label class="full">Tour description<textarea id="tourDescription"></textarea></label><label class="full">Inclusions<textarea id="inclusions"></textarea></label><label class="full">Exclusions<textarea id="exclusions"></textarea></label><label class="full">Cancellation / amendment terms<textarea id="cancellation"></textarea></label></div></details>
-<p class="quote-output-note">Client output is a draft for review. Supplier costs and exchange rates are sample data; public attraction rates require date and category confirmation. Internal costs stay in the worksheet exports.</p><div class="quote-toolbar"><button class="btn" id="downloadQuotePdf" type="button">Download client PDF</button><button class="btn secondary" id="printQuote" type="button">Print client quote</button><button class="btn secondary" id="copyClientQuote" type="button">Copy quote text</button><button class="btn secondary" id="exportWorksheet" type="button">Export worksheet CSV</button><button class="btn secondary" id="exportJson" type="button">Export JSON</button><button class="btn secondary" id="prepareDispatch" type="button">Review approval for dispatch</button></div>
+<p class="quote-output-note">Client output is a draft for review. Abu Dhabi sample costs and Amsterdam operator-entered EUR costs require supplier review; public attraction references require date and category confirmation. Internal costs stay in the worksheet exports.</p><div class="quote-toolbar"><button class="btn" id="downloadQuotePdf" type="button">Download client PDF</button><button class="btn secondary" id="printQuote" type="button">Print client quote</button><button class="btn secondary" id="copyClientQuote" type="button">Copy quote text</button><button class="btn secondary" id="exportWorksheet" type="button">Export worksheet CSV</button><button class="btn secondary" id="exportJson" type="button">Export JSON</button><button class="btn secondary" id="prepareDispatch" type="button">Review approval for dispatch</button></div>
 <div class="client-quote" id="clientQuote"></div>
 </section>
 <div class="step-controls"><button class="btn secondary" id="prevStep" type="button">Back</button><button class="btn" id="nextStep" type="button">Next</button></div>
 </form>
 </section>
 <aside class="quote-summary">
-<h2>Quote review</h2><p class="quote-note">Sample pricing · AED base costs</p>
+<h2>Quote review</h2><p id="summaryBasis" class="quote-note">Destination-specific quotation costs</p>
 <div class="summary-cards" id="summaryCards"></div>
 <div class="risk-panel" id="riskPanel"></div>
 </aside>
 </div>
 </section>
 <aside class="ai-playbook-context-link" style="margin:32px 0;padding:24px;border:1px solid #d9d1c1;border-left:5px solid #b68a2f;border-radius:14px;background:#fcfaf5;"><h2 style="margin:0 0 8px;color:#071527;font-size:1.35rem;">Connect InfraQuote with the Sales AI Toolkit</h2><p>Use AI for commercial structure and quality review while keeping calculations and terms in approved sources.</p><a href="/articles/tourism-sales-quotation-ai-prompts/index.html" style="display:inline-block;margin-top:8px;font-weight:800;color:#815f17;">Explore the connected playbook article →</a></aside></main>
-<section class="quote-product-note" id="footer-contact"><p>InfraQuote by Ahmed Mahmoud · Browser workspace · Abu Dhabi sample workflow</p><a href="/projects/infraquote/index.html#product-research">Research and product details</a></section>
+<section class="quote-product-note" id="footer-contact"><p>InfraQuote by Ahmed Mahmoud · Browser workspace · Amsterdam and Abu Dhabi</p><a href="/projects/infraquote/index.html#product-research">Research and product details</a></section>
 <script defer="" src="assets/js/site.js"></script>
-<script defer="" src="assets/js/infraquote-data.js?v=20261008-workspace"></script>
-<script defer="" src="assets/js/infraquote-calculations.js?v=20261008-workspace"></script>
-<script defer="" src="assets/js/infraquote-pdf.js?v=20261008-workspace"></script>
-<script defer="" src="assets/js/infraquote-app.js?v=20261008-workspace"></script>
-<script defer src="assets/js/infraquote-workspace.js?v=20261008-workspace"></script>
-<script defer src="assets/js/infraquote-cloud-config.js?v=20261008-workspace"></script><script defer src="assets/js/infraquote-cloud.js?v=20261008-workspace"></script>
+<script defer="" src="assets/js/infraquote-data.js?v=20261008-amsterdam"></script>
+<script defer src="assets/js/infraquote-amsterdam.js?v=20261008-amsterdam"></script>
+<script defer="" src="assets/js/infraquote-calculations.js?v=20261008-amsterdam"></script>
+<script defer="" src="assets/js/infraquote-pdf.js?v=20261008-amsterdam"></script>
+<script defer="" src="assets/js/infraquote-app.js?v=20261008-amsterdam"></script>
+<script defer src="assets/js/infraquote-workspace.js?v=20261008-amsterdam"></script>
+<script defer src="assets/js/infraquote-cloud-config.js?v=20261008-amsterdam"></script><script defer src="assets/js/infraquote-cloud.js?v=20261008-amsterdam"></script>
 <script defer="" src="assets/js/site-config.js"></script>
 <script defer="" src="/assets/js/site-config.js?v=20261008-polish"></script><script defer="" src="/assets/js/analytics.js?v=20261008-usability"></script>
 <footer class="platform-footer">

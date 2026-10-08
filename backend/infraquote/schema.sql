@@ -12,7 +12,7 @@ create table public.iq_members (
 create table public.iq_rates (
  id uuid primary key default gen_random_uuid(), workspace_id uuid not null references public.iq_workspaces(id),
  name text not null, supplier text not null default '', unit_cost numeric not null check(unit_cost>=0), quantity numeric not null check(quantity>0),
- currency text not null default 'AED' check(currency='AED'), valid_from date not null, valid_to date not null check(valid_to>=valid_from),
+ currency text not null default 'AED' check(currency in ('AED','EUR')), valid_from date not null, valid_to date not null check(valid_to>=valid_from),
  verified boolean not null default false, terms text not null default '', created_at timestamptz not null default now()
 );
 create table public.iq_templates (
@@ -91,6 +91,7 @@ begin
  q=payload->'quote';
  if jsonb_typeof(q) is distinct from 'object' or coalesce(q->>'quoteNo','')='' then raise exception 'Invalid quotation'; end if;
  if approve then
+  if q->>'city'='amsterdam' and (q->>'currency' is distinct from 'EUR' or coalesce((q->>'taxReviewed')::boolean,false)=false or coalesce(q->>'vatMode','pending') not in ('exclusive','inclusive','margin','none')) then raise exception 'Amsterdam currency or tax review incomplete';end if;
   if coalesce((payload->>'reviewConfirmed')::boolean,false)=false or coalesce((payload->>'blocking')::integer,1)<>0 or coalesce((payload->>'pending')::integer,1)<>0 then raise exception 'Review incomplete';end if;
   if coalesce(q->>'clientCompany','')='' or coalesce(q->>'serviceDate','')='' or coalesce(q->>'tourDuration','') not in ('Half day','Full day','Custom') or coalesce(q->>'pickupLocation','')='' or coalesce(q->>'dropoffLocation','')='' then raise exception 'Required request details missing';end if;
   if coalesce((q->>'adults')::integer,0)+coalesce((q->>'children')::integer,0)+coalesce((q->>'infants')::integer,0)<1 then raise exception 'Guest count missing';end if;
@@ -107,7 +108,7 @@ begin
  select coalesce(max(version),0)+1 into number from public.iq_versions where workspace_id=target and reference=q->>'quoteNo';
  insert into public.iq_versions(workspace_id,reference,version,snapshot,approved,created_by) values(target,q->>'quoteNo',number,payload,approve,auth.uid()) returning id into result;
  if approve then
-  service=jsonb_build_object('reference',q->>'quoteNo','version',number,'approvedAt',now(),'tourName',q->>'tourTitle','serviceDate',q->>'serviceDate','guestCount',coalesce((q->>'adults')::integer,0)+coalesce((q->>'children')::integer,0)+coalesce((q->>'infants')::integer,0),'adults',q->'adults','children',q->'children','infants',q->'infants','pickupLocation',q->>'pickupLocation','dropoffLocation',q->>'dropoffLocation','pickupTime',q->>'pickupTime','guideLanguage',q->>'guideLanguage','accessibility',q->>'accessibility','vehicleId',q->>'vehicleId','vehicleQty',q->'vehicleQty','airportPickup',q->'airportPickup','airportDropoff',q->'airportDropoff','itineraryStops',(select coalesce(jsonb_agg(jsonb_build_object('name',stop->>'name','note',stop->>'operationalNote')),'[]') from jsonb_array_elements(q->'itinerary') stop where stop->>'status'<>'Excluded'));
+  service=jsonb_build_object('country',case when q->>'city'='amsterdam' then 'netherlands' else 'uae' end,'city',q->>'city','reference',q->>'quoteNo','version',number,'approvedAt',now(),'tourName',q->>'tourTitle','serviceDate',q->>'serviceDate','guestCount',coalesce((q->>'adults')::integer,0)+coalesce((q->>'children')::integer,0)+coalesce((q->>'infants')::integer,0),'adults',q->'adults','children',q->'children','infants',q->'infants','pickupLocation',q->>'pickupLocation','dropoffLocation',q->>'dropoffLocation','pickupTime',q->>'pickupTime','guideLanguage',q->>'guideLanguage','accessibility',q->>'accessibility','vehicleId',q->>'vehicleId','vehicleQty',q->'vehicleQty','airportPickup',q->'airportPickup','airportDropoff',q->'airportDropoff','itineraryStops',(select coalesce(jsonb_agg(jsonb_build_object('name',stop->>'name','note',stop->>'operationalNote')),'[]') from jsonb_array_elements(q->'itinerary') stop where stop->>'status'<>'Excluded'));
   if coalesce((q->>'airportPickup')::boolean,false) or coalesce((q->>'airportDropoff')::boolean,false) then service=service||jsonb_build_object('flightNumber',q->>'flightNumber','flightTime',q->>'flightTime','terminalNote',q->>'terminalNote');end if;
   insert into public.iq_handovers(version_id,workspace_id,service) values(result,target,service);
  end if;

@@ -34,7 +34,7 @@
     text(`Prepared for ${model.client}`,{size:10,bold:true,after:2});
     text(`Issued ${model.quoteDate}  |  Valid until ${model.validity}`,{size:8.2,color:muted,after:5});
     ensure(30);doc.setFillColor(...warm);doc.rect(left,y-2,width,27,'F');font(8,false,muted);doc.text('TOTAL QUOTATION',left+5,y+4);font(20,true);doc.text(clean(model.total),left+5,y+14);
-    font(8,false,muted);doc.text([`Before VAT: ${model.beforeVat}`,`VAT: ${model.vat}`,model.vatLabel].map(clean),left+105,y+4,{lineHeightFactor:1.5});y+=31;
+    font(8,false,muted);doc.text((model.hideVat ? [model.vatLabel==='bijzondere regeling reisbureaus'?'bijzondere regeling':'Dutch tax treatment',model.vatLabel==='bijzondere regeling reisbureaus'?'reisbureaus':'pending review'] : [`Before VAT: ${model.beforeVat}`,`VAT: ${model.vat}`,model.vatLabel]).map(clean),left+105,y+4,{lineHeightFactor:1.5});y+=31;
     text(model.draft+(model.unresolved?' '+model.unresolved:''),{size:8,color:muted,after:5});
     for(let i=0;i<model.details.length;i+=2){
       const row=model.details.slice(i,i+2);const valueLines=row.map(([label,value])=>split(value,80,9,true));const height=Math.max(...valueLines.map(lines=>lines.length))*4.4+12;ensure(height);

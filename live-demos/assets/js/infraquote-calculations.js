@@ -49,6 +49,16 @@ window.INFRAQUOTE_CALC = (() => {
   }
 
   function pricing({ netCost, method, markupPct, targetMarginPct, vatMode, vatRate, totalGuests, adults, children, childRatio = 0.65, rounding = 5 }) {
+    if(vatMode==='margin'){
+      const rate=Number(vatRate)||0, margin=Number(targetMarginPct||0)/100;
+      const raw=method==='margin' ? (1-margin*(1+rate)>0 ? netCost/(1-margin*(1+rate)) : 0) : priceFromMarkup(netCost,markupPct);
+      const increment=Number(rounding)>0?Number(rounding):1;
+      const finalPrice=money(Math.ceil(raw/increment)*increment);
+      const vatAmount=money(Math.max(0,finalPrice-netCost)*rate/(1+rate));
+      const profit=money(finalPrice-netCost-vatAmount);
+      const units=Math.max(1,Number(adults||0)+Number(children||0)*childRatio);
+      return {beforeVat:money(finalPrice-vatAmount),vatAmount,finalPrice,profit,actualMarkup:netCost>0?money(profit/netCost*100):0,actualMargin:finalPrice>0?money(profit/finalPrice*100):0,pricePerGuest:totalGuests>0?money(finalPrice/totalGuests):0,pricePerAdult:money(finalPrice/units),pricePerChild:money(finalPrice/units*childRatio)};
+    }
     const beforeVatRaw = method === 'margin' ? priceFromMargin(netCost, targetMarginPct) : priceFromMarkup(netCost, markupPct);
     const increment = Number(rounding) > 0 ? Number(rounding) : 1;
     const roundedPrice = money(Math.ceil((vatMode === 'inclusive' ? beforeVatRaw * (1 + vatRate) : beforeVatRaw) / increment) * increment);

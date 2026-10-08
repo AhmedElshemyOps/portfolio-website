@@ -5,7 +5,7 @@
     "dev": "node scripts/preview-static.mjs",
     "render:shared": "python3 scripts/render_shared.py",
     "check": "python3 scripts/render_shared.py --check && python3 scripts/validate_site_links.py && python3 maintenance/validate-navigation.py",
-    "test:infraquote": "node tests/test_infraquote_calculations.cjs && node tests/test_infraquote_workspace.cjs && node tests/test_infraquote_pdf.cjs",
+    "test:infraquote": "node tests/test_infraquote_calculations.cjs && node tests/test_infraquote_workspace.cjs && node tests/test_infraquote_pdf.cjs && node tests/test_infraquote_amsterdam.cjs",
     "test:infraquote-backend": "node tests/test_infraquote_backend.mjs"
   },
   "devDependencies": {

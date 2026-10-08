@@ -33,6 +33,14 @@
     panel.innerHTML=`<h2>Approved InfraQuote handover</h2><p>${escapeHtml(packet.reference)} · version ${escapeHtml(packet.version)} · ${escapeHtml(packet.tourName)} · ${escapeHtml(packet.serviceDate)} · ${packet.guestCount} guests</p><p>Import the reviewed service details, then assign real vehicles and staff and verify pickup access. Supplier costs and selling margins are excluded.</p><button class="btn" type="button" id="importQuoteHandover">Import approved service details</button><p id="handoverStatus" role="status"></p>`;
     document.querySelector('main').prepend(panel);
     $('importQuoteHandover').onclick=()=>{
+      if(packet.country==='netherlands'){
+        document.querySelector('[data-country-select="netherlands"]')?.click();
+        const values={nlDate:packet.serviceDate,nlFrom:packet.pickupLocation,nlTo:packet.dropoffLocation,nlVia:packet.itineraryStops?.[0]?.name||packet.dropoffLocation,nlPax:packet.guestCount};
+        Object.entries(values).forEach(([id,value])=>{if($(id)){$(id).value=value||'';$(id).dispatchEvent(new Event('input',{bubbles:true}));}});
+        if($('nlCapacity'))$('nlCapacity').value='';
+        if($('nlDrive'))$('nlDrive').value='';
+        $('handoverStatus').textContent=(packet.transportPlan==='walking'?'Walking quotation: arrange any required vehicle movement explicitly. ':'')+'Amsterdam service details imported. Confirm actual transport capacity, access, team allocation and timing before dispatch. No supplier costs imported.';return;
+      }
       document.querySelector('[data-country-select="uae"]')?.click();
       if($('tripMode'))$('tripMode').value='Pickup & Drop-off';
       ['tourDate','tourName','guideLanguage'].forEach((id,i)=>{if($(id))$(id).value=[packet.serviceDate,packet.tourName,packet.guideLanguage][i]||'';});

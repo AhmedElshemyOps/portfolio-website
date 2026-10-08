@@ -132,6 +132,7 @@
   if (!root.document) return;
   const $ = (id) => document.getElementById(id),
     API = () => root.INFRAQUOTE_WORKFLOW;
+  const base = () => API().baseCurrency();
   const KEY = "infraquote_workspace_v1";
   let store,
     proposal = {},
@@ -224,10 +225,10 @@
     $("workflowTools").innerHTML =
       `<section class="workflow-tools" aria-labelledby="workspaceHeading"><div class="workflow-heading"><div><span class="eyebrow">Your quotation workspace</span><h2 id="workspaceHeading">Less repetition. Clearer decisions.</h2></div><span class="workspace-local">${persistBlocked ? "Session only · backup needed" : "Saved on this device"}</span></div><p>Request → Build &amp; price → Review &amp; share. Your existing draft is preserved.</p><p id="workspaceStatus" role="status" aria-live="polite">${safe(pendingMessage)}</p>
     <details><summary>Start from an enquiry or a saved tour</summary><div class="tool-content"><label>Paste the enquiry<textarea id="enquiryText" rows="4" placeholder="Client: Example Travel&#10;2026-11-15, 6 adults, full day, French guide&#10;Pickup: Abu Dhabi hotel"></textarea></label><p class="quote-note">Local extraction finds explicit details only. Review suggestions before applying; ambiguous details stay unchanged.</p><button type="button" class="btn secondary" id="extractEnquiry">Find request details</button><div id="enquiryProposal"></div><div class="tool-row"><label>Saved tour<select id="savedTour"><option value="">Choose a template</option>${store.templates.map((t, i) => `<option value="${i}">${safe(t.name)}</option>`).join("")}</select></label><button class="btn secondary" id="applyTour" type="button">Apply tour template</button></div><div class="tool-row">${labelled("Template name", "templateName")}<button class="btn secondary" id="saveTour" type="button">Save current tour as template</button></div><p class="quote-note">Templates reuse the itinerary and service setup, keeping the current client, dates and quotation reference. Rates still need checking.</p></div></details>
-    <details><summary>Company defaults and quotation identity</summary><div class="tool-content"><div class="form-grid">${labelled("Company name", "defaultCompany", "text", s.company)}${labelled("Contact shown on client quotation", "defaultContact", "text", s.contact)}${labelled("Prepared by", "defaultPreparedBy", "text", s.preparedBy)}${labelled("Target margin %", "defaultMargin", "number", s.targetMargin)}${labelled("Handling allowance · AED sample base", "defaultHandling", "number", s.handlingFee)}</div><label>Default cancellation wording<textarea id="defaultCancellation">${safe(s.cancellation)}</textarea></label><div class="tool-row"><button class="btn secondary" id="saveDefaults" type="button">Save defaults</button><button class="btn secondary" id="applyDefaults" type="button">Apply to this quotation</button></div><p class="quote-note">The contact line is used in the PDF and preview. Company artwork and multi-user branding can be connected through the prepared backend.</p></div></details>
-    <details><summary>Supplier rate book</summary><div class="tool-content"><p>Store negotiated rates with a date range and explicit confirmation. All rates use the demo’s AED base currency.</p><div class="form-grid">${labelled("Service / cost item", "rateName")}${labelled("Supplier", "rateSupplier")}${labelled("Unit cost · AED", "rateCost", "number")}${labelled("Quantity", "rateQty", "number", 1)}${labelled("Valid from", "rateFrom", "date")}${labelled("Valid to", "rateTo", "date")}</div><label>Capacity, overtime and cancellation conditions<textarea id="rateTerms" rows="2"></textarea></label><label class="tool-checkbox"><input type="checkbox" id="rateVerified"> Supplier has confirmed this rate and its conditions</label><button class="btn secondary" id="saveRate" type="button">Save supplier rate</button><div id="rateList">${store.rates.map((r, i) => `<article class="tool-item"><strong>${safe(r.name)}</strong><p>${safe(r.supplier)} · AED ${safe(r.unitCost)} × ${safe(r.quantity)} · ${safe(r.validFrom)}–${safe(r.validTo)} · ${r.verified ? "Confirmed" : "Pending confirmation"}</p><p>${safe(r.terms)}</p><button class="btn secondary" type="button" data-rate="${i}">Apply rate to quotation</button> <button class="btn secondary" type="button" data-edit-rate="${i}">Edit rate</button> <button class="btn secondary" type="button" data-delete-rate="${i}">Delete rate</button></article>`).join("")}</div></div></details>
+    <details><summary>Company defaults and quotation identity</summary><div class="tool-content"><div class="form-grid">${labelled("Company name", "defaultCompany", "text", s.company)}${labelled("Contact shown on client quotation", "defaultContact", "text", s.contact)}${labelled("Prepared by", "defaultPreparedBy", "text", s.preparedBy)}${labelled("Target margin %", "defaultMargin", "number", s.targetMargin)}${labelled(`Handling allowance · ${base()}`, "defaultHandling", "number", s.handlingFee)}</div><label>Default cancellation wording<textarea id="defaultCancellation">${safe(s.cancellation)}</textarea></label><div class="tool-row"><button class="btn secondary" id="saveDefaults" type="button">Save defaults</button><button class="btn secondary" id="applyDefaults" type="button">Apply to this quotation</button></div><p class="quote-note">The contact line is used in the PDF and preview. Company artwork and multi-user branding can be connected through the prepared backend.</p></div></details>
+    <details><summary>Supplier rate book</summary><div class="tool-content"><p>Store negotiated rates with a date range and explicit confirmation. Rates retain their original currency; only matching destination costs can be applied.</p><div class="form-grid">${labelled("Service / cost item", "rateName")}${labelled("Supplier", "rateSupplier")}${labelled(`Unit cost · ${base()}`, "rateCost", "number")}${labelled("Quantity", "rateQty", "number", 1)}${labelled("Valid from", "rateFrom", "date")}${labelled("Valid to", "rateTo", "date")}</div><label>Capacity, overtime and cancellation conditions<textarea id="rateTerms" rows="2"></textarea></label><label class="tool-checkbox"><input type="checkbox" id="rateVerified"> Supplier has confirmed this rate and its conditions</label><button class="btn secondary" id="saveRate" type="button">Save supplier rate</button><div id="rateList">${store.rates.map((r, i) => `<article class="tool-item"><strong>${safe(r.name)}</strong><p>${safe(r.supplier)} · ${safe(r.currency || "AED")} ${safe(r.unitCost)} × ${safe(r.quantity)} · ${safe(r.validFrom)}–${safe(r.validTo)} · ${r.verified ? "Confirmed" : "Pending confirmation"}</p><p>${safe(r.terms)}</p><button class="btn secondary" type="button" data-rate="${i}">Apply rate to quotation</button> <button class="btn secondary" type="button" data-edit-rate="${i}">Edit rate</button> <button class="btn secondary" type="button" data-delete-rate="${i}">Delete rate</button></article>`).join("")}</div></div></details>
     <details><summary>Compare Standard, Comfort and Premium</summary><div class="tool-content"><p>Compare the same itinerary using the demo’s comfort allowances. These are illustrative options, not confirmed supplier offers.</p><button class="btn secondary" id="compareOptions" type="button">Calculate three options</button><div id="optionComparison"></div></div></details>
-    <details><summary>Versions, approval and operations handover</summary><div class="tool-content"><div class="tool-row">${labelled("Version note", "versionNote")}<button class="btn secondary" id="saveVersion" type="button">Save quotation version</button></div><div id="versionList">${store.versions.map((v, i) => `<article class="tool-item"><strong>${safe(v.quote.quoteNo)} · version ${safe(v.number)} · ${safe(v.note || "Saved draft")}</strong><p>${safe(new Date(v.at).toLocaleString())} · ${safe(v.quote.clientCompany || "Client pending")} · ${v.approved ? "Approved snapshot" : "Draft snapshot"} · AED ${safe(v.total)}</p><div class="tool-row"><button class="btn secondary" data-restore="${i}" type="button">Restore as draft</button><button class="btn secondary" data-diff="${i}" type="button">Compare with current draft</button>${v.document ? `<button class="btn secondary" data-version-pdf="${i}" type="button">Download saved version PDF</button>` : ""}${v.approved ? `<button class="btn secondary" data-handover="${i}" type="button">Send approved version to InfraDispatch</button>` : ""}</div></article>`).join("")}</div><div id="versionDiff"></div><h3>Included costs to confirm</h3><p>Confirm each supplier rate and allowance after checking the service date and conditions. Changes to date, quantity or unit cost reset the confirmation.</p><div id="confirmationCosts"></div><label class="tool-checkbox"><input type="checkbox" id="approvalConfirmation"> I have reviewed supplier conditions, itinerary timing and client acceptance</label><button class="btn" id="approveVersion" type="button">Save approved snapshot</button><p class="quote-note">Approval requires complete mandatory fields, no blocking issues and no unverified included costs. It records your confirmation; it is not a supplier booking.</p></div></details>
+    <details><summary>Versions, approval and operations handover</summary><div class="tool-content"><div class="tool-row">${labelled("Version note", "versionNote")}<button class="btn secondary" id="saveVersion" type="button">Save quotation version</button></div><div id="versionList">${store.versions.map((v, i) => `<article class="tool-item"><strong>${safe(v.quote.quoteNo)} · version ${safe(v.number)} · ${safe(v.note || "Saved draft")}</strong><p>${safe(new Date(v.at).toLocaleString())} · ${safe(v.quote.clientCompany || "Client pending")} · ${v.approved ? "Approved snapshot" : "Draft snapshot"} · ${safe(v.quote.city === "amsterdam" ? "EUR" : "AED")} ${safe(v.total)}</p><div class="tool-row"><button class="btn secondary" data-restore="${i}" type="button">Restore as draft</button><button class="btn secondary" data-diff="${i}" type="button">Compare with current draft</button>${v.document ? `<button class="btn secondary" data-version-pdf="${i}" type="button">Download saved version PDF</button>` : ""}${v.approved ? `<button class="btn secondary" data-handover="${i}" type="button">Send approved version to InfraDispatch</button>` : ""}</div></article>`).join("")}</div><div id="versionDiff"></div><h3>Included costs to confirm</h3><p>Confirm each supplier rate and allowance after checking the service date and conditions. Changes to date, quantity or unit cost reset the confirmation.</p><div id="confirmationCosts"></div><label class="tool-checkbox"><input type="checkbox" id="approvalConfirmation"> I have reviewed supplier conditions, itinerary timing and client acceptance</label><button class="btn" id="approveVersion" type="button">Save approved snapshot</button><p class="quote-note">Approval requires complete mandatory fields, no blocking issues and no unverified included costs. It records your confirmation; it is not a supplier booking.</p></div></details>
     <details><summary>Backup and practical workflow measurements</summary><div class="tool-content"><p>Backups include client details and supplier costs. Keep the file private. Nothing is uploaded automatically.</p><div class="tool-row"><button class="btn secondary" id="backupWorkspace" type="button">Download workspace backup</button><label>Restore workspace backup<input type="file" id="restoreWorkspace" accept="application/json,.json"></label><button class="btn secondary" id="exportMetrics" type="button">Download local activity log</button></div><p>${store.metrics.length} local actions recorded. Use real pilot sessions to measure enquiry-to-quote time and corrections; no time-saving claim has been established.</p></div></details><p id="priceChangeExplanation" class="price-change" aria-live="polite"></p></section>`;
     if (cloud) document.querySelector(".workflow-tools").append(cloud);
     bind();
@@ -246,7 +247,7 @@
       )
       .map(
         (line, i) =>
-          `<label class="tool-checkbox tool-item"><input type="checkbox" data-confirm-cost="${i}" ${line.verification === "Verified" ? "checked" : ""}><span><strong>${safe(line.name)}</strong><br>AED ${safe(line.unitCost)} × ${safe(line.quantity)} · ${safe(line.verification)}<br>${safe(line.internalNote || "Check the supplier and date before confirmation.")}</span></label>`,
+          `<label class="tool-checkbox tool-item"><input type="checkbox" data-confirm-cost="${i}" ${line.verification === "Verified" ? "checked" : ""}><span><strong>${safe(line.name)}</strong><br>${base()} ${safe(line.unitCost)} × ${safe(line.quantity)} · ${safe(line.verification)}<br>${safe(line.internalNote || "Check the supplier and date before confirmation.")}</span></label>`,
       )
       .join("");
     const lines = review.lines.filter(
@@ -367,6 +368,14 @@
       }
       const q = API().get();
       const fields = [
+        "city",
+        "currency",
+        "transportPlan",
+        "guideIncluded",
+        "nlVehicleRate",
+        "nlGuideRate",
+        "nlVehicleHours",
+        "nlOvertimeRate",
         "itinerary",
         "vehicleId",
         "vehicleQty",
@@ -386,7 +395,7 @@
         "tourDifficulty",
         "costs",
       ];
-      const setup = Object.fromEntries(fields.map((k) => [k, clone(q[k])]));
+      const setup = Object.fromEntries(fields.filter(k=>q[k]!==undefined).map((k) => [k, clone(q[k])]));
       setup.costConfirmations = {};
       setup.costs = setup.costs.map((line) => ({
         ...line,
@@ -397,6 +406,7 @@
       }));
       setup.itinerary = setup.itinerary.map((stop) => ({
         ...stop,
+        availabilityConfirmed:false,conditionsReviewed:false,
         ticketVerification: stop.ticketRequired
           ? "Pending verification"
           : stop.ticketVerification,
@@ -413,7 +423,9 @@
         status("Choose a saved tour first.");
         return;
       }
-      API().update(clone(store.templates[Number(selected)].setup));
+      const template=store.templates[Number(selected)].setup;
+      if((template.city||'abuDhabi')!==API().country()){status('Choose the template’s destination workspace first.');return;}
+      API().update(clone(template));
       record("template-applied");
       status(
         "Tour setup applied. Verify current prices and service-date availability.",
@@ -435,6 +447,7 @@
         return;
       }
       store.settings = {
+        currency:base(),
         company: $("defaultCompany").value.trim(),
         contact: $("defaultContact").value.trim(),
         preparedBy: $("defaultPreparedBy").value.trim(),
@@ -449,6 +462,7 @@
     };
     $("applyDefaults").onclick = () => {
       const s = store.settings;
+      if((s.currency||'AED')!==base()){status('Company cost defaults belong to a different currency. Save defaults for this destination first.');return;}
       API().update({
         targetMargin: s.targetMargin,
         handlingFee: s.handlingFee,
@@ -484,6 +498,7 @@
       }
       const rate = {
         id: editingRate || crypto.randomUUID(),
+        currency:base(),
         name,
         supplier: $("rateSupplier").value.trim(),
         unitCost,
@@ -507,10 +522,13 @@
         (b.onclick = () => {
           const rate = store.rates[Number(b.dataset.rate)],
             q = API().get();
+          if((rate.currency||'AED')!==base()){status('This supplier rate has a different currency. Switch destination or save a native-currency rate.');return;}
           const existing = q.costs.findIndex((c) => c.rateId === rate.id);
           const applied = {
             id: crypto.randomUUID(),
             rateId: rate.id,
+            currency:rate.currency||"AED",
+            replaces:API().review().lines.find(line=>line.name===rate.name&&!line.rateId)?.name,
             name: rate.name,
             category: "Custom",
             type: "Fixed",
@@ -531,7 +549,12 @@
           else q.costs[existing] = { ...applied, id: q.costs[existing].id };
           const confirmations = { ...(q.costConfirmations || {}) };
           delete confirmations[rate.name];
-          API().update({ costs: q.costs, costConfirmations: confirmations });
+          const native={};if(q.city==='amsterdam'){
+            if(rate.name===`${q.guideLanguage||'Guide'} guide service`)native.nlGuideRate=rate.unitCost;
+            if(rate.name===`${root.INFRAQUOTE_DATA.vehicles.find(v=>v.id===q.vehicleId)?.name} with driver`){native.nlVehicleRate=rate.unitCost;native.vehicleQty=rate.quantity;}
+            if(rate.name==='Vehicle overtime')native.nlOvertimeRate=rate.unitCost;
+          }
+          API().update({ ...native,costs: q.costs, costConfirmations: confirmations });
           record("supplier-rate-applied");
           status(
             usableRate(rate, q.serviceDate)
@@ -544,6 +567,7 @@
       (b) =>
         (b.onclick = () => {
           const rate = store.rates[Number(b.dataset.editRate)];
+          if((rate.currency||"AED")!==base()){status("Switch destination before editing this currency’s rate.");return;}
           editingRate = rate.id;
           [
             ["rateName", rate.name],
@@ -579,7 +603,7 @@
         return { level, total: result.total, minutes: result.minutes };
       });
       $("optionComparison").innerHTML =
-        `<div class="option-grid">${comparison.map((o) => `<article class="tool-item"><h3>${o.level}</h3><strong>AED ${o.total.toFixed(2)}</strong><p>${o.minutes} min · ${o.level === "Premium" ? "Includes sample premium setup allowance" : "Same itinerary and selected vehicle"}</p><button class="btn secondary" type="button" data-option="${o.level}">Choose ${o.level}</button></article>`).join("")}</div>`;
+        `<div class="option-grid">${comparison.map((o) => `<article class="tool-item"><h3>${o.level}</h3><strong>${base()} ${o.total.toFixed(2)}</strong><p>${o.minutes} min · ${o.level === "Premium" ? (API().country()==="amsterdam"?"Same entered supplier costs; enter any premium supplement separately":"Includes sample premium setup allowance") : "Same itinerary and selected vehicle"}</p><button class="btn secondary" type="button" data-option="${o.level}">Choose ${o.level}</button></article>`).join("")}</div>`;
       document.querySelectorAll("[data-option]").forEach(
         (b) =>
           (b.onclick = () => {
@@ -614,8 +638,9 @@
           );
           const version = store.versions[Number(b.dataset.diff)],
             current = API().calculate();
+          if((version.quote.city||"abuDhabi")!==API().country()){status("Switch to the saved version’s city before comparing prices.");return;}
           $("versionDiff").innerHTML =
-            `<h3>Changes since this version</h3><p>Price difference: ${current.total - version.total >= 0 ? "+" : ""}AED ${(current.total - version.total).toFixed(2)}${version.minutes !== undefined ? ` · Duration difference: ${current.minutes - version.minutes >= 0 ? "+" : ""}${current.minutes - version.minutes} min` : ""}</p>${diff.length ? `<ul>${diff.map((d) => (typeof d.before === "object" || typeof d.after === "object" ? `<li><details><summary>${safe(humanize(d.field))} changed</summary><pre>Saved version\n${safe(JSON.stringify(d.before, null, 2))}\nCurrent draft\n${safe(JSON.stringify(d.after, null, 2))}</pre></details></li>` : `<li><strong>${safe(humanize(d.field))}</strong>: ${safe(d.before)} → ${safe(d.after)}</li>`)).join("")}</ul>` : "<p>No differences.</p>"}`;
+            `<h3>Changes since this version</h3><p>Price difference: ${current.total - version.total >= 0 ? "+" : ""}${base()} ${(current.total - version.total).toFixed(2)}${version.minutes !== undefined ? ` · Duration difference: ${current.minutes - version.minutes >= 0 ? "+" : ""}${current.minutes - version.minutes} min` : ""}</p>${diff.length ? `<ul>${diff.map((d) => (typeof d.before === "object" || typeof d.after === "object" ? `<li><details><summary>${safe(humanize(d.field))} changed</summary><pre>Saved version\n${safe(JSON.stringify(d.before, null, 2))}\nCurrent draft\n${safe(JSON.stringify(d.after, null, 2))}</pre></details></li>` : `<li><strong>${safe(humanize(d.field))}</strong>: ${safe(d.before)} → ${safe(d.after)}</li>`)).join("")}</ul>` : "<p>No differences.</p>"}`;
         }),
     );
     document.querySelectorAll("[data-version-pdf]").forEach(
@@ -643,6 +668,8 @@
           const v = store.versions[Number(b.dataset.handover)];
           const q = v.quote;
           const payload = {
+            country:q.city==="amsterdam"?"netherlands":"uae",
+            city:q.city,
             reference: q.quoteNo,
             version: v.number,
             approvedAt: v.at,
@@ -670,8 +697,10 @@
                   terminalNote: q.terminalNote,
                 }
               : {}),
-            vehicleId: q.vehicleId,
-            vehicleQty: q.vehicleQty,
+            transportPlan:q.transportPlan||"vehicle",
+            guideIncluded:q.guideIncluded!==false,
+            vehicleId:q.city==="amsterdam"&&q.transportPlan==="walking"?null:q.vehicleId,
+            vehicleQty:q.city==="amsterdam"&&q.transportPlan==="walking"?0:q.vehicleQty,
           };
           try {
             localStorage.setItem(
@@ -736,7 +765,7 @@
         changed = changes(last.quote, next.quote);
       if (delta || time) {
         $("priceChangeExplanation").textContent =
-          `Latest change: ${changed.map((x) => x.field.replace(/([A-Z])/g, " $1")).join(", ") || "cost inputs"} → ${delta >= 0 ? "+" : ""}AED ${delta.toFixed(2)}; ${time >= 0 ? "+" : ""}${time} minutes. Supplier rates remain subject to confirmation.`;
+          `Latest change: ${changed.map((x) => x.field.replace(/([A-Z])/g, " $1")).join(", ") || "cost inputs"} → ${delta >= 0 ? "+" : ""}${base()} ${delta.toFixed(2)}; ${time >= 0 ? "+" : ""}${time} minutes. Supplier rates remain subject to confirmation.`;
       }
     }
     last = clone(next);
@@ -753,6 +782,7 @@
     persist();
     render();
   });
+  window.addEventListener("infraquote:country-changed",()=>{comparison=null;last=null;render();});
   document.addEventListener("DOMContentLoaded", () => {
     load();
     if (!store.starterTemplatesAdded) {
@@ -760,6 +790,7 @@
         {
           name: "Cultural highlights · full day (sample)",
           setup: {
+            city:"abuDhabi",currency:"AED",
             tourDuration: "Full day",
             tourTitle: "Abu Dhabi Cultural Highlights",
             itinerary: API().templateStops([
@@ -767,20 +798,21 @@
               "qasr-al-watan",
               "louvre",
               "emirates-palace",
-            ]),
+            ],"abuDhabi"),
             costConfirmations: {},
           },
         },
         {
           name: "City highlights · half day (sample)",
           setup: {
+            city:"abuDhabi",currency:"AED",
             tourDuration: "Half day",
             tourTitle: "Abu Dhabi City Highlights",
             itinerary: API().templateStops([
               "grand-mosque",
               "corniche",
               "dates-market",
-            ]),
+            ],"abuDhabi"),
             costConfirmations: {},
           },
         },

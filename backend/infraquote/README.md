@@ -38,3 +38,7 @@ The local activity export records action timestamps and session wall time, not c
 - The backend test bootstraps synthetic auth identities solely for local permission tests. `test-bootstrap.sql` must not be applied to a Supabase project.
 
 Database tests cover company isolation, anonymous denial, admin/sales/operations access, immutable versions, approval rejection, expiry rejection and handovers without private financial fields. They do not replace hosted Supabase Auth and REST integration checks after activation.
+
+## Amsterdam extension
+
+Private rate records accept AED and EUR. The browser connector preserves each rate’s currency and blocks applying it to another currency’s quotation. Approved Amsterdam snapshots require native EUR and explicit tax review. Sanitized handovers carry country/city context into the Dutch planner. No hosted account is connected. See `../../docs/infraquote/amsterdam-maintenance.md` for the scope and tax-model limitations.
