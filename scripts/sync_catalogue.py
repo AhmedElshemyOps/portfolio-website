@@ -91,18 +91,12 @@ s=re.sub(r'<div class="knowledge-grid">.*?</div>(?=<div class="knowledge-empty")
 s=re.sub(r'"numberOfItems":\s*\d+','"numberOfItems":'+str(len(registry)),s)
 p.write_text(s)
 # All editorial pages use the same header/footer; demos retain their app controls.
-header=(ROOT/'templates/header.html').read_text().strip()
-footer=(ROOT/'templates/footer.html').read_text().strip()
 count=0
 for p in ROOT.rglob('*.html'):
  if any(part in ['.git','templates','live-demos','scripts'] for part in p.relative_to(ROOT).parts):continue
  s=p.read_text()
  if not re.search(r'<header\b[^>]*class="masthead"',s):continue
- s=re.sub(r'<header\b[^>]*class="masthead"[^>]*>.*?</header>',lambda m:header,s,count=1,flags=re.S)
- if re.search(r'<footer\b[^>]*class="(?:platform-footer|footer)"',s):
-  s=re.sub(r'<footer\b[^>]*class="(?:platform-footer|footer)"[^>]*>.*?</footer>',lambda m:footer,s,count=1,flags=re.S)
- elif '</body>' in s:s=s.replace('</body>',footer+'</body>')
- for asset in ['<link rel="stylesheet" href="/assets/css/discovery.css"/>','<link rel="stylesheet" href="/assets/css/site-navigation.css"/>','<script defer src="/assets/js/discovery.js"></script>','<script defer src="/assets/js/saved-reading.js"></script>']:
+ for asset in ['<link rel="stylesheet" href="/assets/css/discovery.css"/>','<script defer src="/assets/js/discovery.js"></script>','<script defer src="/assets/js/saved-reading.js"></script>']:
   path=re.search(r'(?:href|src)="([^"]+)"',asset)[1]
   if path not in s:s=s.replace('</head>',asset+'</head>')
  # Topic chips lead to a filtered hub rather than the homepage.
@@ -122,3 +116,7 @@ subprocess.run([sys.executable, str(ROOT/"scripts/simplify_article_toc.py")], ch
 # Reapply authorized public contact fields after shared chrome generation.
 from update_site_contact import apply as apply_site_contact
 apply_site_contact(ROOT)
+
+# Shared component rendering also enforces the approved stylesheet/script entry points.
+from render_shared import apply as render_shared
+render_shared(ROOT)

@@ -1,1 +1,9 @@
-{"name":"ahmed-article-design-review","private":true,"scripts":{"dev":"node scripts/preview-static.mjs"}}
+{
+  "name": "ahmed-article-design-review",
+  "private": true,
+  "scripts": {
+    "dev": "node scripts/preview-static.mjs",
+    "render:shared": "python3 scripts/render_shared.py",
+    "check": "python3 scripts/render_shared.py --check && python3 scripts/validate_site_links.py && python3 maintenance/validate-navigation.py"
+  }
+}

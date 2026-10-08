@@ -1,5 +1,5 @@
 /* Offline reading cache for previously opened public pages and assets. */
-const VERSION = "ahmed-portfolio-v10-professional-contact";
+const VERSION = "ahmed-portfolio-v11-code-cleanup";
 const STATIC_CACHE = `${VERSION}-static`;
 const READING_CACHE = `${VERSION}-reading`;
 const APP_SHELL = ["/", "/knowledge/index.html", "/saved/index.html", "/offline/index.html", "/assets/css/design-tokens.css", "/assets/css/launch-pages.css", "/assets/js/site-config.js", "/assets/js/saved-reading.js"];

@@ -1,0 +1,202 @@
+/* Shared navigation and footer. Homepage components retain their editorial layout. */
+.masthead {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  min-height: 88px;
+  padding: 12px max(3vw, 28px);
+  border-bottom: 1px solid var(--line-light);
+  background: rgba(255, 255, 255, .96);
+  backdrop-filter: blur(16px);
+}
+.masthead .brand, .platform-footer .brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.masthead .mark, .platform-footer .mark {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 58px;
+  height: 52px;
+  border: 1px solid var(--gold-line);
+  color: var(--navy);
+  font: 600 1.55rem/1 var(--serif);
+  letter-spacing: -.05em;
+}
+.masthead .brand strong, .platform-footer .brand strong {
+  display: block;
+  color: var(--navy);
+  font: 600 1.08rem/1.15 var(--serif);
+}
+.masthead .brand small, .platform-footer .brand small {
+  display: block;
+  color: var(--muted);
+  font-size: .64rem;
+}
+.masthead nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  font-size: .77rem;
+  font-weight: 600;
+  letter-spacing: .11em;
+  text-transform: uppercase;
+}
+.masthead nav :is(a, button) {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  white-space: nowrap;
+}
+.masthead nav a {
+  position: relative;
+  padding: 15px 0 10px;
+  color: var(--navy-soft);
+  font-size: 11px;
+  letter-spacing: .09em;
+}
+.masthead nav a::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 2px;
+  height: 2px;
+  background: var(--gold-line);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--motion-fast) ease;
+}
+.masthead nav a:is(:hover, :focus-visible, [aria-current="page"]) {
+  color: var(--navy);
+}
+.masthead nav a:is(:hover, :focus-visible, [aria-current="page"])::after {
+  transform: scaleX(1);
+}
+.masthead .nav-cv { padding: 0 12px; border: 1px solid var(--line); }
+.masthead .nav-search {
+  padding: 7px 10px;
+  border: 1px solid rgba(7, 24, 43, .3);
+  border-radius: 2px;
+  background: transparent;
+  color: var(--navy);
+  font: 600 .7rem var(--sans);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.masthead .nav-search:is(:hover, :focus-visible) {
+  border-color: var(--gold-line);
+  background: var(--navy);
+  color: #fff;
+}
+.static-menu-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 48px;
+  min-height: 44px;
+  padding: 8px 11px;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--navy);
+  font: 600 .7rem var(--sans);
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.static-menu-toggle[hidden] { display: none; }
+.platform-footer {
+  display: grid;
+  grid-template-columns: 1.4fr repeat(3, .65fr);
+  gap: 42px;
+  padding: 40px max(5vw, 28px) 32px;
+  border-top: 3px solid var(--gold-line);
+  background: var(--navy);
+  color: var(--paper);
+  font-family: var(--sans);
+}
+.platform-footer > div p { max-width: 420px; color: #9dabbc; font-size: .8rem; }
+.platform-footer nav { display: grid; align-content: start; gap: 9px; }
+.platform-footer nav strong {
+  margin-bottom: 6px;
+  color: #dfc27d;
+  font-size: .68rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.platform-footer nav a { font-size: .78rem; }
+.platform-footer a { color: #dce3eb; overflow-wrap: anywhere; }
+.platform-footer a:hover { color: var(--gold-light); }
+.platform-footer > small {
+  grid-column: 1 / -1;
+  padding-top: 22px;
+  border-top: 1px solid rgba(255, 255, 255, .14);
+  color: #8291a3;
+}
+.platform-footer .brand { width: max-content; max-width: 100%; }
+.platform-footer .brand .mark {
+  color: var(--gold-light);
+  background: rgba(255, 255, 255, .035);
+}
+.platform-footer .brand strong { color: #fff; }
+.platform-footer .brand small { color: #aebed0; }
+.platform-footer .brand:is(:hover, :focus-visible) strong { color: var(--gold-light); }
+.platform-footer .professional-social {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+}
+.platform-footer .professional-social svg { width: 20px; height: 20px; fill: currentColor; flex-shrink: 0; }
+.platform-footer .professional-social:hover { text-decoration: underline; text-underline-offset: 4px; }
+.reader-dark .masthead { background: #0b1827; }
+@media (max-width: 1000px) {
+  .platform-footer { grid-template-columns: 1fr 1fr; }
+  .platform-footer > div { grid-column: 1 / -1; }
+}
+@media (min-width: 761px) and (max-width: 1000px) {
+  .masthead { flex-direction: column; align-items: flex-start; }
+  .masthead nav { width: 100%; overflow-x: auto; flex-wrap: nowrap; justify-content: flex-start; gap: 18px; }
+  .masthead nav > * { flex-shrink: 0; }
+}
+@media (max-width: 760px) {
+  .masthead { min-height: 74px; flex-direction: row; padding-block: 9px; }
+  .masthead nav { width: 100%; gap: 12px; }
+  .masthead .brand small { display: none; }
+  .masthead[data-navigation-ready] .static-menu-toggle { display: inline-flex; margin-left: auto; }
+  .masthead[data-navigation-ready] nav {
+    position: absolute;
+    z-index: 120;
+    inset: 100% 0 auto;
+    display: none;
+    max-height: calc(100dvh - 74px);
+    align-items: stretch;
+    gap: 0;
+    padding: 12px 18px 20px;
+    overflow-y: auto;
+    border-bottom: 1px solid var(--line);
+    background: var(--paper);
+    box-shadow: var(--shadow-soft);
+  }
+  .masthead[data-navigation-ready] nav.is-open { display: grid; }
+  .masthead nav :is(a, button) { width: 100%; min-height: 44px; padding: 11px; justify-content: flex-start; }
+  .masthead nav a::after { display: none; }
+  .masthead .nav-search { margin-top: 8px; }
+  .platform-footer { grid-template-columns: 1fr; padding-inline: 22px; }
+  .platform-footer > div, .platform-footer > small { grid-column: auto; }
+}
+@media (max-width: 520px) {
+  .masthead { padding-inline: 18px; }
+  .platform-footer { padding-inline: 18px; }
+}
+@media (max-width: 420px) {
+  .masthead .mark { width: 46px; height: 44px; }
+}
