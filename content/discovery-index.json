@@ -4,7 +4,7 @@
     "title": "InfraDispatch",
     "type": "Project",
     "category": "Tourism Operations & Product Systems",
-    "description": "Smart rule-based dispatch planner and browser demo for trip, team, vehicle, cost, approval and handover decisions.",
+    "description": "Netherlands and UAE dispatch prototypes: Amsterdam, Haarlem and Utrecht scenarios, capacity checks, reviewed access and team briefs.",
     "url": "/live-demos/infradispatch/index.html",
     "tags": [
       "dispatch",
@@ -12,7 +12,11 @@
       "fleet",
       "pickup",
       "handover",
-      "operations"
+      "operations",
+      "Netherlands",
+      "Amsterdam",
+      "Haarlem",
+      "Utrecht"
     ]
   },
   {
@@ -35,14 +39,18 @@
     "title": "InfraSky",
     "type": "Project",
     "category": "DMC & Destination Management",
-    "description": "Condition-aware experience readiness demo for responsible stargazing and desert product decisions.",
+    "description": "Amsterdam astronomy and regional dark-sky planning: ARTIS, Copernicus and Lauwersmeer research, access checks and seasonal darkness, alongside the original UAE demo.",
     "url": "/live-demos/infrasky.html",
     "tags": [
       "astronomy",
       "stargazing",
       "desert",
       "experience readiness",
-      "product"
+      "product",
+      "Netherlands",
+      "Amsterdam",
+      "Overveen",
+      "Lauwersmeer"
     ]
   },
   {

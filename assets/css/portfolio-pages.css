@@ -161,3 +161,9 @@
 .portfolio-page .discovery-hero .hero-actions .button.is-secondary { color: var(--navy); border-color: var(--navy); background: transparent; }
 
 .portfolio-page .newsletter-signup .eyebrow { color: #dfc27d; }
+
+/* Research extensions reuse the case-study cards with a readable two-column rhythm. */
+.portfolio-page .nl-research{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:28px}
+.portfolio-page .nl-research h3{margin:0 0 14px;font-size:24px;line-height:1.3}
+.portfolio-page .nl-research a{color:#795b20;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:760px){.portfolio-page .nl-research{grid-template-columns:minmax(0,1fr)}}
