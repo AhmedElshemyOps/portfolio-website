@@ -29,7 +29,7 @@ def simplify(s):
     for n in e.nodes:
         if not body['inner']<=n['start']<body['end'] or n['tag'] not in ('h2','h3','h4'):continue
         parents=list(ancestors(n))
-        if any(e.classes(p)&{'article-purpose','article-toc','article-feedback','article-read-time-card','article-next-actions','article-github-cta','related-insights-header','ai-playbook-context-link','v14-article-cta'} for p in parents):continue
+        if any(e.classes(p)&{'library-connections','article-purpose','article-toc','article-feedback','article-read-time-card','article-next-actions','article-github-cta','related-insights-header','ai-playbook-context-link','v14-article-cta'} for p in parents):continue
         if n['attrs'].get('id','').startswith('article-feedback'):continue
         prompt_section=next((p for p in parents if 'prompt-section' in e.classes(p)),None)
         prompt=prompt_section is not None

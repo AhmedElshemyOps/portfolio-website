@@ -204,3 +204,10 @@
 @media(min-width:901px){.field-manual .article-toc>details>summary::after{display:none}}
 @media(max-width:600px){.field-manual .prompt-navigator{justify-content:flex-start}.field-manual .reader-utilities{gap:8px}.field-manual .article-toc>details>summary::after{font-size:12px}.field-manual .article-resume{left:12px;right:12px;bottom:12px;max-width:calc(100% - 24px)}}
 .field-manual .article-body :is(p,li,dd),.field-manual .article-toc :is(a,summary) { overflow-wrap:anywhere; }
+/* Keep long guides calm, readable and consistent with the portfolio. */
+.field-manual .article-body>p{max-width:70ch}.field-manual .article-body :is(h2,h3,h4){text-wrap:balance;scroll-margin-top:100px}
+.field-manual .accommodation-scope{padding:20px 24px;margin:0 0 28px;border-left:3px solid var(--gold-line);background:var(--paper-deep);font:400 15px/1.7 var(--sans);color:var(--muted)}
+.field-manual .accommodation-scope strong{color:var(--ink)}.field-manual .accommodation-scope p{margin:8px 0 0}
+.field-manual .article-body a:hover{text-decoration-thickness:2px}.field-manual .article-body a:focus-visible{outline:3px solid var(--gold);outline-offset:4px;border-radius:2px}
+.field-manual .article-visual{padding:16px;border:1px solid var(--line-light);background:var(--paper);border-radius:4px}
+@media(max-width:600px){.field-manual .accommodation-scope{padding:16px}.field-manual .article-visual{padding:10px}}

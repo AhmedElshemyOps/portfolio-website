@@ -610,7 +610,7 @@
     "next": {
       "kind": "apply",
       "url": "#prompt-1-general-hotel-prompt-builder",
-      "label": "Apply General Hotel Prompt Builder",
+      "label": "Apply General Hotel Apartment Prompt Builder",
       "why": "Supply the required inputs, copy the complete prompt and verify the output before using it in the operation."
     }
   },
@@ -790,7 +790,7 @@
     "next": {
       "kind": "apply",
       "url": "#prompt-1",
-      "label": "Apply Hotel Control Tower Daily Brief",
+      "label": "Apply Hotel Apartment Control Tower Daily Brief",
       "why": "Supply the required inputs, copy the complete prompt and verify the output before using it in the operation."
     }
   },

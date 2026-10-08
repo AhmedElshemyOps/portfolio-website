@@ -3,7 +3,7 @@ from pathlib import Path
 from html import escape
 import json,re
 from urllib.parse import quote
-def display_topic(s): return s.replace('Hotel & Serviced Apartment AI','AI for Hotel Apartments')
+def display_topic(s): return s.replace('Hotel & Serviced Apartment AI','AI for Hotel Apartments').replace('Hotel AI Operations Playbook','Hotel Apartment and Staycation AI Playbook')
 def refresh(ROOT, registry):
  old=json.loads((ROOT/'content/discovery-index.json').read_text())
  def write_json(name,value): (ROOT/'content'/name).write_text(json.dumps(value,ensure_ascii=False,indent=2)+'\n')

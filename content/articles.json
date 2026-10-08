@@ -434,7 +434,7 @@
     "url": "/articles/hotel-ai-prompting-framework/index.html",
     "category": "Hotel & Serviced Apartment AI Operations",
     "pillar": "Hotel & Serviced Apartment AI",
-    "summary": "How to write professional, governed AI prompts for hotel and serviced-apartment operations using the HOTEL framework.",
+    "summary": "How to write professional, governed AI prompts for hotel apartment and serviced-apartment operations using the HOTEL framework.",
     "status": "Published",
     "readingTime": 18,
     "source": "Published article registry"
@@ -500,7 +500,7 @@
     "url": "/articles/hotel-apartment-operating-system/index.html",
     "category": "Hotel Apartment Operational Excellence",
     "pillar": "Operational Excellence & SOPs",
-    "summary": "A practical operating-system model for hotel and serviced apartments: governance, guest journey, apartment readiness, maintenance, housekeeping, controls, KPIs, evidence and continuous improvement.",
+    "summary": "A practical operating-system model for hotel apartment and serviced apartments: governance, guest journey, apartment readiness, maintenance, housekeeping, controls, KPIs, evidence and continuous improvement.",
     "status": "Published",
     "readingTime": 4,
     "source": "Published article registry"
@@ -522,7 +522,7 @@
     "url": "/articles/hotel-apartment-preventive-maintenance-strategy/index.html",
     "category": "Hotel Apartment Operational Excellence",
     "pillar": "Operational Excellence & SOPs",
-    "summary": "Build a preventive maintenance strategy for hotel and serviced apartments using asset criticality, PM frequencies, work-order control, compliance, backlog and effectiveness KPIs.",
+    "summary": "Build a preventive maintenance strategy for hotel apartment and serviced apartments using asset criticality, PM frequencies, work-order control, compliance, backlog and effectiveness KPIs.",
     "status": "Published",
     "readingTime": 6,
     "source": "Published article registry"
@@ -561,12 +561,12 @@
     "source": "Published article registry"
   },
   {
-    "title": "Hotel Control Tower & AI Decision-Support Toolkit",
+    "title": "Hotel Apartment Control Tower & AI Decision-Support Toolkit",
     "slug": "hotel-control-tower-ai-decision-support-toolkit",
     "url": "/articles/hotel-control-tower-ai-decision-support-toolkit/index.html",
     "category": "Hotel & Serviced Apartment AI Operations",
     "pillar": "Hotel & Serviced Apartment AI",
-    "summary": "10 professional AI prompts for integrated hotel control towers, exception prioritization, reliability, alerts, escalation and executive decision support.",
+    "summary": "10 professional AI prompts for integrated hotel apartment control towers, exception prioritization, reliability, alerts, escalation and executive decision support.",
     "status": "Published",
     "readingTime": 28,
     "source": "Published article registry"
@@ -599,7 +599,7 @@
     "url": "/articles/hotel-economics-of-service-failure/index.html",
     "category": "Hotel Apartment Operational Excellence",
     "pillar": "Operational Excellence & SOPs",
-    "summary": "Measure the operational and financial consequences of hotel service failure across containment, recovery, rework, compensation, downtime and recurrence.",
+    "summary": "Measure the operational and financial consequences of hotel apartment service failure across containment, recovery, rework, compensation, downtime and recurrence.",
     "status": "Published",
     "readingTime": 4,
     "source": "Published article registry"
@@ -610,7 +610,7 @@
     "url": "/articles/hotel-energy-utility-management-ai-toolkit/index.html",
     "category": "Hotel & Serviced Apartment AI Operations",
     "pillar": "Hotel & Serviced Apartment AI",
-    "summary": "10 professional AI prompts for hotel utility baselines, electricity, water, HVAC, peak demand, tariffs, conservation and measurement & verification.",
+    "summary": "10 professional AI prompts for hotel apartment utility baselines, electricity, water, HVAC, peak demand, tariffs, conservation and measurement & verification.",
     "status": "Published",
     "readingTime": 24,
     "source": "Published article registry"
@@ -627,7 +627,7 @@
     "source": "Published article registry"
   },
   {
-    "title": "Hotel ESG & Sustainability AI Toolkit",
+    "title": "Hotel Apartment ESG & Sustainability AI Toolkit",
     "slug": "hotel-esg-sustainability-ai-toolkit",
     "url": "/articles/hotel-esg-sustainability-ai-toolkit/index.html",
     "category": "Hotel & Serviced Apartment AI Operations",
@@ -638,12 +638,12 @@
     "source": "Published article registry"
   },
   {
-    "title": "Hotel Finance & Cost-Control AI Toolkit",
+    "title": "Hotel Apartment Finance & Cost-Control AI Toolkit",
     "slug": "hotel-finance-cost-control-ai-toolkit",
     "url": "/articles/hotel-finance-cost-control-ai-toolkit/index.html",
     "category": "Hotel & Serviced Apartment AI Operations",
     "pillar": "Hotel & Serviced Apartment AI",
-    "summary": "10 professional AI prompts for hotel finance, cost variance, P&L commentary, unit economics, forecasting, savings and cash control.",
+    "summary": "10 professional AI prompts for hotel apartment finance, cost variance, P&L commentary, unit economics, forecasting, savings and cash control.",
     "status": "Published",
     "readingTime": 33,
     "source": "Published article registry"
@@ -671,12 +671,12 @@
     "source": "Published article registry"
   },
   {
-    "title": "Hotel General Manager AI Toolkit",
+    "title": "Hotel Apartment General Manager AI Toolkit",
     "slug": "hotel-general-manager-ai-toolkit",
     "url": "/articles/hotel-general-manager-ai-toolkit/index.html",
     "category": "Hotel & Serviced Apartment AI Operations",
     "pillar": "Hotel & Serviced Apartment AI",
-    "summary": "Ten governed AI prompts for hotel general managers to prioritise departmental reports, operating risks, service issues and management decisions.",
+    "summary": "Ten governed AI prompts for hotel apartment general managers to prioritise departmental reports, operating risks, service issues and management decisions.",
     "status": "Published",
     "readingTime": 15,
     "source": "Published article registry"
@@ -759,7 +759,7 @@
     "source": "Published article registry"
   },
   {
-    "title": "Hotel Inventory & PAR Management AI Toolkit",
+    "title": "Hotel Apartment Inventory & PAR Management AI Toolkit",
     "slug": "hotel-inventory-par-management-ai-toolkit",
     "url": "/articles/hotel-inventory-par-management-ai-toolkit/index.html",
     "category": "Hotel & Serviced Apartment AI Operations",
@@ -770,18 +770,18 @@
     "source": "Published article registry"
   },
   {
-    "title": "Hotel KPI & Dashboard AI Toolkit",
+    "title": "Hotel Apartment KPI & Dashboard AI Toolkit",
     "slug": "hotel-kpi-dashboard-ai-toolkit",
     "url": "/articles/hotel-kpi-dashboard-ai-toolkit/index.html",
     "category": "Hotel & Serviced Apartment AI Operations",
     "pillar": "Hotel & Serviced Apartment AI",
-    "summary": "10 professional AI prompts for hotel KPI architecture, dashboards, scorecards, trend analysis, data quality and management action.",
+    "summary": "10 professional AI prompts for hotel apartment KPI architecture, dashboards, scorecards, trend analysis, data quality and management action.",
     "status": "Published",
     "readingTime": 28,
     "source": "Published article registry"
   },
   {
-    "title": "Lean Six Sigma for Hotel Operations AI Toolkit",
+    "title": "Lean Six Sigma for Hotel Apartment Operations AI Toolkit",
     "slug": "hotel-lean-six-sigma-ai-toolkit",
     "url": "/articles/hotel-lean-six-sigma-ai-toolkit/index.html",
     "category": "Hotel & Serviced Apartment AI Operations",
@@ -814,12 +814,12 @@
     "source": "Published article registry"
   },
   {
-    "title": "Hotel Operations Manager AI Toolkit",
+    "title": "Hotel Apartment Operations Manager AI Toolkit",
     "slug": "hotel-operations-manager-ai-toolkit",
     "url": "/articles/hotel-operations-manager-ai-toolkit/index.html",
     "category": "Hotel & Serviced Apartment AI Operations",
     "pillar": "Hotel & Serviced Apartment AI",
-    "summary": "10 professional AI prompts for daily hotel operations, priorities, handovers, exceptions and management control.",
+    "summary": "10 professional AI prompts for daily hotel apartment operations, priorities, handovers, exceptions and management control.",
     "status": "Published",
     "readingTime": 35,
     "source": "Published article registry"
@@ -836,12 +836,12 @@
     "source": "Published article registry"
   },
   {
-    "title": "Hotel OTA, Distribution & Review Management AI Toolkit",
+    "title": "Hotel Apartment OTA, Distribution & Review Management AI Toolkit",
     "slug": "hotel-ota-distribution-review-management-ai-toolkit",
     "url": "/articles/hotel-ota-distribution-review-management-ai-toolkit/index.html",
     "category": "Hotel & Serviced Apartment AI Operations",
     "pillar": "Hotel & Serviced Apartment AI",
-    "summary": "10 professional AI prompts for hotel OTA listing quality, channel content, reviews, distribution mix, commission, parity, promotions and reputation management.",
+    "summary": "10 professional AI prompts for hotel apartment OTA listing quality, channel content, reviews, distribution mix, commission, parity, promotions and reputation management.",
     "status": "Published",
     "readingTime": 31,
     "source": "Published article registry"
@@ -869,7 +869,7 @@
     "source": "Published article registry"
   },
   {
-    "title": "Hotel Procurement AI Toolkit",
+    "title": "Hotel Apartment Procurement AI Toolkit",
     "slug": "hotel-procurement-ai-toolkit",
     "url": "/articles/hotel-procurement-ai-toolkit/index.html",
     "category": "Hotel & Serviced Apartment AI Operations",
@@ -902,12 +902,12 @@
     "source": "Published article registry"
   },
   {
-    "title": "Hotel Quality Audit AI Toolkit",
+    "title": "Hotel Apartment Quality Audit AI Toolkit",
     "slug": "hotel-quality-audit-ai-toolkit",
     "url": "/articles/hotel-quality-audit-ai-toolkit/index.html",
     "category": "Hotel & Serviced Apartment AI Operations",
     "pillar": "Hotel & Serviced Apartment AI",
-    "summary": "10 professional AI prompts for hotel audit planning, evidence, nonconformities, trend analysis, mystery guest review, CAPA and effectiveness verification.",
+    "summary": "10 professional AI prompts for hotel apartment audit planning, evidence, nonconformities, trend analysis, mystery guest review, CAPA and effectiveness verification.",
     "status": "Published",
     "readingTime": 38,
     "source": "Published article registry"
@@ -924,7 +924,7 @@
     "source": "Published article registry"
   },
   {
-    "title": "Hotel Revenue Management AI Toolkit",
+    "title": "Hotel Apartment Revenue Management AI Toolkit",
     "slug": "hotel-revenue-management-ai-toolkit",
     "url": "/articles/hotel-revenue-management-ai-toolkit/index.html",
     "category": "Hotel & Serviced Apartment AI Operations",
@@ -935,7 +935,7 @@
     "source": "Published article registry"
   },
   {
-    "title": "Hotel Sales & Corporate Accounts AI Toolkit",
+    "title": "Hotel Apartment Sales & Corporate Accounts AI Toolkit",
     "slug": "hotel-sales-corporate-accounts-ai-toolkit",
     "url": "/articles/hotel-sales-corporate-accounts-ai-toolkit/index.html",
     "category": "Hotel & Serviced Apartment AI Operations",
@@ -946,7 +946,7 @@
     "source": "Published article registry"
   },
   {
-    "title": "Hotel SOP & Process Design AI Toolkit",
+    "title": "Hotel Apartment SOP & Process Design AI Toolkit",
     "slug": "hotel-sop-process-design-ai-toolkit",
     "url": "/articles/hotel-sop-process-design-ai-toolkit/index.html",
     "category": "Hotel & Serviced Apartment AI Operations",
@@ -1111,12 +1111,12 @@
     "source": "Published article registry"
   },
   {
-    "title": "Responsible AI Governance for Hotels",
+    "title": "Responsible AI Governance for Hotel Apartments",
     "slug": "responsible-ai-governance-hotels",
     "url": "/articles/responsible-ai-governance-hotels/index.html",
     "category": "Hotel & Serviced Apartment AI Operations",
     "pillar": "Hotel & Serviced Apartment AI",
-    "summary": "Responsible AI governance toolkit for hotels: 10 prompts covering risk, authority, privacy, verification, incidents, tools, version control and human oversight.",
+    "summary": "Responsible AI governance toolkit for hotel apartments: 10 prompts covering risk, authority, privacy, verification, incidents, tools, version control and human oversight.",
     "status": "Published",
     "readingTime": 30,
     "source": "Published article registry"
@@ -1402,7 +1402,7 @@
     "url": "/articles/workforce-rostering-productivity-ai-toolkit/index.html",
     "category": "Hotel & Serviced Apartment AI Operations",
     "pillar": "Hotel & Serviced Apartment AI",
-    "summary": "Ten governed AI prompts for hotel workforce planning, rostering, workload, skills, productivity and fatigue-risk review.",
+    "summary": "Ten governed AI prompts for hotel apartment workforce planning, rostering, workload, skills, productivity and fatigue-risk review.",
     "status": "Published",
     "readingTime": 15,
     "source": "Published article registry"

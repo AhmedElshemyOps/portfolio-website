@@ -79,7 +79,7 @@ def apply(s,slug,rows):
   if n['tag']!='p' or not(body['inner']<=n['start']<body['end']):continue
   parents=[];a=n
   while a:parents.append(a);a=a['parent']
-  if any(a['tag'] in ('figure','table') or e.classes(a)&{'article-purpose','prompt-section','practical-example','method-prompt-list','method-prompt-link','prompt-method-link','visual-learning','article-ending'} or a['attrs'].get('id')=='ai-bridge' for a in parents):continue
+  if any(a['tag'] in ('figure','table') or e.classes(a)&{'article-purpose','prompt-section','practical-example','method-prompt-list','method-prompt-link','prompt-method-link','visual-learning','article-ending','library-connections'} or a['attrs'].get('id')=='ai-bridge' for a in parents):continue
   raw=s[n['inner']:s.rfind('</p',n['inner'],n['end'])]
   if '<a ' in raw:continue
   pieces=re.split('(<[^>]+>)',raw);found=False

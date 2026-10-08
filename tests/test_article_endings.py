@@ -5,6 +5,7 @@ from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 from improve_article_endings import ROOT,load_rows,apply
 from apply_field_manual import parse
+from accommodation_baseline import approved_baseline
 class ArticleEndingTests(unittest.TestCase):
  def test_one_checklist_and_one_verified_action_at_the_end(self):
   rows=load_rows();self.assertEqual(len(rows),130)
@@ -29,6 +30,7 @@ class ArticleEndingTests(unittest.TestCase):
    path=ROOT/'articles'/slug/'index.html';s=path.read_text();self.assertEqual(apply(s,row),s,slug)
    old=subprocess.check_output(['git','show','6f8f6f6f9324c83b3c63e915ac31a633bdf31d53:'+str(path.relative_to(ROOT))],cwd=ROOT,text=True)
    first=apply(old,row);self.assertEqual(apply(first,row),first,slug)
+   old=approved_baseline(old,slug)
    for pattern in [r'<pre\b[^>]*>.*?</pre>',r'<td\b[^>]*>.*?</td>',r'<img\b[^>]*>']:
     self.assertEqual(re.findall(pattern,old,re.S),re.findall(pattern,s,re.S),slug)
    before=set(re.findall(r'\bid="([^"]+)"',old));after=re.findall(r'\bid="([^"]+)"',s)

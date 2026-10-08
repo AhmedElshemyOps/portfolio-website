@@ -37,7 +37,14 @@ class ArticleConnectionTests(unittest.TestCase):
     if fragment:self.assertIn('id="'+fragment+'"',target.read_text(),url)
     concepts+=bool(n['attrs'].get('data-concept-link'))
   self.assertEqual(concepts,11) # Obsolete closing navigation was replaced by the single ending action.
- def test_full_prompt_text_unchanged(self):
+ def test_full_prompt_text_preserved_except_approved_accommodation_scope(self):
   for p in (ROOT/'articles').rglob('*.html'):
    old=subprocess.check_output(['git','show','6f8f6f6f9324c83b3c63e915ac31a633bdf31d53:'+str(p.relative_to(ROOT))],cwd=ROOT,text=True);new=p.read_text()
+   # The user explicitly approved hotel-apartment terminology in these guides.
+   # Every other word and the complete prompt structure remain protected.
+   import json
+   from scope_accommodation import apply as scope
+   row=next(r for r in json.loads((ROOT/'content/article-registry.json').read_text()) if r['id']==p.parent.name)
+   if row['series'] in {'Hotel AI Operations Playbook','Hotel Apartment Operational Excellence'}:
+    old=scope(old).replace('Hotel apartment','Hotel Apartment')
    self.assertEqual(re.findall(r'<pre\b[^>]*>.*?</pre>',old,re.S),re.findall(r'<pre\b[^>]*>.*?</pre>',new,re.S),p)

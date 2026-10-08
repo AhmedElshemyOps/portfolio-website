@@ -3215,7 +3215,7 @@
       "Action": "Prepare the resource performance review draft from the checked inputs; keep unresolved facts and required approvals visible.",
       "Verification": "Compare the draft with the source records and expected outputs. The named accountable owner must verify and approve it before live use."
     },
-    "original_html": "<p class=\"scenario\"><strong>Example:</strong> A hotel sees higher electricity use in summer and wants to know whether the change is explained by occupancy, climate, operating hours or an unresolved anomaly.</p>"
+    "original_html": "<p class=\"scenario\"><strong>Example:</strong> A hotel apartment sees higher electricity use in summer and wants to know whether the change is explained by occupancy, climate, operating hours or an unresolved anomaly.</p>"
   },
   "hotel-esg-sustainability-ai-toolkit::prompt-4-ghg-emissions-inventory-support": {
     "key": "hotel-esg-sustainability-ai-toolkit::prompt-4-ghg-emissions-inventory-support",
@@ -3245,7 +3245,7 @@
       "Action": "Prepare the sustainable procurement review draft from the checked inputs; keep unresolved facts and required approvals visible.",
       "Verification": "Compare the draft with the source records and expected outputs. The named accountable owner must verify and approve it before live use."
     },
-    "original_html": "<p class=\"scenario\"><strong>Example:</strong> The hotel wants to reduce single-use items and improve supplier sustainability without degrading guest experience or buying unsupported &#x27;green&#x27; claims.</p>"
+    "original_html": "<p class=\"scenario\"><strong>Example:</strong> The hotel apartment wants to reduce single-use items and improve supplier sustainability without degrading guest experience or buying unsupported &#x27;green&#x27; claims.</p>"
   },
   "hotel-esg-sustainability-ai-toolkit::prompt-6-staff-guest-sustainability-engagement-planner": {
     "key": "hotel-esg-sustainability-ai-toolkit::prompt-6-staff-guest-sustainability-engagement-planner",
@@ -3290,7 +3290,7 @@
       "Action": "Prepare the esg kpi & target tracker draft from the checked inputs; keep unresolved facts and required approvals visible.",
       "Verification": "Compare the draft with the source records and expected outputs. The named accountable owner must verify and approve it before live use."
     },
-    "original_html": "<p class=\"scenario\"><strong>Example:</strong> The hotel has energy, water, waste, emissions and social targets but needs one governed management view.</p>"
+    "original_html": "<p class=\"scenario\"><strong>Example:</strong> The hotel apartment has energy, water, waste, emissions and social targets but needs one governed management view.</p>"
   },
   "hotel-esg-sustainability-ai-toolkit::prompt-9-sustainability-claim-greenwashing-risk-review": {
     "key": "hotel-esg-sustainability-ai-toolkit::prompt-9-sustainability-claim-greenwashing-risk-review",
@@ -3599,7 +3599,7 @@
       "Action": "Prepare the pareto analyzer draft from the checked inputs; keep unresolved facts and required approvals visible.",
       "Verification": "Compare the draft with the source records and expected outputs. The named accountable owner must verify and approve it before live use."
     },
-    "original_html": "<p class=\"scenario\"><strong>Example:</strong> The hotel wants to know whether AC, plumbing, housekeeping, access or communication issues account for most repeat service-recovery workload.</p>"
+    "original_html": "<p class=\"scenario\"><strong>Example:</strong> The hotel apartment wants to know whether AC, plumbing, housekeeping, access or communication issues account for most repeat service-recovery workload.</p>"
   },
   "hotel-lean-six-sigma-ai-toolkit::prompt-4-root-cause-hypothesis-builder": {
     "key": "hotel-lean-six-sigma-ai-toolkit::prompt-4-root-cause-hypothesis-builder",
@@ -3674,7 +3674,7 @@
       "Action": "Prepare the process capability review planner draft from the checked inputs; keep unresolved facts and required approvals visible.",
       "Verification": "Compare the draft with the source records and expected outputs. The named accountable owner must verify and approve it before live use."
     },
-    "original_html": "<p class=\"scenario\"><strong>Example:</strong> A hotel wants to assess whether check-in completion time consistently meets a defined service specification rather than merely reporting an average.</p>"
+    "original_html": "<p class=\"scenario\"><strong>Example:</strong> A hotel apartment wants to assess whether check-in completion time consistently meets a defined service specification rather than merely reporting an average.</p>"
   },
   "hotel-lean-six-sigma-ai-toolkit::prompt-9-control-plan-builder": {
     "key": "hotel-lean-six-sigma-ai-toolkit::prompt-9-control-plan-builder",
@@ -3689,7 +3689,7 @@
       "Action": "Prepare the control plan builder draft from the checked inputs; keep unresolved facts and required approvals visible.",
       "Verification": "Compare the draft with the source records and expected outputs. The named accountable owner must verify and approve it before live use."
     },
-    "original_html": "<p class=\"scenario\"><strong>Example:</strong> After improving the room-release gate, the hotel needs a weekly control plan to detect missed inspections and repeat readiness defects.</p>"
+    "original_html": "<p class=\"scenario\"><strong>Example:</strong> After improving the room-release gate, the hotel apartment needs a weekly control plan to detect missed inspections and repeat readiness defects.</p>"
   },
   "hotel-lean-six-sigma-ai-toolkit::prompt-10-kaizen-opportunity-prioritizer": {
     "key": "hotel-lean-six-sigma-ai-toolkit::prompt-10-kaizen-opportunity-prioritizer",
@@ -3749,7 +3749,7 @@
       "Action": "Prepare a draft that separates confirmed facts, assumptions, unresolved items and recommendations for human review.",
       "Verification": "Check every operational claim against its source and confirm the named owner’s approval before using the draft in live work."
     },
-    "original_html": "<p>We continue using the fictional 60-unit UAE serviced-apartment property introduced in Article 01.</p>\n<p>Assume today&#x27;s operating picture at 07:30 is:</p>\n<ul><li>60 apartments total;</li><li>49 occupied last night;</li><li>7 arrivals expected today;</li><li>6 departures;</li><li>2 units currently out of service;</li><li>Apartment 1407 has a repeat AC complaint;</li><li>Apartment 903 has a slow bathroom leak under investigation;</li><li>one corporate long-stay arrival requests early access at 11:00;</li><li>housekeeping has one unexpected absence;</li><li>a replacement washing machine is due from a supplier at 14:00;</li><li>one guest complaint from the night shift remains open;</li><li>maintenance has three preventive jobs scheduled in vacant units.</li></ul>\n<p>A manager could manually read every chat, note, PMS screen and engineering update. But the purpose of the AI toolkit is to transform approved inputs into a <strong>management control view</strong>.</p>\n<p>A good morning briefing might place issues into four bands:</p>\n<p><strong>RED — guest/safety/revenue risk now</strong>  </p>\n<p>Repeat AC complaint in an occupied unit; unresolved overnight complaint.</p>\n<p><strong>AMBER — time-sensitive dependency</strong>  </p>\n<p>Early corporate arrival depends on housekeeping release and engineering confirmation.</p>\n<p><strong>BLUE — planned work</strong>  </p>\n<p>Three preventive jobs in vacant units.</p>\n<p><strong>WATCH — evidence needed</strong>  </p>\n<p>Washing-machine delivery is scheduled for 14:00 but supplier confirmation is older than the hotel&#x27;s required verification window.</p>\n<p>That is much more useful than a chronological summary of messages.</p>\n<hr>"
+    "original_html": "<p>We continue using the fictional 60-unit UAE serviced-apartment property introduced in Article 01.</p>\n<p>Assume today&#x27;s operating picture at 07:30 is:</p>\n<ul><li>60 apartments total;</li><li>49 occupied last night;</li><li>7 arrivals expected today;</li><li>6 departures;</li><li>2 units currently out of service;</li><li>Apartment 1407 has a repeat AC complaint;</li><li>Apartment 903 has a slow bathroom leak under investigation;</li><li>one corporate long-stay arrival requests early access at 11:00;</li><li>housekeeping has one unexpected absence;</li><li>a replacement washing machine is due from a supplier at 14:00;</li><li>one guest complaint from the night shift remains open;</li><li>maintenance has three preventive jobs scheduled in vacant units.</li></ul>\n<p>A manager could manually read every chat, note, PMS screen and engineering update. But the purpose of the AI toolkit is to transform approved inputs into a <strong>management control view</strong>.</p>\n<p>A good morning briefing might place issues into four bands:</p>\n<p><strong>RED — guest/safety/revenue risk now</strong>  </p>\n<p>Repeat AC complaint in an occupied unit; unresolved overnight complaint.</p>\n<p><strong>AMBER — time-sensitive dependency</strong>  </p>\n<p>Early corporate arrival depends on housekeeping release and engineering confirmation.</p>\n<p><strong>BLUE — planned work</strong>  </p>\n<p>Three preventive jobs in vacant units.</p>\n<p><strong>WATCH — evidence needed</strong>  </p>\n<p>Washing-machine delivery is scheduled for 14:00 but supplier confirmation is older than the hotel apartment&#x27;s required verification window.</p>\n<p>That is much more useful than a chronological summary of messages.</p>\n<hr>"
   },
   "hotel-operations-planning-daily-control::8f47f855e879": {
     "key": "hotel-operations-planning-daily-control::8f47f855e879",
@@ -3937,7 +3937,7 @@
       "Action": "Prepare a draft that separates confirmed facts, assumptions, unresolved items and recommendations for human review.",
       "Verification": "Check every operational claim against its source and confirm the named owner’s approval before using the draft in live work."
     },
-    "original_html": "<p>Continue with the fictional 60-unit UAE serviced-apartment portfolio.</p><p>Management sees recurring friction when an apartment is not ready at the expected arrival time. The existing SOP says: “If the room is not ready, inform the guest and contact housekeeping.”</p><p>That sentence leaves the important controls unanswered: how “not ready” is defined, which system owns status, who confirms the next realistic readiness time, what happens if Engineering is the blocker, how often the guest is updated, what Front Office may promise, when the Duty Manager becomes involved, what compensation authority exists and which record proves closure.</p><p>A redesigned process separates cleaning in progress, inspection pending, technical blocker and management exception. AI can expose missing controls. The hotel team must still decide the real roles, thresholds and authority.</p>"
+    "original_html": "<p>Continue with the fictional 60-unit UAE serviced-apartment portfolio.</p><p>Management sees recurring friction when an apartment is not ready at the expected arrival time. The existing SOP says: “If the room is not ready, inform the guest and contact housekeeping.”</p><p>That sentence leaves the important controls unanswered: how “not ready” is defined, which system owns status, who confirms the next realistic readiness time, what happens if Engineering is the blocker, how often the guest is updated, what Front Office may promise, when the Duty Manager becomes involved, what compensation authority exists and which record proves closure.</p><p>A redesigned process separates cleaning in progress, inspection pending, technical blocker and management exception. AI can expose missing controls. The hotel apartment team must still decide the real roles, thresholds and authority.</p>"
   },
   "hotel-workforce-productivity-efficiency::8f47f855e879": {
     "key": "hotel-workforce-productivity-efficiency::8f47f855e879",
