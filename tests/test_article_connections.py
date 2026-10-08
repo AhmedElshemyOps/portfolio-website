@@ -47,4 +47,8 @@ class ArticleConnectionTests(unittest.TestCase):
    row=next(r for r in json.loads((ROOT/'content/article-registry.json').read_text()) if r['id']==p.parent.name)
    if row['series'] in {'Hotel AI Operations Playbook','Hotel Apartment Operational Excellence'}:
     old=scope(old).replace('Hotel apartment','Hotel Apartment')
+   if p.parent.name=='hotel-reservations-ai-toolkit':
+    # Only the four recognized Markdown tables moved out of <pre>; real prompts remain exact.
+    from improve_article_visuals import convert_legacy_tables
+    old=convert_legacy_tables(old)
    self.assertEqual(re.findall(r'<pre\b[^>]*>.*?</pre>',old,re.S),re.findall(r'<pre\b[^>]*>.*?</pre>',new,re.S),p)

@@ -18,6 +18,9 @@
     if (!indexPromise) indexPromise = fetch("/content/discovery-index.json", { credentials: "same-origin" }).then(function (response) {
       if (!response.ok) throw new Error("Search index unavailable");
       return response.json();
+    }).catch(function (error) {
+      indexPromise = null;
+      throw error;
     });
     return indexPromise;
   }
@@ -105,6 +108,8 @@
       return;
     }
     groups.setAttribute("aria-busy", "true");
+    groups.replaceChildren();
+    status.textContent = "Searching for “" + cleaned + "”…";
     loadIndex().then(function (items) {
       if (request !== searchRequest) return;
       var tokens = searchTokens(cleaned);
@@ -165,8 +170,11 @@
     dialog.addEventListener("keydown", function (event) {
       var links = Array.from(dialog.querySelectorAll("[data-search-result]"));
       if (!links.length || !["ArrowDown", "ArrowUp", "Home", "End"].includes(event.key)) return;
-      event.preventDefault();
+      if (event.altKey || event.ctrlKey || event.metaKey || event.shiftKey || event.isComposing) return;
       var current = links.indexOf(document.activeElement);
+      // Keep normal text editing in the query; ArrowDown enters the result list.
+      if (current < 0 && !(document.activeElement === input && event.key === "ArrowDown")) return;
+      event.preventDefault();
       if (event.key === "Home") { activeIndex = 0; links[0].focus(); return; }
       if (event.key === "End") { activeIndex = links.length - 1; links[activeIndex].focus(); return; }
       if (event.key === "ArrowUp" && current <= 0) { activeIndex = -1; input.focus(); return; }
@@ -177,17 +185,19 @@
 
   function openSearch() {
     ensureDialog();
+    if (dialog.open) { input.focus(); return; }
     previousFocus = document.activeElement;
     if (typeof dialog.showModal === "function") dialog.showModal(); else dialog.setAttribute("open", "");
     window.setTimeout(function () { input.focus(); }, 0);
     loadIndex().catch(function () {});
-    renderSuggestions(false);
+    renderSearch(input.value);
     analytics("global_search_opened");
   }
 
   function closeSearch() {
     if (!dialog) return;
     window.clearTimeout(input?.searchTimer);
+    searchRequest += 1;
     if (typeof dialog.close === "function") dialog.close(); else dialog.removeAttribute("open");
   }
 
@@ -206,6 +216,9 @@
   var moreButton = document.querySelector('[data-knowledge-more]');
   var pageStatus = document.querySelector('[data-knowledge-page-status]');
   var sort = document.querySelector('[data-knowledge-sort]');
+  var activeSelection = document.querySelector('[data-knowledge-selection]');
+  var selectionText = document.querySelector('[data-knowledge-selection-text]');
+  var filterDisclosureLabel = document.querySelector('.library-filter-disclosure summary');
   var limit = 12;
   var matched = [];
   var saved = null;
@@ -223,9 +236,11 @@
     if (!knowledgeCards.length) return;
     if (resetBatch === true) limit = 12;
     var selected = Object.fromEntries(filters.map(function (filter) { return [filter.dataset.knowledgeFilter, filter.value]; }));
-    var query = (knowledgeQuery?.value || '').trim().toLowerCase();
+    var query = (knowledgeQuery?.value || '').trim();
+    var tokens = searchTokens(query);
     matched = knowledgeCards.filter(function (card) {
-      return (!selected.pillar || card.dataset.pillar === selected.pillar) && (!selected.series || card.dataset.series === selected.series) && (!selected.type || card.dataset.type === selected.type) && (!query || (card.dataset.search + ' ' + topicLabel(card.dataset.search + ' ' + card.dataset.pillar)).toLowerCase().includes(query));
+      var searchable = normalize(card.dataset.search + ' ' + topicLabel(card.dataset.search + ' ' + card.dataset.pillar));
+      return (!selected.pillar || card.dataset.pillar === selected.pillar) && (!selected.series || card.dataset.series === selected.series) && (!selected.type || card.dataset.type === selected.type) && tokens.every(function (token) { return searchable.includes(token); });
     });
     if (sort?.value === 'title') matched.sort(function (a, b) { return a.querySelector('h2').textContent.localeCompare(b.querySelector('h2').textContent); });
     if (sort?.value === 'updated') matched.sort(function (a, b) { return (b.dataset.updated || '').localeCompare(a.dataset.updated || ''); });
@@ -235,6 +250,16 @@
     if (grid && sort) matched.forEach(function (card) { grid.appendChild(card); });
     filters.forEach(function (filter) { filter.closest('label')?.classList.toggle('is-active', Boolean(filter.value)); });
     knowledgeQueries.forEach(function (field) { field.closest('label')?.classList.toggle('is-active', Boolean(query)); });
+    var activeFilters = filters.filter(function (filter) { return Boolean(filter.value); });
+    var selection = query ? ['Search: “' + query + '”'] : [];
+    activeFilters.forEach(function (filter) {
+      var option = Array.from(filter.options).find(function (item) { return item.value === filter.value; });
+      selection.push(({ pillar: 'Topic', series: 'Series', type: 'Content type' })[filter.dataset.knowledgeFilter] + ': ' + (option?.textContent || filter.value));
+    });
+    if (sort?.value && sort.value !== 'recommended') selection.push('Sort: ' + Array.from(sort.options).find(function (item) { return item.value === sort.value; })?.textContent);
+    if (activeSelection) activeSelection.hidden = selection.length === 0;
+    if (selectionText) selectionText.textContent = selection.join(' · ');
+    if (filterDisclosureLabel) filterDisclosureLabel.textContent = 'Filter articles' + (activeFilters.length ? ' (' + activeFilters.length + ' active)' : '');
     document.querySelector('[data-knowledge-status]').textContent = matched.length ? 'Showing ' + visible.length + (visible.length < matched.length ? ' results. More articles are available below.' : ' matching results.') : 'No matching articles.';
     document.querySelector('[data-knowledge-empty]').hidden = matched.length !== 0;
     if (moreButton) moreButton.hidden = visible.length >= matched.length;
@@ -252,6 +277,14 @@
   sort?.addEventListener('change', function () { filterKnowledge(true); });
   knowledgeQueries.forEach(function (field) { field.addEventListener('input', function () { knowledgeQueries.forEach(function (other) { other.value = field.value; }); filterKnowledge(true); }); });
   moreButton?.addEventListener('click', function () { var next = matched[limit]; limit += 12; filterKnowledge(); next?.querySelector('a')?.focus(); });
-  document.querySelector('[data-knowledge-reset]')?.addEventListener('click', function () { filters.forEach(function (filter) { filter.value = ''; }); knowledgeQueries.forEach(function (field) { field.value = ''; }); if (sort) sort.value = 'recommended'; filterKnowledge(true); });
+  document.querySelectorAll('[data-knowledge-reset]').forEach(function (button) { button.addEventListener('click', function () {
+    filters.forEach(function (filter) { filter.value = ''; });
+    knowledgeQueries.forEach(function (field) { field.value = ''; });
+    if (sort) sort.value = 'recommended';
+    filterKnowledge(true);
+    // Clearing a selection can hide the button that held keyboard focus.
+    var heading = document.getElementById('all-knowledge-title');
+    if (heading) { heading.tabIndex = -1; heading.focus(); }
+  }); });
 
 }());

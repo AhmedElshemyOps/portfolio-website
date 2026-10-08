@@ -90,33 +90,61 @@
   }
   revealTocTarget(window.location.hash);
   window.addEventListener('hashchange', () => revealTocTarget(window.location.hash));
+  tocLinks.forEach(link => link.addEventListener('click', event => {
+    if (!toc || !mobileToc.matches || event.defaultPrevented || event.button !== 0 || event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
+    const hash = link.getAttribute('href');
+    const target = link.getAttribute('target');
+    if (!hash?.startsWith('#') || hash.length < 2 || link.hasAttribute('download') || (target && target !== '_self')) return;
+    try { if (!document.getElementById(decodeURIComponent(hash.slice(1)))) return; } catch (_error) { return; }
+    // Collapse before the browser measures the fragment destination and scrolls.
+    // Leave the native click intact so its hash, history and focus behavior remain available.
+    toc.open = false;
+  }));
 
   // Use the table of contents as the single section registry, including introductory sections.
   const headings = tocLinks.length ? [...new Set(tocLinks.map(link => document.getElementById(link.getAttribute('href').slice(1))).filter(Boolean))] : [...document.querySelectorAll('.article-body h2[id]')].filter(heading => !heading.closest('.article-read-time-card'));
   const sectionMap = document.createElement('nav');
   sectionMap.className = 'article-section-map';
   sectionMap.setAttribute('aria-label', 'Article section navigation');
-  sectionMap.innerHTML = `<button class="article-section-map-toggle" type="button" aria-expanded="false"><span>Section</span><strong data-section-current>1</strong><span>of ${headings.length}</span><b>Sections</b></button><div class="article-section-map-panel" hidden></div>`;
+  sectionMap.innerHTML = `<button class="article-section-map-toggle" type="button" aria-expanded="false" aria-controls="article-section-map-panel"><span>Section</span><strong data-section-current>1</strong><span>of ${headings.length}</span><b>Sections</b></button><div id="article-section-map-panel" class="article-section-map-panel" hidden></div>`;
   const sectionToggle = sectionMap.querySelector('.article-section-map-toggle');
   const sectionPanel = sectionMap.querySelector('.article-section-map-panel');
   const sectionCurrent = sectionMap.querySelector('[data-section-current]');
+  function setSectionMapOpen(open, restoreFocus = false) {
+    sectionPanel.hidden = !open;
+    sectionToggle.setAttribute('aria-expanded', String(open));
+    if (restoreFocus) sectionToggle.focus({ preventScroll: true });
+  }
   const sectionButtons = headings.map((heading, index) => {
     const button = document.createElement('button');
     button.type = 'button';
     button.innerHTML = `<span>${String(index + 1).padStart(2, '0')}</span><b>${heading.textContent?.replace('#', '').trim() || `Article section ${index + 1}`}</b>`;
     button.addEventListener('click', () => {
       heading.scrollIntoView({ behavior: reducedMotion.matches ? 'auto' : 'smooth', block: 'start' });
-      window.setTimeout(() => heading.querySelector('.heading-anchor')?.focus({ preventScroll: true }), reducedMotion.matches ? 0 : 500);
-      sectionPanel.hidden = true;
-      sectionToggle.setAttribute('aria-expanded', 'false');
+      setSectionMapOpen(false);
+      window.setTimeout(() => {
+        const target = heading.querySelector('.heading-anchor') || heading;
+        if (target === heading && !heading.hasAttribute('tabindex')) heading.setAttribute('tabindex', '-1');
+        target.focus({ preventScroll: true });
+      }, reducedMotion.matches ? 0 : 500);
     });
     sectionPanel.appendChild(button);
     return button;
   });
   sectionToggle?.addEventListener('click', () => {
-    const open = sectionPanel.hidden;
-    sectionPanel.hidden = !open;
-    sectionToggle.setAttribute('aria-expanded', String(open));
+    setSectionMapOpen(sectionPanel.hidden);
+  });
+  sectionMap.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && !sectionPanel.hidden) {
+      event.preventDefault();
+      setSectionMapOpen(false, true);
+    }
+  });
+  sectionMap.addEventListener('focusout', event => {
+    if (event.relatedTarget && !sectionMap.contains(event.relatedTarget)) setSectionMapOpen(false);
+  });
+  document.addEventListener('click', event => {
+    if (!sectionMap.contains(event.target)) setSectionMapOpen(false);
   });
   if (sectionButtons.length > 1) document.body.appendChild(sectionMap);
 

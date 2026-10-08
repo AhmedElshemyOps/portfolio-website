@@ -10,7 +10,7 @@ function run(width, saved, blocked=false) {
  const font=['decrease','reset','increase'].map(action=>({...button(),dataset:{readerFont:action}}));
  const contrast=button(), theme=button(), toc={open:true,parentElement:null};
  const group={open:false,parentElement:{closest:()=>toc}};
- const link={getAttribute:()=> '#prompt',closest:()=>group};
+ const link={getAttribute:()=> '#prompt',closest:()=>group,addEventListener(){}};
  const document={body:{classList:{toggle(k,v){v?classes.add(k):classes.delete(k)}}},documentElement:{style:{setProperty(k,v){values[k]=v}}},getElementById:()=>({}),querySelector(s){return {'[data-reader-toc]':toc,'[data-reader-contrast]':contrast,'[data-reader-theme]':theme}[s]||null},querySelectorAll(s){return s==='[data-reader-font]'?font:s==='[data-toc-link]'?[link]:[]}};
  const window={location:{pathname:'/article',hash:'#prompt'},matchMedia(q){return {matches:q.includes('900px')?width<=900:false,addEventListener(){}}},localStorage:{getItem(){if(blocked)throw Error('blocked');return saved},setItem(k,v){if(blocked)throw Error('blocked');stored.push(JSON.parse(v))}},addEventListener(k,v){events[k]=v}};
  vm.runInNewContext(script,{document,window});

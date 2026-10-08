@@ -22,7 +22,7 @@ class ArticleVisualTests(unittest.TestCase):
      figures+=1;self.assertEqual(n['attrs'].get('data-reading-visual'),'true')
      self.assertIn('What to learn',s[n['start']:n['end']])
      self.assertIn('diagram-scroll',s[n['start']:n['end']])
-  self.assertEqual((tables,figures),(170,338))
+  self.assertEqual((tables,figures),(174,338)) # Four reservations tables now use table semantics.
  def test_data_and_image_preservation(self):
   for p in (ROOT/'articles').rglob('*.html'):
    old=subprocess.check_output(['git','show','6f8f6f6f9324c83b3c63e915ac31a633bdf31d53:'+str(p.relative_to(ROOT))],cwd=ROOT,text=True);new=p.read_text()

@@ -5,8 +5,28 @@ import re
 from apply_field_manual import parse
 ROOT=Path(__file__).resolve().parents[1]
 LABELS={'What the owner should learn':'Learning goal','Typical Tourism Example':'Tourism example','Information required':'Required information','weighted_score_100':'Score / 100','poi_id':'POI ID','poi_name':'POI name','fit_band':'Fit band','Blueprint component':'Component','Candidate measure':'Measure','Main Purpose':'Purpose','Client Stage':'Client stage','Full Name':'Full name'}
+# These four authored reservations tables were stored as one plain <pre> per row.
+# Match only their exact headers and a valid Markdown separator; attributed <pre>
+# blocks (including every Copy Prompt target) are never eligible for conversion.
+LEGACY_TABLE_CAPTIONS={
+ ('Question','Primary approved source','AI role'):'Reservation source-of-truth matrix',
+ ('Stage','Control question','Prompt'):'The reservations AI control loop',
+ ('Item','Current evidence','Classification','Next action'):'Fictional reservation case: verification queue',
+ ('KPI','What it reveals'):'Measures for a controlled reservations workflow',
+}
+def convert_legacy_tables(s):
+ def convert(match):
+  rows=[tuple(unescape(cell.strip()) for cell in row.strip()[1:-1].split('|')) for row in re.findall(r'<pre>(\|[^<>\n]*\|)</pre>',match[0])]
+  if len(rows)<3 or rows[0] not in LEGACY_TABLE_CAPTIONS:return match[0]
+  width=len(rows[0])
+  if any(len(row)!=width for row in rows) or not all(re.fullmatch(r':?-{3,}:?',cell) for cell in rows[1]):return match[0]
+  heading='<thead><tr>'+''.join('<th scope="col">'+escape(cell)+'</th>' for cell in rows[0])+'</tr></thead>'
+  body='<tbody>'+''.join('<tr>'+''.join('<td>'+escape(cell)+'</td>' for cell in row)+'</tr>' for row in rows[2:])+'</tbody>'
+  return '<table><caption>'+LEGACY_TABLE_CAPTIONS[rows[0]]+'</caption>'+heading+body+'</table>'
+ return re.sub(r'<pre>\|[^<>\n]*\|</pre>(?:\s*<pre>\|[^<>\n]*\|</pre>)+',convert,s)
 def text(s,n):return unescape(re.sub('<[^>]+>','',s[n['inner']:s.rfind('</',n['inner'],n['end'])])).strip()
 def migrate(s):
+ s=convert_legacy_tables(s)
  e=parse(s);edits=[]
  for n in e.nodes:
   if n['tag'] not in ('table','figure'):continue
