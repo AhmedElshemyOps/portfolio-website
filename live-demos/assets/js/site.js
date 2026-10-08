@@ -74,6 +74,7 @@ window.addEventListener('DOMContentLoaded',()=>{
 });
 (function(){
   function addProjectFallbackMenu(){
+    if(document.querySelector('[data-navigation-ready]')) return;
     if(document.querySelector('.dropdown-menu')) return;
     var nav=document.querySelector('[data-nav], .nav, .nav-links');
     if(!nav) return;

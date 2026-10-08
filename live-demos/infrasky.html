@@ -29,20 +29,32 @@
 <link href="assets/css/design-vnext.css" rel="stylesheet"/>
 <link href="assets/css/github-integration.css?v=20260711" rel="stylesheet"/><link href="assets/css/portfolio-bridge.css" rel="stylesheet"/>
 <link href="assets/css/table-responsive-v16.css?v=20260721" rel="stylesheet"/>
-<link href="assets/css/knowledge-atlas-demo.css" rel="stylesheet"/><link rel="stylesheet" href="/assets/css/global-search.css"/><script defer src="/assets/js/discovery.js?v=20261008-seo"></script><link rel="stylesheet" href="/assets/css/site-field-manual.css?v=20261008-polish"/><link rel="stylesheet" href="/assets/css/project-demo-theme.css?v=20261008-polish"/><script defer src="/live-demos/assets/js/netherlands-products.js?v=20261008-nl"></script><link rel="stylesheet" href="/assets/css/site-chrome.css?v=20261008-polish"/></head>
+<link href="assets/css/knowledge-atlas-demo.css" rel="stylesheet"/><link rel="stylesheet" href="/assets/css/global-search.css"/><script defer src="/assets/js/discovery.js?v=20261008-seo"></script><link rel="stylesheet" href="/assets/css/site-field-manual.css?v=20261008-polish"/><link rel="stylesheet" href="/assets/css/project-demo-theme.css?v=20261008-polish"/><script defer src="/live-demos/assets/js/netherlands-products.js?v=20261008-nl"></script><script defer src="/assets/js/product-navigation.js?v=20261008-navigation"></script><link rel="stylesheet" href="/assets/css/site-chrome.css?v=20261008-navigation"/></head>
 <body class="infrasky-page knowledge-atlas-demo" data-page="infrasky">
 <a class="skip-link" href="#main-content">Skip to InfraSky planner</a>
 <a id="top"></a>
-<header class="site-header">
-<div class="container nav">
-<a aria-label="Ahmed Mahmoud portfolio home" class="wordmark" href="/#top"><span class="wordmark-mark">AM</span><span>Ahmed Mahmoud<small>Travel and Tourism Operations</small></span></a>
-<button aria-controls="siteNav" aria-expanded="false" class="menu-button" data-menu-button="" id="menuButton" type="button">Menu</button>
-<nav aria-label="Main navigation" class="nav-links" data-nav="" id="siteNav">
-<a href="/knowledge/index.html">Knowledge</a><a class="active" href="/projects/index.html">Projects</a><a href="/profile/index.html">Profile</a><a href="mailto:ahmed.mahmoud.nl.work@gmail.com">Contact</a>
-<button class="nav-search" type="button" data-global-search-open>Search</button></nav>
-</div>
-</header>
-<nav aria-label="Live project demos" class="demo-suite"><span>Live demos</span><a href="/live-demos/infradispatch/index.html">InfraDispatch</a><a href="/live-demos/infracluster.html">InfraCluster</a><a aria-current="page" href="/live-demos/infrasky.html">InfraSky</a><a href="/live-demos/infraquote.html">InfraQuote</a></nav>
+<header class="masthead">
+<a class="brand" href="/#top" aria-label="Ahmed Mahmoud portfolio home">
+<img class="mark" src="/assets/brand/homepage-monogram-116.png" alt="" width="58" height="58">
+<span>
+<strong>Ahmed Mahmoud</strong>
+</span>
+</a>
+<button class="static-menu-toggle" type="button" data-navigation-toggle aria-expanded="false" aria-controls="static-primary-navigation" hidden>
+<span data-menu-icon aria-hidden="true">☰</span>
+<span data-menu-label>Menu</span>
+</button>
+<nav id="static-primary-navigation" aria-label="Primary navigation">
+<a href="/#top">Home</a>
+<a href="/profile/index.html">Profile</a>
+<a href="/projects/index.html" aria-current="page">Projects</a>
+<a href="/knowledge/index.html">Knowledge</a>
+<a href="/#contact">Contact</a>
+<button class="nav-search" type="button" data-global-search-open aria-label="Search the website">Search</button>
+<a class="nav-cv" href="/documents/Ahmed-Mahmoud-Managerial-CV.pdf" download>CV</a>
+</nav>
+</header><script src="/assets/js/site-navigation.js?v=20261008-navigation"></script>
+<div class="demo-product-navigation"><nav aria-label="Live project demos" class="demo-suite"><span>Live demos</span><a href="/live-demos/infradispatch/index.html">InfraDispatch</a><a href="/live-demos/infracluster.html">InfraCluster</a><a aria-current="page" href="/live-demos/infrasky.html">InfraSky</a><a href="/live-demos/infraquote.html">InfraQuote</a></nav><details class="demo-product-picker"><summary>Choose a product · InfraSky</summary><nav aria-label="Choose a product"><a href="/live-demos/infradispatch/index.html">InfraDispatch</a><a href="/live-demos/infracluster.html">InfraCluster</a><a aria-current="page" href="/live-demos/infrasky.html">InfraSky</a><a href="/live-demos/infraquote.html">InfraQuote</a></nav></details></div>
 <main id="main-content">
 <section class="cluster-hero infrasky-hero">
 <div class="container cluster-hero-grid">
@@ -50,7 +62,7 @@
 <img class="project-product-logo" src="/assets/brand/projects/infrasky-logo.svg" alt="InfraSky logo" width="360" height="96"/>
 <p class="eyebrow">InfraSky · Netherlands and UAE astronomy planning</p>
 <h1>Turn sky conditions into a responsible tourism operating decision.</h1>
-<p>InfraSky connects the guest promise with the actual viewing opportunity. Explore the Netherlands workspace for Amsterdam, Overveen and Lauwersmeer, or use the original UAE planning demo below.</p>
+<p>InfraSky connects the guest promise with the actual viewing opportunity. Explore the Netherlands workspace for Amsterdam, Overveen and Lauwersmeer, or use the original UAE planning demo through the country selector.</p>
 <div class="hero-actions"><a class="btn" href="#netherlands">Netherlands planner</a><a class="btn secondary" href="#planner">Original UAE planner</a><a class="btn secondary" href="#how-it-works">How it works</a></div>
 </div>
 <aside aria-label="InfraSky problem solution and use case" class="cluster-hero-card">
@@ -61,14 +73,14 @@
 </aside>
 </div>
 </section>
-<section class="section section-tight"><div class="sky-notice"><strong>Operational honesty:</strong> InfraSky does not guarantee Milky Way, meteor or planet visibility. Forecast information is clearly separated from long-range planning estimates. Every confirmed operation must be re-checked 72 hours and 24 hours before service, with final on-site safety authority held by the operating team.</div></section>
+<section class="planning-country" aria-labelledby="planning-country-heading"><span class="eyebrow">Planning workspace</span><h2 id="planning-country-heading">Choose your country.</h2><p>Select the Netherlands or UAE workspace. Your entries stay in place when you switch.</p><div class="country-buttons" role="group" aria-label="Planning country"><button type="button" data-country-select="netherlands" aria-pressed="true" aria-controls="country-netherlands">Netherlands</button><button type="button" data-country-select="uae" aria-pressed="false" aria-controls="country-uae">UAE · Abu Dhabi</button></div><p class="country-note" data-country-note>Both workspaces are available below when JavaScript is disabled.</p></section><div id="country-netherlands" data-country-panel="netherlands"><section class="nl-workspace" id="netherlands" aria-labelledby="netherlands-heading"><span class="eyebrow">New · Netherlands planning workspace</span><h2 id="netherlands-heading">Astronomy experience planning · Amsterdam and the Netherlands</h2><p>Choose Amsterdam indoor astronomy, a nearby observatory or a regional dark-sky excursion. Confirm access and weather, check seasonal darkness and download an operating brief. The original UAE planner remains below.</p><p><strong>Prototype boundary:</strong> manually entered checks; no live traffic, weather, bookings or compliance verification. Locations and routes are research candidates, not supplier partnerships.</p><div id="netherlandsWorkspace" data-product="sky"></div><p><a href="/projects/infrasky/index.html">Read the Netherlands research, sources and pilot plan</a></p></section></div><div id="country-uae" data-country-panel="uae"><section class="section section-tight"><div class="sky-notice"><strong>Operational honesty:</strong> InfraSky does not guarantee Milky Way, meteor or planet visibility. Forecast information is clearly separated from long-range planning estimates. Every confirmed operation must be re-checked 72 hours and 24 hours before service, with final on-site safety authority held by the operating team.</div></section>
 <section class="section section-tight sky-data-proof">
 <div class="sky-data-proof-grid">
 <div><span>Public data policy</span><strong>Forecasts are public/open-access only inside provider windows.</strong><p>Weather and air-quality calls use Open-Meteo public APIs where available. Full-year planning dates are not live forecasts; they are astronomy, meteor-calendar and seasonal planning estimates.</p></div>
 <div><span>Operating rule</span><strong>Management decision: Go Show, Watch, or No Show.</strong><p>InfraSky separates sales confidence from field safety. Every confirmed service still needs 72-hour, 24-hour and on-site checks before the final guest promise.</p></div>
 </div>
 </section>
-<section class="nl-workspace" id="netherlands" aria-labelledby="netherlands-heading"><span class="eyebrow">New · Netherlands planning workspace</span><h2 id="netherlands-heading">Astronomy experience planning · Amsterdam and the Netherlands</h2><p>Choose Amsterdam indoor astronomy, a nearby observatory or a regional dark-sky excursion. Confirm access and weather, check seasonal darkness and download an operating brief. The original UAE planner remains below.</p><p><strong>Prototype boundary:</strong> manually entered checks; no live traffic, weather, bookings or compliance verification. Locations and routes are research candidates, not supplier partnerships.</p><div id="netherlandsWorkspace" data-product="sky"></div><p><a href="/projects/infrasky/index.html">Read the Netherlands research, sources and pilot plan</a></p></section><section class="section" id="planner">
+<section class="section" id="planner">
 <div class="infrasky-app" id="infraSkyApp">
 <div class="sky-app-header"><div><span class="eyebrow">Planner</span><h2>Build a condition-aware stargazing operating plan.</h2></div><div class="sky-data-status" id="liveDataStatus" role="status"></div></div>
 <div class="sky-planner-grid">
@@ -161,7 +173,7 @@
 </div>
 </div>
 </section>
-</main>
+</div></main>
 <footer class="infrasky-footer" id="footer-contact">
 <div class="infrasky-footer-inner">
 <div class="infrasky-footer-brand"><span class="brand-mark">AM</span><div><strong>InfraSky by Ahmed Mahmoud</strong><p>Netherlands and UAE astronomy planning for responsible sales, guest expectations and field delivery.</p></div></div>
@@ -173,7 +185,7 @@
 <div class="infrasky-footer-bottom"><span>Static prototype · Forecast and astronomy values are planning guidance only.</span><a href="#top">Back to top</a></div>
 </div>
 <div aria-label="GitHub links" class="github-footer-links"><a class="footer-repository-badge" href="https://github.com/AhmedElshemyOps/tourism-ai-operations-playbook" rel="noopener noreferrer" target="_blank">Tourism AI Playbook on GitHub ↗</a><a href="https://github.com/AhmedElshemyOps" rel="noopener noreferrer" target="_blank">Ahmed Mahmoud on GitHub ↗</a></div></footer>
-<div class="v14-mobile-cta"><a href="infrasky.html#planner">Run InfraSky</a><a href="/knowledge/index.html">Insights</a><a href="mailto:ahmed.mahmoud.nl.work@gmail.com">Contact</a></div>
+<div class="demo-secondary-actions"><a href="infrasky.html#planner">Run InfraSky</a><a href="/knowledge/index.html">Insights</a><a href="mailto:ahmed.mahmoud.nl.work@gmail.com">Contact</a></div>
 <script defer="" src="assets/js/main.js?v=no-audio-20260707"></script>
 <script defer="" src="assets/js/infrasky-data.js?v=location-cleanup-20260721"></script>
 <script defer="" src="assets/js/infrasky-app.js?v=location-cleanup-20260721"></script>

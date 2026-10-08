@@ -204,3 +204,18 @@
 /* The masthead monogram is the same asset used on the homepage. */
 .masthead img.mark { width:58px;height:58px;object-fit:contain;border:0;display:block; }
 @media(max-width:760px){.masthead .brand strong{font-size:20px}.masthead img.mark{width:46px;height:46px}.masthead{gap:14px}}
+/* A single compact navigation behaviour across portfolio pages and product demos. */
+.masthead[data-navigation-ready],.editorial-masthead[data-navigation-ready]{position:sticky;top:0;z-index:100;background:var(--paper);overflow:visible}
+.editorial-masthead .primary{gap:24px;align-items:center}
+.editorial-masthead .primary :is(a,button){min-height:44px;display:inline-flex;align-items:center}
+.editorial-masthead .nav-search,.editorial-masthead .nav-cv{padding:8px 12px;border:1px solid var(--line);border-radius:2px;background:transparent;color:var(--navy);font:600 14px var(--sans);text-decoration:none}
+@media(max-width:1000px){
+ .masthead[data-navigation-ready],.editorial-masthead[data-navigation-ready]{min-height:74px;display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:12px;padding-block:9px}
+ .masthead[data-navigation-ready] .static-menu-toggle,.editorial-masthead[data-navigation-ready] .static-menu-toggle{display:inline-flex;margin-left:auto}
+ .masthead[data-navigation-ready] nav,.editorial-masthead[data-navigation-ready] .primary{position:absolute;z-index:120;inset:100% 0 auto;display:none;width:100%;max-height:calc(100dvh - 74px);padding:12px 18px 20px;overflow-y:auto;gap:0;background:var(--paper);border:1px solid var(--line);box-shadow:0 12px 24px rgba(16,40,63,.12)}
+ .masthead[data-navigation-ready] nav.is-open,.editorial-masthead[data-navigation-ready] .primary.is-open{display:grid}
+ .masthead[data-navigation-ready] nav :is(a,button),.editorial-masthead[data-navigation-ready] .primary :is(a,button){width:100%;min-height:44px;padding:11px;justify-content:flex-start;font:600 16px var(--sans)}
+ .masthead[data-navigation-ready] nav a::after{display:none}
+ .editorial-masthead[data-navigation-ready] .brand{font-size:21px;gap:12px}
+ .editorial-masthead[data-navigation-ready] .brand img{width:48px;height:48px}
+}

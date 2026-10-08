@@ -28,7 +28,8 @@ class SharedComponents(unittest.TestCase):
         result = render(source, ROOT / 'index.html')
         self.assertEqual(result.count('aria-current="page"'), 1)
         self.assertIn('id="primary-navigation"', result)
-        self.assertNotIn('site-navigation.js', result)
+        self.assertEqual(result.count('site-navigation.js'), 1)
+        self.assertIn('data-navigation-toggle', result)
         self.assertEqual(result, render(result, ROOT / 'index.html'))
 
     def test_demo_app_navigation_is_not_replaced(self):

@@ -1,12 +1,12 @@
 /* Progressive enhancement: links remain available when JavaScript is disabled. */
 (() => {
   'use strict';
-  const header = document.querySelector('.masthead');
+  const header = document.querySelector('.masthead, .editorial-masthead');
   const nav = header?.querySelector('[aria-label="Primary navigation"]');
   const toggle = header?.querySelector('[data-navigation-toggle]');
   if (!nav || !toggle) return;
 
-  const narrowScreen = window.matchMedia('(max-width: 760px)');
+  const narrowScreen = window.matchMedia('(max-width: 1000px)');
   const icon = toggle.querySelector('[data-menu-icon]');
   const label = toggle.querySelector('[data-menu-label]');
   toggle.hidden = false;

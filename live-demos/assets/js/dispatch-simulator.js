@@ -51,7 +51,7 @@
     scenario.stops.forEach((s,i)=>{
       L.marker([s.lat,s.lng]).addTo(map).bindPopup(`<strong>${i+1}. ${s.name}</strong><br/>ETA ${s.eta}`);
     });
-    map.fitBounds(poly.getBounds(),{padding:[20,20]});
+    if (qs('simMap').clientWidth) map.fitBounds(poly.getBounds(),{padding:[20,20]});
     updateMapLinks();
   }
 
@@ -107,5 +107,11 @@
     URL.revokeObjectURL(a.href);
   }
 
+  window.addEventListener('planningcountrychange', event => {
+    if (event.detail.country === 'uae' && map && poly) requestAnimationFrame(() => {
+      map.invalidateSize({pan:false});
+      map.fitBounds(poly.getBounds(),{padding:[20,20]});
+    });
+  });
   document.addEventListener('DOMContentLoaded', init);
 })();

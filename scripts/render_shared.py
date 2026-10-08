@@ -12,8 +12,8 @@ from apply_field_manual import parse
 
 ROOT = Path(__file__).resolve().parents[1]
 EXCLUDED = {'.git', 'node_modules', 'docs', 'templates'}
-SHARED_CSS = '<link rel="stylesheet" href="/assets/css/site-chrome.css?v=20261008-polish"/>'
-NAV_SCRIPT = '<script src="/assets/js/site-navigation.js?v=20261008-evidence"></script>'
+SHARED_CSS = '<link rel="stylesheet" href="/assets/css/site-chrome.css?v=20261008-navigation"/>'
+NAV_SCRIPT = '<script src="/assets/js/site-navigation.js?v=20261008-navigation"></script>'
 
 
 def pages(root=ROOT):
@@ -34,6 +34,10 @@ def render(source, path, root=ROOT):
         if node['tag'] == 'header':
             if homepage and 'editorial-masthead' in classes:
                 name = 'home-header'
+                shared_header = True
+            elif 'site-header' in classes and path.relative_to(root).as_posix() in {'live-demos/infradispatch/index.html','live-demos/infrasky.html','live-demos/infraquote.html','live-demos/infracluster.html'} and 'id="siteNav"' in source:
+                name = 'header'
+                shared_header = True
             elif 'masthead' in classes:
                 name = 'header'
                 shared_header = True
@@ -48,7 +52,7 @@ def render(source, path, root=ROOT):
             if node['tag'] == 'header':
                 # Active section derives from the existing page path; no routes change.
                 group = path.relative_to(root).parts[0]
-                section = '/knowledge/index.html' if group in {'articles', 'series'} else '/' + group + '/index.html'
+                section = '/projects/index.html' if group == 'live-demos' else '/knowledge/index.html' if group in {'articles', 'series'} else '/' + group + '/index.html'
                 active = '/#top' if homepage else section
                 html = html.replace(f'<a href="{active}"', f'<a href="{active}" aria-current="page"')
             replacements.append((node['start'], node['end'], html))
@@ -61,7 +65,7 @@ def render(source, path, root=ROOT):
     if shared_header:
         # Initialise the compact menu before the following main content is parsed.
         # Without JavaScript the navigation links remain visible.
-        masthead = next(n for n in parse(source).nodes if n['tag'] == 'header' and 'masthead' in n['attrs'].get('class', '').split())
+        masthead = next(n for n in parse(source).nodes if n['tag'] == 'header' and set(n['attrs'].get('class', '').split()) & {'masthead','editorial-masthead'})
         source = source[:masthead['end']] + NAV_SCRIPT + source[masthead['end']:]
     if assets:
         source = source.replace('</head>', assets + '</head>', 1)

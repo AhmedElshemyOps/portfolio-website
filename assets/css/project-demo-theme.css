@@ -33,3 +33,21 @@
 @media(max-width:760px){.nl-grid{grid-template-columns:minmax(0,1fr);gap:18px}.nl-grid form,.nl-grid>div{padding:18px}.nl-workspace{padding:32px 18px}}
 @media print{.nl-grid{display:block}.nl-grid form,.nl-workspace .action-row{display:none}.nl-grid>div{border:0}.nl-workspace{padding:0}}
 .knowledge-atlas-demo .nl-workspace>.eyebrow{color:#795b20}
+/* Product navigation remains in the document flow, preserving phone reading space. */
+.knowledge-atlas-demo .demo-suite{position:static;top:auto;flex-wrap:wrap;overflow:visible;box-shadow:none}
+.demo-product-picker{display:none}
+.demo-product-picker summary{min-height:44px;padding:14px 18px;cursor:pointer;font-weight:600;color:#10283f;list-style-position:inside}
+.demo-product-picker nav{display:grid;padding:0 18px 12px;gap:4px}
+.demo-product-picker nav a{display:flex;align-items:center;min-height:44px;padding:10px;color:#10283f;border-bottom:1px solid #ded5c5;text-decoration:none}
+.demo-product-picker nav a[aria-current="page"]{border-left:3px solid #795b20;background:#fcfaf5}
+.demo-secondary-actions{position:static;display:flex;flex-wrap:wrap;justify-content:center;gap:12px;padding:18px;border-top:1px solid #ded5c5;background:#fcfaf5}
+.demo-secondary-actions a{display:inline-flex;align-items:center;min-height:44px;padding:8px 12px;color:#10283f}
+.planning-country{max-width:1200px;margin:0 auto;padding:32px 24px 20px;scroll-margin-top:90px}
+.planning-country h2{margin:8px 0 12px;font-size:clamp(26px,4vw,36px)}
+.country-buttons{display:flex;flex-wrap:wrap;gap:12px;margin:20px 0 12px}
+.country-buttons button{min-height:48px;padding:12px 22px;border:1px solid #795b20;border-radius:3px;background:#fff;color:#10283f;font:600 16px var(--sans);cursor:pointer}
+.country-buttons button[aria-pressed="true"]{background:#10283f;border-color:#10283f;color:#fff}
+.country-note{color:#5c6573;font-size:15px;line-height:1.6}
+[data-country-panel][hidden]{display:none!important}
+@media(max-width:1000px){.knowledge-atlas-demo .demo-product-navigation>.demo-suite{display:none}.demo-product-picker{display:block;background:#fff;border-bottom:1px solid #ded5c5}.planning-country{padding:28px 18px 12px}.country-buttons button{flex:1 1 130px}}
+@media print{.demo-product-navigation,.planning-country,.demo-secondary-actions{display:none}}
