@@ -9,7 +9,7 @@ def refresh(ROOT, registry):
  def write_json(name,value): (ROOT/'content'/name).write_text(json.dumps(value,ensure_ascii=False,indent=2)+'\n')
  assert len({x['url'] for x in registry})==len(registry)
  write_json('article-registry.json',registry)
- write_json('discovery-index.json',[x for x in old if x.get('type') not in ['Article','Series index']]+registry)
+ write_json('discovery-index.json',[x for x in old if x.get('type') not in ['Article','Series index']]+[dict(x,category=display_topic(x.get('category',''))) for x in registry])
  articles=[x for x in registry if x['type']=='Article']
  write_json('articles.json',[dict(title=x['title'],slug=x['id'],url=x['url'],category=x['category'],pillar=x['pillar'],summary=x['description'],status='Published',readingTime=x['readingTime'],source='Published article registry') for x in articles])
  write_json('article-stats.json',[dict(slug=x['id'],wordCount=x['wordCount']) for x in articles])
