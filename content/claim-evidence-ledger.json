@@ -1,13 +1,64 @@
 {
-  "updated": "2026-08-28",
-  "policy": "Public claims must be supported by supplied evidence or clearly labelled as professional interpretation or static demonstration behavior.",
+  "updated": "2026-10-08",
+  "policy": "Distinguish supplied certificates, master-CV statements, calculated projections, static demonstrations and account-dependent measurements. Screening is not verification of all factual claims.",
   "claims": [
-    { "claim": "73 original articles", "evidence": "/public/articles/ plus protected article sources", "verification": "npm run verify:article-copy", "status": "verified" },
-    { "claim": "Four working browser demonstrations", "evidence": "/public/live-demos/", "verification": "release and browser tests", "status": "verified-static" },
-    { "claim": "Five IATA professional diplomas", "evidence": "/documents/Ahmed-Mahmoud-Credentials-Portfolio.pdf", "verification": "supplied credential evidence", "status": "verified" },
-    { "claim": "Three Egyptian Travel Agents Association (ETAA) courses", "evidence": "/documents/Ahmed-Mahmoud-Credentials-Portfolio.pdf", "verification": "supplied credential evidence", "status": "verified" },
-    { "claim": "CAPM, ITIL 4 Foundation and Lean Six Sigma Black Belt", "evidence": "/documents/Ahmed-Mahmoud-Credentials-Portfolio.pdf", "verification": "supplied credential evidence", "status": "verified" },
-    { "claim": "InfraDispatch is a smart rule-based dispatch planner/demo", "evidence": "/live-demos/infradispatch/index.html", "verification": "static browser inspection", "status": "verified-static" },
-    { "claim": "Newsletter delivery", "evidence": "/worker/index.js", "verification": "requires valid server-side Brevo configuration", "status": "configuration-dependent" }
+    {
+      "claim": "Five IATA diplomas",
+      "evidence": "/documents/credentials/ and /documents/Ahmed-Mahmoud-Credentials-Portfolio.pdf",
+      "status": "certificate-reviewed",
+      "note": "Travel Operations (self-study) is the diploma; Travel Operations Management is a course within it."
+    },
+    {
+      "claim": "CAPM dates 26 April 2024–26 April 2027",
+      "evidence": "/documents/credentials/capm-pmi.pdf",
+      "status": "certificate-reviewed"
+    },
+    {
+      "claim": "ITIL 4 Foundation dates 1 August 2024–1 August 2027; Lean Six Sigma Black Belt training July 2025",
+      "evidence": "/documents/credentials/itil-4-foundation.jpeg; /documents/credentials/lean-six-sigma-black-belt.jpeg",
+      "status": "certificate-reviewed",
+      "note": "Black Belt evidence records training, not an independently verified production improvement outcome."
+    },
+    {
+      "claim": "PCM and CompTIA ITF+ qualifications",
+      "evidence": "Supplied master CV",
+      "status": "cv-reported",
+      "note": "Individual certificates not supplied for this review."
+    },
+    {
+      "claim": "Career dates, education, languages and approximate workloads",
+      "evidence": "Supplied master CV and user updates; content/professional-profile.json",
+      "status": "reconciled-not-independently-audited"
+    },
+    {
+      "claim": "Travel Desk annual opportunity AED 746,088",
+      "evidence": "14 × 12 × (12500 − 8059)",
+      "status": "calculated-projection",
+      "note": "Conditional on target achievement; not realised revenue."
+    },
+    {
+      "claim": "Four Infra browser demonstrations",
+      "evidence": "/live-demos/",
+      "status": "static-mvp",
+      "note": "No production integrations or measured business outcomes claimed."
+    },
+    {
+      "claim": "Amsterdam research outcomes",
+      "evidence": "/series/amsterdam-tourism-product-discovery/index.html",
+      "status": "pre-pilot",
+      "note": "An iterate decision is recorded; actual departures and post-pilot results not established."
+    },
+    {
+      "claim": "Newsletter delivery",
+      "evidence": "assets/js/site-config.js; configured public Brevo form",
+      "status": "configuration-dependent",
+      "note": "End-to-end delivery not established in this evidence review."
+    },
+    {
+      "claim": "Search and visitor baseline",
+      "evidence": "Search Console, Bing Webmaster Tools, GA4",
+      "status": "unmeasured",
+      "note": "User confirmed no account access. Existing verification tags and measurement ID do not establish traffic."
+    }
   ]
 }

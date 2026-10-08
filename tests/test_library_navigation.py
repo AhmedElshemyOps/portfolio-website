@@ -16,6 +16,8 @@ class LibraryNavigationTests(unittest.TestCase):
   for p in (ROOT/'articles').glob('*/index.html'):
    old=subprocess.check_output(['git','show',BASELINE+':'+str(p.relative_to(ROOT))],cwd=ROOT,text=True);new=p.read_text()
    for edit in json.loads((ROOT/'maintenance/seo/library-batch-manifest.json').read_text())['navigation_component_replacements'].get(str(p.relative_to(ROOT)),[]):old=old.replace(edit['old'],edit['new'])
+   for edit in json.loads((ROOT/'maintenance/seo/evidence-batch-manifest.json').read_text())['replacements'].get(str(p.relative_to(ROOT)),[]):old=old.replace(edit['old'],edit['new'])
+   if str(p.relative_to(ROOT)) in json.loads((ROOT/'maintenance/seo/evidence-batch-manifest.json').read_text())['replacements']:old=re.sub(r'("dateModified"\s*:\s*")[^"]+(")',r'\g<1>2026-10-08\2',old)
    def body(s):
     n=next(n for n in parse(s).nodes if 'article-body' in n['attrs'].get('class','').split());return s[n['start']:n['end']]
    self.assertEqual(body(old),body(new),str(p))

@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-08",
+  "baseline_commit": "6f8f6f6f9324c83b3c63e915ac31a633bdf31d53",
+  "replacements": {
+    "articles/hotel-esg-sustainability-ai-toolkit/index.html": [
+      {
+        "old": "In Dubai, the Dubai Sustainable Tourism Stamp evaluates participating hotels against 19 sustainability requirements, and DET reported 237 recognised hotels in the third cycle in July 2026.",
+        "new": "In Dubai, DET reported 237 recognised hotels in the July 2026 third cycle, assessed against 19 sustainability requirements. In September 2026, DET announced an expanded framework of 27 sustainability parameters for upcoming cycles; this does not mean the July cohort was assessed against the expanded framework. See the <a href=\"https://www.dubaidet.gov.ae/en/newsroom/press-releases/dubai-sustainable-tourism-stamp-2026\">July cycle announcement</a> and <a href=\"https://www.dubaidet.gov.ae/ar/newsroom/press-releases/det-launches-sustainability-courses\">September framework announcement (Arabic)</a>."
+      },
+      {
+        "old": "Dubai Department of Economy and Tourism \u2014 Dubai Sustainable Tourism Stamp and 19 sustainability requirements.",
+        "new": "Dubai Department of Economy and Tourism \u2014 July 2026 cycle with 19 requirements; September 2026 announcement of 27 parameters for upcoming cycles."
+      }
+    ],
+    "articles/amsterdam-product-discovery-05-segmentation-language/index.html": [
+      {
+        "old": "71% of Americans in the inbound study who bought attraction tickets arranged them before arrival, materially above the overall average.",
+        "new": "71% of US staying visitors in the relevant NBTC survey subgroup had pre-booked attraction tickets. The subgroup comprises visitors who booked accommodation before arrival, excluding package trips (US sample: 110); it is not a percentage of all Americans or only of attraction-ticket buyers. See <a href=\"https://inkomendtoerisme.nbtc.nl/onderzoek-inkomend-dagbezoek/orienteren-en-boeken1\">NBTC orientation and booking tables</a>."
+      },
+      {
+        "old": "The 2024 NBTC source-market update estimated roughly 1.9 million UK staying visitors, 1.49 million from the United States and about 1.01 million from France. These national numbers are not Amsterdam arrivals, but they establish the order of magnitude of addressable inbound markets.",
+        "new": "The UK, US and French market profiles below provide further audience context, but their publication dates and underlying reference years must be checked separately; they are not combined here into one 2024 volume table. These national numbers are not Amsterdam arrivals or forecasts for this product."
+      }
+    ],
+    "articles/amsterdam-product-discovery-09-risk-responsibility/index.html": [
+      {
+        "old": "Its current\nthreshold guidance says this applies where the business has more than 10\nemployees, annual turnover above \u20ac2 million, or both.",
+        "new": "The Dutch regulator ACM describes the threshold as 10 or more employees, annual turnover above \u20ac2 million, or both. The service-provider microenterprise exemption must also be checked against the legal definition and applicable financial criteria; entity size and turnover alone should not be assumed from this research. See <a href=\"https://www.acm.nl/nl/toegankelijkheid/toegankelijkheid-van-e-handelsdiensten-en-elektronische-communicatiediensten\">ACM guidance on accessible e-commerce</a>."
+      }
+    ],
+    "articles/article-transport-tickets-vat-gratuities/index.html": [
+      {
+        "old": "VAT and tax wording should be handled carefully according to the company\u2019s official policy. The quotation should not be vague. It should state whether the price is inclusive or exclusive if the company policy requires that clarity.",
+        "new": "VAT wording must follow applicable tax and consumer-pricing rules, with finance approval for the specific transaction; company policy cannot override the law. Consumer-facing advertised prices generally need to include applicable VAT. See <a href=\"https://tax.gov.ae/DataFolder/Files/Pdf/2022/Get%20to%20know%20your%20Tax%20Obligations.pdf\">UAE Federal Tax Authority guidance</a> and <a href=\"https://www.acm.nl/nl/verkoop-aan-consumenten/consumenten-informeren/prijzen-vermelden\">Dutch ACM price-display guidance</a>. The wording examples below are illustrative; use an exclusive-price version only where permitted for that customer and transaction."
+      },
+      {
+        "old": "VAT wording should follow the company\u2019s official finance policy. The quotation should clearly state whether prices are inclusive or exclusive where applicable. The most important point is to avoid surprising the client later.",
+        "new": "VAT wording should follow the applicable law and the finance team\u2019s approved tax treatment. State the total consumer price including applicable VAT where required; do not treat an inclusive or exclusive price as an unrestricted company choice."
+      }
+    ],
+    "articles/article-air-connectivity-dmc-market-intelligence/index.html": [
+      {
+        "old": "Zayed International Airport handled a record 32.5 million passengers in 2025.",
+        "new": "Zayed International Airport handled a record 32.5 million passengers in 2025, according to <a href=\"https://www.adairports.ae/en/pressrelease/2026/01/abu-dhabi-airports-closes-2025-with-record-traffic-as--zayed-international-emerges-as-emea\">Abu Dhabi Airports\u2019 January 2026 announcement</a>. This is airport passenger traffic, not a count of unique inbound tourists or bookings available to a DMC."
+      }
+    ]
+  },
+  "scope": "Selected source-checked corrections; candidate screening is not independent verification of every article claim."
+}

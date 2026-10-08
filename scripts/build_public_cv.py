@@ -20,7 +20,7 @@ h('Professional Profile');p(data['summary'])
 h('Professional Qualifications')
 for c in data['certifications']:
  label=c['name'] if c['short_name']!='Lean Six Sigma Black Belt' else 'Lean Six Sigma Black Belt training certificate'
- p(label+' | '+c['issuer']+' | '+c['date'])
+ p(label+' | '+c['issuer']+' | '+c['date']+(' | Master CV record' if not c.get('evidence_url') else ''))
 h('IATA Diplomas');p(' • '.join(x['name']+' ('+x['date']+')' for x in data['iata']))
 h('Career Experience — Departments and Contributions')
 for x in data['career'][:3]:career(x)

@@ -156,3 +156,6 @@
  .portfolio-page .profile-section { padding-block: 20px; }
  .qualification-card,.career-entry { break-inside: avoid; }
 }
+
+/* Portfolio library uses a warm-white hero, so its secondary action needs dark text. */
+.portfolio-page .discovery-hero .hero-actions .button.is-secondary { color: var(--navy); border-color: var(--navy); background: transparent; }

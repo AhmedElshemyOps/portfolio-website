@@ -13,7 +13,7 @@ from apply_field_manual import parse
 ROOT = Path(__file__).resolve().parents[1]
 EXCLUDED = {'.git', 'node_modules', 'docs', 'templates'}
 SHARED_CSS = '<link rel="stylesheet" href="/assets/css/site-chrome.css?v=20261008-polish"/>'
-NAV_SCRIPT = '<script defer src="/assets/js/site-navigation.js?v=20261008-polish"></script>'
+NAV_SCRIPT = '<script src="/assets/js/site-navigation.js?v=20261008-evidence"></script>'
 
 
 def pages(root=ROOT):
@@ -57,7 +57,12 @@ def render(source, path, root=ROOT):
     # All shared assets are explicit, single references. Remove legacy entry points.
     source = re.sub(r'<link\b[^>]*href="/assets/css/(?:site-navigation|site-chrome)\.css[^\"]*"[^>]*>', '', source)
     source = re.sub(r'<script\b[^>]*src="/assets/js/site-navigation\.js[^\"]*"[^>]*>\s*</script>', '', source)
-    assets = (SHARED_CSS if shared_footer or shared_header else '') + (NAV_SCRIPT if shared_header else '')
+    assets = SHARED_CSS if shared_footer or shared_header else ''
+    if shared_header:
+        # Initialise the compact menu before the following main content is parsed.
+        # Without JavaScript the navigation links remain visible.
+        masthead = next(n for n in parse(source).nodes if n['tag'] == 'header' and 'masthead' in n['attrs'].get('class', '').split())
+        source = source[:masthead['end']] + NAV_SCRIPT + source[masthead['end']:]
     if assets:
         source = source.replace('</head>', assets + '</head>', 1)
     from apply_library_navigation import render as render_library_navigation

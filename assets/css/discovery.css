@@ -69,6 +69,7 @@
 .resource-grid small{margin-top:auto;color:var(--muted)}
 .resource-grid a{display:inline-block;margin-top:20px;color:var(--gold);font-weight:700}
 .newsletter-signup{display:grid;grid-template-columns:1.15fr .85fr;gap:60px;padding:58px;border-top:3px solid var(--gold-line);background:var(--navy);color:#fff}
+.newsletter-signup .eyebrow{color:#dfc27d}
 .newsletter-signup p{color:#c3ceda;line-height:1.65}
 .newsletter-signup form{align-self:center}
 .newsletter-signup label{display:block;margin-bottom:8px;color:#dfc27d;font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
