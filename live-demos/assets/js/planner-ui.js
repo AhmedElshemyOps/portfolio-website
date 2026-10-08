@@ -17,12 +17,31 @@
       if ($('dbLastUpdated')) $('dbLastUpdated').textContent = data.lastUpdated || 'not set';
       if ($('locationDbCount')) $('locationDbCount').innerHTML = `Location database: <strong>${allLocations.length}</strong> indexed points (hotels, attractions, malls, theaters, city/regional places).`;
       addPickup({ name: '', adults: 0, children: 0, childSeats: 0 });
+      offerQuotationHandover();
     }).catch((err) => {
       console.error(err);
       if ($('dbLastUpdated')) $('dbLastUpdated').textContent = 'database could not load';
       addPickup({ name: '', adults: 0, children: 0, childSeats: 0 });
     });
     bind();
+  }
+
+  function offerQuotationHandover(){
+    let packet;try{packet=JSON.parse(localStorage.getItem('infraquote_dispatch_handover_v1')||'null');}catch(_){return;}
+    if(!packet||!packet.approvedAt||!packet.reference||!Number.isInteger(packet.guestCount)||packet.guestCount<1)return;
+    const panel=document.createElement('section');panel.id='quotation-handover';panel.className='card';panel.style.margin='24px auto';panel.style.maxWidth='1100px';
+    panel.innerHTML=`<h2>Approved InfraQuote handover</h2><p>${escapeHtml(packet.reference)} · version ${escapeHtml(packet.version)} · ${escapeHtml(packet.tourName)} · ${escapeHtml(packet.serviceDate)} · ${packet.guestCount} guests</p><p>Import the reviewed service details, then assign real vehicles and staff and verify pickup access. Supplier costs and selling margins are excluded.</p><button class="btn" type="button" id="importQuoteHandover">Import approved service details</button><p id="handoverStatus" role="status"></p>`;
+    document.querySelector('main').prepend(panel);
+    $('importQuoteHandover').onclick=()=>{
+      document.querySelector('[data-country-select="uae"]')?.click();
+      if($('tripMode'))$('tripMode').value='Pickup & Drop-off';
+      ['tourDate','tourName','guideLanguage'].forEach((id,i)=>{if($(id))$(id).value=[packet.serviceDate,packet.tourName,packet.guideLanguage][i]||'';});
+      rows=[];drops=[];addPickup({name:packet.pickupLocation,adults:packet.adults??packet.guestCount,children:(packet.children||0)+(packet.infants||0),childSeats:0,note:`Quote ${packet.reference} / v${packet.version}. ${packet.accessibility||''}`,selected:findLoc(packet.pickupLocation)});
+      if($('useSameDrop')){$('useSameDrop').checked=false;$('dropSection').classList.remove('hidden');}addDrop({name:packet.dropoffLocation,selected:findLoc(packet.dropoffLocation)});
+      $('arrivalPoint').value=packet.itineraryStops?.[0]?.name||packet.dropoffLocation||'';
+      panel.querySelector('p').textContent+=` · Pickup ${packet.pickupTime||'to confirm'}. Itinerary: ${(packet.itineraryStops||[]).map(s=>s.name).join(' → ')}`;
+      clearResult();$('handoverStatus').textContent='Approved service details imported. Review the itinerary, route, passenger allocation and vehicle assignments before dispatch.';
+    };
   }
 
   function bind(){

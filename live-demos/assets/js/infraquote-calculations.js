@@ -13,8 +13,8 @@ window.INFRAQUOTE_CALC = (() => {
     return `IQ-${cityCode}-${year}-${String(next).padStart(4, '0')}`;
   }
 
-  function recommendVehicle(totalGuests, luggageRequired, serviceType, vehicles) {
-    const comfort = serviceType === 'VIP tour' || luggageRequired;
+  function recommendVehicle(totalGuests, luggageRequired, serviceType, vehicles, preferComfort = false) {
+    const comfort = serviceType === 'VIP tour' || luggageRequired || preferComfort;
     const sorted = vehicles.filter((v) => v.id !== 'custom').sort((a, b) => a.maxGuests - b.maxGuests);
     const vehicle = sorted.find((v) => totalGuests <= (comfort ? v.comfortGuests : v.maxGuests)) || sorted[sorted.length - 1];
     const quantity = vehicle ? Math.max(1, ceil(totalGuests / (comfort ? vehicle.comfortGuests : vehicle.maxGuests))) : 1;

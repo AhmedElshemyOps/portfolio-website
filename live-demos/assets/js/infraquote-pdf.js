@@ -14,7 +14,7 @@
     const split=(value,w=width,size=9.2,bold=false)=>{font(size,bold);return doc.splitTextToSize(clean(value),w);};
     function header(continued=false) {
       doc.setFillColor(...navy);doc.rect(0,0,210,4,'F');
-      font(17,true);doc.text('InfraQuote',left,17);font(8,false,muted);doc.text(clean(model.reference),192,17,{align:'right'});
+      const identity=clean(model.company||'InfraQuote').slice(0,60);font(identity.length>20?11:17,true);doc.text(identity,left,17,{maxWidth:120});font(8,false,muted);doc.text(clean(model.reference),192,17,{align:'right'});
       doc.setDrawColor(222,213,197);doc.line(left,23,192,23);y=continued?34:32;
       if(continued){font(8,false,muted);doc.text('CLIENT QUOTATION - CONTINUED',left,y);y+=9;}
     }

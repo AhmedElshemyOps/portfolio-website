@@ -156,3 +156,19 @@ body.infraquote-page .client-document{padding:30px;background:#fff;border:1px so
  body.infraquote-page .client-doc-footer{font-size:7pt!important}
 }
 @media print{body.infraquote-page .demo-product-navigation{display:none!important}}
+/* Local-first tools share the quotation's visual system. */
+.infraquote-page .workflow-tools{border:1px solid #d9d1c1;border-radius:16px;background:#fcfaf5;padding:clamp(16px,3vw,28px);margin-bottom:24px;color:#14243a;min-width:0}
+.infraquote-page .workflow-heading,.infraquote-page .tool-row{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.infraquote-page .workflow-heading{justify-content:space-between}.infraquote-page .workflow-heading h2{margin:6px 0;font-size:1.4rem}
+.infraquote-page .workspace-local{font-size:.8rem;background:#eee8d9;padding:7px 12px;border-radius:20px}
+.infraquote-page .workflow-tools details{border-top:1px solid #ded6c7;padding:12px 0}.infraquote-page .workflow-tools summary{font-weight:700;cursor:pointer;padding:8px 0;min-height:44px}
+.infraquote-page .tool-content{padding:12px 0;display:grid;gap:14px}.infraquote-page .tool-content label{display:grid;gap:6px;min-width:0}.infraquote-page .tool-content input,.infraquote-page .tool-content textarea,.infraquote-page .tool-content select{max-width:100%;width:100%;box-sizing:border-box}
+.infraquote-page .tool-checkbox{display:flex!important;align-items:start;gap:10px!important}.infraquote-page .tool-checkbox input{width:20px!important;min-height:20px;flex:none}
+.infraquote-page .tool-item{background:white;border:1px solid #ded6c7;border-radius:12px;padding:16px;margin:10px 0;overflow-wrap:anywhere}
+.infraquote-page .tool-item p,.infraquote-page .price-change{font-size:.9rem;line-height:1.6}.infraquote-page .option-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.infraquote-page .proposal-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.infraquote-page .proposal-grid dt{font-size:.8rem;color:#626773}.infraquote-page .proposal-grid dd{margin:4px 0;font-weight:600}
+.infraquote-page .quote-step{scroll-margin-top:90px}.infraquote-page .quote-step:not([hidden])+.quote-step:not([hidden]){margin-top:28px;border-top:1px solid #ded6c7;padding-top:24px}
+@media(max-width:600px){.infraquote-page .option-grid,.infraquote-page .proposal-grid{grid-template-columns:1fr}.infraquote-page .tool-row>*{width:100%}.infraquote-page .workflow-tools{padding:16px}}
+@media print{.infraquote-page .workflow-tools{display:none!important}}
+.infraquote-page .quotation-advanced{border:1px solid #ded6c7;border-radius:12px;padding:16px}.infraquote-page .quotation-advanced summary{font-weight:700;cursor:pointer;min-height:44px}.infraquote-page .quotation-advanced[open] summary{margin-bottom:16px}
+.infraquote-page #versionDiff pre{white-space:pre-wrap;overflow-wrap:anywhere;max-height:350px;overflow:auto;font-size:.8rem;padding:12px;background:white;border:1px solid #ded6c7;border-radius:8px}
+.infraquote-page .workflow-tools .eyebrow{color:#815f17}
