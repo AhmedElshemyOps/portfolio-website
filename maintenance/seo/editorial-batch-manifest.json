@@ -286,11 +286,13 @@
   "schema_collections": [
     {
       "page": "articles/abu-dhabi-mice-operations-series/index.html",
-      "visible_linked_items": 5
+      "visible_linked_items": 5,
+      "basis": "Only chapter cards, excluding start/continue duplicate links and related playbook links."
     },
     {
       "page": "articles/insights-city-tour-quotation-pricing-masterclass/index.html",
-      "visible_linked_items": 8
+      "visible_linked_items": 7,
+      "basis": "Only chapter cards, excluding start/continue duplicate links and related playbook links."
     }
   ],
   "source_replacements": [
