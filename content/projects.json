@@ -1,0 +1,50 @@
+[
+  {
+    "name": "InfraQuote",
+    "slug": "infraquote",
+    "category": "Commercial workflow",
+    "description": "Prepare tour quotations for Amsterdam, Netherlands, in EUR or Abu Dhabi, UAE, in AED. Bring guest requirements, attraction references, supplier costs and margin review into one workflow.",
+    "output": "Cost worksheet, margin review and client quotation",
+    "status": "Static MVP \u00b7 Amsterdam and Abu Dhabi",
+    "logo": "/assets/brand/projects/infraquote-logo.svg",
+    "image": "/assets/projects/infraquote-current.png",
+    "caseStudy": "/projects/infraquote/index.html",
+    "demo": "/live-demos/infraquote.html"
+  },
+  {
+    "name": "InfraDispatch",
+    "slug": "infradispatch",
+    "category": "Dispatch planning",
+    "description": "Dispatch planning for Amsterdam, Haarlem, Utrecht and Abu Dhabi: connect movement details, passenger capacity, access checks and team handovers.",
+    "output": "Movement brief and team handover",
+    "status": "Static MVP \u00b7 Netherlands and UAE",
+    "logo": "/assets/brand/projects/infradispatch-logo.svg",
+    "image": "/assets/projects/infradispatch-current.png",
+    "caseStudy": "/projects/infradispatch/index.html",
+    "demo": "/live-demos/infradispatch/index.html"
+  },
+  {
+    "name": "InfraSky",
+    "slug": "infrasky",
+    "category": "Experience readiness",
+    "description": "Astronomy experiences in Amsterdam, the Netherlands and the UAE need a clear match between product promise, sky conditions, site access and guest readiness.",
+    "output": "Readiness decision and guest briefing",
+    "status": "Static MVP \u00b7 Netherlands and UAE",
+    "logo": "/assets/brand/projects/infrasky-logo.svg",
+    "image": "/assets/projects/infrasky-current.png",
+    "caseStudy": "/projects/infrasky/index.html",
+    "demo": "/live-demos/infrasky.html"
+  },
+  {
+    "name": "InfraCluster",
+    "slug": "infracluster",
+    "category": "Pickup clustering",
+    "description": "Large hotel pickup lists become difficult to operate when location, guest count, luggage, language, pickup windows and vehicle capacity are planned separately.",
+    "output": "Grouped pickups and dispatch export",
+    "status": "Static MVP \u00b7 UAE pickup planning",
+    "logo": "/assets/brand/projects/infracluster-logo.svg",
+    "image": "/assets/projects/infracluster-current.png",
+    "caseStudy": "/projects/infracluster/index.html",
+    "demo": "/live-demos/infracluster.html"
+  }
+]

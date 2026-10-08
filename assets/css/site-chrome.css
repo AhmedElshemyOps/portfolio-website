@@ -226,3 +226,9 @@
 .platform-footer nav{grid-template-columns:minmax(0,1fr)}
 .platform-footer .brand>*{min-width:0;overflow-wrap:anywhere}
 @media(max-width:760px){.platform-footer{grid-template-columns:minmax(0,1fr)}}
+
+/* Optional update notice: never reload automatically or clear saved drafts. */
+.site-update-notice{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);z-index:200;width:min(720px,calc(100% - 32px));display:flex;align-items:center;flex-wrap:wrap;gap:12px;padding:16px;background:#fcfaf5;color:#10283f;border:1px solid #795b20;border-radius:3px;box-shadow:0 6px 24px #10283f26;font:400 15px/1.5 var(--sans,Arial,sans-serif)}
+.site-update-notice p{flex:1 1 280px;margin:0}.site-update-notice button{min-height:44px;padding:10px 16px;border:1px solid #10283f;background:#10283f;color:white;font:inherit;border-radius:3px;cursor:pointer}.site-update-notice [data-update-dismiss]{background:transparent;color:#10283f}.site-update-notice button:focus-visible{outline:3px solid #795b20;outline-offset:3px}
+#library-search{scroll-margin-top:100px}.library-search-return{display:inline-flex;min-height:44px;align-items:center;margin:0 0 16px;color:#795b20;text-underline-offset:4px}
+@media print{.site-update-notice{display:none!important}}

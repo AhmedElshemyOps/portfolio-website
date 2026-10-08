@@ -77,6 +77,8 @@ def render(source, path, root=ROOT):
         hints += '<link rel="preload" href="/assets/css/design-tokens.css?v=20261008-polish" as="style"/>'
     source = source.replace('</head>', hints + '</head>', 1)
     from apply_library_navigation import render as render_library_navigation
+    from render_projects import render as render_projects
+    source = render_projects(source, path, root) if path.relative_to(root).as_posix() in {"index.html", "projects/index.html"} and 'class="project' in source else source
     return render_library_navigation(source, path, root)
 
 
@@ -96,6 +98,8 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--check', action='store_true')
     args = parser.parse_args()
+    from build_infraquote_styles import build
+    build(check=args.check)
     changed = apply(check=args.check)
     if args.check and changed:
         raise SystemExit('Shared component drift:\n' + '\n'.join(changed))

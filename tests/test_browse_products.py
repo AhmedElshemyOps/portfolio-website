@@ -10,7 +10,7 @@ class BrowseProducts(unittest.TestCase):
    registry=json.loads((root/'content/article-registry.json').read_text());refresh(root,registry)
    first=(root/'knowledge/index.html').read_text();refresh(root,registry)
    self.assertEqual(first,(root/'knowledge/index.html').read_text())
-   self.assertEqual(first.count('data-knowledge-query'),2)
+   self.assertEqual(first.count('data-knowledge-query'),1)
    self.assertEqual(first.count('data-knowledge-more'),1)
    self.assertEqual(first.count('class="topic-card"'),len({x['pillar'] for x in registry}))
    self.assertLess(first.index('class="library-topics"'),first.index('class="featured-strip"'))

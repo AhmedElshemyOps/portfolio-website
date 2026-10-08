@@ -182,3 +182,5 @@ body.infraquote-page .client-document{padding:30px;background:#fff;border:1px so
 /* Keep the dated-fare acknowledgement readable beside its control. */
 .quote-item .fare-confirmation { display:flex; align-items:flex-start; gap:.65rem; margin-top:.8rem; line-height:1.5; }
 .quote-item .fare-confirmation input[type="checkbox"] { width:1.1rem; flex:0 0 1.1rem; margin:.2rem 0 0; }
+
+.infraquote-page #quoteApp{scroll-margin-top:100px}

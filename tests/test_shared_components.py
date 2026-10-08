@@ -13,6 +13,22 @@ from update_site_contact import apply as update_contact
 
 
 class SharedComponents(unittest.TestCase):
+    def test_project_updates_reach_both_static_listings(self):
+        from render_projects import render as render_projects
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / 'content').mkdir()
+            data = json.loads((ROOT / 'content/projects.json').read_text())
+            data.reverse()
+            data[0]['description'] = 'Shared description with <escaped> content.'
+            (root / 'content/projects.json').write_text(json.dumps(data))
+            for relative in ['index.html', 'projects/index.html']:
+                source = (ROOT / relative).read_text()
+                result = render_projects(source, root / relative, root)
+                self.assertLess(result.index(data[0]['caseStudy']), result.index(data[-1]['caseStudy']))
+                self.assertIn('Shared description with &lt;escaped&gt; content.', result)
+                self.assertEqual(result, render_projects(result, root / relative, root))
+
     def test_article_content_and_canonical_are_preserved(self):
         body = '<main id="content"><h1>Article</h1><a href="#evidence">Evidence</a><p id="evidence">Original text.</p></main>'
         canonical = '<link rel="canonical" href="https://ahmedqualityops.com/articles/example/index.html">'
