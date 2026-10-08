@@ -7,8 +7,9 @@ window.INFRAQUOTE_CALC = (() => {
   function quoteReference(cityCode = 'AD') {
     const year = new Date().getFullYear();
     const key = `infraquote_ref_${cityCode}_${year}`;
-    const next = Number(localStorage.getItem(key) || '0') + 1;
-    localStorage.setItem(key, String(next));
+    let next = 1;
+    try { next = Number(localStorage.getItem(key) || '0') + 1; localStorage.setItem(key, String(next)); }
+    catch (_) { next = Date.now(); }
     return `IQ-${cityCode}-${year}-${String(next).padStart(4, '0')}`;
   }
 
@@ -33,7 +34,7 @@ window.INFRAQUOTE_CALC = (() => {
     const fixed = included.filter((line) => line.type === 'Fixed').reduce((sum, line) => sum + costLineTotal(line), 0);
     const variable = included.filter((line) => line.type === 'Variable').reduce((sum, line) => sum + costLineTotal(line), 0);
     const conditional = included.filter((line) => line.type === 'Conditional' && ['Included', 'Estimated risk'].includes(line.conditionStatus || 'Included')).reduce((sum, line) => sum + costLineTotal(line), 0);
-    const pending = lines.filter((line) => line.type === 'Conditional' && ['Pending confirmation', 'Estimated risk'].includes(line.conditionStatus || '')).length;
+    const pending = included.filter(line => line.verification === 'Pending verification' || (line.type === 'Conditional' && ['Pending confirmation', 'Estimated risk'].includes(line.conditionStatus || ''))).length;
     return { fixed: money(fixed), variable: money(variable), conditional: money(conditional), riskBuffer: money(riskBuffer), pending, netCost: money(fixed + variable + conditional + Number(riskBuffer || 0)) };
   }
 
@@ -49,9 +50,11 @@ window.INFRAQUOTE_CALC = (() => {
 
   function pricing({ netCost, method, markupPct, targetMarginPct, vatMode, vatRate, totalGuests, adults, children, childRatio = 0.65, rounding = 5 }) {
     const beforeVatRaw = method === 'margin' ? priceFromMargin(netCost, targetMarginPct) : priceFromMarkup(netCost, markupPct);
-    const roundedBeforeVat = money(Math.ceil(beforeVatRaw / rounding) * rounding);
-    const vatAmount = vatMode === 'exclusive' ? money(roundedBeforeVat * vatRate) : vatMode === 'inclusive' ? money(roundedBeforeVat - (roundedBeforeVat / (1 + vatRate))) : 0;
-    const finalPrice = vatMode === 'exclusive' ? money(roundedBeforeVat + vatAmount) : roundedBeforeVat;
+    const increment = Number(rounding) > 0 ? Number(rounding) : 1;
+    const roundedPrice = money(Math.ceil((vatMode === 'inclusive' ? beforeVatRaw * (1 + vatRate) : beforeVatRaw) / increment) * increment);
+    const roundedBeforeVat = vatMode === 'inclusive' ? money(roundedPrice / (1 + vatRate)) : roundedPrice;
+    const vatAmount = vatMode === 'exclusive' ? money(roundedBeforeVat * vatRate) : vatMode === 'inclusive' ? money(roundedPrice - roundedBeforeVat) : 0;
+    const finalPrice = vatMode === 'exclusive' ? money(roundedBeforeVat + vatAmount) : roundedPrice;
     const profit = money(roundedBeforeVat - netCost);
     const actualMarkup = netCost > 0 ? money((profit / netCost) * 100) : 0;
     const actualMargin = roundedBeforeVat > 0 ? money((profit / roundedBeforeVat) * 100) : 0;
@@ -98,15 +101,22 @@ window.INFRAQUOTE_CALC = (() => {
     const blocking = [];
     const warnings = [];
     const suggestions = [];
-    if (!quote.clientCompany) blocking.push('Client company name is required.');
+    const guests = Number(quote.adults || 0) + Number(quote.children || 0) + Number(quote.infants || 0);
+    if (guests <= 0) blocking.push('At least one guest is required.');
+    if ([quote.adults, quote.children, quote.infants].some(n => Number(n) < 0 || !Number.isInteger(Number(n)))) blocking.push('Guest counts must be non-negative whole numbers.');
+    if (!(quote.rounding > 0)) blocking.push('Rounding increment must be greater than zero.');
+    if (quote.pricingMethod === 'margin' && !(quote.targetMargin >= 0 && quote.targetMargin < 100)) blocking.push('Target margin must be between 0 and less than 100%.');
+    if (quote.quoteDate && quote.validityDate && quote.validityDate < quote.quoteDate) blocking.push('Validity date cannot precede the quotation date.');
+    if (quote.quoteDate && quote.serviceDate && quote.serviceDate < quote.quoteDate) blocking.push('Service date cannot precede the quotation date.');
+    if (!String(quote.clientCompany || '').trim()) blocking.push('Client company name is required.');
     if (!quote.serviceDate) blocking.push('Service date is required.');
     if (!quote.pickupLocation || !quote.dropoffLocation) blocking.push('Pickup and drop-off details must be clear.');
-    if (!quote.itinerary.length) blocking.push('At least one itinerary item is required.');
+    if (!quote.itinerary.some(item => item.status === 'Included' || item.status === 'To be confirmed')) blocking.push('At least one itinerary item is required.');
     if (!quote.vehicleId) blocking.push('Vehicle selection is required.');
     if (!quote.validityDate) blocking.push('Quotation validity date is required.');
     if (!quote.terms?.cancellation) blocking.push('Cancellation or amendment wording is required.');
     if (quote.itinerary.some((item) => item.ticketRequired && item.ticketVerification === 'Pending verification')) warnings.push('Some ticket rates or policies are pending verification.');
-    if (totals.pending) warnings.push('Conditional costs are pending or estimated. Decide whether to include as buffer, condition, or pending item.');
+    if (totals.pending) warnings.push('Included costs still need supplier verification or conditional-cost review.');
     if (pricingResult.actualMargin < Number(quote.reviewMargin || 0)) warnings.push('Actual margin is below the chosen review threshold.');
     if (quote.serviceType === 'Shared tour' && breakEvenResult?.risk === 'Red') warnings.push('Shared tour is below break-even. Supervisor approval is recommended before confirmation.');
     if (quote.pickupPoints > 1) suggestions.push('Multiple pickup points may affect timing, waiting time and vehicle cost.');
