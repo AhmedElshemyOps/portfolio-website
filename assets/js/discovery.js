@@ -35,7 +35,7 @@
     if (!tokens.length) return 0;
     var title = normalize(item.title);
     var category = normalize(item.category);
-    var text = normalize(item.searchText || [item.title, item.description, item.category].concat(item.tags || [], item.headings || []).join(" "));
+    var text = normalize(topicLabel(item.searchText || [item.title, item.description, item.category].concat(item.tags || [], item.headings || []).join(" ")) + " " + (item.searchText || ""));
     var total = 0;
     tokens.forEach(function (token) {
       if (title === token) total += 18;
@@ -61,6 +61,7 @@
     });
   }
 
+  function topicLabel(value) { return (value || "").replace(/Hotel & Serviced Apartment AI/gi, "AI for Hotel Apartments"); }
   function resultLink(item, tokens) {
     var link = document.createElement("a");
     link.href = item.url;
@@ -68,7 +69,7 @@
     link.innerHTML = "<strong></strong><span></span><small></small>";
     appendHighlighted(link.querySelector("strong"), item.title, tokens);
     appendHighlighted(link.querySelector("span"), item.description, tokens);
-    link.querySelector("small").textContent = item.category || item.type;
+    link.querySelector("small").textContent = topicLabel(item.category || item.type);
     link.addEventListener("click", function () {
       analytics("search_result_clicked", { result_type: item.type, result_id: item.id });
     });
@@ -207,7 +208,7 @@
     var query = (knowledgeQuery?.value || "").trim().toLowerCase();
     var visible = 0;
     knowledgeCards.forEach(function (card) {
-      var show = (!selected.pillar || card.dataset.pillar === selected.pillar) && (!selected.series || card.dataset.series === selected.series) && (!selected.type || card.dataset.type === selected.type) && (!query || card.dataset.search.includes(query));
+      var show = (!selected.pillar || card.dataset.pillar === selected.pillar) && (!selected.series || card.dataset.series === selected.series) && (!selected.type || card.dataset.type === selected.type) && (!query || (card.dataset.search + " " + topicLabel(card.dataset.search + " " + card.dataset.pillar)).toLowerCase().includes(query));
       card.hidden = !show;
       if (show) visible += 1;
     });

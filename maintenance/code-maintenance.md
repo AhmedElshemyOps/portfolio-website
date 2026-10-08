@@ -59,3 +59,13 @@ cached or historical clients; they are not loaded by the current homepage.
 
 Shared asset revision strings and the service-worker cache version were advanced
 for this release so returning visitors can receive the refreshed files.
+
+## Professional profile and page design
+
+`content/professional-profile.json` records career, qualification evidence and date reconciliation. Run `python3 scripts/render_profile.py` after editing it, then render shared components. `scripts/build_public_cv.py` consumes the same record; render the DOCX and visually verify both pages before replacing the public PDF. Use the bundled document runtime.
+
+`portfolio-pages.css` supplies the supporting-page layout, and `project-demo-theme.css` supplies the common demo palette. Existing app logic and semantic safety colours remain intact.
+
+The homepage article browser reads its inline JSON list, showing four original article URLs per click. Keep its curated first group and include every registry Article exactly once. Display labels may change; the legacy hotel-topic filter value and existing URLs stay fixed. `discovery.js` recognises both labels.
+
+Navigations use network-first service-worker caching with offline fallback; assets use stale-while-revalidate. Increment the cache version when releasing shared assets.

@@ -1,0 +1,19 @@
+/* Match the portfolio while retaining each app's controls and status colours. */
+.knowledge-atlas-demo {
+ --navy:#10283f;--navy2:#244057;--blue:#244057;--gold:#795b20;--gold2:#e5c77f;
+ --cream:#fcfaf5;--bg:#fcfaf5;--ink:#10283f;--muted:#5c6573;--line:#ded5c5;
+ --ic-navy:#10283f;--ic-blue:#244057;--ic-gold:#795b20;--ic-bg:#fcfaf5;--ic-line:#ded5c5;--ic-muted:#5c6573;--ic-ink:#10283f;
+ --iq-navy:#10283f;--iq-blue:#244057;--iq-gold:#795b20;--iq-bg:#fcfaf5;--iq-line:#ded5c5;--iq-muted:#5c6573;--iq-ink:#10283f;
+ --sky-navy:#10283f;--sky-blue:#244057;--sky-gold:#795b20;--sky-surface:#fcfaf5;--sky-line:#ded5c5;--sky-muted:#5c6573;--sky-ink:#10283f;
+ background:var(--paper);background-image:none;font-family:var(--sans);color:var(--navy);
+}
+.knowledge-atlas-demo :is(h1,h2,h3) { font-family:var(--serif);letter-spacing:-.025em; }
+.knowledge-atlas-demo .cluster-hero { background:var(--paper);color:var(--navy);border-bottom:1px solid var(--line); }
+.knowledge-atlas-demo .cluster-hero :is(h1,p,.lead,.muted) { color:var(--navy); }
+.knowledge-atlas-demo .cluster-hero .eyebrow { color:var(--gold); }
+.knowledge-atlas-demo .btn { font-family:var(--sans);border-radius:3px;min-height:44px;box-shadow:none; }
+.knowledge-atlas-demo .btn:not(.secondary):not(.outline) { background:var(--navy);border-color:var(--navy);color:#fff; }
+.knowledge-atlas-demo .btn.secondary,.knowledge-atlas-demo .btn.outline { border-color:var(--line);background:var(--paper);color:var(--navy); }
+.knowledge-atlas-demo .btn:hover { border-color:var(--gold); }
+.knowledge-atlas-demo :is(input,select,textarea) { font-family:var(--sans);border-radius:3px; }
+.knowledge-atlas-demo :is(a,button,input,select,textarea,summary):focus-visible { outline:3px solid var(--gold);outline-offset:3px; }

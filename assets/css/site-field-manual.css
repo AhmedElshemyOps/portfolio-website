@@ -1,4 +1,4 @@
-@import url("/assets/css/design-tokens.css?v=20261008-cleanup");
+@import url("/assets/css/design-tokens.css?v=20261008-polish");
 body{font-family:var(--sans);background:var(--paper)}
 .growth-hero,.discovery-hero,.lab-hero{background:var(--navy);color:#fcfaf5;padding:44px max(5vw,24px);min-height:0;border-bottom:0;box-shadow:none}
 .growth-hero h1,.discovery-hero h1,.lab-hero h1{font:600 clamp(32px,4vw,52px)/1.2 var(--serif);letter-spacing:-.035em;max-width:1000px;margin:14px 0 18px;color:#fcfaf5}

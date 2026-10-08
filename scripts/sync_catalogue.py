@@ -9,6 +9,7 @@ ROOT=Path(__file__).resolve().parents[1]
 # Validate before writing any catalogue outputs; never publish an empty template.
 from sync_hotel_prompts import check as check_prompt_content
 check_prompt_content(ROOT)
+def display_topic(s): return s.replace('Hotel & Serviced Apartment AI', 'AI for Hotel Apartments')
 def clean(s): return unescape(re.sub('<[^>]+>', ' ', s)).strip()
 def match(pattern,s,default=''):
  m=re.search(pattern,s,re.S|re.I);return clean(m.group(1)) if m else default
@@ -79,7 +80,7 @@ s=re.sub(r'<section class="knowledge-browser"><header><span class="eyebrow">Trac
 for field in ['pillar','series','type']:
  key='contentType' if field=='type' else field
  values=sorted({x[key] if x['type']!='Series index' or field!='type' else 'Series index' for x in registry})
- options='<option value="">All '+{'pillar':'topics','series':'series','type':'types'}[field]+'</option>'+''.join('<option>'+escape(v)+'</option>' for v in values)
+ options='<option value="">All '+{'pillar':'topics','series':'series','type':'types'}[field]+'</option>'+''.join('<option value="'+escape(v,quote=True)+'">'+escape(display_topic(v))+'</option>' for v in values)
  s=re.sub(r'(<select data-knowledge-filter="'+field+r'">).*?(</select>)',lambda m:m[1]+options+m[2],s,flags=re.S)
 cards=[]
 for x in registry:

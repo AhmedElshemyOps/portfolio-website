@@ -12,8 +12,8 @@ from apply_field_manual import parse
 
 ROOT = Path(__file__).resolve().parents[1]
 EXCLUDED = {'.git', 'node_modules', 'docs', 'templates'}
-SHARED_CSS = '<link rel="stylesheet" href="/assets/css/site-chrome.css?v=20261008-cleanup"/>'
-NAV_SCRIPT = '<script defer src="/assets/js/site-navigation.js?v=20261008-cleanup"></script>'
+SHARED_CSS = '<link rel="stylesheet" href="/assets/css/site-chrome.css?v=20261008-polish"/>'
+NAV_SCRIPT = '<script defer src="/assets/js/site-navigation.js?v=20261008-polish"></script>'
 
 
 def pages(root=ROOT):

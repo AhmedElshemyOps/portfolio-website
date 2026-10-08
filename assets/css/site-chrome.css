@@ -11,8 +11,8 @@
   min-height: 88px;
   padding: 12px max(3vw, 28px);
   border-bottom: 1px solid var(--line-light);
-  background: rgba(255, 255, 255, .96);
-  backdrop-filter: blur(16px);
+  background: var(--paper);
+
 }
 .masthead .brand, .platform-footer .brand {
   display: flex;
@@ -33,7 +33,7 @@
 .masthead .brand strong, .platform-footer .brand strong {
   display: block;
   color: var(--navy);
-  font: 600 1.08rem/1.15 var(--serif);
+  font: 600 22px/1.2 var(--serif);
 }
 .masthead .brand small, .platform-footer .brand small {
   display: block;
@@ -44,11 +44,11 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 16px;
-  font-size: .77rem;
+  gap: 26px;
+  font-size: 16px;
   font-weight: 600;
-  letter-spacing: .11em;
-  text-transform: uppercase;
+  letter-spacing: 0;
+  text-transform: none;
 }
 .masthead nav :is(a, button) {
   display: inline-flex;
@@ -60,8 +60,8 @@
   position: relative;
   padding: 15px 0 10px;
   color: var(--navy-soft);
-  font-size: 11px;
-  letter-spacing: .09em;
+  font-size: 16px;
+  letter-spacing: 0;
 }
 .masthead nav a::after {
   content: "";
@@ -86,7 +86,7 @@
   border-radius: 2px;
   background: transparent;
   color: var(--navy);
-  font: 600 .7rem var(--sans);
+  font: 600 13px var(--sans);
   letter-spacing: .08em;
   text-transform: uppercase;
   cursor: pointer;
@@ -107,7 +107,7 @@
   border: 1px solid var(--line);
   background: #fff;
   color: var(--navy);
-  font: 600 .7rem var(--sans);
+  font: 600 13px var(--sans);
   letter-spacing: .07em;
   text-transform: uppercase;
   cursor: pointer;
@@ -200,3 +200,7 @@
 @media (max-width: 420px) {
   .masthead .mark { width: 46px; height: 44px; }
 }
+
+/* The masthead monogram is the same asset used on the homepage. */
+.masthead img.mark { width:58px;height:58px;object-fit:contain;border:0;display:block; }
+@media(max-width:760px){.masthead .brand strong{font-size:20px}.masthead img.mark{width:46px;height:46px}.masthead{gap:14px}}
