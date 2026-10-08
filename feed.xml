@@ -8,14 +8,126 @@
     <name>Ahmed Mahmoud</name>
     <uri>https://ahmedqualityops.com/profile/index.html</uri>
   </author>
-  <updated>2026-10-07T00:00:00+04:00</updated>
+  <updated>2026-10-08T00:00:00+04:00</updated>
   <entry>
     <title>Workforce, Rostering &amp; Productivity AI Toolkit</title>
     <id>https://ahmedqualityops.com/articles/workforce-rostering-productivity-ai-toolkit/index.html</id>
     <link href="https://ahmedqualityops.com/articles/workforce-rostering-productivity-ai-toolkit/index.html" />
-    <updated>2026-10-07T00:00:00+04:00</updated>
+    <updated>2026-10-08T00:00:00+04:00</updated>
     <summary>Ten governed AI prompts for hotel workforce planning, rostering, workload, skills, productivity and fatigue-risk review.</summary>
     <category term="Hotel &amp; Serviced Apartment AI Operations" />
+  </entry>
+  <entry>
+    <title>How to Create Standard Communication Templates</title>
+    <id>https://ahmedqualityops.com/articles/standard-communication-templates/index.html</id>
+    <link href="https://ahmedqualityops.com/articles/standard-communication-templates/index.html" />
+    <updated>2026-10-08T00:00:00+04:00</updated>
+    <summary>Control recurring operational messages without making staff sound robotic, overpromising outcomes, or distributing unverified information during disruption.</summary>
+    <category term="Tourism Operations Excellence" />
+  </entry>
+  <entry>
+    <title>Productivity &amp; Workforce Efficiency</title>
+    <id>https://ahmedqualityops.com/articles/hotel-workforce-productivity-efficiency/index.html</id>
+    <link href="https://ahmedqualityops.com/articles/hotel-workforce-productivity-efficiency/index.html" />
+    <updated>2026-10-08T00:00:00+04:00</updated>
+    <summary>Plan hotel-apartment labor around workload, demand, productive capacity, service standards and quality rather than crude output-per-person targets.</summary>
+    <category term="Hotel Apartment Operational Excellence" />
+  </entry>
+  <entry>
+    <title>Reservations AI Toolkit</title>
+    <id>https://ahmedqualityops.com/articles/hotel-reservations-ai-toolkit/index.html</id>
+    <link href="https://ahmedqualityops.com/articles/hotel-reservations-ai-toolkit/index.html" />
+    <updated>2026-10-08T00:00:00+04:00</updated>
+    <summary>10 professional AI prompts for booking quality, modifications, cancellations, allocation, corporate reservations and exception control.</summary>
+    <category term="Hotel &amp; Serviced Apartment AI Operations" />
+  </entry>
+  <entry>
+    <title>Operations Planning &amp; Daily Control</title>
+    <id>https://ahmedqualityops.com/articles/hotel-operations-planning-daily-control/index.html</id>
+    <link href="https://ahmedqualityops.com/articles/hotel-operations-planning-daily-control/index.html" />
+    <updated>2026-10-08T00:00:00+04:00</updated>
+    <summary>Run hotel-apartment operations through a disciplined daily control rhythm that connects demand, readiness, defects, staffing, guest commitments, exceptions and accountable follow-up.</summary>
+    <category term="Hotel Apartment Operational Excellence" />
+  </entry>
+  <entry>
+    <title>Housekeeping Standardization</title>
+    <id>https://ahmedqualityops.com/articles/hotel-housekeeping-standardization/index.html</id>
+    <link href="https://ahmedqualityops.com/articles/hotel-housekeeping-standardization/index.html" />
+    <updated>2026-10-08T00:00:00+04:00</updated>
+    <summary>Standardize hotel-apartment housekeeping through defined work sequence, apartment-type standards, visual controls, training, verification and controlled improvement.</summary>
+    <category term="Hotel Apartment Operational Excellence" />
+  </entry>
+  <entry>
+    <title>Housekeeping Quality Control</title>
+    <id>https://ahmedqualityops.com/articles/hotel-housekeeping-quality-control/index.html</id>
+    <link href="https://ahmedqualityops.com/articles/hotel-housekeeping-quality-control/index.html" />
+    <updated>2026-10-08T00:00:00+04:00</updated>
+    <summary>Build a housekeeping quality-control system for hotel apartments using inspection design, defect taxonomy, first-pass quality, sampling, coaching and recurrence control.</summary>
+    <category term="Hotel Apartment Operational Excellence" />
+  </entry>
+  <entry>
+    <title>Housekeeping Management AI Toolkit</title>
+    <id>https://ahmedqualityops.com/articles/hotel-housekeeping-management-ai-toolkit/index.html</id>
+    <link href="https://ahmedqualityops.com/articles/hotel-housekeeping-management-ai-toolkit/index.html" />
+    <updated>2026-10-08T00:00:00+04:00</updated>
+    <summary>10 professional AI prompts for room readiness, inspections, linen/PAR, deep cleaning, defects, productivity and housekeeping handover.</summary>
+    <category term="Hotel &amp; Serviced Apartment AI Operations" />
+  </entry>
+  <entry>
+    <title>Guest Experience Quality Management</title>
+    <id>https://ahmedqualityops.com/articles/hotel-guest-experience-quality-management/index.html</id>
+    <link href="https://ahmedqualityops.com/articles/hotel-guest-experience-quality-management/index.html" />
+    <updated>2026-10-08T00:00:00+04:00</updated>
+    <summary>Manage guest experience as a quality system by translating voice-of-customer signals into CTQs, operational standards, failure evidence, recovery and closed-loop improvement.</summary>
+    <category term="Hotel Apartment Operational Excellence" />
+  </entry>
+  <entry>
+    <title>Hotel General Manager AI Toolkit</title>
+    <id>https://ahmedqualityops.com/articles/hotel-general-manager-ai-toolkit/index.html</id>
+    <link href="https://ahmedqualityops.com/articles/hotel-general-manager-ai-toolkit/index.html" />
+    <updated>2026-10-08T00:00:00+04:00</updated>
+    <summary>Ten governed AI prompts for hotel general managers to prioritise departmental reports, operating risks, service issues and management decisions.</summary>
+    <category term="Hotel &amp; Serviced Apartment AI Operations" />
+  </entry>
+  <entry>
+    <title>Front Office AI Toolkit</title>
+    <id>https://ahmedqualityops.com/articles/hotel-front-office-ai-toolkit/index.html</id>
+    <link href="https://ahmedqualityops.com/articles/hotel-front-office-ai-toolkit/index.html" />
+    <updated>2026-10-08T00:00:00+04:00</updated>
+    <summary>10 professional AI prompts for arrivals, check-in, room readiness, guest requests, VIPs, checkout and front-desk control.</summary>
+    <category term="Hotel &amp; Serviced Apartment AI Operations" />
+  </entry>
+  <entry>
+    <title>The Hotel Apartment Operations Control Tower</title>
+    <id>https://ahmedqualityops.com/articles/hotel-apartment-operations-control-tower/index.html</id>
+    <link href="https://ahmedqualityops.com/articles/hotel-apartment-operations-control-tower/index.html" />
+    <updated>2026-10-08T00:00:00+04:00</updated>
+    <summary>Create a cross-functional hotel-apartment control tower that turns readiness, maintenance, guest, workforce and inventory exceptions into one prioritized management queue.</summary>
+    <category term="Hotel Apartment Operational Excellence" />
+  </entry>
+  <entry>
+    <title>Designing the End-to-End Guest Journey</title>
+    <id>https://ahmedqualityops.com/articles/hotel-apartment-end-to-end-guest-journey/index.html</id>
+    <link href="https://ahmedqualityops.com/articles/hotel-apartment-end-to-end-guest-journey/index.html" />
+    <updated>2026-10-08T00:00:00+04:00</updated>
+    <summary>Design the hotel-apartment guest journey as an operational system of promises, handovers, evidence, moments of truth and recovery controls.</summary>
+    <category term="Hotel Apartment Operational Excellence" />
+  </entry>
+  <entry>
+    <title>When Should the Tour Run? Demand, Weather, Seasonality and the Amsterdam Operating Calendar</title>
+    <id>https://ahmedqualityops.com/articles/amsterdam-product-discovery-10-seasonality-operating-calendar/index.html</id>
+    <link href="https://ahmedqualityops.com/articles/amsterdam-product-discovery-10-seasonality-operating-calendar/index.html" />
+    <updated>2026-10-08T00:00:00+04:00</updated>
+    <summary>Part 10 of a 12-part Amsterdam tourism product-management case study: demand context, historical climate, live-weather controls, event pressure and a rolling operating calendar for Amsterdam Layers.</summary>
+    <category term="Amsterdam Product Discovery" />
+  </entry>
+  <entry>
+    <title>Amsterdam Tourism Product Research Plan</title>
+    <id>https://ahmedqualityops.com/articles/amsterdam-product-discovery-01-research-plan/index.html</id>
+    <link href="https://ahmedqualityops.com/articles/amsterdam-product-discovery-01-research-plan/index.html" />
+    <updated>2026-10-08T00:00:00+04:00</updated>
+    <summary>Part 01 of a 12-part Amsterdam tourism product-management case study: framing the destination decision, hypotheses, research design, data provenance, sampling and ethics before deciding what to build.</summary>
+    <category term="Amsterdam Product Discovery" />
   </entry>
   <entry>
     <title>Responsible AI Governance for Hotels</title>
@@ -24,14 +136,6 @@
     <updated>2026-10-07T00:00:00+04:00</updated>
     <summary>Responsible AI governance toolkit for hotels: 10 prompts covering risk, authority, privacy, verification, incidents, tools, version control and human oversight.</summary>
     <category term="Hotel &amp; Serviced Apartment AI Operations" />
-  </entry>
-  <entry>
-    <title>Productivity &amp; Workforce Efficiency</title>
-    <id>https://ahmedqualityops.com/articles/hotel-workforce-productivity-efficiency/index.html</id>
-    <link href="https://ahmedqualityops.com/articles/hotel-workforce-productivity-efficiency/index.html" />
-    <updated>2026-10-07T00:00:00+04:00</updated>
-    <summary>Plan hotel-apartment labor around workload, demand, productive capacity, service standards and quality rather than crude output-per-person targets.</summary>
-    <category term="Hotel Apartment Operational Excellence" />
   </entry>
   <entry>
     <title>Hotel SOP &amp; Process Design AI Toolkit</title>
@@ -98,14 +202,6 @@
     <category term="Hotel &amp; Serviced Apartment AI Operations" />
   </entry>
   <entry>
-    <title>Operations Planning &amp; Daily Control</title>
-    <id>https://ahmedqualityops.com/articles/hotel-operations-planning-daily-control/index.html</id>
-    <link href="https://ahmedqualityops.com/articles/hotel-operations-planning-daily-control/index.html" />
-    <updated>2026-10-07T00:00:00+04:00</updated>
-    <summary>Run hotel-apartment operations through a disciplined daily control rhythm that connects demand, readiness, defects, staffing, guest commitments, exceptions and accountable follow-up.</summary>
-    <category term="Hotel Apartment Operational Excellence" />
-  </entry>
-  <entry>
     <title>Operational Excellence Maturity Model</title>
     <id>https://ahmedqualityops.com/articles/hotel-operational-excellence-maturity-model/index.html</id>
     <link href="https://ahmedqualityops.com/articles/hotel-operational-excellence-maturity-model/index.html" />
@@ -154,43 +250,11 @@
     <category term="Hotel Apartment Operational Excellence" />
   </entry>
   <entry>
-    <title>Housekeeping Standardization</title>
-    <id>https://ahmedqualityops.com/articles/hotel-housekeeping-standardization/index.html</id>
-    <link href="https://ahmedqualityops.com/articles/hotel-housekeeping-standardization/index.html" />
-    <updated>2026-10-07T00:00:00+04:00</updated>
-    <summary>Standardize hotel-apartment housekeeping through defined work sequence, apartment-type standards, visual controls, training, verification and controlled improvement.</summary>
-    <category term="Hotel Apartment Operational Excellence" />
-  </entry>
-  <entry>
-    <title>Housekeeping Quality Control</title>
-    <id>https://ahmedqualityops.com/articles/hotel-housekeeping-quality-control/index.html</id>
-    <link href="https://ahmedqualityops.com/articles/hotel-housekeeping-quality-control/index.html" />
-    <updated>2026-10-07T00:00:00+04:00</updated>
-    <summary>Build a housekeeping quality-control system for hotel apartments using inspection design, defect taxonomy, first-pass quality, sampling, coaching and recurrence control.</summary>
-    <category term="Hotel Apartment Operational Excellence" />
-  </entry>
-  <entry>
-    <title>Guest Experience Quality Management</title>
-    <id>https://ahmedqualityops.com/articles/hotel-guest-experience-quality-management/index.html</id>
-    <link href="https://ahmedqualityops.com/articles/hotel-guest-experience-quality-management/index.html" />
-    <updated>2026-10-07T00:00:00+04:00</updated>
-    <summary>Manage guest experience as a quality system by translating voice-of-customer signals into CTQs, operational standards, failure evidence, recovery and closed-loop improvement.</summary>
-    <category term="Hotel Apartment Operational Excellence" />
-  </entry>
-  <entry>
     <title>Guest Complaint &amp; Service Recovery AI Toolkit</title>
     <id>https://ahmedqualityops.com/articles/hotel-guest-complaint-service-recovery-ai-toolkit/index.html</id>
     <link href="https://ahmedqualityops.com/articles/hotel-guest-complaint-service-recovery-ai-toolkit/index.html" />
     <updated>2026-10-07T00:00:00+04:00</updated>
     <summary>10 professional AI prompts for complaint triage, root cause, recovery, compensation control, escalation, closure and CAPA.</summary>
-    <category term="Hotel &amp; Serviced Apartment AI Operations" />
-  </entry>
-  <entry>
-    <title>Hotel General Manager AI Toolkit</title>
-    <id>https://ahmedqualityops.com/articles/hotel-general-manager-ai-toolkit/index.html</id>
-    <link href="https://ahmedqualityops.com/articles/hotel-general-manager-ai-toolkit/index.html" />
-    <updated>2026-10-07T00:00:00+04:00</updated>
-    <summary>Ten governed AI prompts for hotel general managers to prioritise departmental reports, operating risks, service issues and management decisions.</summary>
     <category term="Hotel &amp; Serviced Apartment AI Operations" />
   </entry>
   <entry>
@@ -290,14 +354,6 @@
     <category term="Hotel Apartment Operational Excellence" />
   </entry>
   <entry>
-    <title>The Hotel Apartment Operations Control Tower</title>
-    <id>https://ahmedqualityops.com/articles/hotel-apartment-operations-control-tower/index.html</id>
-    <link href="https://ahmedqualityops.com/articles/hotel-apartment-operations-control-tower/index.html" />
-    <updated>2026-10-07T00:00:00+04:00</updated>
-    <summary>Create a cross-functional hotel-apartment control tower that turns readiness, maintenance, guest, workforce and inventory exceptions into one prioritized management queue.</summary>
-    <category term="Hotel Apartment Operational Excellence" />
-  </entry>
-  <entry>
     <title>Building the Hotel Apartment Operating System</title>
     <id>https://ahmedqualityops.com/articles/hotel-apartment-operating-system/index.html</id>
     <link href="https://ahmedqualityops.com/articles/hotel-apartment-operating-system/index.html" />
@@ -311,14 +367,6 @@
     <link href="https://ahmedqualityops.com/articles/hotel-apartment-kpi-architecture/index.html" />
     <updated>2026-10-07T00:00:00+04:00</updated>
     <summary>Build a hotel-apartment KPI architecture that connects strategic outcomes to operational drivers, definitions, owners, data sources, review cadence and action rules.</summary>
-    <category term="Hotel Apartment Operational Excellence" />
-  </entry>
-  <entry>
-    <title>Designing the End-to-End Guest Journey</title>
-    <id>https://ahmedqualityops.com/articles/hotel-apartment-end-to-end-guest-journey/index.html</id>
-    <link href="https://ahmedqualityops.com/articles/hotel-apartment-end-to-end-guest-journey/index.html" />
-    <updated>2026-10-07T00:00:00+04:00</updated>
-    <summary>Design the hotel-apartment guest journey as an operational system of promises, handovers, evidence, moments of truth and recovery controls.</summary>
     <category term="Hotel Apartment Operational Excellence" />
   </entry>
   <entry>
@@ -346,14 +394,6 @@
     <category term="Hotel Apartment Operational Excellence" />
   </entry>
   <entry>
-    <title>Reservations AI Toolkit</title>
-    <id>https://ahmedqualityops.com/articles/hotel-reservations-ai-toolkit/index.html</id>
-    <link href="https://ahmedqualityops.com/articles/hotel-reservations-ai-toolkit/index.html" />
-    <updated>2026-10-06T00:00:00+04:00</updated>
-    <summary>10 professional AI prompts for booking quality, modifications, cancellations, allocation, corporate reservations and exception control.</summary>
-    <category term="Hotel &amp; Serviced Apartment AI Operations" />
-  </entry>
-  <entry>
     <title>Hotel Quality Audit AI Toolkit</title>
     <id>https://ahmedqualityops.com/articles/hotel-quality-audit-ai-toolkit/index.html</id>
     <link href="https://ahmedqualityops.com/articles/hotel-quality-audit-ai-toolkit/index.html" />
@@ -378,27 +418,11 @@
     <category term="Hotel &amp; Serviced Apartment AI Operations" />
   </entry>
   <entry>
-    <title>Housekeeping Management AI Toolkit</title>
-    <id>https://ahmedqualityops.com/articles/hotel-housekeeping-management-ai-toolkit/index.html</id>
-    <link href="https://ahmedqualityops.com/articles/hotel-housekeeping-management-ai-toolkit/index.html" />
-    <updated>2026-10-06T00:00:00+04:00</updated>
-    <summary>10 professional AI prompts for room readiness, inspections, linen/PAR, deep cleaning, defects, productivity and housekeeping handover.</summary>
-    <category term="Hotel &amp; Serviced Apartment AI Operations" />
-  </entry>
-  <entry>
     <title>Guest Experience AI Toolkit</title>
     <id>https://ahmedqualityops.com/articles/hotel-guest-experience-ai-toolkit/index.html</id>
     <link href="https://ahmedqualityops.com/articles/hotel-guest-experience-ai-toolkit/index.html" />
     <updated>2026-10-06T00:00:00+04:00</updated>
     <summary>10 professional AI prompts for guest journeys, personalization, pre-arrival planning, accessibility, touchpoint audits and experience improvement.</summary>
-    <category term="Hotel &amp; Serviced Apartment AI Operations" />
-  </entry>
-  <entry>
-    <title>Front Office AI Toolkit</title>
-    <id>https://ahmedqualityops.com/articles/hotel-front-office-ai-toolkit/index.html</id>
-    <link href="https://ahmedqualityops.com/articles/hotel-front-office-ai-toolkit/index.html" />
-    <updated>2026-10-06T00:00:00+04:00</updated>
-    <summary>10 professional AI prompts for arrivals, check-in, room readiness, guest requests, VIPs, checkout and front-desk control.</summary>
     <category term="Hotel &amp; Serviced Apartment AI Operations" />
   </entry>
   <entry>
@@ -439,14 +463,6 @@
     <link href="https://ahmedqualityops.com/articles/amsterdam-product-discovery-11-mvp-pilot-operational-readiness/index.html" />
     <updated>2026-09-06T00:00:00+04:00</updated>
     <summary>Part 11 of a 12-part Amsterdam tourism product-management case study: a controlled MVP pilot plan with success thresholds, exit gates, RACI ownership, experiments, launch readiness and daily operating controls.</summary>
-    <category term="Amsterdam Product Discovery" />
-  </entry>
-  <entry>
-    <title>When Should the Tour Run? Demand, Weather, Seasonality and the Amsterdam Operating Calendar</title>
-    <id>https://ahmedqualityops.com/articles/amsterdam-product-discovery-10-seasonality-operating-calendar/index.html</id>
-    <link href="https://ahmedqualityops.com/articles/amsterdam-product-discovery-10-seasonality-operating-calendar/index.html" />
-    <updated>2026-09-04T00:00:00+04:00</updated>
-    <summary>Part 10 of a 12-part Amsterdam tourism product-management case study: demand context, historical climate, live-weather controls, event pressure and a rolling operating calendar for Amsterdam Layers.</summary>
     <category term="Amsterdam Product Discovery" />
   </entry>
   <entry>
@@ -599,14 +615,6 @@
     <link href="https://ahmedqualityops.com/articles/standard-test-procedures-tourism-operations/index.html" />
     <updated>2026-08-28T00:00:00+04:00</updated>
     <summary>Write repeatable operational tests with controlled preconditions, unambiguous steps, expected results, evidence, defect handling, and accountable release decisions.</summary>
-    <category term="Tourism Operations Excellence" />
-  </entry>
-  <entry>
-    <title>How to Create Standard Communication Templates</title>
-    <id>https://ahmedqualityops.com/articles/standard-communication-templates/index.html</id>
-    <link href="https://ahmedqualityops.com/articles/standard-communication-templates/index.html" />
-    <updated>2026-08-28T00:00:00+04:00</updated>
-    <summary>Control recurring operational messages without making staff sound robotic, overpromising outcomes, or distributing unverified information during disruption.</summary>
     <category term="Tourism Operations Excellence" />
   </entry>
   <entry>
@@ -1023,14 +1031,6 @@
     <link href="https://ahmedqualityops.com/articles/amsterdam-product-discovery-02-competitive-landscape/index.html" />
     <updated>2026-08-28T00:00:00+04:00</updated>
     <summary>Part 02 of a 12-part Amsterdam tourism product-management case study: a provenance-controlled pilot mapping public OTA listings, product families, direct competitors, substitutes, features and price-comparison limits.</summary>
-    <category term="Amsterdam Product Discovery" />
-  </entry>
-  <entry>
-    <title>Amsterdam Tourism Product Research Plan</title>
-    <id>https://ahmedqualityops.com/articles/amsterdam-product-discovery-01-research-plan/index.html</id>
-    <link href="https://ahmedqualityops.com/articles/amsterdam-product-discovery-01-research-plan/index.html" />
-    <updated>2026-08-28T00:00:00+04:00</updated>
-    <summary>Part 01 of a 12-part Amsterdam tourism product-management case study: framing the destination decision, hypotheses, research design, data provenance, sampling and ethics before deciding what to build.</summary>
     <category term="Amsterdam Product Discovery" />
   </entry>
 </feed>

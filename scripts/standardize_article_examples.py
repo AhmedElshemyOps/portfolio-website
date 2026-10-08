@@ -11,6 +11,7 @@ from clean_article_openings import text
 FIELDS=('Situation','Evidence','Decision','Action','Verification')
 PATTERN=re.compile(r'^(?:running example:|case study:|full journey case study:|example(?::|$)|practical scenario|the operating scenario|a quantified|fictional|illustrative .*?(?:example|scenario|request)|(?:abu dhabi|tourism) example|real case example|from partnership introduction|a realistic morning scenario|the hierarchy in one)',re.I)
 REGISTRY=ROOT/'content/editorial/practical-examples.json'
+REVIEWED_HOTEL_CONTROLS=json.loads((ROOT/'maintenance/seo/hotel-example-controls.json').read_text())
 # These are instructions for applying a teaching example, never reported outcomes.
 RULES=[
  (r'medical|unwell|health|injur|missing delegate|cannot be contacted',
@@ -190,7 +191,7 @@ def standardize(s,slug,registry):
         original=s[selected[0]['start']:selected[-1]['end']] if selected else ''
         paragraph=next((x for x in selected if x['tag']=='p'),None)
         if key not in registry:
-            registry[key]=dict(key=key,kind='illustrative',source='',source_verified=False,format='narrative',label=label,stages=rule(slug+' '+main+' '+label+' '+(text(s,paragraph) if paragraph else '')))
+            registry[key]=dict(key=key,kind='illustrative',source='',source_verified=False,format='narrative',label=label,stages=REVIEWED_HOTEL_CONTROLS.get(slug) or rule(slug+' '+main+' '+label+' '+(text(s,paragraph) if paragraph else '')))
         record=registry[key];record['label']=label;record['original_html']=original
         source_stages={k:'' for k in FIELDS[1:]};current_role='Evidence'
         situation='<p>'+html.escape(PRIMARY_SITUATIONS.get(slug,'Apply the '+label.removeprefix('Example: ').lower()+' using the assumptions described in this example.'))+'</p>'

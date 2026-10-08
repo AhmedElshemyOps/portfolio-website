@@ -2947,12 +2947,16 @@
     "format": "narrative",
     "label": "A quantified 60-apartment operating scenario",
     "stages": {
-      "Evidence": "Check the approved service brief, current passenger count, confirmed vehicle and driver, access conditions, deadlines and activation authority.",
-      "Decision": "Decide whether to release, wait, reroute or activate the approved backup using verified readiness and the stated decision deadline.",
-      "Action": "Assign the movement owner, obtain the required approval, communicate the plan to the next team and log the change against the service reference.",
-      "Verification": "Reconcile the physical count with the movement record, confirm the receiving team’s handover and keep unresolved passengers or tasks open."
+      "Evidence": "Check the reservation promises, early-arrival requests, cot requirements, access setup, inspection status and Engineering holds against current property records.",
+      "Decision": "Decide which guest commitments can be confirmed, which need an approved alternative and which must remain pending until the responsible department verifies readiness.",
+      "Action": "Assign the missing cot setup and maintenance dependency to named owners; update the arrival brief and communicate only confirmed arrangements to the guest.",
+      "Verification": "Confirm inspection and authorised apartment release, verify the requested setup and access handover, and keep unresolved guest commitments open."
     },
-    "original_html": "<p>Assume 20 arrivals are due between 15:00 and 19:00. Four guests request early arrival, three require cots and six use digital access. At 14:00, one early-arrival unit is still on maintenance hold and one cot request has not reached operations. Those are not isolated department failures; they are broken handovers between reservation promise, preparation, readiness and arrival communication.</p><p>The figures above are teaching assumptions, not hospitality benchmarks. Their purpose is to show the calculation and the management questions the data should trigger. A real property should substitute its verified PMS, CMMS, inspection, finance or service-recovery data.</p>"
+    "original_html": "<p>Assume 20 arrivals are due between 15:00 and 19:00. Four guests request early arrival, three require cots and six use digital access. At 14:00, one early-arrival unit is still on maintenance hold and one cot request has not reached operations. Those are not isolated department failures; they are broken handovers between reservation promise, preparation, readiness and arrival communication.</p><p>The figures above are teaching assumptions, not hospitality benchmarks. Their purpose is to show the calculation and the management questions the data should trigger. A real property should substitute its verified PMS, CMMS, inspection, finance or service-recovery data.</p>",
+    "control_review": {
+      "date": "2026-10-08",
+      "basis": "Reviewed against the existing fictional property scenario; instructions, not achieved results."
+    }
   },
   "hotel-apartment-extended-stay-ai-toolkit::4-fictional-uae-60-unit-portfolio-case": {
     "key": "hotel-apartment-extended-stay-ai-toolkit::4-fictional-uae-60-unit-portfolio-case",
@@ -2992,12 +2996,16 @@
     "format": "narrative",
     "label": "A quantified serviced-apartment scenario",
     "stages": {
-      "Evidence": "Check the approved service brief, current passenger count, confirmed vehicle and driver, access conditions, deadlines and activation authority.",
-      "Decision": "Decide whether to release, wait, reroute or activate the approved backup using verified readiness and the stated decision deadline.",
-      "Action": "Assign the movement owner, obtain the required approval, communicate the plan to the next team and log the change against the service reference.",
-      "Verification": "Reconcile the physical count with the movement record, confirm the receiving team’s handover and keep unresolved passengers or tasks open."
+      "Evidence": "Check the arrival plan, Engineering holds, guest commitments, critical stock, overdue work orders and staff availability against their source records.",
+      "Decision": "Prioritise exceptions by guest impact, safety, dependency and decision deadline; challenge conflicting statuses before authorising an intervention.",
+      "Action": "Assign each priority exception an accountable department owner, next action, escalation threshold and review time in the shared control queue.",
+      "Verification": "Reconcile each changed status with its source evidence and confirm that the guest commitment or operating constraint has actually been resolved."
     },
-    "original_html": "<p>Assume the 08:00 control view shows 22 arrivals, three units on engineering hold, two unresolved guest commitments, one critical spare below policy, five overdue work orders and a housekeeping absence. A control tower should not create six disconnected dashboards. It should translate them into a prioritized exception queue: impact, deadline, owner, next action, escalation and verification.</p><p>The example is a management teaching case, not an industry benchmark. Replace assumptions with verified property data before operational, financial or staffing decisions are made.</p>"
+    "original_html": "<p>Assume the 08:00 control view shows 22 arrivals, three units on engineering hold, two unresolved guest commitments, one critical spare below policy, five overdue work orders and a housekeeping absence. A control tower should not create six disconnected dashboards. It should translate them into a prioritized exception queue: impact, deadline, owner, next action, escalation and verification.</p><p>The example is a management teaching case, not an industry benchmark. Replace assumptions with verified property data before operational, financial or staffing decisions are made.</p>",
+    "control_review": {
+      "date": "2026-10-08",
+      "basis": "Reviewed against the existing fictional property scenario; instructions, not achieved results."
+    }
   },
   "hotel-apartment-sop-architecture::8f47f855e879": {
     "key": "hotel-apartment-sop-architecture::8f47f855e879",
@@ -3352,12 +3360,16 @@
     "format": "narrative",
     "label": "Fictional UAE case: seven arrivals and one difficult morning",
     "stages": {
-      "Evidence": "Check the approved service brief, current passenger count, confirmed vehicle and driver, access conditions, deadlines and activation authority.",
-      "Decision": "Decide whether to release, wait, reroute or activate the approved backup using verified readiness and the stated decision deadline.",
-      "Action": "Assign the movement owner, obtain the required approval, communicate the plan to the next team and log the change against the service reference.",
-      "Verification": "Reconcile the physical count with the movement record, confirm the receiving team’s handover and keep unresolved passengers or tasks open."
+      "Evidence": "Check PMS arrival records, room inspections, Engineering close-out, approved early-access terms, guest setup requests and any booked transfer confirmations.",
+      "Decision": "Decide which arrivals are ready, dependent, unverified or requests without guaranteed entitlement; keep room release and guest promises with the authorised owner.",
+      "Action": "Assign the outstanding room, cot and transfer confirmations to the responsible departments and update the arrival brief with owners and review deadlines.",
+      "Verification": "Confirm authorised room release, required setups and verified service confirmations; reconcile the front-office handover before closing each arrival dependency."
     },
-    "original_html": "<p>Continue with the fictional 60-unit UAE serviced-apartment property used throughout the playbook.</p><p>At 09:00, seven arrivals are expected:</p><p>- two standard leisure arrivals after 15:00;</p><p>- one family requesting adjacent apartments;</p><p>- one corporate long-stay guest requesting access at 11:00;</p><p>- one approved priority guest with a 13:00 arrival;</p><p>- two late-evening arrivals with airport transfers.</p><p>At the same time:</p><p>- Apartment 1208 is clean but awaiting Engineering close-out;</p><p>- Apartment 1410 has not yet passed supervisor inspection;</p><p>- the corporate arrival&#x27;s apartment is expected to be ready early, but no approved release exists yet;</p><p>- the family adjacency request is recorded but not guaranteed;</p><p>- one airport transfer has a confirmed driver and one has only a booking reference;</p><p>- the previous shift left an unresolved request for a baby cot.</p><p>A weak AI prompt might produce: “All arrivals are on track except one room awaiting maintenance.” That sounds efficient but hides uncertainty.</p><p>A controlled Arrival Readiness Brief should instead distinguish:</p><p><strong>READY</strong> — reservation and room readiness confirmed through approved sources.  </p><p><strong>DEPENDENCY</strong> — arrival can proceed only after another department closes a task.  </p><p><strong>REQUEST / NOT GUARANTEED</strong> — preference is recorded but not an entitlement.  </p><p><strong>UNVERIFIED</strong> — a service is expected but lacks current confirmation.  </p><p><strong>ESCALATE</strong> — deadline or guest impact requires management attention.</p><p>This classification prevents optimism from becoming a promise.</p><hr>"
+    "original_html": "<p>Continue with the fictional 60-unit UAE serviced-apartment property used throughout the playbook.</p><p>At 09:00, seven arrivals are expected:</p><p>- two standard leisure arrivals after 15:00;</p><p>- one family requesting adjacent apartments;</p><p>- one corporate long-stay guest requesting access at 11:00;</p><p>- one approved priority guest with a 13:00 arrival;</p><p>- two late-evening arrivals with airport transfers.</p><p>At the same time:</p><p>- Apartment 1208 is clean but awaiting Engineering close-out;</p><p>- Apartment 1410 has not yet passed supervisor inspection;</p><p>- the corporate arrival&#x27;s apartment is expected to be ready early, but no approved release exists yet;</p><p>- the family adjacency request is recorded but not guaranteed;</p><p>- one airport transfer has a confirmed driver and one has only a booking reference;</p><p>- the previous shift left an unresolved request for a baby cot.</p><p>A weak AI prompt might produce: “All arrivals are on track except one room awaiting maintenance.” That sounds efficient but hides uncertainty.</p><p>A controlled Arrival Readiness Brief should instead distinguish:</p><p><strong>READY</strong> — reservation and room readiness confirmed through approved sources.  </p><p><strong>DEPENDENCY</strong> — arrival can proceed only after another department closes a task.  </p><p><strong>REQUEST / NOT GUARANTEED</strong> — preference is recorded but not an entitlement.  </p><p><strong>UNVERIFIED</strong> — a service is expected but lacks current confirmation.  </p><p><strong>ESCALATE</strong> — deadline or guest impact requires management attention.</p><p>This classification prevents optimism from becoming a promise.</p><hr>",
+    "control_review": {
+      "date": "2026-10-08",
+      "basis": "Reviewed against the existing fictional property scenario; instructions, not achieved results."
+    }
   },
   "hotel-general-manager-ai-toolkit::section-2": {
     "key": "hotel-general-manager-ai-toolkit::section-2",
@@ -3367,12 +3379,16 @@
     "format": "narrative",
     "label": "Fictional 60-unit UAE case",
     "stages": {
-      "Evidence": "Check the approved service brief, current passenger count, confirmed vehicle and driver, access conditions, deadlines and activation authority.",
-      "Decision": "Decide whether to release, wait, reroute or activate the approved backup using verified readiness and the stated decision deadline.",
-      "Action": "Assign the movement owner, obtain the required approval, communicate the plan to the next team and log the change against the service reference.",
-      "Verification": "Reconcile the physical count with the movement record, confirm the receiving team’s handover and keep unresolved passengers or tasks open."
+      "Evidence": "Check occupancy and pickup reports, VIP commitments, out-of-order units, recurring AC complaints, overdue payment records and staffing gaps with the relevant department owners.",
+      "Decision": "Prioritise decisions by guest impact, operating risk, financial exposure and deadline; retain departmental decision rights and escalate only within the approved authority.",
+      "Action": "Assign each management priority a decision owner, supporting evidence, approved action and review time; record unresolved assumptions in the management brief.",
+      "Verification": "Confirm the responsible department has completed the agreed action and test the operating result against source records before reporting the priority as resolved."
     },
-    "original_html": "<p>High occupancy, VIP arrivals, an out-of-order unit, repeated AC complaints, a late corporate payment, staffing absence and strong pickup can occur at the same time. The GM needs priorities and decisions—not disconnected reports.</p><h2 id=\"section-3\">Decision rights</h2><p>The GM should not absorb every department decision. Clear delegation improves speed and accountability. AI outputs should name the decision owner and escalation threshold.</p>"
+    "original_html": "<p>High occupancy, VIP arrivals, an out-of-order unit, repeated AC complaints, a late corporate payment, staffing absence and strong pickup can occur at the same time. The GM needs priorities and decisions—not disconnected reports.</p><h2 id=\"section-3\">Decision rights</h2><p>The GM should not absorb every department decision. Clear delegation improves speed and accountability. AI outputs should name the decision owner and escalation threshold.</p>",
+    "control_review": {
+      "date": "2026-10-08",
+      "basis": "Reviewed against the existing fictional property scenario; instructions, not achieved results."
+    }
   },
   "hotel-guest-complaint-service-recovery-ai-toolkit::3-fictional-uae-60-unit-serviced-apartment-complaint-case": {
     "key": "hotel-guest-complaint-service-recovery-ai-toolkit::3-fictional-uae-60-unit-serviced-apartment-complaint-case",
@@ -3412,12 +3428,16 @@
     "format": "narrative",
     "label": "A quantified serviced-apartment scenario",
     "stages": {
-      "Evidence": "Check the approved service brief, current passenger count, confirmed vehicle and driver, access conditions, deadlines and activation authority.",
-      "Decision": "Decide whether to release, wait, reroute or activate the approved backup using verified readiness and the stated decision deadline.",
-      "Action": "Assign the movement owner, obtain the required approval, communicate the plan to the next team and log the change against the service reference.",
-      "Verification": "Reconcile the physical count with the movement record, confirm the receiving team’s handover and keep unresolved passengers or tasks open."
+      "Evidence": "Check feedback and complaint records against stay dates, apartment IDs, readiness inspections, HVAC work orders and service-recovery records.",
+      "Decision": "Decide whether the arrival or comfort signals indicate a recurring process problem; separate an evidenced cause from an untested hypothesis.",
+      "Action": "Assign immediate guest recovery and the cause investigation to named owners, with correction deadlines and a defined recurrence check.",
+      "Verification": "Review subsequent stays, inspections and complaint records for the same failure pattern; document the evidence before claiming improved guest experience."
     },
-    "original_html": "<p>Assume 120 completed stays generate 28 structured feedback records and 16 complaints. Across both sources, 11 signals concern arrival/readiness and seven concern HVAC comfort. Counting comments alone is weak; management should connect those signals to readiness inspections, apartment IDs, work orders and recovery records to test whether the guest voice reflects a recurring operational cause.</p><p>The example is a management teaching case, not an industry benchmark. Replace assumptions with verified property data before operational, financial or staffing decisions are made.</p>"
+    "original_html": "<p>Assume 120 completed stays generate 28 structured feedback records and 16 complaints. Across both sources, 11 signals concern arrival/readiness and seven concern HVAC comfort. Counting comments alone is weak; management should connect those signals to readiness inspections, apartment IDs, work orders and recovery records to test whether the guest voice reflects a recurring operational cause.</p><p>The example is a management teaching case, not an industry benchmark. Replace assumptions with verified property data before operational, financial or staffing decisions are made.</p>",
+    "control_review": {
+      "date": "2026-10-08",
+      "basis": "Reviewed against the existing fictional property scenario; instructions, not achieved results."
+    }
   },
   "hotel-housekeeping-management-ai-toolkit::4-fictional-uae-60-unit-serviced-apartment-case": {
     "key": "hotel-housekeeping-management-ai-toolkit::4-fictional-uae-60-unit-serviced-apartment-case",
@@ -3427,12 +3447,16 @@
     "format": "narrative",
     "label": "Fictional UAE 60-unit serviced-apartment case",
     "stages": {
-      "Evidence": "Check the approved service brief, current passenger count, confirmed vehicle and driver, access conditions, deadlines and activation authority.",
-      "Decision": "Decide whether to release, wait, reroute or activate the approved backup using verified readiness and the stated decision deadline.",
-      "Action": "Assign the movement owner, obtain the required approval, communicate the plan to the next team and log the change against the service reference.",
-      "Verification": "Reconcile the physical count with the movement record, confirm the receiving team’s handover and keep unresolved passengers or tasks open."
+      "Evidence": "Check cleaned, inspected and authorised-release statuses separately, along with open AC work orders, required setups, DND restrictions and usable linen stock.",
+      "Decision": "Decide which apartments meet the approved release criteria and which remain blocked by inspection, technical, access or inventory dependencies.",
+      "Action": "Coordinate the outstanding inspections, Engineering close-out and setup work with named owners; retain approved DND and guest-access boundaries.",
+      "Verification": "Reinspect corrected items and confirm authorised release against the room record; nine apartments marked cleaned must not be reported as nine ready apartments."
     },
-    "original_html": "<p>At 11:30, the fictional 60-unit UAE property expects 17 arrivals. Nine apartments show “cleaned”; six have passed inspection; one of those six has an open air-conditioning work order; two cleaned apartments still need setup; one guest has requested early access without confirmed entitlement; one long-stay apartment has DND; and Laundry reports a king-sheet delay.</p><p>A weak AI answer could say “Nine rooms ready.” A controlled view distinguishes candidates for authorized release, technical blockers, missing inspections, incomplete setups, guest requests that are not entitlements, DND restrictions and inventory risks. AI has not made the room decision; it has made the <strong>decision boundary visible</strong>.</p><h2 id=\"5-management-controls-before-ai\"><a class=\"heading-anchor\" href=\"#5-management-controls-before-ai\" aria-label=\"Link to Management controls before AI\">#</a>Management controls before AI</h2><p>Before deploying these prompts, define room-status meanings and authority; cleaned vs inspected vs released states; DND/access rules; priority logic; Engineering escalation; inspection evidence; linen and amenity PAR ownership; lost-and-found chain of custody; workload-adjusted productivity; and shift-handover requirements.</p>"
+    "original_html": "<p>At 11:30, the fictional 60-unit UAE property expects 17 arrivals. Nine apartments show “cleaned”; six have passed inspection; one of those six has an open air-conditioning work order; two cleaned apartments still need setup; one guest has requested early access without confirmed entitlement; one long-stay apartment has DND; and Laundry reports a king-sheet delay.</p><p>A weak AI answer could say “Nine rooms ready.” A controlled view distinguishes candidates for authorized release, technical blockers, missing inspections, incomplete setups, guest requests that are not entitlements, DND restrictions and inventory risks. AI has not made the room decision; it has made the <strong>decision boundary visible</strong>.</p><h2 id=\"5-management-controls-before-ai\"><a class=\"heading-anchor\" href=\"#5-management-controls-before-ai\" aria-label=\"Link to Management controls before AI\">#</a>Management controls before AI</h2><p>Before deploying these prompts, define room-status meanings and authority; cleaned vs inspected vs released states; DND/access rules; priority logic; Engineering escalation; inspection evidence; linen and amenity PAR ownership; lost-and-found chain of custody; workload-adjusted productivity; and shift-handover requirements.</p>",
+    "control_review": {
+      "date": "2026-10-08",
+      "basis": "Reviewed against the existing fictional property scenario; instructions, not achieved results."
+    }
   },
   "hotel-housekeeping-quality-control::9676b067ed63": {
     "key": "hotel-housekeeping-quality-control::9676b067ed63",
@@ -3442,12 +3466,16 @@
     "format": "narrative",
     "label": "A quantified 60-apartment operating scenario",
     "stages": {
-      "Evidence": "Check the approved service brief, current passenger count, confirmed vehicle and driver, access conditions, deadlines and activation authority.",
-      "Decision": "Decide whether to release, wait, reroute or activate the approved backup using verified readiness and the stated decision deadline.",
-      "Action": "Assign the movement owner, obtain the required approval, communicate the plan to the next team and log the change against the service reference.",
-      "Verification": "Reconcile the physical count with the movement record, confirm the receiving team’s handover and keep unresolved passengers or tasks open."
+      "Evidence": "Check the 48 inspection records, 10 rework cases and 17 defect observations against the apartment, task, shift and inspection criteria used in the example.",
+      "Decision": "Decide which defect patterns warrant cause investigation, targeted coaching or a workload adjustment; do not infer the cause from the first-pass percentage alone.",
+      "Action": "Assign defect corrections and a focused improvement trial with owners, acceptance criteria and a follow-up inspection sample.",
+      "Verification": "Reinspect failed items and compare a clearly defined subsequent sample for first-pass quality and recurrence; keep illustrative figures separate from actual property results."
     },
-    "original_html": "<p>Assume 48 departure cleans are inspected during a week. Thirty-eight pass first inspection and 10 require rework. First-pass quality = 38 ÷ 48 = 79.2%. Across the 10 failed inspections, supervisors record 17 defects: six bathroom, five kitchen, three linen/presentation and three dust/floor defects. The correct response is not merely to demand 100%; management should identify whether defects cluster by task, apartment type, shift, training need or unrealistic workload.</p><p>The figures above are teaching assumptions, not hospitality benchmarks. Their purpose is to show the calculation and the management questions the data should trigger. A real property should substitute its verified PMS, CMMS, inspection, finance or service-recovery data.</p>"
+    "original_html": "<p>Assume 48 departure cleans are inspected during a week. Thirty-eight pass first inspection and 10 require rework. First-pass quality = 38 ÷ 48 = 79.2%. Across the 10 failed inspections, supervisors record 17 defects: six bathroom, five kitchen, three linen/presentation and three dust/floor defects. The correct response is not merely to demand 100%; management should identify whether defects cluster by task, apartment type, shift, training need or unrealistic workload.</p><p>The figures above are teaching assumptions, not hospitality benchmarks. Their purpose is to show the calculation and the management questions the data should trigger. A real property should substitute its verified PMS, CMMS, inspection, finance or service-recovery data.</p>",
+    "control_review": {
+      "date": "2026-10-08",
+      "basis": "Reviewed against the existing fictional property scenario; instructions, not achieved results."
+    }
   },
   "hotel-housekeeping-standardization::8f47f855e879": {
     "key": "hotel-housekeeping-standardization::8f47f855e879",
@@ -3457,12 +3485,16 @@
     "format": "narrative",
     "label": "A quantified serviced-apartment scenario",
     "stages": {
-      "Evidence": "Check the approved service brief, current passenger count, confirmed vehicle and driver, access conditions, deadlines and activation authority.",
-      "Decision": "Decide whether to release, wait, reroute or activate the approved backup using verified readiness and the stated decision deadline.",
-      "Action": "Assign the movement owner, obtain the required approval, communicate the plan to the next team and log the change against the service reference.",
-      "Verification": "Reconcile the physical count with the movement record, confirm the receiving team’s handover and keep unresolved passengers or tasks open."
+      "Evidence": "Check observed cleaning sequences, apartment condition, supply locations, task times and inspection outcomes before comparing attendants.",
+      "Decision": "Decide which variation can be removed through a standard work sequence and which reflects legitimate apartment condition or guest requirements.",
+      "Action": "Test the revised sequence and supply arrangement with attendants and supervisors; retain exception handling and quality acceptance criteria.",
+      "Verification": "Observe the revised work and compare equivalent apartment conditions and inspection quality; do not treat identical cleaning times as proof of improvement."
     },
-    "original_html": "<p>Assume six attendants clean 30 one-bedroom departure apartments. Observed completion times range from 38 to 71 minutes, and inspection data shows the longest cleans are not consistently the highest quality. After mapping the work, supervisors find different room sequences, supply locations and inspection habits. Standardization should therefore remove avoidable variation while preserving judgment for apartment condition—not impose an arbitrary identical cleaning time.</p><p>The numbers are teaching assumptions or observations within a fictional property. They show the management method and calculation; a real operation should substitute verified property data before making a commercial, staffing or quality decision.</p>"
+    "original_html": "<p>Assume six attendants clean 30 one-bedroom departure apartments. Observed completion times range from 38 to 71 minutes, and inspection data shows the longest cleans are not consistently the highest quality. After mapping the work, supervisors find different room sequences, supply locations and inspection habits. Standardization should therefore remove avoidable variation while preserving judgment for apartment condition—not impose an arbitrary identical cleaning time.</p><p>The numbers are teaching assumptions or observations within a fictional property. They show the management method and calculation; a real operation should substitute verified property data before making a commercial, staffing or quality decision.</p>",
+    "control_review": {
+      "date": "2026-10-08",
+      "basis": "Reviewed against the existing fictional property scenario; instructions, not achieved results."
+    }
   },
   "hotel-inventory-par-level-management::8f47f855e879": {
     "key": "hotel-inventory-par-level-management::8f47f855e879",
@@ -3727,12 +3759,16 @@
     "format": "narrative",
     "label": "A quantified serviced-apartment scenario",
     "stages": {
-      "Evidence": "Check the approved service brief, current passenger count, confirmed vehicle and driver, access conditions, deadlines and activation authority.",
-      "Decision": "Decide whether to release, wait, reroute or activate the approved backup using verified readiness and the stated decision deadline.",
-      "Action": "Assign the movement owner, obtain the required approval, communicate the plan to the next team and log the change against the service reference.",
-      "Verification": "Reconcile the physical count with the movement record, confirm the receiving team’s handover and keep unresolved passengers or tasks open."
+      "Evidence": "Check the 22 arrivals, 19 departures, early-arrival requests, Engineering holds and special setups against current PMS, inspection and department records.",
+      "Decision": "Decide which arrival commitments are at risk and which approved resource allocation or departmental decision can remove the readiness constraint.",
+      "Action": "Assign the apartment readiness and setup dependencies to named owners with clear completion and escalation times in the daily operating plan.",
+      "Verification": "Check actual readiness against the agreed arrival commitments and confirm each departmental handover before closing the daily exception."
     },
-    "original_html": "<p>Assume tomorrow has 22 arrivals, 19 departures, four early-arrival requests, three apartments on engineering hold and two VIP/special setups. A useful morning control meeting does not read every task aloud. It identifies constraints: which arrival apartments are at risk, what resource or decision is blocking them, who owns recovery, and by what review time the status must change.</p><p>The example is a management teaching case, not an industry benchmark. Replace assumptions with verified property data before operational, financial or staffing decisions are made.</p>"
+    "original_html": "<p>Assume tomorrow has 22 arrivals, 19 departures, four early-arrival requests, three apartments on engineering hold and two VIP/special setups. A useful morning control meeting does not read every task aloud. It identifies constraints: which arrival apartments are at risk, what resource or decision is blocking them, who owns recovery, and by what review time the status must change.</p><p>The example is a management teaching case, not an industry benchmark. Replace assumptions with verified property data before operational, financial or staffing decisions are made.</p>",
+    "control_review": {
+      "date": "2026-10-08",
+      "basis": "Reviewed against the existing fictional property scenario; instructions, not achieved results."
+    }
   },
   "hotel-ota-distribution-review-management-ai-toolkit::section-3": {
     "key": "hotel-ota-distribution-review-management-ai-toolkit::section-3",
@@ -3847,12 +3883,16 @@
     "format": "narrative",
     "label": "Fictional UAE case: one booking, five possible failures",
     "stages": {
-      "Evidence": "Check the approved service brief, current passenger count, confirmed vehicle and driver, access conditions, deadlines and activation authority.",
-      "Decision": "Decide whether to release, wait, reroute or activate the approved backup using verified readiness and the stated decision deadline.",
-      "Action": "Assign the movement owner, obtain the required approval, communicate the plan to the next team and log the change against the service reference.",
-      "Verification": "Reconcile the physical count with the movement record, confirm the receiving team’s handover and keep unresolved passengers or tasks open."
+      "Evidence": "Check the booking IDs, PMS confirmation, current corporate contract, billing scope, early-arrival terms and supplier confirmation for requested airport pickup.",
+      "Decision": "Decide which items are confirmed, conflicting, unverified or possible duplicates; do not cancel a booking or promise an inclusion without authorised verification.",
+      "Action": "Route contract conflicts to Reservations and Sales, billing scope to Finance and pickup confirmation to Transport; record the owner and deadline for each pending item.",
+      "Verification": "Reconcile the final booking record with approved terms and confirmations, retain the duplicate-review evidence and verify the reservation handover before guest communication."
     },
-    "original_html": "<p>Use the fictional 60-unit UAE serviced-apartment portfolio from the previous chapters. A corporate booker creates a 21-night reservation for a one-bedroom apartment. The booking notes mention airport pickup, early arrival, breakfast and company billing. A second reservation with a similar guest name appears through an OTA for overlapping dates.</p>\n<p>The team now has several questions. Is early arrival guaranteed or merely requested? Is breakfast included in the current corporate agreement? Does company billing cover accommodation only or incidentals as well? Is the OTA reservation a duplicate or an intentional booking for another traveler? Is airport pickup actually confirmed with Transport?</p>\n<p>A weak AI response might “clean up” the file and conclude that the corporate booking includes all four services and that the OTA record should be cancelled as a duplicate. That would be fast—and operationally reckless.</p>\n<p>A controlled workflow produces a verification queue instead:</p>\n<pre>| Item | Current evidence | Classification | Next action |</pre>\n<pre>|---|---|---|---|</pre>\n<pre>| 21-night 1BR stay | PMS confirmed | CONFIRMED FACT | none |</pre>\n<pre>| Early arrival | note only | REQUEST / NOT GUARANTEED | check approved availability/process |</pre>\n<pre>| Breakfast | booking note conflicts with current contract | CONFLICT | Sales/Reservations verify contract |</pre>\n<pre>| Company billing | account indicator present; scope unclear | UNVERIFIED | Finance/contract owner confirms scope |</pre>\n<pre>| OTA overlap | similar name/dates | POSSIBLE DUPLICATE | manually compare IDs/source/booker |</pre>\n<pre>| Airport pickup | request recorded; supplier confirmation absent | UNVERIFIED | verify transport confirmation |</pre>\n<p>The difference is important: AI has made the case easier to manage without pretending to possess authority it does not have.</p>"
+    "original_html": "<p>Use the fictional 60-unit UAE serviced-apartment portfolio from the previous chapters. A corporate booker creates a 21-night reservation for a one-bedroom apartment. The booking notes mention airport pickup, early arrival, breakfast and company billing. A second reservation with a similar guest name appears through an OTA for overlapping dates.</p>\n<p>The team now has several questions. Is early arrival guaranteed or merely requested? Is breakfast included in the current corporate agreement? Does company billing cover accommodation only or incidentals as well? Is the OTA reservation a duplicate or an intentional booking for another traveler? Is airport pickup actually confirmed with Transport?</p>\n<p>A weak AI response might “clean up” the file and conclude that the corporate booking includes all four services and that the OTA record should be cancelled as a duplicate. That would be fast—and operationally reckless.</p>\n<p>A controlled workflow produces a verification queue instead:</p>\n<pre>| Item | Current evidence | Classification | Next action |</pre>\n<pre>|---|---|---|---|</pre>\n<pre>| 21-night 1BR stay | PMS confirmed | CONFIRMED FACT | none |</pre>\n<pre>| Early arrival | note only | REQUEST / NOT GUARANTEED | check approved availability/process |</pre>\n<pre>| Breakfast | booking note conflicts with current contract | CONFLICT | Sales/Reservations verify contract |</pre>\n<pre>| Company billing | account indicator present; scope unclear | UNVERIFIED | Finance/contract owner confirms scope |</pre>\n<pre>| OTA overlap | similar name/dates | POSSIBLE DUPLICATE | manually compare IDs/source/booker |</pre>\n<pre>| Airport pickup | request recorded; supplier confirmation absent | UNVERIFIED | verify transport confirmation |</pre>\n<p>The difference is important: AI has made the case easier to manage without pretending to possess authority it does not have.</p>",
+    "control_review": {
+      "date": "2026-10-08",
+      "basis": "Reviewed against the existing fictional property scenario; instructions, not achieved results."
+    }
   },
   "hotel-revenue-management-ai-toolkit::fictional-uae-case-60-unit-serviced-apartments": {
     "key": "hotel-revenue-management-ai-toolkit::fictional-uae-case-60-unit-serviced-apartments",
@@ -3907,12 +3947,16 @@
     "format": "narrative",
     "label": "A quantified serviced-apartment scenario",
     "stages": {
-      "Evidence": "Check the approved service brief, current passenger count, confirmed vehicle and driver, access conditions, deadlines and activation authority.",
-      "Decision": "Decide whether to release, wait, reroute or activate the approved backup using verified readiness and the stated decision deadline.",
-      "Action": "Assign the movement owner, obtain the required approval, communicate the plan to the next team and log the change against the service reference.",
-      "Verification": "Reconcile the physical count with the movement record, confirm the receiving team’s handover and keep unresolved passengers or tasks open."
+      "Evidence": "Check departures, stayovers, arrivals, task-time assumptions, paid versus productive hours, breaks, travel, inspections, skills and staff availability.",
+      "Decision": "Decide whether the proposed staffing covers the full service workload and required skills; 29.5 direct task hours alone cannot determine an eight-hour-shift roster.",
+      "Action": "Build the workload-adjusted staffing plan with approved task standards, non-task time, quality checks and named coverage for remaining gaps.",
+      "Verification": "Compare planned and actual workload, completed service and inspection quality; review overtime and unmet work before claiming a productivity gain."
     },
-    "original_html": "<p>Assume tomorrow has 24 departures, 18 stayover services and 20 arrivals. Planning standards—used here only as illustrative assumptions—estimate 55 minutes per departure clean and 25 minutes per stayover. Base housekeeping workload = (24 × 55) + (18 × 25) = 1,770 minutes, or 29.5 direct task hours, before breaks, travel, setup, inspections, special requests and variability. Dividing 29.5 by an eight-hour shift and scheduling four people would be a planning error because eight paid hours are not eight direct productive hours.</p><p>The numbers are teaching assumptions or observations within a fictional property. They show the management method and calculation; a real operation should substitute verified property data before making a commercial, staffing or quality decision.</p>"
+    "original_html": "<p>Assume tomorrow has 24 departures, 18 stayover services and 20 arrivals. Planning standards—used here only as illustrative assumptions—estimate 55 minutes per departure clean and 25 minutes per stayover. Base housekeeping workload = (24 × 55) + (18 × 25) = 1,770 minutes, or 29.5 direct task hours, before breaks, travel, setup, inspections, special requests and variability. Dividing 29.5 by an eight-hour shift and scheduling four people would be a planning error because eight paid hours are not eight direct productive hours.</p><p>The numbers are teaching assumptions or observations within a fictional property. They show the management method and calculation; a real operation should substitute verified property data before making a commercial, staffing or quality decision.</p>",
+    "control_review": {
+      "date": "2026-10-08",
+      "basis": "Reviewed against the existing fictional property scenario; instructions, not achieved results."
+    }
   },
   "how-to-audit-an-sop::running-example-auditing-an-airport-transfer-sop-across-reservations-dis": {
     "key": "how-to-audit-an-sop::running-example-auditing-an-airport-transfer-sop-across-reservations-dis",
@@ -5332,12 +5376,16 @@
     "format": "narrative",
     "label": "Fictional 60-unit UAE case",
     "stages": {
-      "Evidence": "Check the approved service brief, current passenger count, confirmed vehicle and driver, access conditions, deadlines and activation authority.",
-      "Decision": "Decide whether to release, wait, reroute or activate the approved backup using verified readiness and the stated decision deadline.",
-      "Action": "Assign the movement owner, obtain the required approval, communicate the plan to the next team and log the change against the service reference.",
-      "Verification": "Reconcile the physical count with the movement record, confirm the receiving team’s handover and keep unresolved passengers or tasks open."
+      "Evidence": "Check departures, arrivals, stayover demand, task standards, skill coverage, employee availability and approved shift constraints rather than occupancy alone.",
+      "Decision": "Decide whether the roster can cover the forecast workload and required skills without reducing service quality or overriding applicable employment rules.",
+      "Action": "Prepare the workload-based roster for the authorised reviewer and record coverage gaps, assumptions and agreed contingency arrangements.",
+      "Verification": "Review actual workload, service completion, quality, overtime and remaining coverage gaps against the approved roster before reporting improved productivity."
     },
-    "original_html": "<p>A 90% occupancy day with 18 departures and 16 arrivals creates a different workload from a 90% occupancy day with four departures. All examples are illustrative.</p>"
+    "original_html": "<p>A 90% occupancy day with 18 departures and 16 arrivals creates a different workload from a 90% occupancy day with four departures. All examples are illustrative.</p>",
+    "control_review": {
+      "date": "2026-10-08",
+      "basis": "Reviewed against the existing fictional property scenario; instructions, not achieved results."
+    }
   },
   "article-destination-experience-journey-map::8260213b32e5": {
     "key": "article-destination-experience-journey-map::8260213b32e5",

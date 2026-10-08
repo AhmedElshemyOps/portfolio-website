@@ -6,8 +6,11 @@ class SeoBatchTests(unittest.TestCase):
  def test_original_articles_routes_and_bodies_preserved(self):
   for p in (ROOT/'articles').rglob('index.html'):
    old=subprocess.check_output(['git','show','seo-baseline-2026-10-08:'+str(p.relative_to(ROOT))],cwd=ROOT,text=True);new=p.read_text()
+   manifest=json.loads((ROOT/'maintenance/seo/editorial-batch-manifest.json').read_text())
+   expected=old
+   for edit in manifest['body_replacements'].get(str(p.relative_to(ROOT)),[]):expected=expected.replace(edit['old'],edit['new'])
    for pattern in [r'<article class="article-body".*?</article>',r'<link[^>]*rel="canonical"[^>]*>']:
-    a=re.search(pattern,old,re.S);b=re.search(pattern,new,re.S);self.assertEqual(a[0] if a else None,b[0] if b else None,str(p))
+    a=re.search(pattern,expected,re.S);b=re.search(pattern,new,re.S);self.assertEqual(a[0] if a else None,b[0] if b else None,str(p))
    for href in re.findall(r'href="([^"]+)"',old):
     if '/articles/' in href:self.assertIn(href,new,str(p))
  def test_sitemap_and_atom_are_valid_unique_canonical_outputs(self):

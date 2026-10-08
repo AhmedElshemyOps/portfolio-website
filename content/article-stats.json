@@ -1,7 +1,7 @@
 [
   {
     "slug": "amsterdam-product-discovery-01-research-plan",
-    "wordCount": 3170
+    "wordCount": 3786
   },
   {
     "slug": "amsterdam-product-discovery-02-competitive-landscape",
@@ -37,7 +37,7 @@
   },
   {
     "slug": "amsterdam-product-discovery-10-seasonality-operating-calendar",
-    "wordCount": 2345
+    "wordCount": 2748
   },
   {
     "slug": "amsterdam-product-discovery-11-mvp-pilot-operational-readiness",
@@ -169,7 +169,7 @@
   },
   {
     "slug": "hotel-apartment-end-to-end-guest-journey",
-    "wordCount": 769
+    "wordCount": 1032
   },
   {
     "slug": "hotel-apartment-extended-stay-ai-toolkit",
@@ -185,7 +185,7 @@
   },
   {
     "slug": "hotel-apartment-operations-control-tower",
-    "wordCount": 706
+    "wordCount": 949
   },
   {
     "slug": "hotel-apartment-preventive-maintenance-strategy",
@@ -241,11 +241,11 @@
   },
   {
     "slug": "hotel-front-office-ai-toolkit",
-    "wordCount": 6903
+    "wordCount": 7517
   },
   {
     "slug": "hotel-general-manager-ai-toolkit",
-    "wordCount": 3206
+    "wordCount": 3377
   },
   {
     "slug": "hotel-guest-complaint-service-recovery-ai-toolkit",
@@ -257,19 +257,19 @@
   },
   {
     "slug": "hotel-guest-experience-quality-management",
-    "wordCount": 703
+    "wordCount": 935
   },
   {
     "slug": "hotel-housekeeping-management-ai-toolkit",
-    "wordCount": 7118
+    "wordCount": 8307
   },
   {
     "slug": "hotel-housekeeping-quality-control",
-    "wordCount": 784
+    "wordCount": 1054
   },
   {
     "slug": "hotel-housekeeping-standardization",
-    "wordCount": 698
+    "wordCount": 923
   },
   {
     "slug": "hotel-inventory-par-level-management",
@@ -301,7 +301,7 @@
   },
   {
     "slug": "hotel-operations-planning-daily-control",
-    "wordCount": 708
+    "wordCount": 956
   },
   {
     "slug": "hotel-ota-distribution-review-management-ai-toolkit",
@@ -333,7 +333,7 @@
   },
   {
     "slug": "hotel-reservations-ai-toolkit",
-    "wordCount": 6977
+    "wordCount": 7907
   },
   {
     "slug": "hotel-revenue-management-ai-toolkit",
@@ -349,7 +349,7 @@
   },
   {
     "slug": "hotel-workforce-productivity-efficiency",
-    "wordCount": 723
+    "wordCount": 952
   },
   {
     "slug": "how-to-audit-an-sop",
@@ -437,7 +437,7 @@
   },
   {
     "slug": "standard-communication-templates",
-    "wordCount": 2705
+    "wordCount": 2980
   },
   {
     "slug": "standard-test-procedures-tourism-operations",
@@ -509,6 +509,6 @@
   },
   {
     "slug": "workforce-rostering-productivity-ai-toolkit",
-    "wordCount": 3230
+    "wordCount": 3334
   }
 ]

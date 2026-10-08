@@ -1,0 +1,358 @@
+{
+  "baseline_commit": "7063978d95646d966f4a6cc2e26b0b0b087b8abd",
+  "date": "2026-10-08",
+  "body_replacements": {
+    "articles/hotel-apartment-end-to-end-guest-journey/index.html": [
+      {
+        "old": "Check the approved service brief, current passenger count, confirmed vehicle and driver, access conditions, deadlines and activation authority.",
+        "new": "Check the reservation promises, early-arrival requests, cot requirements, access setup, inspection status and Engineering holds against current property records.",
+        "reason": "Replace transport-generated evidence with reviewed hotel controls."
+      },
+      {
+        "old": "Decide whether to release, wait, reroute or activate the approved backup using verified readiness and the stated decision deadline.",
+        "new": "Decide which guest commitments can be confirmed, which need an approved alternative and which must remain pending until the responsible department verifies readiness.",
+        "reason": "Replace transport-generated decision with reviewed hotel controls."
+      },
+      {
+        "old": "Assign the movement owner, obtain the required approval, communicate the plan to the next team and log the change against the service reference.",
+        "new": "Assign the missing cot setup and maintenance dependency to named owners; update the arrival brief and communicate only confirmed arrangements to the guest.",
+        "reason": "Replace transport-generated action with reviewed hotel controls."
+      },
+      {
+        "old": "Reconcile the physical count with the movement record, confirm the receiving team’s handover and keep unresolved passengers or tasks open.",
+        "new": "Confirm inspection and authorised apartment release, verify the requested setup and access handover, and keep unresolved guest commitments open.",
+        "reason": "Replace transport-generated verification with reviewed hotel controls."
+      }
+    ],
+    "articles/hotel-apartment-operations-control-tower/index.html": [
+      {
+        "old": "Check the approved service brief, current passenger count, confirmed vehicle and driver, access conditions, deadlines and activation authority.",
+        "new": "Check the arrival plan, Engineering holds, guest commitments, critical stock, overdue work orders and staff availability against their source records.",
+        "reason": "Replace transport-generated evidence with reviewed hotel controls."
+      },
+      {
+        "old": "Decide whether to release, wait, reroute or activate the approved backup using verified readiness and the stated decision deadline.",
+        "new": "Prioritise exceptions by guest impact, safety, dependency and decision deadline; challenge conflicting statuses before authorising an intervention.",
+        "reason": "Replace transport-generated decision with reviewed hotel controls."
+      },
+      {
+        "old": "Assign the movement owner, obtain the required approval, communicate the plan to the next team and log the change against the service reference.",
+        "new": "Assign each priority exception an accountable department owner, next action, escalation threshold and review time in the shared control queue.",
+        "reason": "Replace transport-generated action with reviewed hotel controls."
+      },
+      {
+        "old": "Reconcile the physical count with the movement record, confirm the receiving team’s handover and keep unresolved passengers or tasks open.",
+        "new": "Reconcile each changed status with its source evidence and confirm that the guest commitment or operating constraint has actually been resolved.",
+        "reason": "Replace transport-generated verification with reviewed hotel controls."
+      }
+    ],
+    "articles/hotel-front-office-ai-toolkit/index.html": [
+      {
+        "old": "Check the approved service brief, current passenger count, confirmed vehicle and driver, access conditions, deadlines and activation authority.",
+        "new": "Check PMS arrival records, room inspections, Engineering close-out, approved early-access terms, guest setup requests and any booked transfer confirmations.",
+        "reason": "Replace transport-generated evidence with reviewed hotel controls."
+      },
+      {
+        "old": "Decide whether to release, wait, reroute or activate the approved backup using verified readiness and the stated decision deadline.",
+        "new": "Decide which arrivals are ready, dependent, unverified or requests without guaranteed entitlement; keep room release and guest promises with the authorised owner.",
+        "reason": "Replace transport-generated decision with reviewed hotel controls."
+      },
+      {
+        "old": "Assign the movement owner, obtain the required approval, communicate the plan to the next team and log the change against the service reference.",
+        "new": "Assign the outstanding room, cot and transfer confirmations to the responsible departments and update the arrival brief with owners and review deadlines.",
+        "reason": "Replace transport-generated action with reviewed hotel controls."
+      },
+      {
+        "old": "Reconcile the physical count with the movement record, confirm the receiving team’s handover and keep unresolved passengers or tasks open.",
+        "new": "Confirm authorised room release, required setups and verified service confirmations; reconcile the front-office handover before closing each arrival dependency.",
+        "reason": "Replace transport-generated verification with reviewed hotel controls."
+      }
+    ],
+    "articles/hotel-general-manager-ai-toolkit/index.html": [
+      {
+        "old": "Check the approved service brief, current passenger count, confirmed vehicle and driver, access conditions, deadlines and activation authority.",
+        "new": "Check occupancy and pickup reports, VIP commitments, out-of-order units, recurring AC complaints, overdue payment records and staffing gaps with the relevant department owners.",
+        "reason": "Replace transport-generated evidence with reviewed hotel controls."
+      },
+      {
+        "old": "Assign the movement owner, obtain the required approval, communicate the plan to the next team and log the change against the service reference.",
+        "new": "Assign each management priority a decision owner, supporting evidence, approved action and review time; record unresolved assumptions in the management brief.",
+        "reason": "Replace transport-generated action with reviewed hotel controls."
+      },
+      {
+        "old": "Reconcile the physical count with the movement record, confirm the receiving team’s handover and keep unresolved passengers or tasks open.",
+        "new": "Confirm the responsible department has completed the agreed action and test the operating result against source records before reporting the priority as resolved.",
+        "reason": "Replace transport-generated verification with reviewed hotel controls."
+      }
+    ],
+    "articles/hotel-guest-experience-quality-management/index.html": [
+      {
+        "old": "Check the approved service brief, current passenger count, confirmed vehicle and driver, access conditions, deadlines and activation authority.",
+        "new": "Check feedback and complaint records against stay dates, apartment IDs, readiness inspections, HVAC work orders and service-recovery records.",
+        "reason": "Replace transport-generated evidence with reviewed hotel controls."
+      },
+      {
+        "old": "Decide whether to release, wait, reroute or activate the approved backup using verified readiness and the stated decision deadline.",
+        "new": "Decide whether the arrival or comfort signals indicate a recurring process problem; separate an evidenced cause from an untested hypothesis.",
+        "reason": "Replace transport-generated decision with reviewed hotel controls."
+      },
+      {
+        "old": "Assign the movement owner, obtain the required approval, communicate the plan to the next team and log the change against the service reference.",
+        "new": "Assign immediate guest recovery and the cause investigation to named owners, with correction deadlines and a defined recurrence check.",
+        "reason": "Replace transport-generated action with reviewed hotel controls."
+      },
+      {
+        "old": "Reconcile the physical count with the movement record, confirm the receiving team’s handover and keep unresolved passengers or tasks open.",
+        "new": "Review subsequent stays, inspections and complaint records for the same failure pattern; document the evidence before claiming improved guest experience.",
+        "reason": "Replace transport-generated verification with reviewed hotel controls."
+      }
+    ],
+    "articles/hotel-housekeeping-management-ai-toolkit/index.html": [
+      {
+        "old": "Check the approved service brief, current passenger count, confirmed vehicle and driver, access conditions, deadlines and activation authority.",
+        "new": "Check cleaned, inspected and authorised-release statuses separately, along with open AC work orders, required setups, DND restrictions and usable linen stock.",
+        "reason": "Replace transport-generated evidence with reviewed hotel controls."
+      },
+      {
+        "old": "Decide whether to release, wait, reroute or activate the approved backup using verified readiness and the stated decision deadline.",
+        "new": "Decide which apartments meet the approved release criteria and which remain blocked by inspection, technical, access or inventory dependencies.",
+        "reason": "Replace transport-generated decision with reviewed hotel controls."
+      },
+      {
+        "old": "Reconcile the physical count with the movement record, confirm the receiving team’s handover and keep unresolved passengers or tasks open.",
+        "new": "Reinspect corrected items and confirm authorised release against the room record; nine apartments marked cleaned must not be reported as nine ready apartments.",
+        "reason": "Replace transport-generated verification with reviewed hotel controls."
+      }
+    ],
+    "articles/hotel-housekeeping-quality-control/index.html": [
+      {
+        "old": "Check the approved service brief, current passenger count, confirmed vehicle and driver, access conditions, deadlines and activation authority.",
+        "new": "Check the 48 inspection records, 10 rework cases and 17 defect observations against the apartment, task, shift and inspection criteria used in the example.",
+        "reason": "Replace transport-generated evidence with reviewed hotel controls."
+      },
+      {
+        "old": "Decide whether to release, wait, reroute or activate the approved backup using verified readiness and the stated decision deadline.",
+        "new": "Decide which defect patterns warrant cause investigation, targeted coaching or a workload adjustment; do not infer the cause from the first-pass percentage alone.",
+        "reason": "Replace transport-generated decision with reviewed hotel controls."
+      },
+      {
+        "old": "Assign the movement owner, obtain the required approval, communicate the plan to the next team and log the change against the service reference.",
+        "new": "Assign defect corrections and a focused improvement trial with owners, acceptance criteria and a follow-up inspection sample.",
+        "reason": "Replace transport-generated action with reviewed hotel controls."
+      },
+      {
+        "old": "Reconcile the physical count with the movement record, confirm the receiving team’s handover and keep unresolved passengers or tasks open.",
+        "new": "Reinspect failed items and compare a clearly defined subsequent sample for first-pass quality and recurrence; keep illustrative figures separate from actual property results.",
+        "reason": "Replace transport-generated verification with reviewed hotel controls."
+      }
+    ],
+    "articles/hotel-housekeeping-standardization/index.html": [
+      {
+        "old": "Check the approved service brief, current passenger count, confirmed vehicle and driver, access conditions, deadlines and activation authority.",
+        "new": "Check observed cleaning sequences, apartment condition, supply locations, task times and inspection outcomes before comparing attendants.",
+        "reason": "Replace transport-generated evidence with reviewed hotel controls."
+      },
+      {
+        "old": "Decide whether to release, wait, reroute or activate the approved backup using verified readiness and the stated decision deadline.",
+        "new": "Decide which variation can be removed through a standard work sequence and which reflects legitimate apartment condition or guest requirements.",
+        "reason": "Replace transport-generated decision with reviewed hotel controls."
+      },
+      {
+        "old": "Assign the movement owner, obtain the required approval, communicate the plan to the next team and log the change against the service reference.",
+        "new": "Test the revised sequence and supply arrangement with attendants and supervisors; retain exception handling and quality acceptance criteria.",
+        "reason": "Replace transport-generated action with reviewed hotel controls."
+      },
+      {
+        "old": "Reconcile the physical count with the movement record, confirm the receiving team’s handover and keep unresolved passengers or tasks open.",
+        "new": "Observe the revised work and compare equivalent apartment conditions and inspection quality; do not treat identical cleaning times as proof of improvement.",
+        "reason": "Replace transport-generated verification with reviewed hotel controls."
+      }
+    ],
+    "articles/hotel-operations-planning-daily-control/index.html": [
+      {
+        "old": "Check the approved service brief, current passenger count, confirmed vehicle and driver, access conditions, deadlines and activation authority.",
+        "new": "Check the 22 arrivals, 19 departures, early-arrival requests, Engineering holds and special setups against current PMS, inspection and department records.",
+        "reason": "Replace transport-generated evidence with reviewed hotel controls."
+      },
+      {
+        "old": "Decide whether to release, wait, reroute or activate the approved backup using verified readiness and the stated decision deadline.",
+        "new": "Decide which arrival commitments are at risk and which approved resource allocation or departmental decision can remove the readiness constraint.",
+        "reason": "Replace transport-generated decision with reviewed hotel controls."
+      },
+      {
+        "old": "Assign the movement owner, obtain the required approval, communicate the plan to the next team and log the change against the service reference.",
+        "new": "Assign the apartment readiness and setup dependencies to named owners with clear completion and escalation times in the daily operating plan.",
+        "reason": "Replace transport-generated action with reviewed hotel controls."
+      },
+      {
+        "old": "Reconcile the physical count with the movement record, confirm the receiving team’s handover and keep unresolved passengers or tasks open.",
+        "new": "Check actual readiness against the agreed arrival commitments and confirm each departmental handover before closing the daily exception.",
+        "reason": "Replace transport-generated verification with reviewed hotel controls."
+      }
+    ],
+    "articles/hotel-reservations-ai-toolkit/index.html": [
+      {
+        "old": "Check the approved service brief, current passenger count, confirmed vehicle and driver, access conditions, deadlines and activation authority.",
+        "new": "Check the booking IDs, PMS confirmation, current corporate contract, billing scope, early-arrival terms and supplier confirmation for requested airport pickup.",
+        "reason": "Replace transport-generated evidence with reviewed hotel controls."
+      },
+      {
+        "old": "Decide whether to release, wait, reroute or activate the approved backup using verified readiness and the stated decision deadline.",
+        "new": "Decide which items are confirmed, conflicting, unverified or possible duplicates; do not cancel a booking or promise an inclusion without authorised verification.",
+        "reason": "Replace transport-generated decision with reviewed hotel controls."
+      },
+      {
+        "old": "Assign the movement owner, obtain the required approval, communicate the plan to the next team and log the change against the service reference.",
+        "new": "Route contract conflicts to Reservations and Sales, billing scope to Finance and pickup confirmation to Transport; record the owner and deadline for each pending item.",
+        "reason": "Replace transport-generated action with reviewed hotel controls."
+      },
+      {
+        "old": "Reconcile the physical count with the movement record, confirm the receiving team’s handover and keep unresolved passengers or tasks open.",
+        "new": "Reconcile the final booking record with approved terms and confirmations, retain the duplicate-review evidence and verify the reservation handover before guest communication.",
+        "reason": "Replace transport-generated verification with reviewed hotel controls."
+      }
+    ],
+    "articles/hotel-workforce-productivity-efficiency/index.html": [
+      {
+        "old": "Check the approved service brief, current passenger count, confirmed vehicle and driver, access conditions, deadlines and activation authority.",
+        "new": "Check departures, stayovers, arrivals, task-time assumptions, paid versus productive hours, breaks, travel, inspections, skills and staff availability.",
+        "reason": "Replace transport-generated evidence with reviewed hotel controls."
+      },
+      {
+        "old": "Decide whether to release, wait, reroute or activate the approved backup using verified readiness and the stated decision deadline.",
+        "new": "Decide whether the proposed staffing covers the full service workload and required skills; 29.5 direct task hours alone cannot determine an eight-hour-shift roster.",
+        "reason": "Replace transport-generated decision with reviewed hotel controls."
+      },
+      {
+        "old": "Assign the movement owner, obtain the required approval, communicate the plan to the next team and log the change against the service reference.",
+        "new": "Build the workload-adjusted staffing plan with approved task standards, non-task time, quality checks and named coverage for remaining gaps.",
+        "reason": "Replace transport-generated action with reviewed hotel controls."
+      },
+      {
+        "old": "Reconcile the physical count with the movement record, confirm the receiving team’s handover and keep unresolved passengers or tasks open.",
+        "new": "Compare planned and actual workload, completed service and inspection quality; review overtime and unmet work before claiming a productivity gain.",
+        "reason": "Replace transport-generated verification with reviewed hotel controls."
+      }
+    ],
+    "articles/workforce-rostering-productivity-ai-toolkit/index.html": [
+      {
+        "old": "Check the approved service brief, current passenger count, confirmed vehicle and driver, access conditions, deadlines and activation authority.",
+        "new": "Check departures, arrivals, stayover demand, task standards, skill coverage, employee availability and approved shift constraints rather than occupancy alone.",
+        "reason": "Replace transport-generated evidence with reviewed hotel controls."
+      },
+      {
+        "old": "Decide whether to release, wait, reroute or activate the approved backup using verified readiness and the stated decision deadline.",
+        "new": "Decide whether the roster can cover the forecast workload and required skills without reducing service quality or overriding applicable employment rules.",
+        "reason": "Replace transport-generated decision with reviewed hotel controls."
+      },
+      {
+        "old": "Assign the movement owner, obtain the required approval, communicate the plan to the next team and log the change against the service reference.",
+        "new": "Prepare the workload-based roster for the authorised reviewer and record coverage gaps, assumptions and agreed contingency arrangements.",
+        "reason": "Replace transport-generated action with reviewed hotel controls."
+      },
+      {
+        "old": "Reconcile the physical count with the movement record, confirm the receiving team’s handover and keep unresolved passengers or tasks open.",
+        "new": "Review actual workload, service completion, quality, overtime and remaining coverage gaps against the approved roster before reporting improved productivity.",
+        "reason": "Replace transport-generated verification with reviewed hotel controls."
+      }
+    ],
+    "articles/standard-communication-templates/index.html": [
+      {
+        "old": "https://www.communications.gov.uk/publication/crisis-comms-planning-guide/",
+        "new": "https://www.communications.gov.uk/publication/stop-crisis-communications-planning-guide/",
+        "reason": "Replace confirmed external 404 with verified official source."
+      }
+    ],
+    "articles/amsterdam-product-discovery-10-seasonality-operating-calendar/index.html": [
+      {
+        "old": "https://www.rijksoverheid.nl/onderwerpen/zomertijd-en-wintertijd/vraag-en-antwoord/wanneer-begint-en-eindigt-de-zomertijd",
+        "new": "https://www.rijksoverheid.nl/vraag-en-antwoord/zomertijd-wintertijd/klok-verzetten-nederland",
+        "reason": "Replace confirmed external 404 with verified official source."
+      }
+    ],
+    "articles/amsterdam-product-discovery-01-research-plan/index.html": [
+      {
+        "old": "https://assets.amsterdam.nl/publish/pages/908914/vision_on_tourism_in_amsterdam_2035_wrt.pdf",
+        "new": "https://www.amsterdam.nl/en/policy/tourism/",
+        "reason": "Replace confirmed external 404 with verified official source."
+      },
+      {
+        "old": "City of Amsterdam — Vision on Tourism in Amsterdam 2035",
+        "new": "City of Amsterdam — tourism policy and Tourism Vision Amsterdam 2035 resources",
+        "reason": "Identify the official policy landing page and its linked vision resources."
+      }
+    ]
+  },
+  "schema_collections": [
+    {
+      "page": "articles/abu-dhabi-mice-operations-series/index.html",
+      "visible_linked_items": 5
+    },
+    {
+      "page": "articles/insights-city-tour-quotation-pricing-masterclass/index.html",
+      "visible_linked_items": 8
+    }
+  ],
+  "source_replacements": [
+    {
+      "page": "articles/standard-communication-templates/index.html",
+      "old": "https://www.communications.gov.uk/publication/crisis-comms-planning-guide/",
+      "new": "https://www.communications.gov.uk/publication/stop-crisis-communications-planning-guide/",
+      "verified_date": "2026-10-08",
+      "basis": "Official page retrieved and reviewed; Amsterdam policy page links the 2035 vision, GCS STOP supports message approvals and templates, Dutch government explains clock changes."
+    },
+    {
+      "page": "articles/amsterdam-product-discovery-10-seasonality-operating-calendar/index.html",
+      "old": "https://www.rijksoverheid.nl/onderwerpen/zomertijd-en-wintertijd/vraag-en-antwoord/wanneer-begint-en-eindigt-de-zomertijd",
+      "new": "https://www.rijksoverheid.nl/vraag-en-antwoord/zomertijd-wintertijd/klok-verzetten-nederland",
+      "verified_date": "2026-10-08",
+      "basis": "Official page retrieved and reviewed; Amsterdam policy page links the 2035 vision, GCS STOP supports message approvals and templates, Dutch government explains clock changes."
+    },
+    {
+      "page": "articles/amsterdam-product-discovery-01-research-plan/index.html",
+      "old": "https://assets.amsterdam.nl/publish/pages/908914/vision_on_tourism_in_amsterdam_2035_wrt.pdf",
+      "new": "https://www.amsterdam.nl/en/policy/tourism/",
+      "verified_date": "2026-10-08",
+      "basis": "Official page retrieved and reviewed; Amsterdam policy page links the 2035 vision, GCS STOP supports message approvals and templates, Dutch government explains clock changes."
+    }
+  ],
+  "legacy_route_decision": "User explicitly selected: Continue other fixes; leave legacy addresses pending.",
+  "changed_pages": [
+    "articles/abu-dhabi-mice-operations-series/index.html",
+    "articles/amsterdam-product-discovery-01-research-plan/index.html",
+    "articles/amsterdam-product-discovery-10-seasonality-operating-calendar/index.html",
+    "articles/hotel-apartment-end-to-end-guest-journey/index.html",
+    "articles/hotel-apartment-operations-control-tower/index.html",
+    "articles/hotel-front-office-ai-toolkit/index.html",
+    "articles/hotel-general-manager-ai-toolkit/index.html",
+    "articles/hotel-guest-experience-quality-management/index.html",
+    "articles/hotel-housekeeping-management-ai-toolkit/index.html",
+    "articles/hotel-housekeeping-quality-control/index.html",
+    "articles/hotel-housekeeping-standardization/index.html",
+    "articles/hotel-operations-planning-daily-control/index.html",
+    "articles/hotel-reservations-ai-toolkit/index.html",
+    "articles/hotel-workforce-productivity-efficiency/index.html",
+    "articles/insights-city-tour-quotation-pricing-masterclass/index.html",
+    "articles/standard-communication-templates/index.html",
+    "articles/workforce-rostering-productivity-ai-toolkit/index.html"
+  ],
+  "reviewed_word_counts": {
+    "/articles/abu-dhabi-mice-operations-series/index.html": 486,
+    "/articles/amsterdam-product-discovery-01-research-plan/index.html": 3786,
+    "/articles/amsterdam-product-discovery-10-seasonality-operating-calendar/index.html": 2748,
+    "/articles/hotel-apartment-end-to-end-guest-journey/index.html": 1032,
+    "/articles/hotel-apartment-operations-control-tower/index.html": 949,
+    "/articles/hotel-front-office-ai-toolkit/index.html": 7517,
+    "/articles/hotel-general-manager-ai-toolkit/index.html": 3377,
+    "/articles/hotel-guest-experience-quality-management/index.html": 935,
+    "/articles/hotel-housekeeping-management-ai-toolkit/index.html": 8307,
+    "/articles/hotel-housekeeping-quality-control/index.html": 1054,
+    "/articles/hotel-housekeeping-standardization/index.html": 923,
+    "/articles/hotel-operations-planning-daily-control/index.html": 956,
+    "/articles/hotel-reservations-ai-toolkit/index.html": 7907,
+    "/articles/hotel-workforce-productivity-efficiency/index.html": 952,
+    "/articles/insights-city-tour-quotation-pricing-masterclass/index.html": 486,
+    "/articles/standard-communication-templates/index.html": 2980,
+    "/articles/workforce-rostering-productivity-ai-toolkit/index.html": 3334
+  }
+}

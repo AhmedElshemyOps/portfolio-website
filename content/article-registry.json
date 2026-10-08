@@ -32,9 +32,9 @@
     "series": "MICE Operations Series",
     "learningPaths": [],
     "readingTime": 2,
-    "wordCount": 177,
+    "wordCount": 486,
     "contentType": "Series index",
-    "updated": "2026-08-22"
+    "updated": "2026-10-08"
   },
   {
     "id": "amsterdam-product-discovery-01-research-plan",
@@ -91,9 +91,9 @@
     "series": "Amsterdam Product Discovery",
     "learningPaths": [],
     "readingTime": 14,
-    "wordCount": 3170,
+    "wordCount": 3786,
     "contentType": "Field guide",
-    "updated": "2026-08-22"
+    "updated": "2026-10-08"
   },
   {
     "id": "amsterdam-product-discovery-02-competitive-landscape",
@@ -555,9 +555,9 @@
     "series": "Amsterdam Product Discovery",
     "learningPaths": [],
     "readingTime": 11,
-    "wordCount": 2345,
+    "wordCount": 2748,
     "contentType": "Field guide",
-    "updated": "2026-08-22"
+    "updated": "2026-10-08"
   },
   {
     "id": "amsterdam-product-discovery-11-mvp-pilot-operational-readiness",
@@ -2260,7 +2260,7 @@
     "type": "Article",
     "contentType": "Field guide",
     "readingTime": 4,
-    "wordCount": 769,
+    "wordCount": 1032,
     "headings": [
       "Designing the End-to-End Guest Journey is a management system, not a checklist",
       "Control the handovers, not only the individual tasks",
@@ -2277,7 +2277,8 @@
     "tags": [
       "Hotel Apartment Operational Excellence"
     ],
-    "learningPaths": []
+    "learningPaths": [],
+    "updated": "2026-10-08"
   },
   {
     "id": "hotel-apartment-extended-stay-ai-toolkit",
@@ -2399,7 +2400,7 @@
     "type": "Article",
     "contentType": "Field guide",
     "readingTime": 4,
-    "wordCount": 706,
+    "wordCount": 949,
     "headings": [
       "The Hotel Apartment Operations Control Tower converts operational signals into controlled decisions",
       "Visibility without control is still operational risk",
@@ -2416,7 +2417,8 @@
     "tags": [
       "Hotel Apartment Operational Excellence"
     ],
-    "learningPaths": []
+    "learningPaths": [],
+    "updated": "2026-10-08"
   },
   {
     "id": "hotel-apartment-preventive-maintenance-strategy",
@@ -2917,9 +2919,9 @@
     "series": "Hotel AI Operations Playbook",
     "learningPaths": [],
     "readingTime": 24,
-    "wordCount": 6903,
+    "wordCount": 7517,
     "contentType": "Field guide",
-    "updated": "2026-10-06"
+    "updated": "2026-10-08"
   },
   {
     "id": "hotel-general-manager-ai-toolkit",
@@ -2932,7 +2934,7 @@
     "type": "Article",
     "contentType": "Field guide",
     "readingTime": 15,
-    "wordCount": 3206,
+    "wordCount": 3377,
     "headings": [
       "The GM operates across systems",
       "Fictional 60-unit UAE case",
@@ -2946,7 +2948,8 @@
     "tags": [
       "Hotel AI Operations Playbook"
     ],
-    "learningPaths": []
+    "learningPaths": [],
+    "updated": "2026-10-08"
   },
   {
     "id": "hotel-guest-complaint-service-recovery-ai-toolkit",
@@ -3064,7 +3067,7 @@
     "type": "Article",
     "contentType": "Field guide",
     "readingTime": 4,
-    "wordCount": 703,
+    "wordCount": 935,
     "headings": [
       "Guest Experience Quality Management converts operational signals into controlled decisions",
       "Visibility without control is still operational risk",
@@ -3081,7 +3084,8 @@
     "tags": [
       "Hotel Apartment Operational Excellence"
     ],
-    "learningPaths": []
+    "learningPaths": [],
+    "updated": "2026-10-08"
   },
   {
     "id": "hotel-housekeeping-management-ai-toolkit",
@@ -3128,9 +3132,9 @@
     "series": "Hotel AI Operations Playbook",
     "learningPaths": [],
     "readingTime": 28,
-    "wordCount": 7118,
+    "wordCount": 8307,
     "contentType": "Field guide",
-    "updated": "2026-10-06"
+    "updated": "2026-10-08"
   },
   {
     "id": "hotel-housekeeping-quality-control",
@@ -3143,7 +3147,7 @@
     "type": "Article",
     "contentType": "Field guide",
     "readingTime": 4,
-    "wordCount": 784,
+    "wordCount": 1054,
     "headings": [
       "Housekeeping Quality Control is a management system, not a checklist",
       "Control the handovers, not only the individual tasks",
@@ -3160,7 +3164,8 @@
     "tags": [
       "Hotel Apartment Operational Excellence"
     ],
-    "learningPaths": []
+    "learningPaths": [],
+    "updated": "2026-10-08"
   },
   {
     "id": "hotel-housekeeping-standardization",
@@ -3173,7 +3178,7 @@
     "type": "Article",
     "contentType": "Field guide",
     "readingTime": 4,
-    "wordCount": 698,
+    "wordCount": 923,
     "headings": [
       "Housekeeping Standardization starts with a controlled operating definition",
       "Local optimization can damage the whole operation",
@@ -3190,7 +3195,8 @@
     "tags": [
       "Hotel Apartment Operational Excellence"
     ],
-    "learningPaths": []
+    "learningPaths": [],
+    "updated": "2026-10-08"
   },
   {
     "id": "hotel-inventory-par-level-management",
@@ -3478,7 +3484,7 @@
     "type": "Article",
     "contentType": "Field guide",
     "readingTime": 4,
-    "wordCount": 708,
+    "wordCount": 956,
     "headings": [
       "Operations Planning & Daily Control converts operational signals into controlled decisions",
       "Visibility without control is still operational risk",
@@ -3495,7 +3501,8 @@
     "tags": [
       "Hotel Apartment Operational Excellence"
     ],
-    "learningPaths": []
+    "learningPaths": [],
+    "updated": "2026-10-08"
   },
   {
     "id": "hotel-ota-distribution-review-management-ai-toolkit",
@@ -3815,9 +3822,9 @@
     "series": "Hotel AI Operations Playbook",
     "learningPaths": [],
     "readingTime": 27,
-    "wordCount": 6977,
+    "wordCount": 7907,
     "contentType": "Field guide",
-    "updated": "2026-10-06"
+    "updated": "2026-10-08"
   },
   {
     "id": "hotel-revenue-management-ai-toolkit",
@@ -3962,7 +3969,7 @@
     "type": "Article",
     "contentType": "Field guide",
     "readingTime": 4,
-    "wordCount": 723,
+    "wordCount": 952,
     "headings": [
       "Productivity & Workforce Efficiency starts with a controlled operating definition",
       "Local optimization can damage the whole operation",
@@ -3979,7 +3986,8 @@
     "tags": [
       "Hotel Apartment Operational Excellence"
     ],
-    "learningPaths": []
+    "learningPaths": [],
+    "updated": "2026-10-08"
   },
   {
     "id": "how-to-audit-an-sop",
@@ -4207,9 +4215,9 @@
     "series": "Tour Quotation",
     "learningPaths": [],
     "readingTime": 2,
-    "wordCount": 367,
+    "wordCount": 486,
     "contentType": "Series index",
-    "updated": "2026-08-22"
+    "updated": "2026-10-08"
   },
   {
     "id": "integrated-sop-creation-model",
@@ -5036,9 +5044,9 @@
     "series": "Tourism Operations Excellence",
     "learningPaths": [],
     "readingTime": 11,
-    "wordCount": 2705,
+    "wordCount": 2980,
     "contentType": "Field guide",
-    "updated": "2026-08-22"
+    "updated": "2026-10-08"
   },
   {
     "id": "standard-test-procedures-tourism-operations",
@@ -5837,7 +5845,7 @@
     "type": "Article",
     "contentType": "Field guide",
     "readingTime": 15,
-    "wordCount": 3230,
+    "wordCount": 3334,
     "headings": [
       "Workforce planning starts with demand",
       "Fictional 60-unit UAE case",
@@ -5851,7 +5859,8 @@
     "tags": [
       "Hotel AI Operations Playbook"
     ],
-    "learningPaths": []
+    "learningPaths": [],
+    "updated": "2026-10-08"
   },
   {
     "id": "amsterdam-product-discovery",

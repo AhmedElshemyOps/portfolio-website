@@ -8,4 +8,6 @@ Legacy recovery is prepared in legacy-url-recovery-map.json. Do not run restore_
 
 Run audit_seo.py for a read-only HTTP inventory, build_search_feeds.py for deterministic XML, render_shared.py --check for shared-component drift, and the SEO regression tests before publishing. The private A–J report, page plan, scorecard, external-link evidence and dashboard are kept in the workspace outputs/seo-geo-audit directory, outside the published repository.
 
-Remaining: legacy recovery approval; public-template policy; contextual hotel example review; three external 404 references; breadcrumb/collection schema review; dedicated social images; actual Search Console/Bing/GA4/CrUX access and recorded AI citation samples. No rankings or traffic metrics were inferred.
+Second batch: 12 reviewed hotel scenario controls, three official reference replacements and two CollectionPage schemas. The exact body fragments and preserved original publication dates are recorded in editorial-batch-manifest.json. The owner explicitly chose to leave legacy restoration pending on 8 October 2026. Four editorial regression tests check unchanged routes/indexing/canonicals, prompt/publication-date preservation, collection links and illustrative property controls.
+
+Remaining: deferred legacy recovery; public-template policy; broader claim-level editorial review; breadcrumb navigation review; dedicated social images; actual Search Console/Bing/GA4/CrUX access and recorded AI citation samples. No rankings or traffic metrics were inferred.
