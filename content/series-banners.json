@@ -1,0 +1,1372 @@
+{
+  "designs": {
+    "ai-hotel-apartments": {
+      "label": "AI for Hotel Apartments",
+      "option": "A",
+      "background": "/assets/series-banners/ai-hotel-apartments.webp",
+      "master": "/assets/series-banners/ai-hotel-apartments-master.webp"
+    },
+    "hotel-apartment-excellence": {
+      "label": "Hotel Apartment Operational Excellence",
+      "option": "B",
+      "background": "/assets/series-banners/hotel-apartment-excellence.webp",
+      "master": "/assets/series-banners/hotel-apartment-excellence-master.webp"
+    },
+    "amsterdam-product-discovery": {
+      "label": "Amsterdam Product Discovery",
+      "option": "B",
+      "background": "/assets/series-banners/amsterdam-product-discovery.webp",
+      "master": "/assets/series-banners/amsterdam-product-discovery-master.webp"
+    },
+    "tourism-operations-excellence": {
+      "label": "Travel and Tourism Operations Excellence",
+      "option": "A",
+      "background": "/assets/series-banners/tourism-operations-excellence.webp",
+      "master": "/assets/series-banners/tourism-operations-excellence-master.webp"
+    },
+    "ai-tourism-operations": {
+      "label": "AI for Travel and Tourism Operations",
+      "option": "B",
+      "background": "/assets/series-banners/ai-tourism-operations.webp",
+      "master": "/assets/series-banners/ai-tourism-operations-master.webp"
+    },
+    "tour-quotation": {
+      "label": "Tour Quotation and Pricing",
+      "option": "C",
+      "background": "/assets/series-banners/tour-quotation.webp",
+      "master": "/assets/series-banners/tour-quotation-master.webp"
+    },
+    "mice-operations": {
+      "label": "MICE and Event Operations",
+      "option": "B",
+      "background": "/assets/series-banners/mice-operations.webp",
+      "master": "/assets/series-banners/mice-operations-master.webp"
+    },
+    "operations-systems": {
+      "label": "Travel Operations Systems",
+      "option": "A",
+      "background": "/assets/series-banners/operations-systems.webp",
+      "master": "/assets/series-banners/operations-systems-master.webp"
+    }
+  },
+  "articles": [
+    {
+      "url": "/articles/abu-dhabi-mice-operations-series/index.html",
+      "title": "Abu Dhabi MICE Operations in Practice",
+      "design": "mice-operations",
+      "option": "B",
+      "series": "MICE and Event Operations",
+      "number": null,
+      "kind": "Series overview"
+    },
+    {
+      "url": "/articles/amsterdam-product-discovery-01-research-plan/index.html",
+      "title": "Amsterdam Tourism Product Research Plan",
+      "design": "amsterdam-product-discovery",
+      "option": "B",
+      "series": "Amsterdam Product Discovery",
+      "number": 1,
+      "kind": "Article",
+      "total": 12
+    },
+    {
+      "url": "/articles/amsterdam-product-discovery-02-competitive-landscape/index.html",
+      "title": "What Is Amsterdam Already Selling? Mapping the OTA and Competitive Tourism Product Landscape",
+      "design": "amsterdam-product-discovery",
+      "option": "B",
+      "series": "Amsterdam Product Discovery",
+      "number": 2,
+      "kind": "Article",
+      "total": 12
+    },
+    {
+      "url": "/articles/amsterdam-product-discovery-03-market-gap/index.html",
+      "title": "Finding the Amsterdam Tourism Market Gap",
+      "design": "amsterdam-product-discovery",
+      "option": "B",
+      "series": "Amsterdam Product Discovery",
+      "number": 3,
+      "kind": "Article",
+      "total": 12
+    },
+    {
+      "url": "/articles/amsterdam-product-discovery-04-voice-of-customer/index.html",
+      "title": "What Visitors Really Want: Mining Amsterdam Reviews and Voice of Customer",
+      "design": "amsterdam-product-discovery",
+      "option": "B",
+      "series": "Amsterdam Product Discovery",
+      "number": 4,
+      "kind": "Article",
+      "total": 12
+    },
+    {
+      "url": "/articles/amsterdam-product-discovery-05-segmentation-language/index.html",
+      "title": "Who Should We Build It For? Source Markets, Segmentation, Language and Customer Jobs",
+      "design": "amsterdam-product-discovery",
+      "option": "B",
+      "series": "Amsterdam Product Discovery",
+      "number": 5,
+      "kind": "Article",
+      "total": 12
+    },
+    {
+      "url": "/articles/amsterdam-product-discovery-06-destination-geography/index.html",
+      "title": "Where Should the Experience Happen? Attraction Intelligence, Geography and Destination Fit",
+      "design": "amsterdam-product-discovery",
+      "option": "B",
+      "series": "Amsterdam Product Discovery",
+      "number": 6,
+      "kind": "Article",
+      "total": 12
+    },
+    {
+      "url": "/articles/amsterdam-product-discovery-07-product-requirements-concept/index.html",
+      "title": "Amsterdam Product Requirements and Signature Concept",
+      "design": "amsterdam-product-discovery",
+      "option": "B",
+      "series": "Amsterdam Product Discovery",
+      "number": 7,
+      "kind": "Article",
+      "total": 12
+    },
+    {
+      "url": "/articles/amsterdam-product-discovery-08-commercial-model-unit-economics/index.html",
+      "title": "Will the Product Make Money? Pricing, Distribution, Capacity and Tourism Unit Economics",
+      "design": "amsterdam-product-discovery",
+      "option": "B",
+      "series": "Amsterdam Product Discovery",
+      "number": 8,
+      "kind": "Article",
+      "total": 12
+    },
+    {
+      "url": "/articles/amsterdam-product-discovery-09-risk-responsibility/index.html",
+      "title": "Can We Operate It Responsibly? Regulation, Accessibility, Sustainability and Product Risk",
+      "design": "amsterdam-product-discovery",
+      "option": "B",
+      "series": "Amsterdam Product Discovery",
+      "number": 9,
+      "kind": "Article",
+      "total": 12
+    },
+    {
+      "url": "/articles/amsterdam-product-discovery-10-seasonality-operating-calendar/index.html",
+      "title": "When Should the Tour Run? Demand, Weather, Seasonality and the Amsterdam Operating Calendar",
+      "design": "amsterdam-product-discovery",
+      "option": "B",
+      "series": "Amsterdam Product Discovery",
+      "number": 10,
+      "kind": "Article",
+      "total": 12
+    },
+    {
+      "url": "/articles/amsterdam-product-discovery-11-mvp-pilot-operational-readiness/index.html",
+      "title": "From Spreadsheet to Street: MVP, Pilot Launch and Operational Readiness",
+      "design": "amsterdam-product-discovery",
+      "option": "B",
+      "series": "Amsterdam Product Discovery",
+      "number": 11,
+      "kind": "Article",
+      "total": 12
+    },
+    {
+      "url": "/articles/amsterdam-product-discovery-12-product-analytics-scale-decision/index.html",
+      "title": "After the First Guests: Product Analytics, Continuous Improvement and the Scale Decision",
+      "design": "amsterdam-product-discovery",
+      "option": "B",
+      "series": "Amsterdam Product Discovery",
+      "number": 12,
+      "kind": "Article",
+      "total": 12
+    },
+    {
+      "url": "/articles/article-abu-dhabi-mice-movement-control-room/index.html",
+      "title": "The Abu Dhabi MICE Movement Control Room",
+      "design": "mice-operations",
+      "option": "B",
+      "series": "MICE and Event Operations",
+      "number": 1,
+      "kind": "Article",
+      "total": 5
+    },
+    {
+      "url": "/articles/article-air-connectivity-dmc-market-intelligence/index.html",
+      "title": "Before the Flight Lands: How Smart DMCs Use Air Connectivity to Predict the Next Guest Market",
+      "design": "amsterdam-product-discovery",
+      "option": "B",
+      "series": "Market Intelligence",
+      "number": null,
+      "kind": "Field guide"
+    },
+    {
+      "url": "/articles/article-assignment-engine-dmc-operations/index.html",
+      "title": "The Assignment Engine: How DMC Operations Managers Put the Right Person in the Right Operation",
+      "design": "operations-systems",
+      "option": "A",
+      "series": "Travel Operations Systems",
+      "number": 1,
+      "kind": "Article",
+      "total": 2
+    },
+    {
+      "url": "/articles/article-city-tour-quotation-professional/index.html",
+      "title": "How to Quote a City Tour Professionally for DMCs",
+      "design": "tour-quotation",
+      "option": "C",
+      "series": "Tour Quotation and Pricing",
+      "number": 1,
+      "kind": "Article",
+      "total": 7
+    },
+    {
+      "url": "/articles/article-destination-experience-journey-map/index.html",
+      "title": "From Airport Arrival to Final Farewell | Destination Experience Journey Map",
+      "design": "tourism-operations-excellence",
+      "option": "A",
+      "series": "Destination Experience",
+      "number": null,
+      "kind": "Field guide"
+    },
+    {
+      "url": "/articles/article-fixed-variable-costs-city-tour-pricing/index.html",
+      "title": "Fixed vs Variable Costs in Tour Pricing",
+      "design": "tour-quotation",
+      "option": "C",
+      "series": "Tour Quotation and Pricing",
+      "number": 2,
+      "kind": "Article",
+      "total": 7
+    },
+    {
+      "url": "/articles/article-fleet-control-tower-operations-dashboard/index.html",
+      "title": "The Fleet Control Tower: What Operations Managers Should See on One Screen",
+      "design": "operations-systems",
+      "option": "A",
+      "series": "Travel Operations Systems",
+      "number": 2,
+      "kind": "Article",
+      "total": 2
+    },
+    {
+      "url": "/articles/article-mice-arrival-waves-zayed-international-airport/index.html",
+      "title": "Before the Delegate Reaches the Hotel",
+      "design": "mice-operations",
+      "option": "B",
+      "series": "MICE and Event Operations",
+      "number": 2,
+      "kind": "Article",
+      "total": 5
+    },
+    {
+      "url": "/articles/article-mice-backup-operations-service-recovery-abu-dhabi/index.html",
+      "title": "When the MICE Plan Changes",
+      "design": "mice-operations",
+      "option": "B",
+      "series": "MICE and Event Operations",
+      "number": 5,
+      "kind": "Article",
+      "total": 5
+    },
+    {
+      "url": "/articles/article-mice-hotel-desks-coach-departures-abu-dhabi/index.html",
+      "title": "From Hotel Lobby to Coach Door",
+      "design": "mice-operations",
+      "option": "B",
+      "series": "MICE and Event Operations",
+      "number": 3,
+      "kind": "Article",
+      "total": 5
+    },
+    {
+      "url": "/articles/article-mice-venue-arrivals-registration-abu-dhabi/index.html",
+      "title": "From Coach Bay to Conference Seat",
+      "design": "mice-operations",
+      "option": "B",
+      "series": "MICE and Event Operations",
+      "number": 4,
+      "kind": "Article",
+      "total": 5
+    },
+    {
+      "url": "/articles/article-net-cost-selling-price-markup/index.html",
+      "title": "Net Cost, Selling Price, Markup and Margin",
+      "design": "tour-quotation",
+      "option": "C",
+      "series": "Tour Quotation and Pricing",
+      "number": 3,
+      "kind": "Article",
+      "total": 7
+    },
+    {
+      "url": "/articles/article-participant-estimation-break-even-risk/index.html",
+      "title": "Participant Estimation and Break-Even Risk",
+      "design": "tour-quotation",
+      "option": "C",
+      "series": "Tour Quotation and Pricing",
+      "number": 4,
+      "kind": "Article",
+      "total": 7
+    },
+    {
+      "url": "/articles/article-professional-client-tour-quotation/index.html",
+      "title": "Professional Client Tour Quotation",
+      "design": "tour-quotation",
+      "option": "C",
+      "series": "Tour Quotation and Pricing",
+      "number": 7,
+      "kind": "Article",
+      "total": 7
+    },
+    {
+      "url": "/articles/article-rfi-rfq-rfp-erfp-nda-tourism-sales/index.html",
+      "title": "From Partnership Introduction to Confirmed Group: A Real-Life DMC Sales Scenario",
+      "design": "tour-quotation",
+      "option": "C",
+      "series": "DMC Sales",
+      "number": null,
+      "kind": "Field guide"
+    },
+    {
+      "url": "/articles/article-tour-cost-worksheet-city-tour/index.html",
+      "title": "Tour Cost Worksheet for City Tours",
+      "design": "tour-quotation",
+      "option": "C",
+      "series": "Tour Quotation and Pricing",
+      "number": 5,
+      "kind": "Article",
+      "total": 7
+    },
+    {
+      "url": "/articles/article-tour-guide-quality-index/index.html",
+      "title": "Tour Guide Quality Index",
+      "design": "tourism-operations-excellence",
+      "option": "A",
+      "series": "Service Quality",
+      "number": null,
+      "kind": "Field guide"
+    },
+    {
+      "url": "/articles/article-tour-guide-storytelling-system/index.html",
+      "title": "Beyond the Script: How Great Tour Guides Turn Key Facts into Experiences Guests Remember",
+      "design": "tourism-operations-excellence",
+      "option": "A",
+      "series": "Guide Quality",
+      "number": null,
+      "kind": "Field guide"
+    },
+    {
+      "url": "/articles/article-tourism-operations-roles-real-difference/index.html",
+      "title": "Tourism Operations Roles: Responsibilities and Differences",
+      "design": "tourism-operations-excellence",
+      "option": "A",
+      "series": "Tourism Roles",
+      "number": null,
+      "kind": "Field guide"
+    },
+    {
+      "url": "/articles/article-transport-tickets-vat-gratuities/index.html",
+      "title": "Transport, Tickets, VAT and Gratuities in Tour Quotation",
+      "design": "tour-quotation",
+      "option": "C",
+      "series": "Tour Quotation and Pricing",
+      "number": 6,
+      "kind": "Article",
+      "total": 7
+    },
+    {
+      "url": "/articles/capa-tourism-operations/index.html",
+      "title": "CAPA: Corrective and Preventive Action in Tourism",
+      "design": "tourism-operations-excellence",
+      "option": "A",
+      "series": "Travel and Tourism Operations Excellence",
+      "number": 27,
+      "kind": "Article",
+      "total": 33
+    },
+    {
+      "url": "/articles/customer-journey-mapping-sop-design/index.html",
+      "title": "How to Apply Customer Journey Mapping to SOP Design",
+      "design": "tourism-operations-excellence",
+      "option": "A",
+      "series": "Travel and Tourism Operations Excellence",
+      "number": 9,
+      "kind": "Article",
+      "total": 33
+    },
+    {
+      "url": "/articles/dmc-operations-ai-prompts/index.html",
+      "title": "The DMC Operations AI Toolkit: 10 Ready-to-Use Prompts for Daily Tour Operations",
+      "design": "ai-tourism-operations",
+      "option": "B",
+      "series": "AI for Travel and Tourism Operations",
+      "number": 3,
+      "kind": "Article",
+      "total": 10
+    },
+    {
+      "url": "/articles/document-control-version-management-tourism/index.html",
+      "title": "Document Control & Version Management",
+      "design": "tourism-operations-excellence",
+      "option": "A",
+      "series": "Travel and Tourism Operations Excellence",
+      "number": 25,
+      "kind": "Article",
+      "total": 33
+    },
+    {
+      "url": "/articles/front-line-tourism-ai-toolkit/index.html",
+      "title": "Front-Line Tourism AI Toolkit",
+      "design": "ai-tourism-operations",
+      "option": "B",
+      "series": "AI for Travel and Tourism Operations",
+      "number": 2,
+      "kind": "Article",
+      "total": 10
+    },
+    {
+      "url": "/articles/guest-experience-ai-prompts/index.html",
+      "title": "The Guest Experience AI Toolkit: 10 Prompts for Communication, Complaints, and Service Recovery",
+      "design": "ai-tourism-operations",
+      "option": "B",
+      "series": "AI for Travel and Tourism Operations",
+      "number": 8,
+      "kind": "Article",
+      "total": 10
+    },
+    {
+      "url": "/articles/guest-ready-apartment-standard/index.html",
+      "title": "The Guest-Ready Apartment Standard",
+      "design": "hotel-apartment-excellence",
+      "option": "B",
+      "series": "Hotel Apartment Operational Excellence",
+      "number": 3,
+      "kind": "Article",
+      "total": 26
+    },
+    {
+      "url": "/articles/hotel-ai-prompting-framework/index.html",
+      "title": "The HOTEL Prompting Framework",
+      "design": "ai-hotel-apartments",
+      "option": "A",
+      "series": "AI for Hotel Apartments",
+      "number": 1,
+      "kind": "Article",
+      "total": 26
+    },
+    {
+      "url": "/articles/hotel-apartment-asset-lifecycle-management/index.html",
+      "title": "Asset Lifecycle Management",
+      "design": "hotel-apartment-excellence",
+      "option": "B",
+      "series": "Hotel Apartment Operational Excellence",
+      "number": 10,
+      "kind": "Article",
+      "total": 26
+    },
+    {
+      "url": "/articles/hotel-apartment-cost-of-poor-quality/index.html",
+      "title": "The Cost of Poor Quality",
+      "design": "hotel-apartment-excellence",
+      "option": "B",
+      "series": "Hotel Apartment Operational Excellence",
+      "number": 8,
+      "kind": "Article",
+      "total": 26
+    },
+    {
+      "url": "/articles/hotel-apartment-end-to-end-guest-journey/index.html",
+      "title": "Designing the End-to-End Guest Journey",
+      "design": "hotel-apartment-excellence",
+      "option": "B",
+      "series": "Hotel Apartment Operational Excellence",
+      "number": 7,
+      "kind": "Article",
+      "total": 26
+    },
+    {
+      "url": "/articles/hotel-apartment-extended-stay-ai-toolkit/index.html",
+      "title": "Hotel Apartment & Extended-Stay AI Toolkit",
+      "design": "ai-hotel-apartments",
+      "option": "A",
+      "series": "AI for Hotel Apartments",
+      "number": 5,
+      "kind": "Article",
+      "total": 26
+    },
+    {
+      "url": "/articles/hotel-apartment-kpi-architecture/index.html",
+      "title": "Hotel Apartment KPI Architecture",
+      "design": "hotel-apartment-excellence",
+      "option": "B",
+      "series": "Hotel Apartment Operational Excellence",
+      "number": 22,
+      "kind": "Article",
+      "total": 26
+    },
+    {
+      "url": "/articles/hotel-apartment-operating-system/index.html",
+      "title": "Building the Hotel Apartment Operating System",
+      "design": "hotel-apartment-excellence",
+      "option": "B",
+      "series": "Hotel Apartment Operational Excellence",
+      "number": 1,
+      "kind": "Article",
+      "total": 26
+    },
+    {
+      "url": "/articles/hotel-apartment-operations-control-tower/index.html",
+      "title": "The Hotel Apartment Operations Control Tower",
+      "design": "hotel-apartment-excellence",
+      "option": "B",
+      "series": "Hotel Apartment Operational Excellence",
+      "number": 25,
+      "kind": "Article",
+      "total": 26
+    },
+    {
+      "url": "/articles/hotel-apartment-preventive-maintenance-strategy/index.html",
+      "title": "Preventive Maintenance Strategy for Hotel Apartments",
+      "design": "hotel-apartment-excellence",
+      "option": "B",
+      "series": "Hotel Apartment Operational Excellence",
+      "number": 2,
+      "kind": "Article",
+      "total": 26
+    },
+    {
+      "url": "/articles/hotel-apartment-sop-architecture/index.html",
+      "title": "SOP Architecture for Hotel Apartments",
+      "design": "hotel-apartment-excellence",
+      "option": "B",
+      "series": "Hotel Apartment Operational Excellence",
+      "number": 9,
+      "kind": "Article",
+      "total": 26
+    },
+    {
+      "url": "/articles/hotel-apartment-total-cost-of-ownership/index.html",
+      "title": "Total Cost of Ownership (TCO)",
+      "design": "hotel-apartment-excellence",
+      "option": "B",
+      "series": "Hotel Apartment Operational Excellence",
+      "number": 11,
+      "kind": "Article",
+      "total": 26
+    },
+    {
+      "url": "/articles/hotel-complaint-root-cause-analysis/index.html",
+      "title": "Complaint Root-Cause Analysis",
+      "design": "hotel-apartment-excellence",
+      "option": "B",
+      "series": "Hotel Apartment Operational Excellence",
+      "number": 5,
+      "kind": "Article",
+      "total": 26
+    },
+    {
+      "url": "/articles/hotel-control-tower-ai-decision-support-toolkit/index.html",
+      "title": "Hotel Apartment Control Tower & AI Decision-Support Toolkit",
+      "design": "ai-hotel-apartments",
+      "option": "A",
+      "series": "AI for Hotel Apartments",
+      "number": 25,
+      "kind": "Article",
+      "total": 26
+    },
+    {
+      "url": "/articles/hotel-critical-spare-parts-management/index.html",
+      "title": "Critical Spare Parts Management",
+      "design": "hotel-apartment-excellence",
+      "option": "B",
+      "series": "Hotel Apartment Operational Excellence",
+      "number": 19,
+      "kind": "Article",
+      "total": 26
+    },
+    {
+      "url": "/articles/hotel-downtime-out-of-service-management/index.html",
+      "title": "Downtime & Out-of-Service Management",
+      "design": "hotel-apartment-excellence",
+      "option": "B",
+      "series": "Hotel Apartment Operational Excellence",
+      "number": 21,
+      "kind": "Article",
+      "total": 26
+    },
+    {
+      "url": "/articles/hotel-economics-of-service-failure/index.html",
+      "title": "The Economics of Service Failure",
+      "design": "hotel-apartment-excellence",
+      "option": "B",
+      "series": "Hotel Apartment Operational Excellence",
+      "number": 13,
+      "kind": "Article",
+      "total": 26
+    },
+    {
+      "url": "/articles/hotel-energy-utility-management-ai-toolkit/index.html",
+      "title": "Energy & Utility Management AI Toolkit",
+      "design": "ai-hotel-apartments",
+      "option": "A",
+      "series": "AI for Hotel Apartments",
+      "number": 15,
+      "kind": "Article",
+      "total": 26
+    },
+    {
+      "url": "/articles/hotel-engineering-maintenance-ai-toolkit/index.html",
+      "title": "Engineering & Maintenance AI Toolkit",
+      "design": "ai-hotel-apartments",
+      "option": "A",
+      "series": "AI for Hotel Apartments",
+      "number": 7,
+      "kind": "Article",
+      "total": 26
+    },
+    {
+      "url": "/articles/hotel-esg-sustainability-ai-toolkit/index.html",
+      "title": "Hotel Apartment ESG & Sustainability AI Toolkit",
+      "design": "ai-hotel-apartments",
+      "option": "A",
+      "series": "AI for Hotel Apartments",
+      "number": 14,
+      "kind": "Article",
+      "total": 26
+    },
+    {
+      "url": "/articles/hotel-finance-cost-control-ai-toolkit/index.html",
+      "title": "Hotel Apartment Finance & Cost-Control AI Toolkit",
+      "design": "ai-hotel-apartments",
+      "option": "A",
+      "series": "AI for Hotel Apartments",
+      "number": 21,
+      "kind": "Article",
+      "total": 26
+    },
+    {
+      "url": "/articles/hotel-first-time-right-operations/index.html",
+      "title": "First-Time-Right Operations",
+      "design": "hotel-apartment-excellence",
+      "option": "B",
+      "series": "Hotel Apartment Operational Excellence",
+      "number": 14,
+      "kind": "Article",
+      "total": 26
+    },
+    {
+      "url": "/articles/hotel-front-office-ai-toolkit/index.html",
+      "title": "Front Office AI Toolkit",
+      "design": "ai-hotel-apartments",
+      "option": "A",
+      "series": "AI for Hotel Apartments",
+      "number": 3,
+      "kind": "Article",
+      "total": 26
+    },
+    {
+      "url": "/articles/hotel-general-manager-ai-toolkit/index.html",
+      "title": "Hotel Apartment General Manager AI Toolkit",
+      "design": "ai-hotel-apartments",
+      "option": "A",
+      "series": "AI for Hotel Apartments",
+      "number": 24,
+      "kind": "Article",
+      "total": 26
+    },
+    {
+      "url": "/articles/hotel-guest-complaint-service-recovery-ai-toolkit/index.html",
+      "title": "Guest Complaint & Service Recovery AI Toolkit",
+      "design": "ai-hotel-apartments",
+      "option": "A",
+      "series": "AI for Hotel Apartments",
+      "number": 10,
+      "kind": "Article",
+      "total": 26
+    },
+    {
+      "url": "/articles/hotel-guest-experience-ai-toolkit/index.html",
+      "title": "Guest Experience AI Toolkit",
+      "design": "ai-hotel-apartments",
+      "option": "A",
+      "series": "AI for Hotel Apartments",
+      "number": 9,
+      "kind": "Article",
+      "total": 26
+    },
+    {
+      "url": "/articles/hotel-guest-experience-quality-management/index.html",
+      "title": "Guest Experience Quality Management",
+      "design": "hotel-apartment-excellence",
+      "option": "B",
+      "series": "Hotel Apartment Operational Excellence",
+      "number": 24,
+      "kind": "Article",
+      "total": 26
+    },
+    {
+      "url": "/articles/hotel-housekeeping-management-ai-toolkit/index.html",
+      "title": "Housekeeping Management AI Toolkit",
+      "design": "ai-hotel-apartments",
+      "option": "A",
+      "series": "AI for Hotel Apartments",
+      "number": 6,
+      "kind": "Article",
+      "total": 26
+    },
+    {
+      "url": "/articles/hotel-housekeeping-quality-control/index.html",
+      "title": "Housekeeping Quality Control",
+      "design": "hotel-apartment-excellence",
+      "option": "B",
+      "series": "Hotel Apartment Operational Excellence",
+      "number": 6,
+      "kind": "Article",
+      "total": 26
+    },
+    {
+      "url": "/articles/hotel-housekeeping-standardization/index.html",
+      "title": "Housekeeping Standardization",
+      "design": "hotel-apartment-excellence",
+      "option": "B",
+      "series": "Hotel Apartment Operational Excellence",
+      "number": 17,
+      "kind": "Article",
+      "total": 26
+    },
+    {
+      "url": "/articles/hotel-inventory-par-level-management/index.html",
+      "title": "Inventory & PAR Level Management",
+      "design": "hotel-apartment-excellence",
+      "option": "B",
+      "series": "Hotel Apartment Operational Excellence",
+      "number": 16,
+      "kind": "Article",
+      "total": 26
+    },
+    {
+      "url": "/articles/hotel-inventory-par-management-ai-toolkit/index.html",
+      "title": "Hotel Apartment Inventory & PAR Management AI Toolkit",
+      "design": "ai-hotel-apartments",
+      "option": "A",
+      "series": "AI for Hotel Apartments",
+      "number": 17,
+      "kind": "Article",
+      "total": 26
+    },
+    {
+      "url": "/articles/hotel-kpi-dashboard-ai-toolkit/index.html",
+      "title": "Hotel Apartment KPI & Dashboard AI Toolkit",
+      "design": "ai-hotel-apartments",
+      "option": "A",
+      "series": "AI for Hotel Apartments",
+      "number": 22,
+      "kind": "Article",
+      "total": 26
+    },
+    {
+      "url": "/articles/hotel-lean-six-sigma-ai-toolkit/index.html",
+      "title": "Lean Six Sigma for Hotel Apartment Operations AI Toolkit",
+      "design": "ai-hotel-apartments",
+      "option": "A",
+      "series": "AI for Hotel Apartments",
+      "number": 13,
+      "kind": "Article",
+      "total": 26
+    },
+    {
+      "url": "/articles/hotel-maintenance-work-order-management/index.html",
+      "title": "Maintenance Control & Work Order Management",
+      "design": "hotel-apartment-excellence",
+      "option": "B",
+      "series": "Hotel Apartment Operational Excellence",
+      "number": 4,
+      "kind": "Article",
+      "total": 26
+    },
+    {
+      "url": "/articles/hotel-operational-excellence-maturity-model/index.html",
+      "title": "Operational Excellence Maturity Model",
+      "design": "hotel-apartment-excellence",
+      "option": "B",
+      "series": "Hotel Apartment Operational Excellence",
+      "number": 26,
+      "kind": "Article",
+      "total": 26
+    },
+    {
+      "url": "/articles/hotel-operations-manager-ai-toolkit/index.html",
+      "title": "Hotel Apartment Operations Manager AI Toolkit",
+      "design": "ai-hotel-apartments",
+      "option": "A",
+      "series": "AI for Hotel Apartments",
+      "number": 2,
+      "kind": "Article",
+      "total": 26
+    },
+    {
+      "url": "/articles/hotel-operations-planning-daily-control/index.html",
+      "title": "Operations Planning & Daily Control",
+      "design": "hotel-apartment-excellence",
+      "option": "B",
+      "series": "Hotel Apartment Operational Excellence",
+      "number": 20,
+      "kind": "Article",
+      "total": 26
+    },
+    {
+      "url": "/articles/hotel-ota-distribution-review-management-ai-toolkit/index.html",
+      "title": "Hotel Apartment OTA, Distribution & Review Management AI Toolkit",
+      "design": "ai-hotel-apartments",
+      "option": "A",
+      "series": "AI for Hotel Apartments",
+      "number": 20,
+      "kind": "Article",
+      "total": 26
+    },
+    {
+      "url": "/articles/hotel-predictive-maintenance-ai-toolkit/index.html",
+      "title": "Predictive Maintenance AI Toolkit",
+      "design": "ai-hotel-apartments",
+      "option": "A",
+      "series": "AI for Hotel Apartments",
+      "number": 8,
+      "kind": "Article",
+      "total": 26
+    },
+    {
+      "url": "/articles/hotel-preventive-maintenance-kpis/index.html",
+      "title": "Preventive Maintenance KPIs",
+      "design": "hotel-apartment-excellence",
+      "option": "B",
+      "series": "Hotel Apartment Operational Excellence",
+      "number": 12,
+      "kind": "Article",
+      "total": 26
+    },
+    {
+      "url": "/articles/hotel-procurement-ai-toolkit/index.html",
+      "title": "Hotel Apartment Procurement AI Toolkit",
+      "design": "ai-hotel-apartments",
+      "option": "A",
+      "series": "AI for Hotel Apartments",
+      "number": 16,
+      "kind": "Article",
+      "total": 26
+    },
+    {
+      "url": "/articles/hotel-procurement-supplier-quality-control/index.html",
+      "title": "Procurement & Supplier Quality Control",
+      "design": "hotel-apartment-excellence",
+      "option": "B",
+      "series": "Hotel Apartment Operational Excellence",
+      "number": 15,
+      "kind": "Article",
+      "total": 26
+    },
+    {
+      "url": "/articles/hotel-property-reliability-score/index.html",
+      "title": "Property Reliability Score",
+      "design": "hotel-apartment-excellence",
+      "option": "B",
+      "series": "Hotel Apartment Operational Excellence",
+      "number": 23,
+      "kind": "Article",
+      "total": 26
+    },
+    {
+      "url": "/articles/hotel-quality-audit-ai-toolkit/index.html",
+      "title": "Hotel Apartment Quality Audit AI Toolkit",
+      "design": "ai-hotel-apartments",
+      "option": "A",
+      "series": "AI for Hotel Apartments",
+      "number": 11,
+      "kind": "Article",
+      "total": 26
+    },
+    {
+      "url": "/articles/hotel-reservations-ai-toolkit/index.html",
+      "title": "Reservations AI Toolkit",
+      "design": "ai-hotel-apartments",
+      "option": "A",
+      "series": "AI for Hotel Apartments",
+      "number": 4,
+      "kind": "Article",
+      "total": 26
+    },
+    {
+      "url": "/articles/hotel-revenue-management-ai-toolkit/index.html",
+      "title": "Hotel Apartment Revenue Management AI Toolkit",
+      "design": "ai-hotel-apartments",
+      "option": "A",
+      "series": "AI for Hotel Apartments",
+      "number": 18,
+      "kind": "Article",
+      "total": 26
+    },
+    {
+      "url": "/articles/hotel-sales-corporate-accounts-ai-toolkit/index.html",
+      "title": "Hotel Apartment Sales & Corporate Accounts AI Toolkit",
+      "design": "ai-hotel-apartments",
+      "option": "A",
+      "series": "AI for Hotel Apartments",
+      "number": 19,
+      "kind": "Article",
+      "total": 26
+    },
+    {
+      "url": "/articles/hotel-sop-process-design-ai-toolkit/index.html",
+      "title": "Hotel Apartment SOP & Process Design AI Toolkit",
+      "design": "ai-hotel-apartments",
+      "option": "A",
+      "series": "AI for Hotel Apartments",
+      "number": 12,
+      "kind": "Article",
+      "total": 26
+    },
+    {
+      "url": "/articles/hotel-workforce-productivity-efficiency/index.html",
+      "title": "Productivity & Workforce Efficiency",
+      "design": "hotel-apartment-excellence",
+      "option": "B",
+      "series": "Hotel Apartment Operational Excellence",
+      "number": 18,
+      "kind": "Article",
+      "total": 26
+    },
+    {
+      "url": "/articles/how-to-audit-an-sop/index.html",
+      "title": "How to Audit an SOP",
+      "design": "tourism-operations-excellence",
+      "option": "A",
+      "series": "Travel and Tourism Operations Excellence",
+      "number": 26,
+      "kind": "Article",
+      "total": 33
+    },
+    {
+      "url": "/articles/how-to-write-professional-sop-procedure/index.html",
+      "title": "How to Write a Professional SOP: Part 2 — The Procedure",
+      "design": "tourism-operations-excellence",
+      "option": "A",
+      "series": "Travel and Tourism Operations Excellence",
+      "number": 11,
+      "kind": "Article",
+      "total": 33
+    },
+    {
+      "url": "/articles/how-to-write-professional-sop-structure/index.html",
+      "title": "How to Write a Professional SOP: Part 1 — Structure",
+      "design": "tourism-operations-excellence",
+      "option": "A",
+      "series": "Travel and Tourism Operations Excellence",
+      "number": 10,
+      "kind": "Article",
+      "total": 33
+    },
+    {
+      "url": "/articles/how-to-write-work-instructions/index.html",
+      "title": "How to Write Work Instructions",
+      "design": "tourism-operations-excellence",
+      "option": "A",
+      "series": "Travel and Tourism Operations Excellence",
+      "number": 17,
+      "kind": "Article",
+      "total": 33
+    },
+    {
+      "url": "/articles/insights-city-tour-quotation-pricing-masterclass/index.html",
+      "title": "Tour Quotation & Pricing Masterclass",
+      "design": "tour-quotation",
+      "option": "C",
+      "series": "Tour Quotation and Pricing",
+      "number": null,
+      "kind": "Series overview"
+    },
+    {
+      "url": "/articles/integrated-sop-creation-model/index.html",
+      "title": "The Integrated SOP Creation Model: ITIL + PMP + Lean Six Sigma",
+      "design": "tourism-operations-excellence",
+      "option": "A",
+      "series": "Travel and Tourism Operations Excellence",
+      "number": 24,
+      "kind": "Article",
+      "total": 33
+    },
+    {
+      "url": "/articles/itil-4-tourism-operations/index.html",
+      "title": "ITIL 4 for Tourism Operations",
+      "design": "tourism-operations-excellence",
+      "option": "A",
+      "series": "Travel and Tourism Operations Excellence",
+      "number": 20,
+      "kind": "Article",
+      "total": 33
+    },
+    {
+      "url": "/articles/lean-thinking-tourism-operations/index.html",
+      "title": "Lean Thinking for Tourism Operations",
+      "design": "tourism-operations-excellence",
+      "option": "A",
+      "series": "Travel and Tourism Operations Excellence",
+      "number": 22,
+      "kind": "Article",
+      "total": 33
+    },
+    {
+      "url": "/articles/map-process-before-writing-sop/index.html",
+      "title": "Never Write an SOP Before Mapping the Process",
+      "design": "tourism-operations-excellence",
+      "option": "A",
+      "series": "Travel and Tourism Operations Excellence",
+      "number": 6,
+      "kind": "Article",
+      "total": 33
+    },
+    {
+      "url": "/articles/operational-checklist-employees-use/index.html",
+      "title": "How to Write an Operational Checklist That Employees Actually Use",
+      "design": "tourism-operations-excellence",
+      "option": "A",
+      "series": "Travel and Tourism Operations Excellence",
+      "number": 16,
+      "kind": "Article",
+      "total": 33
+    },
+    {
+      "url": "/articles/pmp-thinking-sop-implementation/index.html",
+      "title": "PMP Thinking for SOP Implementation",
+      "design": "tourism-operations-excellence",
+      "option": "A",
+      "series": "Travel and Tourism Operations Excellence",
+      "number": 21,
+      "kind": "Article",
+      "total": 33
+    },
+    {
+      "url": "/articles/policy-vs-sop-work-instruction-checklist-form-template/index.html",
+      "title": "Policy vs SOP vs Work Instruction vs Checklist vs Form vs Template",
+      "design": "tourism-operations-excellence",
+      "option": "A",
+      "series": "Travel and Tourism Operations Excellence",
+      "number": 2,
+      "kind": "Article",
+      "total": 33
+    },
+    {
+      "url": "/articles/procedures-processes-process-maps/index.html",
+      "title": "Procedures, Processes and Process Maps: What Is the Difference?",
+      "design": "tourism-operations-excellence",
+      "option": "A",
+      "series": "Travel and Tourism Operations Excellence",
+      "number": 4,
+      "kind": "Article",
+      "total": 33
+    },
+    {
+      "url": "/articles/professional-operational-form/index.html",
+      "title": "How to Design a Professional Operational Form",
+      "design": "tourism-operations-excellence",
+      "option": "A",
+      "series": "Travel and Tourism Operations Excellence",
+      "number": 15,
+      "kind": "Article",
+      "total": 33
+    },
+    {
+      "url": "/articles/responsible-ai-governance-hotels/index.html",
+      "title": "Responsible AI Governance for Hotel Apartments",
+      "design": "ai-hotel-apartments",
+      "option": "A",
+      "series": "AI for Hotel Apartments",
+      "number": 26,
+      "kind": "Article",
+      "total": 26
+    },
+    {
+      "url": "/articles/responsible-ai-tourism-guide/index.html",
+      "title": "Responsible AI for Tourism: A Practical Governance Guide for Travel Companies",
+      "design": "ai-tourism-operations",
+      "option": "B",
+      "series": "AI for Travel and Tourism Operations",
+      "number": 10,
+      "kind": "Article",
+      "total": 10
+    },
+    {
+      "url": "/articles/root-cause-analysis-tourism-managers/index.html",
+      "title": "Root Cause Analysis for Tourism Managers",
+      "design": "tourism-operations-excellence",
+      "option": "A",
+      "series": "Travel and Tourism Operations Excellence",
+      "number": 28,
+      "kind": "Article",
+      "total": 33
+    },
+    {
+      "url": "/articles/sipoc-tourism-operations/index.html",
+      "title": "How to Use SIPOC in Tourism Operations",
+      "design": "tourism-operations-excellence",
+      "option": "A",
+      "series": "Travel and Tourism Operations Excellence",
+      "number": 7,
+      "kind": "Article",
+      "total": 33
+    },
+    {
+      "url": "/articles/six-sigma-tourism-complaints-data/index.html",
+      "title": "Six Sigma for Tourism: From Complaints to Data",
+      "design": "tourism-operations-excellence",
+      "option": "A",
+      "series": "Travel and Tourism Operations Excellence",
+      "number": 23,
+      "kind": "Article",
+      "total": 33
+    },
+    {
+      "url": "/articles/sop-evidence-documentation-legal-defensibility/index.html",
+      "title": "SOP Writing Part 5: Evidence, Documentation and Legal Defensibility",
+      "design": "tourism-operations-excellence",
+      "option": "A",
+      "series": "Travel and Tourism Operations Excellence",
+      "number": 14,
+      "kind": "Article",
+      "total": 33
+    },
+    {
+      "url": "/articles/sop-exception-escalation-management/index.html",
+      "title": "SOP Writing Part 4: Exception and Escalation Management",
+      "design": "tourism-operations-excellence",
+      "option": "A",
+      "series": "Travel and Tourism Operations Excellence",
+      "number": 13,
+      "kind": "Article",
+      "total": 33
+    },
+    {
+      "url": "/articles/sop-roles-authority-raci/index.html",
+      "title": "SOP Writing Part 3: Roles, Authority and RACI",
+      "design": "tourism-operations-excellence",
+      "option": "A",
+      "series": "Travel and Tourism Operations Excellence",
+      "number": 12,
+      "kind": "Article",
+      "total": 33
+    },
+    {
+      "url": "/articles/standard-communication-templates/index.html",
+      "title": "How to Create Standard Communication Templates",
+      "design": "tourism-operations-excellence",
+      "option": "A",
+      "series": "Travel and Tourism Operations Excellence",
+      "number": 18,
+      "kind": "Article",
+      "total": 33
+    },
+    {
+      "url": "/articles/standard-test-procedures-tourism-operations/index.html",
+      "title": "How to Create Standard Test Procedures (STPs) for Tourism Operations",
+      "design": "tourism-operations-excellence",
+      "option": "A",
+      "series": "Travel and Tourism Operations Excellence",
+      "number": 19,
+      "kind": "Article",
+      "total": 33
+    },
+    {
+      "url": "/articles/tourism-ai-operations-playbook/index.html",
+      "title": "The Tourism AI Operations Playbook",
+      "design": "ai-tourism-operations",
+      "option": "B",
+      "series": "AI for Travel and Tourism Operations",
+      "number": null,
+      "kind": "Series overview"
+    },
+    {
+      "url": "/articles/tourism-company-operating-system/index.html",
+      "title": "The Operating System Behind a Professional Tourism Company",
+      "design": "tourism-operations-excellence",
+      "option": "A",
+      "series": "Travel and Tourism Operations Excellence",
+      "number": 1,
+      "kind": "Article",
+      "total": 33
+    },
+    {
+      "url": "/articles/tourism-document-hierarchy/index.html",
+      "title": "Building a Document Hierarchy for a Tourism Company",
+      "design": "tourism-operations-excellence",
+      "option": "A",
+      "series": "Travel and Tourism Operations Excellence",
+      "number": 5,
+      "kind": "Article",
+      "total": 33
+    },
+    {
+      "url": "/articles/tourism-itinerary-ai-prompts/index.html",
+      "title": "The Tourism Itinerary AI Toolkit: 10 Prompts for Realistic and Guest-Centred Travel Planning",
+      "design": "ai-tourism-operations",
+      "option": "B",
+      "series": "AI for Travel and Tourism Operations",
+      "number": 6,
+      "kind": "Article",
+      "total": 10
+    },
+    {
+      "url": "/articles/tourism-operational-excellence-management-system/index.html",
+      "title": "From SOP Library to Tourism Operational Excellence Management System",
+      "design": "tourism-operations-excellence",
+      "option": "A",
+      "series": "Travel and Tourism Operations Excellence",
+      "number": 30,
+      "kind": "Article",
+      "total": 33
+    },
+    {
+      "url": "/articles/tourism-operational-risk-assessment-before-sop/index.html",
+      "title": "How to Conduct an Operational Risk Assessment Before Writing an SOP",
+      "design": "tourism-operations-excellence",
+      "option": "A",
+      "series": "Travel and Tourism Operations Excellence",
+      "number": 8,
+      "kind": "Article",
+      "total": 33
+    },
+    {
+      "url": "/articles/tourism-operations-kpis-control-dashboards/index.html",
+      "title": "Tourism Operations KPIs and Control Dashboards",
+      "design": "tourism-operations-excellence",
+      "option": "A",
+      "series": "Travel and Tourism Operations Excellence",
+      "number": 32,
+      "kind": "Article",
+      "total": 33
+    },
+    {
+      "url": "/articles/tourism-operations-manual/index.html",
+      "title": "Building the Tourism Operations Manual",
+      "design": "tourism-operations-excellence",
+      "option": "A",
+      "series": "Travel and Tourism Operations Excellence",
+      "number": 29,
+      "kind": "Article",
+      "total": 33
+    },
+    {
+      "url": "/articles/tourism-product-development-ai-prompts/index.html",
+      "title": "Tourism Product Development AI Toolkit",
+      "design": "ai-tourism-operations",
+      "option": "B",
+      "series": "AI for Travel and Tourism Operations",
+      "number": 5,
+      "kind": "Article",
+      "total": 10
+    },
+    {
+      "url": "/articles/tourism-prompting-framework/index.html",
+      "title": "The Tourism Prompting Framework: How to Write Professional AI Prompts for Travel and Tourism",
+      "design": "ai-tourism-operations",
+      "option": "B",
+      "series": "AI for Travel and Tourism Operations",
+      "number": 1,
+      "kind": "Article",
+      "total": 10
+    },
+    {
+      "url": "/articles/tourism-quality-sop-ai-prompts/index.html",
+      "title": "Tourism Quality and SOP AI Toolkit",
+      "design": "ai-tourism-operations",
+      "option": "B",
+      "series": "AI for Travel and Tourism Operations",
+      "number": 9,
+      "kind": "Article",
+      "total": 10
+    },
+    {
+      "url": "/articles/tourism-sales-quotation-ai-prompts/index.html",
+      "title": "Tourism Sales and Quotation AI Toolkit",
+      "design": "ai-tourism-operations",
+      "option": "B",
+      "series": "AI for Travel and Tourism Operations",
+      "number": 7,
+      "kind": "Article",
+      "total": 10
+    },
+    {
+      "url": "/articles/tourism-sop-training-competency-adoption/index.html",
+      "title": "Training, Competency, and SOP Adoption in Tourism",
+      "design": "tourism-operations-excellence",
+      "option": "A",
+      "series": "Travel and Tourism Operations Excellence",
+      "number": 31,
+      "kind": "Article",
+      "total": 33
+    },
+    {
+      "url": "/articles/tourism-supplier-partner-governance-sops/index.html",
+      "title": "Supplier and Partner Governance in Tourism SOPs",
+      "design": "tourism-operations-excellence",
+      "option": "A",
+      "series": "Travel and Tourism Operations Excellence",
+      "number": 33,
+      "kind": "Article",
+      "total": 33
+    },
+    {
+      "url": "/articles/tourism-transport-dispatch-ai-prompts/index.html",
+      "title": "Tourism Transport and Dispatch AI Toolkit",
+      "design": "ai-tourism-operations",
+      "option": "B",
+      "series": "AI for Travel and Tourism Operations",
+      "number": 4,
+      "kind": "Article",
+      "total": 10
+    },
+    {
+      "url": "/articles/where-stp-fits-tourism-operations/index.html",
+      "title": "Where Does STP Fit? Standard Test Procedures in Tourism Operations",
+      "design": "tourism-operations-excellence",
+      "option": "A",
+      "series": "Travel and Tourism Operations Excellence",
+      "number": 3,
+      "kind": "Article",
+      "total": 33
+    },
+    {
+      "url": "/articles/workforce-rostering-productivity-ai-toolkit/index.html",
+      "title": "Workforce, Rostering & Productivity AI Toolkit",
+      "design": "ai-hotel-apartments",
+      "option": "A",
+      "series": "AI for Hotel Apartments",
+      "number": 23,
+      "kind": "Article",
+      "total": 26
+    },
+    {
+      "url": "/series/amsterdam-tourism-product-discovery/index.html",
+      "title": "Building a Data-Driven Signature Tour.",
+      "design": "amsterdam-product-discovery",
+      "option": "B",
+      "series": "Amsterdam Product Discovery",
+      "number": null,
+      "kind": "Series overview"
+    },
+    {
+      "url": "/series/hotel-ai-operations-playbook/index.html",
+      "title": "AI for Hotel Apartments Operations Playbook",
+      "design": "ai-hotel-apartments",
+      "option": "A",
+      "series": "AI for Hotel Apartments",
+      "number": null,
+      "kind": "Series overview"
+    },
+    {
+      "url": "/series/hotel-apartment-operational-excellence/index.html",
+      "title": "Hotel Apartment Operational Excellence",
+      "design": "hotel-apartment-excellence",
+      "option": "B",
+      "series": "Hotel Apartment Operational Excellence",
+      "number": null,
+      "kind": "Series overview"
+    }
+  ]
+}

@@ -27,5 +27,5 @@ class ArticleVisualTests(unittest.TestCase):
   for p in (ROOT/'articles').rglob('*.html'):
    old=subprocess.check_output(['git','show','6f8f6f6f9324c83b3c63e915ac31a633bdf31d53:'+str(p.relative_to(ROOT))],cwd=ROOT,text=True);new=p.read_text()
    old=approved_baseline(old,p.parent.name)
-   for pattern in [r'<td\b[^>]*>.*?</td>',r'<pre\b[^>]*>.*?</pre>',r'<img\b[^>]*>']:
+   for pattern in [r'<td\b[^>]*>.*?</td>',r'<pre\b[^>]*>.*?</pre>',r'<img\b(?![^>]*class="series-banner-art")[^>]*>']:
     self.assertEqual(re.findall(pattern,old,re.S),re.findall(pattern,new,re.S),p)

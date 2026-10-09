@@ -33,5 +33,5 @@ class ArticleLibraryReviewTests(unittest.TestCase):
    old=subprocess.check_output(['git','show','1ae9b07069cb11483b2190fc7097a24806433743:'+relative],cwd=ROOT,text=True)
    new=(ROOT/relative).read_text()
    self.assertTrue(set(re.findall(r'id="([^"]+)"',old))<=set(re.findall(r'id="([^"]+)"',new)),relative)
-   pattern=r"https?://[^\s<>\"']+"
+   pattern=r'href=["\'](https?://[^"\']+)'
    self.assertTrue(set(re.findall(pattern,old))<=set(re.findall(pattern,new)),relative)

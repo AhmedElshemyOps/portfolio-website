@@ -92,7 +92,8 @@ def render(source, path, root=ROOT):
     from apply_library_navigation import render as render_library_navigation
     from render_projects import render as render_projects
     source = render_projects(source, path, root) if path.relative_to(root).as_posix() in {"index.html", "projects/index.html"} and 'class="project' in source else source
-    return render_library_navigation(source, path, root)
+    from render_series_banners import render as render_series_banners
+    return render_series_banners(render_library_navigation(source, path, root), path, root)
 
 
 def apply(root=ROOT, check=False):

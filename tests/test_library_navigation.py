@@ -3,7 +3,9 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'scripts'))
 from audit_seo import DOM,schema_nodes
 from apply_field_manual import parse
-from apply_library_navigation import render
+from apply_library_navigation import render as render_navigation
+from render_series_banners import render as render_banner
+def render(s,p):return render_banner(render_navigation(s,p),p)
 from approved_article_revisions import approved_revisions
 BASE='https://ahmedqualityops.com';BASELINE='70c38c0ea60f9f565db0d974750173999351c3c5'
 class LibraryNavigationTests(unittest.TestCase):
@@ -28,7 +30,7 @@ class LibraryNavigationTests(unittest.TestCase):
  def test_sharing_assets_are_real_small_pngs_and_described(self):
   for row in json.loads((ROOT/'maintenance/seo/library-sharing-covers.json').read_text()):
    p=ROOT/row['image'].lstrip('/');data=p.read_bytes();self.assertEqual(data[:8],b'\x89PNG\r\n\x1a\n');self.assertEqual(struct.unpack('>II',data[16:24]),(1200,630));self.assertLess(len(data),60000)
-   s=(ROOT/'articles'/row['article']/'index.html').read_text();d=DOM(s).root;meta={n.attrs.get('property',n.attrs.get('name')):n.attrs.get('content') for n in d.all('meta')};self.assertEqual(meta['og:image'],BASE+row['image']);self.assertEqual(meta['twitter:image'],meta['og:image']);self.assertTrue(meta['og:image:alt']);self.assertEqual(meta['twitter:card'],'summary_large_image')
+   s=(ROOT/'articles'/row['article']/'index.html').read_text();d=DOM(s).root;meta={n.attrs.get('property',n.attrs.get('name')):n.attrs.get('content') for n in d.all('meta')};manifest=json.loads((ROOT/'content/series-banners.json').read_text());article=next(x for x in manifest['articles'] if x['url']=='/articles/'+row['article']+'/index.html');self.assertEqual(meta['og:image'],BASE+manifest['designs'][article['design']]['master']);self.assertEqual(meta['twitter:image'],meta['og:image']);self.assertTrue(meta['og:image:alt']);self.assertEqual(meta['twitter:card'],'summary_large_image')
  def test_reading_links_are_relevant_new_connections_not_duplicates(self):
   rows=json.loads((ROOT/'maintenance/seo/library-reading-connections.json').read_text());rendered=0
   for source in set(x['source'] for x in rows):

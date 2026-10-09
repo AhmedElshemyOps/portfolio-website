@@ -1,6 +1,6 @@
 # Preservation baseline: verified 8 October release, before evidence corrections.
 # Earlier migration commits are unavailable; this checks release content, not historical migration provenance.
-import sys,unittest,re,subprocess,collections
+import sys,unittest,re,subprocess,collections,json
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 from improve_article_endings import ROOT,load_rows,apply
@@ -31,7 +31,7 @@ class ArticleEndingTests(unittest.TestCase):
    old=subprocess.check_output(['git','show','6f8f6f6f9324c83b3c63e915ac31a633bdf31d53:'+str(path.relative_to(ROOT))],cwd=ROOT,text=True)
    first=apply(old,row);self.assertEqual(apply(first,row),first,slug)
    old=approved_baseline(old,slug)
-   for pattern in [r'<pre\b[^>]*>.*?</pre>',r'<td\b[^>]*>.*?</td>',r'<img\b[^>]*>']:
+   for pattern in [r'<pre\b[^>]*>.*?</pre>',r'<td\b[^>]*>.*?</td>',r'<img\b(?![^>]*class="series-banner-art")[^>]*>']:
     self.assertEqual(re.findall(pattern,old,re.S),re.findall(pattern,s,re.S),slug)
    before=set(re.findall(r'\bid="([^"]+)"',old));after=re.findall(r'\bid="([^"]+)"',s)
    self.assertTrue(before<=set(after),str((slug,before-set(after))))
@@ -39,9 +39,10 @@ class ArticleEndingTests(unittest.TestCase):
    self.assertTrue(all(count<=max(1,old_counts[key]) for key,count in new_counts.items()),slug)
  def test_track_b_continues_in_order(self):
   rows=load_rows();numbers={}
-  for slug in rows:
-   s=(ROOT/'articles'/slug/'index.html').read_text();m=re.search(r'Hotel Apartment Operational Excellence · B(\d+)',s)
-   if m:numbers[int(m[1])]=slug
+  manifest=json.loads((ROOT/'content/series-banners.json').read_text())
+  for row in manifest['articles']:
+   if row['design']=='hotel-apartment-excellence' and row.get('number'):
+    numbers[row['number']]=row['url'].split('/')[2]
   self.assertEqual(len(numbers),26)
   for n in range(1,26):self.assertEqual(rows[numbers[n]]['next']['url'],'/articles/'+numbers[n+1]+'/index.html')
   self.assertEqual(rows[numbers[26]]['next']['kind'],'apply')
