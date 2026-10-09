@@ -260,7 +260,7 @@
     if (activeSelection) activeSelection.hidden = selection.length === 0;
     if (selectionText) selectionText.textContent = selection.join(' · ');
     if (filterDisclosureLabel) filterDisclosureLabel.textContent = 'Filter articles' + (activeFilters.length ? ' (' + activeFilters.length + ' active)' : '');
-    document.querySelector('[data-knowledge-status]').textContent = matched.length ? 'Showing ' + visible.length + (visible.length < matched.length ? ' results. More articles are available below.' : ' matching results.') : 'No matching articles.';
+    document.querySelector('[data-knowledge-status]').textContent = matched.length ? 'Showing ' + visible.length + ' of ' + matched.length + ' matching articles.' : 'No matching articles.';
     document.querySelector('[data-knowledge-empty]').hidden = matched.length !== 0;
     if (moreButton) moreButton.hidden = visible.length >= matched.length;
     if (pageStatus) pageStatus.textContent = visible.length < matched.length ? 'Continue exploring this selection.' : matched.length ? 'You have reached the end of this selection.' : '';

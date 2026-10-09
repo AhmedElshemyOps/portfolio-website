@@ -13,7 +13,13 @@ class ReadinessTests(unittest.TestCase):
   for route in ['index.html','profile/index.html','knowledge/index.html','projects/index.html']:
    d=DOM((ROOT/route).read_text()).root
    hints=[n.attrs for n in d.all('link') if n.attrs.get('rel')=='preload' and n.attrs.get('as')=='style']
-   self.assertEqual(sum(x['href'].startswith('/assets/css/fonts.css?') for x in hints),1)
+   bundles=[n.attrs for n in d.all('link') if n.attrs.get('data-style-sources')]
+   if bundles:
+    self.assertEqual(len(bundles),1)
+    css=(ROOT/bundles[0]['href'].lstrip('/')).read_text()
+    self.assertNotIn('@import',css)
+    self.assertIn('lora-latin-400-normal.woff2',css)
+   else:self.assertEqual(sum(x['href'].startswith('/assets/css/fonts.css?') for x in hints),1)
  def test_consent_privacy_link_remains_visually_distinct(self):
   self.assertIn('.analytics-consent a{color:#dfc27d;text-decoration:underline;', (ROOT/'assets/js/analytics.js').read_text())
 if __name__=='__main__':unittest.main()

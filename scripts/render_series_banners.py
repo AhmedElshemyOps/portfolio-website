@@ -11,6 +11,9 @@ def plain(s):return ' '.join(unescape(re.sub('<[^>]+>',' ',s)).split())
 def render(source,path,root=ROOT):
  manifest=root/'content/series-banners.json'
  if not manifest.exists():return source
+ from bundle_page_styles import unpack,pack
+ was_bundled='data-style-sources=' in source
+ if was_bundled:source=unpack(source)
  data=json.loads(manifest.read_text());url='/'+path.relative_to(root).as_posix()
  row=next((r for r in data['articles'] if r['url']==url),None)
  if not row:return source
@@ -47,7 +50,7 @@ def render(source,path,root=ROOT):
    if item.get('@type') in ('Article','CollectionPage'):item['image']=BASE+design['master']
   return m[1]+json.dumps(obj,ensure_ascii=False,separators=(',',':'))+m[3]
  source=re.sub(r'(<script\b[^>]*type="application/ld\+json"[^>]*>)(.*?)(</script>)',schema,source,flags=re.S)
- return source
+ return pack(source,path,root) if was_bundled else source
 
 def apply(root=ROOT,check=False):
  data=json.loads((root/'content/series-banners.json').read_text());changed=[]

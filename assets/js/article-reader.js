@@ -5,6 +5,20 @@
   const article = document.getElementById('article');
   if (!article) return;
 
+  // Preserve the existing controls and event bindings; compact only their container.
+  const utilities = document.querySelector('.reader-utilities');
+  if (utilities && !utilities.querySelector('.reader-preferences')) {
+    const details = document.createElement('details'); details.className = 'reader-preferences';
+    const summary = document.createElement('summary'); summary.textContent = 'Reading settings';
+    const panel = document.createElement('div'); panel.className = 'reader-preferences-panel';
+    utilities.querySelectorAll('.reader-font-controls,[data-reader-contrast],[data-reader-theme]').forEach(node => panel.append(node));
+    details.append(summary, panel); utilities.prepend(details);
+    const compactSettings = window.matchMedia('(max-width:700px)');
+    const sizeSettings = () => { details.open = !compactSettings.matches; };
+    sizeSettings(); compactSettings.addEventListener?.('change', sizeSettings);
+    details.addEventListener('keydown', event => { if (event.key === 'Escape') { details.open = false; summary.focus(); } });
+  }
+
   const body = document.body;
   const root = document.documentElement;
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');

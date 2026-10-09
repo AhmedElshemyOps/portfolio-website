@@ -23,6 +23,8 @@ def pages(root=ROOT):
 def render(source, path, root=ROOT):
     if '<head' not in source:
         return source
+    from bundle_page_styles import unpack, pack
+    source = unpack(source)
     homepage = path == root / 'index.html'
     nodes = parse(source).nodes
     replacements = []
@@ -89,11 +91,14 @@ def render(source, path, root=ROOT):
     if '/assets/css/launch-pages.css' in source:
         hints += '<link rel="preload" href="/assets/css/design-tokens.css?v=20261008-polish" as="style"/>'
     source = source.replace('</head>', hints + '</head>', 1)
+    # Version changed interaction assets so an offline cache cannot serve old controls.
+    source = re.sub(r'(/assets/js/(?:discovery|article-reader)\.js)(?:\?[^"\s]*)?(?=")', r'\1?v=20261009-phase1', source)
+    source = re.sub(r'(/assets/css/infraquote-bundle\.css)(?:\?[^"\s]*)?(?=")', r'\1?v=20261009-phase1', source)
     from apply_library_navigation import render as render_library_navigation
     from render_projects import render as render_projects
     source = render_projects(source, path, root) if path.relative_to(root).as_posix() in {"index.html", "projects/index.html"} and 'class="project' in source else source
     from render_series_banners import render as render_series_banners
-    return render_series_banners(render_library_navigation(source, path, root), path, root)
+    return pack(render_series_banners(render_library_navigation(source, path, root), path, root),path,root)
 
 
 def apply(root=ROOT, check=False):
@@ -105,6 +110,8 @@ def apply(root=ROOT, check=False):
             changed.append(str(path.relative_to(root)))
             if not check:
                 path.write_text(updated)
+    from bundle_page_styles import write_generated
+    write_generated(check=check,root=root)
     return changed
 
 

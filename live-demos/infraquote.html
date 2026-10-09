@@ -16,7 +16,7 @@
 <link href="site.webmanifest" rel="manifest"/>
 <link href="assets/brand/favicon-192.png" rel="apple-touch-icon"/>
 <script data-schema="seo-geo" type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"InfraQuote","url":"https://ahmedqualityops.com/live-demos/infraquote.html","applicationCategory":"BusinessApplication","operatingSystem":"Web","isAccessibleForFree":true,"description":"Static MVP for DMC city-tour costing, margin review, guest requirements, transport assumptions and client-ready quotations.","author":{"@type":"Person","name":"Ahmed Mahmoud","url":"https://ahmedqualityops.com/"}}</script>
-<script defer src="/assets/js/discovery.js?v=20261008-next"></script><script defer src="/assets/js/browse-products.js?v=20261008-browse"></script><link rel="stylesheet" href="/assets/css/infraquote-bundle.css?v=20261008-cleanup"/>
+<script defer src="/assets/js/discovery.js?v=20261009-phase1"></script><script defer src="/assets/js/browse-products.js?v=20261008-browse"></script><link rel="stylesheet" href="/assets/css/infraquote-bundle.css?v=20261009-phase1"/>
 <link rel="stylesheet" href="/assets/css/site-chrome.css?v=20261008-usability"/></head>
 <body class="infraquote-page knowledge-atlas-demo">
 <a class="skip" href="#main">Skip to content</a>
@@ -64,15 +64,15 @@
 <div class="quote-app">
 <aside class="quote-sidebar">
 <label class="quote-step-selector">Quotation stage<select id="quoteStepSelect" aria-label="Quotation stage"></select></label><div class="quote-progress" id="quoteProgress" aria-label="Quotation stages"></div>
-<p class="quote-feedback" id="quoteFeedback" role="status" aria-live="polite"></p><div class="quote-actions">
+<p class="quote-feedback" id="quoteFeedback" role="status" aria-live="polite"></p><details class="quote-draft-tools"><summary>Manage this draft</summary><div class="quote-actions">
 <button class="btn" id="saveDraft" type="button">Save draft</button>
 <button class="btn secondary" id="duplicateQuote" type="button">Duplicate</button>
 <button class="btn secondary" id="resetQuote" type="button">Reset</button>
 </div>
-<p class="quote-note">Drafts save automatically in this browser. Enter destination-specific supplier costs. Attraction references show their source and review status.</p>
+<p class="quote-note">Drafts save automatically in this browser. Enter destination-specific supplier costs. Attraction references show their source and review status.</p></details>
 </aside>
 <section class="quote-workspace">
-<section class="quote-city-choice" aria-label="Destination workspace"><h2>Choose your city</h2><label>Choose your city<select id="quoteCity"><option value="abuDhabi">UAE · Abu Dhabi</option><option value="amsterdam">Netherlands · Amsterdam</option></select></label><p>Amsterdam · Netherlands · EUR. Abu Dhabi · UAE · AED. Your choice loads the city’s attractions, currency, templates and operating checks. Each city keeps its own draft on this device.</p></section><div id="workflowTools"></div>
+<section class="quote-city-choice" aria-label="Destination workspace"><h2>Choose your city</h2><label>Choose your city<select id="quoteCity"><option value="abuDhabi">UAE · Abu Dhabi</option><option value="amsterdam">Netherlands · Amsterdam</option></select></label><p>Amsterdam uses EUR; Abu Dhabi uses AED. The city sets attractions and operating checks. Each city keeps a separate draft on this device.</p></section><details class="quote-workspace-tools"><summary>Templates, supplier rates &amp; workspace tools</summary><div id="workflowTools"></div></details>
 <p id="sampleNotice" class="quote-note"></p><form class="quote-form" id="quoteForm" onsubmit="return false" novalidate>
 <div id="quoteFormErrors" class="quote-form-errors" role="alert" hidden></div>
 <section class="quote-step" data-step="0">

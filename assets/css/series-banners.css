@@ -25,3 +25,10 @@
 .has-series-banner .series-hero{grid-template-columns:minmax(0,1fr)}
 .has-series-banner .series-hero .series-banner-art{background:transparent;border:0}
 .has-series-banner .series-banner h1 em{font:inherit;color:inherit}
+
+/* Compact mobile cover: keep the full approved artwork and place the exact heading alongside it. */
+@media(max-width:700px){.series-banner{display:grid;grid-template-columns:96px minmax(0,1fr);align-items:center;padding:14px;gap:14px}.series-banner-art{width:96px;height:auto;aspect-ratio:2/1;border-radius:3px}.series-banner-copy,.series-banner--b .series-banner-copy,.series-banner--c .series-banner-copy{padding:0;width:auto;gap:8px}.has-series-banner .series-banner h1,.has-series-banner .series-banner[data-title-size] h1{font-size:clamp(20px,5.1vw,28px);line-height:1.2}.has-series-banner .series-banner .series-banner-label,.has-series-banner .series-banner .series-banner-number{font-size:10px;letter-spacing:.04em}.has-series-banner .series-banner .series-banner-author{font-size:12px}.has-series-banner .article-page-header{padding-top:18px;padding-bottom:20px}.reader-utilities{gap:8px}.reader-preferences{border:1px solid var(--line);padding:8px 12px}.reader-preferences summary{cursor:pointer;min-height:32px;display:list-item;font-weight:600}.reader-preferences-panel{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.reader-preferences:not([open])>.reader-preferences-panel{display:none}.reader-preferences summary:focus-visible{outline:var(--focus-ring);outline-offset:3px}}
+@media(min-width:701px){.reader-preferences{display:contents}.reader-preferences>summary{display:none}.reader-preferences-panel{display:contents}}
+@media print{.reader-preferences{display:none}.series-banner{display:block;padding:0}}
+
+@media(max-width:700px){.has-series-banner .reader-utilities{display:flex;flex-wrap:wrap;align-items:flex-start;padding-block:12px;margin-block:12px;gap:8px}.has-series-banner .reader-utilities>[data-article-bookmark]{width:auto;flex:0 1 auto;min-height:48px}.has-series-banner .reader-utilities>a{min-height:44px;display:inline-flex;align-items:center}.reader-preferences[open]{flex-basis:100%}}

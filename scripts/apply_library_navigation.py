@@ -7,6 +7,9 @@ import json,re
 from audit_seo import DOM
 ROOT=Path(__file__).resolve().parents[1];BASE='https://ahmedqualityops.com';CSS='/assets/css/library-navigation.css?v=20261008-library'
 def render(source,path,root=ROOT):
+ from bundle_page_styles import unpack,pack
+ was_bundled='data-style-sources=' in source
+ if was_bundled:source=unpack(source)
  registry_path=root/'content/article-registry.json'
  if not registry_path.exists():return source
  relative='/'+str(path.relative_to(root));row=next((x for x in json.loads(registry_path.read_text()) if x['url']==relative),None)
@@ -54,7 +57,7 @@ def render(source,path,root=ROOT):
    if article:
     from apply_field_manual import parse
     node=next(n for n in parse(source).nodes if n['tag']=='article' and 'article-body' in n['attrs'].get('class','').split());source=source[:node['end']]+panel+source[node['end']:]
- return source
+ return pack(source,path,root) if was_bundled else source
 
 def apply(root=ROOT,check=False):
  changed=[]

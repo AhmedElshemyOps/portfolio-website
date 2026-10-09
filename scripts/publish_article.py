@@ -118,6 +118,8 @@ def publish(root,meta,text,replace=False):
         original_root = build_search_feeds.ROOT
         try: build_search_feeds.ROOT=root; build_search_feeds.build()
         finally: build_search_feeds.ROOT=original_root
+        from bundle_page_styles import write_generated
+        write_generated(root=root)
     except Exception:
         for p,data in backups.items():
             if data is None: p.unlink(missing_ok=True)
@@ -134,6 +136,8 @@ if __name__=='__main__':
         if args.preview:
             from render_shared import render
             source,_=page(meta,text);args.preview.write_text(render(source,ROOT/'articles'/meta['slug']/'index.html',ROOT));print('Preview saved:',args.preview)
+            from bundle_page_styles import write_generated
+            write_generated(root=ROOT)
         else:
             if date.fromisoformat(meta['published'])>date.today(): raise ValueError('Future articles must remain previews')
             print('Published locally:',publish(ROOT,meta,text,args.replace));print('Review and deploy the GitHub Pages release to make this live.')

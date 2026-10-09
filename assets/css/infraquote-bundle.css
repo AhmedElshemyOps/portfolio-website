@@ -1464,6 +1464,18 @@ body{font-family:var(--sans);background:var(--paper)}
 /* Keep the result heading and controls compact on narrow screens. */
 @media(max-width:600px){.portfolio-page .knowledge-browser>header{display:grid;grid-template-columns:1fr;gap:10px;margin-bottom:14px;padding-bottom:16px;align-items:start}.knowledge-browser>header .eyebrow{margin:0}.knowledge-browser>header p{margin:0}.knowledge-browser .library-search-return{margin-bottom:10px}.library-active-selection{padding:12px 16px;gap:10px;margin-bottom:14px}.library-filter-disclosure{margin-bottom:18px}.library-sort{margin-bottom:18px}}
 
+/* Library search stays with its results; topics remain available without a long detour. */
+.library-topic-disclosure>summary{cursor:pointer;min-height:48px;padding:12px 0;font-weight:600}
+.library-topic-disclosure:not([open])>.topic-grid{display:none}
+.library-topic-disclosure .topic-grid{margin-top:12px}
+.knowledge-browser>.library-search{max-width:760px;margin:0 0 20px;scroll-margin-top:100px}
+.library-search input{scroll-margin-top:100px}
+.library-topics{padding-block:24px}
+.library-topics h2{margin-bottom:8px}
+.library-intro{padding-bottom:24px}
+.library-topic-disclosure summary:focus-visible{outline:var(--focus-ring,3px solid #967422);outline-offset:4px}
+@media(max-width:700px){.library-intro{padding-top:28px}.library-intro h1{font-size:2rem}.library-intro p{font-size:1rem}.library-topics{padding-block:16px}.library-topics h2{font-size:1.5rem}.portfolio-page .project-index>article{gap:16px}.project-index .action-row{display:flex;flex-wrap:wrap}.project-index .action-row .button{flex:1;min-width:130px}.project-index-visual{margin-top:8px}}
+
 /* Source: assets/css/infraquote-polish.css */
 /* InfraQuote case study and app use the portfolio frame. Rules stay scoped. */
 .infraquote-case .project-output-preview{width:min(1165px,calc(100% - 64px));margin:40px auto;padding:32px;box-sizing:border-box;display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);column-gap:36px;background:#f3eee4;border-radius:3px}
@@ -1651,3 +1663,11 @@ body.infraquote-page .client-document{padding:30px;background:#fff;border:1px so
 .quote-item .fare-confirmation input[type="checkbox"] { width:1.1rem; flex:0 0 1.1rem; margin:.2rem 0 0; }
 
 .infraquote-page #quoteApp{scroll-margin-top:100px}
+
+/* Primary briefing first; optional workspace functions stay reachable in native disclosures. */
+.quote-workspace-tools,.quote-draft-tools{margin:12px 0;border:1px solid var(--line,#d9d1c1);border-radius:4px}
+.quote-workspace-tools>summary,.quote-draft-tools>summary{cursor:pointer;padding:12px 16px;min-height:48px;font-weight:600;line-height:1.5}
+.quote-draft-tools .quote-actions,.quote-draft-tools .quote-note{margin:12px}
+.quote-workspace-tools:not([open])>#workflowTools,.quote-draft-tools:not([open])>:not(summary){display:none!important}
+.quote-workspace-tools summary:focus-visible,.quote-draft-tools summary:focus-visible{outline:3px solid #967422;outline-offset:3px}
+@media(max-width:900px){.quote-app>.quote-sidebar{padding:12px!important}.quote-sidebar .quote-feedback:empty{display:none}.quote-draft-tools{margin-bottom:0}.quote-city-choice{padding:16px!important}.quote-city-choice h2{margin:0 0 12px!important}.quote-city-choice p{font-size:.875rem!important;margin-bottom:0!important}.quote-workspace-tools{margin-block:10px}.quote-workspace-tools>summary{font-size:.9rem}}
