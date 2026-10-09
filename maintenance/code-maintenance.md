@@ -6,7 +6,7 @@ static HTML, so navigation and contact links remain available without JavaScript
 ## Editing shared components
 
 - `templates/header.html` and `templates/footer.html`: supporting-page components.
-- `templates/home-header.html` and `templates/home-footer.html`: homepage components.
+- The homepage uses the same header/footer templates as every supporting page.
 - `assets/css/site-chrome.css`: shared navigation, mobile menu and supporting-page footer.
 - `assets/js/site-navigation.js`: menu enhancement and keyboard/focus behaviour.
 - `assets/css/design-tokens.css`: supporting-page colours, spacing and type variables.
@@ -101,3 +101,7 @@ Install the locked development dependency with `pnpm install --frozen-lockfile -
 - Active CSS/JS references receive content revisions during shared rendering. The worker uses network-first revalidation with a five-second offline fallback. Cache limits: 40 pages (14 days), 48 images and 64 assets (30 days), 8 documents (7 days); individual responses over 4 MiB are excluded. Writes are awaited, expired entries pruned and oldest entries evicted. Only this site's old cache namespace is removed. Local quotation drafts are untouched.
 - `scripts/article_series.py` validates public series/order before publication. The approved manifest drives banner artwork, labels, numbering and reading paths. Private drafts are excluded.
 - Performance/accessibility measurements and their limits are recorded in the local phase-two delivery report. Physical-device and real-user measurements must not be inferred from viewport tests.
+
+## Whole-site frame consistency
+
+The header and footer templates are now shared by all 178 HTML pages, including home, privacy, 404 and maintenance. Retired the two alternate homepage templates. Legacy product footers were replaced by compact product-note asides, preserving product-specific links and fragment targets. Footer palette, font, link size and focus rules are scoped so page themes cannot change them. The archived maintenance report is labelled as historical, not a current health assertion. Wide Operations Lab input tables are bounded and keyboard-scrollable.

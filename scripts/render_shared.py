@@ -2,7 +2,7 @@
 """Render shared components into static pages, without rewriting page content.
 
 Run after template edits. --check reports drift without modifying any files.
-The homepage has its own two templates; demo app navigation is preserved.
+Every page uses one header/footer source; demo controls are preserved.
 """
 import argparse
 from pathlib import Path
@@ -48,7 +48,7 @@ def render(source, path, root=ROOT):
         name = None
         if node['tag'] == 'header':
             if homepage and 'editorial-masthead' in classes:
-                name = 'home-header'
+                name = 'header'
                 shared_header = True
             elif 'site-header' in classes and path.relative_to(root).as_posix() in {'live-demos/infradispatch/index.html','live-demos/infrasky.html','live-demos/infraquote.html','live-demos/infracluster.html'} and 'id="siteNav"' in source:
                 name = 'header'
@@ -58,7 +58,8 @@ def render(source, path, root=ROOT):
                 shared_header = True
         elif node['tag'] == 'footer':
             if homepage and 'footer' in classes:
-                name = 'home-footer'
+                name = 'footer'
+                shared_footer = True
             elif 'platform-footer' in classes:
                 name = 'footer'
                 shared_footer = True

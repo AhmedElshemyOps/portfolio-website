@@ -1342,6 +1342,14 @@ body{font-family:var(--sans);background:var(--paper)}
 @media(max-width:1000px){.library-connections ul{grid-template-columns:1fr}.library-connections{padding:20px}}
 @media print{.library-connections{break-inside:avoid;background:none;padding:16px}.library-connections ul{display:block}.library-connections li a{padding:8px;border:0}.library-connections a>p{display:none}}
 
+/* Small utility pages use the same reading width and editorial hierarchy. */
+.utility-page{margin:0;font:400 17px/1.65 var(--sans);color:var(--ink);background:var(--paper)}
+.utility-page main{box-sizing:border-box;width:min(900px,100%);margin:0 auto;padding:var(--section-space) 24px;min-height:60vh}
+.utility-page main :is(h1,h2,h3){font-family:var(--serif);color:var(--navy);line-height:1.2}
+.utility-page main h1{font-size:clamp(32px,5vw,52px)}
+.utility-page main a{color:var(--gold)}
+.utility-page main .button{display:inline-flex;align-items:center;min-height:48px;padding:12px 24px;background:var(--navy);color:#fff}
+
 /* Source: assets/css/project-demo-theme.css */
 /* Match the portfolio while retaining each app's controls and status colours. */
 .knowledge-atlas-demo {

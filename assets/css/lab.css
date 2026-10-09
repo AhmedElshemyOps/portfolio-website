@@ -20,3 +20,8 @@
 @media(max-width:650px){.lab-hero,.lab-section{padding-left:20px;padding-right:20px}.lab-hero h1{font-size:48px}.lab-card-grid,.field-grid,.metric-grid{grid-template-columns:1fr}.lab-card dl{grid-template-columns:1fr}.tool-workbench{padding:22px 14px 55px}.tool-hero{padding:36px 20px}.tool-form,.tool-results{padding:20px}.form-actions,.result-actions{display:grid;grid-template-columns:1fr}.form-actions button,.result-actions button{width:100%}.tool-learning{padding:0 14px 55px}.dynamic-table{min-width:680px}}
 @media(prefers-reduced-motion:reduce){.lab-card{transition:none}}
 @media print{.masthead,.platform-footer,.tool-hero>a,.form-actions,.result-actions,.tool-learning,.analytics-consent,.nav-search,.tool-panel:first-child{display:none!important}.lab-page{background:#fff}.tool-workbench{display:block;padding:0}.result-panel{position:static;border:0;box-shadow:none}.tool-results{padding:0}.tool-disclaimer{border:1px solid #999}.output-table{min-width:0}.dynamic-table-wrap{overflow:visible}}
+
+/* Wide input tables scroll inside their panel instead of widening the page. */
+.tool-workbench>* ,.tool-panel,.tool-form{min-width:0;max-width:100%;box-sizing:border-box}
+.dynamic-table-wrap{max-width:100%;min-width:0;overscroll-behavior-inline:contain}
+.dynamic-table-wrap:focus-visible{outline:3px solid var(--gold,#795b20);outline-offset:3px}

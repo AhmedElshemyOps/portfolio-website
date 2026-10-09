@@ -7,13 +7,13 @@ vm.runInContext(fs.readFileSync('sw.js','utf8'),context);
 async function request(path,destination='image') {const waits=[];let result;const req=new Request('https://example.com'+path);Object.defineProperty(req,'mode',{value:destination==='page'?'navigate':'cors'});handlers.fetch({request:req,waitUntil:p=>waits.push(p),respondWith:p=>result=p});if(!result)return;const response=await result;await Promise.all(waits);return response;}
 (async()=>{
  stores.set('ahmed-portfolio-v1-old',new Map());stores.set('other-app',new Map());let activation;handlers.activate({waitUntil:p=>activation=p});await activation;assert(!stores.has('ahmed-portfolio-v1-old'));assert(stores.has('other-app'));
- await caches.open('ahmed-portfolio-v36-bounded-reading-shell').then(c=>c.put('/offline/index.html',new Response('offline')));
+ await caches.open('ahmed-portfolio-v37-shared-frame-shell').then(c=>c.put('/offline/index.html',new Response('offline')));
  for(let i=0;i<55;i++)await request('/image'+i+'.webp');
- assert.equal(stores.get('ahmed-portfolio-v36-bounded-reading-images').size,48);
+ assert.equal(stores.get('ahmed-portfolio-v37-shared-frame-images').size,48);
  for(let i=0;i<44;i++)await request('/articles/'+i,'page');
- assert.equal(stores.get('ahmed-portfolio-v36-bounded-reading-pages').size,40);
+ assert.equal(stores.get('ahmed-portfolio-v37-shared-frame-pages').size,40);
  fail=true;assert.match(await (await request('/articles/43','page')).text(),/network:/);assert.equal(await(await request('/missing','page')).text(),'offline');
  assert.equal(await request('/api/data.json'),undefined);assert.equal(await request('/private/draft.html','page'),undefined);
- const cache=await caches.open('ahmed-portfolio-v36-bounded-reading-images');await cache.put('/stale.webp',new Response('stale',{headers:{'x-offline-stored-at':'1'}}));assert.equal((await request('/stale.webp')).type,'error');
+ const cache=await caches.open('ahmed-portfolio-v37-shared-frame-images');await cache.put('/stale.webp',new Response('stale',{headers:{'x-offline-stored-at':'1'}}));assert.equal((await request('/stale.webp')).type,'error');
  console.log('PASS: bounded caches, version cleanup, offline fallback, expiry, private/API exclusions; writes awaited.');
 })().catch(e=>{console.error(e);process.exitCode=1});

@@ -19,7 +19,7 @@ def apply(root=ROOT):
     phone = escape(data['phone_display'])
     phone_action = 'tel:' + escape(data['phone_e164'], quote=True)
     replacements = {'a.mahmoud.0412@gmail.com': email, 'contact@ahmedqualityops.com': email}
-    for name in ('footer', 'home-footer'):
+    for name in ('footer',):
         path = root / 'templates' / f'{name}.html'
         source = path.read_text()
         for previous_email in re.findall(r'href="mailto:([^"]+)"', source):

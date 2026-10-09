@@ -7,7 +7,7 @@ MANIFEST=json.loads((ROOT/'maintenance/seo/editorial-batch-manifest.json').read_
 class EditorialBatchTests(unittest.TestCase):
  def baseline(self,p):return subprocess.check_output(['git','show',MANIFEST['baseline_commit']+':'+str(p.relative_to(ROOT))],cwd=ROOT,text=True)
  def test_existing_routes_canonicals_and_indexing_policy_unchanged(self):
-  original=set(subprocess.check_output(['git','ls-tree','-r','--name-only',MANIFEST['baseline_commit']],cwd=ROOT,text=True).splitlines());before={p for p in original if p.endswith('.html')};after={str(p.relative_to(ROOT)) for p in ROOT.rglob('*.html') if not {'.git','tests'}&set(p.parts)};self.assertEqual(before,after)
+  original=set(subprocess.check_output(['git','ls-tree','-r','--name-only',MANIFEST['baseline_commit']],cwd=ROOT,text=True).splitlines());before={p for p in original if p.endswith('.html') and not p.startswith('templates/')};after={str(p.relative_to(ROOT)) for p in ROOT.rglob('*.html') if not {'.git','tests','templates'}&set(p.parts)};self.assertEqual(before,after)
   for name in sorted(before):
    old=DOM(self.baseline(ROOT/name)).root;new=DOM((ROOT/name).read_text()).root
    def directives(d):return [(n.tag,n.attrs) for n in d.all() if n.tag=='link' and n.attrs.get('rel')=='canonical' or n.tag=='meta' and n.attrs.get('name','').lower() in ['robots','googlebot','bingbot']]

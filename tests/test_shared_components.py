@@ -78,11 +78,21 @@ class SharedComponents(unittest.TestCase):
         self.assertIn('<a href="/knowledge/index.html" aria-current="page">', result)
         self.assertEqual(result, render(result, ROOT / 'articles/example/index.html'))
 
+    def test_every_page_uses_one_shared_frame(self):
+        from render_shared import pages
+        from apply_field_manual import parse
+        footer = (ROOT/'templates/footer.html').read_text().strip()
+        for path in pages():
+            source = path.read_text();nodes = parse(source).nodes
+            self.assertEqual(sum(n['tag']=='footer' for n in nodes),1,str(path))
+            self.assertEqual(sum(n['tag']=='header' and n['attrs'].get('class')=='masthead' for n in nodes),1,str(path))
+            self.assertIn(footer,source,str(path))
+
     def test_homepage_has_only_one_active_navigation_link(self):
         source = '<html><head></head><body><header class="wrap editorial-masthead"></header><main>Unchanged</main><footer class="wrap footer"></footer></body></html>'
         result = render(source, ROOT / 'index.html')
         self.assertEqual(result.count('aria-current="page"'), 1)
-        self.assertIn('id="primary-navigation"', result)
+        self.assertIn('id="static-primary-navigation"', result)
         self.assertEqual(result.count('site-navigation.js'), 1)
         self.assertIn('data-navigation-toggle', result)
         self.assertEqual(result, render(result, ROOT / 'index.html'))
