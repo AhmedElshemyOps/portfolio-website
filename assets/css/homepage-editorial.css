@@ -1,4 +1,4 @@
-@import url("/assets/css/fonts.css?v=20261008-polish");
+@import url("/assets/css/design-tokens.css?v=20261008-polish");
 svg{fill:currentColor}
 :root{--paper:#fcfaf5;--navy:#10283f;--gold:#795b20;--line:#ded5c5;--muted:#5c6573;--serif:Lora,Georgia,serif;--sans:"IBM Plex Sans",Arial,sans-serif}
 *{box-sizing:border-box}
@@ -27,7 +27,7 @@ h1{font-size:clamp(3.1rem,5.6vw,5.5rem);letter-spacing:-.045em;max-width:13ch}
 .discipline{font-family:var(--serif);font-size:22px;color:var(--muted);margin-top:25px;line-height:1.5}
 .intro{font-family:var(--serif);font-size:21px;line-height:1.55;max-width:45ch;margin-top:26px}
 .actions{display:flex;gap:18px;flex-wrap:wrap;margin-top:35px}
-.button{display:inline-flex;align-items:center;justify-content:center;gap:20px;border:1px solid var(--navy);padding:17px 32px;border-radius:3px;background:var(--navy);color:#fff;text-decoration:none;font-weight:600;font-size:17px;min-height:54px}
+.button{display:inline-flex;align-items:center;justify-content:center;gap:20px;border:1px solid var(--navy);padding:var(--action-padding);border-radius:3px;background:var(--navy);color:#fff;text-decoration:none;font-weight:600;font-size:17px;min-height:var(--action-height)}
 .button.secondary{color:var(--navy);background:transparent;border-color:var(--gold)}
 .button:hover{background:#213d55;color:white}
 .button svg,.direction svg{width:22px;height:22px;flex-shrink:0}
@@ -94,7 +94,7 @@ h1{font-size:clamp(3.1rem,5.6vw,5.5rem);letter-spacing:-.045em;max-width:13ch}
 .no-js-note{margin:20px 0}
 @media(min-width:1500px){.hero{min-height:600px}}
 @media(max-width:1100px){.wrap{width:calc(100% - 64px)}
-.primary{gap:24px}
+.primary{gap:var(--gap-lg)}
 .brand{font-size:21px}
 .hero{min-height:0;gap:28px}
 .hero-photo{height:510px}
@@ -202,7 +202,7 @@ h1{font-size:40px}
 .article h3{font-size:25px}}
 .career-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:60px}
 .career-grid h3{font-size:24px;margin-bottom:23px}
-.employers{display:grid;grid-template-columns:1fr 1fr;gap:24px 30px}
+.employers{display:grid;grid-template-columns:1fr 1fr;gap:var(--gap-lg) 30px}
 .employers strong{display:block;font-size:17px;line-height:1.4}
 .employers span{display:block;font-size:15px;line-height:1.55;color:var(--muted);margin-top:8px}
 .credential-summary{padding-left:40px;border-left:1px solid var(--line)}
@@ -254,7 +254,7 @@ h1{font-size:40px}
 .contact-copy-actions .contact-linkedin{display:inline-flex;align-items:center;min-height:44px;padding:8px 14px;color:#fff;border:1px solid #dfc27d;box-sizing:border-box;font-size:.875rem}
 
 /* Contact channels are grouped above secondary footer resources. */
-.contact-details{min-width:0}.contact-details>a{overflow-wrap:anywhere}.contact-copy-actions .contact-social{display:inline-flex;align-items:center;min-height:44px;padding:10px 14px;border:1px solid currentColor;border-radius:4px;text-decoration:none}.contact-inner{gap:28px}.contact-inner>.button{align-self:start}.footer nav{gap:12px 20px}.footer-professional p span{display:block;margin-top:6px}@media(max-width:720px){.contact-inner{grid-template-columns:1fr}.contact-details{width:100%}.contact-copy-actions{gap:10px;flex-wrap:wrap}.footer{gap:24px}.footer nav{display:flex;flex-wrap:wrap}}
+.contact-details{min-width:0}.contact-details>a{overflow-wrap:anywhere}.contact-copy-actions .contact-social{display:inline-flex;align-items:center;min-height:44px;padding:10px 14px;border:1px solid currentColor;border-radius:4px;text-decoration:none}.contact-inner{gap:28px}.contact-inner>.button{align-self:start}.footer nav{gap:12px 20px}.footer-professional p span{display:block;margin-top:6px}@media(max-width:720px){.contact-inner{grid-template-columns:1fr}.contact-details{width:100%}.contact-copy-actions{gap:10px;flex-wrap:wrap}.footer{gap:var(--gap-lg)}.footer nav{display:flex;flex-wrap:wrap}}
 
 .contact-inner{grid-template-columns:minmax(0,1.1fr) minmax(0,1fr)}.contact-details>.button{width:max-content;max-width:100%;margin-top:12px}.contact-details>a.button{color:var(--navy);background:var(--gold)}@media(max-width:720px){.contact-inner{grid-template-columns:minmax(0,1fr)}}
 

@@ -29,4 +29,6 @@ def approved_revisions(source, slug):
         source = source[:purpose['end']] + SCOPE_NOTE + source[purpose['end']:]
     if slug == 'hotel-reservations-ai-toolkit':
         source = migrate(source).replace('<p>---</p>', '<hr/>')
+    if slug == 'hotel-housekeeping-management-ai-toolkit':
+        source = source.replace('When the website edition is published, reciprocal links should also be added from older relevant articles back to this chapter.', 'Use the related reading links and series navigation to connect this chapter with the wider operations library.')
     return render(source, row, ROWS)

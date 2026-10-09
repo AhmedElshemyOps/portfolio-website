@@ -1,6 +1,7 @@
 """Regression checks for preserving page content during shared-component updates."""
 from pathlib import Path
 import json
+import re
 import shutil
 import sys
 import tempfile
@@ -21,10 +22,12 @@ class SharedComponents(unittest.TestCase):
         body = '<main><h1>Research</h1><a href="#evidence">Evidence</a><p id="evidence">Unchanged.</p></main>'
         source = '<html><head>' + preload + css + script + other + (css + script) * 12 + other + '</head><body>' + body + '</body></html>'
         result = render(source, ROOT / 'resources/index.html')
-        self.assertEqual(result.count(css), 1)
-        self.assertEqual(result.count(script), 1)
+        # Content revisions change URLs, not asset multiplicity or order.
+        normalized = re.sub(r'\?v=[a-f0-9]{12}(?=")', '', result)
+        self.assertEqual(normalized.count(css), 1)
+        self.assertEqual(normalized.count(script), 1)
         self.assertEqual(result.count(other), 2, 'Unrelated scripts must not be silently removed.')
-        self.assertIn(preload + css + script + other, result)
+        self.assertIn(preload + css + script + other, normalized)
         self.assertIn(body, result)
         self.assertEqual(result, render(result, ROOT / 'resources/index.html'))
 

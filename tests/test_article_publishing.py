@@ -1,11 +1,11 @@
-import sys,unittest,json,tempfile,shutil
+import sys,unittest,json,tempfile,shutil,re
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'scripts'))
 from publish_article import body_html,page,publish,read_draft
 class ArticlePublishing(unittest.TestCase):
  def setUp(self):
-  self.meta=dict(title='Finished text test',slug='finished-text-test',description='A publication workflow test.',topic='Operational Excellence & SOPs',published='2026-10-08',updated='2026-10-08')
+  self.meta=dict(title='Finished text test',slug='finished-text-test',description='A publication workflow test.',topic='Operational Excellence & SOPs',published='2026-10-08',updated='2026-10-08',series_id='amsterdam-product-discovery',series_number=13)
   self.text='## Evidence\n\nOriginal **finished** text.\n\n```\nKeep <this> exactly\n```\n\n## Evidence\n\n- One\n- Two'
  def test_safe_formatting_and_unique_headings(self):
   html,heads=body_html(self.text)
@@ -20,7 +20,15 @@ class ArticlePublishing(unittest.TestCase):
    prior={p:p.read_bytes() for p in (root/'articles').glob('*/index.html')}
    target=publish(root,self.meta,self.text)
    self.assertIn('finished-text-test',target.read_text())
-   for p,data in prior.items():self.assertEqual(p.read_bytes(),data)
+   for p,data in prior.items():
+    if 'amsterdam-product-discovery-' not in str(p):self.assertEqual(p.read_bytes(),data)
+    else:
+     pattern=r'<article class="article-body".*?</article>'
+     before=re.search(pattern,data.decode(),re.S);after=re.search(pattern,p.read_text(),re.S)
+     self.assertEqual(before[0] if before else None,after[0] if after else None)
+   self.assertIn('Article 13',target.read_text())
+   self.assertIn('data-series-banner="amsterdam-product-discovery"',target.read_text())
+   self.assertIn('series-reading-path',target.read_text())
    for name in ('article-registry.json','discovery-index.json','articles.json','article-stats.json'):
     self.assertIn('finished-text-test',(root/'content'/name).read_text())
    for name in ('knowledge/index.html','index.html','sitemap.xml','feed.xml'):
@@ -29,6 +37,10 @@ class ArticlePublishing(unittest.TestCase):
    publish(root,self.meta,self.text,replace=True)
    registry=json.loads((root/'content/article-registry.json').read_text())
    self.assertEqual(sum(x['id']=='finished-text-test' for x in registry),1)
+ def test_series_validation(self):
+  from article_series import register
+  for changes in ({'series_id':'private-rag'}, {'series_number':1}, {'series_number':15}, {'series_number':True}):
+   with self.assertRaises(ValueError):register(ROOT,dict(self.meta,**changes))
  def test_bad_slug(self):
   with tempfile.TemporaryDirectory() as tmp:
    p=Path(tmp)/'bad.md';m=dict(self.meta,slug='../escape');p.write_text('---\n'+json.dumps(m)+'\n---\n'+self.text)

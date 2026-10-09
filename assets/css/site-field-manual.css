@@ -7,13 +7,13 @@ body{font-family:var(--sans);background:var(--paper)}
 .growth-section,.lab-section{padding:52px max(5vw,24px);background:var(--paper)}
 .growth-section.alt,.lab-section.is-white{background:var(--white)}
 .section-head h2,.section-intro h2,.lab-section h2,.growth-section h2{font-family:var(--serif);line-height:1.3;letter-spacing:-.025em}
-.knowledge-grid,.path-grid,.lab-card-grid,.growth-cards{gap:24px}
+.knowledge-grid,.path-grid,.lab-card-grid,.growth-cards{gap:var(--gap-lg)}
 .knowledge-card,.path-card,.lab-card,.growth-cards article{border:1px solid var(--line-light);border-radius:2px;box-shadow:none;background:#fff}
-.knowledge-card a,.path-card a{padding:24px}
+.knowledge-card a,.path-card a{padding:var(--card-padding)}
 .knowledge-card h2,.path-card h2,.lab-card h3{font:600 clamp(21px,2vw,25px)/1.35 var(--serif);letter-spacing:-.02em;color:var(--ink)}
 .knowledge-card p,.path-card p,.lab-card p{font-size:15px;line-height:1.7;color:var(--muted)}
 .knowledge-card:hover,.path-card:hover,.lab-card:hover{border-color:var(--gold-line);box-shadow:var(--shadow-soft)}
-.knowledge-filters{gap:16px;padding:24px;background:var(--paper-deep);border:1px solid var(--line-light);box-shadow:none}
+.knowledge-filters{gap:16px;padding:var(--card-padding);background:var(--paper-deep);border:1px solid var(--line-light);box-shadow:none}
 .knowledge-filters input,.knowledge-filters select{min-height:44px;border-radius:2px;font-size:15px;background:#fff;color:var(--ink)}
 .featured-strip{gap:20px;margin-bottom:32px}
 .button,.lab-button{border-radius:2px;min-height:44px;line-height:1.4;font-family:var(--sans)}
@@ -22,7 +22,7 @@ body{font-family:var(--sans);background:var(--paper)}
 .stat-grid span{min-height:88px}
 .project-index{gap:32px}
 .project-index-visual{box-shadow:none;border:1px solid var(--line-light)}
-.pillar-grid{gap:24px}
+.pillar-grid{gap:var(--gap-lg)}
 .pillar{box-shadow:none;border-color:var(--line-light)}
 .long-section{padding-top:64px;padding-bottom:64px}
 .section-intro h2{font-size:clamp(30px,3.5vw,44px)}

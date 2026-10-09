@@ -77,7 +77,7 @@ def simplify(s):
         return ('<li class="toc-main-item">' if main else '<li>')+content+'</li>'
     position=next((n for n in e.nodes if toc['inner']<=n['start']<toc['end'] and 'series-position' in e.classes(n)),None)
     prefix=s[position['start']:position['end']] if position else ''
-    nav=('<aside class="article-toc" aria-label="Article navigation">'+prefix+'<details data-reader-toc open><summary>On this page <span>'+str(len(records))+' main sections</span></summary><nav aria-label="Table of contents"><ol class="toc-main-sections">'+''.join(item(r) for r in records)+'</ol></nav></details></aside>')
+    nav=('<aside class="article-toc" aria-label="Article navigation">'+prefix+'<details data-reader-toc><summary>On this page <span>'+str(len(records))+' main sections</span></summary><nav aria-label="Table of contents"><ol class="toc-main-sections">'+''.join(item(r) for r in records)+'</ol></nav></details></aside>')
     return s[:toc['start']]+nav+s[toc['end']:],True
 
 def main():

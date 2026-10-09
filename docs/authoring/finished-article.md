@@ -6,6 +6,8 @@
   "topic": "Operational Excellence & SOPs",
   "published": "2026-10-08",
   "updated": "2026-10-08",
+  "series_id": "amsterdam-product-discovery",
+  "series_number": 13,
   "tags": ["Operations"]
 }
 ---

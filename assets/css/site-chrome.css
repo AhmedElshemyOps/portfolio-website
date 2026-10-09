@@ -232,3 +232,15 @@
 .site-update-notice p{flex:1 1 280px;margin:0}.site-update-notice button{min-height:44px;padding:10px 16px;border:1px solid #10283f;background:#10283f;color:white;font:inherit;border-radius:3px;cursor:pointer}.site-update-notice [data-update-dismiss]{background:transparent;color:#10283f}.site-update-notice button:focus-visible{outline:3px solid #795b20;outline-offset:3px}
 #library-search{scroll-margin-top:100px}.library-search-return{display:inline-flex;min-height:44px;align-items:center;margin:0 0 16px;color:#795b20;text-underline-offset:4px}
 @media print{.site-update-notice{display:none!important}}
+
+/* Reserve the compact header row before web fonts finish loading. */
+@media(max-width:1000px){
+ .masthead[data-navigation-ready],.editorial-masthead[data-navigation-ready]{flex-wrap:nowrap}
+ .masthead[data-navigation-ready]>.brand,.editorial-masthead[data-navigation-ready]>.brand{min-width:0}
+ .static-menu-toggle{flex-shrink:0}
+}
+@media(max-width:420px){
+ .masthead[data-navigation-ready]>.brand{gap:8px}
+ .masthead .brand strong{font-size:clamp(16px,4.6vw,18px)}
+ .masthead img.mark{width:40px;height:40px;flex-shrink:0}
+}

@@ -84,7 +84,7 @@ def page(meta,text):
     styles = ''.join('<link rel="stylesheet" href="/assets/css/'+name+'.css"/>' for name in ('launch-pages','discovery','article-field-manual'))
     scripts = ''.join('<script defer src="/assets/js/'+name+'.js"></script>' for name in ('site-config','analytics','discovery','saved-reading','article-reader'))
     toc = ''.join('<li><a href="#'+ident+'">'+e(title)+'</a></li>' for ident,title in headings)
-    html = f'''<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>{e(meta['title'])} | Ahmed Mahmoud</title><meta name="description" content="{e(meta['description'],quote=True)}"/><link rel="canonical" href="{BASE+url}"/><meta property="og:title" content="{e(meta['title'],quote=True)}"/><meta property="og:description" content="{e(meta['description'],quote=True)}"/><meta property="og:url" content="{BASE+url}"/><meta property="og:type" content="article"/>{styles}{scripts}<script type="application/ld+json">{schema_json}</script></head><body class="article-reader-page field-manual">{MARKER}<a class="skip" href="#article">Skip to article</a><header class="masthead"></header><main class="article-page" id="article" tabindex="-1"><header class="article-page-header"><span class="eyebrow">{e(meta['topic'])} · Field guide</span><h1>{e(meta['title'])}</h1><p>{e(meta['description'])}</p><p>{minutes} min read · Published {e(meta['published'])} · Updated {e(meta['updated'])}</p></header><div class="article-reader-layout"><aside class="article-toc"><details data-reader-toc open><summary>On this page</summary><ol>{toc}</ol></details></aside><div class="article-reading-column"><div class="article-topline"><div class="reader-utilities"><button type="button" data-reader-font="decrease" aria-label="Decrease text size">A−</button><button type="button" data-reader-font="increase" aria-label="Increase text size">A+</button><button type="button" data-reader-theme aria-pressed="false">Dark reading</button><button type="button" data-reader-contrast aria-pressed="false">High contrast</button></div></div><article class="article-body">{body}</article><p><a href="/knowledge/index.html">Explore the Knowledge Library</a></p></div></div></main><footer class="platform-footer"></footer></body></html>'''
+    html = f'''<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>{e(meta['title'])} | Ahmed Mahmoud</title><meta name="description" content="{e(meta['description'],quote=True)}"/><link rel="canonical" href="{BASE+url}"/><meta property="og:title" content="{e(meta['title'],quote=True)}"/><meta property="og:description" content="{e(meta['description'],quote=True)}"/><meta property="og:url" content="{BASE+url}"/><meta property="og:type" content="article"/>{styles}{scripts}<script type="application/ld+json">{schema_json}</script></head><body class="article-reader-page field-manual">{MARKER}<a class="skip" href="#article">Skip to article</a><header class="masthead"></header><main class="article-page" id="article" tabindex="-1"><header class="article-page-header"><span class="eyebrow">{e(meta['topic'])} · Field guide</span><h1>{e(meta['title'])}</h1><p>{e(meta['description'])}</p><p>{minutes} min read · Published {e(meta['published'])} · Updated {e(meta['updated'])}</p></header><div class="article-reader-layout"><aside class="article-toc"><details data-reader-toc><summary>On this page</summary><ol>{toc}</ol></details></aside><div class="article-reading-column"><div class="article-topline"><div class="reader-utilities"><button type="button" data-reader-font="decrease" aria-label="Decrease text size">A−</button><button type="button" data-reader-font="increase" aria-label="Increase text size">A+</button><button type="button" data-reader-theme aria-pressed="false">Dark reading</button><button type="button" data-reader-contrast aria-pressed="false">High contrast</button></div></div><article class="article-body">{body}</article><p><a href="/knowledge/index.html">Explore the Knowledge Library</a></p></div></div></main><footer class="platform-footer"></footer></body></html>'''
     return html, dict(id=meta['slug'],title=meta['title'],url=url,description=meta['description'],category=meta['topic'],pillar=meta['topic'],series=meta.get('series',meta['topic']),type='Article',contentType='Field guide',readingTime=minutes,wordCount=len(text.split()),headings=[x[1] for x in headings],tags=meta.get('tags',[]),learningPaths=[],updated=meta['updated'])
 
 def publish(root,meta,text,replace=False):
@@ -99,16 +99,25 @@ def publish(root,meta,text,replace=False):
         nodes,_ = schema_nodes(target.read_text())
         original_date = next((n.get('datePublished') for n in nodes if n.get('@type')=='Article'),None)
         if meta['published'] != original_date: raise ValueError('Keep the original publication date when updating')
+    from article_series import register
+    banners,banner_row = register(root,meta)
+    meta = dict(meta,series=banner_row['series'])
     source,record = page(meta,text)
     registry = json.loads((root/'content/article-registry.json').read_text())
     registry = [x for x in registry if x['url']!=record['url']]+[record]
     # Back up every generated consumer; restore the complete transaction on error.
     paths = list((root/'content').glob('*.json'))+[root/'knowledge/index.html',root/'index.html',root/'sitemap.xml',root/'feed.xml',root/'maintenance/seo/sitemap-date-provenance.json',target]
+    paths += [root/r['url'].lstrip('/') for r in banners['articles'] if r['design']==banner_row['design']]
     backups = {p:p.read_bytes() if p.exists() else None for p in paths}
     try:
+        (root/'content/series-banners.json').write_text(json.dumps(banners,ensure_ascii=False,indent=2)+'\n')
         target.parent.mkdir(parents=True,exist_ok=True)
         target.write_text(source,encoding='utf-8'); refresh(root,registry)
         target.write_text(render(source,target,root),encoding='utf-8')
+        # Update totals and previous/next links for the entire affected series.
+        for row in banners['articles']:
+            if row['design']==banner_row['design'] and row['url']!=record['url']:
+                sibling=root/row['url'].lstrip('/');sibling.write_text(render(sibling.read_text(),sibling,root))
         home = root/'index.html'; html = home.read_text()
         match = re.search(r'(<script type="application/json" id="homepage-article-data">)(.*?)(</script>)',html,re.S)
         if not match: raise ValueError('Homepage article listing not found')
@@ -135,7 +144,11 @@ if __name__=='__main__':
         meta,text=read_draft(args.draft)
         if args.preview:
             from render_shared import render
-            source,_=page(meta,text);args.preview.write_text(render(source,ROOT/'articles'/meta['slug']/'index.html',ROOT));print('Preview saved:',args.preview)
+            from article_series import register
+            from render_series_banners import render as banner_render
+            banners,_=register(ROOT,meta)
+            source,_=page(meta,text);path=ROOT/'articles'/meta['slug']/'index.html'
+            args.preview.write_text(banner_render(render(source,path,ROOT),path,ROOT,manifest_data=banners));print('Preview saved:',args.preview)
             from bundle_page_styles import write_generated
             write_generated(root=ROOT)
         else:

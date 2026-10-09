@@ -16,6 +16,14 @@
   --line-light:#e8e2d6;
   --serif:"Lora",Georgia,serif;
   --sans:"IBM Plex Sans",Arial,sans-serif;
+  --gap-sm:8px;
+  --gap-md:16px;
+  --gap-lg:24px;
+  --card-padding:clamp(18px,3vw,24px);
+  --section-space:clamp(32px,5vw,64px);
+  --action-height:48px;
+  --action-padding:12px 24px;
+  --heading-leading:1.2;
   --space-1:.5rem;
   --space-2:clamp(2rem,4vw,3.5rem);
   --space-3:clamp(3rem,6vw,5rem);

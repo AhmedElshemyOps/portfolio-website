@@ -16,6 +16,9 @@ class SeriesBannerTests(unittest.TestCase):
    design=data['designs'][row['design']]
    for key in ('background','master'):
     asset=ROOT/design[key].lstrip('/');self.assertTrue(asset.is_file());self.assertEqual(asset.read_bytes()[8:12],b'WEBP')
+   self.assertIn('srcset=',s)
+   self.assertIn('(max-width:700px) 96px',s)
+   for width in (240,640,960):self.assertTrue((ROOT/design['background'].lstrip('/').replace('.webp',f'-{width}.webp')).is_file())
    self.assertIn('data-series-banner="'+row['design']+'"',s)
    label=f'Article {row["number"]:02d}' if row.get('number') else row['kind']
    self.assertIn('class="series-banner-number">'+label+'<',s)

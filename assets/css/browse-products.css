@@ -30,7 +30,7 @@
 @media(max-width:1000px){.topic-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.product-research{margin-inline:18px}}
 @media(max-width:600px){.library-filter-disclosure .knowledge-filters{grid-template-columns:1fr}.topic-grid{grid-template-columns:1fr}.topic-card{gap:10px;padding:18px}.library-topics{padding-block:28px}.product-introduction .action-row{display:grid;gap:12px}.product-introduction .button{white-space:normal}.product-research summary,.advanced-settings summary{font-size:1rem}.knowledge-filters select,.knowledge-filters input{font-size:1rem!important}.product-research .wrap{width:calc(100% - 32px)}}
 @media(max-height:500px) and (max-width:1000px){.masthead[data-navigation-ready],.editorial-masthead[data-navigation-ready]{position:relative!important}}
-@media(max-width:600px){.library-active-selection{align-items:stretch;flex-direction:column}.library-active-selection button{align-self:flex-start}.knowledge-empty{padding:24px}}
+@media(max-width:600px){.library-active-selection{align-items:stretch;flex-direction:column}.library-active-selection button{align-self:flex-start}.knowledge-empty{padding:var(--card-padding)}}
 @media print{.library-filter-disclosure,.library-search,.library-active-selection,.knowledge-empty button{display:none}.product-research{border:0}details.product-research>*{display:block!important}}
 
 .search-results-link{display:inline-flex;align-items:center;min-height:44px;margin-top:8px;color:var(--navy,#102338);font-weight:600}

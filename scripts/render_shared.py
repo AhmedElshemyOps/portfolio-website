@@ -91,9 +91,16 @@ def render(source, path, root=ROOT):
     if '/assets/css/launch-pages.css' in source:
         hints += '<link rel="preload" href="/assets/css/design-tokens.css?v=20261008-polish" as="style"/>'
     source = source.replace('</head>', hints + '</head>', 1)
+    # Native contents starts compact; desktop enhancement opens the rail without moving article text.
+    source = re.sub(r'(<details\b[^>]*data-reader-toc[^>]*)\sopen(?=[\s>])', r'\1', source)
     # Version changed interaction assets so an offline cache cannot serve old controls.
-    source = re.sub(r'(/assets/js/(?:discovery|article-reader)\.js)(?:\?[^"\s]*)?(?=")', r'\1?v=20261009-phase1', source)
-    source = re.sub(r'(/assets/css/infraquote-bundle\.css)(?:\?[^"\s]*)?(?=")', r'\1?v=20261009-phase1', source)
+    source = re.sub(r'(/assets/js/(?:discovery|article-reader)\.js)(?:\?[^"\s]*)?(?=")', r'\1?v=20261009-phase2', source)
+    source = re.sub(r'(/assets/css/infraquote-bundle\.css)(?:\?[^"\s]*)?(?=")', r'\1?v=20261009-phase2', source)
+    import hashlib
+    def revision(match):
+        asset=root/match[1].lstrip('/')
+        return match[1]+'?v='+hashlib.sha256(asset.read_bytes()).hexdigest()[:12] if asset.is_file() else match[0]
+    source=re.sub(r'(/assets/(?:css|js)/[^"?\s]+\.(?:css|js))(?:\?[^"\s]*)?(?=")',revision,source)
     from apply_library_navigation import render as render_library_navigation
     from render_projects import render as render_projects
     source = render_projects(source, path, root) if path.relative_to(root).as_posix() in {"index.html", "projects/index.html"} and 'class="project' in source else source
