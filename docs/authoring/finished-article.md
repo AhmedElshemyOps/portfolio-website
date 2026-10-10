@@ -8,7 +8,10 @@
   "updated": "2026-10-08",
   "series_id": "amsterdam-product-discovery",
   "series_number": 13,
-  "tags": ["Operations"]
+  "primaryCategory": "Product Strategy & Development",
+  "subcategory": "Product Discovery & Validation",
+  "relatedArticles": ["/articles/amsterdam-product-discovery-01-research-plan/index.html"],
+  "tags": ["Product discovery", "Amsterdam"]
 }
 ---
 ## Your first section

@@ -1,0 +1,19 @@
+{
+  "registry": 133,
+  "articles": 128,
+  "seriesIndexes": 5,
+  "articleFiles": 130,
+  "unregistered": [],
+  "missing": [],
+  "orphans": [],
+  "editorial": {
+    "KEEP": 81,
+    "REVIEW": 1,
+    "DIFFERENTIATE": 51
+  },
+  "metadataIssues": [],
+  "exactRepeatedPassages": 47,
+  "nearCandidates": 82,
+  "claimCandidates": 960,
+  "financialCandidates": 249
+}

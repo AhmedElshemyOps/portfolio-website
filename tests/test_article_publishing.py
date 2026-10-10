@@ -5,7 +5,7 @@ sys.path.insert(0,str(ROOT/'scripts'))
 from publish_article import body_html,page,publish,read_draft
 class ArticlePublishing(unittest.TestCase):
  def setUp(self):
-  self.meta=dict(title='Finished text test',slug='finished-text-test',description='A publication workflow test.',topic='Operational Excellence & SOPs',published='2026-10-08',updated='2026-10-08',series_id='amsterdam-product-discovery',series_number=13)
+  self.meta=dict(title='Finished text test',slug='finished-text-test',description='A publication workflow test.',topic='Operational Excellence & SOPs',published='2026-10-08',updated='2026-10-08',series_id='amsterdam-product-discovery',series_number=13,primaryCategory='Product Strategy & Development',subcategory='Product Discovery & Validation',tags=['Product discovery'],relatedArticles=['/articles/amsterdam-product-discovery-01-research-plan/index.html'])
   self.text='## Evidence\n\nOriginal **finished** text.\n\n```\nKeep <this> exactly\n```\n\n## Evidence\n\n- One\n- Two'
  def test_safe_formatting_and_unique_headings(self):
   html,heads=body_html(self.text)

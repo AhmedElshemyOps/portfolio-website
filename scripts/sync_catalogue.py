@@ -1,99 +1,20 @@
-"""Rebuild catalogue consumers and shared page chrome from published pages.
-Run from any directory: python3 scripts/sync_catalogue.py.
-No dependencies. Existing discovery records retain curated taxonomy.
+"""Rebuild derived library data from the authoritative registry, without body migrations.
+Run after editing article metadata: python3 scripts/sync_catalogue.py.
+For new finished text, use publish_article.py with explicit taxonomy metadata.
 """
+import json
 from pathlib import Path
-from html import escape, unescape
-import json, re, math
-ROOT=Path(__file__).resolve().parents[1]
-# Validate before writing any catalogue outputs; never publish an empty template.
-from sync_hotel_prompts import check as check_prompt_content
-check_prompt_content(ROOT)
-def display_topic(s): return s.replace('Hotel & Serviced Apartment AI', 'AI for Hotel Apartments')
-def clean(s): return unescape(re.sub('<[^>]+>', ' ', s)).strip()
-def match(pattern,s,default=''):
- m=re.search(pattern,s,re.S|re.I);return clean(m.group(1)) if m else default
-def write_json(name,value): (ROOT/'content'/name).write_text(json.dumps(value,ensure_ascii=False,indent=2)+'\n')
-# Apply curated openings before measuring and indexing the article bodies.
-from apply_article_value import apply_all
-apply_all(ROOT)
-# Normalize semantic headings before generating catalogue labels and outline entries.
-from normalize_article_headings import normalize, rows as heading_rows
-heading_labels=heading_rows()
-for article_path in (ROOT/"articles").glob("*/index.html"):
- original=article_path.read_text()
- normalized,_=normalize(original,article_path.parent.name,heading_labels)
- if normalized!=original:article_path.write_text(normalized)
-# Apply the shared example flow before measuring and indexing articles.
-import subprocess, sys
-subprocess.run([sys.executable, str(ROOT / 'scripts/standardize_article_prompts.py')], check=True)
-subprocess.run([sys.executable,str(ROOT/'scripts/standardize_article_examples.py')],check=True)
-subprocess.run([sys.executable,str(ROOT/'scripts/improve_article_visuals.py')],check=True)
-subprocess.run([sys.executable,str(ROOT/'scripts/connect_article_methods.py')],check=True)
-subprocess.run([sys.executable,str(ROOT/'scripts/improve_article_endings.py')],check=True)
-subprocess.run([sys.executable,str(ROOT/'scripts/improve_mobile_reader.py')],check=True)
-old=json.loads((ROOT/'content/discovery-index.json').read_text())
-by_url={x['url']:x for x in old}
-registry=[]
-for p in sorted((ROOT/'articles').glob('*/index.html')):
- s=p.read_text(); title=match(r'<h1[^>]*>(.*?)</h1>',s)
- if not title: continue
- url='/'+p.relative_to(ROOT).as_posix(); item=dict(by_url.get(url,{}))
- eyebrow=match(r'<(?:span|p|div)[^>]*class="[^"]*eyebrow[^"]*"[^>]*>(.*?)</(?:span|p|div)>',s)
- description=match(r'<meta\s+name="description"\s+content="([^"]*)"',s)
- hotel=p.parent.name.startswith('hotel-') or p.parent.name in ['responsible-ai-governance-hotels','workforce-rostering-productivity-ai-toolkit']
- track_b='Hotel Apartment Operational Excellence' in eyebrow
- category=item.get('category') or ('Hotel Apartment Operational Excellence' if track_b else 'Hotel & Serviced Apartment AI Operations' if hotel else eyebrow.split('·')[0].strip())
- pillar=item.get('pillar') or ('Operational Excellence & SOPs' if track_b else 'Hotel & Serviced Apartment AI' if hotel else category)
- series=item.get('series') or ('Hotel Apartment Operational Excellence' if track_b else 'Hotel AI Operations Playbook' if hotel else category)
- body=match(r'<article\b[^>]*>(.*?)</article>',s,s)
- words=len(body.split()); minutes=max(1,math.ceil(words/220))
- # Prefer the visible metadata, where editorially supplied.
- visible=match(r'<dd[^>]*>\s*(\d+)\s*(?:minutes|min)',s)
- if visible: minutes=int(visible)
- headings=[clean(x) for x in re.findall(r'<h2[^>]*>(.*?)</h2>',s,re.S)]
- item.update(id=p.parent.name,title=title,url=url,description=description or item.get('description',''),category=category,pillar=pillar,series=series,type=item.get('type','Article'),contentType=item.get('contentType','Field guide'),readingTime=minutes,wordCount=words,headings=headings)
- if item['contentType']=='Series index': item['type']='Series index'
- item.setdefault('tags',[series]);item.setdefault('learningPaths',[])
- registry.append(item)
-# Include genuine series hubs living under /series (not roadmap-only chapters).
-for p in sorted((ROOT/'series').glob('*/index.html')):
- url='/'+p.relative_to(ROOT).as_posix();page=p.read_text();title=match(r'<h1[^>]*>(.*?)</h1>',page)
- if not title:continue
- item=dict(by_url.get(url,{}));track_b='operational-excellence' in p.parent.name;hotel='hotel-' in p.parent.name
- item.update(id=item.get('id',p.parent.name),type='Series index',contentType='Series index',url=url,title=title,description=match(r'<meta\s+name="description"\s+content="([^"]*)"',page),pillar='Operational Excellence & SOPs' if track_b else 'Hotel & Serviced Apartment AI' if hotel else 'Market Intelligence & Product Discovery',series='Hotel Apartment Operational Excellence' if track_b else 'Hotel AI Operations Playbook' if hotel else 'Amsterdam Product Discovery')
- item.setdefault('category',item['series']);item.setdefault('tags',[item['series']]);item.setdefault('readingTime',1);item.setdefault('wordCount',0)
- registry.append(item)
 from article_catalogue import refresh
-refresh(ROOT,registry)
-articles=[x for x in registry if x['type']=='Article']
-# All editorial pages use the same header/footer; demos retain their app controls.
-count=0
-for p in ROOT.rglob('*.html'):
- if any(part in ['.git','templates','live-demos','scripts'] for part in p.relative_to(ROOT).parts):continue
- s=p.read_text()
- if not re.search(r'<header\b[^>]*class="masthead"',s):continue
- for asset in ['<link rel="stylesheet" href="/assets/css/discovery.css"/>','<script defer src="/assets/js/discovery.js"></script>','<script defer src="/assets/js/saved-reading.js"></script>']:
-  path=re.search(r'(?:href|src)="([^"]+)"',asset)[1]
-  if path not in s:s=s.replace('</head>',asset+'</head>')
- # Topic chips lead to a filtered hub rather than the homepage.
- if '/articles/' in '/'+p.relative_to(ROOT).as_posix():
-  item=next((x for x in registry if x['url']=='/'+p.relative_to(ROOT).as_posix()),None)
-  if item:
-   from urllib.parse import quote
-   s=s.replace('href="/#articles"','href="/knowledge/index.html?pillar='+quote(item['pillar'])+'"')
- if s!=p.read_text():p.write_text(s);count+=1
-print(f'{len(articles)} articles, {len(registry)-len(articles)} series indexes, {len({x["pillar"] for x in registry})} topics; synchronized {count} pages')
-# Keep the approved presentation when catalogue/header regeneration runs.
-import subprocess, sys
-subprocess.run([sys.executable, str(ROOT/'scripts/apply_field_manual.py')], check=True)
-subprocess.run([sys.executable, str(ROOT/'scripts/clean_article_openings.py')], check=True)
-subprocess.run([sys.executable, str(ROOT/"scripts/simplify_article_toc.py")], check=True)
-
-# Reapply authorized public contact fields after shared chrome generation.
-from update_site_contact import apply as apply_site_contact
-apply_site_contact(ROOT)
-
-# Shared component rendering also enforces the approved stylesheet/script entry points.
-from render_shared import apply as render_shared
-render_shared(ROOT)
+from render_shared import pages,render
+from bundle_page_styles import write_generated
+ROOT=Path(__file__).resolve().parents[1]
+def main():
+    registry=json.loads((ROOT/'content/article-registry.json').read_text())
+    refresh(ROOT,registry)
+    changed=0
+    for p in pages(ROOT):
+        old=p.read_text();new=render(old,p,ROOT)
+        if old!=new:p.write_text(new);changed+=1
+    write_generated(root=ROOT)
+    print(f'Validated {len(registry)} registry entries; refreshed derived data and {changed} page asset references.')
+if __name__=='__main__':main()

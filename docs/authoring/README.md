@@ -29,3 +29,11 @@ Existing articles are protected. Only articles created by this workflow can be u
 Every new public article requires `series_id` (an existing key in `content/series-banners.json`) and `series_number` (the next consecutive number). The sample uses Amsterdam article 13; check the current manifest before choosing a number. Unknown/private series, duplicates, gaps and renumbering an existing article are rejected before files are changed. The publisher applies the approved artwork, exact title, article number, sharing image and previous/next reading links. It updates the affected series totals and links in the same rollback-protected publication operation. Preview validates metadata without adding the draft to any public registry. No RAG series is registered for public publication.
 
 Responsive artwork is generated once per approved design with `scripts/build_banner_sizes.py` (Pillow required). It preserves the approved composition at 240, 640 and 960 pixels wide; the original 1774-pixel artwork remains available. Shared rendering adds `srcset`, accurate display sizes and intrinsic dimensions. Do not publish private preview output into the website directory.
+
+## Knowledge Hub classification
+
+Choose exactly one `primaryCategory` and one of its `subcategory` values from `content/knowledge-taxonomy.json`. Add zero to five controlled `tags` and a nonempty `relatedArticles` list containing existing article or overview URLs. The example metadata shows these fields. Retain `topic` for legacy consumers; it does not replace the primary category.
+
+The local publication transaction validates these fields, stable URLs, approved series and file existence. It rolls back generated outputs when validation fails. The registry supplies category counts, filters, article cards and connected reading. Never edit derived JSON files as a substitute for editing `content/article-registry.json`.
+
+After approved metadata edits, run `python3 scripts/sync_catalogue.py`. This now refreshes consumers from the registry without rerunning historical article-body migrations. Run the health checks and review changes before any separately authorized publication. Private RAG and prompt-injection drafts stay outside the public repository.

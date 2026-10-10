@@ -38,7 +38,7 @@
     if (!tokens.length) return 0;
     var title = normalize(item.title);
     var category = normalize(item.category);
-    var text = normalize(topicLabel(item.searchText || [item.title, item.description, item.category].concat(item.tags || [], item.headings || []).join(" ")) + " " + (item.searchText || ""));
+    var text = normalize(topicLabel(item.searchText || [item.title, item.description, item.category, item.primaryCategory, item.subcategory, item.seriesTitle].concat(item.tags || [], item.headings || []).join(" ")) + " " + (item.searchText || ""));
     var total = 0;
     tokens.forEach(function (token) {
       if (title === token) total += 18;
@@ -224,7 +224,7 @@
   var saved = null;
   try { saved = JSON.parse(sessionStorage.getItem('ahmed-library-browse-v1') || 'null'); } catch (_) {}
   var initialFilters = new URLSearchParams(location.search);
-  var explicit = ['pillar', 'topic', 'series', 'type', 'q', 'sort'].some(function (key) { return initialFilters.has(key); });
+  var explicit = ['category', 'subcategory', 'tag', 'collection', 'pillar', 'topic', 'series', 'type', 'q', 'sort'].some(function (key) { return initialFilters.has(key); });
   filters.forEach(function (filter) {
     var value = explicit ? (initialFilters.get(filter.dataset.knowledgeFilter) || (filter.dataset.knowledgeFilter === 'pillar' ? initialFilters.get('topic') : '')) : saved?.filters?.[filter.dataset.knowledgeFilter];
     if (value && Array.from(filter.options).some(function (option) { return option.value === value; })) filter.value = value;
@@ -236,31 +236,34 @@
     if (!knowledgeCards.length) return;
     if (resetBatch === true) limit = 12;
     var selected = Object.fromEntries(filters.map(function (filter) { return [filter.dataset.knowledgeFilter, filter.value]; }));
+    var subcategoryFilter = filters.find(function (field) { return field.dataset.knowledgeFilter === 'subcategory'; });
+    if (subcategoryFilter) Array.from(subcategoryFilter.options).forEach(function (option) { option.disabled = Boolean(option.value && selected.category && !knowledgeCards.some(function (card) { return card.dataset.category === selected.category && card.dataset.subcategory === option.value; })); });
     var query = (knowledgeQuery?.value || '').trim();
     var tokens = searchTokens(query);
     matched = knowledgeCards.filter(function (card) {
       var searchable = normalize(card.dataset.search + ' ' + topicLabel(card.dataset.search + ' ' + card.dataset.pillar));
-      return (!selected.pillar || card.dataset.pillar === selected.pillar) && (!selected.series || card.dataset.series === selected.series) && (!selected.type || card.dataset.type === selected.type) && tokens.every(function (token) { return searchable.includes(token); });
+      return (!selected.category || card.dataset.category === selected.category) && (!selected.subcategory || card.dataset.subcategory === selected.subcategory) && (!selected.tag || (card.dataset.tag || '').split('|').includes(selected.tag)) && (!selected.collection || card.dataset.collection === selected.collection) && (!selected.pillar || card.dataset.pillar === selected.pillar) && (!selected.series || card.dataset.series === selected.series) && (!selected.type || card.dataset.type === selected.type) && tokens.every(function (token) { return searchable.includes(token); });
     });
+    if (selected.collection && (!sort || sort.value === 'recommended')) matched.sort(function (a, b) { return Number(a.dataset.position || 0) - Number(b.dataset.position || 0); });
     if (sort?.value === 'title') matched.sort(function (a, b) { return a.querySelector('h2').textContent.localeCompare(b.querySelector('h2').textContent); });
     if (sort?.value === 'updated') matched.sort(function (a, b) { return (b.dataset.updated || '').localeCompare(a.dataset.updated || ''); });
     var visible = moreButton ? matched.slice(0, limit) : matched;
     knowledgeCards.forEach(function (card) { card.hidden = !visible.includes(card); });
     var grid = document.querySelector('.knowledge-grid');
     if (grid && sort) matched.forEach(function (card) { grid.appendChild(card); });
-    filters.forEach(function (filter) { filter.closest('label')?.classList.toggle('is-active', Boolean(filter.value)); });
+    filters.forEach(function (filter) { var label = filter.closest('label'); label?.classList.toggle('is-active', Boolean(filter.value)); if (label?.hasAttribute?.('data-legacy-filter')) label.hidden = !filter.value; });
     knowledgeQueries.forEach(function (field) { field.closest('label')?.classList.toggle('is-active', Boolean(query)); });
     var activeFilters = filters.filter(function (filter) { return Boolean(filter.value); });
     var selection = query ? ['Search: “' + query + '”'] : [];
     activeFilters.forEach(function (filter) {
       var option = Array.from(filter.options).find(function (item) { return item.value === filter.value; });
-      selection.push(({ pillar: 'Topic', series: 'Series', type: 'Content type' })[filter.dataset.knowledgeFilter] + ': ' + (option?.textContent || filter.value));
+      selection.push(({ category: 'Category', subcategory: 'Subcategory', tag: 'Topic tag', collection: 'Editorial series', pillar: 'Topic', series: 'Series', type: 'Content type' })[filter.dataset.knowledgeFilter] + ': ' + (option?.textContent || filter.value));
     });
     if (sort?.value && sort.value !== 'recommended') selection.push('Sort: ' + Array.from(sort.options).find(function (item) { return item.value === sort.value; })?.textContent);
     if (activeSelection) activeSelection.hidden = selection.length === 0;
     if (selectionText) selectionText.textContent = selection.join(' · ');
     if (filterDisclosureLabel) filterDisclosureLabel.textContent = 'Filter articles' + (activeFilters.length ? ' (' + activeFilters.length + ' active)' : '');
-    document.querySelector('[data-knowledge-status]').textContent = matched.length ? 'Showing ' + visible.length + ' of ' + matched.length + ' matching articles.' : 'No matching articles.';
+    document.querySelector('[data-knowledge-status]').textContent = matched.length ? 'Showing ' + visible.length + ' of ' + matched.length + ' matching items (articles and series indexes).' : 'No matching items.';
     document.querySelector('[data-knowledge-empty]').hidden = matched.length !== 0;
     if (moreButton) moreButton.hidden = visible.length >= matched.length;
     if (pageStatus) pageStatus.textContent = visible.length < matched.length ? 'Continue exploring this selection.' : matched.length ? 'You have reached the end of this selection.' : '';
@@ -273,7 +276,7 @@
     try { sessionStorage.setItem('ahmed-library-browse-v1', JSON.stringify({ filters: selected, query: knowledgeQuery?.value || '', sort: sort?.value || 'recommended', limit: limit })); } catch (_) {}
   }
   filterKnowledge();
-  filters.forEach(function (filter) { filter.addEventListener('change', function () { filterKnowledge(true); }); });
+  filters.forEach(function (filter) { filter.addEventListener('change', function () { if (filter.dataset.knowledgeFilter === 'category') { var sub = filters.find(function (field) { return field.dataset.knowledgeFilter === 'subcategory'; }); if (sub) sub.value = ''; } filterKnowledge(true); }); });
   sort?.addEventListener('change', function () { filterKnowledge(true); });
   knowledgeQueries.forEach(function (field) { field.addEventListener('input', function () { knowledgeQueries.forEach(function (other) { other.value = field.value; }); filterKnowledge(true); }); });
   moreButton?.addEventListener('click', function () { var next = matched[limit]; limit += 12; filterKnowledge(); next?.querySelector('a')?.focus(); });

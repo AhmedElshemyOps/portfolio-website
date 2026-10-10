@@ -1,0 +1,806 @@
+{
+  "commit": "26bf6ee9baa2c417e1f113fbec164ca8da793283",
+  "registryUrls": [
+    "/articles/abu-dhabi-mice-operations-series/index.html",
+    "/articles/amsterdam-product-discovery-01-research-plan/index.html",
+    "/articles/amsterdam-product-discovery-02-competitive-landscape/index.html",
+    "/articles/amsterdam-product-discovery-03-market-gap/index.html",
+    "/articles/amsterdam-product-discovery-04-voice-of-customer/index.html",
+    "/articles/amsterdam-product-discovery-05-segmentation-language/index.html",
+    "/articles/amsterdam-product-discovery-06-destination-geography/index.html",
+    "/articles/amsterdam-product-discovery-07-product-requirements-concept/index.html",
+    "/articles/amsterdam-product-discovery-08-commercial-model-unit-economics/index.html",
+    "/articles/amsterdam-product-discovery-09-risk-responsibility/index.html",
+    "/articles/amsterdam-product-discovery-10-seasonality-operating-calendar/index.html",
+    "/articles/amsterdam-product-discovery-11-mvp-pilot-operational-readiness/index.html",
+    "/articles/amsterdam-product-discovery-12-product-analytics-scale-decision/index.html",
+    "/articles/article-abu-dhabi-mice-movement-control-room/index.html",
+    "/articles/article-air-connectivity-dmc-market-intelligence/index.html",
+    "/articles/article-assignment-engine-dmc-operations/index.html",
+    "/articles/article-city-tour-quotation-professional/index.html",
+    "/articles/article-destination-experience-journey-map/index.html",
+    "/articles/article-fixed-variable-costs-city-tour-pricing/index.html",
+    "/articles/article-fleet-control-tower-operations-dashboard/index.html",
+    "/articles/article-mice-arrival-waves-zayed-international-airport/index.html",
+    "/articles/article-mice-backup-operations-service-recovery-abu-dhabi/index.html",
+    "/articles/article-mice-hotel-desks-coach-departures-abu-dhabi/index.html",
+    "/articles/article-mice-venue-arrivals-registration-abu-dhabi/index.html",
+    "/articles/article-net-cost-selling-price-markup/index.html",
+    "/articles/article-participant-estimation-break-even-risk/index.html",
+    "/articles/article-professional-client-tour-quotation/index.html",
+    "/articles/article-rfi-rfq-rfp-erfp-nda-tourism-sales/index.html",
+    "/articles/article-tour-cost-worksheet-city-tour/index.html",
+    "/articles/article-tour-guide-quality-index/index.html",
+    "/articles/article-tour-guide-storytelling-system/index.html",
+    "/articles/article-tourism-operations-roles-real-difference/index.html",
+    "/articles/article-transport-tickets-vat-gratuities/index.html",
+    "/articles/capa-tourism-operations/index.html",
+    "/articles/customer-journey-mapping-sop-design/index.html",
+    "/articles/dmc-operations-ai-prompts/index.html",
+    "/articles/document-control-version-management-tourism/index.html",
+    "/articles/front-line-tourism-ai-toolkit/index.html",
+    "/articles/guest-experience-ai-prompts/index.html",
+    "/articles/guest-ready-apartment-standard/index.html",
+    "/articles/hotel-ai-prompting-framework/index.html",
+    "/articles/hotel-apartment-asset-lifecycle-management/index.html",
+    "/articles/hotel-apartment-cost-of-poor-quality/index.html",
+    "/articles/hotel-apartment-end-to-end-guest-journey/index.html",
+    "/articles/hotel-apartment-extended-stay-ai-toolkit/index.html",
+    "/articles/hotel-apartment-kpi-architecture/index.html",
+    "/articles/hotel-apartment-operating-system/index.html",
+    "/articles/hotel-apartment-operations-control-tower/index.html",
+    "/articles/hotel-apartment-preventive-maintenance-strategy/index.html",
+    "/articles/hotel-apartment-sop-architecture/index.html",
+    "/articles/hotel-apartment-total-cost-of-ownership/index.html",
+    "/articles/hotel-complaint-root-cause-analysis/index.html",
+    "/articles/hotel-control-tower-ai-decision-support-toolkit/index.html",
+    "/articles/hotel-critical-spare-parts-management/index.html",
+    "/articles/hotel-downtime-out-of-service-management/index.html",
+    "/articles/hotel-economics-of-service-failure/index.html",
+    "/articles/hotel-energy-utility-management-ai-toolkit/index.html",
+    "/articles/hotel-engineering-maintenance-ai-toolkit/index.html",
+    "/articles/hotel-esg-sustainability-ai-toolkit/index.html",
+    "/articles/hotel-finance-cost-control-ai-toolkit/index.html",
+    "/articles/hotel-first-time-right-operations/index.html",
+    "/articles/hotel-front-office-ai-toolkit/index.html",
+    "/articles/hotel-general-manager-ai-toolkit/index.html",
+    "/articles/hotel-guest-complaint-service-recovery-ai-toolkit/index.html",
+    "/articles/hotel-guest-experience-ai-toolkit/index.html",
+    "/articles/hotel-guest-experience-quality-management/index.html",
+    "/articles/hotel-housekeeping-management-ai-toolkit/index.html",
+    "/articles/hotel-housekeeping-quality-control/index.html",
+    "/articles/hotel-housekeeping-standardization/index.html",
+    "/articles/hotel-inventory-par-level-management/index.html",
+    "/articles/hotel-inventory-par-management-ai-toolkit/index.html",
+    "/articles/hotel-kpi-dashboard-ai-toolkit/index.html",
+    "/articles/hotel-lean-six-sigma-ai-toolkit/index.html",
+    "/articles/hotel-maintenance-work-order-management/index.html",
+    "/articles/hotel-operational-excellence-maturity-model/index.html",
+    "/articles/hotel-operations-manager-ai-toolkit/index.html",
+    "/articles/hotel-operations-planning-daily-control/index.html",
+    "/articles/hotel-ota-distribution-review-management-ai-toolkit/index.html",
+    "/articles/hotel-predictive-maintenance-ai-toolkit/index.html",
+    "/articles/hotel-preventive-maintenance-kpis/index.html",
+    "/articles/hotel-procurement-ai-toolkit/index.html",
+    "/articles/hotel-procurement-supplier-quality-control/index.html",
+    "/articles/hotel-property-reliability-score/index.html",
+    "/articles/hotel-quality-audit-ai-toolkit/index.html",
+    "/articles/hotel-reservations-ai-toolkit/index.html",
+    "/articles/hotel-revenue-management-ai-toolkit/index.html",
+    "/articles/hotel-sales-corporate-accounts-ai-toolkit/index.html",
+    "/articles/hotel-sop-process-design-ai-toolkit/index.html",
+    "/articles/hotel-workforce-productivity-efficiency/index.html",
+    "/articles/how-to-audit-an-sop/index.html",
+    "/articles/how-to-write-professional-sop-procedure/index.html",
+    "/articles/how-to-write-professional-sop-structure/index.html",
+    "/articles/how-to-write-work-instructions/index.html",
+    "/articles/insights-city-tour-quotation-pricing-masterclass/index.html",
+    "/articles/integrated-sop-creation-model/index.html",
+    "/articles/itil-4-tourism-operations/index.html",
+    "/articles/lean-thinking-tourism-operations/index.html",
+    "/articles/map-process-before-writing-sop/index.html",
+    "/articles/operational-checklist-employees-use/index.html",
+    "/articles/pmp-thinking-sop-implementation/index.html",
+    "/articles/policy-vs-sop-work-instruction-checklist-form-template/index.html",
+    "/articles/procedures-processes-process-maps/index.html",
+    "/articles/professional-operational-form/index.html",
+    "/articles/responsible-ai-governance-hotels/index.html",
+    "/articles/responsible-ai-tourism-guide/index.html",
+    "/articles/root-cause-analysis-tourism-managers/index.html",
+    "/articles/sipoc-tourism-operations/index.html",
+    "/articles/six-sigma-tourism-complaints-data/index.html",
+    "/articles/sop-evidence-documentation-legal-defensibility/index.html",
+    "/articles/sop-exception-escalation-management/index.html",
+    "/articles/sop-roles-authority-raci/index.html",
+    "/articles/standard-communication-templates/index.html",
+    "/articles/standard-test-procedures-tourism-operations/index.html",
+    "/articles/tourism-ai-operations-playbook/index.html",
+    "/articles/tourism-company-operating-system/index.html",
+    "/articles/tourism-document-hierarchy/index.html",
+    "/articles/tourism-itinerary-ai-prompts/index.html",
+    "/articles/tourism-operational-excellence-management-system/index.html",
+    "/articles/tourism-operational-risk-assessment-before-sop/index.html",
+    "/articles/tourism-operations-kpis-control-dashboards/index.html",
+    "/articles/tourism-operations-manual/index.html",
+    "/articles/tourism-product-development-ai-prompts/index.html",
+    "/articles/tourism-prompting-framework/index.html",
+    "/articles/tourism-quality-sop-ai-prompts/index.html",
+    "/articles/tourism-sales-quotation-ai-prompts/index.html",
+    "/articles/tourism-sop-training-competency-adoption/index.html",
+    "/articles/tourism-supplier-partner-governance-sops/index.html",
+    "/articles/tourism-transport-dispatch-ai-prompts/index.html",
+    "/articles/where-stp-fits-tourism-operations/index.html",
+    "/articles/workforce-rostering-productivity-ai-toolkit/index.html",
+    "/series/amsterdam-tourism-product-discovery/index.html",
+    "/series/hotel-ai-operations-playbook/index.html",
+    "/series/hotel-apartment-operational-excellence/index.html"
+  ],
+  "articleFiles": [
+    "/articles/abu-dhabi-mice-operations-series/index.html",
+    "/articles/amsterdam-product-discovery-01-research-plan/index.html",
+    "/articles/amsterdam-product-discovery-02-competitive-landscape/index.html",
+    "/articles/amsterdam-product-discovery-03-market-gap/index.html",
+    "/articles/amsterdam-product-discovery-04-voice-of-customer/index.html",
+    "/articles/amsterdam-product-discovery-05-segmentation-language/index.html",
+    "/articles/amsterdam-product-discovery-06-destination-geography/index.html",
+    "/articles/amsterdam-product-discovery-07-product-requirements-concept/index.html",
+    "/articles/amsterdam-product-discovery-08-commercial-model-unit-economics/index.html",
+    "/articles/amsterdam-product-discovery-09-risk-responsibility/index.html",
+    "/articles/amsterdam-product-discovery-10-seasonality-operating-calendar/index.html",
+    "/articles/amsterdam-product-discovery-11-mvp-pilot-operational-readiness/index.html",
+    "/articles/amsterdam-product-discovery-12-product-analytics-scale-decision/index.html",
+    "/articles/article-abu-dhabi-mice-movement-control-room/index.html",
+    "/articles/article-air-connectivity-dmc-market-intelligence/index.html",
+    "/articles/article-assignment-engine-dmc-operations/index.html",
+    "/articles/article-city-tour-quotation-professional/index.html",
+    "/articles/article-destination-experience-journey-map/index.html",
+    "/articles/article-fixed-variable-costs-city-tour-pricing/index.html",
+    "/articles/article-fleet-control-tower-operations-dashboard/index.html",
+    "/articles/article-mice-arrival-waves-zayed-international-airport/index.html",
+    "/articles/article-mice-backup-operations-service-recovery-abu-dhabi/index.html",
+    "/articles/article-mice-hotel-desks-coach-departures-abu-dhabi/index.html",
+    "/articles/article-mice-venue-arrivals-registration-abu-dhabi/index.html",
+    "/articles/article-net-cost-selling-price-markup/index.html",
+    "/articles/article-participant-estimation-break-even-risk/index.html",
+    "/articles/article-professional-client-tour-quotation/index.html",
+    "/articles/article-rfi-rfq-rfp-erfp-nda-tourism-sales/index.html",
+    "/articles/article-tour-cost-worksheet-city-tour/index.html",
+    "/articles/article-tour-guide-quality-index/index.html",
+    "/articles/article-tour-guide-storytelling-system/index.html",
+    "/articles/article-tourism-operations-roles-real-difference/index.html",
+    "/articles/article-transport-tickets-vat-gratuities/index.html",
+    "/articles/capa-tourism-operations/index.html",
+    "/articles/customer-journey-mapping-sop-design/index.html",
+    "/articles/dmc-operations-ai-prompts/index.html",
+    "/articles/document-control-version-management-tourism/index.html",
+    "/articles/front-line-tourism-ai-toolkit/index.html",
+    "/articles/guest-experience-ai-prompts/index.html",
+    "/articles/guest-ready-apartment-standard/index.html",
+    "/articles/hotel-ai-prompting-framework/index.html",
+    "/articles/hotel-apartment-asset-lifecycle-management/index.html",
+    "/articles/hotel-apartment-cost-of-poor-quality/index.html",
+    "/articles/hotel-apartment-end-to-end-guest-journey/index.html",
+    "/articles/hotel-apartment-extended-stay-ai-toolkit/index.html",
+    "/articles/hotel-apartment-kpi-architecture/index.html",
+    "/articles/hotel-apartment-operating-system/index.html",
+    "/articles/hotel-apartment-operations-control-tower/index.html",
+    "/articles/hotel-apartment-preventive-maintenance-strategy/index.html",
+    "/articles/hotel-apartment-sop-architecture/index.html",
+    "/articles/hotel-apartment-total-cost-of-ownership/index.html",
+    "/articles/hotel-complaint-root-cause-analysis/index.html",
+    "/articles/hotel-control-tower-ai-decision-support-toolkit/index.html",
+    "/articles/hotel-critical-spare-parts-management/index.html",
+    "/articles/hotel-downtime-out-of-service-management/index.html",
+    "/articles/hotel-economics-of-service-failure/index.html",
+    "/articles/hotel-energy-utility-management-ai-toolkit/index.html",
+    "/articles/hotel-engineering-maintenance-ai-toolkit/index.html",
+    "/articles/hotel-esg-sustainability-ai-toolkit/index.html",
+    "/articles/hotel-finance-cost-control-ai-toolkit/index.html",
+    "/articles/hotel-first-time-right-operations/index.html",
+    "/articles/hotel-front-office-ai-toolkit/index.html",
+    "/articles/hotel-general-manager-ai-toolkit/index.html",
+    "/articles/hotel-guest-complaint-service-recovery-ai-toolkit/index.html",
+    "/articles/hotel-guest-experience-ai-toolkit/index.html",
+    "/articles/hotel-guest-experience-quality-management/index.html",
+    "/articles/hotel-housekeeping-management-ai-toolkit/index.html",
+    "/articles/hotel-housekeeping-quality-control/index.html",
+    "/articles/hotel-housekeeping-standardization/index.html",
+    "/articles/hotel-inventory-par-level-management/index.html",
+    "/articles/hotel-inventory-par-management-ai-toolkit/index.html",
+    "/articles/hotel-kpi-dashboard-ai-toolkit/index.html",
+    "/articles/hotel-lean-six-sigma-ai-toolkit/index.html",
+    "/articles/hotel-maintenance-work-order-management/index.html",
+    "/articles/hotel-operational-excellence-maturity-model/index.html",
+    "/articles/hotel-operations-manager-ai-toolkit/index.html",
+    "/articles/hotel-operations-planning-daily-control/index.html",
+    "/articles/hotel-ota-distribution-review-management-ai-toolkit/index.html",
+    "/articles/hotel-predictive-maintenance-ai-toolkit/index.html",
+    "/articles/hotel-preventive-maintenance-kpis/index.html",
+    "/articles/hotel-procurement-ai-toolkit/index.html",
+    "/articles/hotel-procurement-supplier-quality-control/index.html",
+    "/articles/hotel-property-reliability-score/index.html",
+    "/articles/hotel-quality-audit-ai-toolkit/index.html",
+    "/articles/hotel-reservations-ai-toolkit/index.html",
+    "/articles/hotel-revenue-management-ai-toolkit/index.html",
+    "/articles/hotel-sales-corporate-accounts-ai-toolkit/index.html",
+    "/articles/hotel-sop-process-design-ai-toolkit/index.html",
+    "/articles/hotel-workforce-productivity-efficiency/index.html",
+    "/articles/how-to-audit-an-sop/index.html",
+    "/articles/how-to-write-professional-sop-procedure/index.html",
+    "/articles/how-to-write-professional-sop-structure/index.html",
+    "/articles/how-to-write-work-instructions/index.html",
+    "/articles/insights-city-tour-quotation-pricing-masterclass/index.html",
+    "/articles/integrated-sop-creation-model/index.html",
+    "/articles/itil-4-tourism-operations/index.html",
+    "/articles/lean-thinking-tourism-operations/index.html",
+    "/articles/map-process-before-writing-sop/index.html",
+    "/articles/operational-checklist-employees-use/index.html",
+    "/articles/pmp-thinking-sop-implementation/index.html",
+    "/articles/policy-vs-sop-work-instruction-checklist-form-template/index.html",
+    "/articles/procedures-processes-process-maps/index.html",
+    "/articles/professional-operational-form/index.html",
+    "/articles/responsible-ai-governance-hotels/index.html",
+    "/articles/responsible-ai-tourism-guide/index.html",
+    "/articles/root-cause-analysis-tourism-managers/index.html",
+    "/articles/sipoc-tourism-operations/index.html",
+    "/articles/six-sigma-tourism-complaints-data/index.html",
+    "/articles/sop-evidence-documentation-legal-defensibility/index.html",
+    "/articles/sop-exception-escalation-management/index.html",
+    "/articles/sop-roles-authority-raci/index.html",
+    "/articles/standard-communication-templates/index.html",
+    "/articles/standard-test-procedures-tourism-operations/index.html",
+    "/articles/tourism-ai-operations-playbook/index.html",
+    "/articles/tourism-company-operating-system/index.html",
+    "/articles/tourism-document-hierarchy/index.html",
+    "/articles/tourism-itinerary-ai-prompts/index.html",
+    "/articles/tourism-operational-excellence-management-system/index.html",
+    "/articles/tourism-operational-risk-assessment-before-sop/index.html",
+    "/articles/tourism-operations-kpis-control-dashboards/index.html",
+    "/articles/tourism-operations-manual/index.html",
+    "/articles/tourism-product-development-ai-prompts/index.html",
+    "/articles/tourism-prompting-framework/index.html",
+    "/articles/tourism-quality-sop-ai-prompts/index.html",
+    "/articles/tourism-sales-quotation-ai-prompts/index.html",
+    "/articles/tourism-sop-training-competency-adoption/index.html",
+    "/articles/tourism-supplier-partner-governance-sops/index.html",
+    "/articles/tourism-transport-dispatch-ai-prompts/index.html",
+    "/articles/where-stp-fits-tourism-operations/index.html",
+    "/articles/workforce-rostering-productivity-ai-toolkit/index.html"
+  ],
+  "canonical": {
+    "/articles/abu-dhabi-mice-operations-series/index.html": [
+      "https://ahmedqualityops.com/articles/abu-dhabi-mice-operations-series/index.html"
+    ],
+    "/articles/amsterdam-product-discovery-01-research-plan/index.html": [
+      "https://ahmedqualityops.com/articles/amsterdam-product-discovery-01-research-plan/index.html"
+    ],
+    "/articles/amsterdam-product-discovery-02-competitive-landscape/index.html": [
+      "https://ahmedqualityops.com/articles/amsterdam-product-discovery-02-competitive-landscape/index.html"
+    ],
+    "/articles/amsterdam-product-discovery-03-market-gap/index.html": [
+      "https://ahmedqualityops.com/articles/amsterdam-product-discovery-03-market-gap/index.html"
+    ],
+    "/articles/amsterdam-product-discovery-04-voice-of-customer/index.html": [
+      "https://ahmedqualityops.com/articles/amsterdam-product-discovery-04-voice-of-customer/index.html"
+    ],
+    "/articles/amsterdam-product-discovery-05-segmentation-language/index.html": [
+      "https://ahmedqualityops.com/articles/amsterdam-product-discovery-05-segmentation-language/index.html"
+    ],
+    "/articles/amsterdam-product-discovery-06-destination-geography/index.html": [
+      "https://ahmedqualityops.com/articles/amsterdam-product-discovery-06-destination-geography/index.html"
+    ],
+    "/articles/amsterdam-product-discovery-07-product-requirements-concept/index.html": [
+      "https://ahmedqualityops.com/articles/amsterdam-product-discovery-07-product-requirements-concept/index.html"
+    ],
+    "/articles/amsterdam-product-discovery-08-commercial-model-unit-economics/index.html": [
+      "https://ahmedqualityops.com/articles/amsterdam-product-discovery-08-commercial-model-unit-economics/index.html"
+    ],
+    "/articles/amsterdam-product-discovery-09-risk-responsibility/index.html": [
+      "https://ahmedqualityops.com/articles/amsterdam-product-discovery-09-risk-responsibility/index.html"
+    ],
+    "/articles/amsterdam-product-discovery-10-seasonality-operating-calendar/index.html": [
+      "https://ahmedqualityops.com/articles/amsterdam-product-discovery-10-seasonality-operating-calendar/index.html"
+    ],
+    "/articles/amsterdam-product-discovery-11-mvp-pilot-operational-readiness/index.html": [
+      "https://ahmedqualityops.com/articles/amsterdam-product-discovery-11-mvp-pilot-operational-readiness/index.html"
+    ],
+    "/articles/amsterdam-product-discovery-12-product-analytics-scale-decision/index.html": [
+      "https://ahmedqualityops.com/articles/amsterdam-product-discovery-12-product-analytics-scale-decision/index.html"
+    ],
+    "/articles/article-abu-dhabi-mice-movement-control-room/index.html": [
+      "https://ahmedqualityops.com/articles/article-abu-dhabi-mice-movement-control-room/index.html"
+    ],
+    "/articles/article-air-connectivity-dmc-market-intelligence/index.html": [
+      "https://ahmedqualityops.com/articles/article-air-connectivity-dmc-market-intelligence/index.html"
+    ],
+    "/articles/article-assignment-engine-dmc-operations/index.html": [
+      "https://ahmedqualityops.com/articles/article-assignment-engine-dmc-operations/index.html"
+    ],
+    "/articles/article-city-tour-quotation-professional/index.html": [
+      "https://ahmedqualityops.com/articles/article-city-tour-quotation-professional/index.html"
+    ],
+    "/articles/article-destination-experience-journey-map/index.html": [
+      "https://ahmedqualityops.com/articles/article-destination-experience-journey-map/index.html"
+    ],
+    "/articles/article-fixed-variable-costs-city-tour-pricing/index.html": [
+      "https://ahmedqualityops.com/articles/article-fixed-variable-costs-city-tour-pricing/index.html"
+    ],
+    "/articles/article-fleet-control-tower-operations-dashboard/index.html": [
+      "https://ahmedqualityops.com/articles/article-fleet-control-tower-operations-dashboard/index.html"
+    ],
+    "/articles/article-mice-arrival-waves-zayed-international-airport/index.html": [
+      "https://ahmedqualityops.com/articles/article-mice-arrival-waves-zayed-international-airport/index.html"
+    ],
+    "/articles/article-mice-backup-operations-service-recovery-abu-dhabi/index.html": [
+      "https://ahmedqualityops.com/articles/article-mice-backup-operations-service-recovery-abu-dhabi/index.html"
+    ],
+    "/articles/article-mice-hotel-desks-coach-departures-abu-dhabi/index.html": [
+      "https://ahmedqualityops.com/articles/article-mice-hotel-desks-coach-departures-abu-dhabi/index.html"
+    ],
+    "/articles/article-mice-venue-arrivals-registration-abu-dhabi/index.html": [
+      "https://ahmedqualityops.com/articles/article-mice-venue-arrivals-registration-abu-dhabi/index.html"
+    ],
+    "/articles/article-net-cost-selling-price-markup/index.html": [
+      "https://ahmedqualityops.com/articles/article-net-cost-selling-price-markup/index.html"
+    ],
+    "/articles/article-participant-estimation-break-even-risk/index.html": [
+      "https://ahmedqualityops.com/articles/article-participant-estimation-break-even-risk/index.html"
+    ],
+    "/articles/article-professional-client-tour-quotation/index.html": [
+      "https://ahmedqualityops.com/articles/article-professional-client-tour-quotation/index.html"
+    ],
+    "/articles/article-rfi-rfq-rfp-erfp-nda-tourism-sales/index.html": [
+      "https://ahmedqualityops.com/articles/article-rfi-rfq-rfp-erfp-nda-tourism-sales/index.html"
+    ],
+    "/articles/article-tour-cost-worksheet-city-tour/index.html": [
+      "https://ahmedqualityops.com/articles/article-tour-cost-worksheet-city-tour/index.html"
+    ],
+    "/articles/article-tour-guide-quality-index/index.html": [
+      "https://ahmedqualityops.com/articles/article-tour-guide-quality-index/index.html"
+    ],
+    "/articles/article-tour-guide-storytelling-system/index.html": [
+      "https://ahmedqualityops.com/articles/article-tour-guide-storytelling-system/index.html"
+    ],
+    "/articles/article-tourism-operations-roles-real-difference/index.html": [
+      "https://ahmedqualityops.com/articles/article-tourism-operations-roles-real-difference/index.html"
+    ],
+    "/articles/article-transport-tickets-vat-gratuities/index.html": [
+      "https://ahmedqualityops.com/articles/article-transport-tickets-vat-gratuities/index.html"
+    ],
+    "/articles/capa-tourism-operations/index.html": [
+      "https://ahmedqualityops.com/articles/capa-tourism-operations/index.html"
+    ],
+    "/articles/customer-journey-mapping-sop-design/index.html": [
+      "https://ahmedqualityops.com/articles/customer-journey-mapping-sop-design/index.html"
+    ],
+    "/articles/dmc-operations-ai-prompts/index.html": [
+      "https://ahmedqualityops.com/articles/dmc-operations-ai-prompts/index.html"
+    ],
+    "/articles/document-control-version-management-tourism/index.html": [
+      "https://ahmedqualityops.com/articles/document-control-version-management-tourism/index.html"
+    ],
+    "/articles/front-line-tourism-ai-toolkit/index.html": [
+      "https://ahmedqualityops.com/articles/front-line-tourism-ai-toolkit/index.html"
+    ],
+    "/articles/guest-experience-ai-prompts/index.html": [
+      "https://ahmedqualityops.com/articles/guest-experience-ai-prompts/index.html"
+    ],
+    "/articles/guest-ready-apartment-standard/index.html": [
+      "https://ahmedqualityops.com/articles/guest-ready-apartment-standard/index.html"
+    ],
+    "/articles/hotel-ai-prompting-framework/index.html": [
+      "https://ahmedqualityops.com/articles/hotel-ai-prompting-framework/index.html"
+    ],
+    "/articles/hotel-apartment-asset-lifecycle-management/index.html": [
+      "https://ahmedqualityops.com/articles/hotel-apartment-asset-lifecycle-management/index.html"
+    ],
+    "/articles/hotel-apartment-cost-of-poor-quality/index.html": [
+      "https://ahmedqualityops.com/articles/hotel-apartment-cost-of-poor-quality/index.html"
+    ],
+    "/articles/hotel-apartment-end-to-end-guest-journey/index.html": [
+      "https://ahmedqualityops.com/articles/hotel-apartment-end-to-end-guest-journey/index.html"
+    ],
+    "/articles/hotel-apartment-extended-stay-ai-toolkit/index.html": [
+      "https://ahmedqualityops.com/articles/hotel-apartment-extended-stay-ai-toolkit/index.html"
+    ],
+    "/articles/hotel-apartment-kpi-architecture/index.html": [
+      "https://ahmedqualityops.com/articles/hotel-apartment-kpi-architecture/index.html"
+    ],
+    "/articles/hotel-apartment-operating-system/index.html": [
+      "https://ahmedqualityops.com/articles/hotel-apartment-operating-system/index.html"
+    ],
+    "/articles/hotel-apartment-operations-control-tower/index.html": [
+      "https://ahmedqualityops.com/articles/hotel-apartment-operations-control-tower/index.html"
+    ],
+    "/articles/hotel-apartment-preventive-maintenance-strategy/index.html": [
+      "https://ahmedqualityops.com/articles/hotel-apartment-preventive-maintenance-strategy/index.html"
+    ],
+    "/articles/hotel-apartment-sop-architecture/index.html": [
+      "https://ahmedqualityops.com/articles/hotel-apartment-sop-architecture/index.html"
+    ],
+    "/articles/hotel-apartment-total-cost-of-ownership/index.html": [
+      "https://ahmedqualityops.com/articles/hotel-apartment-total-cost-of-ownership/index.html"
+    ],
+    "/articles/hotel-complaint-root-cause-analysis/index.html": [
+      "https://ahmedqualityops.com/articles/hotel-complaint-root-cause-analysis/index.html"
+    ],
+    "/articles/hotel-control-tower-ai-decision-support-toolkit/index.html": [
+      "https://ahmedqualityops.com/articles/hotel-control-tower-ai-decision-support-toolkit/index.html"
+    ],
+    "/articles/hotel-critical-spare-parts-management/index.html": [
+      "https://ahmedqualityops.com/articles/hotel-critical-spare-parts-management/index.html"
+    ],
+    "/articles/hotel-downtime-out-of-service-management/index.html": [
+      "https://ahmedqualityops.com/articles/hotel-downtime-out-of-service-management/index.html"
+    ],
+    "/articles/hotel-economics-of-service-failure/index.html": [
+      "https://ahmedqualityops.com/articles/hotel-economics-of-service-failure/index.html"
+    ],
+    "/articles/hotel-energy-utility-management-ai-toolkit/index.html": [
+      "https://ahmedqualityops.com/articles/hotel-energy-utility-management-ai-toolkit/index.html"
+    ],
+    "/articles/hotel-engineering-maintenance-ai-toolkit/index.html": [
+      "https://ahmedqualityops.com/articles/hotel-engineering-maintenance-ai-toolkit/index.html"
+    ],
+    "/articles/hotel-esg-sustainability-ai-toolkit/index.html": [
+      "https://ahmedqualityops.com/articles/hotel-esg-sustainability-ai-toolkit/index.html"
+    ],
+    "/articles/hotel-finance-cost-control-ai-toolkit/index.html": [
+      "https://ahmedqualityops.com/articles/hotel-finance-cost-control-ai-toolkit/index.html"
+    ],
+    "/articles/hotel-first-time-right-operations/index.html": [
+      "https://ahmedqualityops.com/articles/hotel-first-time-right-operations/index.html"
+    ],
+    "/articles/hotel-front-office-ai-toolkit/index.html": [
+      "https://ahmedqualityops.com/articles/hotel-front-office-ai-toolkit/index.html"
+    ],
+    "/articles/hotel-general-manager-ai-toolkit/index.html": [
+      "https://ahmedqualityops.com/articles/hotel-general-manager-ai-toolkit/index.html"
+    ],
+    "/articles/hotel-guest-complaint-service-recovery-ai-toolkit/index.html": [
+      "https://ahmedqualityops.com/articles/hotel-guest-complaint-service-recovery-ai-toolkit/index.html"
+    ],
+    "/articles/hotel-guest-experience-ai-toolkit/index.html": [
+      "https://ahmedqualityops.com/articles/hotel-guest-experience-ai-toolkit/index.html"
+    ],
+    "/articles/hotel-guest-experience-quality-management/index.html": [
+      "https://ahmedqualityops.com/articles/hotel-guest-experience-quality-management/index.html"
+    ],
+    "/articles/hotel-housekeeping-management-ai-toolkit/index.html": [
+      "https://ahmedqualityops.com/articles/hotel-housekeeping-management-ai-toolkit/index.html"
+    ],
+    "/articles/hotel-housekeeping-quality-control/index.html": [
+      "https://ahmedqualityops.com/articles/hotel-housekeeping-quality-control/index.html"
+    ],
+    "/articles/hotel-housekeeping-standardization/index.html": [
+      "https://ahmedqualityops.com/articles/hotel-housekeeping-standardization/index.html"
+    ],
+    "/articles/hotel-inventory-par-level-management/index.html": [
+      "https://ahmedqualityops.com/articles/hotel-inventory-par-level-management/index.html"
+    ],
+    "/articles/hotel-inventory-par-management-ai-toolkit/index.html": [
+      "https://ahmedqualityops.com/articles/hotel-inventory-par-management-ai-toolkit/index.html"
+    ],
+    "/articles/hotel-kpi-dashboard-ai-toolkit/index.html": [
+      "https://ahmedqualityops.com/articles/hotel-kpi-dashboard-ai-toolkit/index.html"
+    ],
+    "/articles/hotel-lean-six-sigma-ai-toolkit/index.html": [
+      "https://ahmedqualityops.com/articles/hotel-lean-six-sigma-ai-toolkit/index.html"
+    ],
+    "/articles/hotel-maintenance-work-order-management/index.html": [
+      "https://ahmedqualityops.com/articles/hotel-maintenance-work-order-management/index.html"
+    ],
+    "/articles/hotel-operational-excellence-maturity-model/index.html": [
+      "https://ahmedqualityops.com/articles/hotel-operational-excellence-maturity-model/index.html"
+    ],
+    "/articles/hotel-operations-manager-ai-toolkit/index.html": [
+      "https://ahmedqualityops.com/articles/hotel-operations-manager-ai-toolkit/index.html"
+    ],
+    "/articles/hotel-operations-planning-daily-control/index.html": [
+      "https://ahmedqualityops.com/articles/hotel-operations-planning-daily-control/index.html"
+    ],
+    "/articles/hotel-ota-distribution-review-management-ai-toolkit/index.html": [
+      "https://ahmedqualityops.com/articles/hotel-ota-distribution-review-management-ai-toolkit/index.html"
+    ],
+    "/articles/hotel-predictive-maintenance-ai-toolkit/index.html": [
+      "https://ahmedqualityops.com/articles/hotel-predictive-maintenance-ai-toolkit/index.html"
+    ],
+    "/articles/hotel-preventive-maintenance-kpis/index.html": [
+      "https://ahmedqualityops.com/articles/hotel-preventive-maintenance-kpis/index.html"
+    ],
+    "/articles/hotel-procurement-ai-toolkit/index.html": [
+      "https://ahmedqualityops.com/articles/hotel-procurement-ai-toolkit/index.html"
+    ],
+    "/articles/hotel-procurement-supplier-quality-control/index.html": [
+      "https://ahmedqualityops.com/articles/hotel-procurement-supplier-quality-control/index.html"
+    ],
+    "/articles/hotel-property-reliability-score/index.html": [
+      "https://ahmedqualityops.com/articles/hotel-property-reliability-score/index.html"
+    ],
+    "/articles/hotel-quality-audit-ai-toolkit/index.html": [
+      "https://ahmedqualityops.com/articles/hotel-quality-audit-ai-toolkit/index.html"
+    ],
+    "/articles/hotel-reservations-ai-toolkit/index.html": [
+      "https://ahmedqualityops.com/articles/hotel-reservations-ai-toolkit/index.html"
+    ],
+    "/articles/hotel-revenue-management-ai-toolkit/index.html": [
+      "https://ahmedqualityops.com/articles/hotel-revenue-management-ai-toolkit/index.html"
+    ],
+    "/articles/hotel-sales-corporate-accounts-ai-toolkit/index.html": [
+      "https://ahmedqualityops.com/articles/hotel-sales-corporate-accounts-ai-toolkit/index.html"
+    ],
+    "/articles/hotel-sop-process-design-ai-toolkit/index.html": [
+      "https://ahmedqualityops.com/articles/hotel-sop-process-design-ai-toolkit/index.html"
+    ],
+    "/articles/hotel-workforce-productivity-efficiency/index.html": [
+      "https://ahmedqualityops.com/articles/hotel-workforce-productivity-efficiency/index.html"
+    ],
+    "/articles/how-to-audit-an-sop/index.html": [
+      "https://ahmedqualityops.com/articles/how-to-audit-an-sop/index.html"
+    ],
+    "/articles/how-to-write-professional-sop-procedure/index.html": [
+      "https://ahmedqualityops.com/articles/how-to-write-professional-sop-procedure/index.html"
+    ],
+    "/articles/how-to-write-professional-sop-structure/index.html": [
+      "https://ahmedqualityops.com/articles/how-to-write-professional-sop-structure/index.html"
+    ],
+    "/articles/how-to-write-work-instructions/index.html": [
+      "https://ahmedqualityops.com/articles/how-to-write-work-instructions/index.html"
+    ],
+    "/articles/insights-city-tour-quotation-pricing-masterclass/index.html": [
+      "https://ahmedqualityops.com/articles/insights-city-tour-quotation-pricing-masterclass/index.html"
+    ],
+    "/articles/integrated-sop-creation-model/index.html": [
+      "https://ahmedqualityops.com/articles/integrated-sop-creation-model/index.html"
+    ],
+    "/articles/itil-4-tourism-operations/index.html": [
+      "https://ahmedqualityops.com/articles/itil-4-tourism-operations/index.html"
+    ],
+    "/articles/lean-thinking-tourism-operations/index.html": [
+      "https://ahmedqualityops.com/articles/lean-thinking-tourism-operations/index.html"
+    ],
+    "/articles/map-process-before-writing-sop/index.html": [
+      "https://ahmedqualityops.com/articles/map-process-before-writing-sop/index.html"
+    ],
+    "/articles/operational-checklist-employees-use/index.html": [
+      "https://ahmedqualityops.com/articles/operational-checklist-employees-use/index.html"
+    ],
+    "/articles/pmp-thinking-sop-implementation/index.html": [
+      "https://ahmedqualityops.com/articles/pmp-thinking-sop-implementation/index.html"
+    ],
+    "/articles/policy-vs-sop-work-instruction-checklist-form-template/index.html": [
+      "https://ahmedqualityops.com/articles/policy-vs-sop-work-instruction-checklist-form-template/index.html"
+    ],
+    "/articles/procedures-processes-process-maps/index.html": [
+      "https://ahmedqualityops.com/articles/procedures-processes-process-maps/index.html"
+    ],
+    "/articles/professional-operational-form/index.html": [
+      "https://ahmedqualityops.com/articles/professional-operational-form/index.html"
+    ],
+    "/articles/responsible-ai-governance-hotels/index.html": [
+      "https://ahmedqualityops.com/articles/responsible-ai-governance-hotels/index.html"
+    ],
+    "/articles/responsible-ai-tourism-guide/index.html": [
+      "https://ahmedqualityops.com/articles/responsible-ai-tourism-guide/index.html"
+    ],
+    "/articles/root-cause-analysis-tourism-managers/index.html": [
+      "https://ahmedqualityops.com/articles/root-cause-analysis-tourism-managers/index.html"
+    ],
+    "/articles/sipoc-tourism-operations/index.html": [
+      "https://ahmedqualityops.com/articles/sipoc-tourism-operations/index.html"
+    ],
+    "/articles/six-sigma-tourism-complaints-data/index.html": [
+      "https://ahmedqualityops.com/articles/six-sigma-tourism-complaints-data/index.html"
+    ],
+    "/articles/sop-evidence-documentation-legal-defensibility/index.html": [
+      "https://ahmedqualityops.com/articles/sop-evidence-documentation-legal-defensibility/index.html"
+    ],
+    "/articles/sop-exception-escalation-management/index.html": [
+      "https://ahmedqualityops.com/articles/sop-exception-escalation-management/index.html"
+    ],
+    "/articles/sop-roles-authority-raci/index.html": [
+      "https://ahmedqualityops.com/articles/sop-roles-authority-raci/index.html"
+    ],
+    "/articles/standard-communication-templates/index.html": [
+      "https://ahmedqualityops.com/articles/standard-communication-templates/index.html"
+    ],
+    "/articles/standard-test-procedures-tourism-operations/index.html": [
+      "https://ahmedqualityops.com/articles/standard-test-procedures-tourism-operations/index.html"
+    ],
+    "/articles/tourism-ai-operations-playbook/index.html": [
+      "https://ahmedqualityops.com/articles/tourism-ai-operations-playbook/index.html"
+    ],
+    "/articles/tourism-company-operating-system/index.html": [
+      "https://ahmedqualityops.com/articles/tourism-company-operating-system/index.html"
+    ],
+    "/articles/tourism-document-hierarchy/index.html": [
+      "https://ahmedqualityops.com/articles/tourism-document-hierarchy/index.html"
+    ],
+    "/articles/tourism-itinerary-ai-prompts/index.html": [
+      "https://ahmedqualityops.com/articles/tourism-itinerary-ai-prompts/index.html"
+    ],
+    "/articles/tourism-operational-excellence-management-system/index.html": [
+      "https://ahmedqualityops.com/articles/tourism-operational-excellence-management-system/index.html"
+    ],
+    "/articles/tourism-operational-risk-assessment-before-sop/index.html": [
+      "https://ahmedqualityops.com/articles/tourism-operational-risk-assessment-before-sop/index.html"
+    ],
+    "/articles/tourism-operations-kpis-control-dashboards/index.html": [
+      "https://ahmedqualityops.com/articles/tourism-operations-kpis-control-dashboards/index.html"
+    ],
+    "/articles/tourism-operations-manual/index.html": [
+      "https://ahmedqualityops.com/articles/tourism-operations-manual/index.html"
+    ],
+    "/articles/tourism-product-development-ai-prompts/index.html": [
+      "https://ahmedqualityops.com/articles/tourism-product-development-ai-prompts/index.html"
+    ],
+    "/articles/tourism-prompting-framework/index.html": [
+      "https://ahmedqualityops.com/articles/tourism-prompting-framework/index.html"
+    ],
+    "/articles/tourism-quality-sop-ai-prompts/index.html": [
+      "https://ahmedqualityops.com/articles/tourism-quality-sop-ai-prompts/index.html"
+    ],
+    "/articles/tourism-sales-quotation-ai-prompts/index.html": [
+      "https://ahmedqualityops.com/articles/tourism-sales-quotation-ai-prompts/index.html"
+    ],
+    "/articles/tourism-sop-training-competency-adoption/index.html": [
+      "https://ahmedqualityops.com/articles/tourism-sop-training-competency-adoption/index.html"
+    ],
+    "/articles/tourism-supplier-partner-governance-sops/index.html": [
+      "https://ahmedqualityops.com/articles/tourism-supplier-partner-governance-sops/index.html"
+    ],
+    "/articles/tourism-transport-dispatch-ai-prompts/index.html": [
+      "https://ahmedqualityops.com/articles/tourism-transport-dispatch-ai-prompts/index.html"
+    ],
+    "/articles/where-stp-fits-tourism-operations/index.html": [
+      "https://ahmedqualityops.com/articles/where-stp-fits-tourism-operations/index.html"
+    ],
+    "/articles/workforce-rostering-productivity-ai-toolkit/index.html": [
+      "https://ahmedqualityops.com/articles/workforce-rostering-productivity-ai-toolkit/index.html"
+    ],
+    "/series/amsterdam-tourism-product-discovery/index.html": [
+      "https://ahmedqualityops.com/series/amsterdam-tourism-product-discovery/index.html"
+    ],
+    "/series/hotel-ai-operations-playbook/index.html": [
+      "https://ahmedqualityops.com/series/hotel-ai-operations-playbook/index.html"
+    ],
+    "/series/hotel-apartment-operational-excellence/index.html": [
+      "https://ahmedqualityops.com/series/hotel-apartment-operational-excellence/index.html"
+    ]
+  },
+  "bodyDigests": {
+    "/articles/abu-dhabi-mice-operations-series/index.html": "f4bdf98b7b22dbcd13562848be7e9b1f7d737be8202f82a9c145944511e2bcf0",
+    "/articles/amsterdam-product-discovery-01-research-plan/index.html": "79b3c7b7941c5fedbda06b4160e246c96266add616e117c73aa842c9bfafb638",
+    "/articles/amsterdam-product-discovery-02-competitive-landscape/index.html": "2232e7f2d73494a370ee0a82094e22251ae48169ea7ba9a134e828b739fc5758",
+    "/articles/amsterdam-product-discovery-03-market-gap/index.html": "6350c1f36a1c835a30b01bcb9dd552d3ffde2069d23ce1e3263e738a135fd79d",
+    "/articles/amsterdam-product-discovery-04-voice-of-customer/index.html": "9ae1c851931c3b5b805029bd64dd1f76ad2d8703ee72d784c2998ffe2cd06da2",
+    "/articles/amsterdam-product-discovery-05-segmentation-language/index.html": "b9d6305e90a02a9979cd5fa4e59fdbe9a678011ab98683083f4d283b882d1615",
+    "/articles/amsterdam-product-discovery-06-destination-geography/index.html": "946e7ea740450b865fd37c62eae3da912894d4727be0809f446886197f368025",
+    "/articles/amsterdam-product-discovery-07-product-requirements-concept/index.html": "ae0cf83f21751431533a40861f1c4c2d9377f60daef49f4f07e3655d375c2d5d",
+    "/articles/amsterdam-product-discovery-08-commercial-model-unit-economics/index.html": "3f1e1825edc95330de27d5b9706b6fe2d0566443e9a1855c39482958c3685c82",
+    "/articles/amsterdam-product-discovery-09-risk-responsibility/index.html": "f27d203fd02c8b11738882231ef662ba5f39ab63012d1413003867bd2525e2a7",
+    "/articles/amsterdam-product-discovery-10-seasonality-operating-calendar/index.html": "d73877d649593f615ab27352a8fcb682efde0f56f3cbe1d8d2bfa56a3c49a360",
+    "/articles/amsterdam-product-discovery-11-mvp-pilot-operational-readiness/index.html": "0aa788a28e0011ba179b1b73f04776fc73dd39b27812d44718831dea093619af",
+    "/articles/amsterdam-product-discovery-12-product-analytics-scale-decision/index.html": "4119e9fcee6eb99dc3aa1ff5b5cf257e6324eacd08c64181256d3b81c3404195",
+    "/articles/article-abu-dhabi-mice-movement-control-room/index.html": "1a899076ed66415a3ec5fd28834a9203dd15a2d9b028c7e89c5a492f208e56a2",
+    "/articles/article-air-connectivity-dmc-market-intelligence/index.html": "3d1f054663fcccafaeeb81f4b586d42c113bfb53b085644f7a2148d2bdd2ff7f",
+    "/articles/article-assignment-engine-dmc-operations/index.html": "caf438322848c615bc96fb32575103ea4cfd18ee8d72e99438b505a754a09cd1",
+    "/articles/article-city-tour-quotation-professional/index.html": "1527566b6aec4ba0da1985ce2ac1ede6e99ce723e4ba0db4e99391ed18a9de42",
+    "/articles/article-destination-experience-journey-map/index.html": "cb9b5b3ea74c57964376b0e545449ab1a375009acbc52a7cd4dd47b9eaee7087",
+    "/articles/article-fixed-variable-costs-city-tour-pricing/index.html": "6cbde02be7b1eb531ce6889ba09a77255ebe0b8e80fef1231b6d03ca17e0ef7d",
+    "/articles/article-fleet-control-tower-operations-dashboard/index.html": "b0fad672655afe8dcfd25d43b8a18c9781f364c7964605179c85f7dc03bd259b",
+    "/articles/article-mice-arrival-waves-zayed-international-airport/index.html": "7b553e6ee6e409e5109268991dcabd9e06c80187ee307aa227a3a16ae4ac481c",
+    "/articles/article-mice-backup-operations-service-recovery-abu-dhabi/index.html": "86674125182d663cbd62d8fe51c961e36dbf9aa2906f44c12f840daf2aa33859",
+    "/articles/article-mice-hotel-desks-coach-departures-abu-dhabi/index.html": "b5f14d44c6cd6ddaacc4fbf2a1523df625d8d3465a5909bcccdc7a20f35cb57c",
+    "/articles/article-mice-venue-arrivals-registration-abu-dhabi/index.html": "454ce2253bec0637b861c18d269c742a587e1fe8f5f79cb0b94d88c6d5cc4650",
+    "/articles/article-net-cost-selling-price-markup/index.html": "4aa2203fcc406da7da1553d7b2d79ea052f90d97b2db0e96cb9a55edae762226",
+    "/articles/article-participant-estimation-break-even-risk/index.html": "218049ae72e3b4484141043fd9cf029b266abd84ce8be0baf8afb21be9973aea",
+    "/articles/article-professional-client-tour-quotation/index.html": "1b850d546ba5a00f88527eee83e730f065d6d78fd5625a49f69e013bb671fec7",
+    "/articles/article-rfi-rfq-rfp-erfp-nda-tourism-sales/index.html": "a6d4c9d65f2c863fc8ced117b8cf143388e50c88e50bb2bfccfd0388468b71c2",
+    "/articles/article-tour-cost-worksheet-city-tour/index.html": "c9bf282a001a736aad26b497963beeb08fee4c9de861aa99f4fe8a1a4af24bab",
+    "/articles/article-tour-guide-quality-index/index.html": "8b6a963d848595adfbf2782f390343aee6666bf2b5811bbe71ea0cc1bfaa0e12",
+    "/articles/article-tour-guide-storytelling-system/index.html": "dd1c42a408151ed542c7e975b52b234f214bde403494a0a6c983b0c2d3bd6485",
+    "/articles/article-tourism-operations-roles-real-difference/index.html": "f9631dd0978836fd9bf940d0474363d88562bcea333fd47800d650be05021c80",
+    "/articles/article-transport-tickets-vat-gratuities/index.html": "f98e7c7937460f3b534369c37a12ae8863f61a75a2e1c2d1507a7370630055f3",
+    "/articles/capa-tourism-operations/index.html": "083c8fcf0e2aa53d7fc304ba550c9433b22d9b48520922b0903ce7b8586f338d",
+    "/articles/customer-journey-mapping-sop-design/index.html": "e90e4bd8183db1372ccc4adb4bb6ed177c222340b8148c9e0f3a48f9d81f0582",
+    "/articles/dmc-operations-ai-prompts/index.html": "a69bc148e97daf15811d1e0a94109406f4891d04e89c8bbbdb516457e926ecbb",
+    "/articles/document-control-version-management-tourism/index.html": "bf335d46cd58d54bcb112e64e48e0db0b593124ab7b32ad1b8ac82f01d390f13",
+    "/articles/front-line-tourism-ai-toolkit/index.html": "b022ba85880e99e8fab13bd54f7d83b7a1120bbb0982ed3f24cdacaf89eb0f4b",
+    "/articles/guest-experience-ai-prompts/index.html": "d5eb518f2839509c7f6d7f3ab7cbbac79a691caade44074dc4ebdcb3eb343737",
+    "/articles/guest-ready-apartment-standard/index.html": "4e84c6617e4d9a7a3db2ace91c2f17e9e98c4a8e1156ae1c756968808bd3cae5",
+    "/articles/hotel-ai-prompting-framework/index.html": "d05a3f704a8ca66c774c9e204159464d6476dea5dffe3db72dfae96e132b97f8",
+    "/articles/hotel-apartment-asset-lifecycle-management/index.html": "6ed82e1be4b393af9143a393066f578458c2b6ba1f7e11c5b11d1ffcc1b0d054",
+    "/articles/hotel-apartment-cost-of-poor-quality/index.html": "21c05db61753d95f9f238775ba5447e44056913a8d3079de10d6b24ac83f8fc8",
+    "/articles/hotel-apartment-end-to-end-guest-journey/index.html": "16ad1bfbac400ed2bb710ae9e0e875efc40d0422e0bbf70b159b988bf21fab6b",
+    "/articles/hotel-apartment-extended-stay-ai-toolkit/index.html": "0f470d9e4f64492066bdf802f84bedaceebfa73f0a106060da359332905edcc1",
+    "/articles/hotel-apartment-kpi-architecture/index.html": "3d2a00d11a18cd4af46d51498bf648971e87339f12059035cf7b5797e59adbdf",
+    "/articles/hotel-apartment-operating-system/index.html": "7513900e11d853740482b53b0abaee20ef8bd4ee0cfc30a19ee22de16c14dd46",
+    "/articles/hotel-apartment-operations-control-tower/index.html": "8f805f5b14b7b59656feb7d61b908d8297c234317f08b241fa91e5c8b81c7ac0",
+    "/articles/hotel-apartment-preventive-maintenance-strategy/index.html": "7948d7dcc651b262a1a4d8d8c5041f0466e57faeaa49f5e8653bbe1ac3091e8e",
+    "/articles/hotel-apartment-sop-architecture/index.html": "0815b3dbdc9568df37102242bc17af715ffe728e05a8ecf66b6d3d530cc0c2ee",
+    "/articles/hotel-apartment-total-cost-of-ownership/index.html": "a8a669ff1fcc19a2cc31cd82a3c5a5cff99c99bc1efad3fe5f3bb917a5f52a93",
+    "/articles/hotel-complaint-root-cause-analysis/index.html": "57be645eb75fb2ab0a3e74a1c85dddf3432101a26935634762e5b1f96848a94f",
+    "/articles/hotel-control-tower-ai-decision-support-toolkit/index.html": "bb47d74d0c4ec0ddbe09dd32af72867a4a6d7638ab8698dcb1655ecbc9e16369",
+    "/articles/hotel-critical-spare-parts-management/index.html": "6aaf796a8b66430ded73a1906c91df2422d10227e83b7c307a902fc83c458cb9",
+    "/articles/hotel-downtime-out-of-service-management/index.html": "2434f7669e1ae0e83eb1cbea1ee731e7dd0a2e49436e3776e96f4ff5f1f67150",
+    "/articles/hotel-economics-of-service-failure/index.html": "ef38f4268b9b3babec67f55752c5ead63794249aa02e9f0b4a7d33ca623493a7",
+    "/articles/hotel-energy-utility-management-ai-toolkit/index.html": "b53685975876f4209d85cde6fc0c413f14fb60a6837b270bf07658b91ad8b05e",
+    "/articles/hotel-engineering-maintenance-ai-toolkit/index.html": "a39e9b33240cbbcd3347dd342d5269508116a5fb26e52aab1c74638b99389dc7",
+    "/articles/hotel-esg-sustainability-ai-toolkit/index.html": "6d12bf84eaa120415367221929248c27b16ed3a0e9b9db4f6971c8c1a53ebea6",
+    "/articles/hotel-finance-cost-control-ai-toolkit/index.html": "5f9090f3eaf70b335e305015032b8b7b0d55ca258091728edb91fba945bac13b",
+    "/articles/hotel-first-time-right-operations/index.html": "16ad6c0555e669a84853b8d6ddd5c363dade738899bfe2b4e2cac7605af72504",
+    "/articles/hotel-front-office-ai-toolkit/index.html": "253fe0dc0856da47038ec3d1de3d56849951be173ef90af0deb14c0a6107768f",
+    "/articles/hotel-general-manager-ai-toolkit/index.html": "d80a38f9b612143c80a8afbb97ddbe27a68b8e91fe69426cba837d3961ed8719",
+    "/articles/hotel-guest-complaint-service-recovery-ai-toolkit/index.html": "711052ea92c9b6e1f704bb481487b80afd1309fff1636c8639b780c8ed814e58",
+    "/articles/hotel-guest-experience-ai-toolkit/index.html": "832c75ef73c62a8a9a265ed1af6e66c901b178b7af09e58e4ad1ae8f7dde6995",
+    "/articles/hotel-guest-experience-quality-management/index.html": "3c8d6b1bac9b8e2958f5bee878eb0a0aec7bcdc9818966efc191d1619d8e8353",
+    "/articles/hotel-housekeeping-management-ai-toolkit/index.html": "5d2f95de42dda6e8b537664fbd3dd885cef56a6d885a69cdbf867eb60123e894",
+    "/articles/hotel-housekeeping-quality-control/index.html": "aed19c8fbdbbdc64c7fddb6f4255056ddc82e6ec59bb125b092096d3e3681f02",
+    "/articles/hotel-housekeeping-standardization/index.html": "95809d85a715af4fb14c48b1209bd09f5f03b055445c79ed726b7662b9c2a8c2",
+    "/articles/hotel-inventory-par-level-management/index.html": "4db68e0fd46b3a338e3cefcea7bfa685530fee22e17ece766421553271078920",
+    "/articles/hotel-inventory-par-management-ai-toolkit/index.html": "a24da1144a929ac0805f9e21d55c1a5121c2134b6a38ca90c140066ef75de850",
+    "/articles/hotel-kpi-dashboard-ai-toolkit/index.html": "92bd2e60426ee0baa1e2213cc7494b9e66ba4713c2e17e260a03b72a73ece95a",
+    "/articles/hotel-lean-six-sigma-ai-toolkit/index.html": "f7a6d69094dfdeac67cac9e25b23b2636a8c55b859709a377487888da9ecc3f7",
+    "/articles/hotel-maintenance-work-order-management/index.html": "f3271e8f933745eea5386b53665fb9a6fc8c72aea5fbef78114b43216df77e34",
+    "/articles/hotel-operational-excellence-maturity-model/index.html": "bd11f4bb21dc176ff5fe58d5fcd7523677e0cce1104c66171bbe2216f7e804ed",
+    "/articles/hotel-operations-manager-ai-toolkit/index.html": "497bcf5ec1aec51c57a2546f89f03e2d5430b1289c77c6ef0a19ad0bcbeb9f6d",
+    "/articles/hotel-operations-planning-daily-control/index.html": "1e88219b447d4ccec0111e20914d93e2e1c2f7f4dec85eacdbbf599099858cb3",
+    "/articles/hotel-ota-distribution-review-management-ai-toolkit/index.html": "af298ed29eccdfe386b873e198fbd77e38b2886710d01c58a67caa6728e3c792",
+    "/articles/hotel-predictive-maintenance-ai-toolkit/index.html": "1ef44570ee2d3e78516edb1f1eedc3f4df0462553d1fb55f63bf83cb8244731a",
+    "/articles/hotel-preventive-maintenance-kpis/index.html": "09669d1bd8c86622a02a061b72185aec9b262adb3e79ad62e16378e91bf1dcde",
+    "/articles/hotel-procurement-ai-toolkit/index.html": "71d4760ef88b4a220514944c0b19c6662069b87db92af563ef69e577aa8ff890",
+    "/articles/hotel-procurement-supplier-quality-control/index.html": "45d60754edf17f25b7bb80a6a921ca3982de6d3a3ad787cbb0e0594c7589dff2",
+    "/articles/hotel-property-reliability-score/index.html": "8643b26ce297ed42df48624aaadb0cbfe2b9aec8568d9f28c6409c9885d325bf",
+    "/articles/hotel-quality-audit-ai-toolkit/index.html": "89eaace633e76fe4d07190ba2a7d79695392c5a2de1f7f103669e9c4126ca586",
+    "/articles/hotel-reservations-ai-toolkit/index.html": "5a50f883383848bf6c4e7bc2029fbbd9dbeb66edbf83be9f2844947418f2bc64",
+    "/articles/hotel-revenue-management-ai-toolkit/index.html": "56027ecbf0408d9615c352c7d1388d46e13ff5b649e742e1cb9a9b84484cd708",
+    "/articles/hotel-sales-corporate-accounts-ai-toolkit/index.html": "4ed1b4525b8707f94dfcb23d394223a33b001b605446ea7ecaa5faff159350af",
+    "/articles/hotel-sop-process-design-ai-toolkit/index.html": "de155e5b43e6dcf25d4e570794604e7dc6fee5ceec79ccd89a364e62d2fcd292",
+    "/articles/hotel-workforce-productivity-efficiency/index.html": "37a35e056c239398524678327414ecb7cb700d5ac7f84f9809309dd9a7a3b8f6",
+    "/articles/how-to-audit-an-sop/index.html": "312b0bbd1991cccbb919ce4dc57a23cd70bb606832850ff027456250359ded10",
+    "/articles/how-to-write-professional-sop-procedure/index.html": "48f6ad319b523100394f1dc0f8702df06db4e197faaa259d2eb0ba976c8dd7c4",
+    "/articles/how-to-write-professional-sop-structure/index.html": "e40fdf4b53f2cc82f892d921fc7a51a5a73dfebbd65578449e1e79a6140eca4c",
+    "/articles/how-to-write-work-instructions/index.html": "b8538c418f56919e31faf3c8b51a039c7d27e09eeb7d8812ac69e9c3f79e046f",
+    "/articles/insights-city-tour-quotation-pricing-masterclass/index.html": "6bc6cab5f4db1a30f633a2352d9839ca5972fb4ab25a5cf6cc30241e59cc501c",
+    "/articles/integrated-sop-creation-model/index.html": "b2992b10c3d20c3695557a5edc96ddd3bfbdee332c4d730f256f8843bdfdd9d8",
+    "/articles/itil-4-tourism-operations/index.html": "fb579a73138e3ef53779c06f9158d40bcbde44e66dc1c6c209082c1fe3969da7",
+    "/articles/lean-thinking-tourism-operations/index.html": "2842ffea3c058c61095b2803b69d598caa82b4f9ac0b3c5b60fd8cc9f8a0b461",
+    "/articles/map-process-before-writing-sop/index.html": "63ba88bdeddfbb1afddb9063f5339e75fe5f97c72d8583a976a8eda0961ab59b",
+    "/articles/operational-checklist-employees-use/index.html": "62ad77e6a591833be244dced21fd1dcfcc803ffbda9584e0710d30d449ea512a",
+    "/articles/pmp-thinking-sop-implementation/index.html": "8500697ed0d4cc36349a7f11f7e62b5b0baa2fcd771eddbae3bdbee6ea7ba9c5",
+    "/articles/policy-vs-sop-work-instruction-checklist-form-template/index.html": "e5e8a2b0e9d210c387038d27499a7a66742ed10368bf90f3fc8f7b91a3ad325f",
+    "/articles/procedures-processes-process-maps/index.html": "6e7d20655433b63d33540209a9d46b0b339902d19b130a6bdcd51a87f87226f0",
+    "/articles/professional-operational-form/index.html": "2ea3944e569fd14a8393f9822bc85f96a0130d78d566abc3cde53c6b5eea7e08",
+    "/articles/responsible-ai-governance-hotels/index.html": "5a8cfda90a625a1ea351401bf0ac1735e24354c3707e741e5622d01084eb1fcf",
+    "/articles/responsible-ai-tourism-guide/index.html": "39bdaabb43385d2c72238fec971cf836041a6c7e938ca66e606702fd6fc4aae6",
+    "/articles/root-cause-analysis-tourism-managers/index.html": "41b41e2951b59ea0ca3f350865c0336ebf16584a353f6d6464b539c753851112",
+    "/articles/sipoc-tourism-operations/index.html": "f98fc89a41bafe7ead94477eb4210a8161771b3a5d9b3bf95896de35d3401ef8",
+    "/articles/six-sigma-tourism-complaints-data/index.html": "07796c9e850c563aff0145c895697d74ea638e9e600a2454af19623b50255510",
+    "/articles/sop-evidence-documentation-legal-defensibility/index.html": "e61401de65e63c691e0a67fceb59a30eb68cc74ee1841a2bf4d241e41a19f650",
+    "/articles/sop-exception-escalation-management/index.html": "827bcb40b32c730b8077fb2c105b635a0b97fe42b1f073e34f5a7beefb35a153",
+    "/articles/sop-roles-authority-raci/index.html": "f8252b3097d30fb8110213e87f13ae0392fe9a68206c838877f5073bc7c77281",
+    "/articles/standard-communication-templates/index.html": "8eb7f9320256bc16e681b560ca442c1231eb0fa89f55254759a59f13c9f8de6c",
+    "/articles/standard-test-procedures-tourism-operations/index.html": "5a887b7c97c1fac9b0e24f80eb2c2509967af3a8a61d094117532a1ce4468d34",
+    "/articles/tourism-ai-operations-playbook/index.html": "9cab8e53b272eaa0763f23c34f3c0c138de5ea43ea586c51eb74e68569656651",
+    "/articles/tourism-company-operating-system/index.html": "1025f3d18363242db0e2dfd5a0f5b001897ce5bf13ec2e2153120cd5dfaf10c1",
+    "/articles/tourism-document-hierarchy/index.html": "955ffce9216a69f54d93fe970dec5982005d61a1b954ac5bb08e806f1303505d",
+    "/articles/tourism-itinerary-ai-prompts/index.html": "e419baab9a501da232be58d4fe8659caad415a8c640833083c7ddb78a8281620",
+    "/articles/tourism-operational-excellence-management-system/index.html": "597c59a4f8f5f6cb32c617c51e9188d57d295c1d195b6db016ae40c6b241cb62",
+    "/articles/tourism-operational-risk-assessment-before-sop/index.html": "02979a185eab60a36c7439e5dd94aa2c34c366de65ee686ea127de6c8a462bbd",
+    "/articles/tourism-operations-kpis-control-dashboards/index.html": "73d501a28c29c6820a81dedfe0f4f1b0c8d4083ca8f6366ac352b22b9c73aa9c",
+    "/articles/tourism-operations-manual/index.html": "77c3277a8e321db1650bbc5bb334c97cad4bf3c25de460bced91b28b5940b887",
+    "/articles/tourism-product-development-ai-prompts/index.html": "6598ca2cc11451b971ed24e8c2eccad448e9b3508cc43e4f241e2171027869af",
+    "/articles/tourism-prompting-framework/index.html": "df93088b80d2b27b3059b5805d1aa25304bd0a9e310a2966c0a959fb4b992529",
+    "/articles/tourism-quality-sop-ai-prompts/index.html": "84380e8c2940b7f2c65339ceeab98304f4661674ef02b885c45474681bea2d12",
+    "/articles/tourism-sales-quotation-ai-prompts/index.html": "a0495d9cfa3741f1beb551c515bf4fcc4866de2a5d1fdedfca8aa37cd11b63b1",
+    "/articles/tourism-sop-training-competency-adoption/index.html": "710ec9fa627a239b8ac28b888d9329f0ac3c4d5549001d30198965c5e11c3d17",
+    "/articles/tourism-supplier-partner-governance-sops/index.html": "52b44bf0b4efd8415c766d8345e2b0b201036237af8effe2d8f9e6197c12ef30",
+    "/articles/tourism-transport-dispatch-ai-prompts/index.html": "b278c6bd9d1283baf4b8e91a15bbb6835e7fe7125fc80d0dac196e2e5a497188",
+    "/articles/where-stp-fits-tourism-operations/index.html": "9f4764534e6ef780a0853cd5f9765b00e9023c720e3cbd0e44110152c6c26ae4",
+    "/articles/workforce-rostering-productivity-ai-toolkit/index.html": "e5640cb12acd65e8da4ea6cadbc8f841c28389d4255feba2782a23e36f842637",
+    "/series/amsterdam-tourism-product-discovery/index.html": "4bc6559b43ea88b37b7bdae3f8e61abbd1ba4593ca43be4c38ea6e0fedd73fb3",
+    "/series/hotel-ai-operations-playbook/index.html": "b311edec918d6096a4b420e92e04cfa6a79a0b1f05fc5eb173c3983644794cdc",
+    "/series/hotel-apartment-operational-excellence/index.html": "4c0ef9b0c25c846820d1cc2e76202a9c62f06d73ba2e65e41e1549e836d0707f"
+  }
+}

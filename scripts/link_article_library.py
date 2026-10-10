@@ -8,7 +8,7 @@ from html.parser import HTMLParser
 ROOT=Path(__file__).resolve().parents[1]
 STOP=set('hotel apartment apartments travel tourism hospitality ai operations operation management manager toolkit framework the a an and for of in to with from using how practical guide model playbook quality service building'.split())
 def terms(row):
-    return set(re.findall(r'[a-z]{3,}',(row['title']+' '+' '.join(row.get('tags',[]))).lower()))-STOP
+    return set(re.findall(r'[a-z]{3,}',(row.get('legacyTitle',row['title'])+' '+' '.join(row.get('legacyTags',row.get('tags',[])))).lower()))-STOP
 
 def audit(root=ROOT):
     rows=json.loads((root/'content/article-registry.json').read_text());known={r['url']:r for r in rows};incoming=Counter();results=[]
@@ -57,7 +57,7 @@ def render(source,row,rows):
     cards=[]
     for target in selected:
         reason='Explore the complete series and its reading order.' if target['type']=='Series index' else target['description']
-        cards.append('<li><a href="'+escape(target['url'],quote=True)+'"><span>'+escape('Series guide' if target['type']=='Series index' else 'Related guide')+'</span><strong>'+escape(target['title'])+'</strong><p>'+escape(reason)+'</p></a></li>')
+        cards.append('<li><a href="'+escape(target['url'],quote=True)+'"><span>'+escape('Series guide' if target['type']=='Series index' else 'Related guide')+'</span><strong>'+escape(target.get('legacyTitle',target['title']))+'</strong><p>'+escape(reason)+'</p></a></li>')
     block='<section class="library-connections" id="library-connections" aria-labelledby="library-connections-title"><h2 id="library-connections-title">Connect this guide to your next step</h2><p>Continue with related methods and the wider series.</p><ul>'+''.join(cards)+'</ul></section>'
     existing=re.search(r'<section class="library-connections".*?</section>',source,re.S)
     if existing:return source[:existing.start()]+block+source[existing.end():]

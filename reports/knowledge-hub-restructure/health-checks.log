@@ -1,0 +1,77 @@
+
+Checking: Article and website tests
+.......................................................................................
+----------------------------------------------------------------------
+Ran 87 tests in 95.575s
+
+OK
+Sitemap canonical pages: 173 Atom articles: 129
+Sitemap canonical pages: 173 Atom articles: 129
+
+Checking: test_analytics_links.cjs
+All four project links tracked with consent; query strings removed; no events when consent is denied.
+
+Checking: test_browser_state.cjs
+Saved-list validation, failed storage, removal focus and learning-progress recovery passed (DOM simulation).
+
+Checking: test_homepage_reading.cjs
+Homepage reading selections wrap correctly after publication, with complete groups and valid labels (DOM simulation).
+
+Checking: test_infraquote_amsterdam.cjs
+Amsterdam age bands, unknown prices, date confirmation, local operating rules, native currency and tax calculations passed.
+Date-specific fare evidence, age restrictions and exhibition closures passed.
+Four complete Amsterdam template scenarios passed: costing, margin VAT and date reconfirmation.
+
+Checking: test_infraquote_backend.mjs
+Postgres migration, company isolation, permissions, immutable history, approval gates and sanitized handover checks passed.
+
+Checking: test_infraquote_calculations.cjs
+InfraQuote pricing, verification counts, break-even and draft checks passed.
+Selected vehicle capacity regression checks passed.
+Essential-field and conditional-duration flow checks passed.
+
+Checking: test_infraquote_pdf.cjs
+Client PDF font embedding and variable-length pagination checks passed.
+Short PDF sections stay together across page boundaries.
+
+Checking: test_infraquote_workspace.cjs
+InfraQuote extraction, version differences and rate validity checks passed.
+
+Checking: test_library_search.cjs
+Library word matching, restored filters, empty-state recovery, focus, pagination and URL preservation passed (DOM simulation).
+Taxonomy category, subcategory, tag, series, empty intersections and reset checks passed.
+
+Checking: test_mobile_reader.cjs
+Phone/tablet breakpoint logic, nested contents, saved preferences and blocked storage passed (DOM simulation).
+
+Checking: test_netherlands_products.cjs
+Dutch clocks, seasonal darkness, access/weather holds and passenger-capacity gates passed.
+
+Checking: test_offline_cache.cjs
+PASS: bounded caches, version cleanup, offline fallback, expiry, private/API exclusions; writes awaited.
+
+Checking: test_performance_observations.cjs
+Raw diagnostics do not claim INP/CLS; missing signals stay unmeasured; consent is respected.
+
+Checking: test_prompt_copy.cjs
+Ten full prompts copy exactly; empty and missing targets are disabled.
+
+Checking: test_search_reader_navigation.cjs
+Search editing, reopen results, index recovery, section dismissal and native mobile contents links passed (DOM simulation).
+
+Checking: test_site_update.cjs
+Update notice: no automatic reload, first activation silent, refresh and dismissal supported; drafts untouched.
+
+Checking: Pinned prompt sources
+Original prompts 011–020 match rendered content; copy targets are valid.
+
+Checking: Shared templates and bundles
+Shared components: 0 pages need updates.
+
+Checking: Local links and fragments
+{"pages": 178, "missing": [], "fragments": [], "duplicate_ids": []}
+
+Checking: Article navigation
+PASS: 180 HTML pages, 4297 TOC links, no missing local destinations.
+
+21/21 check groups passed.

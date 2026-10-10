@@ -7,8 +7,22 @@
     "pillar": "Market Intelligence & Product Discovery",
     "summary": "Part 01 of a 12-part Amsterdam tourism product-management case study: framing the destination decision, hypotheses, research design, data provenance, sampling and ethics before deciding what to build.",
     "status": "Published",
-    "readingTime": 14,
-    "source": "Published article registry"
+    "readingTime": 16,
+    "source": "Published article registry",
+    "primaryCategory": "Product Strategy & Development",
+    "subcategory": "Market Intelligence & Research",
+    "tags": [
+      "Amsterdam",
+      "Product discovery"
+    ],
+    "seriesId": "amsterdam-product-discovery",
+    "seriesPosition": 1,
+    "seriesTitle": "Amsterdam Product Discovery",
+    "relatedArticles": [
+      "/articles/amsterdam-product-discovery-02-competitive-landscape/index.html",
+      "/articles/amsterdam-product-discovery-05-segmentation-language/index.html",
+      "/articles/amsterdam-product-discovery-04-voice-of-customer/index.html"
+    ]
   },
   {
     "title": "What Is Amsterdam Already Selling? Mapping the OTA and Competitive Tourism Product Landscape",
@@ -18,8 +32,22 @@
     "pillar": "Market Intelligence & Product Discovery",
     "summary": "Part 02 of a 12-part Amsterdam tourism product-management case study: a provenance-controlled pilot mapping public OTA listings, product families, direct competitors, substitutes, features and price-comparison limits.",
     "status": "Published",
-    "readingTime": 13,
-    "source": "Published article registry"
+    "readingTime": 15,
+    "source": "Published article registry",
+    "primaryCategory": "Product Strategy & Development",
+    "subcategory": "Market Intelligence & Research",
+    "tags": [
+      "Amsterdam",
+      "Product discovery"
+    ],
+    "seriesId": "amsterdam-product-discovery",
+    "seriesPosition": 2,
+    "seriesTitle": "Amsterdam Product Discovery",
+    "relatedArticles": [
+      "/articles/amsterdam-product-discovery-01-research-plan/index.html",
+      "/articles/amsterdam-product-discovery-04-voice-of-customer/index.html",
+      "/articles/amsterdam-product-discovery-05-segmentation-language/index.html"
+    ]
   },
   {
     "title": "Finding the Amsterdam Tourism Market Gap",
@@ -30,7 +58,20 @@
     "summary": "Part 03 of a 12-part Amsterdam tourism product-management case study: triangulating frozen competitive supply with destination demand, policy and feasibility signals through a transparent opportunity model.",
     "status": "Published",
     "readingTime": 13,
-    "source": "Published article registry"
+    "source": "Published article registry",
+    "primaryCategory": "Product Strategy & Development",
+    "subcategory": "Product Discovery & Validation",
+    "tags": [
+      "Amsterdam",
+      "Product discovery"
+    ],
+    "seriesId": "amsterdam-product-discovery",
+    "seriesPosition": 3,
+    "seriesTitle": "Amsterdam Product Discovery",
+    "relatedArticles": [
+      "/series/amsterdam-tourism-product-discovery/index.html",
+      "/articles/amsterdam-product-discovery-11-mvp-pilot-operational-readiness/index.html"
+    ]
   },
   {
     "title": "What Visitors Really Want: Mining Amsterdam Reviews and Voice of Customer",
@@ -41,7 +82,21 @@
     "summary": "Part 04 of a 12-part Amsterdam tourism product-management case study: human-first review coding, AI-assisted VOC classification, independent validation, JTBD, Pareto and traceable product requirements.",
     "status": "Published",
     "readingTime": 10,
-    "source": "Published article registry"
+    "source": "Published article registry",
+    "primaryCategory": "Product Strategy & Development",
+    "subcategory": "Market Intelligence & Research",
+    "tags": [
+      "Amsterdam",
+      "Product discovery"
+    ],
+    "seriesId": "amsterdam-product-discovery",
+    "seriesPosition": 4,
+    "seriesTitle": "Amsterdam Product Discovery",
+    "relatedArticles": [
+      "/articles/amsterdam-product-discovery-05-segmentation-language/index.html",
+      "/articles/amsterdam-product-discovery-02-competitive-landscape/index.html",
+      "/articles/amsterdam-product-discovery-01-research-plan/index.html"
+    ]
   },
   {
     "title": "Who Should We Build It For? Source Markets, Segmentation, Language and Customer Jobs",
@@ -51,8 +106,22 @@
     "pillar": "Market Intelligence & Product Discovery",
     "summary": "Part 05 of a 12-part Amsterdam tourism product-management case study: source-market segmentation, language supply, connectivity and guide feasibility translated into Primary, Secondary and Test research segments.",
     "status": "Published",
-    "readingTime": 12,
-    "source": "Published article registry"
+    "readingTime": 13,
+    "source": "Published article registry",
+    "primaryCategory": "Product Strategy & Development",
+    "subcategory": "Market Intelligence & Research",
+    "tags": [
+      "Amsterdam",
+      "Product discovery"
+    ],
+    "seriesId": "amsterdam-product-discovery",
+    "seriesPosition": 5,
+    "seriesTitle": "Amsterdam Product Discovery",
+    "relatedArticles": [
+      "/articles/amsterdam-product-discovery-04-voice-of-customer/index.html",
+      "/articles/amsterdam-product-discovery-02-competitive-landscape/index.html",
+      "/articles/amsterdam-product-discovery-01-research-plan/index.html"
+    ]
   },
   {
     "title": "Where Should the Experience Happen? Attraction Intelligence, Geography and Destination Fit",
@@ -62,8 +131,20 @@
     "pillar": "Market Intelligence & Product Discovery",
     "summary": "Part 06 of a 12-part Amsterdam tourism product-management case study: verified POI intelligence, destination-fit scoring and resilient route variants across crowd, rain, accessibility and disruption conditions.",
     "status": "Published",
-    "readingTime": 12,
-    "source": "Published article registry"
+    "readingTime": 13,
+    "source": "Published article registry",
+    "primaryCategory": "Product Strategy & Development",
+    "subcategory": "Product Design & Requirements",
+    "tags": [
+      "Amsterdam",
+      "Product discovery"
+    ],
+    "seriesId": "amsterdam-product-discovery",
+    "seriesPosition": 6,
+    "seriesTitle": "Amsterdam Product Discovery",
+    "relatedArticles": [
+      "/articles/amsterdam-product-discovery-07-product-requirements-concept/index.html"
+    ]
   },
   {
     "title": "Amsterdam Product Requirements and Signature Concept",
@@ -73,8 +154,20 @@
     "pillar": "Market Intelligence & Product Discovery",
     "summary": "Part 07 of a 12-part Amsterdam tourism product-management case study: evidence-to-requirement traceability, supplier feasibility, PRD and service blueprint leading to a controlled signature concept.",
     "status": "Published",
-    "readingTime": 9,
-    "source": "Published article registry"
+    "readingTime": 10,
+    "source": "Published article registry",
+    "primaryCategory": "Product Strategy & Development",
+    "subcategory": "Product Design & Requirements",
+    "tags": [
+      "Amsterdam",
+      "Product discovery"
+    ],
+    "seriesId": "amsterdam-product-discovery",
+    "seriesPosition": 7,
+    "seriesTitle": "Amsterdam Product Discovery",
+    "relatedArticles": [
+      "/articles/amsterdam-product-discovery-06-destination-geography/index.html"
+    ]
   },
   {
     "title": "Will the Product Make Money? Pricing, Distribution, Capacity and Tourism Unit Economics",
@@ -84,8 +177,20 @@
     "pillar": "Market Intelligence & Product Discovery",
     "summary": "Part 08 of a 12-part Amsterdam tourism product-management case study: transparent pricing, channel economics, capacity, break-even and commercial guardrails without invented private sales data.",
     "status": "Published",
-    "readingTime": 16,
-    "source": "Published article registry"
+    "readingTime": 17,
+    "source": "Published article registry",
+    "primaryCategory": "Product Strategy & Development",
+    "subcategory": "Product Economics & Lifecycle",
+    "tags": [
+      "Amsterdam",
+      "Product discovery"
+    ],
+    "seriesId": "amsterdam-product-discovery",
+    "seriesPosition": 8,
+    "seriesTitle": "Amsterdam Product Discovery",
+    "relatedArticles": [
+      "/articles/amsterdam-product-discovery-12-product-analytics-scale-decision/index.html"
+    ]
   },
   {
     "title": "Can We Operate It Responsibly? Regulation, Accessibility, Sustainability and Product Risk",
@@ -95,8 +200,21 @@
     "pillar": "Market Intelligence & Product Discovery",
     "summary": "Part 09 of a 12-part Amsterdam tourism product-management case study: verified regulation, product risk, accessibility controls and measurable destination responsibility for Amsterdam Layers.",
     "status": "Published",
-    "readingTime": 13,
-    "source": "Published article registry"
+    "readingTime": 14,
+    "source": "Published article registry",
+    "primaryCategory": "Governance, Risk & Assurance",
+    "subcategory": "Risk & Compliance",
+    "tags": [
+      "Amsterdam",
+      "Product discovery",
+      "Risk management"
+    ],
+    "seriesId": "amsterdam-product-discovery",
+    "seriesPosition": 9,
+    "seriesTitle": "Amsterdam Product Discovery",
+    "relatedArticles": [
+      "/articles/tourism-operational-risk-assessment-before-sop/index.html"
+    ]
   },
   {
     "title": "When Should the Tour Run? Demand, Weather, Seasonality and the Amsterdam Operating Calendar",
@@ -106,8 +224,21 @@
     "pillar": "Market Intelligence & Product Discovery",
     "summary": "Part 10 of a 12-part Amsterdam tourism product-management case study: demand context, historical climate, live-weather controls, event pressure and a rolling operating calendar for Amsterdam Layers.",
     "status": "Published",
-    "readingTime": 11,
-    "source": "Published article registry"
+    "readingTime": 12,
+    "source": "Published article registry",
+    "primaryCategory": "Hospitality & Tourism Operations",
+    "subcategory": "DMC & Destination Operations",
+    "tags": [
+      "Amsterdam",
+      "Product discovery"
+    ],
+    "seriesId": "amsterdam-product-discovery",
+    "seriesPosition": 10,
+    "seriesTitle": "Amsterdam Product Discovery",
+    "relatedArticles": [
+      "/articles/article-assignment-engine-dmc-operations/index.html",
+      "/articles/article-tourism-operations-roles-real-difference/index.html"
+    ]
   },
   {
     "title": "From Spreadsheet to Street: MVP, Pilot Launch and Operational Readiness",
@@ -117,8 +248,21 @@
     "pillar": "Market Intelligence & Product Discovery",
     "summary": "Part 11 of a 12-part Amsterdam tourism product-management case study: a controlled MVP pilot plan with success thresholds, exit gates, RACI ownership, experiments, launch readiness and daily operating controls.",
     "status": "Published",
-    "readingTime": 11,
-    "source": "Published article registry"
+    "readingTime": 12,
+    "source": "Published article registry",
+    "primaryCategory": "Product Strategy & Development",
+    "subcategory": "Product Discovery & Validation",
+    "tags": [
+      "Amsterdam",
+      "Product discovery"
+    ],
+    "seriesId": "amsterdam-product-discovery",
+    "seriesPosition": 11,
+    "seriesTitle": "Amsterdam Product Discovery",
+    "relatedArticles": [
+      "/series/amsterdam-tourism-product-discovery/index.html",
+      "/articles/amsterdam-product-discovery-03-market-gap/index.html"
+    ]
   },
   {
     "title": "After the First Guests: Product Analytics, Continuous Improvement and the Scale Decision",
@@ -128,8 +272,20 @@
     "pillar": "Market Intelligence & Product Discovery",
     "summary": "Part 12 of a 12-part Amsterdam tourism product-management case study: a governed post-pilot measurement architecture, frozen performance review, improvement controls and an evidence-valid product decision.",
     "status": "Published",
-    "readingTime": 12,
-    "source": "Published article registry"
+    "readingTime": 13,
+    "source": "Published article registry",
+    "primaryCategory": "Product Strategy & Development",
+    "subcategory": "Product Economics & Lifecycle",
+    "tags": [
+      "Amsterdam",
+      "Product discovery"
+    ],
+    "seriesId": "amsterdam-product-discovery",
+    "seriesPosition": 12,
+    "seriesTitle": "Amsterdam Product Discovery",
+    "relatedArticles": [
+      "/articles/amsterdam-product-discovery-08-commercial-model-unit-economics/index.html"
+    ]
   },
   {
     "title": "The Abu Dhabi MICE Movement Control Room",
@@ -139,8 +295,23 @@
     "pillar": "MICE & Event Operations",
     "summary": "They are arriving on different flights at Zayed International Airport. They are staying in four hotels. Some are conference speakers, some are VIP guests, some are travelling with colleagues, and others are visiting the UAE for...",
     "status": "Published",
-    "readingTime": 25,
-    "source": "Published article registry"
+    "readingTime": 33,
+    "source": "Published article registry",
+    "primaryCategory": "Hospitality & Tourism Operations",
+    "subcategory": "MICE & Event Operations",
+    "tags": [
+      "DMC operations",
+      "Abu Dhabi",
+      "MICE"
+    ],
+    "seriesId": "mice-operations",
+    "seriesPosition": 1,
+    "seriesTitle": "MICE and Event Operations",
+    "relatedArticles": [
+      "/articles/article-mice-arrival-waves-zayed-international-airport/index.html",
+      "/articles/article-mice-backup-operations-service-recovery-abu-dhabi/index.html",
+      "/articles/abu-dhabi-mice-operations-series/index.html"
+    ]
   },
   {
     "title": "Before the Flight Lands: How Smart DMCs Use Air Connectivity to Predict the Next Guest Market",
@@ -150,8 +321,23 @@
     "pillar": "Market Intelligence & Product Discovery",
     "summary": "An Abu Dhabi framework for turning new airline routes into stronger products, smarter language readiness and better guest operations",
     "status": "Published",
-    "readingTime": 21,
-    "source": "Published article registry"
+    "readingTime": 22,
+    "source": "Published article registry",
+    "primaryCategory": "Product Strategy & Development",
+    "subcategory": "Market Intelligence & Research",
+    "tags": [
+      "Abu Dhabi",
+      "Product discovery",
+      "DMC operations"
+    ],
+    "seriesId": null,
+    "seriesPosition": null,
+    "seriesTitle": "",
+    "relatedArticles": [
+      "/articles/amsterdam-product-discovery-02-competitive-landscape/index.html",
+      "/articles/amsterdam-product-discovery-05-segmentation-language/index.html",
+      "/articles/amsterdam-product-discovery-04-voice-of-customer/index.html"
+    ]
   },
   {
     "title": "The Assignment Engine: How DMC Operations Managers Put the Right Person in the Right Operation",
@@ -161,8 +347,20 @@
     "pillar": "Operations Systems & Dispatch",
     "summary": "A practical framework for matching people, guest needs, operational context and backup readiness before service begins.",
     "status": "Published",
-    "readingTime": 21,
-    "source": "Published article registry"
+    "readingTime": 22,
+    "source": "Published article registry",
+    "primaryCategory": "Hospitality & Tourism Operations",
+    "subcategory": "DMC & Destination Operations",
+    "tags": [
+      "DMC operations"
+    ],
+    "seriesId": "operations-systems",
+    "seriesPosition": 1,
+    "seriesTitle": "Travel Operations Systems",
+    "relatedArticles": [
+      "/articles/amsterdam-product-discovery-10-seasonality-operating-calendar/index.html",
+      "/articles/article-tourism-operations-roles-real-difference/index.html"
+    ]
   },
   {
     "title": "How to Quote a City Tour Professionally for DMCs",
@@ -172,8 +370,23 @@
     "pillar": "Commercial Pricing & DMC Sales",
     "summary": "A practical guide to building a professional city-tour quotation with clear costs, assumptions and client-ready presentation.",
     "status": "Published",
-    "readingTime": 15,
-    "source": "Published article registry"
+    "readingTime": 16,
+    "source": "Published article registry",
+    "primaryCategory": "Hospitality & Tourism Operations",
+    "subcategory": "Tour Pricing, Sales & Quotations",
+    "tags": [
+      "DMC operations",
+      "Abu Dhabi",
+      "Tour pricing"
+    ],
+    "seriesId": "tour-quotation",
+    "seriesPosition": 1,
+    "seriesTitle": "Tour Quotation and Pricing",
+    "relatedArticles": [
+      "/articles/article-professional-client-tour-quotation/index.html",
+      "/articles/article-fixed-variable-costs-city-tour-pricing/index.html",
+      "/articles/article-net-cost-selling-price-markup/index.html"
+    ]
   },
   {
     "title": "From Airport Arrival to Final Farewell | Destination Experience Journey Map",
@@ -183,8 +396,22 @@
     "pillar": "Destination Experience & Guide Quality",
     "summary": "A practical long-form article built around Abu Dhabi destination operations, guest journey mapping, tour guide quality, dispatch planning, service recovery and pricing discipline.",
     "status": "Published",
-    "readingTime": 19,
-    "source": "Published article registry"
+    "readingTime": 22,
+    "source": "Published article registry",
+    "primaryCategory": "Hospitality & Tourism Operations",
+    "subcategory": "Guest Experience & Service Delivery",
+    "tags": [
+      "DMC operations",
+      "Guest experience"
+    ],
+    "seriesId": null,
+    "seriesPosition": null,
+    "seriesTitle": "",
+    "relatedArticles": [
+      "/articles/article-tour-guide-quality-index/index.html",
+      "/articles/article-tour-guide-storytelling-system/index.html",
+      "/articles/hotel-apartment-end-to-end-guest-journey/index.html"
+    ]
   },
   {
     "title": "Fixed vs Variable Costs in Tour Pricing",
@@ -194,8 +421,23 @@
     "pillar": "Commercial Pricing & DMC Sales",
     "summary": "How tourism teams separate fixed and variable city-tour costs to improve pricing decisions and commercial review.",
     "status": "Published",
-    "readingTime": 15,
-    "source": "Published article registry"
+    "readingTime": 16,
+    "source": "Published article registry",
+    "primaryCategory": "Hospitality & Tourism Operations",
+    "subcategory": "Tour Pricing, Sales & Quotations",
+    "tags": [
+      "DMC operations",
+      "Abu Dhabi",
+      "Tour pricing"
+    ],
+    "seriesId": "tour-quotation",
+    "seriesPosition": 2,
+    "seriesTitle": "Tour Quotation and Pricing",
+    "relatedArticles": [
+      "/articles/article-city-tour-quotation-professional/index.html",
+      "/articles/article-net-cost-selling-price-markup/index.html",
+      "/articles/article-participant-estimation-break-even-risk/index.html"
+    ]
   },
   {
     "title": "The Fleet Control Tower: What Operations Managers Should See on One Screen",
@@ -205,8 +447,22 @@
     "pillar": "Operations Systems & Dispatch",
     "summary": "A fleet dashboard should not be a collection of charts. It should be a decision room.",
     "status": "Published",
-    "readingTime": 19,
-    "source": "Published article registry"
+    "readingTime": 21,
+    "source": "Published article registry",
+    "primaryCategory": "Operations & Process Engineering",
+    "subcategory": "Performance & Operational Control",
+    "tags": [
+      "DMC operations",
+      "Performance measurement"
+    ],
+    "seriesId": "operations-systems",
+    "seriesPosition": 2,
+    "seriesTitle": "Travel Operations Systems",
+    "relatedArticles": [
+      "/articles/hotel-apartment-kpi-architecture/index.html",
+      "/articles/hotel-apartment-operations-control-tower/index.html",
+      "/articles/hotel-operations-planning-daily-control/index.html"
+    ]
   },
   {
     "title": "Before the Delegate Reaches the Hotel",
@@ -216,8 +472,23 @@
     "pillar": "MICE & Event Operations",
     "summary": "It continues while the delegate moves through immigration, waits for baggage, searches for the event sign, meets the airport representative and boards the transfer vehicle.",
     "status": "Published",
-    "readingTime": 34,
-    "source": "Published article registry"
+    "readingTime": 43,
+    "source": "Published article registry",
+    "primaryCategory": "Hospitality & Tourism Operations",
+    "subcategory": "MICE & Event Operations",
+    "tags": [
+      "DMC operations",
+      "Abu Dhabi",
+      "MICE"
+    ],
+    "seriesId": "mice-operations",
+    "seriesPosition": 2,
+    "seriesTitle": "MICE and Event Operations",
+    "relatedArticles": [
+      "/articles/article-mice-hotel-desks-coach-departures-abu-dhabi/index.html",
+      "/articles/article-mice-venue-arrivals-registration-abu-dhabi/index.html",
+      "/articles/article-abu-dhabi-mice-movement-control-room/index.html"
+    ]
   },
   {
     "title": "When the MICE Plan Changes",
@@ -227,8 +498,23 @@
     "pillar": "MICE & Event Operations",
     "summary": "A strong MICE operation does not expect everything to remain perfect. It prepares the team to respond when reality becomes different from the approved programme.",
     "status": "Published",
-    "readingTime": 35,
-    "source": "Published article registry"
+    "readingTime": 48,
+    "source": "Published article registry",
+    "primaryCategory": "Hospitality & Tourism Operations",
+    "subcategory": "MICE & Event Operations",
+    "tags": [
+      "DMC operations",
+      "Abu Dhabi",
+      "MICE"
+    ],
+    "seriesId": "mice-operations",
+    "seriesPosition": 5,
+    "seriesTitle": "MICE and Event Operations",
+    "relatedArticles": [
+      "/articles/article-mice-arrival-waves-zayed-international-airport/index.html",
+      "/articles/article-mice-hotel-desks-coach-departures-abu-dhabi/index.html",
+      "/articles/article-mice-venue-arrivals-registration-abu-dhabi/index.html"
+    ]
   },
   {
     "title": "From Hotel Lobby to Coach Door",
@@ -238,8 +524,23 @@
     "pillar": "MICE & Event Operations",
     "summary": "Managing MICE Hospitality Desks, Delegate Readiness and Controlled Departures in Abu Dhabi",
     "status": "Published",
-    "readingTime": 34,
-    "source": "Published article registry"
+    "readingTime": 47,
+    "source": "Published article registry",
+    "primaryCategory": "Hospitality & Tourism Operations",
+    "subcategory": "MICE & Event Operations",
+    "tags": [
+      "DMC operations",
+      "Abu Dhabi",
+      "MICE"
+    ],
+    "seriesId": "mice-operations",
+    "seriesPosition": 3,
+    "seriesTitle": "MICE and Event Operations",
+    "relatedArticles": [
+      "/articles/article-mice-venue-arrivals-registration-abu-dhabi/index.html",
+      "/articles/article-mice-arrival-waves-zayed-international-airport/index.html",
+      "/articles/abu-dhabi-mice-operations-series/index.html"
+    ]
   },
   {
     "title": "From Coach Bay to Conference Seat",
@@ -249,8 +550,23 @@
     "pillar": "MICE & Event Operations",
     "summary": "A coach leaving the hotel on time does not mean the movement has been completed successfully.",
     "status": "Published",
-    "readingTime": 35,
-    "source": "Published article registry"
+    "readingTime": 48,
+    "source": "Published article registry",
+    "primaryCategory": "Hospitality & Tourism Operations",
+    "subcategory": "MICE & Event Operations",
+    "tags": [
+      "DMC operations",
+      "Abu Dhabi",
+      "MICE"
+    ],
+    "seriesId": "mice-operations",
+    "seriesPosition": 4,
+    "seriesTitle": "MICE and Event Operations",
+    "relatedArticles": [
+      "/articles/article-mice-hotel-desks-coach-departures-abu-dhabi/index.html",
+      "/articles/article-mice-backup-operations-service-recovery-abu-dhabi/index.html",
+      "/articles/article-mice-arrival-waves-zayed-international-airport/index.html"
+    ]
   },
   {
     "title": "Net Cost, Selling Price, Markup and Margin",
@@ -260,8 +576,23 @@
     "pillar": "Commercial Pricing & DMC Sales",
     "summary": "A tourism pricing guide to net cost, selling price, markup and margin, with controls for clearer commercial decisions.",
     "status": "Published",
-    "readingTime": 14,
-    "source": "Published article registry"
+    "readingTime": 15,
+    "source": "Published article registry",
+    "primaryCategory": "Hospitality & Tourism Operations",
+    "subcategory": "Tour Pricing, Sales & Quotations",
+    "tags": [
+      "DMC operations",
+      "Abu Dhabi",
+      "Tour pricing"
+    ],
+    "seriesId": "tour-quotation",
+    "seriesPosition": 3,
+    "seriesTitle": "Tour Quotation and Pricing",
+    "relatedArticles": [
+      "/articles/article-participant-estimation-break-even-risk/index.html",
+      "/articles/article-professional-client-tour-quotation/index.html",
+      "/articles/article-tour-cost-worksheet-city-tour/index.html"
+    ]
   },
   {
     "title": "Participant Estimation and Break-Even Risk",
@@ -271,8 +602,23 @@
     "pillar": "Commercial Pricing & DMC Sales",
     "summary": "How participant estimates, break-even logic and demand risk support safer tour pricing and operating commitments.",
     "status": "Published",
-    "readingTime": 16,
-    "source": "Published article registry"
+    "readingTime": 17,
+    "source": "Published article registry",
+    "primaryCategory": "Hospitality & Tourism Operations",
+    "subcategory": "Tour Pricing, Sales & Quotations",
+    "tags": [
+      "DMC operations",
+      "Abu Dhabi",
+      "Tour pricing"
+    ],
+    "seriesId": "tour-quotation",
+    "seriesPosition": 4,
+    "seriesTitle": "Tour Quotation and Pricing",
+    "relatedArticles": [
+      "/articles/article-net-cost-selling-price-markup/index.html",
+      "/articles/article-professional-client-tour-quotation/index.html",
+      "/articles/article-tour-cost-worksheet-city-tour/index.html"
+    ]
   },
   {
     "title": "Professional Client Tour Quotation",
@@ -283,7 +629,22 @@
     "summary": "A structured method for presenting client-ready tour quotations with transparent scope, assumptions and commercial terms.",
     "status": "Published",
     "readingTime": 12,
-    "source": "Published article registry"
+    "source": "Published article registry",
+    "primaryCategory": "Hospitality & Tourism Operations",
+    "subcategory": "Tour Pricing, Sales & Quotations",
+    "tags": [
+      "DMC operations",
+      "Abu Dhabi",
+      "Tour pricing"
+    ],
+    "seriesId": "tour-quotation",
+    "seriesPosition": 7,
+    "seriesTitle": "Tour Quotation and Pricing",
+    "relatedArticles": [
+      "/articles/article-tour-cost-worksheet-city-tour/index.html",
+      "/articles/article-participant-estimation-break-even-risk/index.html",
+      "/articles/article-net-cost-selling-price-markup/index.html"
+    ]
   },
   {
     "title": "From Partnership Introduction to Confirmed Group: A Real-Life DMC Sales Scenario",
@@ -293,8 +654,24 @@
     "pillar": "Commercial Pricing & DMC Sales",
     "summary": "A long, practical guide that keeps the original RFI, RFQ, RFP, eRFP and NDA explanation — then adds a illustrative UK-market DMC sales journey with 20 email examples , from first partnership introduction to confirmed group, operation...",
     "status": "Published",
-    "readingTime": 52,
-    "source": "Published article registry"
+    "readingTime": 54,
+    "source": "Published article registry",
+    "primaryCategory": "Governance, Risk & Assurance",
+    "subcategory": "Supplier & Decision Governance",
+    "tags": [
+      "DMC operations",
+      "Abu Dhabi",
+      "Tour pricing",
+      "Supplier management"
+    ],
+    "seriesId": null,
+    "seriesPosition": null,
+    "seriesTitle": "",
+    "relatedArticles": [
+      "/articles/hotel-procurement-supplier-quality-control/index.html",
+      "/articles/sop-roles-authority-raci/index.html",
+      "/articles/tourism-supplier-partner-governance-sops/index.html"
+    ]
   },
   {
     "title": "Tour Cost Worksheet for City Tours",
@@ -305,7 +682,22 @@
     "summary": "A practical city-tour cost worksheet covering supplier inputs, transport, tickets, guide costs and commercial review.",
     "status": "Published",
     "readingTime": 14,
-    "source": "Published article registry"
+    "source": "Published article registry",
+    "primaryCategory": "Hospitality & Tourism Operations",
+    "subcategory": "Tour Pricing, Sales & Quotations",
+    "tags": [
+      "DMC operations",
+      "Abu Dhabi",
+      "Tour pricing"
+    ],
+    "seriesId": "tour-quotation",
+    "seriesPosition": 5,
+    "seriesTitle": "Tour Quotation and Pricing",
+    "relatedArticles": [
+      "/articles/article-professional-client-tour-quotation/index.html",
+      "/articles/article-participant-estimation-break-even-risk/index.html",
+      "/articles/article-net-cost-selling-price-markup/index.html"
+    ]
   },
   {
     "title": "Tour Guide Quality Index",
@@ -315,8 +707,22 @@
     "pillar": "Destination Experience & Guide Quality",
     "summary": "A practical 10-pillar framework for measuring and improving guide performance using field stories, measurable KPIs, service recovery, documentation, and workbook-ready scoring.",
     "status": "Published",
-    "readingTime": 13,
-    "source": "Published article registry"
+    "readingTime": 9,
+    "source": "Published article registry",
+    "primaryCategory": "Hospitality & Tourism Operations",
+    "subcategory": "Guest Experience & Service Delivery",
+    "tags": [
+      "DMC operations",
+      "Guest experience"
+    ],
+    "seriesId": null,
+    "seriesPosition": null,
+    "seriesTitle": "",
+    "relatedArticles": [
+      "/articles/article-tour-guide-storytelling-system/index.html",
+      "/articles/article-destination-experience-journey-map/index.html",
+      "/articles/hotel-apartment-end-to-end-guest-journey/index.html"
+    ]
   },
   {
     "title": "Beyond the Script: How Great Tour Guides Turn Key Facts into Experiences Guests Remember",
@@ -326,8 +732,22 @@
     "pillar": "Destination Experience & Guide Quality",
     "summary": "Why the best tour guides do not memorise every word — and what they should prepare instead",
     "status": "Published",
-    "readingTime": 19,
-    "source": "Published article registry"
+    "readingTime": 21,
+    "source": "Published article registry",
+    "primaryCategory": "Hospitality & Tourism Operations",
+    "subcategory": "Guest Experience & Service Delivery",
+    "tags": [
+      "DMC operations",
+      "Guest experience"
+    ],
+    "seriesId": null,
+    "seriesPosition": null,
+    "seriesTitle": "",
+    "relatedArticles": [
+      "/articles/article-tour-guide-quality-index/index.html",
+      "/articles/article-destination-experience-journey-map/index.html",
+      "/articles/hotel-apartment-end-to-end-guest-journey/index.html"
+    ]
   },
   {
     "title": "Tourism Operations Roles: Responsibilities and Differences",
@@ -337,8 +757,20 @@
     "pillar": "Destination Experience & Guide Quality",
     "summary": "A clear comparison of tourism operations roles, responsibilities, decision rights and the handovers between them.",
     "status": "Published",
-    "readingTime": 26,
-    "source": "Published article registry"
+    "readingTime": 28,
+    "source": "Published article registry",
+    "primaryCategory": "Hospitality & Tourism Operations",
+    "subcategory": "DMC & Destination Operations",
+    "tags": [
+      "DMC operations"
+    ],
+    "seriesId": null,
+    "seriesPosition": null,
+    "seriesTitle": "",
+    "relatedArticles": [
+      "/articles/article-assignment-engine-dmc-operations/index.html",
+      "/articles/amsterdam-product-discovery-10-seasonality-operating-calendar/index.html"
+    ]
   },
   {
     "title": "Transport, Tickets, VAT and Gratuities in Tour Quotation",
@@ -348,8 +780,23 @@
     "pillar": "Commercial Pricing & DMC Sales",
     "summary": "How transport, attraction tickets, VAT and gratuities should be controlled within professional tour costing.",
     "status": "Published",
-    "readingTime": 13,
-    "source": "Published article registry"
+    "readingTime": 14,
+    "source": "Published article registry",
+    "primaryCategory": "Hospitality & Tourism Operations",
+    "subcategory": "Tour Pricing, Sales & Quotations",
+    "tags": [
+      "DMC operations",
+      "Abu Dhabi",
+      "Tour pricing"
+    ],
+    "seriesId": "tour-quotation",
+    "seriesPosition": 6,
+    "seriesTitle": "Tour Quotation and Pricing",
+    "relatedArticles": [
+      "/articles/article-tour-cost-worksheet-city-tour/index.html",
+      "/articles/article-professional-client-tour-quotation/index.html",
+      "/articles/article-participant-estimation-break-even-risk/index.html"
+    ]
   },
   {
     "title": "CAPA: Corrective and Preventive Action in Tourism",
@@ -359,8 +806,22 @@
     "pillar": "Operational Excellence & SOPs",
     "summary": "Turn complaints, incidents, audit findings, defects, and adverse trends into controlled actions that contain the problem, remove verified causes, and prove the change works.",
     "status": "Published",
-    "readingTime": 11,
-    "source": "Published article registry"
+    "readingTime": 12,
+    "source": "Published article registry",
+    "primaryCategory": "Operations & Process Engineering",
+    "subcategory": "Quality & Continuous Improvement",
+    "tags": [
+      "DMC operations",
+      "Quality improvement"
+    ],
+    "seriesId": "tourism-operations-excellence",
+    "seriesPosition": 27,
+    "seriesTitle": "Travel and Tourism Operations Excellence",
+    "relatedArticles": [
+      "/articles/root-cause-analysis-tourism-managers/index.html",
+      "/articles/hotel-apartment-cost-of-poor-quality/index.html",
+      "/articles/hotel-complaint-root-cause-analysis/index.html"
+    ]
   },
   {
     "title": "How to Apply Customer Journey Mapping to SOP Design",
@@ -370,8 +831,22 @@
     "pillar": "Operational Excellence & SOPs",
     "summary": "A process can be efficient for departments and still feel confusing, inaccessible, or uncaring to the guest. Journey mapping adds the human experience to the operating design before the SOP turns that design into routine work.",
     "status": "Published",
-    "readingTime": 11,
-    "source": "Published article registry"
+    "readingTime": 12,
+    "source": "Published article registry",
+    "primaryCategory": "Operations & Process Engineering",
+    "subcategory": "Process Architecture & BPM",
+    "tags": [
+      "DMC operations",
+      "Process design"
+    ],
+    "seriesId": "tourism-operations-excellence",
+    "seriesPosition": 9,
+    "seriesTitle": "Travel and Tourism Operations Excellence",
+    "relatedArticles": [
+      "/articles/integrated-sop-creation-model/index.html",
+      "/articles/map-process-before-writing-sop/index.html",
+      "/articles/procedures-processes-process-maps/index.html"
+    ]
   },
   {
     "title": "The DMC Operations AI Toolkit: 10 Ready-to-Use Prompts for Daily Tour Operations",
@@ -381,8 +856,23 @@
     "pillar": "AI for Tourism",
     "summary": "DMC operations teams can use AI to organise files, identify gaps and structure briefs, but confirmations, assignments and disruption decisions must stay in approved systems.",
     "status": "Published",
-    "readingTime": 19,
-    "source": "Published article registry"
+    "readingTime": 21,
+    "source": "Published article registry",
+    "primaryCategory": "AI Prompt Engineering & Toolkits",
+    "subcategory": "Tourism & DMC AI Toolkits",
+    "tags": [
+      "DMC operations",
+      "Prompt engineering",
+      "Responsible AI"
+    ],
+    "seriesId": "ai-tourism-operations",
+    "seriesPosition": 3,
+    "seriesTitle": "AI for Travel and Tourism Operations",
+    "relatedArticles": [
+      "/articles/tourism-operations-kpis-control-dashboards/index.html",
+      "/articles/front-line-tourism-ai-toolkit/index.html",
+      "/articles/guest-experience-ai-prompts/index.html"
+    ]
   },
   {
     "title": "Document Control & Version Management",
@@ -392,8 +882,22 @@
     "pillar": "Operational Excellence & SOPs",
     "summary": "A procedure creates confidence only when people can find the right document, recognize its status, use the current approved version, record the work correctly, and prevent obsolete instructions from returning to the operation.",
     "status": "Published",
-    "readingTime": 14,
-    "source": "Published article registry"
+    "readingTime": 15,
+    "source": "Published article registry",
+    "primaryCategory": "Governance, Risk & Assurance",
+    "subcategory": "Documentation & Audit Assurance",
+    "tags": [
+      "DMC operations",
+      "Evidence management"
+    ],
+    "seriesId": "tourism-operations-excellence",
+    "seriesPosition": 25,
+    "seriesTitle": "Travel and Tourism Operations Excellence",
+    "relatedArticles": [
+      "/articles/how-to-audit-an-sop/index.html",
+      "/articles/sop-evidence-documentation-legal-defensibility/index.html",
+      "/articles/tourism-document-hierarchy/index.html"
+    ]
   },
   {
     "title": "Front-Line Tourism AI Toolkit",
@@ -403,8 +907,23 @@
     "pillar": "AI for Tourism",
     "summary": "Front-line teams can use AI to prepare, practise and communicate more consistently, while verified facts, empathy, safety and live decisions remain with the employee.",
     "status": "Published",
-    "readingTime": 19,
-    "source": "Published article registry"
+    "readingTime": 21,
+    "source": "Published article registry",
+    "primaryCategory": "AI Prompt Engineering & Toolkits",
+    "subcategory": "Tourism & DMC AI Toolkits",
+    "tags": [
+      "DMC operations",
+      "Prompt engineering",
+      "Responsible AI"
+    ],
+    "seriesId": "ai-tourism-operations",
+    "seriesPosition": 2,
+    "seriesTitle": "AI for Travel and Tourism Operations",
+    "relatedArticles": [
+      "/articles/guest-experience-ai-prompts/index.html",
+      "/articles/dmc-operations-ai-prompts/index.html",
+      "/articles/tourism-product-development-ai-prompts/index.html"
+    ]
   },
   {
     "title": "The Guest Experience AI Toolkit: 10 Prompts for Communication, Complaints, and Service Recovery",
@@ -414,8 +933,23 @@
     "pillar": "AI for Tourism",
     "summary": "AI can support consistent guest communication and feedback analysis, while facts, privacy, empathy, recovery authority and accountability remain human responsibilities.",
     "status": "Published",
-    "readingTime": 18,
-    "source": "Published article registry"
+    "readingTime": 21,
+    "source": "Published article registry",
+    "primaryCategory": "AI Prompt Engineering & Toolkits",
+    "subcategory": "Tourism & DMC AI Toolkits",
+    "tags": [
+      "DMC operations",
+      "Prompt engineering",
+      "Responsible AI"
+    ],
+    "seriesId": "ai-tourism-operations",
+    "seriesPosition": 8,
+    "seriesTitle": "AI for Travel and Tourism Operations",
+    "relatedArticles": [
+      "/articles/hotel-guest-experience-ai-toolkit/index.html",
+      "/articles/front-line-tourism-ai-toolkit/index.html",
+      "/articles/dmc-operations-ai-prompts/index.html"
+    ]
   },
   {
     "title": "The Guest-Ready Apartment Standard",
@@ -425,8 +959,20 @@
     "pillar": "Operational Excellence & SOPs",
     "summary": "Design a measurable guest-ready apartment release standard for serviced apartments using readiness gates, defect severity, cross-functional ownership, evidence and quality KPIs.",
     "status": "Published",
-    "readingTime": 5,
-    "source": "Published article registry"
+    "readingTime": 6,
+    "source": "Published article registry",
+    "primaryCategory": "Hospitality & Tourism Operations",
+    "subcategory": "Hotel & Serviced Apartment Operations",
+    "tags": [
+      "Hotel apartments"
+    ],
+    "seriesId": "hotel-apartment-excellence",
+    "seriesPosition": 3,
+    "seriesTitle": "Hotel Apartment Operational Excellence",
+    "relatedArticles": [
+      "/series/hotel-apartment-operational-excellence/index.html",
+      "/articles/hotel-inventory-par-level-management/index.html"
+    ]
   },
   {
     "title": "The HOTEL Prompting Framework",
@@ -436,8 +982,22 @@
     "pillar": "Hotel & Serviced Apartment AI",
     "summary": "How to write professional, governed AI prompts for hotel apartment and serviced-apartment operations using the HOTEL framework.",
     "status": "Published",
-    "readingTime": 18,
-    "source": "Published article registry"
+    "readingTime": 27,
+    "source": "Published article registry",
+    "primaryCategory": "AI Prompt Engineering & Toolkits",
+    "subcategory": "Prompt Engineering Frameworks",
+    "tags": [
+      "Hotel apartments",
+      "Prompt engineering",
+      "Responsible AI"
+    ],
+    "seriesId": "ai-hotel-apartments",
+    "seriesPosition": 1,
+    "seriesTitle": "AI for Hotel Apartments",
+    "relatedArticles": [
+      "/articles/tourism-prompting-framework/index.html",
+      "/articles/tourism-ai-operations-playbook/index.html"
+    ]
   },
   {
     "title": "Asset Lifecycle Management",
@@ -448,7 +1008,21 @@
     "summary": "Manage hotel-apartment assets from specification and commissioning through operation, condition monitoring, renewal and disposal using one evidence trail.",
     "status": "Published",
     "readingTime": 4,
-    "source": "Published article registry"
+    "source": "Published article registry",
+    "primaryCategory": "Operations & Process Engineering",
+    "subcategory": "Asset Reliability & Maintenance",
+    "tags": [
+      "Hotel apartments",
+      "Asset maintenance"
+    ],
+    "seriesId": "hotel-apartment-excellence",
+    "seriesPosition": 10,
+    "seriesTitle": "Hotel Apartment Operational Excellence",
+    "relatedArticles": [
+      "/articles/hotel-apartment-total-cost-of-ownership/index.html",
+      "/articles/hotel-apartment-preventive-maintenance-strategy/index.html",
+      "/articles/hotel-critical-spare-parts-management/index.html"
+    ]
   },
   {
     "title": "The Cost of Poor Quality",
@@ -458,8 +1032,22 @@
     "pillar": "Operational Excellence & SOPs",
     "summary": "Expose the hidden operational cost of rework, repeat defects, refunds, downtime, emergency purchasing and service recovery in hotel apartments.",
     "status": "Published",
-    "readingTime": 4,
-    "source": "Published article registry"
+    "readingTime": 5,
+    "source": "Published article registry",
+    "primaryCategory": "Operations & Process Engineering",
+    "subcategory": "Quality & Continuous Improvement",
+    "tags": [
+      "Hotel apartments",
+      "Quality improvement"
+    ],
+    "seriesId": "hotel-apartment-excellence",
+    "seriesPosition": 8,
+    "seriesTitle": "Hotel Apartment Operational Excellence",
+    "relatedArticles": [
+      "/articles/hotel-finance-cost-control-ai-toolkit/index.html",
+      "/articles/capa-tourism-operations/index.html",
+      "/articles/hotel-complaint-root-cause-analysis/index.html"
+    ]
   },
   {
     "title": "Designing the End-to-End Guest Journey",
@@ -469,8 +1057,22 @@
     "pillar": "Operational Excellence & SOPs",
     "summary": "Design the hotel-apartment guest journey as an operational system of promises, handovers, evidence, moments of truth and recovery controls.",
     "status": "Published",
-    "readingTime": 4,
-    "source": "Published article registry"
+    "readingTime": 5,
+    "source": "Published article registry",
+    "primaryCategory": "Hospitality & Tourism Operations",
+    "subcategory": "Guest Experience & Service Delivery",
+    "tags": [
+      "Hotel apartments",
+      "Guest experience"
+    ],
+    "seriesId": "hotel-apartment-excellence",
+    "seriesPosition": 7,
+    "seriesTitle": "Hotel Apartment Operational Excellence",
+    "relatedArticles": [
+      "/articles/article-tour-guide-storytelling-system/index.html",
+      "/articles/article-tour-guide-quality-index/index.html",
+      "/articles/hotel-guest-experience-quality-management/index.html"
+    ]
   },
   {
     "title": "Hotel Apartment & Extended-Stay AI Toolkit",
@@ -480,8 +1082,23 @@
     "pillar": "Hotel & Serviced Apartment AI",
     "summary": "10 professional AI prompts for long-stay readiness, resident service, housekeeping, utilities, defects and move-in/move-out control.",
     "status": "Published",
-    "readingTime": 31,
-    "source": "Published article registry"
+    "readingTime": 40,
+    "source": "Published article registry",
+    "primaryCategory": "AI Prompt Engineering & Toolkits",
+    "subcategory": "Hotel & Serviced Apartment AI Toolkits",
+    "tags": [
+      "Hotel apartments",
+      "Prompt engineering",
+      "Responsible AI"
+    ],
+    "seriesId": "ai-hotel-apartments",
+    "seriesPosition": 5,
+    "seriesTitle": "AI for Hotel Apartments",
+    "relatedArticles": [
+      "/articles/hotel-engineering-maintenance-ai-toolkit/index.html",
+      "/articles/hotel-housekeeping-management-ai-toolkit/index.html",
+      "/articles/hotel-reservations-ai-toolkit/index.html"
+    ]
   },
   {
     "title": "Hotel Apartment KPI Architecture",
@@ -492,7 +1109,21 @@
     "summary": "Build a hotel-apartment KPI architecture that connects strategic outcomes to operational drivers, definitions, owners, data sources, review cadence and action rules.",
     "status": "Published",
     "readingTime": 4,
-    "source": "Published article registry"
+    "source": "Published article registry",
+    "primaryCategory": "Operations & Process Engineering",
+    "subcategory": "Performance & Operational Control",
+    "tags": [
+      "Hotel apartments",
+      "Performance measurement"
+    ],
+    "seriesId": "hotel-apartment-excellence",
+    "seriesPosition": 22,
+    "seriesTitle": "Hotel Apartment Operational Excellence",
+    "relatedArticles": [
+      "/articles/hotel-kpi-dashboard-ai-toolkit/index.html",
+      "/articles/hotel-apartment-operations-control-tower/index.html",
+      "/articles/article-fleet-control-tower-operations-dashboard/index.html"
+    ]
   },
   {
     "title": "Building the Hotel Apartment Operating System",
@@ -502,8 +1133,22 @@
     "pillar": "Operational Excellence & SOPs",
     "summary": "A practical operating-system model for hotel apartment and serviced apartments: governance, guest journey, apartment readiness, maintenance, housekeeping, controls, KPIs, evidence and continuous improvement.",
     "status": "Published",
-    "readingTime": 4,
-    "source": "Published article registry"
+    "readingTime": 5,
+    "source": "Published article registry",
+    "primaryCategory": "Operations & Process Engineering",
+    "subcategory": "Process Architecture & BPM",
+    "tags": [
+      "Hotel apartments",
+      "Process design"
+    ],
+    "seriesId": "hotel-apartment-excellence",
+    "seriesPosition": 1,
+    "seriesTitle": "Hotel Apartment Operational Excellence",
+    "relatedArticles": [
+      "/articles/tourism-company-operating-system/index.html",
+      "/articles/hotel-apartment-sop-architecture/index.html",
+      "/articles/customer-journey-mapping-sop-design/index.html"
+    ]
   },
   {
     "title": "The Hotel Apartment Operations Control Tower",
@@ -514,7 +1159,21 @@
     "summary": "Create a cross-functional hotel-apartment control tower that turns readiness, maintenance, guest, workforce and inventory exceptions into one prioritized management queue.",
     "status": "Published",
     "readingTime": 4,
-    "source": "Published article registry"
+    "source": "Published article registry",
+    "primaryCategory": "Operations & Process Engineering",
+    "subcategory": "Performance & Operational Control",
+    "tags": [
+      "Hotel apartments",
+      "Performance measurement"
+    ],
+    "seriesId": "hotel-apartment-excellence",
+    "seriesPosition": 25,
+    "seriesTitle": "Hotel Apartment Operational Excellence",
+    "relatedArticles": [
+      "/articles/hotel-apartment-kpi-architecture/index.html",
+      "/articles/article-fleet-control-tower-operations-dashboard/index.html",
+      "/articles/hotel-operations-planning-daily-control/index.html"
+    ]
   },
   {
     "title": "Preventive Maintenance Strategy for Hotel Apartments",
@@ -525,7 +1184,21 @@
     "summary": "Build a preventive maintenance strategy for hotel apartment and serviced apartments using asset criticality, PM frequencies, work-order control, compliance, backlog and effectiveness KPIs.",
     "status": "Published",
     "readingTime": 6,
-    "source": "Published article registry"
+    "source": "Published article registry",
+    "primaryCategory": "Operations & Process Engineering",
+    "subcategory": "Asset Reliability & Maintenance",
+    "tags": [
+      "Hotel apartments",
+      "Asset maintenance"
+    ],
+    "seriesId": "hotel-apartment-excellence",
+    "seriesPosition": 2,
+    "seriesTitle": "Hotel Apartment Operational Excellence",
+    "relatedArticles": [
+      "/articles/hotel-engineering-maintenance-ai-toolkit/index.html",
+      "/articles/hotel-maintenance-work-order-management/index.html",
+      "/articles/hotel-preventive-maintenance-kpis/index.html"
+    ]
   },
   {
     "title": "SOP Architecture for Hotel Apartments",
@@ -536,7 +1209,21 @@
     "summary": "Design a controlled SOP architecture for hotel apartments using process hierarchy, ownership, RACI, exceptions, evidence, revision control and connected work instructions.",
     "status": "Published",
     "readingTime": 4,
-    "source": "Published article registry"
+    "source": "Published article registry",
+    "primaryCategory": "Operations & Process Engineering",
+    "subcategory": "Process Architecture & BPM",
+    "tags": [
+      "Hotel apartments",
+      "Process design"
+    ],
+    "seriesId": "hotel-apartment-excellence",
+    "seriesPosition": 9,
+    "seriesTitle": "Hotel Apartment Operational Excellence",
+    "relatedArticles": [
+      "/articles/hotel-sop-process-design-ai-toolkit/index.html",
+      "/articles/hotel-apartment-operating-system/index.html",
+      "/articles/customer-journey-mapping-sop-design/index.html"
+    ]
   },
   {
     "title": "Total Cost of Ownership (TCO)",
@@ -546,8 +1233,22 @@
     "pillar": "Operational Excellence & SOPs",
     "summary": "Make repair, replace and procurement decisions using acquisition cost plus verified operating, maintenance, downtime and end-of-life costs rather than purchase price alone.",
     "status": "Published",
-    "readingTime": 4,
-    "source": "Published article registry"
+    "readingTime": 5,
+    "source": "Published article registry",
+    "primaryCategory": "Operations & Process Engineering",
+    "subcategory": "Asset Reliability & Maintenance",
+    "tags": [
+      "Hotel apartments",
+      "Asset maintenance"
+    ],
+    "seriesId": "hotel-apartment-excellence",
+    "seriesPosition": 11,
+    "seriesTitle": "Hotel Apartment Operational Excellence",
+    "relatedArticles": [
+      "/articles/hotel-apartment-asset-lifecycle-management/index.html",
+      "/articles/hotel-preventive-maintenance-kpis/index.html",
+      "/articles/hotel-apartment-preventive-maintenance-strategy/index.html"
+    ]
   },
   {
     "title": "Complaint Root-Cause Analysis",
@@ -557,8 +1258,22 @@
     "pillar": "Operational Excellence & SOPs",
     "summary": "Turn recurring hotel-apartment complaints into evidence-led corrective and preventive action using classification, 5 Whys, cause testing and CAPA.",
     "status": "Published",
-    "readingTime": 4,
-    "source": "Published article registry"
+    "readingTime": 5,
+    "source": "Published article registry",
+    "primaryCategory": "Operations & Process Engineering",
+    "subcategory": "Quality & Continuous Improvement",
+    "tags": [
+      "Hotel apartments",
+      "Quality improvement"
+    ],
+    "seriesId": "hotel-apartment-excellence",
+    "seriesPosition": 5,
+    "seriesTitle": "Hotel Apartment Operational Excellence",
+    "relatedArticles": [
+      "/articles/hotel-housekeeping-quality-control/index.html",
+      "/articles/root-cause-analysis-tourism-managers/index.html",
+      "/articles/six-sigma-tourism-complaints-data/index.html"
+    ]
   },
   {
     "title": "Hotel Apartment Control Tower & AI Decision-Support Toolkit",
@@ -568,8 +1283,23 @@
     "pillar": "Hotel & Serviced Apartment AI",
     "summary": "10 professional AI prompts for integrated hotel apartment control towers, exception prioritization, reliability, alerts, escalation and executive decision support.",
     "status": "Published",
-    "readingTime": 28,
-    "source": "Published article registry"
+    "readingTime": 25,
+    "source": "Published article registry",
+    "primaryCategory": "AI Prompt Engineering & Toolkits",
+    "subcategory": "Hotel & Serviced Apartment AI Toolkits",
+    "tags": [
+      "Hotel apartments",
+      "Prompt engineering",
+      "Responsible AI"
+    ],
+    "seriesId": "ai-hotel-apartments",
+    "seriesPosition": 25,
+    "seriesTitle": "AI for Hotel Apartments",
+    "relatedArticles": [
+      "/articles/hotel-finance-cost-control-ai-toolkit/index.html",
+      "/articles/hotel-general-manager-ai-toolkit/index.html",
+      "/articles/hotel-sop-process-design-ai-toolkit/index.html"
+    ]
   },
   {
     "title": "Critical Spare Parts Management",
@@ -580,7 +1310,21 @@
     "summary": "Protect hotel-apartment asset availability by linking spare-part criticality, failure risk, lead time, stock policy, traceability and emergency sourcing.",
     "status": "Published",
     "readingTime": 4,
-    "source": "Published article registry"
+    "source": "Published article registry",
+    "primaryCategory": "Operations & Process Engineering",
+    "subcategory": "Asset Reliability & Maintenance",
+    "tags": [
+      "Hotel apartments",
+      "Asset maintenance"
+    ],
+    "seriesId": "hotel-apartment-excellence",
+    "seriesPosition": 19,
+    "seriesTitle": "Hotel Apartment Operational Excellence",
+    "relatedArticles": [
+      "/articles/hotel-downtime-out-of-service-management/index.html",
+      "/articles/hotel-apartment-total-cost-of-ownership/index.html",
+      "/articles/hotel-apartment-preventive-maintenance-strategy/index.html"
+    ]
   },
   {
     "title": "Downtime & Out-of-Service Management",
@@ -591,7 +1335,21 @@
     "summary": "Control apartment and asset downtime with explicit OOS/OOO logic, downtime clocks, priority, recovery ownership, verification and lost-capacity evidence.",
     "status": "Published",
     "readingTime": 4,
-    "source": "Published article registry"
+    "source": "Published article registry",
+    "primaryCategory": "Operations & Process Engineering",
+    "subcategory": "Asset Reliability & Maintenance",
+    "tags": [
+      "Hotel apartments",
+      "Asset maintenance"
+    ],
+    "seriesId": "hotel-apartment-excellence",
+    "seriesPosition": 21,
+    "seriesTitle": "Hotel Apartment Operational Excellence",
+    "relatedArticles": [
+      "/articles/hotel-apartment-asset-lifecycle-management/index.html",
+      "/articles/hotel-critical-spare-parts-management/index.html",
+      "/articles/hotel-apartment-total-cost-of-ownership/index.html"
+    ]
   },
   {
     "title": "The Economics of Service Failure",
@@ -602,7 +1360,21 @@
     "summary": "Measure the operational and financial consequences of hotel apartment service failure across containment, recovery, rework, compensation, downtime and recurrence.",
     "status": "Published",
     "readingTime": 4,
-    "source": "Published article registry"
+    "source": "Published article registry",
+    "primaryCategory": "Operations & Process Engineering",
+    "subcategory": "Quality & Continuous Improvement",
+    "tags": [
+      "Hotel apartments",
+      "Quality improvement"
+    ],
+    "seriesId": "hotel-apartment-excellence",
+    "seriesPosition": 13,
+    "seriesTitle": "Hotel Apartment Operational Excellence",
+    "relatedArticles": [
+      "/articles/hotel-guest-complaint-service-recovery-ai-toolkit/index.html",
+      "/articles/hotel-first-time-right-operations/index.html",
+      "/articles/hotel-complaint-root-cause-analysis/index.html"
+    ]
   },
   {
     "title": "Energy & Utility Management AI Toolkit",
@@ -612,8 +1384,23 @@
     "pillar": "Hotel & Serviced Apartment AI",
     "summary": "10 professional AI prompts for hotel apartment utility baselines, electricity, water, HVAC, peak demand, tariffs, conservation and measurement & verification.",
     "status": "Published",
-    "readingTime": 24,
-    "source": "Published article registry"
+    "readingTime": 22,
+    "source": "Published article registry",
+    "primaryCategory": "AI Prompt Engineering & Toolkits",
+    "subcategory": "Hotel & Serviced Apartment AI Toolkits",
+    "tags": [
+      "Hotel apartments",
+      "Prompt engineering",
+      "Responsible AI"
+    ],
+    "seriesId": "ai-hotel-apartments",
+    "seriesPosition": 15,
+    "seriesTitle": "AI for Hotel Apartments",
+    "relatedArticles": [
+      "/articles/hotel-esg-sustainability-ai-toolkit/index.html",
+      "/articles/hotel-apartment-extended-stay-ai-toolkit/index.html",
+      "/articles/hotel-procurement-ai-toolkit/index.html"
+    ]
   },
   {
     "title": "Engineering & Maintenance AI Toolkit",
@@ -623,8 +1410,23 @@
     "pillar": "Hotel & Serviced Apartment AI",
     "summary": "10 professional AI prompts for work orders, preventive maintenance, repeat defects, downtime, spares, vendors and technical incident control.",
     "status": "Published",
-    "readingTime": 29,
-    "source": "Published article registry"
+    "readingTime": 39,
+    "source": "Published article registry",
+    "primaryCategory": "AI Prompt Engineering & Toolkits",
+    "subcategory": "Hotel & Serviced Apartment AI Toolkits",
+    "tags": [
+      "Hotel apartments",
+      "Prompt engineering",
+      "Responsible AI"
+    ],
+    "seriesId": "ai-hotel-apartments",
+    "seriesPosition": 7,
+    "seriesTitle": "AI for Hotel Apartments",
+    "relatedArticles": [
+      "/articles/hotel-apartment-preventive-maintenance-strategy/index.html",
+      "/articles/hotel-housekeeping-management-ai-toolkit/index.html",
+      "/articles/hotel-predictive-maintenance-ai-toolkit/index.html"
+    ]
   },
   {
     "title": "Hotel Apartment ESG & Sustainability AI Toolkit",
@@ -634,8 +1436,23 @@
     "pillar": "Hotel & Serviced Apartment AI",
     "summary": "10 professional AI prompts for materiality, environmental aspects, emissions, sustainable procurement, social impact, ESG targets and evidence-based sustainability reporting.",
     "status": "Published",
-    "readingTime": 39,
-    "source": "Published article registry"
+    "readingTime": 41,
+    "source": "Published article registry",
+    "primaryCategory": "AI Prompt Engineering & Toolkits",
+    "subcategory": "Hotel & Serviced Apartment AI Toolkits",
+    "tags": [
+      "Hotel apartments",
+      "Prompt engineering",
+      "Responsible AI"
+    ],
+    "seriesId": "ai-hotel-apartments",
+    "seriesPosition": 14,
+    "seriesTitle": "AI for Hotel Apartments",
+    "relatedArticles": [
+      "/articles/hotel-energy-utility-management-ai-toolkit/index.html",
+      "/articles/hotel-lean-six-sigma-ai-toolkit/index.html",
+      "/articles/hotel-quality-audit-ai-toolkit/index.html"
+    ]
   },
   {
     "title": "Hotel Apartment Finance & Cost-Control AI Toolkit",
@@ -645,8 +1462,23 @@
     "pillar": "Hotel & Serviced Apartment AI",
     "summary": "10 professional AI prompts for hotel apartment finance, cost variance, P&L commentary, unit economics, forecasting, savings and cash control.",
     "status": "Published",
-    "readingTime": 33,
-    "source": "Published article registry"
+    "readingTime": 31,
+    "source": "Published article registry",
+    "primaryCategory": "AI Prompt Engineering & Toolkits",
+    "subcategory": "Hotel & Serviced Apartment AI Toolkits",
+    "tags": [
+      "Hotel apartments",
+      "Prompt engineering",
+      "Responsible AI"
+    ],
+    "seriesId": "ai-hotel-apartments",
+    "seriesPosition": 21,
+    "seriesTitle": "AI for Hotel Apartments",
+    "relatedArticles": [
+      "/articles/hotel-apartment-cost-of-poor-quality/index.html",
+      "/articles/hotel-control-tower-ai-decision-support-toolkit/index.html",
+      "/articles/hotel-kpi-dashboard-ai-toolkit/index.html"
+    ]
   },
   {
     "title": "First-Time-Right Operations",
@@ -657,7 +1489,21 @@
     "summary": "Reduce hotel-apartment rework by designing quality at the source, defining completion criteria, measuring first-pass performance and learning from repeat defects.",
     "status": "Published",
     "readingTime": 4,
-    "source": "Published article registry"
+    "source": "Published article registry",
+    "primaryCategory": "Operations & Process Engineering",
+    "subcategory": "Quality & Continuous Improvement",
+    "tags": [
+      "Hotel apartments",
+      "Quality improvement"
+    ],
+    "seriesId": "hotel-apartment-excellence",
+    "seriesPosition": 14,
+    "seriesTitle": "Hotel Apartment Operational Excellence",
+    "relatedArticles": [
+      "/articles/hotel-economics-of-service-failure/index.html",
+      "/articles/root-cause-analysis-tourism-managers/index.html",
+      "/articles/hotel-housekeeping-quality-control/index.html"
+    ]
   },
   {
     "title": "Front Office AI Toolkit",
@@ -667,8 +1513,23 @@
     "pillar": "Hotel & Serviced Apartment AI",
     "summary": "10 professional AI prompts for arrivals, check-in, room readiness, guest requests, VIPs, checkout and front-desk control.",
     "status": "Published",
-    "readingTime": 24,
-    "source": "Published article registry"
+    "readingTime": 31,
+    "source": "Published article registry",
+    "primaryCategory": "AI Prompt Engineering & Toolkits",
+    "subcategory": "Hotel & Serviced Apartment AI Toolkits",
+    "tags": [
+      "Hotel apartments",
+      "Prompt engineering",
+      "Responsible AI"
+    ],
+    "seriesId": "ai-hotel-apartments",
+    "seriesPosition": 3,
+    "seriesTitle": "AI for Hotel Apartments",
+    "relatedArticles": [
+      "/articles/hotel-operations-manager-ai-toolkit/index.html",
+      "/articles/hotel-apartment-extended-stay-ai-toolkit/index.html",
+      "/articles/hotel-reservations-ai-toolkit/index.html"
+    ]
   },
   {
     "title": "Hotel Apartment General Manager AI Toolkit",
@@ -679,7 +1540,22 @@
     "summary": "Ten governed AI prompts for hotel apartment general managers to prioritise departmental reports, operating risks, service issues and management decisions.",
     "status": "Published",
     "readingTime": 15,
-    "source": "Published article registry"
+    "source": "Published article registry",
+    "primaryCategory": "AI Prompt Engineering & Toolkits",
+    "subcategory": "Hotel & Serviced Apartment AI Toolkits",
+    "tags": [
+      "Hotel apartments",
+      "Prompt engineering",
+      "Responsible AI"
+    ],
+    "seriesId": "ai-hotel-apartments",
+    "seriesPosition": 24,
+    "seriesTitle": "AI for Hotel Apartments",
+    "relatedArticles": [
+      "/articles/hotel-control-tower-ai-decision-support-toolkit/index.html",
+      "/articles/hotel-apartment-extended-stay-ai-toolkit/index.html",
+      "/articles/workforce-rostering-productivity-ai-toolkit/index.html"
+    ]
   },
   {
     "title": "Guest Complaint & Service Recovery AI Toolkit",
@@ -689,8 +1565,23 @@
     "pillar": "Hotel & Serviced Apartment AI",
     "summary": "10 professional AI prompts for complaint triage, root cause, recovery, compensation control, escalation, closure and CAPA.",
     "status": "Published",
-    "readingTime": 36,
-    "source": "Published article registry"
+    "readingTime": 43,
+    "source": "Published article registry",
+    "primaryCategory": "AI Prompt Engineering & Toolkits",
+    "subcategory": "Hotel & Serviced Apartment AI Toolkits",
+    "tags": [
+      "Hotel apartments",
+      "Prompt engineering",
+      "Responsible AI"
+    ],
+    "seriesId": "ai-hotel-apartments",
+    "seriesPosition": 10,
+    "seriesTitle": "AI for Hotel Apartments",
+    "relatedArticles": [
+      "/articles/hotel-economics-of-service-failure/index.html",
+      "/articles/hotel-guest-experience-ai-toolkit/index.html",
+      "/articles/hotel-quality-audit-ai-toolkit/index.html"
+    ]
   },
   {
     "title": "Guest Experience AI Toolkit",
@@ -700,8 +1591,23 @@
     "pillar": "Hotel & Serviced Apartment AI",
     "summary": "10 professional AI prompts for guest journeys, personalization, pre-arrival planning, accessibility, touchpoint audits and experience improvement.",
     "status": "Published",
-    "readingTime": 32,
-    "source": "Published article registry"
+    "readingTime": 36,
+    "source": "Published article registry",
+    "primaryCategory": "AI Prompt Engineering & Toolkits",
+    "subcategory": "Hotel & Serviced Apartment AI Toolkits",
+    "tags": [
+      "Hotel apartments",
+      "Prompt engineering",
+      "Responsible AI"
+    ],
+    "seriesId": "ai-hotel-apartments",
+    "seriesPosition": 9,
+    "seriesTitle": "AI for Hotel Apartments",
+    "relatedArticles": [
+      "/articles/guest-experience-ai-prompts/index.html",
+      "/articles/hotel-guest-complaint-service-recovery-ai-toolkit/index.html",
+      "/articles/hotel-predictive-maintenance-ai-toolkit/index.html"
+    ]
   },
   {
     "title": "Guest Experience Quality Management",
@@ -712,7 +1618,21 @@
     "summary": "Manage guest experience as a quality system by translating voice-of-customer signals into CTQs, operational standards, failure evidence, recovery and closed-loop improvement.",
     "status": "Published",
     "readingTime": 4,
-    "source": "Published article registry"
+    "source": "Published article registry",
+    "primaryCategory": "Hospitality & Tourism Operations",
+    "subcategory": "Guest Experience & Service Delivery",
+    "tags": [
+      "Hotel apartments",
+      "Guest experience"
+    ],
+    "seriesId": "hotel-apartment-excellence",
+    "seriesPosition": 24,
+    "seriesTitle": "Hotel Apartment Operational Excellence",
+    "relatedArticles": [
+      "/articles/hotel-apartment-end-to-end-guest-journey/index.html",
+      "/articles/article-tour-guide-storytelling-system/index.html",
+      "/articles/article-tour-guide-quality-index/index.html"
+    ]
   },
   {
     "title": "Housekeeping Management AI Toolkit",
@@ -722,8 +1642,23 @@
     "pillar": "Hotel & Serviced Apartment AI",
     "summary": "10 professional AI prompts for room readiness, inspections, linen/PAR, deep cleaning, defects, productivity and housekeeping handover.",
     "status": "Published",
-    "readingTime": 28,
-    "source": "Published article registry"
+    "readingTime": 35,
+    "source": "Published article registry",
+    "primaryCategory": "AI Prompt Engineering & Toolkits",
+    "subcategory": "Hotel & Serviced Apartment AI Toolkits",
+    "tags": [
+      "Hotel apartments",
+      "Prompt engineering",
+      "Responsible AI"
+    ],
+    "seriesId": "ai-hotel-apartments",
+    "seriesPosition": 6,
+    "seriesTitle": "AI for Hotel Apartments",
+    "relatedArticles": [
+      "/articles/hotel-housekeeping-quality-control/index.html",
+      "/articles/hotel-engineering-maintenance-ai-toolkit/index.html",
+      "/articles/hotel-apartment-extended-stay-ai-toolkit/index.html"
+    ]
   },
   {
     "title": "Housekeeping Quality Control",
@@ -733,8 +1668,22 @@
     "pillar": "Operational Excellence & SOPs",
     "summary": "Build a housekeeping quality-control system for hotel apartments using inspection design, defect taxonomy, first-pass quality, sampling, coaching and recurrence control.",
     "status": "Published",
-    "readingTime": 4,
-    "source": "Published article registry"
+    "readingTime": 5,
+    "source": "Published article registry",
+    "primaryCategory": "Operations & Process Engineering",
+    "subcategory": "Quality & Continuous Improvement",
+    "tags": [
+      "Hotel apartments",
+      "Quality improvement"
+    ],
+    "seriesId": "hotel-apartment-excellence",
+    "seriesPosition": 6,
+    "seriesTitle": "Hotel Apartment Operational Excellence",
+    "relatedArticles": [
+      "/articles/hotel-housekeeping-management-ai-toolkit/index.html",
+      "/articles/hotel-complaint-root-cause-analysis/index.html",
+      "/articles/hotel-first-time-right-operations/index.html"
+    ]
   },
   {
     "title": "Housekeeping Standardization",
@@ -745,7 +1694,21 @@
     "summary": "Standardize hotel-apartment housekeeping through defined work sequence, apartment-type standards, visual controls, training, verification and controlled improvement.",
     "status": "Published",
     "readingTime": 4,
-    "source": "Published article registry"
+    "source": "Published article registry",
+    "primaryCategory": "Operations & Process Engineering",
+    "subcategory": "SOPs & Work Instructions",
+    "tags": [
+      "Hotel apartments",
+      "SOPs"
+    ],
+    "seriesId": "hotel-apartment-excellence",
+    "seriesPosition": 17,
+    "seriesTitle": "Hotel Apartment Operational Excellence",
+    "relatedArticles": [
+      "/articles/how-to-write-professional-sop-procedure/index.html",
+      "/articles/how-to-write-professional-sop-structure/index.html",
+      "/articles/how-to-write-work-instructions/index.html"
+    ]
   },
   {
     "title": "Inventory & PAR Level Management",
@@ -756,7 +1719,19 @@
     "summary": "Design inventory and PAR controls for hotel apartments using consumption, lead time, service risk, count accuracy, reorder logic and exception review.",
     "status": "Published",
     "readingTime": 4,
-    "source": "Published article registry"
+    "source": "Published article registry",
+    "primaryCategory": "Hospitality & Tourism Operations",
+    "subcategory": "Hotel & Serviced Apartment Operations",
+    "tags": [
+      "Hotel apartments"
+    ],
+    "seriesId": "hotel-apartment-excellence",
+    "seriesPosition": 16,
+    "seriesTitle": "Hotel Apartment Operational Excellence",
+    "relatedArticles": [
+      "/series/hotel-apartment-operational-excellence/index.html",
+      "/articles/guest-ready-apartment-standard/index.html"
+    ]
   },
   {
     "title": "Hotel Apartment Inventory & PAR Management AI Toolkit",
@@ -766,8 +1741,23 @@
     "pillar": "Hotel & Serviced Apartment AI",
     "summary": "10 Professional AI Prompts for PAR Levels, Reorder Points, Slow Stock, Stockouts, Linen, Amenities, Critical Spares, Variance, Expiry and Inventory KPIs",
     "status": "Published",
-    "readingTime": 36,
-    "source": "Published article registry"
+    "readingTime": 33,
+    "source": "Published article registry",
+    "primaryCategory": "AI Prompt Engineering & Toolkits",
+    "subcategory": "Hotel & Serviced Apartment AI Toolkits",
+    "tags": [
+      "Hotel apartments",
+      "Prompt engineering",
+      "Responsible AI"
+    ],
+    "seriesId": "ai-hotel-apartments",
+    "seriesPosition": 17,
+    "seriesTitle": "AI for Hotel Apartments",
+    "relatedArticles": [
+      "/articles/hotel-procurement-ai-toolkit/index.html",
+      "/articles/hotel-revenue-management-ai-toolkit/index.html",
+      "/articles/hotel-apartment-extended-stay-ai-toolkit/index.html"
+    ]
   },
   {
     "title": "Hotel Apartment KPI & Dashboard AI Toolkit",
@@ -777,8 +1767,23 @@
     "pillar": "Hotel & Serviced Apartment AI",
     "summary": "10 professional AI prompts for hotel apartment KPI architecture, dashboards, scorecards, trend analysis, data quality and management action.",
     "status": "Published",
-    "readingTime": 28,
-    "source": "Published article registry"
+    "readingTime": 26,
+    "source": "Published article registry",
+    "primaryCategory": "AI Prompt Engineering & Toolkits",
+    "subcategory": "Hotel & Serviced Apartment AI Toolkits",
+    "tags": [
+      "Hotel apartments",
+      "Prompt engineering",
+      "Responsible AI"
+    ],
+    "seriesId": "ai-hotel-apartments",
+    "seriesPosition": 22,
+    "seriesTitle": "AI for Hotel Apartments",
+    "relatedArticles": [
+      "/articles/hotel-apartment-kpi-architecture/index.html",
+      "/articles/hotel-finance-cost-control-ai-toolkit/index.html",
+      "/articles/hotel-apartment-extended-stay-ai-toolkit/index.html"
+    ]
   },
   {
     "title": "Lean Six Sigma for Hotel Apartment Operations AI Toolkit",
@@ -788,8 +1793,23 @@
     "pillar": "Hotel & Serviced Apartment AI",
     "summary": "10 professional AI prompts for DMAIC, VOC/CTQ, Pareto, root cause, FMEA, cost of poor quality, capability, control plans and kaizen.",
     "status": "Published",
-    "readingTime": 42,
-    "source": "Published article registry"
+    "readingTime": 41,
+    "source": "Published article registry",
+    "primaryCategory": "AI Prompt Engineering & Toolkits",
+    "subcategory": "Hotel & Serviced Apartment AI Toolkits",
+    "tags": [
+      "Hotel apartments",
+      "Prompt engineering",
+      "Responsible AI"
+    ],
+    "seriesId": "ai-hotel-apartments",
+    "seriesPosition": 13,
+    "seriesTitle": "AI for Hotel Apartments",
+    "relatedArticles": [
+      "/articles/hotel-esg-sustainability-ai-toolkit/index.html",
+      "/articles/hotel-sop-process-design-ai-toolkit/index.html",
+      "/articles/hotel-apartment-extended-stay-ai-toolkit/index.html"
+    ]
   },
   {
     "title": "Maintenance Control & Work Order Management",
@@ -799,8 +1819,22 @@
     "pillar": "Operational Excellence & SOPs",
     "summary": "Control hotel-apartment maintenance from request to verified closure using priority, ownership, SLA clocks, evidence, backlog and repeat-failure analysis.",
     "status": "Published",
-    "readingTime": 4,
-    "source": "Published article registry"
+    "readingTime": 5,
+    "source": "Published article registry",
+    "primaryCategory": "Operations & Process Engineering",
+    "subcategory": "Asset Reliability & Maintenance",
+    "tags": [
+      "Hotel apartments",
+      "Asset maintenance"
+    ],
+    "seriesId": "hotel-apartment-excellence",
+    "seriesPosition": 4,
+    "seriesTitle": "Hotel Apartment Operational Excellence",
+    "relatedArticles": [
+      "/articles/hotel-engineering-maintenance-ai-toolkit/index.html",
+      "/articles/hotel-preventive-maintenance-kpis/index.html",
+      "/articles/hotel-property-reliability-score/index.html"
+    ]
   },
   {
     "title": "Operational Excellence Maturity Model",
@@ -811,7 +1845,21 @@
     "summary": "Assess hotel-apartment operational maturity through evidence-based levels covering governance, standards, reliability, quality, data, improvement and management control.",
     "status": "Published",
     "readingTime": 4,
-    "source": "Published article registry"
+    "source": "Published article registry",
+    "primaryCategory": "Operations & Process Engineering",
+    "subcategory": "Quality & Continuous Improvement",
+    "tags": [
+      "Hotel apartments",
+      "Quality improvement"
+    ],
+    "seriesId": "hotel-apartment-excellence",
+    "seriesPosition": 26,
+    "seriesTitle": "Hotel Apartment Operational Excellence",
+    "relatedArticles": [
+      "/articles/hotel-housekeeping-quality-control/index.html",
+      "/articles/hotel-first-time-right-operations/index.html",
+      "/articles/hotel-economics-of-service-failure/index.html"
+    ]
   },
   {
     "title": "Hotel Apartment Operations Manager AI Toolkit",
@@ -821,8 +1869,23 @@
     "pillar": "Hotel & Serviced Apartment AI",
     "summary": "10 professional AI prompts for daily hotel apartment operations, priorities, handovers, exceptions and management control.",
     "status": "Published",
-    "readingTime": 35,
-    "source": "Published article registry"
+    "readingTime": 34,
+    "source": "Published article registry",
+    "primaryCategory": "AI Prompt Engineering & Toolkits",
+    "subcategory": "Hotel & Serviced Apartment AI Toolkits",
+    "tags": [
+      "Hotel apartments",
+      "Prompt engineering",
+      "Responsible AI"
+    ],
+    "seriesId": "ai-hotel-apartments",
+    "seriesPosition": 2,
+    "seriesTitle": "AI for Hotel Apartments",
+    "relatedArticles": [
+      "/articles/hotel-front-office-ai-toolkit/index.html",
+      "/articles/hotel-apartment-extended-stay-ai-toolkit/index.html",
+      "/series/hotel-ai-operations-playbook/index.html"
+    ]
   },
   {
     "title": "Operations Planning & Daily Control",
@@ -833,7 +1896,21 @@
     "summary": "Run hotel-apartment operations through a disciplined daily control rhythm that connects demand, readiness, defects, staffing, guest commitments, exceptions and accountable follow-up.",
     "status": "Published",
     "readingTime": 4,
-    "source": "Published article registry"
+    "source": "Published article registry",
+    "primaryCategory": "Operations & Process Engineering",
+    "subcategory": "Performance & Operational Control",
+    "tags": [
+      "Hotel apartments",
+      "Performance measurement"
+    ],
+    "seriesId": "hotel-apartment-excellence",
+    "seriesPosition": 20,
+    "seriesTitle": "Hotel Apartment Operational Excellence",
+    "relatedArticles": [
+      "/articles/hotel-apartment-operations-control-tower/index.html",
+      "/articles/hotel-workforce-productivity-efficiency/index.html",
+      "/articles/hotel-apartment-kpi-architecture/index.html"
+    ]
   },
   {
     "title": "Hotel Apartment OTA, Distribution & Review Management AI Toolkit",
@@ -844,7 +1921,22 @@
     "summary": "10 professional AI prompts for hotel apartment OTA listing quality, channel content, reviews, distribution mix, commission, parity, promotions and reputation management.",
     "status": "Published",
     "readingTime": 31,
-    "source": "Published article registry"
+    "source": "Published article registry",
+    "primaryCategory": "AI Prompt Engineering & Toolkits",
+    "subcategory": "Hotel & Serviced Apartment AI Toolkits",
+    "tags": [
+      "Hotel apartments",
+      "Prompt engineering",
+      "Responsible AI"
+    ],
+    "seriesId": "ai-hotel-apartments",
+    "seriesPosition": 20,
+    "seriesTitle": "AI for Hotel Apartments",
+    "relatedArticles": [
+      "/articles/hotel-sales-corporate-accounts-ai-toolkit/index.html",
+      "/articles/hotel-finance-cost-control-ai-toolkit/index.html",
+      "/articles/hotel-apartment-extended-stay-ai-toolkit/index.html"
+    ]
   },
   {
     "title": "Predictive Maintenance AI Toolkit",
@@ -854,8 +1946,23 @@
     "pillar": "Hotel & Serviced Apartment AI",
     "summary": "10 professional AI prompts for failure patterns, asset anomalies, early-warning indicators, downtime scenarios and maintenance validation.",
     "status": "Published",
-    "readingTime": 26,
-    "source": "Published article registry"
+    "readingTime": 36,
+    "source": "Published article registry",
+    "primaryCategory": "AI Prompt Engineering & Toolkits",
+    "subcategory": "Hotel & Serviced Apartment AI Toolkits",
+    "tags": [
+      "Hotel apartments",
+      "Prompt engineering",
+      "Responsible AI"
+    ],
+    "seriesId": "ai-hotel-apartments",
+    "seriesPosition": 8,
+    "seriesTitle": "AI for Hotel Apartments",
+    "relatedArticles": [
+      "/articles/hotel-preventive-maintenance-kpis/index.html",
+      "/articles/hotel-guest-experience-ai-toolkit/index.html",
+      "/articles/hotel-engineering-maintenance-ai-toolkit/index.html"
+    ]
   },
   {
     "title": "Preventive Maintenance KPIs",
@@ -866,7 +1973,21 @@
     "summary": "Build a preventive-maintenance KPI system that separates schedule compliance from reliability, repeat failures, backlog, downtime and maintenance effectiveness.",
     "status": "Published",
     "readingTime": 4,
-    "source": "Published article registry"
+    "source": "Published article registry",
+    "primaryCategory": "Operations & Process Engineering",
+    "subcategory": "Asset Reliability & Maintenance",
+    "tags": [
+      "Hotel apartments",
+      "Asset maintenance"
+    ],
+    "seriesId": "hotel-apartment-excellence",
+    "seriesPosition": 12,
+    "seriesTitle": "Hotel Apartment Operational Excellence",
+    "relatedArticles": [
+      "/articles/hotel-predictive-maintenance-ai-toolkit/index.html",
+      "/articles/hotel-maintenance-work-order-management/index.html",
+      "/articles/hotel-apartment-total-cost-of-ownership/index.html"
+    ]
   },
   {
     "title": "Hotel Apartment Procurement AI Toolkit",
@@ -876,8 +1997,23 @@
     "pillar": "Hotel & Serviced Apartment AI",
     "summary": "10 Professional AI Prompts for Requisitions, RFQs, Bid Evaluation, Total Cost, Negotiation, Contracts, Supplier Risk and Performance",
     "status": "Published",
-    "readingTime": 35,
-    "source": "Published article registry"
+    "readingTime": 33,
+    "source": "Published article registry",
+    "primaryCategory": "AI Prompt Engineering & Toolkits",
+    "subcategory": "Hotel & Serviced Apartment AI Toolkits",
+    "tags": [
+      "Hotel apartments",
+      "Prompt engineering",
+      "Responsible AI"
+    ],
+    "seriesId": "ai-hotel-apartments",
+    "seriesPosition": 16,
+    "seriesTitle": "AI for Hotel Apartments",
+    "relatedArticles": [
+      "/articles/hotel-procurement-supplier-quality-control/index.html",
+      "/articles/hotel-inventory-par-management-ai-toolkit/index.html",
+      "/articles/hotel-energy-utility-management-ai-toolkit/index.html"
+    ]
   },
   {
     "title": "Procurement & Supplier Quality Control",
@@ -888,7 +2024,21 @@
     "summary": "Control hotel-apartment suppliers through clear specifications, qualification, delivery inspection, SLA evidence, scorecards and corrective action.",
     "status": "Published",
     "readingTime": 4,
-    "source": "Published article registry"
+    "source": "Published article registry",
+    "primaryCategory": "Governance, Risk & Assurance",
+    "subcategory": "Supplier & Decision Governance",
+    "tags": [
+      "Hotel apartments",
+      "Supplier management"
+    ],
+    "seriesId": "hotel-apartment-excellence",
+    "seriesPosition": 15,
+    "seriesTitle": "Hotel Apartment Operational Excellence",
+    "relatedArticles": [
+      "/articles/hotel-procurement-ai-toolkit/index.html",
+      "/articles/sop-roles-authority-raci/index.html",
+      "/articles/tourism-supplier-partner-governance-sops/index.html"
+    ]
   },
   {
     "title": "Property Reliability Score",
@@ -899,7 +2049,21 @@
     "summary": "Design a transparent composite reliability score for hotel apartments using controlled measures, documented weighting, evidence quality and drill-down rather than a black-box rating.",
     "status": "Published",
     "readingTime": 4,
-    "source": "Published article registry"
+    "source": "Published article registry",
+    "primaryCategory": "Operations & Process Engineering",
+    "subcategory": "Asset Reliability & Maintenance",
+    "tags": [
+      "Hotel apartments",
+      "Asset maintenance"
+    ],
+    "seriesId": "hotel-apartment-excellence",
+    "seriesPosition": 23,
+    "seriesTitle": "Hotel Apartment Operational Excellence",
+    "relatedArticles": [
+      "/articles/hotel-apartment-asset-lifecycle-management/index.html",
+      "/articles/hotel-preventive-maintenance-kpis/index.html",
+      "/articles/hotel-maintenance-work-order-management/index.html"
+    ]
   },
   {
     "title": "Hotel Apartment Quality Audit AI Toolkit",
@@ -909,8 +2073,23 @@
     "pillar": "Hotel & Serviced Apartment AI",
     "summary": "10 professional AI prompts for hotel apartment audit planning, evidence, nonconformities, trend analysis, mystery guest review, CAPA and effectiveness verification.",
     "status": "Published",
-    "readingTime": 38,
-    "source": "Published article registry"
+    "readingTime": 43,
+    "source": "Published article registry",
+    "primaryCategory": "AI Prompt Engineering & Toolkits",
+    "subcategory": "Hotel & Serviced Apartment AI Toolkits",
+    "tags": [
+      "Hotel apartments",
+      "Prompt engineering",
+      "Responsible AI"
+    ],
+    "seriesId": "ai-hotel-apartments",
+    "seriesPosition": 11,
+    "seriesTitle": "AI for Hotel Apartments",
+    "relatedArticles": [
+      "/articles/how-to-audit-an-sop/index.html",
+      "/articles/hotel-sop-process-design-ai-toolkit/index.html",
+      "/articles/hotel-guest-complaint-service-recovery-ai-toolkit/index.html"
+    ]
   },
   {
     "title": "Reservations AI Toolkit",
@@ -920,8 +2099,23 @@
     "pillar": "Hotel & Serviced Apartment AI",
     "summary": "10 professional AI prompts for booking quality, modifications, cancellations, allocation, corporate reservations and exception control.",
     "status": "Published",
-    "readingTime": 27,
-    "source": "Published article registry"
+    "readingTime": 34,
+    "source": "Published article registry",
+    "primaryCategory": "AI Prompt Engineering & Toolkits",
+    "subcategory": "Hotel & Serviced Apartment AI Toolkits",
+    "tags": [
+      "Hotel apartments",
+      "Prompt engineering",
+      "Responsible AI"
+    ],
+    "seriesId": "ai-hotel-apartments",
+    "seriesPosition": 4,
+    "seriesTitle": "AI for Hotel Apartments",
+    "relatedArticles": [
+      "/articles/hotel-front-office-ai-toolkit/index.html",
+      "/articles/hotel-apartment-extended-stay-ai-toolkit/index.html",
+      "/series/hotel-ai-operations-playbook/index.html"
+    ]
   },
   {
     "title": "Hotel Apartment Revenue Management AI Toolkit",
@@ -931,8 +2125,23 @@
     "pillar": "Hotel & Serviced Apartment AI",
     "summary": "10 Professional AI Prompts for Daily Revenue Briefs, Demand Drivers, Forecast Assumptions, ADR, Occupancy, RevPAR, Rate Recommendations, Length of Stay, Channel Mix and Pickup & Pace",
     "status": "Published",
-    "readingTime": 34,
-    "source": "Published article registry"
+    "readingTime": 32,
+    "source": "Published article registry",
+    "primaryCategory": "AI Prompt Engineering & Toolkits",
+    "subcategory": "Hotel & Serviced Apartment AI Toolkits",
+    "tags": [
+      "Hotel apartments",
+      "Prompt engineering",
+      "Responsible AI"
+    ],
+    "seriesId": "ai-hotel-apartments",
+    "seriesPosition": 18,
+    "seriesTitle": "AI for Hotel Apartments",
+    "relatedArticles": [
+      "/articles/hotel-sales-corporate-accounts-ai-toolkit/index.html",
+      "/articles/hotel-inventory-par-management-ai-toolkit/index.html",
+      "/articles/hotel-apartment-extended-stay-ai-toolkit/index.html"
+    ]
   },
   {
     "title": "Hotel Apartment Sales & Corporate Accounts AI Toolkit",
@@ -942,8 +2151,23 @@
     "pillar": "Hotel & Serviced Apartment AI",
     "summary": "10 Professional AI Prompts for Corporate Account Research, B2B Proposals, RFPs, Account Plans, Negotiated Rates, Pipeline, Meetings, Lost Business, Long-Stay Offers and Account Performance",
     "status": "Published",
-    "readingTime": 32,
-    "source": "Published article registry"
+    "readingTime": 30,
+    "source": "Published article registry",
+    "primaryCategory": "AI Prompt Engineering & Toolkits",
+    "subcategory": "Hotel & Serviced Apartment AI Toolkits",
+    "tags": [
+      "Hotel apartments",
+      "Prompt engineering",
+      "Responsible AI"
+    ],
+    "seriesId": "ai-hotel-apartments",
+    "seriesPosition": 19,
+    "seriesTitle": "AI for Hotel Apartments",
+    "relatedArticles": [
+      "/articles/hotel-revenue-management-ai-toolkit/index.html",
+      "/articles/hotel-ota-distribution-review-management-ai-toolkit/index.html",
+      "/articles/hotel-apartment-extended-stay-ai-toolkit/index.html"
+    ]
   },
   {
     "title": "Hotel Apartment SOP & Process Design AI Toolkit",
@@ -953,8 +2177,23 @@
     "pillar": "Hotel & Serviced Apartment AI",
     "summary": "10 professional AI prompts for SOP structure, procedures, RACI, exceptions, evidence, KPIs, work instructions, checklists, gap audits and revision control.",
     "status": "Published",
-    "readingTime": 40,
-    "source": "Published article registry"
+    "readingTime": 27,
+    "source": "Published article registry",
+    "primaryCategory": "AI Prompt Engineering & Toolkits",
+    "subcategory": "Hotel & Serviced Apartment AI Toolkits",
+    "tags": [
+      "Hotel apartments",
+      "Prompt engineering",
+      "Responsible AI"
+    ],
+    "seriesId": "ai-hotel-apartments",
+    "seriesPosition": 12,
+    "seriesTitle": "AI for Hotel Apartments",
+    "relatedArticles": [
+      "/articles/hotel-apartment-sop-architecture/index.html",
+      "/articles/hotel-quality-audit-ai-toolkit/index.html",
+      "/articles/hotel-lean-six-sigma-ai-toolkit/index.html"
+    ]
   },
   {
     "title": "Productivity & Workforce Efficiency",
@@ -965,7 +2204,21 @@
     "summary": "Plan hotel-apartment labor around workload, demand, productive capacity, service standards and quality rather than crude output-per-person targets.",
     "status": "Published",
     "readingTime": 4,
-    "source": "Published article registry"
+    "source": "Published article registry",
+    "primaryCategory": "Operations & Process Engineering",
+    "subcategory": "Performance & Operational Control",
+    "tags": [
+      "Hotel apartments",
+      "Performance measurement"
+    ],
+    "seriesId": "hotel-apartment-excellence",
+    "seriesPosition": 18,
+    "seriesTitle": "Hotel Apartment Operational Excellence",
+    "relatedArticles": [
+      "/articles/workforce-rostering-productivity-ai-toolkit/index.html",
+      "/articles/hotel-operations-planning-daily-control/index.html",
+      "/articles/tourism-operations-kpis-control-dashboards/index.html"
+    ]
   },
   {
     "title": "How to Audit an SOP",
@@ -975,8 +2228,22 @@
     "pillar": "Operational Excellence & SOPs",
     "summary": "Assess whether an SOP is current, understood, followed, evidenced, effective, and still suitable—without reducing the audit to a document-presence checklist.",
     "status": "Published",
-    "readingTime": 11,
-    "source": "Published article registry"
+    "readingTime": 13,
+    "source": "Published article registry",
+    "primaryCategory": "Governance, Risk & Assurance",
+    "subcategory": "Documentation & Audit Assurance",
+    "tags": [
+      "DMC operations",
+      "Evidence management"
+    ],
+    "seriesId": "tourism-operations-excellence",
+    "seriesPosition": 26,
+    "seriesTitle": "Travel and Tourism Operations Excellence",
+    "relatedArticles": [
+      "/articles/hotel-quality-audit-ai-toolkit/index.html",
+      "/articles/document-control-version-management-tourism/index.html",
+      "/articles/sop-evidence-documentation-legal-defensibility/index.html"
+    ]
   },
   {
     "title": "How to Write a Professional SOP: Part 2 — The Procedure",
@@ -986,8 +2253,22 @@
     "pillar": "Operational Excellence & SOPs",
     "summary": "Turn policy intent and mapped work into instructions that identify the actor, action, sequence, decision, time standard, evidence, and exception path.",
     "status": "Published",
-    "readingTime": 11,
-    "source": "Published article registry"
+    "readingTime": 13,
+    "source": "Published article registry",
+    "primaryCategory": "Operations & Process Engineering",
+    "subcategory": "SOPs & Work Instructions",
+    "tags": [
+      "DMC operations",
+      "SOPs"
+    ],
+    "seriesId": "tourism-operations-excellence",
+    "seriesPosition": 11,
+    "seriesTitle": "Travel and Tourism Operations Excellence",
+    "relatedArticles": [
+      "/articles/how-to-write-professional-sop-structure/index.html",
+      "/articles/how-to-write-work-instructions/index.html",
+      "/articles/operational-checklist-employees-use/index.html"
+    ]
   },
   {
     "title": "How to Write a Professional SOP: Part 1 — Structure",
@@ -997,8 +2278,22 @@
     "pillar": "Operational Excellence & SOPs",
     "summary": "A professional SOP is not a long checklist and not a policy essay. It is a controlled operating document that connects purpose, scope, roles, procedure, exceptions, records, measures, approval, and revision.",
     "status": "Published",
-    "readingTime": 12,
-    "source": "Published article registry"
+    "readingTime": 13,
+    "source": "Published article registry",
+    "primaryCategory": "Operations & Process Engineering",
+    "subcategory": "SOPs & Work Instructions",
+    "tags": [
+      "DMC operations",
+      "SOPs"
+    ],
+    "seriesId": "tourism-operations-excellence",
+    "seriesPosition": 10,
+    "seriesTitle": "Travel and Tourism Operations Excellence",
+    "relatedArticles": [
+      "/articles/how-to-write-professional-sop-procedure/index.html",
+      "/articles/policy-vs-sop-work-instruction-checklist-form-template/index.html",
+      "/articles/sop-exception-escalation-management/index.html"
+    ]
   },
   {
     "title": "How to Write Work Instructions",
@@ -1008,8 +2303,22 @@
     "pillar": "Operational Excellence & SOPs",
     "summary": "Translate one technical or task-level activity into precise, user-tested steps with prerequisites, acceptance criteria, warnings, evidence, and a controlled route back to the SOP.",
     "status": "Published",
-    "readingTime": 11,
-    "source": "Published article registry"
+    "readingTime": 13,
+    "source": "Published article registry",
+    "primaryCategory": "Operations & Process Engineering",
+    "subcategory": "SOPs & Work Instructions",
+    "tags": [
+      "DMC operations",
+      "SOPs"
+    ],
+    "seriesId": "tourism-operations-excellence",
+    "seriesPosition": 17,
+    "seriesTitle": "Travel and Tourism Operations Excellence",
+    "relatedArticles": [
+      "/articles/how-to-write-professional-sop-procedure/index.html",
+      "/articles/operational-checklist-employees-use/index.html",
+      "/articles/policy-vs-sop-work-instruction-checklist-form-template/index.html"
+    ]
   },
   {
     "title": "The Integrated SOP Creation Model: ITIL + PMP + Lean Six Sigma",
@@ -1019,8 +2328,22 @@
     "pillar": "Operational Excellence & SOPs",
     "summary": "Combine service value, project delivery, flow, variation, documented information, risk, testing, competence, measurement, audit, and improvement into one practical SOP lifecycle.",
     "status": "Published",
-    "readingTime": 11,
-    "source": "Published article registry"
+    "readingTime": 13,
+    "source": "Published article registry",
+    "primaryCategory": "Operations & Process Engineering",
+    "subcategory": "Process Architecture & BPM",
+    "tags": [
+      "DMC operations",
+      "Process design"
+    ],
+    "seriesId": "tourism-operations-excellence",
+    "seriesPosition": 24,
+    "seriesTitle": "Travel and Tourism Operations Excellence",
+    "relatedArticles": [
+      "/articles/itil-4-tourism-operations/index.html",
+      "/articles/map-process-before-writing-sop/index.html",
+      "/articles/tourism-company-operating-system/index.html"
+    ]
   },
   {
     "title": "ITIL 4 for Tourism Operations",
@@ -1030,8 +2353,22 @@
     "pillar": "Operational Excellence & SOPs",
     "summary": "Apply service-management thinking to tourism value streams, incidents, requests, changes, knowledge, suppliers, and continual improvement—while recognizing the framework's current 2026 evolution.",
     "status": "Published",
-    "readingTime": 11,
-    "source": "Published article registry"
+    "readingTime": 13,
+    "source": "Published article registry",
+    "primaryCategory": "Operations & Process Engineering",
+    "subcategory": "Process Architecture & BPM",
+    "tags": [
+      "DMC operations",
+      "Process design"
+    ],
+    "seriesId": "tourism-operations-excellence",
+    "seriesPosition": 20,
+    "seriesTitle": "Travel and Tourism Operations Excellence",
+    "relatedArticles": [
+      "/articles/integrated-sop-creation-model/index.html",
+      "/articles/tourism-company-operating-system/index.html",
+      "/articles/tourism-operational-excellence-management-system/index.html"
+    ]
   },
   {
     "title": "Lean Thinking for Tourism Operations",
@@ -1041,8 +2378,22 @@
     "pillar": "Operational Excellence & SOPs",
     "summary": "See tourism work through guest value, end-to-end flow, pull, unevenness, overburden, and continuous improvement—then remove waste without stripping away resilience or care.",
     "status": "Published",
-    "readingTime": 11,
-    "source": "Published article registry"
+    "readingTime": 13,
+    "source": "Published article registry",
+    "primaryCategory": "Operations & Process Engineering",
+    "subcategory": "Quality & Continuous Improvement",
+    "tags": [
+      "DMC operations",
+      "Quality improvement"
+    ],
+    "seriesId": "tourism-operations-excellence",
+    "seriesPosition": 22,
+    "seriesTitle": "Travel and Tourism Operations Excellence",
+    "relatedArticles": [
+      "/articles/six-sigma-tourism-complaints-data/index.html",
+      "/articles/root-cause-analysis-tourism-managers/index.html",
+      "/articles/hotel-operational-excellence-maturity-model/index.html"
+    ]
   },
   {
     "title": "Never Write an SOP Before Mapping the Process",
@@ -1053,7 +2404,21 @@
     "summary": "An SOP written from memory usually documents the official story. A process map built from observation reveals the real work, hidden handoffs, workarounds, delays, and decisions the procedure must control.",
     "status": "Published",
     "readingTime": 12,
-    "source": "Published article registry"
+    "source": "Published article registry",
+    "primaryCategory": "Operations & Process Engineering",
+    "subcategory": "Process Architecture & BPM",
+    "tags": [
+      "DMC operations",
+      "Process design"
+    ],
+    "seriesId": "tourism-operations-excellence",
+    "seriesPosition": 6,
+    "seriesTitle": "Travel and Tourism Operations Excellence",
+    "relatedArticles": [
+      "/articles/integrated-sop-creation-model/index.html",
+      "/articles/procedures-processes-process-maps/index.html",
+      "/articles/sipoc-tourism-operations/index.html"
+    ]
   },
   {
     "title": "How to Write an Operational Checklist That Employees Actually Use",
@@ -1063,8 +2428,22 @@
     "pillar": "Operational Excellence & SOPs",
     "summary": "Select critical items, place them at the right pause points, write observable checks, and make exceptions easier to report than silent workarounds.",
     "status": "Published",
-    "readingTime": 11,
-    "source": "Published article registry"
+    "readingTime": 13,
+    "source": "Published article registry",
+    "primaryCategory": "Operations & Process Engineering",
+    "subcategory": "SOPs & Work Instructions",
+    "tags": [
+      "DMC operations",
+      "SOPs"
+    ],
+    "seriesId": "tourism-operations-excellence",
+    "seriesPosition": 16,
+    "seriesTitle": "Travel and Tourism Operations Excellence",
+    "relatedArticles": [
+      "/articles/policy-vs-sop-work-instruction-checklist-form-template/index.html",
+      "/articles/professional-operational-form/index.html",
+      "/articles/how-to-write-work-instructions/index.html"
+    ]
   },
   {
     "title": "PMP Thinking for SOP Implementation",
@@ -1074,8 +2453,22 @@
     "pillar": "Operational Excellence & SOPs",
     "summary": "Treat a major SOP launch as a bounded change project with purpose, sponsorship, stakeholders, scope, schedule, risk, resources, pilot, go-live, benefits, and lessons.",
     "status": "Published",
-    "readingTime": 11,
-    "source": "Published article registry"
+    "readingTime": 12,
+    "source": "Published article registry",
+    "primaryCategory": "Operations & Process Engineering",
+    "subcategory": "SOPs & Work Instructions",
+    "tags": [
+      "DMC operations",
+      "SOPs"
+    ],
+    "seriesId": "tourism-operations-excellence",
+    "seriesPosition": 21,
+    "seriesTitle": "Travel and Tourism Operations Excellence",
+    "relatedArticles": [
+      "/articles/policy-vs-sop-work-instruction-checklist-form-template/index.html",
+      "/articles/standard-test-procedures-tourism-operations/index.html",
+      "/articles/tourism-sop-training-competency-adoption/index.html"
+    ]
   },
   {
     "title": "Policy vs SOP vs Work Instruction vs Checklist vs Form vs Template",
@@ -1085,8 +2478,22 @@
     "pillar": "Operational Excellence & SOPs",
     "summary": "A professional document system does not ask every document to do everything. It gives each document one clear job and connects the documents around the work employees actually perform.",
     "status": "Published",
-    "readingTime": 12,
-    "source": "Published article registry"
+    "readingTime": 13,
+    "source": "Published article registry",
+    "primaryCategory": "Operations & Process Engineering",
+    "subcategory": "SOPs & Work Instructions",
+    "tags": [
+      "DMC operations",
+      "SOPs"
+    ],
+    "seriesId": "tourism-operations-excellence",
+    "seriesPosition": 2,
+    "seriesTitle": "Travel and Tourism Operations Excellence",
+    "relatedArticles": [
+      "/articles/how-to-write-work-instructions/index.html",
+      "/articles/how-to-write-professional-sop-structure/index.html",
+      "/articles/where-stp-fits-tourism-operations/index.html"
+    ]
   },
   {
     "title": "Procedures, Processes and Process Maps: What Is the Difference?",
@@ -1096,8 +2503,22 @@
     "pillar": "Operational Excellence & SOPs",
     "summary": "A process explains how value moves from an input to an intended result. A procedure explains how work is controlled and performed. A process map makes the flow, decisions, and handoffs visible.",
     "status": "Published",
-    "readingTime": 11,
-    "source": "Published article registry"
+    "readingTime": 12,
+    "source": "Published article registry",
+    "primaryCategory": "Operations & Process Engineering",
+    "subcategory": "Process Architecture & BPM",
+    "tags": [
+      "DMC operations",
+      "Process design"
+    ],
+    "seriesId": "tourism-operations-excellence",
+    "seriesPosition": 4,
+    "seriesTitle": "Travel and Tourism Operations Excellence",
+    "relatedArticles": [
+      "/articles/map-process-before-writing-sop/index.html",
+      "/articles/customer-journey-mapping-sop-design/index.html",
+      "/articles/sipoc-tourism-operations/index.html"
+    ]
   },
   {
     "title": "How to Design a Professional Operational Form",
@@ -1107,8 +2528,22 @@
     "pillar": "Operational Excellence & SOPs",
     "summary": "Build forms that collect the minimum usable facts, guide staff through decisions, support approvals, and become reliable records after completion.",
     "status": "Published",
-    "readingTime": 11,
-    "source": "Published article registry"
+    "readingTime": 13,
+    "source": "Published article registry",
+    "primaryCategory": "Operations & Process Engineering",
+    "subcategory": "SOPs & Work Instructions",
+    "tags": [
+      "DMC operations",
+      "SOPs"
+    ],
+    "seriesId": "tourism-operations-excellence",
+    "seriesPosition": 15,
+    "seriesTitle": "Travel and Tourism Operations Excellence",
+    "relatedArticles": [
+      "/articles/policy-vs-sop-work-instruction-checklist-form-template/index.html",
+      "/articles/operational-checklist-employees-use/index.html",
+      "/articles/standard-communication-templates/index.html"
+    ]
   },
   {
     "title": "Responsible AI Governance for Hotel Apartments",
@@ -1118,8 +2553,20 @@
     "pillar": "Hotel & Serviced Apartment AI",
     "summary": "Responsible AI governance toolkit for hotel apartments: 10 prompts covering risk, authority, privacy, verification, incidents, tools, version control and human oversight.",
     "status": "Published",
-    "readingTime": 30,
-    "source": "Published article registry"
+    "readingTime": 28,
+    "source": "Published article registry",
+    "primaryCategory": "Governance, Risk & Assurance",
+    "subcategory": "Responsible AI & Human Oversight",
+    "tags": [
+      "Hotel apartments",
+      "Responsible AI"
+    ],
+    "seriesId": "ai-hotel-apartments",
+    "seriesPosition": 26,
+    "seriesTitle": "AI for Hotel Apartments",
+    "relatedArticles": [
+      "/articles/responsible-ai-tourism-guide/index.html"
+    ]
   },
   {
     "title": "Responsible AI for Tourism: A Practical Governance Guide for Travel Companies",
@@ -1129,8 +2576,20 @@
     "pillar": "AI for Tourism",
     "summary": "Responsible AI in tourism means approved use cases, minimum necessary data, verifiable outputs, clear access, trained employees and a named human accountable for decisions.",
     "status": "Published",
-    "readingTime": 19,
-    "source": "Published article registry"
+    "readingTime": 21,
+    "source": "Published article registry",
+    "primaryCategory": "Governance, Risk & Assurance",
+    "subcategory": "Responsible AI & Human Oversight",
+    "tags": [
+      "DMC operations",
+      "Responsible AI"
+    ],
+    "seriesId": "ai-tourism-operations",
+    "seriesPosition": 10,
+    "seriesTitle": "AI for Travel and Tourism Operations",
+    "relatedArticles": [
+      "/articles/responsible-ai-governance-hotels/index.html"
+    ]
   },
   {
     "title": "Root Cause Analysis for Tourism Managers",
@@ -1140,8 +2599,22 @@
     "pillar": "Operational Excellence & SOPs",
     "summary": "Move beyond the visible service failure to verify the process, information, capacity, authority, system, supplier, or management condition that allowed it to occur.",
     "status": "Published",
-    "readingTime": 11,
-    "source": "Published article registry"
+    "readingTime": 12,
+    "source": "Published article registry",
+    "primaryCategory": "Operations & Process Engineering",
+    "subcategory": "Quality & Continuous Improvement",
+    "tags": [
+      "DMC operations",
+      "Quality improvement"
+    ],
+    "seriesId": "tourism-operations-excellence",
+    "seriesPosition": 28,
+    "seriesTitle": "Travel and Tourism Operations Excellence",
+    "relatedArticles": [
+      "/articles/six-sigma-tourism-complaints-data/index.html",
+      "/articles/capa-tourism-operations/index.html",
+      "/articles/lean-thinking-tourism-operations/index.html"
+    ]
   },
   {
     "title": "How to Use SIPOC in Tourism Operations",
@@ -1151,8 +2624,22 @@
     "pillar": "Operational Excellence & SOPs",
     "summary": "A practical way to set process boundaries, expose missing inputs, and agree what a tourism service must deliver before anyone writes the detailed SOP.",
     "status": "Published",
-    "readingTime": 12,
-    "source": "Published article registry"
+    "readingTime": 13,
+    "source": "Published article registry",
+    "primaryCategory": "Operations & Process Engineering",
+    "subcategory": "Process Architecture & BPM",
+    "tags": [
+      "DMC operations",
+      "Process design"
+    ],
+    "seriesId": "tourism-operations-excellence",
+    "seriesPosition": 7,
+    "seriesTitle": "Travel and Tourism Operations Excellence",
+    "relatedArticles": [
+      "/articles/tourism-company-operating-system/index.html",
+      "/articles/map-process-before-writing-sop/index.html",
+      "/articles/customer-journey-mapping-sop-design/index.html"
+    ]
   },
   {
     "title": "Six Sigma for Tourism: From Complaints to Data",
@@ -1162,8 +2649,22 @@
     "pillar": "Operational Excellence & SOPs",
     "summary": "Translate recurring guest complaints into operational definitions, reliable measures, verified causes, controlled improvements, and sustained performance through DMAIC.",
     "status": "Published",
-    "readingTime": 11,
-    "source": "Published article registry"
+    "readingTime": 12,
+    "source": "Published article registry",
+    "primaryCategory": "Operations & Process Engineering",
+    "subcategory": "Quality & Continuous Improvement",
+    "tags": [
+      "DMC operations",
+      "Quality improvement"
+    ],
+    "seriesId": "tourism-operations-excellence",
+    "seriesPosition": 23,
+    "seriesTitle": "Travel and Tourism Operations Excellence",
+    "relatedArticles": [
+      "/articles/root-cause-analysis-tourism-managers/index.html",
+      "/articles/lean-thinking-tourism-operations/index.html",
+      "/articles/capa-tourism-operations/index.html"
+    ]
   },
   {
     "title": "SOP Writing Part 5: Evidence, Documentation and Legal Defensibility",
@@ -1173,8 +2674,22 @@
     "pillar": "Operational Excellence & SOPs",
     "summary": "Design records that capture timely, factual, proportionate evidence of what happened—without turning operational documentation into improvised legal conclusions.",
     "status": "Published",
-    "readingTime": 11,
-    "source": "Published article registry"
+    "readingTime": 13,
+    "source": "Published article registry",
+    "primaryCategory": "Governance, Risk & Assurance",
+    "subcategory": "Documentation & Audit Assurance",
+    "tags": [
+      "DMC operations",
+      "Evidence management"
+    ],
+    "seriesId": "tourism-operations-excellence",
+    "seriesPosition": 14,
+    "seriesTitle": "Travel and Tourism Operations Excellence",
+    "relatedArticles": [
+      "/articles/how-to-audit-an-sop/index.html",
+      "/articles/document-control-version-management-tourism/index.html",
+      "/articles/tourism-document-hierarchy/index.html"
+    ]
   },
   {
     "title": "SOP Writing Part 4: Exception and Escalation Management",
@@ -1184,8 +2699,22 @@
     "pillar": "Operational Excellence & SOPs",
     "summary": "A procedure becomes operationally credible when it explains not only the normal path, but also how people recognize a deviation, stabilize the service, obtain authority, communicate, record decisions, recover, and learn.",
     "status": "Published",
-    "readingTime": 14,
-    "source": "Published article registry"
+    "readingTime": 15,
+    "source": "Published article registry",
+    "primaryCategory": "Operations & Process Engineering",
+    "subcategory": "SOPs & Work Instructions",
+    "tags": [
+      "DMC operations",
+      "SOPs"
+    ],
+    "seriesId": "tourism-operations-excellence",
+    "seriesPosition": 13,
+    "seriesTitle": "Travel and Tourism Operations Excellence",
+    "relatedArticles": [
+      "/articles/how-to-write-professional-sop-structure/index.html",
+      "/articles/standard-communication-templates/index.html",
+      "/articles/standard-test-procedures-tourism-operations/index.html"
+    ]
   },
   {
     "title": "SOP Writing Part 3: Roles, Authority and RACI",
@@ -1195,8 +2724,22 @@
     "pillar": "Operational Excellence & SOPs",
     "summary": "Define who performs the work, who owns the outcome, who contributes before a decision, who receives information, and where operational authority stops.",
     "status": "Published",
-    "readingTime": 11,
-    "source": "Published article registry"
+    "readingTime": 13,
+    "source": "Published article registry",
+    "primaryCategory": "Governance, Risk & Assurance",
+    "subcategory": "Supplier & Decision Governance",
+    "tags": [
+      "DMC operations",
+      "Supplier management"
+    ],
+    "seriesId": "tourism-operations-excellence",
+    "seriesPosition": 12,
+    "seriesTitle": "Travel and Tourism Operations Excellence",
+    "relatedArticles": [
+      "/articles/tourism-supplier-partner-governance-sops/index.html",
+      "/articles/hotel-procurement-supplier-quality-control/index.html",
+      "/articles/article-rfi-rfq-rfp-erfp-nda-tourism-sales/index.html"
+    ]
   },
   {
     "title": "How to Create Standard Communication Templates",
@@ -1206,8 +2749,22 @@
     "pillar": "Operational Excellence & SOPs",
     "summary": "Control recurring operational messages without making staff sound robotic, overpromising outcomes, or distributing unverified information during disruption.",
     "status": "Published",
-    "readingTime": 11,
-    "source": "Published article registry"
+    "readingTime": 13,
+    "source": "Published article registry",
+    "primaryCategory": "Operations & Process Engineering",
+    "subcategory": "SOPs & Work Instructions",
+    "tags": [
+      "DMC operations",
+      "SOPs"
+    ],
+    "seriesId": "tourism-operations-excellence",
+    "seriesPosition": 18,
+    "seriesTitle": "Travel and Tourism Operations Excellence",
+    "relatedArticles": [
+      "/articles/standard-test-procedures-tourism-operations/index.html",
+      "/articles/sop-exception-escalation-management/index.html",
+      "/articles/professional-operational-form/index.html"
+    ]
   },
   {
     "title": "How to Create Standard Test Procedures (STPs) for Tourism Operations",
@@ -1217,8 +2774,22 @@
     "pillar": "Operational Excellence & SOPs",
     "summary": "Write repeatable operational tests with controlled preconditions, unambiguous steps, expected results, evidence, defect handling, and accountable release decisions.",
     "status": "Published",
-    "readingTime": 11,
-    "source": "Published article registry"
+    "readingTime": 13,
+    "source": "Published article registry",
+    "primaryCategory": "Operations & Process Engineering",
+    "subcategory": "SOPs & Work Instructions",
+    "tags": [
+      "DMC operations",
+      "SOPs"
+    ],
+    "seriesId": "tourism-operations-excellence",
+    "seriesPosition": 19,
+    "seriesTitle": "Travel and Tourism Operations Excellence",
+    "relatedArticles": [
+      "/articles/where-stp-fits-tourism-operations/index.html",
+      "/articles/standard-communication-templates/index.html",
+      "/articles/sop-exception-escalation-management/index.html"
+    ]
   },
   {
     "title": "The Tourism AI Operations Playbook",
@@ -1228,8 +2799,22 @@
     "pillar": "AI for Tourism",
     "summary": "Built for the real work behind tours, transfers, products, itineraries, quotations, guest journeys and quality systems. The playbook combines tourism operating experience with professional prompt design, responsible controls...",
     "status": "Published",
-    "readingTime": 9,
-    "source": "Published article registry"
+    "readingTime": 7,
+    "source": "Published article registry",
+    "primaryCategory": "AI Prompt Engineering & Toolkits",
+    "subcategory": "Prompt Engineering Frameworks",
+    "tags": [
+      "DMC operations",
+      "Prompt engineering",
+      "Responsible AI"
+    ],
+    "seriesId": "ai-tourism-operations",
+    "seriesPosition": null,
+    "seriesTitle": "AI for Travel and Tourism Operations",
+    "relatedArticles": [
+      "/articles/tourism-prompting-framework/index.html",
+      "/articles/hotel-ai-prompting-framework/index.html"
+    ]
   },
   {
     "title": "The Operating System Behind a Professional Tourism Company",
@@ -1239,8 +2824,22 @@
     "pillar": "Operational Excellence & SOPs",
     "summary": "A tourism company does not become reliable because it owns a folder called “SOPs.” It becomes reliable when policies, processes, people, tools, records, measures, and improvement routines work as one operating system.",
     "status": "Published",
-    "readingTime": 13,
-    "source": "Published article registry"
+    "readingTime": 14,
+    "source": "Published article registry",
+    "primaryCategory": "Operations & Process Engineering",
+    "subcategory": "Process Architecture & BPM",
+    "tags": [
+      "DMC operations",
+      "Process design"
+    ],
+    "seriesId": "tourism-operations-excellence",
+    "seriesPosition": 1,
+    "seriesTitle": "Travel and Tourism Operations Excellence",
+    "relatedArticles": [
+      "/articles/tourism-operations-manual/index.html",
+      "/articles/tourism-operational-excellence-management-system/index.html",
+      "/articles/map-process-before-writing-sop/index.html"
+    ]
   },
   {
     "title": "Building a Document Hierarchy for a Tourism Company",
@@ -1250,8 +2849,22 @@
     "pillar": "Operational Excellence & SOPs",
     "summary": "A document hierarchy should help employees understand what governs the work, what explains the work, what supports execution, and what proves the result. It should not become a bureaucracy diagram that only the quality department understands.",
     "status": "Published",
-    "readingTime": 11,
-    "source": "Published article registry"
+    "readingTime": 12,
+    "source": "Published article registry",
+    "primaryCategory": "Governance, Risk & Assurance",
+    "subcategory": "Documentation & Audit Assurance",
+    "tags": [
+      "DMC operations",
+      "Evidence management"
+    ],
+    "seriesId": "tourism-operations-excellence",
+    "seriesPosition": 5,
+    "seriesTitle": "Travel and Tourism Operations Excellence",
+    "relatedArticles": [
+      "/articles/document-control-version-management-tourism/index.html",
+      "/articles/sop-evidence-documentation-legal-defensibility/index.html",
+      "/articles/how-to-audit-an-sop/index.html"
+    ]
   },
   {
     "title": "The Tourism Itinerary AI Toolkit: 10 Prompts for Realistic and Guest-Centred Travel Planning",
@@ -1261,8 +2874,23 @@
     "pillar": "AI for Tourism",
     "summary": "AI can create an itinerary draft, but every hour, ticket, transfer, availability and access condition must be verified before sale or operation.",
     "status": "Published",
-    "readingTime": 18,
-    "source": "Published article registry"
+    "readingTime": 21,
+    "source": "Published article registry",
+    "primaryCategory": "AI Prompt Engineering & Toolkits",
+    "subcategory": "Tourism & DMC AI Toolkits",
+    "tags": [
+      "DMC operations",
+      "Prompt engineering",
+      "Responsible AI"
+    ],
+    "seriesId": "ai-tourism-operations",
+    "seriesPosition": 6,
+    "seriesTitle": "AI for Travel and Tourism Operations",
+    "relatedArticles": [
+      "/articles/tourism-product-development-ai-prompts/index.html",
+      "/articles/tourism-sales-quotation-ai-prompts/index.html",
+      "/articles/guest-experience-ai-prompts/index.html"
+    ]
   },
   {
     "title": "From SOP Library to Tourism Operational Excellence Management System",
@@ -1272,8 +2900,22 @@
     "pillar": "Operational Excellence & SOPs",
     "summary": "Transform a collection of controlled documents into an integrated system that aligns value, governance, capability, execution, evidence, measurement, learning, and sustained service excellence.",
     "status": "Published",
-    "readingTime": 11,
-    "source": "Published article registry"
+    "readingTime": 12,
+    "source": "Published article registry",
+    "primaryCategory": "Operations & Process Engineering",
+    "subcategory": "Process Architecture & BPM",
+    "tags": [
+      "DMC operations",
+      "Process design"
+    ],
+    "seriesId": "tourism-operations-excellence",
+    "seriesPosition": 30,
+    "seriesTitle": "Travel and Tourism Operations Excellence",
+    "relatedArticles": [
+      "/articles/tourism-company-operating-system/index.html",
+      "/articles/tourism-operations-manual/index.html",
+      "/articles/integrated-sop-creation-model/index.html"
+    ]
   },
   {
     "title": "How to Conduct an Operational Risk Assessment Before Writing an SOP",
@@ -1283,8 +2925,20 @@
     "pillar": "Operational Excellence & SOPs",
     "summary": "Risk assessment should shape the procedure before the procedure is written. It identifies what could affect the objective, who may be harmed or impacted, which controls already exist, what remains uncertain, and where authority or escalation is required.",
     "status": "Published",
-    "readingTime": 11,
-    "source": "Published article registry"
+    "readingTime": 12,
+    "source": "Published article registry",
+    "primaryCategory": "Governance, Risk & Assurance",
+    "subcategory": "Risk & Compliance",
+    "tags": [
+      "DMC operations",
+      "Risk management"
+    ],
+    "seriesId": "tourism-operations-excellence",
+    "seriesPosition": 8,
+    "seriesTitle": "Travel and Tourism Operations Excellence",
+    "relatedArticles": [
+      "/articles/amsterdam-product-discovery-09-risk-responsibility/index.html"
+    ]
   },
   {
     "title": "Tourism Operations KPIs and Control Dashboards",
@@ -1294,8 +2948,22 @@
     "pillar": "Operational Excellence & SOPs",
     "summary": "Build a decision system that balances service outcomes, process control, guest experience, risk, people, suppliers, finance, and improvement without drowning managers in data.",
     "status": "Published",
-    "readingTime": 11,
-    "source": "Published article registry"
+    "readingTime": 12,
+    "source": "Published article registry",
+    "primaryCategory": "Operations & Process Engineering",
+    "subcategory": "Performance & Operational Control",
+    "tags": [
+      "DMC operations",
+      "Performance measurement"
+    ],
+    "seriesId": "tourism-operations-excellence",
+    "seriesPosition": 32,
+    "seriesTitle": "Travel and Tourism Operations Excellence",
+    "relatedArticles": [
+      "/articles/dmc-operations-ai-prompts/index.html",
+      "/articles/article-fleet-control-tower-operations-dashboard/index.html",
+      "/articles/hotel-workforce-productivity-efficiency/index.html"
+    ]
   },
   {
     "title": "Building the Tourism Operations Manual",
@@ -1305,8 +2973,22 @@
     "pillar": "Operational Excellence & SOPs",
     "summary": "Create a navigable governance and operating architecture across reservations, transport, airports, excursions, representatives, suppliers, safety, quality, finance, after-hours work, and crisis response.",
     "status": "Published",
-    "readingTime": 11,
-    "source": "Published article registry"
+    "readingTime": 13,
+    "source": "Published article registry",
+    "primaryCategory": "Operations & Process Engineering",
+    "subcategory": "Process Architecture & BPM",
+    "tags": [
+      "DMC operations",
+      "Process design"
+    ],
+    "seriesId": "tourism-operations-excellence",
+    "seriesPosition": 29,
+    "seriesTitle": "Travel and Tourism Operations Excellence",
+    "relatedArticles": [
+      "/articles/tourism-quality-sop-ai-prompts/index.html",
+      "/articles/tourism-operational-excellence-management-system/index.html",
+      "/articles/tourism-company-operating-system/index.html"
+    ]
   },
   {
     "title": "Tourism Product Development AI Toolkit",
@@ -1316,8 +2998,23 @@
     "pillar": "AI for Tourism",
     "summary": "AI is most useful in tourism product development when it organises evidence, explores options and exposes feasibility questions instead of inventing demand or suppliers.",
     "status": "Published",
-    "readingTime": 19,
-    "source": "Published article registry"
+    "readingTime": 21,
+    "source": "Published article registry",
+    "primaryCategory": "AI Prompt Engineering & Toolkits",
+    "subcategory": "Tourism & DMC AI Toolkits",
+    "tags": [
+      "DMC operations",
+      "Prompt engineering",
+      "Responsible AI"
+    ],
+    "seriesId": "ai-tourism-operations",
+    "seriesPosition": 5,
+    "seriesTitle": "AI for Travel and Tourism Operations",
+    "relatedArticles": [
+      "/articles/tourism-sales-quotation-ai-prompts/index.html",
+      "/articles/tourism-itinerary-ai-prompts/index.html",
+      "/articles/tourism-transport-dispatch-ai-prompts/index.html"
+    ]
   },
   {
     "title": "The Tourism Prompting Framework: How to Write Professional AI Prompts for Travel and Tourism",
@@ -1327,8 +3024,22 @@
     "pillar": "AI for Tourism",
     "summary": "Tourism prompt engineering is the practice of defining a travel task, supplying verified operating context and controlling the output so a qualified employee can review it safely.",
     "status": "Published",
-    "readingTime": 19,
-    "source": "Published article registry"
+    "readingTime": 22,
+    "source": "Published article registry",
+    "primaryCategory": "AI Prompt Engineering & Toolkits",
+    "subcategory": "Prompt Engineering Frameworks",
+    "tags": [
+      "DMC operations",
+      "Prompt engineering",
+      "Responsible AI"
+    ],
+    "seriesId": "ai-tourism-operations",
+    "seriesPosition": 1,
+    "seriesTitle": "AI for Travel and Tourism Operations",
+    "relatedArticles": [
+      "/articles/hotel-ai-prompting-framework/index.html",
+      "/articles/tourism-ai-operations-playbook/index.html"
+    ]
   },
   {
     "title": "Tourism Quality and SOP AI Toolkit",
@@ -1338,8 +3049,23 @@
     "pillar": "AI for Tourism",
     "summary": "AI can structure SOP and quality work from evidence, but process owners must observe the job, validate causes and confirm corrective-action effectiveness.",
     "status": "Published",
-    "readingTime": 18,
-    "source": "Published article registry"
+    "readingTime": 21,
+    "source": "Published article registry",
+    "primaryCategory": "AI Prompt Engineering & Toolkits",
+    "subcategory": "Tourism & DMC AI Toolkits",
+    "tags": [
+      "DMC operations",
+      "Prompt engineering",
+      "Responsible AI"
+    ],
+    "seriesId": "ai-tourism-operations",
+    "seriesPosition": 9,
+    "seriesTitle": "AI for Travel and Tourism Operations",
+    "relatedArticles": [
+      "/articles/tourism-operations-manual/index.html",
+      "/articles/guest-experience-ai-prompts/index.html",
+      "/articles/front-line-tourism-ai-toolkit/index.html"
+    ]
   },
   {
     "title": "Tourism Sales and Quotation AI Toolkit",
@@ -1349,8 +3075,23 @@
     "pillar": "AI for Tourism",
     "summary": "AI can improve commercial structure and communication, but it must not create rates, terms, tax, margin, currency conversions or commitments.",
     "status": "Published",
-    "readingTime": 18,
-    "source": "Published article registry"
+    "readingTime": 21,
+    "source": "Published article registry",
+    "primaryCategory": "AI Prompt Engineering & Toolkits",
+    "subcategory": "Tourism & DMC AI Toolkits",
+    "tags": [
+      "DMC operations",
+      "Prompt engineering",
+      "Responsible AI"
+    ],
+    "seriesId": "ai-tourism-operations",
+    "seriesPosition": 7,
+    "seriesTitle": "AI for Travel and Tourism Operations",
+    "relatedArticles": [
+      "/articles/tourism-product-development-ai-prompts/index.html",
+      "/articles/tourism-itinerary-ai-prompts/index.html",
+      "/articles/guest-experience-ai-prompts/index.html"
+    ]
   },
   {
     "title": "Training, Competency, and SOP Adoption in Tourism",
@@ -1360,8 +3101,22 @@
     "pillar": "Operational Excellence & SOPs",
     "summary": "Move beyond attendance sheets by defining competence, practicing the work, authorizing people at the right level, supporting adoption, and verifying performance in live operations.",
     "status": "Published",
-    "readingTime": 11,
-    "source": "Published article registry"
+    "readingTime": 13,
+    "source": "Published article registry",
+    "primaryCategory": "Operations & Process Engineering",
+    "subcategory": "SOPs & Work Instructions",
+    "tags": [
+      "DMC operations",
+      "SOPs"
+    ],
+    "seriesId": "tourism-operations-excellence",
+    "seriesPosition": 31,
+    "seriesTitle": "Travel and Tourism Operations Excellence",
+    "relatedArticles": [
+      "/articles/policy-vs-sop-work-instruction-checklist-form-template/index.html",
+      "/articles/operational-checklist-employees-use/index.html",
+      "/articles/how-to-write-work-instructions/index.html"
+    ]
   },
   {
     "title": "Supplier and Partner Governance in Tourism SOPs",
@@ -1371,8 +3126,22 @@
     "pillar": "Operational Excellence & SOPs",
     "summary": "Translate service promises into clear partner requirements, readiness evidence, live-day interfaces, escalation, performance review, continuity, and controlled change.",
     "status": "Published",
-    "readingTime": 11,
-    "source": "Published article registry"
+    "readingTime": 13,
+    "source": "Published article registry",
+    "primaryCategory": "Governance, Risk & Assurance",
+    "subcategory": "Supplier & Decision Governance",
+    "tags": [
+      "DMC operations",
+      "Supplier management"
+    ],
+    "seriesId": "tourism-operations-excellence",
+    "seriesPosition": 33,
+    "seriesTitle": "Travel and Tourism Operations Excellence",
+    "relatedArticles": [
+      "/articles/sop-roles-authority-raci/index.html",
+      "/articles/article-rfi-rfq-rfp-erfp-nda-tourism-sales/index.html",
+      "/articles/hotel-procurement-supplier-quality-control/index.html"
+    ]
   },
   {
     "title": "Tourism Transport and Dispatch AI Toolkit",
@@ -1382,8 +3151,23 @@
     "pillar": "AI for Tourism",
     "summary": "AI can support pickup and fleet planning by testing supplied constraints; dispatchers must still verify routes, capacity, access, availability and live conditions.",
     "status": "Published",
-    "readingTime": 19,
-    "source": "Published article registry"
+    "readingTime": 21,
+    "source": "Published article registry",
+    "primaryCategory": "AI Prompt Engineering & Toolkits",
+    "subcategory": "Tourism & DMC AI Toolkits",
+    "tags": [
+      "DMC operations",
+      "Prompt engineering",
+      "Responsible AI"
+    ],
+    "seriesId": "ai-tourism-operations",
+    "seriesPosition": 4,
+    "seriesTitle": "AI for Travel and Tourism Operations",
+    "relatedArticles": [
+      "/articles/tourism-product-development-ai-prompts/index.html",
+      "/articles/guest-experience-ai-prompts/index.html",
+      "/articles/front-line-tourism-ai-toolkit/index.html"
+    ]
   },
   {
     "title": "Where Does STP Fit? Standard Test Procedures in Tourism Operations",
@@ -1393,8 +3177,22 @@
     "pillar": "Operational Excellence & SOPs",
     "summary": "Separate instructions for doing the work from controlled tests that prove the process, system, handoff, or contingency performs as intended.",
     "status": "Published",
-    "readingTime": 11,
-    "source": "Published article registry"
+    "readingTime": 12,
+    "source": "Published article registry",
+    "primaryCategory": "Operations & Process Engineering",
+    "subcategory": "SOPs & Work Instructions",
+    "tags": [
+      "DMC operations",
+      "SOPs"
+    ],
+    "seriesId": "tourism-operations-excellence",
+    "seriesPosition": 3,
+    "seriesTitle": "Travel and Tourism Operations Excellence",
+    "relatedArticles": [
+      "/articles/standard-test-procedures-tourism-operations/index.html",
+      "/articles/tourism-sop-training-competency-adoption/index.html",
+      "/articles/policy-vs-sop-work-instruction-checklist-form-template/index.html"
+    ]
   },
   {
     "title": "Workforce, Rostering & Productivity AI Toolkit",
@@ -1405,6 +3203,21 @@
     "summary": "Ten governed AI prompts for hotel apartment workforce planning, rostering, workload, skills, productivity and fatigue-risk review.",
     "status": "Published",
     "readingTime": 15,
-    "source": "Published article registry"
+    "source": "Published article registry",
+    "primaryCategory": "AI Prompt Engineering & Toolkits",
+    "subcategory": "Hotel & Serviced Apartment AI Toolkits",
+    "tags": [
+      "Hotel apartments",
+      "Prompt engineering",
+      "Responsible AI"
+    ],
+    "seriesId": "ai-hotel-apartments",
+    "seriesPosition": 23,
+    "seriesTitle": "AI for Hotel Apartments",
+    "relatedArticles": [
+      "/articles/hotel-workforce-productivity-efficiency/index.html",
+      "/series/hotel-ai-operations-playbook/index.html",
+      "/articles/hotel-kpi-dashboard-ai-toolkit/index.html"
+    ]
   }
 ]

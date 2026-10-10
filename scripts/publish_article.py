@@ -103,6 +103,11 @@ def publish(root,meta,text,replace=False):
     banners,banner_row = register(root,meta)
     meta = dict(meta,series=banner_row['series'])
     source,record = page(meta,text)
+    # Taxonomy is authored, never guessed from keywords or silently defaulted.
+    for key in ('primaryCategory','subcategory','relatedArticles'):
+        if not meta.get(key): raise ValueError('Missing article taxonomy: '+key)
+    record.update({k:meta[k] for k in ('primaryCategory','subcategory','relatedArticles')})
+    record.update(summary=record['description'],status='Published',seriesId=banner_row['design'],seriesTitle=banners['designs'][banner_row['design']]['label'],seriesPosition=banner_row['number'],seriesKind=banner_row['kind'])
     registry = json.loads((root/'content/article-registry.json').read_text())
     registry = [x for x in registry if x['url']!=record['url']]+[record]
     # Back up every generated consumer; restore the complete transaction on error.

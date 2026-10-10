@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "categories": [
+    {
+      "name": "Product Strategy & Development",
+      "description": "Research customer needs, validate concepts and evaluate product economics.",
+      "subcategories": [
+        "Market Intelligence & Research",
+        "Product Discovery & Validation",
+        "Product Design & Requirements",
+        "Product Economics & Lifecycle"
+      ]
+    },
+    {
+      "name": "Operations & Process Engineering",
+      "description": "Design dependable processes, practical procedures and measurable improvement.",
+      "subcategories": [
+        "Process Architecture & BPM",
+        "SOPs & Work Instructions",
+        "Quality & Continuous Improvement",
+        "Performance & Operational Control",
+        "Asset Reliability & Maintenance"
+      ]
+    },
+    {
+      "name": "AI Prompt Engineering & Toolkits",
+      "description": "Use structured prompts with trusted inputs, review and human authority.",
+      "subcategories": [
+        "Prompt Engineering Frameworks",
+        "Hotel & Serviced Apartment AI Toolkits",
+        "Tourism & DMC AI Toolkits"
+      ]
+    },
+    {
+      "name": "Hospitality & Tourism Operations",
+      "description": "Coordinate guest journeys, destination delivery and commercial service promises.",
+      "subcategories": [
+        "Hotel & Serviced Apartment Operations",
+        "DMC & Destination Operations",
+        "MICE & Event Operations",
+        "Tour Pricing, Sales & Quotations",
+        "Guest Experience & Service Delivery"
+      ]
+    },
+    {
+      "name": "Governance, Risk & Assurance",
+      "description": "Control decisions, documentation, supplier relationships and operational risk.",
+      "subcategories": [
+        "Responsible AI & Human Oversight",
+        "Risk & Compliance",
+        "Documentation & Audit Assurance",
+        "Supplier & Decision Governance"
+      ]
+    }
+  ],
+  "tags": [
+    "Amsterdam",
+    "Abu Dhabi",
+    "Hotel apartments",
+    "DMC operations",
+    "MICE",
+    "Guest experience",
+    "Tour pricing",
+    "Process design",
+    "SOPs",
+    "Quality improvement",
+    "Performance measurement",
+    "Asset maintenance",
+    "Supplier management",
+    "Responsible AI",
+    "Prompt engineering",
+    "Product discovery",
+    "Evidence management",
+    "Risk management",
+    "Workforce planning"
+  ]
+}

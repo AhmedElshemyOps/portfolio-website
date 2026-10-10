@@ -1,0 +1,22 @@
+/* Knowledge Hub taxonomy. Scoped rules extend the established navy/ivory/gold system. */
+.taxonomy-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}
+.taxonomy-category{min-width:0;border:1px solid #d8d1c4;border-radius:12px;background:#fffdf8;overflow:hidden}
+.taxonomy-category .topic-card{border:0;border-radius:0;display:block;height:auto;padding:1.3rem;box-shadow:none}
+.taxonomy-category .topic-card strong{font-size:1.18rem;line-height:1.4;color:#102d46}
+.taxonomy-category .topic-card p{font-size:.96rem;line-height:1.65;margin:.6rem 0 0;color:#405363}
+.taxonomy-category ul{list-style:none;padding:0 1.3rem 1rem;margin:0}
+.taxonomy-category li a{display:block;padding:.65rem 0;min-height:44px;box-sizing:border-box;border-top:1px solid #e5dfd4;color:#23465d;line-height:1.5;text-underline-offset:3px}
+.knowledge-tags{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;padding:0!important;margin:.7rem 0!important}
+.knowledge-tags li{font-size:.78rem;line-height:1.4;color:#294653;background:#eee9df;padding:.3rem .55rem;border-radius:4px}
+.knowledge-card .knowledge-card-subcategory{font-weight:600;font-size:.9rem;color:#405363}
+.knowledge-card small{line-height:1.7;display:block}
+.knowledge-series>div{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem}
+.knowledge-series strong{line-height:1.45}
+.knowledge-filters{grid-template-columns:repeat(3,minmax(0,1fr))}
+.knowledge-filters label[hidden]{display:none}
+.knowledge-context{max-width:1100px;margin:2rem auto}
+.taxonomy-category a:focus-visible,.knowledge-series a:focus-visible{outline:3px solid #8b681e;outline-offset:3px}
+@media(max-width:1000px){.taxonomy-grid,.knowledge-series>div{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.taxonomy-grid,.knowledge-series>div,.knowledge-filters{grid-template-columns:minmax(0,1fr)}.taxonomy-category .topic-card{padding:1rem}.taxonomy-category ul{padding:0 1rem .6rem}.knowledge-context{margin:1rem 0}.knowledge-card a{overflow-wrap:anywhere}}
+.taxonomy-category .topic-card>strong,.taxonomy-category .topic-card>span{display:block}
+.taxonomy-category .topic-card>span{margin-top:.6rem;font-size:.85rem;font-weight:600;color:#6c551d}

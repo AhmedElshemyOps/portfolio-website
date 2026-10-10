@@ -57,6 +57,9 @@ def render(source,path,root=ROOT):
    if article:
     from apply_field_manual import parse
     node=next(n for n in parse(source).nodes if n['tag']=='article' and 'article-body' in n['attrs'].get('class','').split());source=source[:node['end']]+panel+source[node['end']:]
+ if row.get('primaryCategory'):
+  from knowledge_taxonomy import render_article
+  source=render_article(source,row,json.loads(registry_path.read_text()))
  return pack(source,path,root) if was_bundled else source
 
 def apply(root=ROOT,check=False):

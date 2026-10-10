@@ -8,14 +8,14 @@ const registry = JSON.parse(fs.readFileSync('content/article-registry.json', 'ut
 function library(address = 'https://ahmedqualityops.com/knowledge/index.html', saved = null) {
   const events = () => ({ handlers: {}, addEventListener(type, handler) { this.handlers[type] = handler; } });
   const field = (value = '') => ({ ...events(), value, closest() { return { classList: { toggle() {} } }; } });
-  const filters = ['pillar', 'series', 'type'].map(key => ({
+  const filters = ['pillar', 'series', 'type', 'category', 'subcategory', 'collection', 'tag'].map(key => ({
     ...field(), dataset: { knowledgeFilter: key },
-    options: [{ value: '', textContent: 'All' }, ...[...new Set(registry.map(row => key === 'type' ? row.type === 'Series index' ? row.type : row.contentType : row[key]))].map(value => ({ value, textContent: value }))]
+    options: [{ value: '', textContent: 'All' }, ...[...new Set(registry.map(row => key === 'type' ? row.type === 'Series index' ? row.type : row.contentType : key === 'category' ? row.primaryCategory : key === 'collection' ? row.seriesId : key === 'tag' ? row.tags[0] : row[key]))].map(value => ({ value, textContent: value }))]
   }));
   const query = field();
   const sort = { ...field('recommended'), options: [{ value: 'recommended', textContent: 'Recommended order' }, { value: 'title', textContent: 'Title · A–Z' }, { value: 'updated', textContent: 'Recently updated' }] };
   const cards = registry.map(row => ({
-    dataset: { pillar: row.pillar, series: row.series, type: row.type === 'Series index' ? row.type : row.contentType, updated: row.updated || '', search: [row.title, row.description, ...row.tags].join(' ').toLowerCase() },
+    dataset: { category: row.primaryCategory, subcategory: row.subcategory, collection: row.seriesId, tag: row.tags.join('|'), position: row.seriesPosition || 0, pillar: row.pillar, series: row.series, type: row.type === 'Series index' ? row.type : row.contentType, updated: row.updated || '', search: [row.title, row.description, ...row.tags, ...(row.legacyTags || [])].join(' ').toLowerCase() },
     row, hidden: false, link: { focus() { this.focused = true; } },
     querySelector(selector) { return selector === 'h2' ? { textContent: row.title } : this.link; }
   }));
@@ -86,3 +86,23 @@ const html = fs.readFileSync('knowledge/index.html', 'utf8');
 assert.equal((html.match(/data-knowledge-reset/g) || []).length, 3);
 assert(html.indexOf('data-knowledge-selection') < html.indexOf('<details class="library-filter-disclosure"'));
 console.log('Library word matching, restored filters, empty-state recovery, focus, pagination and URL preservation passed (DOM simulation).');
+
+for (const category of new Set(registry.map(row => row.primaryCategory))) {
+ const page = library('https://ahmedqualityops.com/knowledge/index.html?category='+encodeURIComponent(category));
+ const expected = registry.filter(row=>row.primaryCategory===category).length;
+ assert(page.matches().every(card=>card.row.primaryCategory===category));
+ assert(page.status.textContent.includes('of '+expected+' matching items'));
+}
+const cross = library('https://ahmedqualityops.com/knowledge/index.html?category='+encodeURIComponent('Operations & Process Engineering')+'&subcategory='+encodeURIComponent('Asset Reliability & Maintenance'));
+assert.equal(cross.matches().length,8);
+assert(cross.matches().every(card=>card.row.subcategory==='Asset Reliability & Maintenance'));
+const collection = library('https://ahmedqualityops.com/knowledge/index.html?collection=amsterdam-product-discovery');
+assert(collection.status.textContent.includes('of 13 matching items'));
+assert(collection.matches().every(card=>card.row.seriesId==='amsterdam-product-discovery'));
+const tag = library('https://ahmedqualityops.com/knowledge/index.html?tag=Amsterdam');
+assert(tag.matches().every(card=>card.row.tags.includes('Amsterdam')));
+const emptyCombination = library('https://ahmedqualityops.com/knowledge/index.html?category='+encodeURIComponent('Governance, Risk & Assurance')+'&collection=operations-systems');
+assert.equal(emptyCombination.matches().length,0);
+emptyCombination.resets[0].handlers.click();
+assert.equal(emptyCombination.matches().length,12);
+console.log('Taxonomy category, subcategory, tag, series, empty intersections and reset checks passed.');
