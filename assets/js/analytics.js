@@ -2,11 +2,16 @@
   "use strict";
 
   var config = window.AHMED_SITE_CONFIG || {};
+  // Production measurement must never include local or hosted preview traffic.
+  var allowedHosts = config.analyticsAllowedHosts || ["ahmedqualityops.com"];
+  var currentHost = "";
+  try { currentHost = new URL(window.location.href).hostname.toLowerCase(); } catch (_error) {}
+  var isProductionHost = allowedHosts.indexOf(currentHost) !== -1;
   var measurementId = (config.gaMeasurementId || "").trim();
-  var hasValidGaId = /^G-[A-Z0-9]+$/i.test(measurementId);
+  var hasValidGaId = isProductionHost && /^G-[A-Z0-9]+$/i.test(measurementId);
   var googleAdsId = (config.googleAdsId || "").trim();
   var adsConversionLabel = (config.googleAdsConversionLabel || "").trim();
-  var hasValidAdsId = /^AW-[0-9]+$/i.test(googleAdsId);
+  var hasValidAdsId = isProductionHost && /^AW-[0-9]+$/i.test(googleAdsId);
   var consentKey = "ahmed_analytics_consent_v1";
   var consent = "unset";
   try { consent = window.localStorage.getItem(consentKey) || "unset"; } catch (_error) { consent = "unset"; }
@@ -41,7 +46,17 @@
     script.dataset.ahmedGtag = "true";
     document.head.appendChild(script);
     window.gtag("js", new Date());
-    if (hasValidGaId) window.gtag("config", measurementId, {
+    var campaign = {};
+    try {
+      var search = new URL(window.location.href).searchParams;
+      // Explicit marketing labels only; other URL parameters remain excluded.
+      [["utm_source", "campaign_source"], ["utm_medium", "campaign_medium"],
+       ["utm_campaign", "campaign_name"], ["utm_content", "campaign_content"]].forEach(function (pair) {
+        var value = search.get(pair[0]) || "";
+        if (/^[a-z0-9_-]{1,80}$/i.test(value)) campaign[pair[1]] = value;
+      });
+    } catch (_error) {}
+    if (hasValidGaId) window.gtag("config", measurementId, Object.assign({
       page_title: document.title,
       page_location: cleanUrl(window.location.href),
       page_referrer: cleanUrl(document.referrer),
@@ -49,7 +64,7 @@
       allow_google_signals: false,
       allow_ad_personalization_signals: false,
       anonymize_ip: true
-    });
+    }, campaign));
     if (hasValidAdsId) window.gtag("config", googleAdsId);
     trackPageView();
   }

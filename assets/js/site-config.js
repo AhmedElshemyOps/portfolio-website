@@ -2,6 +2,10 @@ window.AHMED_SITE_CONFIG = {
   siteUrl: "https://ahmedqualityops.com",
   // GA4 loads only after the visitor grants analytics consent.
   gaMeasurementId: "G-45YNREM1LT",
+  analyticsAllowedHosts: ["ahmedqualityops.com"],
+  // Ownership verification is live; ad serving stays off until site approval.
+  adsensePublisherId: "ca-pub-5767638342262338",
+  adsenseEnabled: false,
   googleAdsId: "",
   googleAdsConversionLabel: "",
   googleBusinessProfileUrl: "",

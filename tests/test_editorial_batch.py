@@ -3,6 +3,7 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'scripts'))
 from audit_seo import DOM,schema_nodes
 from accommodation_baseline import approved_baseline
+from approved_seo_metadata import approved_schema
 MANIFEST=json.loads((ROOT/'maintenance/seo/editorial-batch-manifest.json').read_text())
 class EditorialBatchTests(unittest.TestCase):
  def baseline(self,p):return subprocess.check_output(['git','show',MANIFEST['baseline_commit']+':'+str(p.relative_to(ROOT))],cwd=ROOT,text=True)
@@ -15,7 +16,7 @@ class EditorialBatchTests(unittest.TestCase):
  def test_prompts_and_publication_dates_preserved(self):
   for p in (ROOT/'articles').glob('*/index.html'):
    old=approved_baseline(self.baseline(p),p.parent.name);new=p.read_text();self.assertEqual(re.findall(r'<pre\b.*?</pre>',old,re.S),re.findall(r'<pre\b.*?</pre>',new,re.S),str(p))
-   self.assertEqual([n.get('datePublished') for n in schema_nodes(old)[0] if n.get('datePublished')],[n.get('datePublished') for n in schema_nodes(new)[0] if n.get('datePublished')],str(p))
+   self.assertEqual([n.get('datePublished') for n in approved_schema(schema_nodes(old)[0],p.parent.name) if n.get('datePublished')],[n.get('datePublished') for n in schema_nodes(new)[0] if n.get('datePublished')],str(p))
  def test_collection_items_match_visible_chapter_links(self):
   for entry in MANIFEST['schema_collections']:
    p=ROOT/entry['page'];source=p.read_text();collection=next(n for n in schema_nodes(source)[0] if n.get('@type')=='CollectionPage');self.assertNotIn('headline',collection);items=collection['mainEntity']['itemListElement'];self.assertEqual(len(items),entry['visible_linked_items']);self.assertEqual([x['position'] for x in items],list(range(1,len(items)+1)))

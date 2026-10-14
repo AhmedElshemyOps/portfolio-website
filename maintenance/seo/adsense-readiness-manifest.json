@@ -1,0 +1,102 @@
+{
+  "publisher_id": "ca-pub-5767638342262338",
+  "publication_dates": {
+    "articles/hotel-ota-distribution-review-management-ai-toolkit/index.html": "2026-10-07T06:06:32Z",
+    "articles/hotel-lean-six-sigma-ai-toolkit/index.html": "2026-10-06T21:25:04Z",
+    "articles/responsible-ai-governance-hotels/index.html": "2026-10-07T07:49:41Z",
+    "articles/hotel-sales-corporate-accounts-ai-toolkit/index.html": "2026-10-07T06:53:04Z",
+    "articles/hotel-kpi-dashboard-ai-toolkit/index.html": "2026-10-07T06:53:04Z",
+    "articles/hotel-inventory-par-management-ai-toolkit/index.html": "2026-10-07T06:53:04Z",
+    "articles/hotel-revenue-management-ai-toolkit/index.html": "2026-10-07T06:53:04Z",
+    "articles/hotel-finance-cost-control-ai-toolkit/index.html": "2026-10-07T06:53:04Z",
+    "articles/hotel-control-tower-ai-decision-support-toolkit/index.html": "2026-10-07T07:49:41Z",
+    "articles/hotel-general-manager-ai-toolkit/index.html": "2026-10-07T06:53:04Z",
+    "articles/hotel-procurement-ai-toolkit/index.html": "2026-10-07T06:53:04Z",
+    "articles/workforce-rostering-productivity-ai-toolkit/index.html": "2026-10-07T06:53:04Z"
+  },
+  "deployment_evidence": [
+    {
+      "path": "articles/hotel-ota-distribution-review-management-ai-toolkit/index.html",
+      "sha": "de1eb0b63229eb6f98f1cb00a2c7cc6bf9425071",
+      "date": "2026-10-07T06:06:32Z",
+      "url": "https://github.com/AhmedElshemyOps/portfolio-website/actions/runs/37579675515"
+    },
+    {
+      "path": "articles/hotel-lean-six-sigma-ai-toolkit/index.html",
+      "sha": "936dc14eda6c32cf8bc98562285d0296959cd5b0",
+      "date": "2026-10-06T21:25:04Z",
+      "url": "https://github.com/AhmedElshemyOps/portfolio-website/actions/runs/37533675067"
+    },
+    {
+      "path": "articles/responsible-ai-governance-hotels/index.html",
+      "sha": "f1f58a23e3a1b8fa1ccac9e16c2bcd3e3e7cd013",
+      "date": "2026-10-07T07:49:41Z",
+      "url": "https://github.com/AhmedElshemyOps/portfolio-website/actions/runs/37589688955"
+    },
+    {
+      "path": "articles/hotel-sales-corporate-accounts-ai-toolkit/index.html",
+      "sha": "291501588bf15e0f0c25347045caf672a11368a6",
+      "date": "2026-10-07T06:53:04Z",
+      "url": "https://github.com/AhmedElshemyOps/portfolio-website/actions/runs/37583925188"
+    },
+    {
+      "path": "articles/hotel-kpi-dashboard-ai-toolkit/index.html",
+      "sha": "291501588bf15e0f0c25347045caf672a11368a6",
+      "date": "2026-10-07T06:53:04Z",
+      "url": "https://github.com/AhmedElshemyOps/portfolio-website/actions/runs/37583925188"
+    },
+    {
+      "path": "articles/hotel-inventory-par-management-ai-toolkit/index.html",
+      "sha": "291501588bf15e0f0c25347045caf672a11368a6",
+      "date": "2026-10-07T06:53:04Z",
+      "url": "https://github.com/AhmedElshemyOps/portfolio-website/actions/runs/37583925188"
+    },
+    {
+      "path": "articles/hotel-revenue-management-ai-toolkit/index.html",
+      "sha": "291501588bf15e0f0c25347045caf672a11368a6",
+      "date": "2026-10-07T06:53:04Z",
+      "url": "https://github.com/AhmedElshemyOps/portfolio-website/actions/runs/37583925188"
+    },
+    {
+      "path": "articles/hotel-finance-cost-control-ai-toolkit/index.html",
+      "sha": "291501588bf15e0f0c25347045caf672a11368a6",
+      "date": "2026-10-07T06:53:04Z",
+      "url": "https://github.com/AhmedElshemyOps/portfolio-website/actions/runs/37583925188"
+    },
+    {
+      "path": "articles/hotel-control-tower-ai-decision-support-toolkit/index.html",
+      "sha": "f1f58a23e3a1b8fa1ccac9e16c2bcd3e3e7cd013",
+      "date": "2026-10-07T07:49:41Z",
+      "url": "https://github.com/AhmedElshemyOps/portfolio-website/actions/runs/37589688955"
+    },
+    {
+      "path": "articles/hotel-general-manager-ai-toolkit/index.html",
+      "sha": "291501588bf15e0f0c25347045caf672a11368a6",
+      "date": "2026-10-07T06:53:04Z",
+      "url": "https://github.com/AhmedElshemyOps/portfolio-website/actions/runs/37583925188"
+    },
+    {
+      "path": "articles/hotel-procurement-ai-toolkit/index.html",
+      "sha": "291501588bf15e0f0c25347045caf672a11368a6",
+      "date": "2026-10-07T06:53:04Z",
+      "url": "https://github.com/AhmedElshemyOps/portfolio-website/actions/runs/37583925188"
+    },
+    {
+      "path": "articles/workforce-rostering-productivity-ai-toolkit/index.html",
+      "sha": "291501588bf15e0f0c25347045caf672a11368a6",
+      "date": "2026-10-07T06:53:04Z",
+      "url": "https://github.com/AhmedElshemyOps/portfolio-website/actions/runs/37583925188"
+    }
+  ],
+  "updated_date": "2026-10-14",
+  "updated_articles": [
+    "article-tour-guide-storytelling-system",
+    "hotel-housekeeping-management-ai-toolkit",
+    "hotel-ai-prompting-framework",
+    "hotel-operations-manager-ai-toolkit",
+    "amsterdam-product-discovery-01-research-plan",
+    "policy-vs-sop-work-instruction-checklist-form-template",
+    "article-tour-cost-worksheet-city-tour",
+    "dmc-operations-ai-prompts"
+  ]
+}

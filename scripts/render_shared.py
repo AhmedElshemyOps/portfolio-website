@@ -102,6 +102,13 @@ def render(source, path, root=ROOT):
         asset=root/match[1].lstrip('/')
         return match[1]+'?v='+hashlib.sha256(asset.read_bytes()).hexdigest()[:12] if asset.is_file() else match[0]
     source=re.sub(r'(/assets/(?:css|js)/[^"?\s]+\.(?:css|js))(?:\?[^"\s]*)?(?=")',revision,source)
+    # Keep ownership verification on future rendered pages without loading ads.
+    config_path = root / 'assets/js/site-config.js'
+    config = config_path.read_text() if config_path.is_file() else ''
+    publisher = re.search(r'adsensePublisherId:\s*"(ca-pub-\d+)"', config)
+    if publisher:
+        source = re.sub(r'<meta\b[^>]*name="google-adsense-account"[^>]*>', '', source)
+        source = source.replace('</head>', '<meta name="google-adsense-account" content="'+publisher[1]+'"/></head>', 1)
     from apply_library_navigation import render as render_library_navigation
     from render_projects import render as render_projects
     source = render_projects(source, path, root) if path.relative_to(root).as_posix() in {"index.html", "projects/index.html"} and 'class="project' in source else source
