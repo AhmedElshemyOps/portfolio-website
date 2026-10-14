@@ -7,6 +7,7 @@ from apply_library_navigation import render as render_navigation
 from render_series_banners import render as render_banner
 def render(s,p):return render_banner(render_navigation(s,p),p)
 from approved_article_revisions import approved_revisions
+from approved_seo_metadata import approved_schema
 BASE='https://ahmedqualityops.com';BASELINE='70c38c0ea60f9f565db0d974750173999351c3c5'
 class LibraryNavigationTests(unittest.TestCase):
  def test_visible_breadcrumbs_match_schema_and_canonical(self):
@@ -26,7 +27,7 @@ class LibraryNavigationTests(unittest.TestCase):
     n=next(n for n in parse(s).nodes if 'article-body' in n['attrs'].get('class','').split());return s[n['start']:n['end']]
    self.assertEqual(body(old),body(new),str(p))
    self.assertEqual(re.findall(r'<pre\b.*?</pre>',old,re.S),re.findall(r'<pre\b.*?</pre>',new,re.S))
-   olddates=[(x.get('datePublished'),x.get('dateModified')) for x in schema_nodes(old)[0] if x.get('datePublished') or x.get('dateModified')];newdates=[(x.get('datePublished'),x.get('dateModified')) for x in schema_nodes(new)[0] if x.get('datePublished') or x.get('dateModified')];self.assertEqual(olddates,newdates,str(p))
+   olddates=[(x.get('datePublished'),x.get('dateModified')) for x in approved_schema(schema_nodes(old)[0],p.parent.name) if x.get('datePublished') or x.get('dateModified')];newdates=[(x.get('datePublished'),x.get('dateModified')) for x in schema_nodes(new)[0] if x.get('datePublished') or x.get('dateModified')];self.assertEqual(olddates,newdates,str(p))
  def test_sharing_assets_are_real_small_pngs_and_described(self):
   for row in json.loads((ROOT/'maintenance/seo/library-sharing-covers.json').read_text()):
    p=ROOT/row['image'].lstrip('/');data=p.read_bytes();self.assertEqual(data[:8],b'\x89PNG\r\n\x1a\n');self.assertEqual(struct.unpack('>II',data[16:24]),(1200,630));self.assertLess(len(data),60000)

@@ -20,7 +20,7 @@
       "category": "Amsterdam Product Discovery",
       "summary": "Part 01 of a 12-part Amsterdam tourism product-management case study: framing the destination decision, hypotheses, research design, data provenance, sampling and ethics before deciding what to build.",
       "canonical": "https://ahmedqualityops.com/articles/amsterdam-product-discovery-01-research-plan/index.html",
-      "readingMinutes": 16,
+      "readingMinutes": 17,
       "primaryCategory": "Product Strategy & Development",
       "subcategory": "Market Intelligence & Research",
       "tags": [
@@ -733,7 +733,7 @@
       "category": "AI & Tourism Operations",
       "summary": "DMC operations teams can use AI to organise files, identify gaps and structure briefs, but confirmations, assignments and disruption decisions must stay in approved systems.",
       "canonical": "https://ahmedqualityops.com/articles/dmc-operations-ai-prompts/index.html",
-      "readingMinutes": 21,
+      "readingMinutes": 23,
       "primaryCategory": "AI Prompt Engineering & Toolkits",
       "subcategory": "Tourism & DMC AI Toolkits",
       "tags": [
@@ -839,7 +839,7 @@
       "category": "Hotel & Serviced Apartment AI Operations",
       "summary": "How to write professional, governed AI prompts for hotel apartment and serviced-apartment operations using the HOTEL framework.",
       "canonical": "https://ahmedqualityops.com/articles/hotel-ai-prompting-framework/index.html",
-      "readingMinutes": 27,
+      "readingMinutes": 29,
       "primaryCategory": "AI Prompt Engineering & Toolkits",
       "subcategory": "Prompt Engineering Frameworks",
       "tags": [
@@ -1395,7 +1395,7 @@
       "category": "Hotel & Serviced Apartment AI Operations",
       "summary": "10 professional AI prompts for room readiness, inspections, linen/PAR, deep cleaning, defects, productivity and housekeeping handover.",
       "canonical": "https://ahmedqualityops.com/articles/hotel-housekeeping-management-ai-toolkit/index.html",
-      "readingMinutes": 35,
+      "readingMinutes": 38,
       "primaryCategory": "AI Prompt Engineering & Toolkits",
       "subcategory": "Hotel & Serviced Apartment AI Toolkits",
       "tags": [
@@ -1586,7 +1586,7 @@
       "category": "Hotel & Serviced Apartment AI Operations",
       "summary": "10 professional AI prompts for daily hotel apartment operations, priorities, handovers, exceptions and management control.",
       "canonical": "https://ahmedqualityops.com/articles/hotel-operations-manager-ai-toolkit/index.html",
-      "readingMinutes": 34,
+      "readingMinutes": 40,
       "primaryCategory": "AI Prompt Engineering & Toolkits",
       "subcategory": "Hotel & Serviced Apartment AI Toolkits",
       "tags": [

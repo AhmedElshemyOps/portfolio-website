@@ -6,7 +6,9 @@ from approved_article_revisions import approved_revisions
 class SeoBatchTests(unittest.TestCase):
  def test_original_articles_routes_and_bodies_preserved(self):
   for p in (ROOT/'articles').rglob('index.html'):
-   old=subprocess.check_output(['git','show','seo-baseline-2026-10-08:'+str(p.relative_to(ROOT))],cwd=ROOT,text=True);new=p.read_text()
+   # Immutable parent of the original SEO repair; the old local-only ref was
+   # absent from fresh clones and made this regression test non-portable.
+   old=subprocess.check_output(['git','show','47aaa1df95fca4d17461c8fcf92a33fa93afcdcb:'+str(p.relative_to(ROOT))],cwd=ROOT,text=True);new=p.read_text()
    manifest=json.loads((ROOT/'maintenance/seo/editorial-batch-manifest.json').read_text())
    expected=old
    for edit in manifest['body_replacements'].get(str(p.relative_to(ROOT)),[]):expected=expected.replace(edit['old'],edit['new'])
