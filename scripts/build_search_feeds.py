@@ -13,12 +13,17 @@ def build():
   source=p.read_text();dom=DOM(source).root;md={n.attrs.get('name',n.attrs.get('property','')):n.attrs.get('content','') for n in dom.all('meta')};canonical=next((n.attrs.get('href') for n in dom.all('link') if n.attrs.get('rel')=='canonical'),None)
   if 'noindex' in md.get('robots','').lower() or not canonical or canonical in seen:continue
   seen.add(canonical)
-  nodes,_=schema_nodes(source);dates=[n.get('dateModified') for n in nodes if n.get('dateModified')];date=max(dates)[:10] if dates else None
-  # Significant homepage/project polish is documented in the release commit; do not imply article editorial changes.
-  if p==ROOT/'index.html' or p.relative_to(ROOT).parts[0]=='projects':date='2026-10-08'
+  nodes,_=schema_nodes(source)
+  page_node=next((n for n in nodes if canonical in (n.get('mainEntityOfPage'),n.get('@id'),n.get('url'))),None)
+  if page_node is None:
+   page_node=next((n for n in nodes if n.get('@type') in ('Article','CollectionPage')),None)
+  modified=page_node.get('dateModified') if page_node else None
+  published=page_node.get('datePublished') if page_node else None
+  modified=modified[:10] if modified else md.get('article:modified_time','')[:10] or None
+  published=published[:10] if published else md.get('article:published_time','')[:10] or None
   element=ET.SubElement(root,'url');ET.SubElement(element,'loc').text=canonical
-  if date:ET.SubElement(element,'lastmod').text=date
-  facts[canonical]={'date':date,'basis':'existing page dateModified' if dates else 'documented 8 October homepage/project release' if date else 'unknown; omitted'}
+  if modified:ET.SubElement(element,'lastmod').text=modified
+  facts[canonical]={'date':modified,'published':published,'basis':'page main-entity dateModified' if modified and page_node and page_node.get('dateModified') else 'article:modified_time' if modified else 'no modification date; omitted'}
  ET.indent(root);ET.ElementTree(root).write(ROOT/'sitemap.xml',encoding='utf-8',xml_declaration=True)
  ET.register_namespace('',ATOM)
  def el(parent,name,text=None,**attrs):
@@ -27,7 +32,7 @@ def build():
  articles=[]
  for x in registry:
   if x['type']!='Article':continue
-  date=facts.get(BASE+x['url'],{}).get('date') or x.get('updated')
+  date=facts.get(BASE+x['url'],{}).get('date') or x.get('updated') or facts.get(BASE+x['url'],{}).get('published')
   if not date:continue
   articles.append((date,x))
  latest=max(x[0] for x in articles);el(feed,'updated',latest+'T00:00:00+04:00')
