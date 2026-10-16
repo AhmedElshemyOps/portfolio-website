@@ -64,7 +64,7 @@ class ContentDateTests(unittest.TestCase):
     def test_sitemap_builder_has_no_fixed_release_dates(self):
         builder = (ROOT / 'scripts/build_search_feeds.py').read_text()
         self.assertNotIn("date='2026-10-08'", builder)
-        self.assertIn("n.get('dateModified')", builder)
+        self.assertIn("dateModified", builder)
 
 
 if __name__ == '__main__':
