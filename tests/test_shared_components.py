@@ -14,6 +14,15 @@ from update_site_contact import apply as update_contact
 
 
 class SharedComponents(unittest.TestCase):
+    def test_homepage_search_assets_survive_rendering_without_duplicates(self):
+        source = '<html><head><link rel="stylesheet" href="/assets/css/homepage-editorial.css"/></head><body><header class="masthead"></header><main>Unchanged</main></body></html>'
+        result = render(source, ROOT / 'index.html')
+        self.assertEqual(result.count('/assets/js/discovery.js'), 1)
+        self.assertEqual(result.count('/assets/css/discovery.css'), 1)
+        self.assertLess(result.index('/assets/css/discovery.css'), result.index('/assets/css/homepage-editorial.css'))
+        self.assertIn('<main>Unchanged</main>', result)
+        self.assertEqual(result, render(result, ROOT / 'index.html'))
+
     def test_duplicate_reader_assets_are_removed_without_changing_content_or_order(self):
         css = '<link rel="stylesheet" href="/assets/css/reader-experience.css"/>'
         script = '<script defer src="/assets/js/reader-experience.js"></script>'

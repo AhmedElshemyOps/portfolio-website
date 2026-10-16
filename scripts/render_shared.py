@@ -26,6 +26,17 @@ def render(source, path, root=ROOT):
     from bundle_page_styles import unpack, pack
     source = unpack(source)
     homepage = path == root / 'index.html'
+    if homepage:
+        # The shared header exposes Search on the homepage too. Keep its
+        # behaviour and styles present, once, ahead of homepage overrides.
+        source = re.sub(r'<link\b[^>]*href="/assets/css/discovery\.css[^\"]*"[^>]*>', '', source)
+        source = re.sub(r'<script\b[^>]*src="/assets/js/discovery\.js[^\"]*"[^>]*>\s*</script>', '', source)
+        search_assets = '<link rel="stylesheet" href="/assets/css/discovery.css"/><script defer src="/assets/js/discovery.js"></script>'
+        first_style = re.search(r'<link\b[^>]*rel="stylesheet"[^>]*>', source)
+        if first_style:
+            source = source[:first_style.start()] + search_assets + source[first_style.start():]
+        else:
+            source = source.replace('</head>', search_assets + '</head>', 1)
     nodes = parse(source).nodes
     replacements = []
     reader_assets = set()
