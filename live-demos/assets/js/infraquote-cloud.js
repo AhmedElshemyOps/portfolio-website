@@ -25,7 +25,7 @@
   function status(text) {
     $("cloudStatus").textContent = text;
   }
-  async function request(path, method = "GET", body) {
+  async function request(path, method = "GET", body, extraHeaders = {}) {
     if (!configured())
       throw Error(
         "The optional shared workspace is not connected. Local tools are available.",
@@ -41,17 +41,27 @@
         "Content-Type": "application/json",
         ...(session ? { Authorization: "Bearer " + session.access_token } : {}),
         Prefer: "return=representation",
+        ...extraHeaders,
       },
       ...(body ? { body: JSON.stringify(body) } : {}),
     });
     const data = await response.json().catch(() => null);
-    if (!response.ok)
+    if (!response.ok) {
+      if (response.status === 401 || response.status === 403) {
+        workspace = "";
+        role = "";
+        versions = [];
+        handovers = [];
+        $("cloudVersions")?.replaceChildren();
+        $("cloudRole").textContent = "";
+      }
       throw Error(
         data?.message ||
           data?.msg ||
           data?.error_description ||
           "Shared workspace request failed.",
       );
+    }
     return data;
   }
   async function run(action) {
@@ -79,6 +89,7 @@
       workspace = $("cloudWorkspace").value;
       role = memberships.find((m) => m.workspace_id === workspace)?.role || "";
       $("cloudRole").textContent = role ? `Your role: ${role}` : "";
+      $("cloudBackup").hidden = role !== "admin";
     };
     $("cloudSignedIn").hidden = false;
     $("cloudSignIn").hidden = true;
@@ -136,7 +147,7 @@
   document.addEventListener("DOMContentLoaded", () => {
     const panel = document.createElement("details");
     panel.className = "cloud-workspace";
-    panel.innerHTML = `<summary>Shared company workspace · optional</summary><div class="tool-content"><p id="cloudStatus" role="status">${configured() ? "Connected to your configured backend. Sign in to access your company." : "Not connected yet. All local quotation tools work on GitHub Pages without a hosting purchase."}</p><div id="cloudSignIn" ${configured() ? "" : "hidden"}><div class="form-grid"><label>Email<input id="cloudEmail" type="email" autocomplete="username"></label><label>Password<input id="cloudPassword" type="password" autocomplete="current-password"></label></div><button type="button" class="btn secondary" id="cloudLogin">Sign in</button><p>Create users in your backend’s account settings. Credentials are not saved by this demo.</p></div><div id="cloudSignedIn" hidden><label>Company workspace<select id="cloudWorkspace"></select></label><p id="cloudRole"></p><div class="tool-row"><label>New company name<input id="cloudCompanyName"></label><button type="button" class="btn secondary" id="cloudCreate">Create company workspace</button></div><p>Sharing sends the selected draft, rates or template to your configured company backend. Uploads are manual.</p><div class="tool-row"><button class="btn secondary" type="button" id="cloudSave">Save draft to company</button><button class="btn secondary" type="button" id="cloudApproved">Upload latest approved snapshot</button><button class="btn secondary" type="button" id="cloudLoad">Load versions and handovers</button><button class="btn secondary" type="button" id="cloudSaveDefaults">Save company defaults</button><button class="btn secondary" type="button" id="cloudUploadTools">Upload local templates and rates</button><button class="btn secondary" type="button" id="cloudDownloadTools">Load company templates and rates</button><button class="btn secondary" type="button" id="cloudBackup">Download company backup</button></div><details><summary>Administrator: add a team member</summary><div class="form-grid"><label>Existing account user ID<input id="cloudMember"></label><label>Role<select id="cloudMemberRole"><option value="sales">Sales</option><option value="operations">Operations</option><option value="admin">Administrator</option></select></label></div><button class="btn secondary" type="button" id="cloudAddMember">Add or update member</button></details><div id="cloudVersions"></div><button type="button" class="btn secondary" id="cloudLogout">Sign out</button></div></div>`;
+    panel.innerHTML = `<summary>Shared company workspace · optional</summary><div class="tool-content"><p id="cloudStatus" role="status">${configured() ? "Connected to your configured backend. Sign in to access your company." : "Not connected yet. All local quotation tools work on GitHub Pages without a hosting purchase."}</p><div id="cloudSignIn" ${configured() ? "" : "hidden"}><div class="form-grid"><label>Email<input id="cloudEmail" type="email" autocomplete="username"></label><label>Password<input id="cloudPassword" type="password" autocomplete="current-password"></label></div><button type="button" class="btn secondary" id="cloudLogin">Sign in</button><p>Create users in your backend’s account settings. Credentials are not saved by this demo.</p></div><div id="cloudSignedIn" hidden><label>Company workspace<select id="cloudWorkspace"></select></label><p id="cloudRole"></p><div class="tool-row"><label>New company name<input id="cloudCompanyName"></label><button type="button" class="btn secondary" id="cloudCreate">Create company workspace</button></div><p>Sharing sends the selected draft, rates or template to your configured company backend. Uploads are manual.</p><div class="tool-row"><button class="btn secondary" type="button" id="cloudSave">Save draft to company</button><button class="btn secondary" type="button" id="cloudApproved">Upload latest approved snapshot</button><button class="btn secondary" type="button" id="cloudLoad">Load versions and handovers</button><button class="btn secondary" type="button" id="cloudSaveDefaults">Save company defaults</button><button class="btn secondary" type="button" id="cloudUploadTools">Upload local templates and rates</button><button class="btn secondary" type="button" id="cloudDownloadTools">Load company templates and rates</button><button class="btn secondary" type="button" id="cloudBackup" hidden>Download complete company backup (admin)</button></div><details><summary>Administrator: add a team member</summary><div class="form-grid"><label>Existing account user ID<input id="cloudMember"></label><label>Role<select id="cloudMemberRole"><option value="sales">Sales</option><option value="operations">Operations</option><option value="admin">Administrator</option></select></label></div><button class="btn secondary" type="button" id="cloudAddMember">Add or update member</button><label>Member account ID to remove<input id="cloudRemoveMember"></label><button class="btn secondary" type="button" id="cloudRemoveMemberButton">Revoke workspace access</button></details><div id="cloudVersions"></div><button type="button" class="btn secondary" id="cloudLogout">Sign out</button></div></div>`;
     document.querySelector(".workflow-tools").append(panel);
     $("cloudLogin").onclick = () =>
       run(async () => {
@@ -215,6 +226,7 @@
             clientDocument: v.document,
             reviewedAt: v.at,
             reviewConfirmed: true,
+            claimedFinalPrice: v.total,
           },
           approve: true,
         });
@@ -238,7 +250,22 @@
           member_user: $("cloudMember").value,
           member_role: $("cloudMemberRole").value,
         });
+        await listWorkspaces();
         status("Team member role saved by the backend.");
+      });
+    $("cloudRemoveMemberButton").onclick = () =>
+      run(async () => {
+        selected();
+        const member = $("cloudRemoveMember").value.trim();
+        if (!/^[0-9a-f-]{36}$/i.test(member))
+          throw Error("Enter the member account UUID to revoke.");
+        await request("/rest/v1/rpc/iq_remove_member", "POST", {
+          target: workspace,
+          member_user: member,
+        });
+        $("cloudRemoveMember").value = "";
+        await listWorkspaces();
+        status("Workspace access revoked. The member loses database access immediately.");
       });
     $("cloudSaveDefaults").onclick = () =>
       run(async () => {
@@ -322,29 +349,48 @@
     $("cloudBackup").onclick = () =>
       run(async () => {
         selected();
-        const names =
-          role === "admin"
-            ? [
-                "iq_workspaces",
-                "iq_members",
-                "iq_rates",
-                "iq_templates",
-                "iq_versions",
-                "iq_handovers",
-                "iq_audit",
-              ]
-            : role === "sales"
-              ? ["iq_rates", "iq_templates", "iq_versions", "iq_handovers"]
-              : ["iq_handovers"];
-        const backup = {
-          format: "infraquote-company-backup-v1",
+        if (role !== "admin")
+          throw Error("Only a workspace administrator can export the complete company backup.");
+        const definitions = [
+          ["iq_workspaces", "id"],
+          ["iq_members", "user_id"],
+          ["iq_rates", "id"],
+          ["iq_templates", "id"],
+          ["iq_versions", "id"],
+          ["iq_handovers", "version_id"],
+          ["iq_audit", "id"],
+        ];
+        const pageSize = 500;
+        const manifest = {
+          complete: false,
+          format: "infraquote-company-backup-v2",
           exportedAt: new Date().toISOString(),
           workspace,
+          tables: {},
         };
-        for (const table of names)
-          backup[table] = await request(
-            `/rest/v1/${table}?${table === "iq_workspaces" ? "id" : "workspace_id"}=eq.${workspace}`,
-          );
+        const backup = { manifest };
+        for (const [table, key] of definitions) {
+          const rows = [];
+          let offset = 0;
+          while (true) {
+            const page = await request(
+              `/rest/v1/${table}?${table === "iq_workspaces" ? "id" : "workspace_id"}=eq.${workspace}&select=*&order=${key}.asc&limit=${pageSize}&offset=${offset}`,
+            );
+            if (!Array.isArray(page) || page.length > pageSize)
+              throw Error(`Could not verify complete backup page for ${table}.`);
+            rows.push(...page);
+            if (page.length < pageSize) break;
+            offset += pageSize;
+            if (offset > 1000000)
+              throw Error(`Backup exceeds safe pagination limit for ${table}; no file was created.`);
+          }
+          backup[table] = rows;
+          manifest.tables[table] = { records: rows.length };
+        }
+        if (backup.iq_workspaces.length !== 1 || backup.iq_workspaces[0].id !== workspace)
+          throw Error("Workspace identity check failed; no backup file was created.");
+        manifest.complete = true;
+        manifest.completedAt = new Date().toISOString();
         const url = URL.createObjectURL(
           new Blob([JSON.stringify(backup, null, 2)], {
             type: "application/json",
@@ -355,7 +401,7 @@
         a.download = "InfraQuote-company-backup.json";
         a.click();
         setTimeout(() => URL.revokeObjectURL(url), 1000);
-        status("Company backup downloaded for your role. Keep it private.");
+        status("Complete company backup downloaded with a per-table record manifest. Keep it private.");
       });
   });
 })();
