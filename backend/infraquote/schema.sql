@@ -164,7 +164,6 @@ begin
   else server_before_vat:=server_final; end if;
   if abs(server_final-coalesce((payload->>'claimedFinalPrice')::numeric,-1))>0.02 then raise exception 'Quotation total does not reconcile with server-calculated costs'; end if;
  end if;
- end if;
  -- Serialize numbering within a workspace. Versions cannot be overwritten through the API.
  perform 1 from public.iq_workspaces where id=target for update;
  select coalesce(max(version),0)+1 into number from public.iq_versions where workspace_id=target and reference=q->>'quoteNo';
