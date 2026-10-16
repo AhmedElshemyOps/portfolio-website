@@ -3236,7 +3236,12 @@
     ],
     "classificationRationale": "The management system should connect current state → risk/priority → owner → action → deadline → verification → learning . Its purpose is not more reporting. It is faster recognition of meaningful exceptions and more reliable execution.",
     "seriesKind": "Article",
-    "updated": "2026-10-07"
+    "updated": "2026-10-07",
+    "libraryConnections": [
+      "/series/hotel-apartment-operational-excellence/index.html",
+      "/articles/hotel-kpi-dashboard-ai-toolkit/index.html",
+      "/articles/hotel-revenue-management-ai-toolkit/index.html"
+    ]
   },
   {
     "id": "hotel-apartment-operating-system",
@@ -3592,7 +3597,12 @@
     ],
     "classificationRationale": "A hotel apartment control tower is a management discipline that combines verified signals, defined thresholds, ownership and decision rights. The screen is only the interface; the real system is the operating logic behind it.",
     "seriesKind": "Article",
-    "updated": "2026-10-07"
+    "updated": "2026-10-07",
+    "libraryConnections": [
+      "/series/hotel-ai-operations-playbook/index.html",
+      "/articles/hotel-finance-cost-control-ai-toolkit/index.html",
+      "/articles/hotel-kpi-dashboard-ai-toolkit/index.html"
+    ]
   },
   {
     "id": "hotel-critical-spare-parts-management",
@@ -4002,7 +4012,12 @@
     ],
     "classificationRationale": "Hotel Apartment cost control fails when teams discuss the same number with different definitions. “Cost,” “saving,” “budget variance,” “cash impact,” and “profit improvement” are not interchangeable. Article 21 creates a controlled bridge between Finance and Operations: Finance owns accounting truth; Operations explains operational reality; AI helps connect ",
     "seriesKind": "Article",
-    "updated": "2026-10-07"
+    "updated": "2026-10-07",
+    "libraryConnections": [
+      "/series/hotel-ai-operations-playbook/index.html",
+      "/articles/hotel-revenue-management-ai-toolkit/index.html",
+      "/articles/hotel-control-tower-ai-decision-support-toolkit/index.html"
+    ]
   },
   {
     "id": "hotel-first-time-right-operations",
@@ -4707,7 +4722,12 @@
     ],
     "classificationRationale": "A hotel apartment dashboard is valuable only when it helps someone decide, act, escalate or learn. More charts do not create more control. The management chain is objective → KPI → definition → trusted data → threshold → interpretation → decision → action → verification .",
     "seriesKind": "Article",
-    "updated": "2026-10-07"
+    "updated": "2026-10-07",
+    "libraryConnections": [
+      "/series/hotel-ai-operations-playbook/index.html",
+      "/articles/hotel-revenue-management-ai-toolkit/index.html",
+      "/articles/hotel-ota-distribution-review-management-ai-toolkit/index.html"
+    ]
   },
   {
     "id": "hotel-lean-six-sigma-ai-toolkit",
@@ -5060,7 +5080,12 @@
     ],
     "classificationRationale": "A guest may encounter the property first through an OTA rather than the hotel apartment's own website. Room names, images, amenities, cancellation terms, taxes, availability and review responses are therefore operational product data, not merely marketing copy. A wrong room size can create an expectation failure; a wrong bed type can become a complaint; a wr",
     "seriesKind": "Article",
-    "updated": "2026-10-07"
+    "updated": "2026-10-07",
+    "libraryConnections": [
+      "/series/hotel-ai-operations-playbook/index.html",
+      "/articles/hotel-revenue-management-ai-toolkit/index.html",
+      "/articles/hotel-reservations-ai-toolkit/index.html"
+    ]
   },
   {
     "id": "hotel-predictive-maintenance-ai-toolkit",
@@ -5483,7 +5508,12 @@
       "/series/hotel-ai-operations-playbook/index.html"
     ],
     "classificationRationale": "A reservation is more than a name and an arrival date. It is a compact operating contract connecting inventory, price, room type, occupancy, cancellation conditions, payment or billing arrangements, channel rules, special requests and the promises the property will later be expected to deliver.",
-    "seriesKind": "Article"
+    "seriesKind": "Article",
+    "libraryConnections": [
+      "/series/hotel-ai-operations-playbook/index.html",
+      "/articles/hotel-ota-distribution-review-management-ai-toolkit/index.html",
+      "/articles/hotel-revenue-management-ai-toolkit/index.html"
+    ]
   },
   {
     "id": "hotel-revenue-management-ai-toolkit",
@@ -5546,7 +5576,12 @@
     ],
     "classificationRationale": "H — Hospitality role & human owner Revenue leadership owns commercial interpretation. Reservations and Distribution control execution. Sales owns contracted account context. Finance verifies definitions. GM/commercial authority approves according to policy.",
     "seriesKind": "Article",
-    "updated": "2026-10-07"
+    "updated": "2026-10-07",
+    "libraryConnections": [
+      "/series/hotel-ai-operations-playbook/index.html",
+      "/articles/hotel-ota-distribution-review-management-ai-toolkit/index.html",
+      "/articles/hotel-kpi-dashboard-ai-toolkit/index.html"
+    ]
   },
   {
     "id": "hotel-sales-corporate-accounts-ai-toolkit",
@@ -5609,7 +5644,12 @@
     ],
     "classificationRationale": "It decides which accounts fit the property, which demand is valuable, which rate is sustainable, which commitments operations can deliver and which relationships deserve investment.",
     "seriesKind": "Article",
-    "updated": "2026-10-07"
+    "updated": "2026-10-07",
+    "libraryConnections": [
+      "/series/hotel-ai-operations-playbook/index.html",
+      "/articles/hotel-revenue-management-ai-toolkit/index.html",
+      "/articles/hotel-ota-distribution-review-management-ai-toolkit/index.html"
+    ]
   },
   {
     "id": "hotel-sop-process-design-ai-toolkit",
