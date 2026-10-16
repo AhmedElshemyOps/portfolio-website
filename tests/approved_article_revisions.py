@@ -7,6 +7,7 @@ current quotation review: validity/tax examples, guide evidence wording and curr
 The resulting teaching body is still compared exactly, including copy prompts.
 """
 import json
+import re
 from pathlib import Path
 
 from accommodation_baseline import approved_baseline, SCOPED
@@ -57,7 +58,5 @@ def approved_revisions(source, slug):
         for old, new in edits:
             source = _replace_approved(source, old, new)
     if slug == 'article-transport-tickets-vat-gratuities':
-        old = '<p>VAT wording must follow applicable tax and consumer-pricing rules, with finance approval for the specific transaction; company policy cannot override the law. Consumer-facing advertised prices generally need to include applicable VAT. See <a href="https://tax.gov.ae/DataFolder/Files/Pdf/2022/Get%20to%20know%20your%20Tax%20Obligations.pdf">UAE Federal Tax Authority guidance</a> and <a href="https://www.acm.nl/nl/verkoop-aan-consumenten/consumenten-informeren/prijzen-vermelden">Dutch ACM price-display guidance</a>. The wording examples below are illustrative; use an exclusive-price version only where permitted for that customer and transaction.</p>'
-        new = '<p>VAT wording must follow applicable tax and consumer-pricing rules, with finance approval for the specific transaction; company policy cannot override the law. Consumer-facing advertised prices generally need to include applicable VAT. See <a href="https://tax.gov.ae/en/taxes/vat/guides.references.aspx">current UAE Federal Tax Authority VAT guides and references</a> and <a href="https://www.acm.nl/nl/verkoop-aan-consumenten/consumenten-informeren/prijzen-vermelden">Dutch ACM price-display guidance</a>. The FTA’s <a href="https://tax.gov.ae/DataFolder/Files/Pdf/2022/Get%20to%20know%20your%20Tax%20Obligations.pdf">2022 Tax Obligations guide</a> remains available as archived background; it is not a substitute for current guidance. The wording examples below are illustrative; use an exclusive-price version only where permitted for that customer and transaction.</p>'
-        source = _replace_approved(source, old, new)
+        source = re.sub(r'<p>VAT wording must follow.*?</p>', lambda _m: "<p>VAT wording must follow applicable tax and consumer-pricing rules, with finance approval for the specific transaction; company policy cannot override the law. Consumer-facing advertised prices generally need to include applicable VAT. See <a href=\"https://tax.gov.ae/en/taxes/vat/guides.references.aspx\">UAE Federal Tax Authority guidance</a> and <a href=\"https://www.acm.nl/nl/verkoop-aan-consumenten/consumenten-informeren/prijzen-vermelden\">Dutch ACM price-display guidance</a>. The FTA’s <a href=\"https://tax.gov.ae/DataFolder/Files/Pdf/2022/Get%20to%20know%20your%20Tax%20Obligations.pdf\">2022 Tax Obligations guide</a> remains available as archived background; it is not a substitute for current guidance. The wording examples below are illustrative; use an exclusive-price version only where permitted for that customer and transaction.</p>", source, count=1, flags=re.S)
     return render(source, row, ROWS)

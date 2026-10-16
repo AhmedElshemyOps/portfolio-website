@@ -8,8 +8,8 @@
         "new": "In Dubai, DET reported 237 recognised hotels in the July 2026 third cycle, assessed against 19 sustainability requirements. In September 2026, DET announced an expanded framework of 27 sustainability parameters for upcoming cycles; this does not mean the July cohort was assessed against the expanded framework. See the <a href=\"https://www.dubaidet.gov.ae/en/newsroom/press-releases/dubai-sustainable-tourism-stamp-2026\">July cycle announcement</a> and <a href=\"https://www.dubaidet.gov.ae/ar/newsroom/press-releases/det-launches-sustainability-courses\">September framework announcement (Arabic)</a>."
       },
       {
-        "old": "Dubai Department of Economy and Tourism \u2014 Dubai Sustainable Tourism Stamp and 19 sustainability requirements.",
-        "new": "Dubai Department of Economy and Tourism \u2014 July 2026 cycle with 19 requirements; September 2026 announcement of 27 parameters for upcoming cycles."
+        "old": "Dubai Department of Economy and Tourism — Dubai Sustainable Tourism Stamp and 19 sustainability requirements.",
+        "new": "Dubai Department of Economy and Tourism — July 2026 cycle with 19 requirements; September 2026 announcement of 27 parameters for upcoming cycles."
       }
     ],
     "articles/amsterdam-product-discovery-05-segmentation-language/index.html": [
@@ -24,24 +24,24 @@
     ],
     "articles/amsterdam-product-discovery-09-risk-responsibility/index.html": [
       {
-        "old": "Its current\nthreshold guidance says this applies where the business has more than 10\nemployees, annual turnover above \u20ac2 million, or both.",
-        "new": "The Dutch regulator ACM describes the threshold as 10 or more employees, annual turnover above \u20ac2 million, or both. The service-provider microenterprise exemption must also be checked against the legal definition and applicable financial criteria; entity size and turnover alone should not be assumed from this research. See <a href=\"https://www.acm.nl/nl/toegankelijkheid/toegankelijkheid-van-e-handelsdiensten-en-elektronische-communicatiediensten\">ACM guidance on accessible e-commerce</a>."
+        "old": "Its current\nthreshold guidance says this applies where the business has more than 10\nemployees, annual turnover above €2 million, or both.",
+        "new": "The Dutch regulator ACM describes the threshold as 10 or more employees, annual turnover above €2 million, or both. The service-provider microenterprise exemption must also be checked against the legal definition and applicable financial criteria; entity size and turnover alone should not be assumed from this research. See <a href=\"https://www.acm.nl/nl/toegankelijkheid/toegankelijkheid-van-e-handelsdiensten-en-elektronische-communicatiediensten\">ACM guidance on accessible e-commerce</a>."
       }
     ],
     "articles/article-transport-tickets-vat-gratuities/index.html": [
       {
-        "old": "VAT and tax wording should be handled carefully according to the company\u2019s official policy. The quotation should not be vague. It should state whether the price is inclusive or exclusive if the company policy requires that clarity.",
+        "old": "VAT and tax wording should be handled carefully according to the company’s official policy. The quotation should not be vague. It should state whether the price is inclusive or exclusive if the company policy requires that clarity.",
         "new": "VAT wording must follow applicable tax and consumer-pricing rules, with finance approval for the specific transaction; company policy cannot override the law. Consumer-facing advertised prices generally need to include applicable VAT. See <a href=\"https://tax.gov.ae/DataFolder/Files/Pdf/2022/Get%20to%20know%20your%20Tax%20Obligations.pdf\">UAE Federal Tax Authority guidance</a> and <a href=\"https://www.acm.nl/nl/verkoop-aan-consumenten/consumenten-informeren/prijzen-vermelden\">Dutch ACM price-display guidance</a>. The wording examples below are illustrative; use an exclusive-price version only where permitted for that customer and transaction."
       },
       {
-        "old": "VAT wording should follow the company\u2019s official finance policy. The quotation should clearly state whether prices are inclusive or exclusive where applicable. The most important point is to avoid surprising the client later.",
-        "new": "VAT wording should follow the applicable law and the finance team\u2019s approved tax treatment. State the total consumer price including applicable VAT where required; do not treat an inclusive or exclusive price as an unrestricted company choice."
+        "old": "VAT wording should follow the company’s official finance policy. The quotation should clearly state whether prices are inclusive or exclusive where applicable. The most important point is to avoid surprising the client later.",
+        "new": "VAT wording must follow applicable tax and consumer-pricing rules, with finance approval for the specific transaction; company policy cannot override the law. Consumer-facing advertised prices generally need to include applicable VAT. See <a href=\"https://tax.gov.ae/en/taxes/vat/guides.references.aspx\">UAE Federal Tax Authority guidance</a> and <a href=\"https://www.acm.nl/nl/verkoop-aan-consumenten/consumenten-informeren/prijzen-vermelden\">Dutch ACM price-display guidance</a>. The FTA’s <a href=\"https://tax.gov.ae/DataFolder/Files/Pdf/2022/Get%20to%20know%20your%20Tax%20Obligations.pdf\">2022 Tax Obligations guide</a> remains available as archived background; it is not a substitute for current guidance. The wording examples below are illustrative; use an exclusive-price version only where permitted for that customer and transaction."
       }
     ],
     "articles/article-air-connectivity-dmc-market-intelligence/index.html": [
       {
         "old": "Zayed International Airport handled a record 32.5 million passengers in 2025.",
-        "new": "Zayed International Airport handled a record 32.5 million passengers in 2025, according to <a href=\"https://www.adairports.ae/en/pressrelease/2026/01/abu-dhabi-airports-closes-2025-with-record-traffic-as--zayed-international-emerges-as-emea\">Abu Dhabi Airports\u2019 January 2026 announcement</a>. This is airport passenger traffic, not a count of unique inbound tourists or bookings available to a DMC."
+        "new": "Zayed International Airport handled a record 32.5 million passengers in 2025, according to <a href=\"https://www.adairports.ae/en/pressrelease/2026/01/abu-dhabi-airports-closes-2025-with-record-traffic-as--zayed-international-emerges-as-emea\">Abu Dhabi Airports’ January 2026 announcement</a>. This is airport passenger traffic, not a count of unique inbound tourists or bookings available to a DMC."
       }
     ]
   },
