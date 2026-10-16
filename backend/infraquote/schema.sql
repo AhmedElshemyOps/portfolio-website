@@ -66,7 +66,7 @@ create policy templates_delete on public.iq_templates for delete to authenticate
 create policy versions_read on public.iq_versions for select to authenticated using(public.iq_role(workspace_id) in ('admin','sales'));
 create policy handovers_read on public.iq_handovers for select to authenticated using(public.iq_role(workspace_id) is not null);
 create policy audit_read on public.iq_audit for select to authenticated using(public.iq_role(workspace_id)='admin');
-create function public.iq_create_workspace(workspace_name text) returns uuid language plpgsql security definer set search_path='' as $$
+create function public.iq_create_workspace(workspace_name text) returns uuid language plpgsql security definer set search_path='' as $$$
 declare result uuid;
 begin
  if auth.uid() is null then raise exception 'Sign in first'; end if;
@@ -85,7 +85,7 @@ begin
  insert into public.iq_members values(target,member_user,member_role) on conflict(workspace_id,user_id) do update set role=excluded.role;
  insert into public.iq_audit(workspace_id,actor,action,item_id) values(target,auth.uid(),'member-role-updated',member_user);
 end $$;
-create function public.iq_remove_member(target uuid, member_user uuid) returns void language plpgsql security definer set search_path='' as $
+create function public.iq_remove_member(target uuid, member_user uuid) returns void language plpgsql security definer set search_path='' as $$
 begin
  if auth.uid() is null or public.iq_role(target) is distinct from 'admin' then raise exception 'Administrator required'; end if;
  if member_user is null then raise exception 'Member is required'; end if;
@@ -93,8 +93,8 @@ begin
  delete from public.iq_members where workspace_id=target and user_id=member_user;
  if not found then raise exception 'Workspace member not found'; end if;
  insert into public.iq_audit(workspace_id,actor,action,item_id) values(target,auth.uid(),'member-removed',member_user);
-end $;
-create function public.iq_save_version(target uuid, payload jsonb, approve boolean default false) returns uuid language plpgsql security definer set search_path='' as $
+end $$;
+create function public.iq_save_version(target uuid, payload jsonb, approve boolean default false) returns uuid language plpgsql security definer set search_path='' as $$
 declare result uuid; number integer; q jsonb; service jsonb; line jsonb; quote_cost jsonb; server_cost numeric := 0; server_pending integer := 0; verified_count integer := 0; server_raw numeric; server_before_vat numeric; server_vat numeric; server_final numeric; vat_rate numeric; round_step numeric;
 begin
  if coalesce(public.iq_role(target),'') not in ('admin','sales') then raise exception 'Sales or administrator required'; end if;
