@@ -49,10 +49,17 @@ def link_explicit_references(source,rows):
 def render(source,row,rows):
     source=link_explicit_references(source,rows)
     indexes=[r for r in rows if r['type']=='Series index' and r['series']==row['series'] and r['id']!=row['id']]
-    selected=indexes[:1]
-    candidates=[r for r in rows if r['id']!=row['id'] and r['type']=='Article' and r['pillar']==row['pillar']]
-    candidates.sort(key=lambda r:(-len(terms(row)&terms(r)),-int(r['series']==row['series']),r['id']))
-    selected+=candidates[:3-len(selected)]
+    by_url={r['url']:r for r in rows}
+    preferred=row.get('libraryConnections')
+    if preferred is not None:
+        if not 1<=len(preferred)<=3 or len(preferred)!=len(set(preferred)) or row['url'] in preferred or any(url not in by_url for url in preferred):
+            raise ValueError(f"Invalid libraryConnections for {row['id']}")
+        selected=[by_url[url] for url in preferred]
+    else:
+        selected=indexes[:1]
+        candidates=[r for r in rows if r['id']!=row['id'] and r['type']=='Article' and r['pillar']==row['pillar']]
+        candidates.sort(key=lambda r:(-len(terms(row)&terms(r)),-int(r['series']==row['series']),r['id']))
+        selected+=candidates[:3-len(selected)]
     if not selected:return source
     cards=[]
     for target in selected:
