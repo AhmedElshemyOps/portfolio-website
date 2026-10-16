@@ -5,6 +5,7 @@ from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 from connect_article_methods import ROOT,load_rows,apply,href
 from apply_field_manual import parse
+from approved_article_revisions import approved_revisions
 class ArticleConnectionTests(unittest.TestCase):
  def test_curated_links_and_return_paths(self):
   rows=load_rows();self.assertEqual(len(rows),26);self.assertEqual(sum(len(r['prompts']) for r in rows),78)
@@ -51,4 +52,5 @@ class ArticleConnectionTests(unittest.TestCase):
     # Only the four recognized Markdown tables moved out of <pre>; real prompts remain exact.
     from improve_article_visuals import convert_legacy_tables
     old=convert_legacy_tables(old)
+   old=approved_revisions(old,p.parent.name)
    self.assertEqual(re.findall(r'<pre\b[^>]*>.*?</pre>',old,re.S),re.findall(r'<pre\b[^>]*>.*?</pre>',new,re.S),p)
