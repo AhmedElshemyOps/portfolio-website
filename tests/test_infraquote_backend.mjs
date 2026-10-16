@@ -188,7 +188,11 @@ await db.query("select public.iq_save_version($1,$2,false)", [
 assert.equal(await count("iq_versions"), 2);
 await rejected("select public.iq_save_version($1,$2,true)", [
   workspace,
-  { ...payload, pending: 1 },
+  {
+    ...payload,
+    pending: 0,
+    lines: [{ ...payload.lines[0], verification: "Pending verification" }],
+  },
 ]);
 await rejected("select public.iq_save_version($1,$2,true)", [
   workspace,
