@@ -29,9 +29,9 @@ def render(source, path, root=ROOT):
     if homepage:
         # The shared header exposes Search on the homepage too. Keep its
         # behaviour and styles present, once, ahead of homepage overrides.
-        source = re.sub(r'<link\b[^>]*href="/assets/css/discovery\.css[^\"]*"[^>]*>', '', source)
+        source = re.sub(r'<link\b[^>]*href="/assets/css/homepage-search\.css[^\"]*"[^>]*>', '', source)
         source = re.sub(r'<script\b[^>]*src="/assets/js/discovery\.js[^\"]*"[^>]*>\s*</script>', '', source)
-        search_assets = '<link rel="stylesheet" href="/assets/css/discovery.css"/><script defer src="/assets/js/discovery.js"></script>'
+        search_assets = '<link rel="stylesheet" href="/assets/css/homepage-search.css"/><script defer src="/assets/js/discovery.js"></script>'
         first_style = re.search(r'<link\b[^>]*rel="stylesheet"[^>]*>', source)
         if first_style:
             source = source[:first_style.start()] + search_assets + source[first_style.start():]

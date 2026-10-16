@@ -18,8 +18,8 @@ class SharedComponents(unittest.TestCase):
         source = '<html><head><link rel="stylesheet" href="/assets/css/homepage-editorial.css"/></head><body><header class="masthead"></header><main>Unchanged</main></body></html>'
         result = render(source, ROOT / 'index.html')
         self.assertEqual(result.count('/assets/js/discovery.js'), 1)
-        self.assertEqual(result.count('/assets/css/discovery.css'), 1)
-        self.assertLess(result.index('/assets/css/discovery.css'), result.index('/assets/css/homepage-editorial.css'))
+        self.assertEqual(result.count('/assets/css/homepage-search.css'), 1)
+        self.assertLess(result.index('/assets/css/homepage-search.css'), result.index('/assets/css/homepage-editorial.css'))
         self.assertIn('<main>Unchanged</main>', result)
         self.assertEqual(result, render(result, ROOT / 'index.html'))
 
