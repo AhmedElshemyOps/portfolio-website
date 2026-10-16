@@ -41,7 +41,7 @@ node tests/test_prompt_copy.cjs
 
 ## Publishing
 
-`master` is the default branch. `CNAME` records the custom domain, and `.nojekyll` supports static GitHub Pages publishing. After separately approved changes reach the publishing branch, review the Pages deployment result in GitHub Actions and verify the deployed pages. Local preview and authoring commands do not deploy by themselves. The `.github/workflows/validate-prompts.yml` workflow checks prompt content on pushes and pull requests.
+`master` is the default branch. `CNAME` records the custom domain, and `.nojekyll` supports static GitHub Pages publishing. After separately approved changes reach the publishing branch, review the Pages deployment result in GitHub Actions and verify the deployed pages. Local preview and authoring commands do not deploy by themselves. The `.github/workflows/validate-prompts.yml` workflow runs the complete release checks on pushes, pull requests and manual runs. It uses Node.js 22, Python 3.12 and pnpm 9.15.9, installs the frozen lockfile, then runs `pnpm run check:health`: all Python and JavaScript tests (including quotation calculations, workspace and backend permissions), pinned prompt sources, shared templates and style bundles, local links/fragments, and article navigation. Any failed check makes the workflow fail; it does not deploy the site.
 
 ## Optional InfraQuote backend
 
