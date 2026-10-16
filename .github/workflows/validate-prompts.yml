@@ -1,18 +1,30 @@
-name: Validate article prompt content
+name: Validate website release
 on:
   push:
   pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
 jobs:
   validate:
+    name: Full release checks
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: python3 scripts/sync_hotel_prompts.py --check
-      - run: python3 -m unittest discover -s tests -p 'test_prompt_content.py'
+      - uses: pnpm/action-setup@v4
+        with:
+          version: '9.15.9'
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - run: node tests/test_prompt_copy.cjs
+          cache: pnpm
+      - name: Install pinned test dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Validate articles, quotations, templates, links and navigation
+        run: pnpm run check:health
