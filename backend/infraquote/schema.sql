@@ -66,7 +66,7 @@ create policy templates_delete on public.iq_templates for delete to authenticate
 create policy versions_read on public.iq_versions for select to authenticated using(public.iq_role(workspace_id) in ('admin','sales'));
 create policy handovers_read on public.iq_handovers for select to authenticated using(public.iq_role(workspace_id) is not null);
 create policy audit_read on public.iq_audit for select to authenticated using(public.iq_role(workspace_id)='admin');
-create function public.iq_create_workspace(workspace_name text) returns uuid language plpgsql security definer set search_path='' as $$$
+create function public.iq_create_workspace(workspace_name text) returns uuid language plpgsql security definer set search_path='' as $$
 declare result uuid;
 begin
  if auth.uid() is null then raise exception 'Sign in first'; end if;
