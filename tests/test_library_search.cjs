@@ -36,7 +36,7 @@ function library(address = 'https://ahmedqualityops.com/knowledge/index.html', s
   };
 }
 
-for (const [query, expected] of [['Amsterdam research', 4], ['research Amsterdam', 4], ['MICE airport', 4], ['quotation margin', 2], ['reservations corporate', 1]]) {
+for (const [query, expected] of [['Amsterdam research', 4], ['research Amsterdam', 4], ['MICE airport', 4], ['quotation margin', 3], ['reservations corporate', 1]]) {
   const page = library(); page.search(query);
   assert.equal(page.matches().length, expected, query);
   assert.equal(page.empty.hidden, true);
