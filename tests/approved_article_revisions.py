@@ -64,7 +64,7 @@ def approved_revisions(source, slug):
             source, count=1, flags=re.S)
         source = re.sub(
             r'(<h3 id="should-vat-be-included-in-the-tour-price".*?</h3>)\s*<p>.*?</p>',
-            r'\\1<p>VAT wording should follow the applicable law and the finance team’s approved tax treatment. State the total consumer price including applicable VAT where required; do not treat an inclusive or exclusive price as an unrestricted company choice.</p>',
+            lambda m: m.group(1) + '<p>VAT wording should follow the applicable law and the finance team’s approved tax treatment. State the total consumer price including applicable VAT where required; do not treat an inclusive or exclusive price as an unrestricted company choice.</p>',
             source, count=1, flags=re.S)
 
     return render(source, row, ROWS)
