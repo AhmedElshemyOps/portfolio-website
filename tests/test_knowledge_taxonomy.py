@@ -4,6 +4,7 @@ ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'scripts'))
 from knowledge_taxonomy import validate,render_hub
 from audit_seo import DOM,schema_nodes
 from bundle_page_styles import unpack
+from approved_article_revisions import approved_revisions
 class KnowledgeTaxonomyTests(unittest.TestCase):
  def setUp(self):self.rows=json.loads((ROOT/'content/article-registry.json').read_text())
  def test_controlled_metadata_and_series(self):
@@ -24,7 +25,7 @@ class KnowledgeTaxonomyTests(unittest.TestCase):
    def body(s):
     n=next((n for n in parse(s).nodes if 'article-body' in n['attrs'].get('class','').split()),None)
     return s[n['start']:n['end']] if n else None
-   self.assertEqual(body(old),body(new),path)
+   self.assertEqual(body(approved_revisions(old,row['id'])),body(new),path)
    dom=DOM(new).root;self.assertEqual([n.attrs['href'] for n in dom.all('link') if n.attrs.get('rel')=='canonical'],baseline['canonical'][row['url']])
    self.assertEqual(len([n for n in dom.all('aside') if 'knowledge-context' in n.attrs.get('class','')]),1)
    self.assertEqual(schema_nodes(new)[1],[])
