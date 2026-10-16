@@ -56,7 +56,7 @@ await db.query("select public.iq_add_member($1,$2,$3)", [
   "operations",
 ]);
 await db.query(
-  "insert into public.iq_rates(workspace_id,name,unit_cost,quantity,valid_from,valid_to,verified) values($1,'Private test rate',100,1,'2026-10-01','2026-12-01',true)",
+  "insert into public.iq_rates(workspace_id,name,supplier,unit_cost,quantity,currency,valid_from,valid_to,verified) values($1,'Vehicle','private supplier',100,1,'AED','2026-10-01','2026-12-01',true)",
   [workspace],
 );
 await db.query(
@@ -66,6 +66,12 @@ await db.query(
 const payload = {
   quote: {
     quoteNo: "TEST-001",
+    currency: "AED",
+    riskBuffer: 0,
+    vatMode: "exclusive",
+    pricingMethod: "margin",
+    targetMargin: 22,
+    rounding: 5,
     clientCompany: "Synthetic Client",
     tourTitle: "Test Tour",
     serviceDate: "2026-11-01",
@@ -86,14 +92,15 @@ const payload = {
         operationalNote: "Meet at entrance",
       },
     ],
-    costs: [{ supplier: "private supplier", unitCost: 100 }],
+    costs: [{ name: "Vehicle", supplier: "private supplier", quantity: 1, unitCost: 100, include: true }],
     targetMargin: 22,
   },
   lines: [
-    { name: "Vehicle", type: "Fixed", include: true, verification: "Verified" },
+    { name: "Vehicle", supplier: "private supplier", type: "Fixed", include: true, quantity: 1, unitCost: 100, verification: "Verified" },
   ],
-  blocking: 0,
-  pending: 0,
+  blocking: 999,
+  pending: 999,
+  claimedFinalPrice: 136.5,
   reviewConfirmed: true,
 };
 const version = (
@@ -104,6 +111,10 @@ const version = (
 ).rows[0].id;
 assert.equal(await count("iq_versions"), 1);
 assert.equal(await count("iq_handovers"), 1);
+const serverReview = (await db.query("select snapshot->'serverReview' review from public.iq_versions where id=$1", [version])).rows[0].review;
+assert.equal(Number(serverReview.includedCost), 100);
+assert.equal(Number(serverReview.serverFinalPrice), 136.5);
+assert.equal(Number(serverReview.verifiedRateLines), 1);
 await rejected("update public.iq_versions set approved=false where id=$1", [
   version,
 ]);
@@ -177,7 +188,25 @@ await db.query("select public.iq_save_version($1,$2,false)", [
 assert.equal(await count("iq_versions"), 2);
 await rejected("select public.iq_save_version($1,$2,true)", [
   workspace,
-  { ...payload, pending: 1 },
+  {
+    ...payload,
+    pending: 0,
+    lines: [{ ...payload.lines[0], verification: "Pending verification" }],
+  },
+]);
+await rejected("select public.iq_save_version($1,$2,true)", [
+  workspace,
+  {
+    ...payload,
+    lines: [{
+      name: "Vehicle", supplier: "forged supplier", type: "Fixed",
+      include: true, quantity: 1, unitCost: 100, verification: "Verified",
+    }],
+  },
+]);
+await rejected("select public.iq_save_version($1,$2,true)", [
+  workspace,
+  { ...payload, claimedFinalPrice: 1 },
 ]);
 await rejected("select public.iq_save_version($1,$2,true)", [
   workspace,
@@ -221,13 +250,21 @@ await rejected("insert into public.iq_members values($1,$2,$3)", [
   other,
   "admin",
 ]);
-await db.query("insert into public.iq_rates(workspace_id,name,unit_cost,quantity,currency,valid_from,valid_to) values($1,'Amsterdam guide',180,1,'EUR','2026-10-01','2026-12-01')",[workspace]);
-const dutch={...payload,quote:{...payload.quote,quoteNo:'AMS-TEST',city:'amsterdam',currency:'EUR',taxReviewed:true,vatMode:'margin'}};
+await db.query("insert into public.iq_rates(workspace_id,name,unit_cost,quantity,currency,valid_from,valid_to,verified) values($1,'Amsterdam guide',180,1,'EUR','2026-10-01','2026-12-01',true)",[workspace]);
+const dutch={...payload,quote:{...payload.quote,quoteNo:'AMS-TEST',city:'amsterdam',currency:'EUR',taxReviewed:true,vatMode:'margin',costs:[{name:'Amsterdam guide',supplier:'',quantity:1,unitCost:180,include:true}]},lines:[{name:'Amsterdam guide',supplier:'',type:'Fixed',include:true,quantity:1,unitCost:180,verification:'Verified'}],claimedFinalPrice:250};
 await rejected("select public.iq_save_version($1,$2,true)",[workspace,{...dutch,quote:{...dutch.quote,currency:'AED'}}]);
 await rejected("select public.iq_save_version($1,$2,true)",[workspace,{...dutch,quote:{...dutch.quote,taxReviewed:false}}]);
 const dutchVersion=(await db.query("select public.iq_save_version($1,$2,true) id",[workspace,dutch])).rows[0].id;
 const dutchHandover=(await db.query("select service from public.iq_handovers where version_id=$1",[dutchVersion])).rows[0].service;
 assert.equal(dutchHandover.country,'netherlands');assert.equal(dutchHandover.city,'amsterdam');assert.equal(dutchHandover.costs,undefined);
+await as(owner);
+await rejected("select public.iq_remove_member($1,$2)", [workspace, owner]);
+await db.query("select public.iq_remove_member($1,$2)", [workspace, sales]);
+assert.equal((await db.query("select 1 from public.iq_members where workspace_id=$1 and user_id=$2", [workspace, sales])).rows.length, 0);
+assert.equal((await db.query("select 1 from public.iq_audit where workspace_id=$1 and actor=$2 and action='member-removed'", [workspace, owner])).rows.length, 1);
+await as(sales);
+await rejected("select public.iq_save_version($1,$2,false)", [workspace, payload]);
+await as(owner);
 await as(null, "anon");
 for (const table of [
   "iq_workspaces",
