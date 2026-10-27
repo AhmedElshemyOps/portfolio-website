@@ -16,7 +16,7 @@ class PromptGuideTests(unittest.TestCase):
     self.assertEqual(positions,sorted(positions),str(p))
     self.assertIn('data-copy-target',b)
     self.assertNotIn('<details',b[b.index('Complete prompt'):b.index('</pre>')])
-  self.assertEqual(total,377)
+  self.assertEqual(total,385)
  def test_idempotent(self):
   for p in (ROOT/'articles').rglob('*.html'):
    s=p.read_text();self.assertEqual(migrate(s),s,str(p))

@@ -18,9 +18,7 @@ def render(source,path,root):
     nodes=parse(source).nodes
     # Keep interactive markup and its established storage/analytics hooks.
     feedback=next((n for n in nodes if 'article-feedback' in n['attrs'].get('class','').split()),None)
-    glossary=next((n for n in nodes if 'article-glossary' in n['attrs'].get('class','').split()),None)
     feedback_html=source[feedback['start']:feedback['end']] if feedback else ''
-    glossary_html=source[glossary['start']:glossary['end']] if glossary else ''
     legacy_links=[]
     for n in nodes:
         if n['tag']!='a' or 'heading-anchor' in n['attrs'].get('class','').split():continue
@@ -34,7 +32,7 @@ def render(source,path,root):
         children=[c for c in nodes if n['inner']<=c['start']<n['end']]
         legacy_links.append(dict(url=n['attrs'].get('href',''),title=next((plain(c) for c in children if c['tag']=='strong'),plain(n)),label=next((plain(c) for c in children if 'finish-card-label' in c['attrs'].get('class','').split()),'Related reading'),description='',event=n['attrs'].get('data-analytics-event','')))
     targets=[n for n in nodes if set(n['attrs'].get('class','').split())&RETIRED]
-    targets += [n for n in (feedback,glossary) if n]
+    targets += [n for n in (feedback,) if n]
     # Retire the separate back link; the finish has one stable library link.
     targets += [n for n in nodes if n['tag']=='a' and 'Back to Knowledge Hub' in source[n['inner']:n['end']] and n['attrs'].get('href')=='/knowledge/index.html']
     outer=[n for n in targets if not any(a['start']<n['start'] and a['end']>=n['end'] for a in targets)]
@@ -95,7 +93,6 @@ def render(source,path,root):
     from knowledge_taxonomy import link
     topic='<aside class="knowledge-context finish-topic" aria-label="Explore this subject"><span>Explore this subject</span><a href="'+escape(link(row['primaryCategory'],row['subcategory']),quote=True)+'">'+escape(row['subcategory'])+'</a></aside>'
     content='<section class="article-finish" aria-labelledby="article-finish-title" data-article-slug="'+escape(row['id'])+'"><header class="finish-heading"><p>Keep the momentum</p><h2 id="article-finish-title">Continue with purpose.</h2></header>'+cards+more+'<div class="finish-library"><a href="/knowledge/index.html">← All articles</a>'+progress+'</div>'+topic
-    if glossary_html:content+='<div class="finish-glossary">'+glossary_html+'</div>'
     if extra.get('reminders'):content+='<aside class="finish-reminder" aria-label="Professional verification reminder">'+''.join(extra['reminders'])+'</aside>'
     content+=feedback_html+'</section>'
     # Preserve external fragment URLs without retaining obsolete UI modules.

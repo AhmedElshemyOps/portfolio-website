@@ -15,7 +15,7 @@ class PromptParser(HTMLParser):
         attrs = dict(attrs)
         if 'data-copy-target' in attrs:
             self.targets.append(attrs['data-copy-target'])
-        if tag == 'pre' or tag == 'code':
+        if tag in ('pre', 'code') or (tag == 'div' and attrs.get('id', '').startswith('ai-source-')):
             identifier = attrs.get('id')
             if identifier:
                 if identifier in self.ids:

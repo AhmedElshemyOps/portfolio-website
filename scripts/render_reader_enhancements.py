@@ -54,4 +54,8 @@ def render(source, path, root):
             note='<!-- reader-evidence:start --><aside class="article-evidence-note" aria-label="Article evidence and review dates">'+''.join('<p>'+n+'</p>' for n in notes)+'</aside><!-- reader-evidence:end -->'
             source=source[:header['end']]+note+source[header['end']:]
     from render_article_finish import render as render_finish
-    return render_finish(source,path,root)
+    from render_article_glossaries import render as render_glossaries
+    source=render_glossaries(source,path,root)
+    from render_premium_ai_toolkit import render as render_toolkits
+    from simplify_article_toc import simplify
+    return simplify(render_toolkits(render_finish(source,path,root),path,root))[0]

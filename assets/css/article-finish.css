@@ -34,8 +34,6 @@
 .article-finish .finish-complete[aria-pressed=true]{background:#102238;color:#f6f1e6}
 .article-finish .finish-topic{display:flex;align-items:baseline;flex-wrap:wrap;gap:6px 14px;margin:0;padding:18px 0;border:0;background:transparent;color:inherit;max-width:none;box-shadow:none}
 .article-finish .finish-topic>span{color:var(--finish-muted);font-size:.76rem}.article-finish .finish-topic>a{display:inline-flex;align-items:center;min-height:44px;color:var(--finish-gold);font-size:.83rem;text-underline-offset:4px}
-.article-finish .finish-glossary .article-glossary{margin:0 0 20px;padding:0;border:0;border-block:1px solid var(--finish-line);background:transparent;color:inherit;box-shadow:none}
-.article-finish .article-glossary>summary{padding:14px 0;min-height:48px;font-size:.85rem;color:inherit;cursor:pointer}
 .article-finish .article-feedback{margin:0;padding:24px 0 0;border:0;border-top:1px solid var(--finish-line);background:transparent;color:inherit;box-shadow:none}
 .article-finish .article-feedback-intro .eyebrow{display:none}
 .article-finish .article-feedback-intro h2{margin:0;padding:0;border:0;font:500 1.1rem/1.5 Lora,Georgia,serif;color:inherit;text-transform:none}

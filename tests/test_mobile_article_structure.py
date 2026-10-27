@@ -36,4 +36,4 @@ class MobileArticleStructureTests(unittest.TestCase):
     self.assertIsNotNone(card,p)
     status=next(n for n in e.nodes if card['inner']<=n['start']<card['end'] and (e.classes(n)&{'copy-status','article-copy-status'} or 'data-copy-status' in n['attrs']))
     self.assertEqual(status['attrs'].get('aria-live'),'polite');self.assertEqual(status['attrs'].get('role'),'status')
-  self.assertEqual(total,377)
+  self.assertEqual(total,385)

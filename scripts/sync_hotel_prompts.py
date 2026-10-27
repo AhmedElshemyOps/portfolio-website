@@ -93,6 +93,8 @@ def render(prompts, original):
     if not narrative:
         raise ValueError('Missing bounded article reading body')
     content = result[narrative['inner']:result.rfind('</', narrative['inner'], narrative['end'])]
+    # Presentation controls are not part of the editorial reading-time estimate.
+    content = re.sub(r'<!-- premium-ai-ui:start -->.*?<!-- premium-ai-ui:end -->', '', content, flags=re.S)
     words = len(unescape(re.sub(r'<[^>]+>', ' ', content)).split())
     minutes = math.ceil(words / 220)
     result, count = re.subn(r'(<dt>Reading time</dt><dd>)\d+ minutes', lambda m: m[1] + str(minutes) + ' minutes', result, count=1)

@@ -1,0 +1,12 @@
+/* Native, keyboard-accessible definitions at the start of the reading journey. */
+.article-reader-page details.article-glossary--intro{box-sizing:border-box;width:calc(100% - 40px);max-width:820px;margin:22px auto 30px;padding:0 20px;border:1px solid #d9d1c1;border-left:3px solid #b68a2f;border-radius:4px;background:#f5f0e6;color:#102238;box-shadow:none}
+.article-reader-page .article-glossary--intro>summary{min-height:52px;display:list-item;padding:15px 0;font:500 .9rem/1.5 "IBM Plex Sans",Arial,sans-serif;cursor:pointer;color:inherit;list-style-position:inside}
+.article-reader-page .article-glossary--intro>summary>span{margin-left:8px;color:#805f20;font-size:.78rem}
+.article-reader-page .article-glossary--intro>dl{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 24px;margin:0;padding:0 0 14px}
+.article-reader-page .article-glossary--intro dl>div{min-width:0;padding:14px 0;border-top:1px solid #d9d1c1}
+.article-reader-page .article-glossary--intro dt{margin:0 0 5px;color:inherit;font:600 .86rem/1.5 "IBM Plex Sans",Arial,sans-serif;overflow-wrap:anywhere}
+.article-reader-page .article-glossary--intro dd{margin:0;color:#455a70;font:400 .9rem/1.7 "IBM Plex Sans",Arial,sans-serif;overflow-wrap:anywhere}
+.article-glossary--intro>summary:focus-visible{outline:3px solid #b68a2f;outline-offset:4px}
+.reader-dark details.article-glossary--intro{background:#102238;color:#edf3f8;border-color:#405065;border-left-color:#dfc27d}.reader-dark .article-glossary--intro dd{color:#d1dfec}.reader-dark .article-glossary--intro>summary>span{color:#dfc27d}
+@media(max-width:620px){.article-reader-page .article-glossary--intro>dl{grid-template-columns:minmax(0,1fr)}.article-reader-page details.article-glossary--intro{padding-inline:16px;margin-block:18px 24px}}
+@media print{.article-glossary--intro{break-inside:avoid}.article-glossary--intro>dl{display:grid!important}}

@@ -1,0 +1,26 @@
+const assert=require('node:assert/strict');const kit=require('../assets/js/article-prompts.js');
+(async()=>{
+ const listeners={};const calls=[];const status={textContent:''};const output={hidden:true,textContent:''};
+ const checkbox={checked:false,addEventListener(name,fn){this[name]=fn}};
+ const field={dataset:{aiVariable:'task',aiPlaceholder:'[INSERT TASK]',aiRequired:'true'},value:'',disabled:true,removeAttribute(){},setAttribute(){},focus(){this.focused=true},matches(){return true}};
+ const region={hidden:false,querySelector(){return {textContent:'Complete original [INSERT TASK]\nEnd of prompt.'}},focus(){this.focused=true}};
+ const fieldsRegion={hidden:true};let root;
+ const buttons=['copy','share','chatgpt','reset'].map(action=>({dataset:{aiAction:action},disabled:true,closest(selector){return selector==='[data-ai-toolkit]'?root:this}}));
+ root={dataset:{aiPromptId:'p',aiArticle:'article',aiCategory:'Operations',aiVersion:'1',aiTarget:'source-p'},querySelector(selector){return {'[data-ai-source]':region,'[data-copy-status],.copy-status,.article-copy-status':status,'[data-ai-preview]':output,'[data-ai-customize]':checkbox,'[data-ai-fields]':fieldsRegion,'.ai-toolkit-intro strong':{textContent:'Title'}}[selector]||null},querySelectorAll(selector){return selector==='[data-ai-variable]'?[field]:buttons},addEventListener(name,callback){calls.push(name);listeners[name]=callback},setAttribute(){},removeAttribute(){}};
+ const doc={title:'Article',visibilityState:'visible',documentElement:{dataset:{}},querySelectorAll(){return [root]},querySelector(){return {href:'https://ahmedqualityops.com/articles/article/index.html'}}};
+ let copied,release,observerCallback;const timers=[];const analytics=[];
+ const env={location:{href:'https://ahmedqualityops.com/articles/article/index.html'},navigator:{clipboard:{writeText:async text=>{copied=text}}},AhmedAnalytics:{event:(name,data)=>analytics.push({name,data})},IntersectionObserver:class{constructor(fn){observerCallback=fn}observe(){}unobserve(){}},setTimeout(fn){timers.push(fn);return timers.length},clearTimeout(){}};
+ kit.mount(doc,env);kit.mount(doc,env);assert.deepEqual(calls,['input','click']);assert(buttons.every(b=>!b.disabled));
+ const click=button=>listeners.click({target:{closest(){return button}}});
+ await click(buttons[0]);assert.equal(copied,'Complete original [INSERT TASK]\nEnd of prompt.');assert.match(status.textContent,/Prompt copied/);
+ checkbox.checked=true;checkbox.change();assert(!fieldsRegion.hidden&&!field.disabled&&region.hidden&&!output.hidden);
+ await click(buttons[0]);assert(field.focused);assert.match(status.textContent,/required inputs/);
+ field.value='<b>Training context</b>';listeners.input({target:field});assert(output.textContent.includes('<b>Training context</b>'));assert(!('innerHTML' in output));
+ await click(buttons[0]);assert(copied.includes('<b>Training context</b>'));
+ await click(buttons[3]);assert(!checkbox.checked&&field.value===''&&!region.hidden&&output.hidden);assert.match(status.textContent,/restored/);
+ observerCallback([{target:root,isIntersecting:true,intersectionRatio:.7}]);observerCallback([{target:root,isIntersecting:true,intersectionRatio:.7}]);assert.equal(timers.length,1);timers[0]();observerCallback([{target:root,isIntersecting:true,intersectionRatio:.7}]);assert.equal(analytics.filter(e=>e.name==='ai_prompt_view').length,1);
+ assert(!JSON.stringify(analytics).includes('Training context'));
+ env.navigator.clipboard.writeText=text=>new Promise(resolve=>{copied=text;release=resolve});
+ const pending=click(buttons[0]);await click(buttons[0]);release();await pending;assert.equal(analytics.filter(e=>e.name==='ai_prompt_copy').length,3);
+ console.log('DOM enhancement, repeat mount, required fields, text-only preview, reset, view deduplication and busy controls passed.');
+})().catch(e=>{console.error(e);process.exitCode=1});
