@@ -36,7 +36,11 @@
       topic.textContent = item.pillar.replace('Hotel & Serviced Apartment AI', 'AI for Hotel Apartments');
       const title = document.createElement('h3'); title.textContent = item.title;
       const description = document.createElement('p'); description.textContent = item.description;
-      content.append(topic, title, description);
+      content.append(topic, title);
+      if (item.includesVideo) {
+        const badge = document.createElement('span'); badge.className = 'knowledge-video-badge'; badge.textContent = 'Includes video'; content.append(badge);
+      }
+      content.append(description);
       const arrow = document.createElement('span'); arrow.className = 'direction'; arrow.textContent = '↗'; arrow.setAttribute('aria-hidden', 'true');
       link.append(content, arrow); return link;
     }));

@@ -1,0 +1,9 @@
+/* Scoped video styles preserve the existing article typography and palette. */
+.article-video { margin: 2rem 0; max-width: 100%; }
+.article-video__frame { position: relative; width: 100%; aspect-ratio: 16 / 9; background: #111827; }
+.article-video__frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.article-video--short .article-video__frame { aspect-ratio: 9 / 16; max-width: 22rem; margin-inline: auto; }
+.article-video figcaption { padding-block: .75rem; font-size: .95rem; }
+.article-video figcaption p { margin-block: .5rem; }
+.article-video a { overflow-wrap: anywhere; }
+.article-video a:focus-visible, .article-video iframe:focus-visible { outline: 3px solid currentColor; outline-offset: 4px; }

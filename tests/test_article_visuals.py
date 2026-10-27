@@ -18,7 +18,7 @@ class ArticleVisualTests(unittest.TestCase):
      tables+=1;self.assertEqual(n['attrs'].get('data-reading-visual'),'true')
      self.assertTrue(any(x['tag']=='caption' and x['parent'] is n for x in e.nodes),p)
      parent=n['parent'];self.assertIn('table-scroll',e.classes(parent));self.assertEqual(parent['attrs'].get('tabindex'),'0')
-    if n['tag']=='figure':
+    if n['tag']=='figure' and 'article-video' not in e.classes(n):
      figures+=1;self.assertEqual(n['attrs'].get('data-reading-visual'),'true')
      self.assertIn('What to learn',s[n['start']:n['end']])
      self.assertIn('diagram-scroll',s[n['start']:n['end']])
@@ -27,5 +27,5 @@ class ArticleVisualTests(unittest.TestCase):
   for p in (ROOT/'articles').rglob('*.html'):
    old=subprocess.check_output(['git','show','6f8f6f6f9324c83b3c63e915ac31a633bdf31d53:'+str(p.relative_to(ROOT))],cwd=ROOT,text=True);new=p.read_text()
    old=approved_revisions(old,p.parent.name)
-   for pattern in [r'<td\b[^>]*>.*?</td>',r'<pre\b[^>]*>.*?</pre>',r'<img\b(?![^>]*class="series-banner-art")[^>]*>']:
+   for pattern in [r'<td\b[^>]*>.*?</td>',r'<pre\b[^>]*>.*?</pre>',r'<img\b(?![^>]*class="(?:series-banner-art|footer-monogram)")[^>]*>']:
     self.assertEqual(re.findall(pattern,old,re.S),re.findall(pattern,new,re.S),p)

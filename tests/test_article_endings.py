@@ -31,7 +31,7 @@ class ArticleEndingTests(unittest.TestCase):
    old=subprocess.check_output(['git','show','6f8f6f6f9324c83b3c63e915ac31a633bdf31d53:'+str(path.relative_to(ROOT))],cwd=ROOT,text=True)
    first=apply(old,row);self.assertEqual(apply(first,row),first,slug)
    old=approved_revisions(old,slug)
-   for pattern in [r'<pre\b[^>]*>.*?</pre>',r'<td\b[^>]*>.*?</td>',r'<img\b(?![^>]*class="series-banner-art")[^>]*>']:
+   for pattern in [r'<pre\b[^>]*>.*?</pre>',r'<td\b[^>]*>.*?</td>',r'<img\b(?![^>]*class="(?:series-banner-art|footer-monogram)")[^>]*>']:
     self.assertEqual(re.findall(pattern,old,re.S),re.findall(pattern,s,re.S),slug)
    before=set(re.findall(r'\bid="([^"]+)"',old));after=re.findall(r'\bid="([^"]+)"',s)
    self.assertTrue(before<=set(after),str((slug,before-set(after))))

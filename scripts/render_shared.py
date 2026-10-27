@@ -88,7 +88,13 @@ def render(source, path, root=ROOT):
     # All shared assets are explicit, single references. Remove legacy entry points.
     source = re.sub(r'<link\b[^>]*href="/assets/css/(?:site-navigation|site-chrome)\.css[^\"]*"[^>]*>', '', source)
     source = re.sub(r'<script\b[^>]*src="/assets/js/site-navigation\.js[^\"]*"[^>]*>\s*</script>', '', source)
+    source = re.sub(r'<link\b[^>]*href="/assets/css/footer\.css[^\"]*"[^>]*>', '', source)
     assets = SHARED_CSS if shared_footer or shared_header else ''
+    if shared_footer:
+        assets += '<link rel="stylesheet" href="/assets/css/footer.css"/>'
+        # A local, zero-height target preserves existing body IDs and works without JS.
+        if 'id="page-top"' not in source:
+            source = re.sub(r'(<body\b[^>]*>)', r'\1<span id="page-top" aria-hidden="true"></span>', source, count=1)
     if shared_header:
         # Initialise the compact menu before the following main content is parsed.
         # Without JavaScript the navigation links remain visible.
@@ -105,6 +111,9 @@ def render(source, path, root=ROOT):
     source = source.replace('</head>', hints + '</head>', 1)
     # Native contents starts compact; desktop enhancement opens the rail without moving article text.
     source = re.sub(r'(<details\b[^>]*data-reader-toc[^>]*)\sopen(?=[\s>])', r'\1', source)
+    from render_article_videos import render as render_article_videos
+    from render_reader_enhancements import render as render_reader_enhancements
+    source = render_reader_enhancements(render_article_videos(source, path, root), path, root)
     # Version changed interaction assets so an offline cache cannot serve old controls.
     source = re.sub(r'(/assets/js/(?:discovery|article-reader)\.js)(?:\?[^"\s]*)?(?=")', r'\1?v=20261009-phase2', source)
     source = re.sub(r'(/assets/css/infraquote-bundle\.css)(?:\?[^"\s]*)?(?=")', r'\1?v=20261009-phase2', source)

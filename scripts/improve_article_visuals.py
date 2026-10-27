@@ -29,7 +29,7 @@ def migrate(s):
  s=convert_legacy_tables(s)
  e=parse(s);edits=[]
  for n in e.nodes:
-  if n['tag'] not in ('table','figure'):continue
+  if n['tag'] not in ('table','figure') or 'article-video' in e.classes(n):continue
   body=s[n['start']:n['end']]
   if 'data-reading-visual="true"' in body:continue
   if n['tag']=='table':

@@ -63,4 +63,8 @@ def approved_revisions(source, slug):
             lambda _m: '<p>VAT wording must follow applicable tax and consumer-pricing rules, with finance approval for the specific transaction; company policy cannot override the law. Consumer-facing advertised prices generally need to include applicable VAT. See <a href="https://tax.gov.ae/en/taxes/vat/guides.references.aspx">UAE Federal Tax Authority guidance</a> and <a href="https://www.acm.nl/nl/verkoop-aan-consumenten/consumenten-informeren/prijzen-vermelden">Dutch ACM price-display guidance</a>. The FTA’s <a href="https://tax.gov.ae/DataFolder/Files/Pdf/2022/Get%20to%20know%20your%20Tax%20Obligations.pdf">2022 Tax Obligations guide</a> remains available as archived background; it is not a substitute for current guidance. The wording examples below are illustrative; use an exclusive-price version only where permitted for that customer and transaction.</p>',
             source, count=1, flags=re.S)
 
-    return render(source, row, ROWS)
+    source = render(source, row, ROWS)
+    from render_article_videos import render as render_article_videos
+    from render_reader_enhancements import render as render_reader_enhancements
+    path=ROOT/'articles'/slug/'index.html'
+    return render_reader_enhancements(render_article_videos(source,path,ROOT),path,ROOT)

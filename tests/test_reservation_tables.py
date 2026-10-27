@@ -57,10 +57,17 @@ class ReservationTableTests(unittest.TestCase):
         def article_attributes(source):
             document = parse(source)
             body = next(node for node in document.nodes if 'article-body' in document.classes(node))
+            def teaching(node):
+                while node is not None:
+                    if document.classes(node) & {'library-connections','article-followups'}:return False
+                    node=node['parent']
+                return True
             return [(key, node['attrs'][key]) for node in document.nodes
-                    if body['inner'] <= node['start'] < body['end']
+                    if body['inner'] <= node['start'] < body['end'] and teaching(node)
                     for key in ('id', 'href') if key in node['attrs']]
         self.assertEqual(article_attributes(self.after), article_attributes(self.before))
+        original_links={n['attrs']['href'] for n in parse(self.before).nodes if n['tag']=='a'}
+        self.assertTrue(original_links <= {n['attrs']['href'] for n in parse(self.after).nodes if n['tag']=='a'})
         self.assertNotIn('<p>---</p>', self.after)
 
     def test_scenario_provenance_and_maintenance_are_preserved(self):
