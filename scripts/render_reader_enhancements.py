@@ -37,32 +37,6 @@ def render(source, path, root):
     if not registry_path.exists():return source
     row=next((r for r in json.loads(registry_path.read_text()) if r['url'].lstrip('/')==relative),None)
     if not row:return source
-    # Unwrap before re-collecting, so regenerated related panels remain in one disclosure.
-    for node in reversed(parse(source).nodes):
-        if node['tag']=='details' and 'article-followups' in node['attrs'].get('class','').split():
-            inner=source[node['inner']:node['end']]
-            inner=re.sub(r'^\s*<summary>.*?</summary>','',inner, count=1,flags=re.S)
-            inner=re.sub(r'</details>\s*$','',inner)
-            source=source[:node['start']]+inner+source[node['end']:]
-    nodes=parse(source).nodes
-    classes={'library-connections','article-growth','knowledge-context','reading-connections','series-reading-path'}
-    extras=[n for n in nodes if set(n['attrs'].get('class','').split()) & classes]
-    extras=[n for n in extras if not any(a['start']<n['start'] and a['end']>=n['end'] for a in extras)]
-    if extras:
-        def priority(node):
-            classes=set(node['attrs'].get('class','').split())
-            return 3 if 'knowledge-context' in classes else 0 if 'library-connections' in classes else 1 if 'reading-connections' in classes else 2 if 'article-growth' in classes else 4
-        snippets=[source[n['start']:n['end']] for n in sorted(extras,key=priority)]
-        for n in sorted(extras,key=lambda n:n['start'],reverse=True):source=source[:n['start']]+source[n['end']:]
-        nodes=parse(source).nodes
-        anchor=next((n for n in nodes if n['attrs'].get('id')=='article-practical-ending'),None)
-        if not anchor:anchor=next((n for n in nodes if 'article-body' in n['attrs'].get('class','').split()),None)
-        if anchor:
-            parent=anchor
-            while parent.get('parent') and 'article-body' not in parent['attrs'].get('class','').split():parent=parent['parent']
-            if 'article-body' in parent['attrs'].get('class','').split():anchor=parent
-            panel='<details class="article-followups"><summary>Related reading and learning options</summary>'+''.join(snippets)+'</details>'
-            source=source[:anchor['end']]+panel+source[anchor['end']:]
     # Updated is an editorial date from the registry, never represented as fresh fact verification.
     source=re.sub(r'<!-- reader-evidence:start -->.*?<!-- reader-evidence:end -->','',source,flags=re.S)
     notes=[]
@@ -79,4 +53,5 @@ def render(source, path, root):
         if header:
             note='<!-- reader-evidence:start --><aside class="article-evidence-note" aria-label="Article evidence and review dates">'+''.join('<p>'+n+'</p>' for n in notes)+'</aside><!-- reader-evidence:end -->'
             source=source[:header['end']]+note+source[header['end']:]
-    return source
+    from render_article_finish import render as render_finish
+    return render_finish(source,path,root)

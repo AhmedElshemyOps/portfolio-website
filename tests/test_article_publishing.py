@@ -28,7 +28,8 @@ class ArticlePublishing(unittest.TestCase):
      self.assertEqual(before[0] if before else None,after[0] if after else None)
    self.assertIn('Article 13',target.read_text())
    self.assertIn('data-series-banner="amsterdam-product-discovery"',target.read_text())
-   self.assertIn('series-reading-path',target.read_text())
+   self.assertIn('class="article-finish"',target.read_text())
+   self.assertIn('href="/articles/finished-text-test/index.html"', (root/'articles/amsterdam-product-discovery-12-product-analytics-scale-decision/index.html').read_text())
    for name in ('article-registry.json','discovery-index.json','articles.json','article-stats.json'):
     self.assertIn('finished-text-test',(root/'content'/name).read_text())
    for name in ('knowledge/index.html','index.html','sitemap.xml','feed.xml'):

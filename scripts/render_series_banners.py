@@ -43,7 +43,7 @@ def render(source,path,root=ROOT,manifest_data=None):
  source=re.sub(r'(<p class="series-position">).*?(</p>)',lambda m:m[1]+escape(position)+m[2],source,flags=re.S)
  # Managed publication navigation is generated from the same validated series order.
  source=re.sub(r'<nav class="series-reading-path".*?</nav>','',source,flags=re.S)
- if row.get('number'):
+ if row.get('number') and 'class="article-finish"' not in source:
   siblings=sorted((r for r in data['articles'] if r['design']==row['design'] and r.get('number')),key=lambda r:r['number'])
   at=next(i for i,r in enumerate(siblings) if r['url']==url);links=[]
   for idx,label in ((at-1,'Previous article'),(at+1,'Next article')):

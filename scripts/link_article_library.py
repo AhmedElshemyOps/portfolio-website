@@ -48,6 +48,8 @@ def link_explicit_references(source,rows):
 
 def render(source,row,rows):
     source=link_explicit_references(source,rows)
+    # The shared finish now owns recommendations; do not reintroduce the retired panel.
+    if 'class="article-finish"' in source:return source
     indexes=[r for r in rows if r['type']=='Series index' and r['series']==row['series'] and r['id']!=row['id']]
     selected=indexes[:1]
     candidates=[r for r in rows if r['id']!=row['id'] and r['type']=='Article' and r['pillar']==row['pillar']]
