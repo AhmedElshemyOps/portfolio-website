@@ -682,7 +682,7 @@
     "readingTime": 15,
     "wordCount": 3022,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "Product Strategy & Development",
     "subcategory": "Market Intelligence & Research",
     "summary": "Part 02 of a 12-part Amsterdam tourism product-management case study: a provenance-controlled pilot mapping public OTA listings, product families, direct competitors, substitutes, features and price-comparison limits.",
@@ -753,7 +753,7 @@
     "readingTime": 13,
     "wordCount": 2804,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "Product Strategy & Development",
     "subcategory": "Product Discovery & Validation",
     "summary": "Part 03 of a 12-part Amsterdam tourism product-management case study: triangulating frozen competitive supply with destination demand, policy and feasibility signals through a transparent opportunity model.",
@@ -821,7 +821,7 @@
     "readingTime": 10,
     "wordCount": 2213,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "Product Strategy & Development",
     "subcategory": "Market Intelligence & Research",
     "summary": "Part 04 of a 12-part Amsterdam tourism product-management case study: human-first review coding, AI-assisted VOC classification, independent validation, JTBD, Pareto and traceable product requirements.",
@@ -892,7 +892,7 @@
     "readingTime": 13,
     "wordCount": 2718,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-10-08",
     "primaryCategory": "Product Strategy & Development",
     "subcategory": "Market Intelligence & Research",
     "summary": "Part 05 of a 12-part Amsterdam tourism product-management case study: source-market segmentation, language supply, connectivity and guide feasibility translated into Primary, Secondary and Test research segments.",
@@ -961,7 +961,7 @@
     "readingTime": 13,
     "wordCount": 2691,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "Product Strategy & Development",
     "subcategory": "Product Design & Requirements",
     "summary": "Part 06 of a 12-part Amsterdam tourism product-management case study: verified POI intelligence, destination-fit scoring and resilient route variants across crowd, rain, accessibility and disruption conditions.",
@@ -1024,7 +1024,7 @@
     "readingTime": 10,
     "wordCount": 2060,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "Product Strategy & Development",
     "subcategory": "Product Design & Requirements",
     "summary": "Part 07 of a 12-part Amsterdam tourism product-management case study: evidence-to-requirement traceability, supplier feasibility, PRD and service blueprint leading to a controlled signature concept.",
@@ -1098,7 +1098,7 @@
     "readingTime": 17,
     "wordCount": 3546,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-09-04",
     "primaryCategory": "Product Strategy & Development",
     "subcategory": "Product Economics & Lifecycle",
     "summary": "Tests Amsterdam tourism pricing, channel costs, capacity and break-even through disclosed scenarios, with VAT guidance and market observations kept separate from verified business data.",
@@ -1167,7 +1167,7 @@
     "readingTime": 14,
     "wordCount": 2835,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-10-08",
     "primaryCategory": "Governance, Risk & Assurance",
     "subcategory": "Risk & Compliance",
     "summary": "An evidence-led Amsterdam tour launch review covering guided-tour rules, conditional business duties, accessibility and route risks, with separate project controls and pilot measures.",
@@ -1301,7 +1301,7 @@
     "readingTime": 12,
     "wordCount": 2473,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-09-06",
     "primaryCategory": "Product Strategy & Development",
     "subcategory": "Product Discovery & Validation",
     "summary": "Part 11 of a 12-part Amsterdam tourism product-management case study: a controlled MVP pilot plan with success thresholds, exit gates, RACI ownership, experiments, launch readiness and daily operating controls.",
@@ -1373,7 +1373,7 @@
     "readingTime": 13,
     "wordCount": 2591,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-09-06",
     "primaryCategory": "Product Strategy & Development",
     "subcategory": "Product Economics & Lifecycle",
     "summary": "Part 12 of a 12-part Amsterdam tourism product-management case study: a governed post-pilot measurement architecture, frozen performance review, improvement controls and an evidence-valid product decision.",
@@ -1441,7 +1441,7 @@
     "readingTime": 33,
     "wordCount": 7232,
     "contentType": "In-depth guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "Hospitality & Tourism Operations",
     "subcategory": "MICE & Event Operations",
     "summary": "They are arriving on different flights at Zayed International Airport. They are staying in four hotels. Some are conference speakers, some are VIP guests, some are travelling with colleagues, and others are visiting the UAE for...",
@@ -1511,7 +1511,7 @@
     "readingTime": 22,
     "wordCount": 4751,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-10-08",
     "primaryCategory": "Product Strategy & Development",
     "subcategory": "Market Intelligence & Research",
     "summary": "An Abu Dhabi framework for turning new airline routes into stronger products, smarter language readiness and better guest operations",
@@ -1578,7 +1578,7 @@
     "readingTime": 22,
     "wordCount": 4661,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "Hospitality & Tourism Operations",
     "subcategory": "DMC & Destination Operations",
     "summary": "A practical framework for matching people, guest needs, operational context and backup readiness before service begins.",
@@ -1649,7 +1649,7 @@
     "readingTime": 16,
     "wordCount": 3495,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "Hospitality & Tourism Operations",
     "subcategory": "Tour Pricing, Sales & Quotations",
     "summary": "Build a DMC city-tour price from a feasible itinerary, verified supplier inputs, guest assumptions and cost controls before preparing the client offer.",
@@ -1730,7 +1730,7 @@
     "readingTime": 22,
     "wordCount": 4441,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "Hospitality & Tourism Operations",
     "subcategory": "Guest Experience & Service Delivery",
     "summary": "A practical long-form article built around Abu Dhabi destination operations, guest journey mapping, tour guide quality, dispatch planning, service recovery and pricing discipline.",
@@ -1801,7 +1801,7 @@
     "readingTime": 16,
     "wordCount": 3430,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "Hospitality & Tourism Operations",
     "subcategory": "Tour Pricing, Sales & Quotations",
     "summary": "Separate departure-level fixed costs from per-guest costs, then test how group size changes contribution, break-even and the price needed to operate.",
@@ -1875,7 +1875,7 @@
     "readingTime": 21,
     "wordCount": 4247,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "Operations & Process Engineering",
     "subcategory": "Performance & Operational Control",
     "summary": "A fleet dashboard should not be a collection of charts. It should be a decision room.",
@@ -1955,7 +1955,7 @@
     "readingTime": 43,
     "wordCount": 9771,
     "contentType": "In-depth guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "Hospitality & Tourism Operations",
     "subcategory": "MICE & Event Operations",
     "summary": "It continues while the delegate moves through immigration, waits for baggage, searches for the event sign, meets the airport representative and boards the transfer vehicle.",
@@ -2046,7 +2046,7 @@
     "readingTime": 48,
     "wordCount": 10891,
     "contentType": "In-depth guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "Hospitality & Tourism Operations",
     "subcategory": "MICE & Event Operations",
     "summary": "A strong MICE operation does not expect everything to remain perfect. It prepares the team to respond when reality becomes different from the approved programme.",
@@ -2130,7 +2130,7 @@
     "readingTime": 47,
     "wordCount": 10355,
     "contentType": "In-depth guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "Hospitality & Tourism Operations",
     "subcategory": "MICE & Event Operations",
     "summary": "Managing MICE Hospitality Desks, Delegate Readiness and Controlled Departures in Abu Dhabi",
@@ -2217,7 +2217,7 @@
     "readingTime": 48,
     "wordCount": 10768,
     "contentType": "In-depth guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "Hospitality & Tourism Operations",
     "subcategory": "MICE & Event Operations",
     "summary": "A coach leaving the hotel on time does not mean the movement has been completed successfully.",
@@ -2289,7 +2289,7 @@
     "readingTime": 15,
     "wordCount": 3171,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "Hospitality & Tourism Operations",
     "subcategory": "Tour Pricing, Sales & Quotations",
     "summary": "Worked tourism examples distinguish net cost, markup and margin, then calculate a selling price from an approved cost base and target margin.",
@@ -2363,7 +2363,7 @@
     "readingTime": 17,
     "wordCount": 3665,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "Hospitality & Tourism Operations",
     "subcategory": "Tour Pricing, Sales & Quotations",
     "summary": "Calculate shared-tour break-even from fixed cost, per-guest cost and selling price; set minimum participation and repricing rules before confirming a departure.",
@@ -2437,7 +2437,7 @@
     "readingTime": 12,
     "wordCount": 2664,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "Hospitality & Tourism Operations",
     "subcategory": "Tour Pricing, Sales & Quotations",
     "summary": "Prepare a client-facing tour offer with confirmed scope, guest-count basis, inclusions, exclusions, payment and cancellation terms, validity, and jurisdiction-checked tax wording.",
@@ -2549,7 +2549,7 @@
     "readingTime": 54,
     "wordCount": 12194,
     "contentType": "In-depth guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "Governance, Risk & Assurance",
     "subcategory": "Supplier & Decision Governance",
     "summary": "A long, practical guide that keeps the original RFI, RFQ, RFP, eRFP and NDA explanation — then adds a illustrative UK-market DMC sales journey with 20 email examples , from first partnership introduction to confirmed group, operation...",
@@ -2698,7 +2698,7 @@
     "readingTime": 9,
     "wordCount": 2353,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "Hospitality & Tourism Operations",
     "subcategory": "Guest Experience & Service Delivery",
     "summary": "A practical 10-pillar framework for measuring and improving guide performance using field stories, measurable KPIs, service recovery, documentation, and workbook-ready scoring.",
@@ -2851,7 +2851,7 @@
     "readingTime": 28,
     "wordCount": 5681,
     "contentType": "In-depth guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "Hospitality & Tourism Operations",
     "subcategory": "DMC & Destination Operations",
     "summary": "A clear comparison of tourism operations roles, responsibilities, decision rights and the handovers between them.",
@@ -2923,7 +2923,7 @@
     "readingTime": 14,
     "wordCount": 3052,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-10-08",
     "primaryCategory": "Hospitality & Tourism Operations",
     "subcategory": "Tour Pricing, Sales & Quotations",
     "summary": "Review transport, ticket type and price, tax treatment, and gratuities separately; verify the relevant source and customer-pricing rules before releasing a quotation.",
@@ -2990,7 +2990,7 @@
     "readingTime": 12,
     "wordCount": 2633,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "Operations & Process Engineering",
     "subcategory": "Quality & Continuous Improvement",
     "summary": "Turn complaints, incidents, audit findings, defects, and adverse trends into controlled actions that contain the problem, remove verified causes, and prove the change works.",
@@ -3058,7 +3058,7 @@
     "readingTime": 12,
     "wordCount": 2430,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "Operations & Process Engineering",
     "subcategory": "Process Architecture & BPM",
     "summary": "A process can be efficient for departments and still feel confusing, inaccessible, or uncaring to the guest. Journey mapping adds the human experience to the operating design before the SOP turns that design into routine work.",
@@ -3199,7 +3199,7 @@
     "readingTime": 15,
     "wordCount": 3172,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "Governance, Risk & Assurance",
     "subcategory": "Documentation & Audit Assurance",
     "summary": "A procedure creates confidence only when people can find the right document, recognize its status, use the current approved version, record the work correctly, and prevent obsolete instructions from returning to the operation.",
@@ -3265,7 +3265,7 @@
     "readingTime": 21,
     "wordCount": 5120,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "AI Prompt Engineering & Toolkits",
     "subcategory": "Tourism & DMC AI Toolkits",
     "summary": "Front-line teams can use AI to prepare, practise and communicate more consistently, while verified facts, empathy, safety and live decisions remain with the employee.",
@@ -3331,7 +3331,7 @@
     "readingTime": 21,
     "wordCount": 5071,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "AI Prompt Engineering & Toolkits",
     "subcategory": "Tourism & DMC AI Toolkits",
     "summary": "AI can support consistent guest communication and feedback analysis, while facts, privacy, empathy, recovery authority and accountability remain human responsibilities.",
@@ -3407,7 +3407,8 @@
       "/articles/hotel-inventory-par-level-management/index.html"
     ],
     "classificationRationale": "A professional serviced-apartment operation should define guest readiness as a cross-functional condition. The apartment must satisfy approved requirements for cleanliness, technical functionality, safety, utilities, access, inventory/amenities, presentation and arrival-specific requirements .",
-    "seriesKind": "Article"
+    "seriesKind": "Article",
+    "updated": "2026-10-07"
   },
   {
     "id": "hotel-ai-prompting-framework",
@@ -3518,7 +3519,8 @@
       "/articles/hotel-critical-spare-parts-management/index.html"
     ],
     "classificationRationale": "The management objective is not documentation or measurement for its own sake. The system should help a property make a better operational decision using a controlled chain of definition → ownership → verified input → calculation or action → review → improvement .",
-    "seriesKind": "Article"
+    "seriesKind": "Article",
+    "updated": "2026-10-07"
   },
   {
     "id": "hotel-apartment-cost-of-poor-quality",
@@ -3567,7 +3569,8 @@
       "/articles/hotel-complaint-root-cause-analysis/index.html"
     ],
     "classificationRationale": "The operating objective is to make the process visible, owned, measurable and verifiable . A professional control system connects trigger → classification → ownership → action → evidence → verification → measurement → improvement.",
-    "seriesKind": "Article"
+    "seriesKind": "Article",
+    "updated": "2026-10-07"
   },
   {
     "id": "hotel-apartment-end-to-end-guest-journey",
@@ -3734,7 +3737,8 @@
       "/articles/article-fleet-control-tower-operations-dashboard/index.html"
     ],
     "classificationRationale": "The management system should connect current state → risk/priority → owner → action → deadline → verification → learning . Its purpose is not more reporting. It is faster recognition of meaningful exceptions and more reliable execution.",
-    "seriesKind": "Article"
+    "seriesKind": "Article",
+    "updated": "2026-10-07"
   },
   {
     "id": "hotel-apartment-operating-system",
@@ -3784,7 +3788,8 @@
       "/articles/customer-journey-mapping-sop-design/index.html"
     ],
     "classificationRationale": "A professional hotel-apartment operation needs more than procedures. It needs a closed management system that connects standards → ownership → execution → evidence → measurement → escalation → improvement .",
-    "seriesKind": "Article"
+    "seriesKind": "Article",
+    "updated": "2026-10-07"
   },
   {
     "id": "hotel-apartment-operations-control-tower",
@@ -3885,7 +3890,8 @@
       "/articles/hotel-preventive-maintenance-kpis/index.html"
     ],
     "classificationRationale": "The objective is not to complete the largest possible number of PM tasks. The objective is to apply the right maintenance intervention to the right asset at the right interval so that reliability improves at an economically and operationally sensible cost.",
-    "seriesKind": "Article"
+    "seriesKind": "Article",
+    "updated": "2026-10-07"
   },
   {
     "id": "hotel-apartment-sop-architecture",
@@ -3934,7 +3940,8 @@
       "/articles/customer-journey-mapping-sop-design/index.html"
     ],
     "classificationRationale": "The management objective is not documentation or measurement for its own sake. The system should help a property make a better operational decision using a controlled chain of definition → ownership → verified input → calculation or action → review → improvement .",
-    "seriesKind": "Article"
+    "seriesKind": "Article",
+    "updated": "2026-10-07"
   },
   {
     "id": "hotel-apartment-total-cost-of-ownership",
@@ -3983,7 +3990,8 @@
       "/articles/hotel-apartment-preventive-maintenance-strategy/index.html"
     ],
     "classificationRationale": "The management objective is not documentation or measurement for its own sake. The system should help a property make a better operational decision using a controlled chain of definition → ownership → verified input → calculation or action → review → improvement .",
-    "seriesKind": "Article"
+    "seriesKind": "Article",
+    "updated": "2026-10-07"
   },
   {
     "id": "hotel-complaint-root-cause-analysis",
@@ -4032,7 +4040,8 @@
       "/articles/six-sigma-tourism-complaints-data/index.html"
     ],
     "classificationRationale": "The operating objective is to make the process visible, owned, measurable and verifiable . A professional control system connects trigger → classification → ownership → action → evidence → verification → measurement → improvement.",
-    "seriesKind": "Article"
+    "seriesKind": "Article",
+    "updated": "2026-10-07"
   },
   {
     "id": "hotel-control-tower-ai-decision-support-toolkit",
@@ -4084,7 +4093,8 @@
       "/articles/hotel-sop-process-design-ai-toolkit/index.html"
     ],
     "classificationRationale": "A hotel apartment control tower is a management discipline that combines verified signals, defined thresholds, ownership and decision rights. The screen is only the interface; the real system is the operating logic behind it.",
-    "seriesKind": "Article"
+    "seriesKind": "Article",
+    "updated": "2026-10-07"
   },
   {
     "id": "hotel-critical-spare-parts-management",
@@ -4133,7 +4143,8 @@
       "/articles/hotel-apartment-preventive-maintenance-strategy/index.html"
     ],
     "classificationRationale": "The management system should connect current state → risk/priority → owner → action → deadline → verification → learning . Its purpose is not more reporting. It is faster recognition of meaningful exceptions and more reliable execution.",
-    "seriesKind": "Article"
+    "seriesKind": "Article",
+    "updated": "2026-10-07"
   },
   {
     "id": "hotel-downtime-out-of-service-management",
@@ -4182,7 +4193,8 @@
       "/articles/hotel-apartment-total-cost-of-ownership/index.html"
     ],
     "classificationRationale": "The management system should connect current state → risk/priority → owner → action → deadline → verification → learning . Its purpose is not more reporting. It is faster recognition of meaningful exceptions and more reliable execution.",
-    "seriesKind": "Article"
+    "seriesKind": "Article",
+    "updated": "2026-10-07"
   },
   {
     "id": "hotel-economics-of-service-failure",
@@ -4231,7 +4243,8 @@
       "/articles/hotel-complaint-root-cause-analysis/index.html"
     ],
     "classificationRationale": "The management objective is not documentation or measurement for its own sake. The system should help a property make a better operational decision using a controlled chain of definition → ownership → verified input → calculation or action → review → improvement .",
-    "seriesKind": "Article"
+    "seriesKind": "Article",
+    "updated": "2026-10-07"
   },
   {
     "id": "hotel-energy-utility-management-ai-toolkit",
@@ -4406,7 +4419,7 @@
     "readingTime": 41,
     "wordCount": 9476,
     "contentType": "Field guide",
-    "updated": "2026-10-07",
+    "updated": "2026-10-08",
     "primaryCategory": "AI Prompt Engineering & Toolkits",
     "subcategory": "Hotel & Serviced Apartment AI Toolkits",
     "summary": "10 professional AI prompts for materiality, environmental aspects, emissions, sustainable procurement, social impact, ESG targets and evidence-based sustainability reporting.",
@@ -4490,7 +4503,8 @@
       "/articles/hotel-kpi-dashboard-ai-toolkit/index.html"
     ],
     "classificationRationale": "Hotel Apartment cost control fails when teams discuss the same number with different definitions. “Cost,” “saving,” “budget variance,” “cash impact,” and “profit improvement” are not interchangeable. Article 21 creates a controlled bridge between Finance and Operations: Finance owns accounting truth; Operations explains operational reality; AI helps connect ",
-    "seriesKind": "Article"
+    "seriesKind": "Article",
+    "updated": "2026-10-07"
   },
   {
     "id": "hotel-first-time-right-operations",
@@ -4539,7 +4553,8 @@
       "/articles/hotel-housekeeping-quality-control/index.html"
     ],
     "classificationRationale": "The objective is not to maximize one isolated metric. It is to design work so that service, quality, cost, capacity and evidence remain connected. Management should know what good performance means, how it is measured, what creates an exception and who has authority to respond.",
-    "seriesKind": "Article"
+    "seriesKind": "Article",
+    "updated": "2026-10-07"
   },
   {
     "id": "hotel-front-office-ai-toolkit",
@@ -4707,7 +4722,7 @@
     "readingTime": 43,
     "wordCount": 8797,
     "contentType": "Field guide",
-    "updated": "2026-10-06",
+    "updated": "2026-10-07",
     "primaryCategory": "AI Prompt Engineering & Toolkits",
     "subcategory": "Hotel & Serviced Apartment AI Toolkits",
     "summary": "10 professional AI prompts for complaint triage, root cause, recovery, compensation control, escalation, closure and CAPA.",
@@ -5068,7 +5083,8 @@
       "/articles/guest-ready-apartment-standard/index.html"
     ],
     "classificationRationale": "The objective is not to maximize one isolated metric. It is to design work so that service, quality, cost, capacity and evidence remain connected. Management should know what good performance means, how it is measured, what creates an exception and who has authority to respond.",
-    "seriesKind": "Article"
+    "seriesKind": "Article",
+    "updated": "2026-10-07"
   },
   {
     "id": "hotel-inventory-par-management-ai-toolkit",
@@ -5130,7 +5146,8 @@
       "/articles/hotel-apartment-extended-stay-ai-toolkit/index.html"
     ],
     "classificationRationale": "H — Hospitality role & human owner Stores controls custody and transactions. Department owners define operational need. Procurement controls replenishment sourcing. Engineering verifies critical spares . Finance controls valuation/write-off. Management approves material policy changes.",
-    "seriesKind": "Article"
+    "seriesKind": "Article",
+    "updated": "2026-10-07"
   },
   {
     "id": "hotel-kpi-dashboard-ai-toolkit",
@@ -5191,7 +5208,8 @@
       "/articles/hotel-apartment-extended-stay-ai-toolkit/index.html"
     ],
     "classificationRationale": "A hotel apartment dashboard is valuable only when it helps someone decide, act, escalate or learn. More charts do not create more control. The management chain is objective → KPI → definition → trusted data → threshold → interpretation → decision → action → verification .",
-    "seriesKind": "Article"
+    "seriesKind": "Article",
+    "updated": "2026-10-07"
   },
   {
     "id": "hotel-lean-six-sigma-ai-toolkit",
@@ -5315,7 +5333,8 @@
       "/articles/hotel-property-reliability-score/index.html"
     ],
     "classificationRationale": "The operating objective is to make the process visible, owned, measurable and verifiable . A professional control system connects trigger → classification → ownership → action → evidence → verification → measurement → improvement.",
-    "seriesKind": "Article"
+    "seriesKind": "Article",
+    "updated": "2026-10-07"
   },
   {
     "id": "hotel-operational-excellence-maturity-model",
@@ -5364,7 +5383,8 @@
       "/articles/hotel-economics-of-service-failure/index.html"
     ],
     "classificationRationale": "The management system should connect current state → risk/priority → owner → action → deadline → verification → learning . Its purpose is not more reporting. It is faster recognition of meaningful exceptions and more reliable execution.",
-    "seriesKind": "Article"
+    "seriesKind": "Article",
+    "updated": "2026-10-07"
   },
   {
     "id": "hotel-operations-manager-ai-toolkit",
@@ -5541,7 +5561,8 @@
       "/articles/hotel-apartment-extended-stay-ai-toolkit/index.html"
     ],
     "classificationRationale": "A guest may encounter the property first through an OTA rather than the hotel apartment's own website. Room names, images, amenities, cancellation terms, taxes, availability and review responses are therefore operational product data, not merely marketing copy. A wrong room size can create an expectation failure; a wrong bed type can become a complaint; a wr",
-    "seriesKind": "Article"
+    "seriesKind": "Article",
+    "updated": "2026-10-07"
   },
   {
     "id": "hotel-predictive-maintenance-ai-toolkit",
@@ -5662,7 +5683,8 @@
       "/articles/hotel-apartment-total-cost-of-ownership/index.html"
     ],
     "classificationRationale": "The management objective is not documentation or measurement for its own sake. The system should help a property make a better operational decision using a controlled chain of definition → ownership → verified input → calculation or action → review → improvement .",
-    "seriesKind": "Article"
+    "seriesKind": "Article",
+    "updated": "2026-10-07"
   },
   {
     "id": "hotel-procurement-ai-toolkit",
@@ -5723,7 +5745,8 @@
       "/articles/hotel-energy-utility-management-ai-toolkit/index.html"
     ],
     "classificationRationale": "H — Hospitality role & human owner Procurement controls the sourcing process. The user department owns the operational requirement. Engineering or another specialist owns technical suitability where relevant. Finance verifies budget and financial analysis. Legal reviews contractual risk where required. The authorized DOA holder approves commitment.",
-    "seriesKind": "Article"
+    "seriesKind": "Article",
+    "updated": "2026-10-07"
   },
   {
     "id": "hotel-procurement-supplier-quality-control",
@@ -5772,7 +5795,8 @@
       "/articles/tourism-supplier-partner-governance-sops/index.html"
     ],
     "classificationRationale": "The objective is not to maximize one isolated metric. It is to design work so that service, quality, cost, capacity and evidence remain connected. Management should know what good performance means, how it is measured, what creates an exception and who has authority to respond.",
-    "seriesKind": "Article"
+    "seriesKind": "Article",
+    "updated": "2026-10-07"
   },
   {
     "id": "hotel-property-reliability-score",
@@ -5821,7 +5845,8 @@
       "/articles/hotel-maintenance-work-order-management/index.html"
     ],
     "classificationRationale": "The management system should connect current state → risk/priority → owner → action → deadline → verification → learning . Its purpose is not more reporting. It is faster recognition of meaningful exceptions and more reliable execution.",
-    "seriesKind": "Article"
+    "seriesKind": "Article",
+    "updated": "2026-10-07"
   },
   {
     "id": "hotel-quality-audit-ai-toolkit",
@@ -6022,7 +6047,8 @@
       "/articles/hotel-apartment-extended-stay-ai-toolkit/index.html"
     ],
     "classificationRationale": "H — Hospitality role & human owner Revenue leadership owns commercial interpretation. Reservations and Distribution control execution. Sales owns contracted account context. Finance verifies definitions. GM/commercial authority approves according to policy.",
-    "seriesKind": "Article"
+    "seriesKind": "Article",
+    "updated": "2026-10-07"
   },
   {
     "id": "hotel-sales-corporate-accounts-ai-toolkit",
@@ -6084,7 +6110,8 @@
       "/articles/hotel-apartment-extended-stay-ai-toolkit/index.html"
     ],
     "classificationRationale": "It decides which accounts fit the property, which demand is valuable, which rate is sustainable, which commitments operations can deliver and which relationships deserve investment.",
-    "seriesKind": "Article"
+    "seriesKind": "Article",
+    "updated": "2026-10-07"
   },
   {
     "id": "hotel-sop-process-design-ai-toolkit",
@@ -6241,7 +6268,7 @@
     "readingTime": 13,
     "wordCount": 2665,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "Governance, Risk & Assurance",
     "subcategory": "Documentation & Audit Assurance",
     "summary": "Assess whether an SOP is current, understood, followed, evidenced, effective, and still suitable—without reducing the audit to a document-presence checklist.",
@@ -6307,7 +6334,7 @@
     "readingTime": 13,
     "wordCount": 2696,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "Operations & Process Engineering",
     "subcategory": "SOPs & Work Instructions",
     "summary": "Turn policy intent and mapped work into instructions that identify the actor, action, sequence, decision, time standard, evidence, and exception path.",
@@ -6386,7 +6413,7 @@
     "readingTime": 13,
     "wordCount": 2778,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "Operations & Process Engineering",
     "subcategory": "SOPs & Work Instructions",
     "summary": "A professional SOP is not a long checklist and not a policy essay. It is a controlled operating document that connects purpose, scope, roles, procedure, exceptions, records, measures, approval, and revision.",
@@ -6450,7 +6477,7 @@
     "readingTime": 13,
     "wordCount": 2682,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "Operations & Process Engineering",
     "subcategory": "SOPs & Work Instructions",
     "summary": "Translate one technical or task-level activity into precise, user-tested steps with prerequisites, acceptance criteria, warnings, evidence, and a controlled route back to the SOP.",
@@ -6565,7 +6592,7 @@
     "readingTime": 13,
     "wordCount": 2652,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "Operations & Process Engineering",
     "subcategory": "Process Architecture & BPM",
     "summary": "Combine service value, project delivery, flow, variation, documented information, risk, testing, competence, measurement, audit, and improvement into one practical SOP lifecycle.",
@@ -6629,7 +6656,7 @@
     "readingTime": 13,
     "wordCount": 2690,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "Operations & Process Engineering",
     "subcategory": "Process Architecture & BPM",
     "summary": "Apply service-management thinking to tourism value streams, incidents, requests, changes, knowledge, suppliers, and continual improvement—while recognizing the framework's current 2026 evolution.",
@@ -6693,7 +6720,7 @@
     "readingTime": 13,
     "wordCount": 2689,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "Operations & Process Engineering",
     "subcategory": "Quality & Continuous Improvement",
     "summary": "See tourism work through guest value, end-to-end flow, pull, unevenness, overburden, and continuous improvement—then remove waste without stripping away resilience or care.",
@@ -6762,7 +6789,7 @@
     "readingTime": 12,
     "wordCount": 2681,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "Operations & Process Engineering",
     "subcategory": "Process Architecture & BPM",
     "summary": "An SOP written from memory usually documents the official story. A process map built from observation reveals the real work, hidden handoffs, workarounds, delays, and decisions the procedure must control.",
@@ -6826,7 +6853,7 @@
     "readingTime": 13,
     "wordCount": 2669,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "Operations & Process Engineering",
     "subcategory": "SOPs & Work Instructions",
     "summary": "Select critical items, place them at the right pause points, write observable checks, and make exceptions easier to report than silent workarounds.",
@@ -6890,7 +6917,7 @@
     "readingTime": 12,
     "wordCount": 2647,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "Operations & Process Engineering",
     "subcategory": "SOPs & Work Instructions",
     "summary": "Treat a major SOP launch as a bounded change project with purpose, sponsorship, stakeholders, scope, schedule, risk, resources, pilot, go-live, benefits, and lessons.",
@@ -7024,7 +7051,7 @@
     "readingTime": 12,
     "wordCount": 2596,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "Operations & Process Engineering",
     "subcategory": "Process Architecture & BPM",
     "summary": "A process explains how value moves from an input to an intended result. A procedure explains how work is controlled and performed. A process map makes the flow, decisions, and handoffs visible.",
@@ -7088,7 +7115,7 @@
     "readingTime": 13,
     "wordCount": 2690,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "Operations & Process Engineering",
     "subcategory": "SOPs & Work Instructions",
     "summary": "Build forms that collect the minimum usable facts, guide staff through decisions, support approvals, and become reliable records after completion.",
@@ -7170,7 +7197,8 @@
       "/articles/responsible-ai-tourism-guide/index.html"
     ],
     "classificationRationale": "The lifecycle is: register the use case → classify risk → approve tools and data → design authority → test → deploy → verify → monitor → manage incidents → review and retire or improve.",
-    "seriesKind": "Article"
+    "seriesKind": "Article",
+    "updated": "2026-10-07"
   },
   {
     "id": "responsible-ai-tourism-guide",
@@ -7209,7 +7237,7 @@
     "readingTime": 21,
     "wordCount": 5227,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "Governance, Risk & Assurance",
     "subcategory": "Responsible AI & Human Oversight",
     "summary": "Responsible AI in tourism means approved use cases, minimum necessary data, verifiable outputs, clear access, trained employees and a named human accountable for decisions.",
@@ -7273,7 +7301,7 @@
     "readingTime": 12,
     "wordCount": 2644,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "Operations & Process Engineering",
     "subcategory": "Quality & Continuous Improvement",
     "summary": "Move beyond the visible service failure to verify the process, information, capacity, authority, system, supplier, or management condition that allowed it to occur.",
@@ -7339,7 +7367,7 @@
     "readingTime": 13,
     "wordCount": 2709,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "Operations & Process Engineering",
     "subcategory": "Process Architecture & BPM",
     "summary": "A practical way to set process boundaries, expose missing inputs, and agree what a tourism service must deliver before anyone writes the detailed SOP.",
@@ -7403,7 +7431,7 @@
     "readingTime": 12,
     "wordCount": 2653,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "Operations & Process Engineering",
     "subcategory": "Quality & Continuous Improvement",
     "summary": "Translate recurring guest complaints into operational definitions, reliable measures, verified causes, controlled improvements, and sustained performance through DMAIC.",
@@ -7469,7 +7497,7 @@
     "readingTime": 13,
     "wordCount": 2667,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "Governance, Risk & Assurance",
     "subcategory": "Documentation & Audit Assurance",
     "summary": "Design records that capture timely, factual, proportionate evidence of what happened—without turning operational documentation into improvised legal conclusions.",
@@ -7538,7 +7566,7 @@
     "readingTime": 15,
     "wordCount": 3216,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "Operations & Process Engineering",
     "subcategory": "SOPs & Work Instructions",
     "summary": "A procedure becomes operationally credible when it explains not only the normal path, but also how people recognize a deviation, stabilize the service, obtain authority, communicate, record decisions, recover, and learn.",
@@ -7604,7 +7632,7 @@
     "readingTime": 13,
     "wordCount": 2651,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "Governance, Risk & Assurance",
     "subcategory": "Supplier & Decision Governance",
     "summary": "Define who performs the work, who owns the outcome, who contributes before a decision, who receives information, and where operational authority stops.",
@@ -7732,7 +7760,7 @@
     "readingTime": 13,
     "wordCount": 2662,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "Operations & Process Engineering",
     "subcategory": "SOPs & Work Instructions",
     "summary": "Write repeatable operational tests with controlled preconditions, unambiguous steps, expected results, evidence, defect handling, and accountable release decisions.",
@@ -7797,7 +7825,7 @@
     "readingTime": 7,
     "wordCount": 797,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "AI Prompt Engineering & Toolkits",
     "subcategory": "Prompt Engineering Frameworks",
     "summary": "Built for the real work behind tours, transfers, products, itineraries, quotations, guest journeys and quality systems. The playbook combines tourism operating experience with professional prompt design, responsible controls...",
@@ -7861,7 +7889,7 @@
     "readingTime": 14,
     "wordCount": 2885,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "Operations & Process Engineering",
     "subcategory": "Process Architecture & BPM",
     "summary": "A tourism company does not become reliable because it owns a folder called “SOPs.” It becomes reliable when policies, processes, people, tools, records, measures, and improvement routines work as one operating system.",
@@ -7929,7 +7957,7 @@
     "readingTime": 12,
     "wordCount": 2619,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "Governance, Risk & Assurance",
     "subcategory": "Documentation & Audit Assurance",
     "summary": "A document hierarchy should help employees understand what governs the work, what explains the work, what supports execution, and what proves the result. It should not become a bureaucracy diagram that only the quality department understands.",
@@ -7995,7 +8023,7 @@
     "readingTime": 21,
     "wordCount": 5071,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "AI Prompt Engineering & Toolkits",
     "subcategory": "Tourism & DMC AI Toolkits",
     "summary": "AI can create an itinerary draft, but every hour, ticket, transfer, availability and access condition must be verified before sale or operation.",
@@ -8059,7 +8087,7 @@
     "readingTime": 12,
     "wordCount": 2646,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "Operations & Process Engineering",
     "subcategory": "Process Architecture & BPM",
     "summary": "Transform a collection of controlled documents into an integrated system that aligns value, governance, capability, execution, evidence, measurement, learning, and sustained service excellence.",
@@ -8131,7 +8159,7 @@
     "readingTime": 12,
     "wordCount": 2446,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "Governance, Risk & Assurance",
     "subcategory": "Risk & Compliance",
     "summary": "Risk assessment should shape the procedure before the procedure is written. It identifies what could affect the objective, who may be harmed or impacted, which controls already exist, what remains uncertain, and where authority or escalation is required.",
@@ -8193,7 +8221,7 @@
     "readingTime": 12,
     "wordCount": 2638,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "Operations & Process Engineering",
     "subcategory": "Performance & Operational Control",
     "summary": "Build a decision system that balances service outcomes, process control, guest experience, risk, people, suppliers, finance, and improvement without drowning managers in data.",
@@ -8259,7 +8287,7 @@
     "readingTime": 13,
     "wordCount": 2653,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "Operations & Process Engineering",
     "subcategory": "Process Architecture & BPM",
     "summary": "Create a navigable governance and operating architecture across reservations, transport, airports, excursions, representatives, suppliers, safety, quality, finance, after-hours work, and crisis response.",
@@ -8325,7 +8353,7 @@
     "readingTime": 21,
     "wordCount": 5081,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "AI Prompt Engineering & Toolkits",
     "subcategory": "Tourism & DMC AI Toolkits",
     "summary": "AI is most useful in tourism product development when it organises evidence, explores options and exposes feasibility questions instead of inventing demand or suppliers.",
@@ -8391,7 +8419,7 @@
     "readingTime": 22,
     "wordCount": 5239,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "AI Prompt Engineering & Toolkits",
     "subcategory": "Prompt Engineering Frameworks",
     "summary": "Tourism prompt engineering is the practice of defining a travel task, supplying verified operating context and controlling the output so a qualified employee can review it safely.",
@@ -8456,7 +8484,7 @@
     "readingTime": 21,
     "wordCount": 5034,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "AI Prompt Engineering & Toolkits",
     "subcategory": "Tourism & DMC AI Toolkits",
     "summary": "AI can structure SOP and quality work from evidence, but process owners must observe the job, validate causes and confirm corrective-action effectiveness.",
@@ -8522,7 +8550,7 @@
     "readingTime": 21,
     "wordCount": 5027,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "AI Prompt Engineering & Toolkits",
     "subcategory": "Tourism & DMC AI Toolkits",
     "summary": "AI can improve commercial structure and communication, but it must not create rates, terms, tax, margin, currency conversions or commitments.",
@@ -8586,7 +8614,7 @@
     "readingTime": 13,
     "wordCount": 2689,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "Operations & Process Engineering",
     "subcategory": "SOPs & Work Instructions",
     "summary": "Move beyond attendance sheets by defining competence, practicing the work, authorizing people at the right level, supporting adoption, and verifying performance in live operations.",
@@ -8650,7 +8678,7 @@
     "readingTime": 13,
     "wordCount": 2688,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "Governance, Risk & Assurance",
     "subcategory": "Supplier & Decision Governance",
     "summary": "Translate service promises into clear partner requirements, readiness evidence, live-day interfaces, escalation, performance review, continuity, and controlled change.",
@@ -8716,7 +8744,7 @@
     "readingTime": 21,
     "wordCount": 5144,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "AI Prompt Engineering & Toolkits",
     "subcategory": "Tourism & DMC AI Toolkits",
     "summary": "AI can support pickup and fleet planning by testing supplied constraints; dispatchers must still verify routes, capacity, access, availability and live conditions.",
@@ -8780,7 +8808,7 @@
     "readingTime": 12,
     "wordCount": 2617,
     "contentType": "Field guide",
-    "updated": "2026-08-22",
+    "updated": "2026-08-28",
     "primaryCategory": "Operations & Process Engineering",
     "subcategory": "SOPs & Work Instructions",
     "summary": "Separate instructions for doing the work from controlled tests that prove the process, system, handoff, or contingency performs as intended.",

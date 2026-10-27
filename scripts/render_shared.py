@@ -111,6 +111,9 @@ def render(source, path, root=ROOT):
     source = source.replace('</head>', hints + '</head>', 1)
     # Native contents starts compact; desktop enhancement opens the rail without moving article text.
     source = re.sub(r'(<details\b[^>]*data-reader-toc[^>]*)\sopen(?=[\s>])', r'\1', source)
+    from render_article_videos import render as render_article_videos
+    from render_reader_enhancements import render as render_reader_enhancements
+    source = render_reader_enhancements(render_article_videos(source, path, root), path, root)
     # Version changed interaction assets so an offline cache cannot serve old controls.
     source = re.sub(r'(/assets/js/(?:discovery|article-reader)\.js)(?:\?[^"\s]*)?(?=")', r'\1?v=20261009-phase2', source)
     source = re.sub(r'(/assets/css/infraquote-bundle\.css)(?:\?[^"\s]*)?(?=")', r'\1?v=20261009-phase2', source)

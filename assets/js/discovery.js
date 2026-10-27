@@ -224,7 +224,7 @@
   var saved = null;
   try { saved = JSON.parse(sessionStorage.getItem('ahmed-library-browse-v1') || 'null'); } catch (_) {}
   var initialFilters = new URLSearchParams(location.search);
-  var explicit = ['category', 'subcategory', 'tag', 'collection', 'pillar', 'topic', 'series', 'type', 'q', 'sort'].some(function (key) { return initialFilters.has(key); });
+  var explicit = ['category', 'subcategory', 'tag', 'collection', 'pillar', 'topic', 'series', 'type', 'format', 'q', 'sort'].some(function (key) { return initialFilters.has(key); });
   filters.forEach(function (filter) {
     var value = explicit ? (initialFilters.get(filter.dataset.knowledgeFilter) || (filter.dataset.knowledgeFilter === 'pillar' ? initialFilters.get('topic') : '')) : saved?.filters?.[filter.dataset.knowledgeFilter];
     if (value && Array.from(filter.options).some(function (option) { return option.value === value; })) filter.value = value;
@@ -242,7 +242,7 @@
     var tokens = searchTokens(query);
     matched = knowledgeCards.filter(function (card) {
       var searchable = normalize(card.dataset.search + ' ' + topicLabel(card.dataset.search + ' ' + card.dataset.pillar));
-      return (!selected.category || card.dataset.category === selected.category) && (!selected.subcategory || card.dataset.subcategory === selected.subcategory) && (!selected.tag || (card.dataset.tag || '').split('|').includes(selected.tag)) && (!selected.collection || card.dataset.collection === selected.collection) && (!selected.pillar || card.dataset.pillar === selected.pillar) && (!selected.series || card.dataset.series === selected.series) && (!selected.type || card.dataset.type === selected.type) && tokens.every(function (token) { return searchable.includes(token); });
+      return (!selected.format || (card.dataset.format || '').split('|').includes(selected.format)) && (!selected.category || card.dataset.category === selected.category) && (!selected.subcategory || card.dataset.subcategory === selected.subcategory) && (!selected.tag || (card.dataset.tag || '').split('|').includes(selected.tag)) && (!selected.collection || card.dataset.collection === selected.collection) && (!selected.pillar || card.dataset.pillar === selected.pillar) && (!selected.series || card.dataset.series === selected.series) && (!selected.type || card.dataset.type === selected.type) && tokens.every(function (token) { return searchable.includes(token); });
     });
     if (selected.collection && (!sort || sort.value === 'recommended')) matched.sort(function (a, b) { return Number(a.dataset.position || 0) - Number(b.dataset.position || 0); });
     if (sort?.value === 'title') matched.sort(function (a, b) { return a.querySelector('h2').textContent.localeCompare(b.querySelector('h2').textContent); });
@@ -257,7 +257,7 @@
     var selection = query ? ['Search: “' + query + '”'] : [];
     activeFilters.forEach(function (filter) {
       var option = Array.from(filter.options).find(function (item) { return item.value === filter.value; });
-      selection.push(({ category: 'Category', subcategory: 'Subcategory', tag: 'Topic tag', collection: 'Editorial series', pillar: 'Topic', series: 'Series', type: 'Content type' })[filter.dataset.knowledgeFilter] + ': ' + (option?.textContent || filter.value));
+      selection.push(({ category: 'Category', subcategory: 'Subcategory', tag: 'Topic tag', collection: 'Editorial series', pillar: 'Topic', series: 'Series', type: 'Content type', format: 'Format' })[filter.dataset.knowledgeFilter] + ': ' + (option?.textContent || filter.value));
     });
     if (sort?.value && sort.value !== 'recommended') selection.push('Sort: ' + Array.from(sort.options).find(function (item) { return item.value === sort.value; })?.textContent);
     if (activeSelection) activeSelection.hidden = selection.length === 0;

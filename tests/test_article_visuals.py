@@ -18,7 +18,7 @@ class ArticleVisualTests(unittest.TestCase):
      tables+=1;self.assertEqual(n['attrs'].get('data-reading-visual'),'true')
      self.assertTrue(any(x['tag']=='caption' and x['parent'] is n for x in e.nodes),p)
      parent=n['parent'];self.assertIn('table-scroll',e.classes(parent));self.assertEqual(parent['attrs'].get('tabindex'),'0')
-    if n['tag']=='figure':
+    if n['tag']=='figure' and 'article-video' not in e.classes(n):
      figures+=1;self.assertEqual(n['attrs'].get('data-reading-visual'),'true')
      self.assertIn('What to learn',s[n['start']:n['end']])
      self.assertIn('diagram-scroll',s[n['start']:n['end']])

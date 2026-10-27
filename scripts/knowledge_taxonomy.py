@@ -43,6 +43,10 @@ def link(category,subcategory=None):
 def render_article(source,row,registry):
     """Taxonomy navigation outside the untouched teaching body, no new canonical paths."""
     source=re.sub(r'<!-- knowledge-context:start -->.*?<!-- knowledge-context:end -->','',source,flags=re.S)
+    from apply_field_manual import parse
+    for node in reversed(parse(source).nodes):
+        if 'knowledge-context' in node['attrs'].get('class','').split():
+            source=source[:node['start']]+source[node['end']:]
     primary=escape(row['primaryCategory']);sub=escape(row['subcategory'])
     html='<aside class="reading-connections knowledge-context" aria-label="Explore this subject"><h2>Explore this subject</h2><p><a href="'+escape(link(row['primaryCategory']),quote=True)+'">'+primary+'</a> / <a href="'+escape(link(row['primaryCategory'],row['subcategory']),quote=True)+'">'+sub+'</a></p><p>'+escape(row['summary'])+'</p>'
     # Existing links remain in their original modules. Avoid repetitive companion links.
@@ -70,6 +74,8 @@ def render_article(source,row,registry):
 
 def render_hub(root,registry,source):
     t=validate(root,registry);e=escape
+    video_path=root/'content/article-video-matches.json'
+    video_urls={'/'+m['article'] for m in json.loads(video_path.read_text())} if video_path.exists() else set()
     source=source.replace('<div class="library-search" id="library-search">','<div class="library-search">').replace('<input type="search" data-knowledge-query','<input id="library-search" type="search" data-knowledge-query')
     description='Explore Travel and Tourism knowledge across product strategy, process engineering, AI toolkits, service operations and governance. Browse by subject or editorial series.'
     source=source.replace('Discover all original articles, five structured learning paths and practical tourism operations tools by Ahmed Mahmoud.',description)
@@ -94,17 +100,21 @@ def render_hub(root,registry,source):
     source=re.sub(r'<nav class="topic-grid taxonomy-grid".*?</nav>',lambda m:nav,source,flags=re.S)
     source=source.replace('Browse by topic','Browse by category')
     controls=[]
+    controls.append('<label>Format<select data-knowledge-filter="format"><option value="">All formats</option><option value="guide">Guides</option><option value="toolkit">AI toolkits</option><option value="video">Includes video</option><option value="overview">Series overviews</option></select></label>')
     for key,label,values in [('category','Category',[(x['name'],x['name']) for x in t['categories']]),('subcategory','Subcategory',[(s,s) for c in t['categories'] for s in c['subcategories']]),('tag','Topic tag',[(s,s) for s in t['tags'] if any(s in x['tags'] for x in registry)]),('collection','Editorial series',sorted({(x['seriesId'],x['seriesTitle']) for x in registry if x.get('seriesId')})),('pillar','Legacy topic',[(s,s) for s in sorted({x['pillar'] for x in registry})]),('series','Legacy series',[(s,s) for s in sorted({x['series'] for x in registry})]),('type','Content type',[(s,s) for s in sorted({x['type'] if x['type']=='Series index' else x['contentType'] for x in registry})])]:
         attrs=' data-legacy-filter hidden' if key in ('pillar','series') else ''
         controls.append('<label'+attrs+'>'+label+'<select data-knowledge-filter="'+key+'"><option value="">All '+label.lower()+' options</option>'+''.join('<option value="'+e(v,quote=True)+'">'+e('AI for Hotel Apartments' if name=='Hotel & Serviced Apartment AI' else name)+'</option>' for v,name in values)+'</select></label>')
-    source=re.sub(r'<div class="knowledge-filters">.*?</div>','<div class="knowledge-filters">'+''.join(controls)+'<button type="button" data-knowledge-reset>Reset filters</button></div>',source,flags=re.S)
+    source=re.sub(r'<div class="knowledge-filters">.*?</div>','<div class="knowledge-filters">'+''.join(controls)+'<a href="/lab/index.html">Explore working demos →</a><button type="button" data-knowledge-reset>Reset filters</button></div>',source,flags=re.S)
     cards=[]
     for x in registry:
         typ='Series index' if x['type']=='Series index' else x['contentType']
-        data=dict(pillar=x['pillar'],series=x['series'],type=typ,updated=x.get('updated',''),category=x['primaryCategory'],subcategory=x['subcategory'],tag='|'.join(x['tags']),collection=x['seriesId'] or '',position=x.get('seriesPosition') or 0,search=' '.join([x['title'],x['summary'],x['primaryCategory'],x['subcategory'],*x['tags'],*x.get('legacyTags',[])]).lower())
+        formats=['overview'] if x['type']=='Series index' else ['toolkit'] if 'toolkit' in x['contentType'].lower() or 'prompt' in x['contentType'].lower() or 'toolkit' in x['title'].lower() else ['guide']
+        if x['url'] in video_urls: formats.append('video')
+        data=dict(format='|'.join(formats),pillar=x['pillar'],series=x['series'],type=typ,updated=x.get('updated',''),category=x['primaryCategory'],subcategory=x['subcategory'],tag='|'.join(x['tags']),collection=x['seriesId'] or '',position=x.get('seriesPosition') or 0,search=' '.join([x['title'],x['summary'],x['primaryCategory'],x['subcategory'],*x['tags'],*x.get('legacyTags',[])]).lower())
         attrs=' '.join('data-'+k+'="'+e(str(v),quote=True)+'"' for k,v in data.items())
         label=(x['seriesTitle']+(' · Article '+str(x['seriesPosition']) if x.get('seriesPosition') else ' · Overview')) if x.get('seriesId') else 'Independent field guide'
-        cards.append('<article class="knowledge-card" data-knowledge-card '+attrs+'><a href="'+e(x['url'])+'"><span>'+e(x['primaryCategory'])+'</span><h2>'+e(x['title'])+'</h2><p>'+e(x['summary'])+'</p><p class="knowledge-card-subcategory">'+e(x['subcategory'])+'</p><ul class="knowledge-tags" aria-label="Topics">'+''.join('<li>'+e(tag)+'</li>' for tag in x['tags'][:3])+'</ul><small>'+e(label)+' · '+str(x['readingTime'])+' min estimated read</small></a></article>')
+        badge='<span class="knowledge-video-badge">Includes video</span>' if x['url'] in video_urls else ''
+        cards.append('<article class="knowledge-card" data-knowledge-card '+attrs+'><a href="'+e(x['url'])+'"><span>'+e(x['primaryCategory'])+'</span><h2>'+e(x['title'])+'</h2>'+badge+'<p>'+e(x['summary'])+'</p><p class="knowledge-card-subcategory">'+e(x['subcategory'])+'</p><ul class="knowledge-tags" aria-label="Topics">'+''.join('<li>'+e(tag)+'</li>' for tag in x['tags'][:3])+'</ul><small>'+e(label)+' · '+str(x['readingTime'])+' min estimated read</small></a></article>')
     source=re.sub(r'<div class="knowledge-grid">.*?</div>(?=<div class="(?:library-pagination|knowledge-empty)")','<div class="knowledge-grid">'+''.join(cards)+'</div>',source,flags=re.S)
     source=re.sub(r'<!-- featured-series:start -->.*?<!-- featured-series:end -->','',source,flags=re.S)
     series='<section class="featured-strip knowledge-series" aria-labelledby="series-heading"><header><span class="eyebrow">Follow a learning sequence</span><h2 id="series-heading">Editorial series</h2><p>Series connect articles across categories. Follow the sequence or choose a specific method.</p></header><div>'

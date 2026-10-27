@@ -26,5 +26,5 @@
   }));
   const disclosure = document.querySelector('.library-filter-disclosure');
   if (disclosure && new URLSearchParams(location.search).has('series')) disclosure.open = true;
-  if (disclosure && new URLSearchParams(location.search).has('type')) disclosure.open = true;
+  if (disclosure && ['type', 'format', 'category', 'subcategory', 'tag', 'collection'].some(key => new URLSearchParams(location.search).has(key))) disclosure.open = true;
 })();

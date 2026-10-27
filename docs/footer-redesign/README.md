@@ -32,4 +32,4 @@ The desktop proof displays the production component at a 1440px layout, scaled t
 
 ## Scope
 
-This branch contains only the footer redesign and its rendering, navigation-preservation and validation support. Earlier uncommitted video/library enhancements remain in their original local checkout and are not included here. No production merge or deployment is authorized by this PR.
+This release combines the footer redesign with the previously prepared video/library enhancements, following explicit approval to merge and deploy all work. The video placement manifest and renderers preserve the 15 paragraph-level embeds, format filters, video badges, evidence notes and compact related-reading panels. Weekly availability checking is included.

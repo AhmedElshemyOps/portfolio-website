@@ -60,6 +60,9 @@ def render(source,path,root=ROOT):
  if row.get('primaryCategory'):
   from knowledge_taxonomy import render_article
   source=render_article(source,row,json.loads(registry_path.read_text()))
+ from render_article_videos import render as render_article_videos
+ from render_reader_enhancements import render as render_reader_enhancements
+ source=render_reader_enhancements(render_article_videos(source,path,root),path,root)
  return pack(source,path,root) if was_bundled else source
 
 def apply(root=ROOT,check=False):
