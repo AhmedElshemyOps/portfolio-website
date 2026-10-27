@@ -40,6 +40,6 @@ class LibraryNavigationTests(unittest.TestCase):
    for panel in panels:
     rendered+=1
     for a in panel.all('a'):
-     href=a.attrs['href'];self.assertTrue((ROOT/href.lstrip('/')).is_file());self.assertTrue(any(x['source']==source and x['target']==href for x in rows));self.assertEqual(sum(n.attrs.get('href','').split('#')[0]==href for n in d.all('a')),1)
+     href=a.attrs['href'];self.assertTrue((ROOT/href.lstrip('/')).is_file());self.assertTrue(any(x['source']==source and x['target']==href for x in rows));self.assertEqual(sum(n.attrs.get('href','').split('#')[0]==href for n in d.all('main')[0].all('a')),1)
   self.assertGreaterEqual(rendered,5)
 if __name__=='__main__':unittest.main()

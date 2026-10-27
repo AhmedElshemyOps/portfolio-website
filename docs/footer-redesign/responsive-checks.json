@@ -1,0 +1,51 @@
+[
+  {
+    "footerRight": 1908,
+    "grid": "416.664px 208.336px 208.328px 208.336px 208.336px 250px",
+    "overflowingLinks": 0,
+    "page": 1920,
+    "viewport": 1920
+  },
+  {
+    "footerRight": 1428,
+    "grid": "331.664px 165.836px 165.828px 165.836px 165.836px 199px",
+    "overflowingLinks": 0,
+    "page": 1440,
+    "viewport": 1440
+  },
+  {
+    "footerRight": 1268,
+    "grid": "285.664px 142.828px 142.836px 142.836px 142.828px 177px",
+    "overflowingLinks": 0,
+    "page": 1280,
+    "viewport": 1280
+  },
+  {
+    "footerRight": 1088,
+    "grid": "179.594px 179.602px 179.602px 179.602px 179.602px",
+    "overflowingLinks": 0,
+    "page": 1100,
+    "viewport": 1100
+  },
+  {
+    "footerRight": 756,
+    "grid": "210px 210px 210px",
+    "overflowingLinks": 0,
+    "page": 768,
+    "viewport": 768
+  },
+  {
+    "footerRight": 367,
+    "grid": "145.5px 145.5px",
+    "overflowingLinks": 0,
+    "page": 375,
+    "viewport": 390
+  },
+  {
+    "footerRight": 297,
+    "grid": "119.5px 119.5px",
+    "overflowingLinks": 0,
+    "page": 305,
+    "viewport": 320
+  }
+]

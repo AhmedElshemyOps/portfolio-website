@@ -88,7 +88,13 @@ def render(source, path, root=ROOT):
     # All shared assets are explicit, single references. Remove legacy entry points.
     source = re.sub(r'<link\b[^>]*href="/assets/css/(?:site-navigation|site-chrome)\.css[^\"]*"[^>]*>', '', source)
     source = re.sub(r'<script\b[^>]*src="/assets/js/site-navigation\.js[^\"]*"[^>]*>\s*</script>', '', source)
+    source = re.sub(r'<link\b[^>]*href="/assets/css/footer\.css[^\"]*"[^>]*>', '', source)
     assets = SHARED_CSS if shared_footer or shared_header else ''
+    if shared_footer:
+        assets += '<link rel="stylesheet" href="/assets/css/footer.css"/>'
+        # A local, zero-height target preserves existing body IDs and works without JS.
+        if 'id="page-top"' not in source:
+            source = re.sub(r'(<body\b[^>]*>)', r'\1<span id="page-top" aria-hidden="true"></span>', source, count=1)
     if shared_header:
         # Initialise the compact menu before the following main content is parsed.
         # Without JavaScript the navigation links remain visible.

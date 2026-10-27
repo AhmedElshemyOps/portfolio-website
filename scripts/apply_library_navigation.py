@@ -50,7 +50,7 @@ def render(source,path,root=ROOT):
  source=re.sub(r'<aside class="reading-connections".*?</aside>','',source,flags=re.S)
  connections_path=root/'maintenance/seo/library-reading-connections.json'
  if connections_path.exists():
-  existing={n.attrs.get('href','').split('#')[0] for n in DOM(source).root.all('a')};links=[x for x in json.loads(connections_path.read_text()) if x['source']==relative and x['target'] not in existing and BASE+x['target'] not in existing]
+  existing={n.attrs.get('href','').split('#')[0] for n in DOM(source.split('<footer',1)[0]).root.all('a')};links=[x for x in json.loads(connections_path.read_text()) if x['source']==relative and x['target'] not in existing and BASE+x['target'] not in existing]
   if links:
    panel='<aside class="reading-connections" aria-label="Related reading"><h2>Continue with the method or project</h2><ul>'+''.join('<li><a href="'+escape(x['target'],quote=True)+'">'+escape(x['title'])+'</a><p>'+escape(x['purpose'])+'</p></li>' for x in links)+'</ul></aside>'
    dom=DOM(source).root;article=next((n for n in dom.all('article') if 'article-body' in n.attrs.get('class','').split()),None)
