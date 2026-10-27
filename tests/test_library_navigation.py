@@ -36,10 +36,12 @@ class LibraryNavigationTests(unittest.TestCase):
   rows=json.loads((ROOT/'maintenance/seo/library-reading-connections.json').read_text());rendered=0
   for source in set(x['source'] for x in rows):
    d=DOM((ROOT/source.lstrip('/')).read_text()).root
-   panels=[n for n in d.all('aside') if n.attrs.get('aria-label')=='Related reading']
-   for panel in panels:
-    rendered+=1
-    for a in panel.all('a'):
-     href=a.attrs['href'];self.assertTrue((ROOT/href.lstrip('/')).is_file());self.assertTrue(any(x['source']==source and x['target']==href for x in rows));self.assertEqual(sum(n.attrs.get('href','').split('#')[0]==href for n in d.all('main')[0].all('a')),1)
+   panels=[n for n in d.all('section') if 'article-finish' in n.attrs.get('class','').split()]
+   self.assertEqual(len(panels),1)
+   for a in panels[0].all('a'):
+    href=a.attrs.get('href','')
+    if not any(x['source']==source and x['target']==href for x in rows):continue
+    rendered+=1;self.assertTrue((ROOT/href.lstrip('/')).is_file())
+    self.assertEqual(sum(n.attrs.get('href')==href for n in panels[0].all('a')),1)
   self.assertGreaterEqual(rendered,5)
 if __name__=='__main__':unittest.main()

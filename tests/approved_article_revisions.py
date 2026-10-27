@@ -67,4 +67,5 @@ def approved_revisions(source, slug):
     from render_article_videos import render as render_article_videos
     from render_reader_enhancements import render as render_reader_enhancements
     path=ROOT/'articles'/slug/'index.html'
-    return render_reader_enhancements(render_article_videos(source,path,ROOT),path,ROOT)
+    from remove_subscription_ui import render as remove_subscription_ui
+    return remove_subscription_ui(render_reader_enhancements(render_article_videos(source,path,ROOT),path,ROOT))

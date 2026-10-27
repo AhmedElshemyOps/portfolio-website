@@ -36,7 +36,7 @@ def simplify(s):
         if prompt:
             first=next(x for x in e.nodes if prompt_section['inner']<=x['start']<prompt_section['end'] and x['tag'] in ('h2','h3','h4'))
             if n is not first:continue
-        if any('data-prompt-card' in p['attrs'] or 'prompt-card' in e.classes(p) for p in parents):continue
+        if any('data-prompt-card' in p['attrs'] or e.classes(p)&{'prompt-card','article-prompt'} for p in parents):continue
         ident=n['attrs'].get('id')
         if not ident:
             ident=next((p['attrs']['id'] for p in parents if p is not body and p['attrs'].get('id')),None)
@@ -56,6 +56,7 @@ def simplify(s):
     for link in old_links:
         ident=link['attrs'].get('href','').removeprefix('#');target=by_id.get(ident)
         if ident in seen or not target or target['tag']=='span':continue
+        if 'article-glossary' in e.classes(target):continue
         if body['start']<=target['start']<body['end']:continue
         label=re.sub(r'^\d+\s*','',text(s,link)).strip()
         records.append(dict(id=ident,label=label,children=[],kind='section'));seen.add(ident)

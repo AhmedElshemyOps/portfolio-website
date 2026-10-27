@@ -54,7 +54,6 @@
 .field-manual .article-visual{margin:28px 0}.field-manual .article-visual img{display:block;width:100%;height:auto}.field-manual figcaption{font-size:13px;line-height:1.6;margin-top:10px;color:var(--muted)}
 .field-manual .framework-grid,.field-manual .implementation-steps,.field-manual .final-check-grid{display:grid;gap:16px}.field-manual .final-check-grid label{display:flex;gap:12px}
 .field-manual .faq-section details{padding:16px 0;border-bottom:1px solid var(--line)}.field-manual .faq-section summary{cursor:pointer;color:var(--ink);font-weight:600}
-.field-manual .series-nav,.field-manual .article-sequence{display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;margin:32px 0}
 .field-manual .article-section-map{display:none}.field-manual .article-back-to-top{display:none}
 .field-manual :focus-visible{outline:var(--focus-ring);outline-offset:4px}.field-manual [id]{scroll-margin-top:24px}
 .field-manual.reader-dark{--paper:#07182b;--paper-deep:#18304d;--white:#10233f;--ink:#fcfaf5;--muted:#c9d3df;--line:#52647a;--line-light:#18304d}

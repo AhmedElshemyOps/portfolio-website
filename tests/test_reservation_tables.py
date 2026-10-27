@@ -64,7 +64,8 @@ class ReservationTableTests(unittest.TestCase):
                 return True
             return [(key, node['attrs'][key]) for node in document.nodes
                     if body['inner'] <= node['start'] < body['end'] and teaching(node)
-                    for key in ('id', 'href') if key in node['attrs']]
+                    for key in ('id', 'href') if key in node['attrs']
+                    and not (key == 'id' and node['attrs'][key].startswith('ai-toolkit-'))]
         self.assertEqual(article_attributes(self.after), article_attributes(self.before))
         original_document=parse(self.before)
         original_body=next(n for n in original_document.nodes if 'article-body' in original_document.classes(n))

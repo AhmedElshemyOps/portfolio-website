@@ -69,10 +69,7 @@ and light halo remain visible on light forms and navy panels. Its focused-state
 priority overrides legacy decorative/input shadows, with a system Highlight
 outline in forced-colour mode.
 
-`site-navigation.css` and `growth-navigation.css` remain compatibility imports
-for previously published pages. Current generated pages use `site-chrome.css`
-directly. Old hashed application bundles and their assets remain available for
-cached or historical clients; they are not loaded by the current homepage.
+`site-navigation.css`, `growth-navigation.css` and the four superseded hashed application entry bundles were removed in the 27 October cleanup after confirming they have no active consumer. Current pages use `site-chrome.css` and the maintained source scripts. Original teaching assets and research evidence remain available.
 
 Shared asset revision strings and the service-worker cache version were advanced
 for this release so returning visitors can receive the refreshed files.
@@ -85,7 +82,7 @@ for this release so returning visitors can receive the refreshed files.
 
 The homepage article browser reads its inline JSON list, showing four original article URLs per click. Keep its curated first group and include every registry Article exactly once. Display labels may change; the legacy hotel-topic filter value and existing URLs stay fixed. `discovery.js` recognises both labels.
 
-Navigations and CV documents use network-first service-worker caching with offline fallback; assets use stale-while-revalidate. Increment the cache version when releasing shared assets.
+Public navigation, documents and assets use network-first service-worker revalidation with a bounded offline fallback. Increment the cache version when releasing shared assets.
 
 ## Repeatable whole-site health check
 
@@ -97,7 +94,7 @@ Install the locked development dependency with `pnpm install --frozen-lockfile -
 
 - Shared tokens now control section spacing, card padding, grid gaps and action height in the homepage, supporting pages and demo theme. Source rules consume tokens rather than adding another overriding stylesheet.
 - Consolidated superseded mobile banner rules and duplicate InfraQuote sidebar declarations; removed unnecessary priority flags from review colours and mobile spacing. Print/hidden-state/focus priorities remain intentional.
-- Rechecked `growth-navigation.css` and `site-navigation.css` across HTML, CSS imports, JavaScript, JSON, scripts and templates: no active consumer. Both tiny wrappers remain intentionally available for historical/cached pages, as documented above. They are compatibility endpoints, not a current-page performance cost.
+- Rechecked `growth-navigation.css` and `site-navigation.css` across HTML, CSS imports, JavaScript, JSON, scripts and templates: no active consumer. The wrappers were retained in that release, then removed in the 27 October cleanup after a further whole-site dependency audit.
 - Active CSS/JS references receive content revisions during shared rendering. The worker uses network-first revalidation with a five-second offline fallback. Cache limits: 40 pages (14 days), 48 images and 64 assets (30 days), 8 documents (7 days); individual responses over 4 MiB are excluded. Writes are awaited, expired entries pruned and oldest entries evicted. Only this site's old cache namespace is removed. Local quotation drafts are untouched.
 - `scripts/article_series.py` validates public series/order before publication. The approved manifest drives banner artwork, labels, numbering and reading paths. Private drafts are excluded.
 - Performance/accessibility measurements and their limits are recorded in the local phase-two delivery report. Physical-device and real-user measurements must not be inferred from viewport tests.
@@ -105,3 +102,14 @@ Install the locked development dependency with `pnpm install --frozen-lockfile -
 ## Whole-site frame consistency
 
 The header and footer templates are now shared by all 178 HTML pages, including home, privacy, 404 and maintenance. Retired the two alternate homepage templates. Legacy product footers were replaced by compact product-note asides, preserving product-specific links and fragment targets. Footer palette, font, link size and focus rules are scoped so page themes cannot change them. The archived maintenance report is labelled as historical, not a current health assertion. Wide Operations Lab input tables are bounded and keyboard-scrollable.
+
+
+## Site cleanup, 27 October 2026
+
+- Removed all site subscription UI, footer links, browser signup script, provider connection settings and the obsolete privacy section. The two old signup routes are noindex redirects to the Knowledge Hub with the shared frame as their fallback.
+- The shared renderer strips retired subscription markup during future renders and publication.
+- Removed 41 unreferenced generated CSS bundles, the four unused compiled app entry bundles, two compatibility stylesheets, and the unused newsletter/contact scripts: 49 files, approximately 4.09 MiB.
+- Pruned explicitly retired subscription and article-ending component selectors in seven maintained source stylesheets; regenerated dependent bundles. Shared branches of mixed selectors and media queries are preserved.
+- Service-worker cache version is v38-article-cleanup. The offline regression test reads the actual version and checks removal of the previous release cache.
+- `scripts/check_site_cleanup.py` audits every public HTML page, article finish, shared footer, main heading, navigation, local asset/CSS reference and generated-bundle consumer. It is included in the release health checks. `scripts/prune_generated_styles.py` removes only unreferenced content-hashed bundles; it never removes hand-authored styles.
+- Original articles, teaching tables, diagrams, prompts, research datasets and provenance reports are preserved. An old file is not considered dead merely because it is evidence or is referenced through a data-driven interface.

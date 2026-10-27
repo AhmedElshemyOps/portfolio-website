@@ -10,6 +10,70 @@
   </author>
   <updated>2026-10-14T00:00:00+04:00</updated>
   <entry>
+    <title>Policy vs SOP vs Work Instruction vs Checklist vs Form vs Template</title>
+    <id>https://ahmedqualityops.com/articles/policy-vs-sop-work-instruction-checklist-form-template/index.html</id>
+    <link href="https://ahmedqualityops.com/articles/policy-vs-sop-work-instruction-checklist-form-template/index.html" />
+    <updated>2026-10-14T00:00:00+04:00</updated>
+    <summary>A professional document system does not ask every document to do everything. It gives each document one clear job and connects the documents around the work employees actually perform.</summary>
+    <category term="Tourism Operations Excellence" />
+  </entry>
+  <entry>
+    <title>Hotel Apartment Operations Manager AI Toolkit</title>
+    <id>https://ahmedqualityops.com/articles/hotel-operations-manager-ai-toolkit/index.html</id>
+    <link href="https://ahmedqualityops.com/articles/hotel-operations-manager-ai-toolkit/index.html" />
+    <updated>2026-10-14T00:00:00+04:00</updated>
+    <summary>10 professional AI prompts for daily hotel apartment operations, priorities, handovers, exceptions and management control.</summary>
+    <category term="Hotel &amp; Serviced Apartment AI Operations" />
+  </entry>
+  <entry>
+    <title>Housekeeping Management AI Toolkit</title>
+    <id>https://ahmedqualityops.com/articles/hotel-housekeeping-management-ai-toolkit/index.html</id>
+    <link href="https://ahmedqualityops.com/articles/hotel-housekeeping-management-ai-toolkit/index.html" />
+    <updated>2026-10-14T00:00:00+04:00</updated>
+    <summary>10 professional AI prompts for room readiness, inspections, linen/PAR, deep cleaning, defects, productivity and housekeeping handover.</summary>
+    <category term="Hotel &amp; Serviced Apartment AI Operations" />
+  </entry>
+  <entry>
+    <title>The HOTEL Prompting Framework</title>
+    <id>https://ahmedqualityops.com/articles/hotel-ai-prompting-framework/index.html</id>
+    <link href="https://ahmedqualityops.com/articles/hotel-ai-prompting-framework/index.html" />
+    <updated>2026-10-14T00:00:00+04:00</updated>
+    <summary>How to write professional, governed AI prompts for hotel apartment and serviced-apartment operations using the HOTEL framework.</summary>
+    <category term="Hotel &amp; Serviced Apartment AI Operations" />
+  </entry>
+  <entry>
+    <title>The DMC Operations AI Toolkit: 10 Ready-to-Use Prompts for Daily Tour Operations</title>
+    <id>https://ahmedqualityops.com/articles/dmc-operations-ai-prompts/index.html</id>
+    <link href="https://ahmedqualityops.com/articles/dmc-operations-ai-prompts/index.html" />
+    <updated>2026-10-14T00:00:00+04:00</updated>
+    <summary>DMC operations teams can use AI to organise files, identify gaps and structure briefs, but confirmations, assignments and disruption decisions must stay in approved systems.</summary>
+    <category term="AI &amp; Tourism Operations" />
+  </entry>
+  <entry>
+    <title>Beyond the Script: How Great Tour Guides Turn Key Facts into Experiences Guests Remember</title>
+    <id>https://ahmedqualityops.com/articles/article-tour-guide-storytelling-system/index.html</id>
+    <link href="https://ahmedqualityops.com/articles/article-tour-guide-storytelling-system/index.html" />
+    <updated>2026-10-14T00:00:00+04:00</updated>
+    <summary>Why the best tour guides do not memorise every word — and what they should prepare instead</summary>
+    <category term="Guide Quality" />
+  </entry>
+  <entry>
+    <title>Tour Cost Worksheet for City Tours</title>
+    <id>https://ahmedqualityops.com/articles/article-tour-cost-worksheet-city-tour/index.html</id>
+    <link href="https://ahmedqualityops.com/articles/article-tour-cost-worksheet-city-tour/index.html" />
+    <updated>2026-10-14T00:00:00+04:00</updated>
+    <summary>Record transport, guide, ticket and operating inputs with quantity, source, date and verification status, then reconcile the cost base before pricing.</summary>
+    <category term="Tour Quotation" />
+  </entry>
+  <entry>
+    <title>Amsterdam Tourism Product Research Plan</title>
+    <id>https://ahmedqualityops.com/articles/amsterdam-product-discovery-01-research-plan/index.html</id>
+    <link href="https://ahmedqualityops.com/articles/amsterdam-product-discovery-01-research-plan/index.html" />
+    <updated>2026-10-14T00:00:00+04:00</updated>
+    <summary>Part 01 of a 12-part Amsterdam tourism product-management case study: framing the destination decision, hypotheses, research design, data provenance, sampling and ethics before deciding what to build.</summary>
+    <category term="Amsterdam Product Discovery" />
+  </entry>
+  <entry>
     <title>Workforce, Rostering &amp; Productivity AI Toolkit</title>
     <id>https://ahmedqualityops.com/articles/workforce-rostering-productivity-ai-toolkit/index.html</id>
     <link href="https://ahmedqualityops.com/articles/workforce-rostering-productivity-ai-toolkit/index.html" />
@@ -66,14 +130,6 @@
     <category term="Hotel Apartment Operational Excellence" />
   </entry>
   <entry>
-    <title>Housekeeping Management AI Toolkit</title>
-    <id>https://ahmedqualityops.com/articles/hotel-housekeeping-management-ai-toolkit/index.html</id>
-    <link href="https://ahmedqualityops.com/articles/hotel-housekeeping-management-ai-toolkit/index.html" />
-    <updated>2026-10-14T00:00:00+04:00</updated>
-    <summary>10 professional AI prompts for room readiness, inspections, linen/PAR, deep cleaning, defects, productivity and housekeeping handover.</summary>
-    <category term="Hotel &amp; Serviced Apartment AI Operations" />
-  </entry>
-  <entry>
     <title>Guest Experience Quality Management</title>
     <id>https://ahmedqualityops.com/articles/hotel-guest-experience-quality-management/index.html</id>
     <link href="https://ahmedqualityops.com/articles/hotel-guest-experience-quality-management/index.html" />
@@ -126,7 +182,7 @@
     <id>https://ahmedqualityops.com/articles/article-transport-tickets-vat-gratuities/index.html</id>
     <link href="https://ahmedqualityops.com/articles/article-transport-tickets-vat-gratuities/index.html" />
     <updated>2026-10-08T00:00:00+04:00</updated>
-    <summary>How transport, attraction tickets, VAT and gratuities should be controlled within professional tour costing.</summary>
+    <summary>Review transport, ticket type and price, tax treatment, and gratuities separately; verify the relevant source and customer-pricing rules before releasing a quotation.</summary>
     <category term="Tour Quotation" />
   </entry>
   <entry>
@@ -150,7 +206,7 @@
     <id>https://ahmedqualityops.com/articles/amsterdam-product-discovery-09-risk-responsibility/index.html</id>
     <link href="https://ahmedqualityops.com/articles/amsterdam-product-discovery-09-risk-responsibility/index.html" />
     <updated>2026-10-08T00:00:00+04:00</updated>
-    <summary>Part 09 of a 12-part Amsterdam tourism product-management case study: verified regulation, product risk, accessibility controls and measurable destination responsibility for Amsterdam Layers.</summary>
+    <summary>An evidence-led Amsterdam tour launch review covering guided-tour rules, conditional business duties, accessibility and route risks, with separate project controls and pilot measures.</summary>
     <category term="Amsterdam Product Discovery" />
   </entry>
   <entry>
@@ -159,14 +215,6 @@
     <link href="https://ahmedqualityops.com/articles/amsterdam-product-discovery-05-segmentation-language/index.html" />
     <updated>2026-10-08T00:00:00+04:00</updated>
     <summary>Part 05 of a 12-part Amsterdam tourism product-management case study: source-market segmentation, language supply, connectivity and guide feasibility translated into Primary, Secondary and Test research segments.</summary>
-    <category term="Amsterdam Product Discovery" />
-  </entry>
-  <entry>
-    <title>Amsterdam Tourism Product Research Plan</title>
-    <id>https://ahmedqualityops.com/articles/amsterdam-product-discovery-01-research-plan/index.html</id>
-    <link href="https://ahmedqualityops.com/articles/amsterdam-product-discovery-01-research-plan/index.html" />
-    <updated>2026-10-14T00:00:00+04:00</updated>
-    <summary>Part 01 of a 12-part Amsterdam tourism product-management case study: framing the destination decision, hypotheses, research design, data provenance, sampling and ethics before deciding what to build.</summary>
     <category term="Amsterdam Product Discovery" />
   </entry>
   <entry>
@@ -442,14 +490,6 @@
     <category term="Hotel &amp; Serviced Apartment AI Operations" />
   </entry>
   <entry>
-    <title>Hotel Apartment Operations Manager AI Toolkit</title>
-    <id>https://ahmedqualityops.com/articles/hotel-operations-manager-ai-toolkit/index.html</id>
-    <link href="https://ahmedqualityops.com/articles/hotel-operations-manager-ai-toolkit/index.html" />
-    <updated>2026-10-14T00:00:00+04:00</updated>
-    <summary>10 professional AI prompts for daily hotel apartment operations, priorities, handovers, exceptions and management control.</summary>
-    <category term="Hotel &amp; Serviced Apartment AI Operations" />
-  </entry>
-  <entry>
     <title>Guest Experience AI Toolkit</title>
     <id>https://ahmedqualityops.com/articles/hotel-guest-experience-ai-toolkit/index.html</id>
     <link href="https://ahmedqualityops.com/articles/hotel-guest-experience-ai-toolkit/index.html" />
@@ -474,14 +514,6 @@
     <category term="Hotel &amp; Serviced Apartment AI Operations" />
   </entry>
   <entry>
-    <title>The HOTEL Prompting Framework</title>
-    <id>https://ahmedqualityops.com/articles/hotel-ai-prompting-framework/index.html</id>
-    <link href="https://ahmedqualityops.com/articles/hotel-ai-prompting-framework/index.html" />
-    <updated>2026-10-14T00:00:00+04:00</updated>
-    <summary>How to write professional, governed AI prompts for hotel apartment and serviced-apartment operations using the HOTEL framework.</summary>
-    <category term="Hotel &amp; Serviced Apartment AI Operations" />
-  </entry>
-  <entry>
     <title>After the First Guests: Product Analytics, Continuous Improvement and the Scale Decision</title>
     <id>https://ahmedqualityops.com/articles/amsterdam-product-discovery-12-product-analytics-scale-decision/index.html</id>
     <link href="https://ahmedqualityops.com/articles/amsterdam-product-discovery-12-product-analytics-scale-decision/index.html" />
@@ -502,7 +534,7 @@
     <id>https://ahmedqualityops.com/articles/amsterdam-product-discovery-08-commercial-model-unit-economics/index.html</id>
     <link href="https://ahmedqualityops.com/articles/amsterdam-product-discovery-08-commercial-model-unit-economics/index.html" />
     <updated>2026-09-04T00:00:00+04:00</updated>
-    <summary>Part 08 of a 12-part Amsterdam tourism product-management case study: transparent pricing, channel economics, capacity, break-even and commercial guardrails without invented private sales data.</summary>
+    <summary>Tests Amsterdam tourism pricing, channel costs, capacity and break-even through disclosed scenarios, with VAT guidance and market observations kept separate from verified business data.</summary>
     <category term="Amsterdam Product Discovery" />
   </entry>
   <entry>
@@ -714,14 +746,6 @@
     <category term="Tourism Operations Excellence" />
   </entry>
   <entry>
-    <title>Policy vs SOP vs Work Instruction vs Checklist vs Form vs Template</title>
-    <id>https://ahmedqualityops.com/articles/policy-vs-sop-work-instruction-checklist-form-template/index.html</id>
-    <link href="https://ahmedqualityops.com/articles/policy-vs-sop-work-instruction-checklist-form-template/index.html" />
-    <updated>2026-10-14T00:00:00+04:00</updated>
-    <summary>A professional document system does not ask every document to do everything. It gives each document one clear job and connects the documents around the work employees actually perform.</summary>
-    <category term="Tourism Operations Excellence" />
-  </entry>
-  <entry>
     <title>PMP Thinking for SOP Implementation</title>
     <id>https://ahmedqualityops.com/articles/pmp-thinking-sop-implementation/index.html</id>
     <link href="https://ahmedqualityops.com/articles/pmp-thinking-sop-implementation/index.html" />
@@ -826,14 +850,6 @@
     <category term="Tourism Operations Excellence" />
   </entry>
   <entry>
-    <title>The DMC Operations AI Toolkit: 10 Ready-to-Use Prompts for Daily Tour Operations</title>
-    <id>https://ahmedqualityops.com/articles/dmc-operations-ai-prompts/index.html</id>
-    <link href="https://ahmedqualityops.com/articles/dmc-operations-ai-prompts/index.html" />
-    <updated>2026-10-14T00:00:00+04:00</updated>
-    <summary>DMC operations teams can use AI to organise files, identify gaps and structure briefs, but confirmations, assignments and disruption decisions must stay in approved systems.</summary>
-    <category term="AI &amp; Tourism Operations" />
-  </entry>
-  <entry>
     <title>How to Apply Customer Journey Mapping to SOP Design</title>
     <id>https://ahmedqualityops.com/articles/customer-journey-mapping-sop-design/index.html</id>
     <link href="https://ahmedqualityops.com/articles/customer-journey-mapping-sop-design/index.html" />
@@ -858,28 +874,12 @@
     <category term="Tourism Roles" />
   </entry>
   <entry>
-    <title>Beyond the Script: How Great Tour Guides Turn Key Facts into Experiences Guests Remember</title>
-    <id>https://ahmedqualityops.com/articles/article-tour-guide-storytelling-system/index.html</id>
-    <link href="https://ahmedqualityops.com/articles/article-tour-guide-storytelling-system/index.html" />
-    <updated>2026-10-14T00:00:00+04:00</updated>
-    <summary>Why the best tour guides do not memorise every word — and what they should prepare instead</summary>
-    <category term="Guide Quality" />
-  </entry>
-  <entry>
     <title>Tour Guide Quality Index</title>
     <id>https://ahmedqualityops.com/articles/article-tour-guide-quality-index/index.html</id>
     <link href="https://ahmedqualityops.com/articles/article-tour-guide-quality-index/index.html" />
     <updated>2026-08-28T00:00:00+04:00</updated>
     <summary>A practical 10-pillar framework for measuring and improving guide performance using field stories, measurable KPIs, service recovery, documentation, and workbook-ready scoring.</summary>
     <category term="Service Quality" />
-  </entry>
-  <entry>
-    <title>Tour Cost Worksheet for City Tours</title>
-    <id>https://ahmedqualityops.com/articles/article-tour-cost-worksheet-city-tour/index.html</id>
-    <link href="https://ahmedqualityops.com/articles/article-tour-cost-worksheet-city-tour/index.html" />
-    <updated>2026-10-14T00:00:00+04:00</updated>
-    <summary>A practical city-tour cost worksheet covering supplier inputs, transport, tickets, guide costs and commercial review.</summary>
-    <category term="Tour Quotation" />
   </entry>
   <entry>
     <title>From Partnership Introduction to Confirmed Group: A Real-Life DMC Sales Scenario</title>
@@ -894,7 +894,7 @@
     <id>https://ahmedqualityops.com/articles/article-professional-client-tour-quotation/index.html</id>
     <link href="https://ahmedqualityops.com/articles/article-professional-client-tour-quotation/index.html" />
     <updated>2026-08-28T00:00:00+04:00</updated>
-    <summary>A structured method for presenting client-ready tour quotations with transparent scope, assumptions and commercial terms.</summary>
+    <summary>Prepare a client-facing tour offer with confirmed scope, guest-count basis, inclusions, exclusions, payment and cancellation terms, validity, and jurisdiction-checked tax wording.</summary>
     <category term="Tour Quotation" />
   </entry>
   <entry>
@@ -902,7 +902,7 @@
     <id>https://ahmedqualityops.com/articles/article-participant-estimation-break-even-risk/index.html</id>
     <link href="https://ahmedqualityops.com/articles/article-participant-estimation-break-even-risk/index.html" />
     <updated>2026-08-28T00:00:00+04:00</updated>
-    <summary>How participant estimates, break-even logic and demand risk support safer tour pricing and operating commitments.</summary>
+    <summary>Calculate shared-tour break-even from fixed cost, per-guest cost and selling price; set minimum participation and repricing rules before confirming a departure.</summary>
     <category term="Tour Quotation" />
   </entry>
   <entry>
@@ -910,7 +910,7 @@
     <id>https://ahmedqualityops.com/articles/article-net-cost-selling-price-markup/index.html</id>
     <link href="https://ahmedqualityops.com/articles/article-net-cost-selling-price-markup/index.html" />
     <updated>2026-08-28T00:00:00+04:00</updated>
-    <summary>A tourism pricing guide to net cost, selling price, markup and margin, with controls for clearer commercial decisions.</summary>
+    <summary>Worked tourism examples distinguish net cost, markup and margin, then calculate a selling price from an approved cost base and target margin.</summary>
     <category term="Tour Quotation" />
   </entry>
   <entry>
@@ -958,7 +958,7 @@
     <id>https://ahmedqualityops.com/articles/article-fixed-variable-costs-city-tour-pricing/index.html</id>
     <link href="https://ahmedqualityops.com/articles/article-fixed-variable-costs-city-tour-pricing/index.html" />
     <updated>2026-08-28T00:00:00+04:00</updated>
-    <summary>How tourism teams separate fixed and variable city-tour costs to improve pricing decisions and commercial review.</summary>
+    <summary>Separate departure-level fixed costs from per-guest costs, then test how group size changes contribution, break-even and the price needed to operate.</summary>
     <category term="Tour Quotation" />
   </entry>
   <entry>
@@ -974,7 +974,7 @@
     <id>https://ahmedqualityops.com/articles/article-city-tour-quotation-professional/index.html</id>
     <link href="https://ahmedqualityops.com/articles/article-city-tour-quotation-professional/index.html" />
     <updated>2026-08-28T00:00:00+04:00</updated>
-    <summary>A practical guide to building a professional city-tour quotation with clear costs, assumptions and client-ready presentation.</summary>
+    <summary>Build a DMC city-tour price from a feasible itinerary, verified supplier inputs, guest assumptions and cost controls before preparing the client offer.</summary>
     <category term="Tour Quotation" />
   </entry>
   <entry>
