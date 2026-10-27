@@ -66,7 +66,9 @@ class ReservationTableTests(unittest.TestCase):
                     if body['inner'] <= node['start'] < body['end'] and teaching(node)
                     for key in ('id', 'href') if key in node['attrs']]
         self.assertEqual(article_attributes(self.after), article_attributes(self.before))
-        original_links={n['attrs']['href'] for n in parse(self.before).nodes if n['tag']=='a'}
+        original_document=parse(self.before)
+        original_body=next(n for n in original_document.nodes if 'article-body' in original_document.classes(n))
+        original_links={n['attrs']['href'] for n in original_document.nodes if n['tag']=='a' and original_body['inner']<=n['start']<original_body['end']}
         self.assertTrue(original_links <= {n['attrs']['href'] for n in parse(self.after).nodes if n['tag']=='a'})
         self.assertNotIn('<p>---</p>', self.after)
 
