@@ -40,3 +40,6 @@ No production merge or deployment is part of this change. See the accompanying d
 
 ## Verified results (2026-10-27)
 `PORTFOLIO_PYTHON=<bundled Python> node scripts/check_health.mjs`: **25/25 groups passed**, including 120 Python tests, 19 JavaScript test groups, pinned prompt comparison, shared-render consistency, whole-site cleanup coverage, local links/fragments and article navigation. The link audit found no missing references, broken local destinations or duplicate IDs across 178 public pages. Navigation validation covered 180 HTML files and 4,286 TOC links. Browser checks covered all 130 articles at 390px and all 47 toolkit articles at 1440px, with representative 320px and 768px layouts. No horizontal overflow or toolkit initialization failure was found. External destinations retain the prior audit limitations; this change does not claim a fresh successful response from every external service.
+
+## Approved production palette
+The toolkit uses the existing navy, navy-deep, navy-soft, paper and gold-light design tokens. Warm secondary text replaces blue-gray, with pale gold actions and focus rings. This replaces the initial cyan proposal at Ahmed’s request. Production release was explicitly authorized after review.
