@@ -1462,9 +1462,6 @@ body{font-family:var(--sans);background:var(--paper)}
 /* Grid children must shrink when visitors enlarge text on narrow screens. */
 .knowledge-card a{grid-template-columns:minmax(0,1fr)}
 .knowledge-card a>*{min-width:0;max-width:100%;overflow-wrap:anywhere;box-sizing:border-box}
-.newsletter-signup,.newsletter-signup>*{min-width:0;max-width:100%;box-sizing:border-box}
-.newsletter-signup form{grid-template-columns:minmax(0,1fr)}
-.newsletter-signup form>*{min-width:0;max-width:100%;box-sizing:border-box;overflow-wrap:anywhere}
 .library-pagination{display:grid;justify-items:center;gap:12px;margin:28px 0}
 .library-pagination button{min-height:48px;padding:12px 24px;border:1px solid var(--navy);background:var(--navy);color:#fff;font:600 1rem/1.5 var(--sans);cursor:pointer}
 .library-pagination p{margin:0;color:var(--muted)}

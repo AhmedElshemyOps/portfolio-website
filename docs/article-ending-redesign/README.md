@@ -18,17 +18,17 @@ The implementation uses semantic HTML, native disclosures and scoped CSS. It add
 
 ## Five further improvements identified
 
-These are recommendations for a separate change, not additional alterations in this branch.
+These were the five initial follow-up recommendations. The subsequent 27 October cleanup removed subscription UI entirely and retired the confirmed obsolete component styles described below.
 
 1. **Simplify article openings.** The MICE article displays reading duration in the heading metadata, scenario panel and an additional reading-time card. Use one compact metadata row and one short purpose statement before the article.
 2. **Make diagrams consistent.** Some families use a large horizontally scrolling diagram with several explanatory caption lines while others use the newer viewer controls. Standardize their viewer, readable caption and mobile zoom behavior while preserving the original diagrams.
-3. **Reduce the newsletter interruption.** The working article newsletter currently occupies a full-width dark band after the feedback area. Offer a smaller optional signup panel at this point and retain the full version on the newsletter page.
+3. **Remove the newsletter interruption — completed.** Subscription UI, signup links, provider settings and supporting code have been removed throughout the website. Old signup routes redirect to the Knowledge Hub.
 4. **Unify site terminology.** Navigation and older article families mix Knowledge Hub, Knowledge Library and Insights. Use “Knowledge Hub” consistently for the same destination and reserve distinct terms for genuinely different content types.
 5. **Retire superseded CSS in stages.** Article styles retain earlier black/red, rounded-card and footer treatments alongside the current navy/gold overrides. Remove selectors for retired components, then consolidate shared tokens with visual regression checks to reduce stylesheet weight and future conflicts.
 
 ## Validation
 
-- 22/22 release check groups passed, including 112 Python tests and all JavaScript checks.
+- 23/23 release check groups passed, including 117 Python tests and all JavaScript checks.
 - All 178 HTML pages have valid local routes/fragments and no duplicate IDs.
 - Article navigation: 180 pages and 4,297 contents links pass.
 - All 174 article tables and 338 teaching figures remain present; prompt and source preservation tests pass.

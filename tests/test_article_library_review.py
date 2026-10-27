@@ -36,6 +36,8 @@ class ArticleLibraryReviewTests(unittest.TestCase):
   for row in rows:
    relative=row['url'].lstrip('/')
    old=subprocess.check_output(['git','show','1ae9b07069cb11483b2190fc7097a24806433743:'+relative],cwd=ROOT,text=True)
+   from remove_subscription_ui import render as remove_subscription_ui
+   old=remove_subscription_ui(old) # Explicitly retired site signup UI; teaching anchors remain protected.
    new=(ROOT/relative).read_text()
    self.assertTrue(set(re.findall(r'id="([^"]+)"',old))<=set(re.findall(r'id="([^"]+)"',new)),relative)
    pattern=r'href=["\'](https?://[^"\']+)'

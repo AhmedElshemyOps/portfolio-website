@@ -25,6 +25,8 @@ def render(source, path, root=ROOT):
         return source
     from bundle_page_styles import unpack, pack
     source = unpack(source)
+    from remove_subscription_ui import render as remove_subscription_ui
+    source = remove_subscription_ui(source)
     from remove_contact_sections import render as remove_contact_sections
     source = remove_contact_sections(source)
     homepage = path == root / 'index.html'

@@ -12,25 +12,6 @@
 .article-reader-page :is(a,button,summary,input,select):focus-visible{outline:3px solid #b68a2f;outline-offset:4px;scroll-margin-block:110px 160px}
 .reader-dark .article-body .faq-section>details{background:#102238;color:#edf3f8}.reader-dark .faq-section>details[open]>summary{background:#182e46}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}.article-reader-page *, .article-reader-page *::before, .article-reader-page *::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
-/* Repository resources and toolkit navigation share one consistent article treatment. */
-.article-reader-page .article-body .article-github-cta{margin:36px 0 0;padding:clamp(20px,3vw,32px);border:1px solid #d9d1c1;border-top:3px solid #b68a2f;background:#fff;color:#071a32}
-.article-reader-page .article-github-cta .article-github-cta__label{margin:0 0 12px;color:#815f17;font:600 .72rem/1.5 "IBM Plex Sans",sans-serif;letter-spacing:.1em;text-transform:uppercase}
-.article-reader-page .article-github-cta h2{margin:0 0 16px;padding:0;border:0;font-size:clamp(1.5rem,3vw,2rem);line-height:1.25}
-.article-reader-page .article-github-cta>p:not(.article-github-cta__label){font-size:1rem;line-height:1.7;margin:0 0 22px}
-.article-reader-page .repository-actions{display:flex;flex-wrap:wrap;gap:12px}
-.article-reader-page .repository-actions .github-button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:12px 18px;border:1px solid #071a32;color:#071a32;background:#fff;font:600 .85rem/1.5 "IBM Plex Sans",sans-serif;text-decoration:none;text-align:center;box-sizing:border-box}
-.article-reader-page .repository-actions .github-button--primary{background:#071a32;color:#fff;border-color:#071a32}
-.article-reader-page .repository-actions .github-button:hover{background:#f4efe5;color:#071a32;border-color:#b68a2f}
-.article-reader-page .article-body .series-nav{margin:0 0 36px;padding:22px;border:1px solid #d9d1c1;border-top:0;background:#f4efe5;color:#071a32}
-.article-reader-page .series-nav a{display:flex;flex-direction:column;gap:7px;min-width:0;padding:16px;border:1px solid #d9d1c1;background:#fff;color:#071a32;text-decoration:none;overflow-wrap:anywhere}
-.article-reader-page .series-nav a span{font:600 .7rem/1.5 "IBM Plex Sans",sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#815f17}
-.article-reader-page .series-nav a strong{font:600 1rem/1.5 Lora,Georgia,serif}
-.article-reader-page .series-nav a:hover strong{text-decoration:underline;text-underline-offset:4px}
-.article-reader-page .series-nav>div{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:12px}
-.article-reader-page .series-nav>p{padding:16px 0 0;margin:18px 0 0;border-top:1px solid #d9d1c1;font-size:.85rem;line-height:1.7}
-.article-reader-page .series-nav>p>strong{display:block;margin-bottom:5px}
-.reader-dark .article-body .article-github-cta,.reader-dark .article-body .series-nav,.reader-dark .series-nav a{background:#102238;color:#edf3f8}.reader-dark .series-nav a span,.reader-dark .article-github-cta .article-github-cta__label{color:#dfc27d}
-@media(max-width:620px){.article-reader-page .repository-actions{flex-direction:column}.article-reader-page .series-nav>div{grid-template-columns:minmax(0,1fr)}.article-reader-page .article-body .series-nav{padding:16px}}
 :root{--reader-ink:#071a32;--reader-paper:#fcfaf5;--reader-line:#d9d1c1;--reader-gold:#815f17;--reader-gap:clamp(24px,4vw,48px)}
 .article-reader-page .article-page-header h1{font-size:clamp(2.2rem,5vw,4.6rem);line-height:1.09;letter-spacing:-.035em;text-wrap:pretty}
 .article-reader-page[data-title-length=long] .article-page-header h1{font-size:clamp(2rem,4vw,3.6rem)}

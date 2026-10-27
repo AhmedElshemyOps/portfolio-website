@@ -12,7 +12,11 @@ class EditorialBatchTests(unittest.TestCase):
   for name in sorted(before):
    old=DOM(self.baseline(ROOT/name)).root;new=DOM((ROOT/name).read_text()).root
    def directives(d):return [(n.tag,n.attrs) for n in d.all() if n.tag=='link' and n.attrs.get('rel')=='canonical' or n.tag=='meta' and n.attrs.get('name','').lower() in ['robots','googlebot','bingbot']]
-   self.assertEqual(directives(old),directives(new),name)
+   if name in {'newsletter/index.html','newsletter/confirmed/index.html'}:
+    self.assertTrue(any(n.attrs.get('rel')=='canonical' and n.attrs.get('href')=='https://ahmedqualityops.com/knowledge/index.html' for n in new.all('link')))
+    self.assertTrue(any(n.attrs.get('name')=='robots' and n.attrs.get('content')=='noindex,follow' for n in new.all('meta')))
+    self.assertIn('0;url=/knowledge/index.html',(ROOT/name).read_text())
+   else:self.assertEqual(directives(old),directives(new),name)
  def test_prompts_and_publication_dates_preserved(self):
   for p in (ROOT/'articles').glob('*/index.html'):
    old=approved_revisions(self.baseline(p),p.parent.name);new=p.read_text();self.assertEqual(re.findall(r'<pre\b.*?</pre>',old,re.S),re.findall(r'<pre\b.*?</pre>',new,re.S),str(p))
