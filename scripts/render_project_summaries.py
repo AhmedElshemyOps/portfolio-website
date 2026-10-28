@@ -14,7 +14,8 @@ def render(source,path,root):
       f'<div><dt>My contribution</dt><dd>{p["summaryContribution"]}</dd></div>'
       f'<div><dt>Outputs</dt><dd>{p["output"]}. <a href="#project-output-preview">See the output preview</a></dd></div>'
       f'<div><dt>Evidence and scope</dt><dd><a href="{p["demo"]}">{p["summaryEvidence"]}</a><span>{p["summaryBoundary"]}</span></dd></div></dl></section>')
-    doc=parse(source);intro=next(n for n in doc.nodes if 'product-introduction' in doc.classes(n))
+    doc=parse(source);intro=next((n for n in doc.nodes if 'product-introduction' in doc.classes(n)),None)
+    if not intro or not any('project-output-preview' in doc.classes(n) for n in doc.nodes):return source
     content=(f'<div class="product-introduction"><p class="project-audience"><strong>For:</strong> {p["summaryAudience"]}</p>'+facts+
       f'<div class="action-row"><a class="button" href="{p["demo"]}" data-analytics-event="project_demo_open">Try the demo</a><a class="button secondary" href="#product-research">Read the method and scope</a></div></div>')
     source=source[:intro['start']]+content+source[intro['end']:]

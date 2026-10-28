@@ -59,3 +59,11 @@ class ProjectReaderRoutes(unittest.TestCase):
   routes=['index.html','knowledge/index.html','learning/index.html']+[r['caseStudy'].lstrip('/') for r in json.loads((ROOT/'content/projects.json').read_text())]
   for route in routes:
    p=ROOT/route;s=p.read_text();self.assertEqual(render(s,p),s,route)
+
+ def test_partial_shared_templates_are_left_intact(self):
+  from render_reader_starts import render as reader_starts
+  from render_project_summaries import render as project_summary
+  source='<html><head></head><body><header>Shared navigation</header></body></html>'
+  for route in ['index.html','knowledge/index.html','learning/index.html']:
+   self.assertEqual(reader_starts(source,ROOT/route,ROOT),source)
+  self.assertEqual(project_summary(source,ROOT/'projects/infraquote/index.html',ROOT),source)

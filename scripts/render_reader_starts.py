@@ -24,11 +24,14 @@ def render(source,path,root):
     if rel not in MANAGED or not (root/'content/reader-starts.json').is_file():return source
     rows,paths=entries(root);e=escape
     if rel=='index.html':
-        doc=parse(source);overview=next(n for n in doc.nodes if 'library-overview' in doc.classes(n))
+        doc=parse(source);overview=next((n for n in doc.nodes if 'library-overview' in doc.classes(n)),None)
+        if not overview:return source
         compact='<div class="library-overview"><p class="library-intro">Practical knowledge on destination delivery, service quality, commercial decisions and operational systems.</p><nav class="reader-start-links" aria-label="Choose a learning route">'+''.join('<a href="'+e(r['url'],quote=True)+'"><strong>'+e(r['title'])+'</strong><span>'+str(r['count'])+' articles <span aria-hidden="true">→</span></span></a>' for r in rows)+'</nav><a class="reader-all-topics" href="/knowledge/index.html">Browse all topics and articles →</a></div>'
         source=source[:overview['start']]+compact+source[overview['end']:]
     elif rel=='knowledge/index.html':
-        doc=parse(source);old=next((n for n in doc.nodes if n['attrs'].get('id')=='reader-starts'),None)
+        doc=parse(source)
+        if not any(n['attrs'].get('id')=='reader-browse-all' for n in doc.nodes) and not (any('library-topics' in doc.classes(n) for n in doc.nodes) and any('knowledge-series' in doc.classes(n) for n in doc.nodes)):return source
+        old=next((n for n in doc.nodes if n['attrs'].get('id')=='reader-starts'),None)
         if old:source=source[:old['start']]+source[old['end']:]
         doc=parse(source);browse=next((n for n in doc.nodes if n['attrs'].get('id')=='reader-browse-all'),None)
         if not browse:
@@ -42,7 +45,8 @@ def render(source,path,root):
         doc=parse(source);browse=next(n for n in doc.nodes if n['attrs'].get('id')=='reader-browse-all')
         source=source[:browse['start']]+cards(rows)+source[browse['start']:]
     else:
-        doc=parse(source);main=next(n for n in doc.nodes if n['tag']=='main');hero=next(n for n in doc.nodes if 'discovery-hero' in doc.classes(n))
+        doc=parse(source);main=next((n for n in doc.nodes if n['tag']=='main'),None);hero=next((n for n in doc.nodes if 'discovery-hero' in doc.classes(n)),None)
+        if not main or not hero:return source
         specialist=[]
         for p in paths.values():
             if p['slug'] in {r.get('path') for r in rows}:continue
