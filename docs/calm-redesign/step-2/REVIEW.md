@@ -11,7 +11,7 @@ The existing profile and CV were last labelled 8 October 2026. They say “From 
 Primary identity: **Travel & Tourism Operations**.
 Supporting line: **Destination Services · Tourism Product Support · MICE & Event Coordination**.
 
-Use “Licensed Tour Guide (French & English)” as the confirmed Masarra role, with a separate line describing the operations team and cross-functional support. Do not rename that employment as Operations Manager, Product Manager or MICE Manager. The target-role direction describes desired work; it is not a retroactive employment title.
+Ahmed subsequently requested department/function-based presentation to support his move away from guiding. Use “Operations Department · Cross-functional destination support” in the Masarra experience card. Retain “Licensed Tour Guide (French & English)” only in the background evidence record. Do not rename that employment as Operations Manager, Product Manager or MICE Manager. The target-role direction describes desired work; it is not a retroactive employment title.
 
 Prioritize destination operations, guest movements, supplier coordination, reservations, tour arrangement and event delivery support. Show product interest through earlier package/itinerary work, the Tour Production diploma and clearly labelled research/prototypes. Quality, project methods and AI are supporting capabilities, not the opening identity of the portfolio.
 
@@ -50,6 +50,9 @@ These are candidate directions, not claims about a specific vacancy or invented 
 ## Prepared copy and remaining review
 `PROFILE-COPY.md` contains the proposed homepage/profile introduction. `CV-CONTENT-DRAFT.md` contains a usable base CV text draft; `experience-map.csv` provides the career cross-check, and `proposed-profile.json` holds the proposed source data without changing live renderers.
 
-Before the final CV is typeset, Ahmed should review the actual wording, exact titles for the other five employers, older employment dates, approximate operating volumes and current language labels. Keep unavailable details omitted or clearly treated as functions. Do not invent them. The Masarra end date/title, Den Haag location and sponsorship statement no longer need reconfirmation.
+Before final typesetting, review the actual copy, older employment dates and approximate operating volumes. Department/function presentation is now explicitly selected; official titles are not a blocking request for this presentation. Ahmed reconfirmed all existing language levels. Do not invent titles or upgrade proficiency levels. The Masarra end date/title, Den Haag location and sponsorship statement no longer need reconfirmation.
 
 No existing CV/download is overwritten. No article, footer, URL or live page is edited. A later approved CV replacement must preserve its public URL and use a narrowly reviewed exception to the immutable Step 1 download fingerprint; do not regenerate the baseline.
+
+## Confirmed presentation update — 28 October 2026
+Ahmed wants to move away from guiding roles. The homepage, profile and CV drafts now lead with tourism operations, cross-functional support, product-support interests and MICE/event coordination. Guiding is not repeated as his public professional identity. Department labels describe the function and do not imply a promotion or a different official employment title. All recorded language levels remain unchanged.

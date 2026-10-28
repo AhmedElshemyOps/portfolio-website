@@ -49,12 +49,13 @@ Keep the footer Ahmed likes: its structure, content, logo, colors, typography an
 - 28 October: freeze the latest published sources-redesign release as the baseline; use an isolated redesign branch.
 - 28 October: Step 1 was protection and planning only; no production CV or visual design changes were made.
 - 28 October: Ahmed instructed Step 2 and confirmed the Masarra role/end date, Den Haag location and sponsorship statement. CV/profile review drafts are now prepared; existing public files remain unchanged.
+- 28 October: Ahmed confirmed unchanged language levels and requested department/function-based presentation to support his transition away from guiding. This replaces the earlier proposed guiding-led experience card.
 
 ## Step 2 progress
 - Existing PDF and DOCX CV versions, profile, professional-profile data, evidence ledger, selected project pages and key credential documents reviewed.
 - Recorded user-confirmed Masarra end date (October 2026), licensed French/English tour-guide role in the operations team with cross-functional support, Den Haag location and no-sponsorship work authorisation.
 - Prepared the career evidence map, proposed profile data, homepage/profile copy, and tourism-first CV text draft in `docs/calm-redesign/step-2/`. These are review drafts, not public CV replacements.
-- Remaining review: exact titles for older employers, previously supplied language levels, older dates/operating volumes and approval of the proposed wording.
+- Presentation and language decisions confirmed: department/function labels rather than repeated guiding titles; existing language levels unchanged. Remaining review is the revised copy and any corrections to older dates/operating volumes.
 - No article, footer, live page, original public CV or download was changed. Step 1 baseline remains immutable.
 
 ## Open issues and next action
