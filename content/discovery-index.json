@@ -502,6 +502,22 @@
     "headings": []
   },
   {
+    "id": "tourism-operations-video-library",
+    "title": "Tourism operations video library",
+    "type": "Video",
+    "category": "Travel & Tourism Operations",
+    "description": "33 practical video lessons on tourism operations, quality, Lean methods and team coordination, with relevant article links.",
+    "url": "/learn/videos/index.html",
+    "tags": [
+      "YouTube",
+      "video",
+      "Shorts",
+      "tourism",
+      "Lean",
+      "learning"
+    ]
+  },
+  {
     "id": "abu-dhabi-mice-operations-series",
     "type": "Series index",
     "title": "Abu Dhabi MICE Operations in Practice",

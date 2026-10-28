@@ -59,6 +59,7 @@ class ReservationTableTests(unittest.TestCase):
             body = next(node for node in document.nodes if 'article-body' in document.classes(node))
             def teaching(node):
                 while node is not None:
+                    if node['attrs'].get('data-youtube-id')=='_93R2PRGJhA':return False # Approved supplementary booking mistake-proofing lesson.
                     if document.classes(node) & {'library-connections','article-followups'}:return False
                     node=node['parent']
                 return True

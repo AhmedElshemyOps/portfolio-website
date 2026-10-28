@@ -26,7 +26,7 @@ def render(source,path,root=ROOT,manifest_data=None):
  srcset=', '.join(background.replace('.webp',f'-{w}.webp')+f' {w}w' for w in (240,640,960))+', '+background+' 1774w'
  size='long' if len(title)>115 else 'medium' if len(title)>75 else 'short'
  banner=(f'<div class="series-banner series-banner--{design["option"].lower()}" data-series-banner="{row["design"]}" data-title-size="{size}">'
- f'<img class="series-banner-art" src="{design["background"]}" srcset="{srcset}" sizes="(max-width:700px) 96px, (max-width:1100px) 90vw, 1100px" width="1774" height="887" alt="" decoding="async" fetchpriority="high">'
+ f'<img class="series-banner-art" src="{design["background"]}" srcset="{srcset}" sizes="(max-width:700px) 96px, (max-width:1100px) 90vw, 1100px" width="1774" height="887" alt="" decoding="async" loading="lazy" fetchpriority="low">'
  f'<div class="series-banner-copy"><p class="series-banner-label">{escape(row["series"])}</p><p class="series-banner-number">{escape(label)}</p>'
  +h[0]+ '<p class="series-banner-author">Ahmed Mahmoud</p></div></div>')
  block='<!-- series-banner:start -->'+banner+'<!-- series-banner:end -->'

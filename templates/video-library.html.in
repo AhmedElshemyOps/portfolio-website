@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<link rel="canonical" href="https://ahmedqualityops.com/learn/videos/index.html"><meta name="description" content="Explore practical video lessons on tourism operations, service quality, Lean methods and team coordination, alongside related articles."><title>Tourism operations video library | Ahmed Mahmoud</title>
+<link rel="stylesheet" href="/assets/css/fonts.css">
+<link rel="stylesheet" href="/assets/css/footer.css">
+<link rel="stylesheet" href="/assets/css/article-video.css">
+<link rel="stylesheet" href="/assets/css/calm-components.css">
+<link rel="stylesheet" href="/assets/css/video-library.css">
+<link rel="stylesheet" href="/assets/css/homepage-search.css">
+<script defer src="/assets/js/site-config.js"></script>
+<script defer src="/assets/js/analytics.js"></script>
+<script defer src="/assets/js/discovery.js"></script>
+</head>
+<body id="page-top" class="calm-video-library">
+<div class="calm-system" id="top">
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<a class="brand" href="/#top" aria-label="Ahmed Mahmoud portfolio home">
+<img class="mark" src="/assets/brand/homepage-monogram-116.png" alt="" width="58" height="58">
+<span>
+<strong>Ahmed Mahmoud</strong>
+</span>
+</a>
+<button class="static-menu-toggle" type="button" data-navigation-toggle aria-expanded="false" aria-controls="static-primary-navigation" hidden>
+<span data-menu-icon aria-hidden="true">☰</span>
+<span data-menu-label>Menu</span>
+</button>
+<nav id="static-primary-navigation" aria-label="Primary navigation">
+<a href="/#top">Home</a>
+<a href="/profile/index.html">Profile</a>
+<a href="/projects/index.html">Projects</a>
+<a href="/knowledge/index.html">Knowledge</a>
+<a href="/#site-footer">Contact</a>
+<button class="nav-search" type="button" data-global-search-open aria-label="Search the website">Search</button>
+<a class="nav-cv" href="/documents/Ahmed-Mahmoud-CV.pdf" download>CV</a>
+</nav>
+</header>
+<main class="wrap" id="main">
+<section class="hero">
+<p class="eyebrow">Travel &amp; Tourism Operations</p>
+<h1>Watch. Understand. Put it into practice.</h1>
+<p class="intro">Practical video lessons on tourism operations, service quality and improvement. Open an article to watch in context, or explore a companion lesson below.</p>
+<p class="meta">{{video_count}} public lessons · Video library · {{inventory_date}}</p>
+<a class="button primary" href="{{channel_url}}" aria-label="Visit the YouTube channel">
+<svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true">
+<rect x="1" y="4" width="22" height="16" rx="4" fill="currentColor"/>
+<path d="m10 8 7 4-7 4z" fill="#0c1b25"/>
+</svg>
+<span>Watch on YouTube</span>
+</a>
+</section>{{video_navigation}}
+{{video_sections}}</main>
+</div>{{footer}}</body>
+</html>

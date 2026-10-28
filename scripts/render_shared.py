@@ -25,6 +25,10 @@ def render(source, path, root=ROOT):
         return source
     from bundle_page_styles import unpack, pack
     source = unpack(source)
+    from render_video_library import render as render_video_library
+    source = render_video_library(source, path, root)
+    from render_article_videos import render as render_article_videos
+    source = render_article_videos(source, path, root)
     from remove_subscription_ui import render as remove_subscription_ui
     source = remove_subscription_ui(source)
     from remove_contact_sections import render as remove_contact_sections
@@ -115,9 +119,8 @@ def render(source, path, root=ROOT):
     source = source.replace('</head>', hints + '</head>', 1)
     # Native contents starts compact; desktop enhancement opens the rail without moving article text.
     source = re.sub(r'(<details\b[^>]*data-reader-toc[^>]*)\sopen(?=[\s>])', r'\1', source)
-    from render_article_videos import render as render_article_videos
     from render_reader_enhancements import render as render_reader_enhancements
-    source = render_reader_enhancements(render_article_videos(source, path, root), path, root)
+    source = render_reader_enhancements(source, path, root)
     # Version changed interaction assets so an offline cache cannot serve old controls.
     source = re.sub(r'(/assets/js/(?:discovery|article-reader)\.js)(?:\?[^"\s]*)?(?=")', r'\1?v=20261009-phase2', source)
     source = re.sub(r'(/assets/css/infraquote-bundle\.css)(?:\?[^"\s]*)?(?=")', r'\1?v=20261009-phase2', source)
@@ -137,7 +140,8 @@ def render(source, path, root=ROOT):
     from render_projects import render as render_projects
     source = render_projects(source, path, root) if path.relative_to(root).as_posix() in {"index.html", "projects/index.html"} and 'class="project' in source else source
     from render_series_banners import render as render_series_banners
-    return pack(render_series_banners(render_library_navigation(source, path, root), path, root),path,root)
+    from render_calm_design import render as render_calm_design
+    return pack(render_calm_design(render_series_banners(render_library_navigation(source, path, root), path, root),path,root),path,root)
 
 
 def apply(root=ROOT, check=False):

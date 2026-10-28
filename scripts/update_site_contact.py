@@ -18,6 +18,8 @@ def apply(root=ROOT):
     email = escape(data['email'], quote=True)
     phone = escape(data['phone_display'])
     phone_action = 'tel:' + escape(data['phone_e164'], quote=True)
+    whatsapp_action = 'https://wa.me/' + data['phone_e164'].lstrip('+')
+    previous_phone_actions=set()
     replacements = {'a.mahmoud.0412@gmail.com': email, 'contact@ahmedqualityops.com': email}
     for name in ('footer',):
         path = root / 'templates' / f'{name}.html'
@@ -26,15 +28,23 @@ def apply(root=ROOT):
             replacements[previous_email] = email
         for previous_phone in re.findall(r'href="(tel:[^"]+)"', source):
             replacements[previous_phone] = phone_action
+            previous_phone_actions.add(previous_phone)
+        for previous_whatsapp in re.findall(r'href="(https://wa.me/([0-9]+))"', source):
+            replacements[previous_whatsapp[0]]=whatsapp_action
+            replacements['tel:+'+previous_whatsapp[1]]=phone_action
+            previous_phone_actions.add('tel:+'+previous_whatsapp[1])
         for previous_display in re.findall(r'class="professional-phone"[^>]*>([^<]+)', source):
             replacements[previous_display] = phone
         source = re.sub(r'href="mailto:[^"]+"', 'href="mailto:' + email + '"', source)
+        source = re.sub(r'href="https://wa.me/[0-9]+"','href="'+whatsapp_action+'"',source)
         source = re.sub(r'(<a\b[^>]*class="professional-phone"[^>]*href=")[^"]+("[^>]*>)[^<]+',
                         lambda m: m[1] + phone_action + m[2] + phone, source)
         path.write_text(source)
     changed = 0
     for path in pages(root):
         original = source = path.read_text()
+        for previous_action in previous_phone_actions:
+            source=re.sub(r'(<a\b[^>]*href="'+re.escape(previous_action)+r'"[^>]*>)[+0-9 ()-]+(</a>)',lambda m:m[1].replace(previous_action,phone_action)+phone+m[2],source)
         for previous, current in replacements.items():
             source = source.replace(previous, current)
         if path == root / 'index.html':
