@@ -1,6 +1,6 @@
 # Calm tourism portfolio redesign — working roadmap
 
-**Current position: Steps 1–3 complete for baseline, content direction and design-system preparation. Step 4 (four real page previews) is next.**
+**Current position: Step 4 prepared for review — four real page previews plus complete public-video coverage. Step 5 awaits Ahmed’s review of this direction.**
 
 Last updated: 28 October 2026 (Europe/Amsterdam).
 Working branch: `feature/calm-tourism-redesign`.
@@ -19,7 +19,7 @@ Keep the footer Ahmed likes: its structure, content, logo, colors, typography an
 | 1. Record and protect | COMPLETE | Published recovery archive, route/anchor/content/download inventory, footer references and preservation checker | Baseline matches the published commit, backup validates, checker passes and deliberate-change tests prove protection |
 | 2. Professional story and CV | COMPLETE — CONTENT DIRECTION | Evidence-based experience map, agreed positioning, homepage introduction and CV alignment plan | Ahmed reviews the factual content and target-role positioning; any CV replacement is explicitly recorded |
 | 3. Calm shared design system | COMPLETE — SPECIMEN PREPARED | Typography, color, spacing, navigation, component and accessibility rules derived from the retained footer | One coherent system is documented; no competing new visual systems |
-| 4. Four-page preview | NOT STARTED | Homepage, profile/experience, one project and one representative article on a preview branch | Ahmed reviews desktop/mobile previews and approves the direction before broad rollout |
+| 4. Four-page preview | READY FOR REVIEW | Homepage, profile/experience, one project and one representative article on a preview branch | Ahmed reviews desktop/mobile previews and approves the direction before broad rollout |
 | 5. Site-wide application | NOT STARTED | Approved design applied to all page families through shared code | Every route remains, article preservation checks pass, footer is retained and page-family coverage is recorded |
 | 6. Full verification | NOT STARTED | Content/URL comparisons, functional, accessibility, responsive and performance checks with issue list | Required tests pass; material limitations and unresolved issues are visible |
 | 7. Review and publication | NOT STARTED | Final preview, approved release, live verification, rollback reference and maintenance notes | Ahmed explicitly approves production release; deployment and live checks pass |
@@ -71,4 +71,27 @@ Ahmed instructed proceeding to Step 3 after the department/function and language
 
 No Step 1 preservation failures remain. External source claims have not been newly fact-checked by this inventory. Runtime behavior and real-device accessibility will be assessed in Step 6; the archive and hashes are not a substitute for those checks.
 
-**Next action: Step 4 — prepare the homepage, profile/experience, one project and one article as real responsive previews for Ahmed’s review. Do not roll out site-wide or deploy yet.**
+**Next action: Ahmed reviews the Step 4 previews. After acceptance, Step 5 applies the shared design across every page family. No production rollout or deployment yet.**
+
+
+## Step 4 progress
+- Prepared isolated homepage, profile, InfraQuote case study and hotel operations article previews, retaining their original route paths on local port 4184.
+- Used the reviewed tourism-first positioning and confirmed October 2026 Masarra end date. Career experience appears before qualifications. Existing downloadable CV files remain unchanged and still need a separately reviewed replacement.
+- Simplified the representative article opening to calm editorial typography. Its exact wording, heading anchors, source links, prompt content and working reading/prompt controls are retained.
+- Added a homepage entry to the video library. No newsletter, subscription form or removed conversation section was reintroduced.
+- All 178 original routes, 130 original article texts, 9,900 original anchors and 437 protected downloads pass comparison. Two specifically recorded supplemental video figures are excluded from the old-word comparison; the baseline is not regenerated.
+- All 179 preview pages pass local links, fragments and duplicate-ID checks. Twenty responsive checks cover five pages at 320, 390, 768 and 1440px. No page-level horizontal overflow; one H1 and one footer on each preview.
+- Footer markup and stylesheet remain unchanged. Computed styles and dimensions of the homepage footer match the original preview at desktop width.
+- Mobile navigation, global search, glossary/reading disclosures, text size, dark reading, high contrast, prompt customization, copy and reset were checked. Native library disclosures show responsive YouTube players.
+- Reproducible preview builders and review sources are in `docs/calm-redesign/step-4/` and `scripts/build_*preview.py`. Screenshots, coverage CSV and check reports are saved outside Git in the workspace outputs.
+
+## Video coverage decision — 28 October 2026
+Ahmed requested full channel coverage as part of the redesign. The verified channel is `UCFBNASTT6ys5DsbWLFddPUA`, public handle `@ahmedqualityops-official`.
+
+- Current public Videos and Shorts lists contain 33 uploads: six full-length videos and 27 Shorts. Neither upload list had a continuation; a separate channel-description continuation is unrelated to uploads. Three Shorts were added since the earlier 30-video inventory.
+- Public player metadata currently permits embedding 32 videos. `hYP7dJ8XM9I` (guest-ready apartment release) disables embedding, so it receives a direct watch link.
+- Retain the 15 existing paragraph-level players. Add the verification/validation Short after the guest/partner interface test paragraph and the Ho-Ren-So Short after the guest-update paragraph in exception communication.
+- The remaining 15 lessons have no sufficiently distinct matching existing paragraph or overlap more specific players. They receive one player each in the companion video library, rather than altering article prose or adding irrelevant/repeated players. Every upload has a direct YouTube link; contextual entries link directly to their article player.
+- Coverage in the preview: 17 article players, 15 library players, one direct-only video. There are 32 unique players and no duplicates across articles and the library.
+- Evidence is public descriptions, original article text and fresh public embedding permissions; this is not a full transcript audit. No additional vidIQ credits were spent. YouTube availability remains externally controlled.
+- These additions are explicitly recorded in `supplemental-video-matches.json` and `video-placement-review.csv`. They are preview-only until the redesign reaches the approved rollout/publication stages.

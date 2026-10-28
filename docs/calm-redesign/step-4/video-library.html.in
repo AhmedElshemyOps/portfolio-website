@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Tourism operations video library — preview</title>
+<link rel="stylesheet" href="/assets/css/fonts.css">
+<link rel="stylesheet" href="/assets/css/footer.css">
+<link rel="stylesheet" href="/assets/css/article-video.css">
+<link rel="stylesheet" href="/docs/calm-redesign/step-3/calm-system.css">
+<link rel="stylesheet" href="/video-library-preview.css">
+</head>
+<body id="page-top">
+<div class="calm-system" id="top">
+<a class="skip" href="#main">Skip to content</a>
+<header class="mast">
+<div class="wrap mast-inner">
+<a class="brand" href="/">Ahmed Mahmoud</a>
+<nav aria-label="Main">
+<a class="button" href="/knowledge/index.html">Articles &amp; guides</a>
+</nav>
+</div>
+</header>
+<main class="wrap" id="main">
+<section class="hero">
+<p class="eyebrow">Travel &amp; Tourism Operations</p>
+<h1>Watch. Understand. Put it into practice.</h1>
+<p class="intro">Practical video lessons on tourism operations, service quality and improvement. Open an article to watch in context, or explore a companion lesson below.</p>
+<p class="meta">33 public lessons · Video library preview · 28 October 2026</p>
+<a class="button primary" href="{{channel_url}}" aria-label="Visit the YouTube channel">
+<svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true">
+<rect x="1" y="4" width="22" height="16" rx="4" fill="currentColor"/>
+<path d="m10 8 7 4-7 4z" fill="#0c1b25"/>
+</svg>
+<span>Watch on YouTube</span>
+</a>
+</section>{{video_navigation}}
+{{video_sections}}</main>
+</div>{{footer}}</body>
+</html>

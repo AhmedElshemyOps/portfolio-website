@@ -1,0 +1,24 @@
+[
+  {
+    "videoId": "VMAXcTM4zsE",
+    "title": "Correct Booking, Wrong Tour? Verification vs. Validation Explained",
+    "article": "articles/standard-test-procedures-tourism-operations/index.html",
+    "section": "Guest and partner interface",
+    "afterParagraph": "Does the design control what external parties need to know, provide, acknowledge, decide, and record without exposing them to contradictory instructions? Walk through the visible guest experience and ask a partner to demonstrate the handoff in their own words.",
+    "rationale": "A booking can satisfy recorded requirements while the actual route still fails the traveller’s intended need; this illustrative accessibility example makes the distinction concrete.",
+    "evidence": "Public video description and article paragraph; not a full transcript audit.",
+    "reviewedOn": "2026-10-28",
+    "videoFormat": "short"
+  },
+  {
+    "videoId": "RkXz9VNLdEc",
+    "title": "Ho Ren So DMC Excursion Communication Short",
+    "article": "articles/sop-exception-escalation-management/index.html",
+    "section": "Communication during exceptions",
+    "afterParagraph": "A useful guest update usually acknowledges the situation, states what is known without speculation, explains the action under way, gives a realistic next update, and provides a way to obtain help. It should not expose another guest’s information, assign blame before facts are established, or promise an outcome outside the communicator’s authority.",
+    "rationale": "An illustrative excursion road closure shows reporting confirmed facts, informing affected teams, consulting within decision rights and closing the loop with one approved update.",
+    "evidence": "Public video description and article paragraph; not a full transcript audit.",
+    "reviewedOn": "2026-10-28",
+    "videoFormat": "short"
+  }
+]
