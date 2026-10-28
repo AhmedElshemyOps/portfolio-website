@@ -54,6 +54,9 @@ class ReservationTableTests(unittest.TestCase):
         remaining = re.findall(r'<pre\b[^>]*>.*?</pre>', self.after, re.S)
         self.assertEqual(len(original), 10)
         self.assertEqual(remaining, original)
+        # The navigation repair adds exactly one destination to this existing heading.
+        added_heading='<h3 id="reader-reservation-source-of-truth-matrix">Reservation source-of-truth matrix</h3>'
+        self.assertEqual(self.after.count(added_heading),1)
         def article_attributes(source):
             document = parse(source)
             body = next(node for node in document.nodes if 'article-body' in document.classes(node))
@@ -66,7 +69,7 @@ class ReservationTableTests(unittest.TestCase):
             return [(key, node['attrs'][key]) for node in document.nodes
                     if body['inner'] <= node['start'] < body['end'] and teaching(node)
                     for key in ('id', 'href') if key in node['attrs']
-                    and not (key == 'id' and node['attrs'][key].startswith('ai-toolkit-'))]
+                    and not (key == 'id' and (node['attrs'][key].startswith('ai-toolkit-') or node['attrs'][key]=='reader-reservation-source-of-truth-matrix'))]
         self.assertEqual(article_attributes(self.after), article_attributes(self.before))
         original_document=parse(self.before)
         original_body=next(n for n in original_document.nodes if 'article-body' in original_document.classes(n))
