@@ -1,6 +1,6 @@
 # Calm tourism portfolio redesign — working roadmap
 
-**Current position: Step 1 complete. Step 2 is next and has not started.**
+**Current position: Step 1 complete. Step 2 review prepared; awaiting Ahmed’s review. Step 3 has not started.**
 
 Last updated: 28 October 2026 (Europe/Amsterdam).
 Working branch: `feature/calm-tourism-redesign`.
@@ -17,7 +17,7 @@ Keep the footer Ahmed likes: its structure, content, logo, colors, typography an
 | Step | Status | Deliverable | Complete when |
 |---|---|---|---|
 | 1. Record and protect | COMPLETE | Published recovery archive, route/anchor/content/download inventory, footer references and preservation checker | Baseline matches the published commit, backup validates, checker passes and deliberate-change tests prove protection |
-| 2. Professional story and CV | NOT STARTED — NEXT | Evidence-based experience map, agreed positioning, homepage introduction and CV alignment plan | Ahmed reviews the factual content and target-role positioning; any CV replacement is explicitly recorded |
+| 2. Professional story and CV | REVIEW PREPARED | Evidence-based experience map, agreed positioning, homepage introduction and CV alignment plan | Ahmed reviews the factual content and target-role positioning; any CV replacement is explicitly recorded |
 | 3. Calm shared design system | NOT STARTED | Typography, color, spacing, navigation, component and accessibility rules derived from the retained footer | One coherent system is documented; no competing new visual systems |
 | 4. Four-page preview | NOT STARTED | Homepage, profile/experience, one project and one representative article on a preview branch | Ahmed reviews desktop/mobile previews and approves the direction before broad rollout |
 | 5. Site-wide application | NOT STARTED | Approved design applied to all page families through shared code | Every route remains, article preservation checks pass, footer is retained and page-family coverage is recorded |
@@ -47,9 +47,19 @@ Keep the footer Ahmed likes: its structure, content, logo, colors, typography an
 - 28 October: chosen career focus is travel/tourism, with tourism product teams and MICE/event coordination as related directions.
 - 28 October: retain the existing professional footer; do not replace it with a new component.
 - 28 October: freeze the latest published sources-redesign release as the baseline; use an isolated redesign branch.
-- 28 October: Step 1 is protection and planning only. Do not begin writing a new CV or implementing a new visual design yet.
+- 28 October: Step 1 was protection and planning only; no production CV or visual design changes were made.
+- 28 October: Ahmed instructed Step 2 and confirmed the Masarra role/end date, Den Haag location and sponsorship statement. CV/profile review drafts are now prepared; existing public files remain unchanged.
+
+## Step 2 progress
+- Existing PDF and DOCX CV versions, profile, professional-profile data, evidence ledger, selected project pages and key credential documents reviewed.
+- Recorded user-confirmed Masarra end date (October 2026), licensed French/English tour-guide role in the operations team with cross-functional support, Den Haag location and no-sponsorship work authorisation.
+- Prepared the career evidence map, proposed profile data, homepage/profile copy, and tourism-first CV text draft in `docs/calm-redesign/step-2/`. These are review drafts, not public CV replacements.
+- Remaining review: exact titles for older employers, previously supplied language levels, older dates/operating volumes and approval of the proposed wording.
+- No article, footer, live page, original public CV or download was changed. Step 1 baseline remains immutable.
 
 ## Open issues and next action
+Step 2 is not marked complete solely because the drafts exist. The remaining review is recorded above.
+
 No Step 1 preservation failures remain. External source claims have not been newly fact-checked by this inventory. Runtime behavior and real-device accessibility will be assessed in Step 6; the archive and hashes are not a substitute for those checks.
 
-**Next action: Step 2 — inspect the existing CVs and profile, reconcile factual experience/qualifications, and prepare the professional positioning for Ahmed's review.**
+**Next action: Ahmed reviews the Step 2 copy and remaining factual labels. Incorporate any corrections, then record Step 2 acceptance before starting Step 3 (the calm shared design system).**
