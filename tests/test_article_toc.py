@@ -25,10 +25,11 @@ class ContentsTests(unittest.TestCase):
    self.assertEqual(simplify(s)[0],s,p)
 
  def test_unanchored_subsection_does_not_point_at_whole_article(self):
-  source='<main id="article"><aside class="article-toc"><a href="#article" data-toc-link>Source of truth matrix</a></aside><article class="article-body"><h2 id="framework">Framework</h2><h3>Source of truth matrix</h3><p>Original evidence.</p></article></main>'
+  source='<main id="article"><aside class="article-toc"><a href="#article" data-toc-link>Source of truth matrix</a></aside><article class="article-body"><h2 id="framework">Framework</h2><h3>Source of truth matrix</h3><p>Original evidence.</p><section class="practical-example"><h4>Related reading</h4></section></article></main>'
   result,_=simplify(source)
   self.assertNotIn('href="#article"',result)
   self.assertIn('<h3 id="reader-source-of-truth-matrix">Source of truth matrix</h3>',result)
   self.assertIn('href="#reader-source-of-truth-matrix"',result)
   self.assertIn('<p>Original evidence.</p>',result)
+  self.assertIn('<section class="practical-example"><h4>Related reading</h4></section>',result)
   self.assertEqual(simplify(result)[0],result)
