@@ -1,6 +1,6 @@
 # Calm tourism portfolio redesign — working roadmap
 
-**Current position: Step 4 prepared for review — four real page previews plus complete public-video coverage. Step 5 awaits Ahmed’s review of this direction.**
+**Current position: Steps 4–5 implemented; Step 6 local verification complete. Step 7 awaits explicit production approval.**
 
 Last updated: 28 October 2026 (Europe/Amsterdam).
 Working branch: `feature/calm-tourism-redesign`.
@@ -10,7 +10,7 @@ Restore tag: `calm-redesign-baseline-2026-10-28`.
 ## Agreed direction
 Travel & Tourism Operations is the primary professional identity. Tourism product teams and MICE/event coordination are related career directions. Quality improvement and AI support this story. Future CV/profile content must reflect actual evidence; professional work, educational examples, demonstrations and proposed results must remain clearly distinguished.
 
-Keep the footer Ahmed likes: its structure, content, logo, colors, typography and links. Use its calm navy/ivory/gold identity to guide the redesign. Keep the existing domain and exact article/project routes, working heading anchors, article wording and order, citations, prompt sources, videos and downloads. No article deletion, slug migration, domain move or cosmetic evidence-date changes. Existing functionality must remain available.
+Keep the footer Ahmed likes: its design, logo, colors and typography. The latest explicit contact exception moves WhatsApp into Connect and removes the visible phone and duplicate About contact link. Use its calm navy/ivory/gold identity to guide the redesign. Keep the existing domain and exact article/project routes, working heading anchors, article wording and order, citations, prompt sources, videos and downloads. No article deletion, slug migration, domain move or cosmetic evidence-date changes. Existing functionality must remain available.
 
 ## Steps and completion gates
 
@@ -19,10 +19,10 @@ Keep the footer Ahmed likes: its structure, content, logo, colors, typography an
 | 1. Record and protect | COMPLETE | Published recovery archive, route/anchor/content/download inventory, footer references and preservation checker | Baseline matches the published commit, backup validates, checker passes and deliberate-change tests prove protection |
 | 2. Professional story and CV | COMPLETE — CONTENT DIRECTION | Evidence-based experience map, agreed positioning, homepage introduction and CV alignment plan | Ahmed reviews the factual content and target-role positioning; any CV replacement is explicitly recorded |
 | 3. Calm shared design system | COMPLETE — SPECIMEN PREPARED | Typography, color, spacing, navigation, component and accessibility rules derived from the retained footer | One coherent system is documented; no competing new visual systems |
-| 4. Four-page preview | READY FOR REVIEW | Homepage, profile/experience, one project and one representative article on a preview branch | Ahmed reviews desktop/mobile previews and approves the direction before broad rollout |
-| 5. Site-wide application | NOT STARTED | Approved design applied to all page families through shared code | Every route remains, article preservation checks pass, footer is retained and page-family coverage is recorded |
-| 6. Full verification | NOT STARTED | Content/URL comparisons, functional, accessibility, responsive and performance checks with issue list | Required tests pass; material limitations and unresolved issues are visible |
-| 7. Review and publication | NOT STARTED | Final preview, approved release, live verification, rollback reference and maintenance notes | Ahmed explicitly approves production release; deployment and live checks pass |
+| 4. Four-page preview | APPROVED FOR ROLLOUT | Homepage, profile/experience, one project and one representative article on a preview branch | Ahmed reviews desktop/mobile previews and approves the direction before broad rollout |
+| 5. Site-wide application | IMPLEMENTED | Approved design applied to all page families through shared code | Every route remains, article preservation checks pass, footer is retained and page-family coverage is recorded |
+| 6. Full verification | LOCAL CHECKS COMPLETE | Content/URL comparisons, functional, accessibility, responsive and performance checks with issue list | Required tests pass; material limitations and unresolved issues are visible |
+| 7. Review and publication | AWAITING PUBLICATION APPROVAL | Final preview, approved release, live verification, rollback reference and maintenance notes | Ahmed explicitly approves production release; deployment and live checks pass |
 
 ## Step 1 evidence
 - 178 public HTML pages, including 130 article pages.
@@ -66,13 +66,10 @@ Keep the footer Ahmed likes: its structure, content, logo, colors, typography an
 - Verified four viewport widths, 48px controls, readable contrast, native disclosures and unchanged protected content.
 - This is design-system preparation, not the four-page preview or a live redesign.
 
-## Open issues and next action
-Ahmed instructed proceeding to Step 3 after the department/function and language decisions. Step 2 content direction is accepted for the preview work; a newly typeset CV has not been approved or issued. Historical dates/volumes remain supplied career claims, not independently audited results.
+## Current review and next action
+The full local preview is on port 4185. Review the feature branch and draft pull request before authorizing production. Original PDF/DOCX CV downloads remain unchanged; a newly typeset CV is a separate reviewed deliverable. External source claims, real-device assistive technology and field performance have not been independently certified.
 
-No Step 1 preservation failures remain. External source claims have not been newly fact-checked by this inventory. Runtime behavior and real-device accessibility will be assessed in Step 6; the archive and hashes are not a substitute for those checks.
-
-**Next action: Ahmed reviews the Step 4 previews. After acceptance, Step 5 applies the shared design across every page family. No production rollout or deployment yet.**
-
+Step 4 builders and reports below are historical at commit 942e8c5; do not rerun those isolated preview builders against the current inventory. Use the normal shared renderer and site preview for the current release.
 
 ## Step 4 progress
 - Prepared isolated homepage, profile, InfraQuote case study and hotel operations article previews, retaining their original route paths on local port 4184.
@@ -95,3 +92,14 @@ Ahmed requested full channel coverage as part of the redesign. The verified chan
 - Coverage in the preview: 17 article players, 15 library players, one direct-only video. There are 32 unique players and no duplicates across articles and the library.
 - Evidence is public descriptions, original article text and fresh public embedding permissions; this is not a full transcript audit. No additional vidIQ credits were spent. YouTube availability remains externally controlled.
 - These additions are explicitly recorded in `supplemental-video-matches.json` and `video-placement-review.csv`. They are preview-only until the redesign reaches the approved rollout/publication stages.
+
+## Step 5–6 release record — 28 October 2026
+- Ahmed authorized broad rollout and additional paragraph-matched supplementary videos.
+- All 179 public pages use the shared calm design, including 130 articles and four interactive app frames. Original 178 routes, 130 article word sequences, 9,900 anchors and 437 resources pass preservation checks.
+- The immutable baseline remains unchanged. Eight exact supplemental video figures/review-note updates, the exact requested footer contact change and one added sitemap URL are narrowly recorded exceptions.
+- Current coverage supersedes Step 4: 33 public uploads, 23 article players, nine library players and one direct-only upload with embedding disabled. The 32 players are unique. Placement evidence uses public descriptions and exact article paragraphs, not a complete transcript audit.
+- Footer design and stylesheet are retained. About has story, credentials and experience; Connect includes WhatsApp without visible phone digits.
+- All 179 pages were checked at mobile width. Local links/fragments/duplicate IDs are clean. The release suite passed 25 check groups (139 Python tests and 19 JavaScript groups); a subsequent monthly inventory regression increased the Python suite by one and the seven targeted rollout tests pass.
+- Follow-up visual checks corrected heading contrast on dark prompt panels and pale action panels. Browser checks cover navigation, search, reading controls, glossary and prompt interactions. No Lighthouse/field-performance or screen-reader certification is claimed.
+- A monthly thread review is active on the first day of each month at 10:00 Europe/Amsterdam. It requires relevant paragraph matches, no additional paid credits and no automatic merge/deployment; unchanged reviews stay quiet.
+- Production master and GitHub Pages remain unchanged. Next action is review and explicit production approval.

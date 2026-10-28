@@ -53,10 +53,35 @@ def create(commit):
  return result
 def check(data,root=ROOT):
  errors=[]
+ policy=root/'docs/calm-redesign/approved-additions.json'
+ additions=json.loads(policy.read_text()) if policy.is_file() else []
+ footer_policy=root/'docs/calm-redesign/approved-footer-change.json'
+ footer_change=json.loads(footer_policy.read_text()) if footer_policy.is_file() else None
+ footer_before=root/'docs/calm-redesign/step-5/footer-baseline.html.in'
+ old_footer=footer_before.read_text().strip() if footer_before.is_file() else ''
  for old in data['pages']:
   p=root/old['file']
   if not p.is_file():errors.append({'file':old['file'],'issue':'missing route'});continue
-  now=page_record(old['file'],p.read_bytes())
+  source=p.read_text()
+  if footer_change and old_footer:
+   from apply_field_manual import parse
+   footers=[n for n in parse(source).nodes if n['tag']=='footer' and 'platform-footer' in n['attrs'].get('class','').split()]
+   if len(footers)==1:
+    n=footers[0]
+    if digest(source[n['start']:n['end']])==footer_change['approvedFooterSha256'] and digest(old_footer)==old['footerSha256']:
+     source=source[:n['start']]+old_footer+source[n['end']:]
+  for addition in additions:
+   if addition['file']!=old['file']:continue
+   from apply_field_manual import parse
+   figures=[n for n in parse(source).nodes if n['tag']=='figure' and n['attrs'].get('data-youtube-id')==addition['videoId']]
+   if len(figures)!=1 or digest(source[figures[0]['start']:figures[0]['end']])!=addition['figureSha256']:
+    errors.append({'file':old['file'],'issue':'approved video addition missing, duplicated or changed'})
+    continue
+   n=figures[0];source=source[:n['start']]+source[n['end']:]
+   if source.count(addition['reviewNoteAfter'])!=1:
+    errors.append({'file':old['file'],'issue':'approved video review note changed'})
+   else:source=source.replace(addition['reviewNoteAfter'],addition['reviewNoteBefore'],1)
+  now=page_record(old['file'],source.encode())
   missing=sorted(set(old['anchors'])-set(now['anchors']))
   if missing:errors.append({'file':old['file'],'issue':'missing anchors','anchors':missing})
   if old['canonical']!=now['canonical']:errors.append({'file':old['file'],'issue':'canonical changed'})
@@ -66,6 +91,21 @@ def check(data,root=ROOT):
   if old['footerSha256']!=now['footerSha256']:errors.append({'file':old['file'],'issue':'footer markup changed'})
  for old in data['downloads']+data['footerFiles']+data.get('identityFiles',[]):
   p=root/old['file']
+  if old['file']=='templates/footer.html' and footer_change and p.is_file() and footer_before.is_file():
+   if digest(footer_before.read_bytes())==old['sha256'] and digest(p.read_bytes())==footer_change['approvedTemplateSha256']:continue
+  if old['file']=='sitemap.xml' and p.is_file() and digest(p.read_bytes())!=old['sha256']:
+   # The approved library is additive. Preserve every original sitemap entry,
+   # date and attribute, while allowing XML serializer whitespace to differ.
+   import xml.etree.ElementTree as ET
+   baseline=root/'docs/calm-redesign/step-5/sitemap-baseline.xml'
+   if baseline.is_file() and digest(baseline.read_bytes())==old['sha256']:
+    try:
+     current=ET.fromstring(p.read_text());extra=[n for n in current if n.findtext('{*}loc')==BASE+'/learn/videos/index.html']
+     if len(extra)==1 and len(extra[0])==1 and not extra[0].attrib:
+      current.remove(extra[0])
+      canonical=lambda text:ET.canonicalize(xml_data=text,strip_text=True)
+      if canonical(ET.tostring(current,encoding='unicode'))==canonical(ET.tostring(ET.fromstring(baseline.read_text()),encoding='unicode')):continue
+    except ET.ParseError:pass
   if not p.is_file() or digest(p.read_bytes())!=old['sha256']:errors.append({'file':old['file'],'issue':'protected download/footer file changed or missing'})
  return {'passed':not errors,'baselineCommit':data['baselineCommit'],'pagesChecked':len(data['pages']),'articlesChecked':sum(bool(p['articleTokensSha256']) for p in data['pages']),'anchorsProtected':sum(len(p['anchors']) for p in data['pages']),'downloadsChecked':len(data['downloads']),'errors':errors}
 def main():

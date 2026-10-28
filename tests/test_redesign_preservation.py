@@ -8,7 +8,10 @@ class RedesignPreservationTests(unittest.TestCase):
   self.small={**self.data,'pages':[self.row],'downloads':[],'footerFiles':[],'identityFiles':[]}
  def inspect(self,source):
   with tempfile.TemporaryDirectory() as t:
-   root=Path(t);p=root/self.row['file'];p.parent.mkdir(parents=True);p.write_text(source);return check(self.small,root)
+   root=Path(t);p=root/self.row['file'];p.parent.mkdir(parents=True);p.write_text(source)
+   for name in ['docs/calm-redesign/approved-footer-change.json','docs/calm-redesign/step-5/footer-baseline.html.in']:
+    target=root/name;target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes((ROOT/name).read_bytes())
+   return check(self.small,root)
  def test_baseline_covers_the_whole_published_site(self):
   result=check(self.data);self.assertTrue(result['passed'],result['errors']);self.assertEqual(result['pagesChecked'],178);self.assertEqual(result['articlesChecked'],130)
  def test_presentation_changes_do_not_change_protected_words(self):

@@ -13,9 +13,12 @@ def unpack(source):
  return re.sub(r'<link\b[^>]*data-style-sources="([A-Za-z0-9+/=]+)"[^>]*>',restore,source)
 
 def pack(source,path,root):
- if path.relative_to(root).parts[0] not in {'profile','projects','knowledge','articles'}:return source
+ if path.relative_to(root).parts[0] not in {'profile','projects','knowledge','articles','series'}:return source
  nodes=[n for n in parse(source).nodes if n['tag']=='link' and n['attrs'].get('rel')=='stylesheet' and n['attrs'].get('href','').startswith('/assets/css/') and not n['attrs'].get('media')]
  if len(nodes)<3:return source
+ # Shared redesign rules must remain last when individual component renderers
+ # rebuild their own CSS references independently of the full-site renderer.
+ nodes=sorted(nodes,key=lambda n:n['attrs']['href'].split('?')[0]=='/assets/css/calm-design.css')
  seen=set();chunks=[]
  def expand(url):
   relative=url.split('?')[0].lstrip('/');p=root/relative
@@ -37,8 +40,8 @@ def pack(source,path,root):
  GENERATED[root/'assets/css/generated'/name]=css
  originals=''.join(source[n['start']:n['end']] for n in nodes)
  tag='<link rel="stylesheet" href="/assets/css/generated/'+name+'" data-style-sources="'+base64.b64encode(originals.encode()).decode()+'">'
- first=nodes[0]['start']
- for n in reversed(nodes):source=source[:n['start']]+(tag if n['start']==first else '')+source[n['end']:]
+ first=min(n['start'] for n in nodes)
+ for n in sorted(nodes,key=lambda n:n['start'],reverse=True):source=source[:n['start']]+(tag if n['start']==first else '')+source[n['end']:]
  # Imported fonts/tokens now live inside the bundle; don't fetch them separately.
  source=re.sub(r'<link\b(?=[^>]*rel="preload")(?=[^>]*href="/assets/css/(?:fonts|design-tokens)\.css[^\"]*")[^>]*>','',source)
  return source

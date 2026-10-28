@@ -16,7 +16,8 @@ class RemovedContactSections(unittest.TestCase):
    self.assertNotIn('href="/#contact"',source,str(p))
    self.assertNotIn('/assets/js/contact-actions.js',source,str(p))
    footer=next(n for n in nodes if n['tag']=='footer');chunk=source[footer['start']:footer['end']]
-   for value in ['mailto:ahmed.mahmoud.nl.work@gmail.com','tel:+31628895967','https://www.youtube.com/@ahmedqualityops-official']:self.assertIn(value,chunk,str(p))
+   for value in ['mailto:ahmed.mahmoud.nl.work@gmail.com','https://wa.me/31628895967','https://www.youtube.com/@ahmedqualityops-official']:self.assertIn(value,chunk,str(p))
+   self.assertNotIn('tel:+31628895967',chunk,str(p))
  def test_removal_preserves_adjacent_content_and_links(self):
   source='<main><section id="career"><p>Keep experience</p></section><section class="contact" id="contact"><h2>Let’s start a conversation</h2></section><section id="profile-contact"><p>Retire duplicate CTA</p></section><section id="articles">Keep articles</section></main><footer id="site-footer"><a href="mailto:ahmed@example.com">Email</a></footer>'
   result=render(source)

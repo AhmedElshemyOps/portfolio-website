@@ -1,0 +1,66 @@
+[
+  {
+    "file": "articles/standard-test-procedures-tourism-operations/index.html",
+    "videoId": "VMAXcTM4zsE",
+    "figureSha256": "bace42fb2064375ec80d66fb1d193a85928c6e6a26637147a20a01ec13ed6182",
+    "reviewNoteBefore": "",
+    "reviewNoteAfter": "<p>Video placement reviewed: <time datetime=\"2026-10-28\">2026-10-28</time>. Matched using public descriptions; full transcripts were unavailable.</p>",
+    "authorization": "Ahmed approved Step 4 preview and requested Step 5 on 28 October 2026; only this exact added video and its review note are excluded from the original-text comparison."
+  },
+  {
+    "file": "articles/sop-exception-escalation-management/index.html",
+    "videoId": "RkXz9VNLdEc",
+    "figureSha256": "28ed3edd9106e7447e961ed47d5cdbe79a62154d4c0b2dd7fce67981ca2e71d5",
+    "reviewNoteBefore": "<p>Video placement reviewed: <time datetime=\"2026-10-27\">2026-10-27</time>. Matched using public descriptions; full transcripts were unavailable.</p>",
+    "reviewNoteAfter": "<p>Video placement reviewed: <time datetime=\"2026-10-28\">2026-10-28</time>. Matched using public descriptions; full transcripts were unavailable.</p>",
+    "authorization": "Ahmed approved Step 4 preview and requested Step 5 on 28 October 2026; only this exact added video and its review note are excluded from the original-text comparison."
+  },
+  {
+    "file": "articles/hotel-lean-six-sigma-ai-toolkit/index.html",
+    "videoId": "u3Nvy3zTiGE",
+    "figureSha256": "ad5c85335557f538015ca03f352e0da770e4680fc3c1cdc251201a8a8dbc1294",
+    "reviewNoteBefore": "<p>Video placement reviewed: <time datetime=\"2026-10-27\">2026-10-27</time>. Matched using public descriptions; full transcripts were unavailable.</p>",
+    "reviewNoteAfter": "<p>Video placement reviewed: <time datetime=\"2026-10-28\">2026-10-28</time>. Matched using public descriptions; full transcripts were unavailable.</p>",
+    "authorization": "28 October 2026: Ahmed requested extending paragraph-matched videos as supplementary explanations across articles. This exception permits only this exact player and review note."
+  },
+  {
+    "file": "articles/tourism-operations-kpis-control-dashboards/index.html",
+    "videoId": "KCZDCSyBQSg",
+    "figureSha256": "e0e10b7a9355a6a15edf2edd26080e49dca95d84a819a80973a97debf6563e70",
+    "reviewNoteBefore": "<p>Video placement reviewed: <time datetime=\"2026-10-27\">2026-10-27</time>. Matched using public descriptions; full transcripts were unavailable.</p>",
+    "reviewNoteAfter": "<p>Video placement reviewed: <time datetime=\"2026-10-28\">2026-10-28</time>. Matched using public descriptions; full transcripts were unavailable.</p>",
+    "authorization": "28 October 2026: Ahmed requested extending paragraph-matched videos as supplementary explanations across articles. This exception permits only this exact player and review note."
+  },
+  {
+    "file": "articles/integrated-sop-creation-model/index.html",
+    "videoId": "wPKJikM9Ui0",
+    "figureSha256": "6a609a0809cc293729f9a7f6f3fcba36c35ff99ce5a935db56df91d59058b189",
+    "reviewNoteBefore": "",
+    "reviewNoteAfter": "<p>Video placement reviewed: <time datetime=\"2026-10-28\">2026-10-28</time>. Matched using public descriptions; full transcripts were unavailable.</p>",
+    "authorization": "28 October 2026: Ahmed requested extending paragraph-matched videos as supplementary explanations across articles. This exception permits only this exact player and review note."
+  },
+  {
+    "file": "articles/hotel-reservations-ai-toolkit/index.html",
+    "videoId": "_93R2PRGJhA",
+    "figureSha256": "79a481036d0d216184de232d631290ab71b24ca49efbd299a6850ea1d6ad6fa0",
+    "reviewNoteBefore": "",
+    "reviewNoteAfter": "<p>Video placement reviewed: <time datetime=\"2026-10-28\">2026-10-28</time>. Matched using public descriptions; full transcripts were unavailable.</p>",
+    "authorization": "28 October 2026: Ahmed requested extending paragraph-matched videos as supplementary explanations across articles. This exception permits only this exact player and review note."
+  },
+  {
+    "file": "articles/article-fleet-control-tower-operations-dashboard/index.html",
+    "videoId": "92Rl7Yj3HoI",
+    "figureSha256": "8ab33bba845d93c5d85c5cd872e2ebaf8dbab2cf5ad63bb56f32cd21b6446240",
+    "reviewNoteBefore": "",
+    "reviewNoteAfter": "<p>Video placement reviewed: <time datetime=\"2026-10-28\">2026-10-28</time>. Matched using public descriptions; full transcripts were unavailable.</p>",
+    "authorization": "28 October 2026: Ahmed requested extending paragraph-matched videos as supplementary explanations across articles. This exception permits only this exact player and review note."
+  },
+  {
+    "file": "articles/article-mice-arrival-waves-zayed-international-airport/index.html",
+    "videoId": "jrqUFNnN6bA",
+    "figureSha256": "4f188cccf3efba831c7571cb8089ba1dee15cfd9af57a8efe3830c664a71ba5c",
+    "reviewNoteBefore": "",
+    "reviewNoteAfter": "<p>Video placement reviewed: <time datetime=\"2026-10-28\">2026-10-28</time>. Matched using public descriptions; full transcripts were unavailable.</p>",
+    "authorization": "28 October 2026: Ahmed requested extending paragraph-matched videos as supplementary explanations across articles. This exception permits only this exact player and review note."
+  }
+]

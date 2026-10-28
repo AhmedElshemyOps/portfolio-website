@@ -43,10 +43,11 @@ class SharedComponents(unittest.TestCase):
     def test_current_collection_pages_load_the_reader_once(self):
         from apply_field_manual import parse
         from render_shared import pages
+        from bundle_page_styles import unpack
         consumers = []
         for page in pages():
             assets = []
-            for node in parse(page.read_text()).nodes:
+            for node in parse(unpack(page.read_text())).nodes:
                 if node['tag'] == 'script':
                     value = node['attrs'].get('src', '')
                 elif node['tag'] == 'link' and node['attrs'].get('rel') == 'stylesheet':

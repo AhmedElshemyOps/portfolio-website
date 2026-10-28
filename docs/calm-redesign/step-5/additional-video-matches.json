@@ -1,0 +1,68 @@
+[
+  {
+    "videoId": "u3Nvy3zTiGE",
+    "title": "SME + Six Sigma Belt Holder: Who Does What? | Hotel Example #leansixsigma #continuousimprovement",
+    "article": "articles/hotel-lean-six-sigma-ai-toolkit/index.html",
+    "section": "The Lean Six Sigma HOTEL model",
+    "afterParagraph": "Who sponsors the project? Who owns the process? Who provides subject-matter expertise? Who reviews statistics? Who validates financial benefits?",
+    "rationale": "An illustrative hotel check-in case distinguishes process expertise from DMAIC facilitation and shows why both are needed when assigning improvement roles.",
+    "evidence": "Public description and exact article paragraph; illustrative cross-context explanations are labelled. No full transcript audit.",
+    "reviewedOn": "2026-10-28",
+    "videoFormat": "short"
+  },
+  {
+    "videoId": "KCZDCSyBQSg",
+    "title": "A Perfect KPI Can Hide a Failing Business | DMC Tourism Example #kpi",
+    "article": "articles/tourism-operations-kpis-control-dashboards/index.html",
+    "section": "Measures that support decisions",
+    "afterParagraph": "Select a small balanced set. For each measure define purpose, formula or classification rule, numerator and denominator where applicable, source, owner, refresh, segmentation, target, response threshold, and known limitations. A measure without an action route becomes reporting overhead.",
+    "rationale": "This illustrative DMC example shows why a successful booking-volume KPI still needs contribution, cash, refund and guest-quality counter-measures.",
+    "evidence": "Public description and exact article paragraph; illustrative cross-context explanations are labelled. No full transcript audit.",
+    "reviewedOn": "2026-10-28",
+    "videoFormat": "short"
+  },
+  {
+    "videoId": "wPKJikM9Ui0",
+    "title": "Lean Explained in 60 Seconds | Hotel Check-In Example #leansixsigma #processimprovement",
+    "article": "articles/integrated-sop-creation-model/index.html",
+    "section": "Concepts that must stay distinct",
+    "afterParagraph": "Frameworks operate at different levels. ITIL contributes service and value-system thinking; PMP contributes temporary change delivery; Lean contributes flow, waste, and learning; Six Sigma contributes operational definitions, measurement, analysis, and control. The SOP remains the organization's tailored control. Integration should remove gaps, not create a giant template. Each stage produces only the evidence needed for the next decision and the eventual controlled process pack. Simple, low-risk work should use a proportionate version of the lifecycle. The lifecycle is iterative. Measurement, audit, incidents, user feedback, supplier performance, and changed conditions can return the team to value, mapping, risk, causes, or design. A published SOP is a controlled hypothesis about reliable work, not the final truth. Governance connects the stages through ownership, decisions, versions, evidence, and traceability. Without one accountable process owner and defined approval authority, integration becomes a collection of workshops with no controlled outcome.",
+    "rationale": "A hotel check-in example explains the Lean contribution to this integrated model: understand guest value and improve flow before removing work.",
+    "evidence": "Public description and exact article paragraph; illustrative cross-context explanations are labelled. No full transcript audit.",
+    "reviewedOn": "2026-10-28",
+    "videoFormat": "short"
+  },
+  {
+    "videoId": "_93R2PRGJhA",
+    "title": "Poka-Yoke Explained in 60 Seconds | Tour Booking Example | Lean Management #leans#processimprovement",
+    "article": "articles/hotel-reservations-ai-toolkit/index.html",
+    "section": "Lean Six Sigma application",
+    "afterParagraph": "Improve: redesign the input fields, verification checkpoint, authority rule, handover or SOP.",
+    "rationale": "This tour-booking example demonstrates mistake-proofing with required fields, date checks and guest confirmation, complementing the reservation input and verification controls described here.",
+    "evidence": "Public description and exact article paragraph; illustrative cross-context explanations are labelled. No full transcript audit.",
+    "reviewedOn": "2026-10-28",
+    "videoFormat": "short"
+  },
+  {
+    "videoId": "92Rl7Yj3HoI",
+    "title": "How Efficient Is Your DMC Fleet? OEE Reveals 3 Hidden Losses",
+    "article": "articles/article-fleet-control-tower-operations-dashboard/index.html",
+    "section": "Fleet KPIs that matter in tourism operations",
+    "afterParagraph": "Tourism operations need metrics that connect fleet performance to guest experience.",
+    "rationale": "A companion DMC fleet example separates availability, performance and first-pass quality losses. Its adapted OEE calculation is illustrative, requires comparable route-normalized cycles and is not a benchmark or driver-ranking score.",
+    "evidence": "Public description and exact article paragraph; illustrative cross-context explanations are labelled. No full transcript audit.",
+    "reviewedOn": "2026-10-28",
+    "videoFormat": "short"
+  },
+  {
+    "videoId": "jrqUFNnN6bA",
+    "title": "Heijunka Explained in 60 Seconds | Airport Transfer Example | Lean Management",
+    "article": "articles/article-mice-arrival-waves-zayed-international-airport/index.html",
+    "section": "Build the airport team around zones and responsibilities",
+    "afterParagraph": "The exact staffing level depends on flight concentration, guest profile, airport arrangements, language requirements and the number of simultaneous movements.",
+    "rationale": "An airport-transfer example explains workload leveling through driver and vehicle readiness around expected flight peaks. Flight arrivals themselves are not controllable; service and safety remain the constraints.",
+    "evidence": "Public description and exact article paragraph; illustrative cross-context explanations are labelled. No full transcript audit.",
+    "reviewedOn": "2026-10-28",
+    "videoFormat": "short"
+  }
+]
