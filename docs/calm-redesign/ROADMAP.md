@@ -1,6 +1,6 @@
 # Calm tourism portfolio redesign — working roadmap
 
-**Current position: Step 1 complete. Step 2 review prepared; awaiting Ahmed’s review. Step 3 has not started.**
+**Current position: Steps 1–3 complete for baseline, content direction and design-system preparation. Step 4 (four real page previews) is next.**
 
 Last updated: 28 October 2026 (Europe/Amsterdam).
 Working branch: `feature/calm-tourism-redesign`.
@@ -17,8 +17,8 @@ Keep the footer Ahmed likes: its structure, content, logo, colors, typography an
 | Step | Status | Deliverable | Complete when |
 |---|---|---|---|
 | 1. Record and protect | COMPLETE | Published recovery archive, route/anchor/content/download inventory, footer references and preservation checker | Baseline matches the published commit, backup validates, checker passes and deliberate-change tests prove protection |
-| 2. Professional story and CV | REVIEW PREPARED | Evidence-based experience map, agreed positioning, homepage introduction and CV alignment plan | Ahmed reviews the factual content and target-role positioning; any CV replacement is explicitly recorded |
-| 3. Calm shared design system | NOT STARTED | Typography, color, spacing, navigation, component and accessibility rules derived from the retained footer | One coherent system is documented; no competing new visual systems |
+| 2. Professional story and CV | COMPLETE — CONTENT DIRECTION | Evidence-based experience map, agreed positioning, homepage introduction and CV alignment plan | Ahmed reviews the factual content and target-role positioning; any CV replacement is explicitly recorded |
+| 3. Calm shared design system | COMPLETE — SPECIMEN PREPARED | Typography, color, spacing, navigation, component and accessibility rules derived from the retained footer | One coherent system is documented; no competing new visual systems |
 | 4. Four-page preview | NOT STARTED | Homepage, profile/experience, one project and one representative article on a preview branch | Ahmed reviews desktop/mobile previews and approves the direction before broad rollout |
 | 5. Site-wide application | NOT STARTED | Approved design applied to all page families through shared code | Every route remains, article preservation checks pass, footer is retained and page-family coverage is recorded |
 | 6. Full verification | NOT STARTED | Content/URL comparisons, functional, accessibility, responsive and performance checks with issue list | Required tests pass; material limitations and unresolved issues are visible |
@@ -50,6 +50,7 @@ Keep the footer Ahmed likes: its structure, content, logo, colors, typography an
 - 28 October: Step 1 was protection and planning only; no production CV or visual design changes were made.
 - 28 October: Ahmed instructed Step 2 and confirmed the Masarra role/end date, Den Haag location and sponsorship statement. CV/profile review drafts are now prepared; existing public files remain unchanged.
 - 28 October: Ahmed confirmed unchanged language levels and requested department/function-based presentation to support his transition away from guiding. This replaces the earlier proposed guiding-led experience card.
+- 28 October: Ahmed instructed moving to Step 3. The calm shared design-system specimen is prepared; Step 4 is the next reviewable implementation stage.
 
 ## Step 2 progress
 - Existing PDF and DOCX CV versions, profile, professional-profile data, evidence ledger, selected project pages and key credential documents reviewed.
@@ -58,9 +59,16 @@ Keep the footer Ahmed likes: its structure, content, logo, colors, typography an
 - Presentation and language decisions confirmed: department/function labels rather than repeated guiding titles; existing language levels unchanged. Remaining review is the revised copy and any corrections to older dates/operating volumes.
 - No article, footer, live page, original public CV or download was changed. Step 1 baseline remains immutable.
 
+## Step 3 progress
+- Prepared one scoped navy/ivory/gold design system using existing Lora and IBM Plex Sans fonts.
+- Created a local specimen for typography, palette, spacing, navigation, actions, experience/project cards, reading, disclosures and references.
+- Reused the published footer markup and stylesheet unchanged, outside the new style scope.
+- Verified four viewport widths, 48px controls, readable contrast, native disclosures and unchanged protected content.
+- This is design-system preparation, not the four-page preview or a live redesign.
+
 ## Open issues and next action
-Step 2 is not marked complete solely because the drafts exist. The remaining review is recorded above.
+Ahmed instructed proceeding to Step 3 after the department/function and language decisions. Step 2 content direction is accepted for the preview work; a newly typeset CV has not been approved or issued. Historical dates/volumes remain supplied career claims, not independently audited results.
 
 No Step 1 preservation failures remain. External source claims have not been newly fact-checked by this inventory. Runtime behavior and real-device accessibility will be assessed in Step 6; the archive and hashes are not a substitute for those checks.
 
-**Next action: Ahmed reviews the Step 2 copy and remaining factual labels. Incorporate any corrections, then record Step 2 acceptance before starting Step 3 (the calm shared design system).**
+**Next action: Step 4 — prepare the homepage, profile/experience, one project and one article as real responsive previews for Ahmed’s review. Do not roll out site-wide or deploy yet.**
