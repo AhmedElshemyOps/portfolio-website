@@ -1,0 +1,13 @@
+# Published baseline and recovery
+
+Source of truth: successful GitHub Pages build of commit `3f5507fb6be29482eacd1cec29fb473f3ff8b9ef`, confirmed before capture. Snapshot date: 28 October 2026. No website content was rewritten to establish this baseline.
+
+`manifest.json` inventories the 178 public tracked HTML routes, directory aliases, canonical targets, headings/anchors, internal links, 130 article-word fingerprints and original article link destinations, 437 linked local resources/downloads and footer template/style fingerprints and domain configuration. HTML hashes describe the exact archived source; they are not all enforced because the redesign must be able to change markup. Article fingerprints protect ordered Unicode word and punctuation tokens, normalizing layout whitespace and excluding generated prompt-control marker regions. Original preformatted prompt content remains included. This is a preservation guard, not a factual or copyright audit.
+
+Run `npm run check:redesign` (or `python3 scripts/check_redesign_preservation.py`). Failures identify deleted routes, removed anchors, changed canonicals, article wording/order/link changes, modified footer markup/styles or changed linked-resource bytes. New pages are allowed. This strict default intentionally flags a later CV replacement for reviewed handling. Do not silently refresh the baseline. Nine tests in `tests/test_redesign_preservation.py` prove that presentation-only markup can pass while representative destructive changes fail.
+
+The current tracked source is also saved as `published-website-3f5507f.tar.gz` in the task's user-facing `outputs/calm-redesign-baseline/` folder, with its SHA256 checksum, a successful archive-verification report, inventories, preservation-check report, test log and footer reference images. The archive includes the full tracked tree at that commit (not untracked files or Git history). It was checked against all 618 distinct protected page/resource/footer files.
+
+Restore safely into a **new empty directory** for inspection; never unpack over the active site. Alternatively, make an isolated checkout of the recorded baseline commit or named restore tag. Production rollback is a separate reviewed release, not an automatic side effect of this step. Keep the original archive/checksum together and verify the checksum before restoring.
+
+Visual references show the published homepage footer at 1440px, 768px and 390px; tall layouts include a separate lower-section screenshot. They are reference evidence, not exhaustive screenshot coverage of every route. Retain footer template/style identity and visually compare its responsive behavior during the redesign.
