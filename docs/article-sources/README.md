@@ -1,0 +1,16 @@
+# Shared article sources and further reading
+
+The shared reader renderer now normalizes all authored bibliographies into one semantic, responsive reference panel. The audit found **50 sections in 50 of the 130 articles**: Sources and further reading, Sources and evidence boundaries, Sources and working artifacts, and Official sources. Articles without an authored bibliography receive no fabricated sources. Inline instructional headings about sources of truth and the shared footer Resources navigation remain separate.
+
+`render_article_sources.py` is called from `render_reader_enhancements.py` in the shared publishing pipeline. It recognizes source headings within the article body, preserves existing structured sections, and wraps bare source sections up to the next peer heading or article ending. Existing heading IDs, TOC anchors, citations, evidence-review dates and limitations are retained. It assigns a stable, nonconflicting heading ID for future source sections lacking one. Rendering is idempotent.
+
+`assets/css/article-sources.css` supplies one ivory panel with a gold top rule, serif heading, numbered references, visible underlined links, comfortable spacing, mobile wrapping, keyboard focus, dark-reader and print styles. Older decorative ribbons and citation-card ornaments are suppressed within this component. Citations remain visible and use native HTML, without added JavaScript or dependencies.
+
+Plain source URLs become real links. Four literal Markdown references in the hotel operations manager article are repaired: the HOTEL framework links to the existing website article, and the authority, source-of-truth and privacy matrices link to their verified paths in the public hotel-ai-operations-playbook repository. Existing valid anchor destinations are unchanged. Source documents were confirmed from the repository tree. This is a presentation and link-formatting change, not a fresh factual verification of the cited publications or a change to their stated review dates.
+
+Maintenance: author a normal h2/h3 bibliography heading and a native list; the shared renderer applies the component on future builds. Do not add a second custom sources stylesheet or manual wrapper. Run rendering, prune obsolete generated bundles, then the health checks. Keep citation metadata and evidence notes authored and truthful; do not substitute a new review date merely because the layout changes.
+
+Tests protect section boundaries, link escaping, existing anchors/code, Markdown resolution, idempotence and coverage of all 50 source sections. Source inventory and visual previews are included in the delivery outputs. No production release is implied by this follow-up styling change.
+
+## Validation
+All 25 local health groups passed: 124 Python tests, 19 JavaScript groups, pinned prompt sources, shared rendering, cleanup, links and navigation. All 50 source articles passed browser checks at 390px and 1440px (100 checks), with no horizontal overflow or misplaced prompt/ending content. Dark-reader colors were verified through the existing mobile reading settings. All 178 public pages have no missing local links/fragments or duplicate IDs. GitHub review checks are reported separately from these completed local checks.
