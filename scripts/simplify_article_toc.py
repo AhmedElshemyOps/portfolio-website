@@ -46,6 +46,7 @@ def simplify(s):
                 inside.append(parent)
             ident=next((p['attrs']['id'] for p in inside if p['attrs'].get('id')),None)
             if not ident:
+                if n['tag']=='h4':continue
                 label=text(s,n).strip().lstrip('#').strip()
                 base='reader-'+(re.sub(r'[^a-z0-9]+','-',label.lower()).strip('-') or 'section')
                 ident=base;index=2
