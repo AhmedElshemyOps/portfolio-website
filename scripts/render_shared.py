@@ -29,6 +29,10 @@ def render(source, path, root=ROOT):
     source = render_video_library(source, path, root)
     from render_article_videos import render as render_article_videos
     source = render_article_videos(source, path, root)
+    from render_project_summaries import render as render_project_summaries
+    from render_reader_starts import render as render_reader_starts, styles as reader_start_styles
+    source = render_reader_starts(render_project_summaries(source,path,root),path,root)
+    if 'class="project-summary"' in source or 'class="reader-starts"' in source or 'class="reader-start-links"' in source:source=reader_start_styles(source)
     from remove_subscription_ui import render as remove_subscription_ui
     source = remove_subscription_ui(source)
     from remove_contact_sections import render as remove_contact_sections

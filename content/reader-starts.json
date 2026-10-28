@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Tourism Operations",
+    "description": "Connect guest journeys, team responsibilities, transport and day-to-day service delivery.",
+    "url": "/learning/tourism-operations/index.html",
+    "path": "tourism-operations",
+    "action": "Start the operations path"
+  },
+  {
+    "title": "MICE & Events",
+    "description": "Follow an event movement through arrival waves, hotel desks, venue coordination and service recovery.",
+    "url": "/learning/mice-operations/index.html",
+    "path": "mice-operations",
+    "action": "Start the event operations path"
+  },
+  {
+    "title": "Tourism Product Support",
+    "description": "Explore customer research, itinerary requirements, supplier feasibility and tourism product economics.",
+    "url": "/series/amsterdam-tourism-product-discovery/index.html",
+    "series": "amsterdam-product-discovery",
+    "action": "Explore the product discovery case"
+  }
+]
