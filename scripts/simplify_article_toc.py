@@ -29,7 +29,7 @@ def simplify(s):
     for n in e.nodes:
         if not body['inner']<=n['start']<body['end'] or n['tag'] not in ('h2','h3','h4'):continue
         parents=list(ancestors(n))
-        if any(e.classes(p)&{'library-connections','article-purpose','article-toc','article-feedback','article-read-time-card','article-next-actions','article-github-cta','related-insights-header','ai-playbook-context-link','v14-article-cta'} for p in parents):continue
+        if any(e.classes(p)&{'practical-example','library-connections','article-purpose','article-toc','article-feedback','article-read-time-card','article-next-actions','article-github-cta','related-insights-header','ai-playbook-context-link','v14-article-cta'} for p in parents):continue
         if n['attrs'].get('id','').startswith('article-feedback'):continue
         prompt_section=next((p for p in parents if 'prompt-section' in e.classes(p)),None)
         prompt=prompt_section is not None
@@ -39,7 +39,21 @@ def simplify(s):
         if any('data-prompt-card' in p['attrs'] or e.classes(p)&{'prompt-card','article-prompt'} for p in parents):continue
         ident=n['attrs'].get('id')
         if not ident:
-            ident=next((p['attrs']['id'] for p in parents if p is not body and p['attrs'].get('id')),None)
+            # Never use the page/article wrapper as a subsection destination.
+            inside=[]
+            for parent in parents:
+                if parent is body:break
+                inside.append(parent)
+            ident=next((p['attrs']['id'] for p in inside if p['attrs'].get('id')),None)
+            if not ident:
+                if n['tag']=='h4':continue
+                label=text(s,n).strip().lstrip('#').strip()
+                base='reader-'+(re.sub(r'[^a-z0-9]+','-',label.lower()).strip('-') or 'section')
+                ident=base;index=2
+                while ident in by_id:ident=f'{base}-{index}';index+=1
+                start=s[n['start']:n['inner']]
+                updated=start[:-1]+' id="'+ident+'">'
+                return simplify(s[:n['start']]+updated+s[n['inner']:])
         if not ident or ident in seen:continue
         label=text(s,n).strip().lstrip('#').strip()
         if not label or label == 'Estimated article reading time':continue
@@ -55,7 +69,7 @@ def simplify(s):
     # Keep linked resource sections outside the body, while dropping empty aliases.
     for link in old_links:
         ident=link['attrs'].get('href','').removeprefix('#');target=by_id.get(ident)
-        if ident in seen or not target or target['tag']=='span':continue
+        if ident in seen or not target or target['tag'] in ('span','main','body','html','article'):continue
         if 'article-glossary' in e.classes(target):continue
         if body['start']<=target['start']<body['end']:continue
         label=re.sub(r'^\d+\s*','',text(s,link)).strip()

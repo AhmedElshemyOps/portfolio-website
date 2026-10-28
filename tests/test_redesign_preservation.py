@@ -44,3 +44,23 @@ class RedesignPreservationTests(unittest.TestCase):
    root=Path(t);p=root/row['file'];p.parent.mkdir(parents=True);p.write_bytes((ROOT/row['file']).read_bytes()+b' changed')
    r=check({**self.data,'pages':[],'downloads':[row],'footerFiles':[],'identityFiles':[]},root)
    self.assertFalse(r['passed'])
+ def test_only_exact_reviewed_cv_replacement_is_allowed(self):
+  import hashlib
+  row=next(x for x in self.data['downloads'] if x['file']=='documents/Ahmed-Mahmoud-CV.pdf')
+  data={**self.data,'pages':[],'downloads':[row],'footerFiles':[],'identityFiles':[]}
+  with tempfile.TemporaryDirectory() as t:
+   root=Path(t);target=root/row['file'];target.parent.mkdir(parents=True);target.write_bytes(b'reviewed CV')
+   policy=root/'docs/calm-redesign/approved-cv-downloads.json';policy.parent.mkdir(parents=True)
+   approval={'file':row['file'],'baselineSha256':row['sha256'],'approvedSha256':hashlib.sha256(target.read_bytes()).hexdigest()}
+   policy.write_text(json.dumps({'files':[approval]}))
+   self.assertTrue(check(data,root)['passed'])
+   target.write_bytes(b'changed after review');self.assertFalse(check(data,root)['passed'])
+   target.write_bytes(b'reviewed CV');approval['baselineSha256']='wrong';policy.write_text(json.dumps({'files':[approval]}));self.assertFalse(check(data,root)['passed'])
+ def test_cv_policy_cannot_allow_unrelated_download_change(self):
+  import hashlib
+  row=next(x for x in self.data['downloads'] if not x['file'].startswith('documents/Ahmed-Mahmoud'))
+  with tempfile.TemporaryDirectory() as t:
+   root=Path(t);p=root/row['file'];p.parent.mkdir(parents=True,exist_ok=True);p.write_bytes(b'changed resource')
+   policy=root/'docs/calm-redesign/approved-cv-downloads.json';policy.parent.mkdir(parents=True,exist_ok=True)
+   policy.write_text(json.dumps({'files':[{'file':row['file'],'baselineSha256':row['sha256'],'approvedSha256':hashlib.sha256(p.read_bytes()).hexdigest()}]}))
+   self.assertFalse(check({**self.data,'pages':[],'downloads':[row],'footerFiles':[],'identityFiles':[]},root)['passed'])

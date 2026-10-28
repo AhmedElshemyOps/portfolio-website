@@ -91,11 +91,14 @@ async function searchTests() {
 function sectionTests() {
   const { document, Element } = environment();
   const headings = ['First section', 'Second section'].map(text => { const node = new Element('h2'); node.textContent = text; node.scrollIntoView = () => {}; return node; });
-  const context = vm.createContext({ document, headings, reducedMotion: { matches: true }, window: { setTimeout(callback) { callback(); } } });
+  headings[0].id = 'first'; headings[0].textContent = 'Long container content that should not become the section label.';
+  const sectionLink = new Element('a'); sectionLink.setAttribute('href', '#first'); sectionLink.textContent = 'First section <literal>';
+  const context = vm.createContext({ document, headings, tocLinks: [sectionLink], reducedMotion: { matches: true }, window: { setTimeout(callback) { callback(); } } });
   const begin = reader.indexOf("  const sectionMap = document.createElement('nav');");
   const end = reader.indexOf('\n  headings.forEach((heading) => {', begin);
   vm.runInContext(reader.slice(begin, end) + '\nglobalThis.sections = { sectionMap, sectionToggle, sectionPanel, sectionButtons };', context);
   const { sectionMap, sectionToggle, sectionPanel, sectionButtons } = context.sections;
+  assert.equal(sectionButtons[0].children[1].textContent, 'First section <literal>', 'Use the short contents label as text, never container HTML.');
   assert.match(sectionMap.html, /aria-controls="article-section-map-panel"/);
   assert.match(sectionMap.html, /id="article-section-map-panel"/);
   sectionToggle.handlers.click(); assert.equal(sectionPanel.hidden, false);
