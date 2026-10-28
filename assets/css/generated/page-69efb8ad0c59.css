@@ -1161,6 +1161,33 @@ body{font-family:var(--sans);background:var(--paper)}
 @media(max-width:620px){.article-finish .article-feedback-intro{align-items:stretch;flex-direction:column;gap:12px}.article-finish .article-share-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}}
 .article-finish .finish-reminder{margin:0 0 20px;padding:16px;border-left:2px solid #ad8b4d;background:var(--finish-paper);color:var(--finish-muted)}.article-finish .finish-reminder p{margin:0;font:.82rem/1.7 "IBM Plex Sans",Arial,sans-serif}
 
+/* assets/css/article-sources.css */
+/* Shared bibliography presentation; citations and evidence remain visible. */
+.article-reader-page .article-body .article-references{box-sizing:border-box;min-width:0;margin:40px 0 32px;padding:clamp(20px,4vw,32px);border:1px solid var(--line,#d9d1c1);border-top:3px solid var(--gold-line,#c79a43);border-radius:4px;background:var(--paper-deep,#f2ede3);color:var(--ink,#10233f);box-shadow:none;scroll-margin-top:110px}
+.article-reader-page .article-references :is(h2,h3){margin:0 0 18px;color:var(--ink,#10233f);font:600 clamp(1.2rem,3vw,1.55rem)/1.4 var(--serif,"Lora",Georgia,serif);letter-spacing:-.015em}
+.article-reader-page .article-references header{margin:0;padding:0;border:0;background:transparent;display:block}
+.article-reader-page .article-references :is(p,time){font:400 .92rem/1.8 var(--sans,"IBM Plex Sans",Arial,sans-serif);color:var(--muted,#52647a)}
+.article-reader-page .article-references :is(ol,ul){display:block;counter-reset:source-item;list-style:none;margin:20px 0 0;padding:0}
+.article-reader-page .article-references :is(ol,ul)>li{position:relative;display:block;counter-increment:source-item;margin:0;padding:18px 0 18px 44px;border-top:1px solid var(--line,#d9d1c1);font:400 .94rem/1.8 var(--sans,"IBM Plex Sans",Arial,sans-serif);color:var(--ink,#10233f);overflow-wrap:anywhere;min-height:56px}
+.article-reader-page .article-references :is(ol,ul)>li::before{content:counter(source-item,decimal-leading-zero);position:absolute;left:0;top:20px;width:30px;color:var(--gold,#815f17);font:600 .75rem/1.8 var(--sans,"IBM Plex Sans",Arial,sans-serif);font-variant-numeric:tabular-nums}
+.article-reader-page .article-references li :is(ol,ul){counter-reset:none;margin:8px 0}.article-reader-page .article-references li li{padding-left:22px}.article-reader-page .article-references li li::before{content:"•"}
+.article-reader-page .article-references a{color:var(--gold,#815f17);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px;overflow-wrap:anywhere;word-break:normal}
+.article-reader-page .article-references a:hover{color:var(--ink,#10233f);text-decoration-thickness:2px}.article-reader-page .article-references a:focus-visible{outline:3px solid var(--gold-line,#c79a43);outline-offset:4px;border-radius:2px}
+.article-reader-page .article-references .heading-anchor{color:inherit}
+.article-reader-page .article-references :is(ul,ol)+p{margin-top:20px;padding-top:18px;border-top:1px solid var(--line,#d9d1c1)}
+.article-reader-page .article-references hr{display:none}
+.reader-dark .article-body .article-references{background:#102238;border-color:#405065;border-top-color:#dfc27d;color:#fcfaf5}.reader-dark .article-references :is(h2,h3,li){color:#fcfaf5}.reader-dark .article-references :is(p,time){color:#d1dfec}.reader-dark .article-references :is(a,li::before){color:#dfc27d}.reader-dark .article-references :is(li,ul+p,ol+p){border-color:#405065}.reader-dark .article-references a:hover{color:#fcfaf5}
+@media(max-width:480px){.article-reader-page .article-body .article-references{margin-block:28px;padding:20px 16px}.article-reader-page .article-references :is(ol,ul)>li{padding-left:36px}}
+@media print{.article-reader-page .article-body .article-references{break-inside:auto;background:white;color:black;border-color:#777}.article-reader-page .article-references li{break-inside:avoid}.article-reader-page .article-references :is(a,h2,h3,p,time,li){color:black}}
+/* Retire the older journal ribbon and card ornamentation within this component. */
+.article-reader-page .article-references::after,.article-reader-page .article-references li::after{content:none}
+.article-reader-page .article-references .article-sources-kicker{display:none}
+.article-reader-page .article-references li{border-bottom:0}
+.article-reader-page .article-references .article-sources-note{display:block;margin-top:20px;padding:18px 0 0;border-top:1px solid var(--line,#d9d1c1);background:transparent;color:var(--muted,#52647a)}
+.article-reader-page .article-references .article-sources-note>span{display:none}
+.article-reader-page .article-references .article-sources-note :is(strong,em){color:var(--ink,#10233f)}
+.reader-dark .article-references .article-sources-note{border-color:#405065}.reader-dark .article-references .article-sources-note :is(strong,em){color:#fcfaf5}
+
 /* assets/css/series-banners.css */
 /* Approved series artwork; the page heading remains selectable, accessible text. */
 .series-banner{position:relative;isolation:isolate;container-type:inline-size;aspect-ratio:2/1;width:100%;overflow:hidden;margin:0 0 24px;background:#10283f;color:#fcfaf5;border-radius:8px;text-align:left}

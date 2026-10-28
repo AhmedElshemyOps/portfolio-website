@@ -1,5 +1,5 @@
 /* Public offline reading only. Quotation drafts remain in localStorage. */
-const VERSION = 'ahmed-portfolio-v40-brand-toolkit';
+const VERSION = 'ahmed-portfolio-v41-article-sources';
 const PREFIX = 'ahmed-portfolio-';
 const POLICIES = {
   pages: { limit: 40, age: 14 * 86400000 },

@@ -58,4 +58,5 @@ def render(source, path, root):
     source=render_glossaries(source,path,root)
     from render_premium_ai_toolkit import render as render_toolkits
     from simplify_article_toc import simplify
-    return simplify(render_toolkits(render_finish(source,path,root),path,root))[0]
+    from render_article_sources import render as render_sources
+    return simplify(render_sources(render_toolkits(render_finish(source,path,root),path,root),path,root))[0]
