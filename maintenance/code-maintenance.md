@@ -76,7 +76,7 @@ for this release so returning visitors can receive the refreshed files.
 
 ## Professional profile and page design
 
-`content/professional-profile.json` records career, qualification evidence and date reconciliation. Run `python3 scripts/render_profile.py` after editing it, then render shared components. `scripts/build_public_cv.py` consumes the same record; render the DOCX and visually verify both pages before replacing the public PDF. Use the bundled document runtime.
+`content/professional-profile.json` records career, qualification evidence and date reconciliation. Run `python3 scripts/render_profile.py` after editing it, then render shared components. `scripts/build_public_cv.py` contains the separately reviewed two-page tourism CV copy. Keep it aligned with approved profile facts; render the DOCX and visually verify both pages before replacing the public PDF. Canonical and historical Managerial CV filenames serve the same approved CV. Record exact reviewed file hashes in `docs/calm-redesign/approved-cv-downloads.json`; never recreate the original baseline. Use the bundled document runtime.
 
 `portfolio-pages.css` supplies the supporting-page layout, and `project-demo-theme.css` supplies the common demo palette. Existing app logic and semantic safety colours remain intact.
 

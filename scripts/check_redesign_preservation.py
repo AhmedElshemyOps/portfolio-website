@@ -53,6 +53,9 @@ def create(commit):
  return result
 def check(data,root=ROOT):
  errors=[]
+ cv_policy=root/'docs/calm-redesign/approved-cv-downloads.json'
+ cv_changes=json.loads(cv_policy.read_text()).get('files',[]) if cv_policy.is_file() else []
+ cv_paths={f'documents/Ahmed-Mahmoud{suffix}.{ext}' for suffix in ['-CV','-Managerial-CV'] for ext in ['pdf','docx']}
  policy=root/'docs/calm-redesign/approved-additions.json'
  additions=json.loads(policy.read_text()) if policy.is_file() else []
  footer_policy=root/'docs/calm-redesign/approved-footer-change.json'
@@ -91,6 +94,9 @@ def check(data,root=ROOT):
   if old['footerSha256']!=now['footerSha256']:errors.append({'file':old['file'],'issue':'footer markup changed'})
  for old in data['downloads']+data['footerFiles']+data.get('identityFiles',[]):
   p=root/old['file']
+  if old['file'] in cv_paths and p.is_file():
+   approvals=[a for a in cv_changes if a['file']==old['file']]
+   if len(approvals)==1 and approvals[0]['baselineSha256']==old['sha256'] and digest(p.read_bytes())==approvals[0]['approvedSha256']:continue
   if old['file']=='templates/footer.html' and footer_change and p.is_file() and footer_before.is_file():
    if digest(footer_before.read_bytes())==old['sha256'] and digest(p.read_bytes())==footer_change['approvedTemplateSha256']:continue
   if old['file']=='sitemap.xml' and p.is_file() and digest(p.read_bytes())!=old['sha256']:

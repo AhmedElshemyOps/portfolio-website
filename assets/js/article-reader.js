@@ -132,7 +132,10 @@
   const sectionButtons = headings.map((heading, index) => {
     const button = document.createElement('button');
     button.type = 'button';
-    button.innerHTML = `<span>${String(index + 1).padStart(2, '0')}</span><b>${heading.textContent?.replace('#', '').trim() || `Article section ${index + 1}`}</b>`;
+    const label = tocLinks.find(link => link.getAttribute('href') === `#${heading.id}`)?.textContent || heading.textContent || `Article section ${index + 1}`;
+    const number = document.createElement('span'); number.textContent = String(index + 1).padStart(2, '0');
+    const title = document.createElement('b'); title.textContent = label.replace('#', '').trim();
+    button.append(number, title);
     button.addEventListener('click', () => {
       heading.scrollIntoView({ behavior: reducedMotion.matches ? 'auto' : 'smooth', block: 'start' });
       setSectionMapOpen(false);

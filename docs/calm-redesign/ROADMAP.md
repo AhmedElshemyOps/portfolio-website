@@ -103,3 +103,6 @@ Ahmed requested full channel coverage as part of the redesign. The verified chan
 - Follow-up visual checks corrected heading contrast on dark prompt panels and pale action panels. Browser checks cover navigation, search, reading controls, glossary and prompt interactions. No Lighthouse/field-performance or screen-reader certification is claimed.
 - A monthly thread review is active on the first day of each month at 10:00 Europe/Amsterdam. It requires relevant paragraph matches, no additional paid credits and no automatic merge/deployment; unchanged reviews stay quiet.
 - Production master and GitHub Pages remain unchanged. Next action is review and explicit production approval.
+
+## CV publication follow-up
+Ahmed approved implementation and deployment of the prepared two-page tourism CV. Canonical and historical PDF/Word URLs receive the approved version. See CV-RELEASE.md for exact-file preservation exceptions and the follow-up responsive style inspection. A shared subsection navigation defect found during inspection is corrected without rewriting article text.

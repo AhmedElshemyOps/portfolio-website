@@ -1,0 +1,25 @@
+{
+  "authorization": "28 October 2026: Ahmed approved the prepared two-page PDF and Word CV and explicitly requested implementation and deployment. Existing canonical and historical CV URLs serve the same approved version.",
+  "files": [
+    {
+      "file": "documents/Ahmed-Mahmoud-CV.pdf",
+      "baselineSha256": "aa0895d37d28386333628d7ad8184d57d61d261da748979d99e38eb8e28656c2",
+      "approvedSha256": "cbc5656283516f9d24a1a7ef043ed6e2c16c391d1b5c180291bf9f3ac985c1cb"
+    },
+    {
+      "file": "documents/Ahmed-Mahmoud-Managerial-CV.pdf",
+      "baselineSha256": "aa0895d37d28386333628d7ad8184d57d61d261da748979d99e38eb8e28656c2",
+      "approvedSha256": "cbc5656283516f9d24a1a7ef043ed6e2c16c391d1b5c180291bf9f3ac985c1cb"
+    },
+    {
+      "file": "documents/Ahmed-Mahmoud-CV.docx",
+      "baselineSha256": "7de37edd41727087afe237418436b5f5b338793594ee125a1fd1a76a1260277a",
+      "approvedSha256": "6def56de6ffd1ea1eb33e871f5d696a3d567ef818e16e39eb08ea1cd1a30c59d"
+    },
+    {
+      "file": "documents/Ahmed-Mahmoud-Managerial-CV.docx",
+      "baselineSha256": "7de37edd41727087afe237418436b5f5b338793594ee125a1fd1a76a1260277a",
+      "approvedSha256": "6def56de6ffd1ea1eb33e871f5d696a3d567ef818e16e39eb08ea1cd1a30c59d"
+    }
+  ]
+}
