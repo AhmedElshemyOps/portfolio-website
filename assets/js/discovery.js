@@ -30,7 +30,36 @@
   }
 
   function searchTokens(value) {
-    return normalize(value).trim().split(/\s+/).filter(Boolean);
+    return normalize(value).match(/[a-z0-9]+/g) || [];
+  }
+
+  // Narrow vocabulary groups: require every query concept, prefer literal matches.
+  var relatedTerms = [
+    ['sop', 'sops', 'standard operating procedure', 'standard operating procedures'],
+    ['transfer', 'transfers', 'transport', 'transportation', 'pickup', 'pickups'],
+    ['guest', 'guests', 'visitor', 'visitors', 'customer', 'customers'],
+    ['experience', 'experiences', 'journey', 'journeys'],
+    ['event', 'events', 'mice', 'conference', 'conferences'],
+    ['coordination', 'coordinating', 'coordinator', 'handover', 'handoff'],
+    ['airport', 'airports'], ['reservation', 'reservations', 'booking', 'bookings']
+  ];
+  function hasTerm(text, term) {
+    return (' ' + text.replace(/[^a-z0-9]+/g, ' ') + ' ').includes(' ' + term + ' ');
+  }
+  function searchConcepts(query) {
+    var text = normalize(query);
+    relatedTerms.forEach(function (group) {
+      group.filter(function (term) { return term.includes(' '); }).sort(function (a, b) { return b.length - a.length; }).forEach(function (term) {
+        text = text.replace(new RegExp('\\b' + term + '\\b', 'g'), group[0]);
+      });
+    });
+    return searchTokens(text);
+  }
+  function matchesToken(text, token) {
+    if (hasTerm(text, token)) return true;
+    return relatedTerms.some(function (group) {
+      return group.includes(token) && group.some(function (term) { return hasTerm(text, term); });
+    });
   }
 
   function score(item, query) {
@@ -39,15 +68,17 @@
     var title = normalize(item.title);
     var category = normalize(item.category);
     var text = normalize(topicLabel(item.searchText || [item.title, item.description, item.category, item.primaryCategory, item.subcategory, item.seriesTitle].concat(item.tags || [], item.headings || []).join(" ")) + " " + (item.searchText || ""));
-    var total = 0;
+    if (!searchConcepts(query).every(function (token) { return matchesToken(text, token); })) return 0;
+    var phrase = normalize(query).trim();
+    var total = title.includes(phrase) ? 24 : text.includes(phrase) ? 6 : 1;
     tokens.forEach(function (token) {
       if (title === token) total += 18;
-      if (title.startsWith(token)) total += 10;
-      if (title.includes(token)) total += 7;
-      if (category.includes(token)) total += 4;
-      if (text.includes(token)) total += 2;
+      if (hasTerm(title, token) && title.startsWith(token)) total += 10;
+      if (hasTerm(title, token)) total += 7;
+      if (hasTerm(category, token)) total += 4;
+      if (hasTerm(text, token)) total += 2;
     });
-    if (tokens.every(function (token) { return text.includes(token); })) total += 6;
+    if (tokens.every(function (token) { return hasTerm(text, token); })) total += 6;
     if (total > 0 && item.type === "Article") total += 1;
     return total;
   }
@@ -239,10 +270,14 @@
     var subcategoryFilter = filters.find(function (field) { return field.dataset.knowledgeFilter === 'subcategory'; });
     if (subcategoryFilter) Array.from(subcategoryFilter.options).forEach(function (option) { option.disabled = Boolean(option.value && selected.category && !knowledgeCards.some(function (card) { return card.dataset.category === selected.category && card.dataset.subcategory === option.value; })); });
     var query = (knowledgeQuery?.value || '').trim();
-    var tokens = searchTokens(query);
+    var concepts = searchConcepts(query);
     matched = knowledgeCards.filter(function (card) {
       var searchable = normalize(card.dataset.search + ' ' + topicLabel(card.dataset.search + ' ' + card.dataset.pillar));
-      return (!selected.format || (card.dataset.format || '').split('|').includes(selected.format)) && (!selected.category || card.dataset.category === selected.category) && (!selected.subcategory || card.dataset.subcategory === selected.subcategory) && (!selected.tag || (card.dataset.tag || '').split('|').includes(selected.tag)) && (!selected.collection || card.dataset.collection === selected.collection) && (!selected.pillar || card.dataset.pillar === selected.pillar) && (!selected.series || card.dataset.series === selected.series) && (!selected.type || card.dataset.type === selected.type) && tokens.every(function (token) { return searchable.includes(token); });
+      return (!selected.format || (card.dataset.format || '').split('|').includes(selected.format)) && (!selected.category || card.dataset.category === selected.category) && (!selected.subcategory || card.dataset.subcategory === selected.subcategory) && (!selected.tag || (card.dataset.tag || '').split('|').includes(selected.tag)) && (!selected.collection || card.dataset.collection === selected.collection) && (!selected.pillar || card.dataset.pillar === selected.pillar) && (!selected.series || card.dataset.series === selected.series) && (!selected.type || card.dataset.type === selected.type) && concepts.every(function (token) { return matchesToken(searchable, token); });
+    });
+    if (query && (!sort || sort.value === 'recommended') && !selected.collection) matched.sort(function (a, b) {
+      function rank(card) { return score({ title: card.querySelector('h2').textContent, searchText: card.dataset.search + ' ' + topicLabel(card.dataset.pillar) }, query); }
+      return rank(b) - rank(a);
     });
     if (selected.collection && (!sort || sort.value === 'recommended')) matched.sort(function (a, b) { return Number(a.dataset.position || 0) - Number(b.dataset.position || 0); });
     if (sort?.value === 'title') matched.sort(function (a, b) { return a.querySelector('h2').textContent.localeCompare(b.querySelector('h2').textContent); });

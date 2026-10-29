@@ -116,13 +116,15 @@ def render_hub(root,registry,source):
         badge='<span class="knowledge-video-badge">Includes video</span>' if x['url'] in video_urls else ''
         cards.append('<article class="knowledge-card" data-knowledge-card '+attrs+'><a href="'+e(x['url'])+'"><span>'+e(x['primaryCategory'])+'</span><h2>'+e(x['title'])+'</h2>'+badge+'<p>'+e(x['summary'])+'</p><p class="knowledge-card-subcategory">'+e(x['subcategory'])+'</p><ul class="knowledge-tags" aria-label="Topics">'+''.join('<li>'+e(tag)+'</li>' for tag in x['tags'][:3])+'</ul><small>'+e(label)+' · '+str(x['readingTime'])+' min estimated read</small></a></article>')
     source=re.sub(r'<div class="knowledge-grid">.*?</div>(?=<div class="(?:library-pagination|knowledge-empty)")','<div class="knowledge-grid">'+''.join(cards)+'</div>',source,flags=re.S)
-    source=re.sub(r'<!-- featured-series:start -->.*?<!-- featured-series:end -->','',source,flags=re.S)
     series='<section class="featured-strip knowledge-series" aria-labelledby="series-heading"><header><span class="eyebrow">Follow a learning sequence</span><h2 id="series-heading">Editorial series</h2><p>Series connect articles across categories. Follow the sequence or choose a specific method.</p></header><div>'
     for sid,title in sorted({(x['seriesId'],x['seriesTitle']) for x in registry if x.get('seriesId')}):
         members=[x for x in registry if x['seriesId']==sid and x.get('seriesPosition')]
         series+='<a href="/knowledge/index.html?collection='+e(sid)+'#all-knowledge-title"><strong>'+e(title)+'</strong><span>'+str(len(members))+' numbered articles →</span></a>'
     series+='</div></section>'
-    source=source.replace('<section class="knowledge-browser"','<!-- featured-series:start -->'+series+'<!-- featured-series:end --><section class="knowledge-browser"',1)
+    series_block='<!-- featured-series:start -->'+series+'<!-- featured-series:end -->'
+    if '<!-- featured-series:start -->' in source:
+        source=re.sub(r'<!-- featured-series:start -->.*?<!-- featured-series:end -->',lambda m:series_block,source,flags=re.S)
+    else:source=source.replace('<section class="knowledge-browser"',series_block+'<section class="knowledge-browser"',1)
     featured=[next(x for x in registry if x['id']==slug) for slug in ['amsterdam-product-discovery-01-research-plan','hotel-ai-prompting-framework','how-to-write-professional-sop-procedure','article-professional-client-tour-quotation']]
     strip='<section class="featured-strip" aria-labelledby="featured-title"><header><span class="eyebrow">Put a method into practice</span><h2 id="featured-title">Practical guides</h2></header><div>'+''.join('<a href="'+x['url']+'"><small>'+e(x['primaryCategory'])+'</small><strong>'+e(x['title'])+'</strong><span>'+str(x['readingTime'])+' min estimated read →</span></a>' for x in featured)+'</div></section>'
     source=re.sub(r'<section class="featured-strip" aria-labelledby="featured-title">.*?</section>',strip,source,flags=re.S)

@@ -3,6 +3,7 @@ import unittest,re,json,tempfile,shutil,sys
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'scripts'))
 from article_catalogue import refresh
+from apply_field_manual import parse
 class BrowseProducts(unittest.TestCase):
  def test_topics_and_search_survive_catalogue_refresh(self):
   with tempfile.TemporaryDirectory() as directory:
@@ -18,8 +19,9 @@ class BrowseProducts(unittest.TestCase):
  def test_products_keep_demo_routes_and_native_research(self):
   for name in ['infraquote','infracluster','infradispatch','infrasky']:
    source=(ROOT/'projects'/name/'index.html').read_text()
-   hero=re.search(r'<section class="growth-hero">.*?</section>',source,re.S)[0]
-   self.assertIn('Who it is for:',hero);self.assertIn('The problem:',hero);self.assertIn('Try the demo',hero)
+   document=parse(source);node=next(n for n in document.nodes if 'growth-hero' in document.classes(n));hero=source[node['start']:node['end']]
+   self.assertIn('class="project-audience"',hero);self.assertIn('<dt>Problem</dt>',hero);self.assertIn('Try the demo',hero)
+   self.assertTrue(any(n['tag']=='a' and n['attrs'].get('href','').startswith('/live-demos/') and node['inner']<=n['start']<node['end'] for n in document.nodes))
    self.assertIn('id="product-research"',source)
    self.assertIn('browse-products.js',source)
 

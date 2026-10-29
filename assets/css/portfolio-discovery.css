@@ -1,0 +1,42 @@
+/* Scoped additions to the existing calm palette; native links and disclosures. */
+.calm-site:not(.calm-app) main .project-summary { margin:28px 0; }
+.calm-site:not(.calm-app) main .project-summary h2 { font-size:23px; margin:0 0 20px; }
+.calm-site:not(.calm-app) main .project-summary dl { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px 40px; margin:0; }
+.calm-site:not(.calm-app) main .project-summary dl>div { border-top:1px solid #d8d1c4; padding-top:14px; min-width:0; }
+.calm-site:not(.calm-app) main .project-summary dt { color:var(--calm-gold); font:600 13px/1.5 "IBM Plex Sans",Arial,sans-serif; letter-spacing:.07em; text-transform:uppercase; margin-bottom:8px; }
+.calm-site:not(.calm-app) main .project-summary dd { margin:0; font-size:17px; line-height:1.65; color:var(--calm-ink); }
+.calm-site:not(.calm-app) main .project-summary dd>span { display:block; margin-top:8px; color:var(--calm-muted); font-size:15px; }
+.calm-site:not(.calm-app) main .project-summary a { color:var(--calm-gold); text-decoration:underline; text-underline-offset:3px; }
+.calm-site:not(.calm-app) main .project-audience { color:var(--calm-muted); font-size:16px; }
+.calm-site:not(.calm-app) main .reader-starts { margin:32px 0 40px; }
+.calm-site:not(.calm-app) main .reader-starts>header { margin-bottom:24px; max-width:70ch; }
+.calm-site:not(.calm-app) main .reader-starts h2 { margin:8px 0 12px; }
+.calm-site:not(.calm-app) main .reader-starts>header>p { margin:0; color:var(--calm-muted); }
+.calm-site:not(.calm-app) main .reader-start-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px; }
+.calm-site:not(.calm-app) main .reader-start-card { display:flex; flex-direction:column; padding:24px; border:1px solid #d8d1c4; border-top:3px solid #b79554; border-radius:4px; background:var(--calm-surface); color:var(--calm-ink); text-decoration:none; min-width:0; }
+.calm-site:not(.calm-app) main .reader-start-card h3 { font-size:25px; margin:12px 0; }
+.calm-site:not(.calm-app) main .reader-start-card p { color:var(--calm-muted); font-size:16px; line-height:1.65; margin:0 0 24px; }
+.calm-site:not(.calm-app) main .reader-start-card>strong { margin-top:auto; font-size:15px; }
+.calm-site:not(.calm-app) main .reader-start-count { color:var(--calm-gold); font-size:13px; font-weight:600; }
+.calm-site:not(.calm-app) main .reader-start-card:hover { border-color:var(--calm-gold); background:var(--calm-paper); }
+.calm-site:not(.calm-app) main .reader-browse-details { border-block:1px solid #d8d1c4; margin:24px 0 40px; }
+.calm-site:not(.calm-app) main .reader-browse-details>summary { padding:18px 8px; cursor:pointer; font-weight:600; }
+.calm-site:not(.calm-app) main .reader-browse-details>div { padding:8px 0 24px; }
+.calm-site:not(.calm-app) main .library-overview:has(.reader-start-links) { display:block; }
+.calm-site:not(.calm-app) main .reader-start-links { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; margin:24px 0 16px; }
+.calm-site:not(.calm-app) main .reader-start-links>a { display:flex; flex-direction:column; justify-content:space-between; gap:12px; padding:18px; min-height:100px; border:1px solid #d8d1c4; color:var(--calm-ink); background:var(--calm-surface); text-decoration:none; }
+.calm-site:not(.calm-app) main .reader-start-links>a>span { color:var(--calm-muted); font-size:14px; }
+.calm-site:not(.calm-app) main .reader-all-topics { display:inline-block; padding-block:10px; color:var(--calm-gold); }
+.calm-site:not(.calm-app) main :is(.reader-start-card,.reader-start-links a,.reader-all-topics,.reader-browse-details>summary,.project-summary a):focus-visible { outline:3px solid var(--calm-gold); outline-offset:4px; }
+.calm-site:not(.calm-app) main .specialist-paths { margin-block:48px; }
+.calm-site:not(.calm-app) main .specialist-paths>header { margin-bottom:24px; }
+@media(max-width:760px) {
+ .calm-site:not(.calm-app) main :is(.reader-start-grid,.reader-start-links,.project-summary dl) { grid-template-columns:minmax(0,1fr); }
+ .calm-site:not(.calm-app) main .reader-start-card { padding:22px; }
+ .calm-site:not(.calm-app) main .reader-start-links>a { min-height:72px; }
+}
+.calm-site:not(.calm-app) main :is(.reader-starts,.reader-browse-details,.specialist-paths) { width:min(1120px,calc(100% - 64px)); margin-inline:auto; box-sizing:border-box; }
+.calm-site:not(.calm-app) main .library-intro .search-results-link { display:inline-flex; align-items:center; min-height:44px; margin-inline-end:16px; }
+@media(max-width:600px) {
+ .calm-site:not(.calm-app) main :is(.reader-starts,.reader-browse-details,.specialist-paths) { width:calc(100% - 40px); }
+}

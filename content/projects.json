@@ -5,11 +5,16 @@
     "category": "Commercial workflow",
     "description": "Prepare tour quotations for Amsterdam, Netherlands, in EUR or Abu Dhabi, UAE, in AED. Bring guest requirements, attraction references, supplier costs and margin review into one workflow.",
     "output": "Cost worksheet, margin review and client quotation",
-    "status": "Static MVP \u00b7 Amsterdam and Abu Dhabi",
+    "status": "Static MVP · Amsterdam and Abu Dhabi",
     "logo": "/assets/brand/projects/infraquote-logo.svg",
     "image": "/assets/projects/infraquote-current.png",
     "caseStudy": "/projects/infraquote/index.html",
-    "demo": "/live-demos/infraquote.html"
+    "demo": "/live-demos/infraquote.html",
+    "summaryProblem": "Tour quotations become risky when guest requirements, supplier costs, vehicle assumptions, tickets, VAT, margin and client terms live in separate calculations.",
+    "summaryContribution": "I structured the quotation journey, commercial calculations, internal controls and separation between cost review and client output.",
+    "summaryAudience": "DMC sales teams, travel consultants and quotation reviewers.",
+    "summaryEvidence": "Inspect the working browser demo",
+    "summaryBoundary": "Portfolio demonstration using sample or browser-local inputs. Production results have not been established."
   },
   {
     "name": "InfraDispatch",
@@ -17,11 +22,16 @@
     "category": "Dispatch planning",
     "description": "Dispatch planning for Amsterdam, Haarlem, Utrecht and Abu Dhabi: connect movement details, passenger capacity, access checks and team handovers.",
     "output": "Movement brief and team handover",
-    "status": "Static MVP \u00b7 Netherlands and UAE",
+    "status": "Static MVP · Netherlands and UAE",
     "logo": "/assets/brand/projects/infradispatch-logo.svg",
     "image": "/assets/projects/infradispatch-current.png",
     "caseStudy": "/projects/infradispatch/index.html",
-    "demo": "/live-demos/infradispatch/index.html"
+    "demo": "/live-demos/infradispatch/index.html",
+    "summaryProblem": "Dispatch planning for Amsterdam, Haarlem, Utrecht and Abu Dhabi: connect movement details, passenger capacity, access checks and team handovers.",
+    "summaryContribution": "I defined the operating rules, information architecture, review gates, interface and static demonstration workflow.",
+    "summaryAudience": "DMC operations teams, dispatchers and transport supervisors.",
+    "summaryEvidence": "Inspect the working browser demo",
+    "summaryBoundary": "Portfolio demonstration using sample or browser-local inputs. Production results have not been established."
   },
   {
     "name": "InfraSky",
@@ -29,11 +39,16 @@
     "category": "Experience readiness",
     "description": "Astronomy experiences in Amsterdam, the Netherlands and the UAE need a clear match between product promise, sky conditions, site access and guest readiness.",
     "output": "Readiness decision and guest briefing",
-    "status": "Static MVP \u00b7 Netherlands and UAE",
+    "status": "Static MVP · Netherlands and UAE",
     "logo": "/assets/brand/projects/infrasky-logo.svg",
     "image": "/assets/projects/infrasky-current.png",
     "caseStudy": "/projects/infrasky/index.html",
-    "demo": "/live-demos/infrasky.html"
+    "demo": "/live-demos/infrasky.html",
+    "summaryProblem": "Astronomy experiences in Amsterdam, the Netherlands and the UAE need a clear match between product promise, sky conditions, site access and guest readiness.",
+    "summaryContribution": "I designed the condition model, decision language, readiness scoring and the handover between product promise and field delivery.",
+    "summaryAudience": "Experience designers, astronomy guides and destination operations teams.",
+    "summaryEvidence": "Inspect the working browser demo",
+    "summaryBoundary": "Portfolio demonstration using sample or browser-local inputs. Production results have not been established."
   },
   {
     "name": "InfraCluster",
@@ -41,10 +56,15 @@
     "category": "Pickup clustering",
     "description": "Large hotel pickup lists become difficult to operate when location, guest count, luggage, language, pickup windows and vehicle capacity are planned separately.",
     "output": "Grouped pickups and dispatch export",
-    "status": "Static MVP \u00b7 UAE pickup planning",
+    "status": "Static MVP · UAE pickup planning",
     "logo": "/assets/brand/projects/infracluster-logo.svg",
     "image": "/assets/projects/infracluster-current.png",
     "caseStudy": "/projects/infracluster/index.html",
-    "demo": "/live-demos/infracluster.html"
+    "demo": "/live-demos/infracluster.html",
+    "summaryProblem": "Large hotel pickup lists become difficult to operate when location, guest count, luggage, language, pickup windows and vehicle capacity are planned separately.",
+    "summaryContribution": "I translated hotel-pickup constraints into a reviewable clustering method, capacity checks and dispatch-ready output.",
+    "summaryAudience": "Transport coordinators planning group hotel pickups.",
+    "summaryEvidence": "Inspect the working browser demo",
+    "summaryBoundary": "Portfolio demonstration using sample or browser-local inputs. Production results have not been established."
   }
 ]
