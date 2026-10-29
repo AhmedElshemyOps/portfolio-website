@@ -12,6 +12,7 @@ const checks = [
     .map(name => [name, process.execPath, [`tests/${name}`]]),
   ['Pinned prompt sources', python, ['scripts/sync_hotel_prompts.py', '--check']],
   ['Shared templates and bundles', python, ['scripts/render_shared.py', '--check']],
+  ['Historical article compatibility', python, ['scripts/sync_legacy_articles.py', '--check']],
   ['Whole-site cleanup coverage', python, ['scripts/check_site_cleanup.py']],
   ['Local links and fragments', python, ['scripts/validate_site_links.py']],
   ['Article navigation', python, ['maintenance/validate-navigation.py']],

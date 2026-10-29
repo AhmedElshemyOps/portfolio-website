@@ -9,7 +9,7 @@ from check_site_cleanup import audit
 class SiteCleanupTests(unittest.TestCase):
  def test_every_public_page_and_asset_reference(self):
   report=audit(ROOT)
-  self.assertEqual(report['pagesChecked'],179)
+  self.assertEqual(report['pagesChecked'],197)  # 179 existing pages plus 18 approved historical article copies
   self.assertEqual(report['articlePagesChecked'],130)
   self.assertEqual(report['missingReferences'],[])
   self.assertEqual(report['unusedGeneratedBundles'],[])

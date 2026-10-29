@@ -28,6 +28,14 @@ def pages(root=ROOT):
 
 
 def render(source, path, root=ROOT):
+    # Legacy copies use their canonical article's rendering context.
+    import json
+    compatibility = root / 'maintenance/seo/active-legacy-articles.json'
+    if compatibility.exists():
+        legacy = '/' + path.relative_to(root).as_posix()
+        match = next((entry for entry in json.loads(compatibility.read_text()) if entry['legacy_path'] == legacy), None)
+        if match:
+            path = root / match['canonical_path'].lstrip('/')
     if '<head' not in source:
         return source
     from bundle_page_styles import unpack, pack
@@ -166,6 +174,9 @@ def apply(root=ROOT, check=False):
                 path.write_text(updated)
     from bundle_page_styles import write_generated
     write_generated(check=check,root=root)
+    if (root / 'maintenance/seo/active-legacy-articles.json').exists():
+        from sync_legacy_articles import sync
+        sync(root=root, check=check)
     return changed
 
 
