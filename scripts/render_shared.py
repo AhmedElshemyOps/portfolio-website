@@ -16,8 +16,15 @@ SHARED_CSS = '<link rel="stylesheet" href="/assets/css/site-chrome.css?v=2026100
 NAV_SCRIPT = '<script src="/assets/js/site-navigation.js?v=20261008-navigation"></script>'
 
 
+def is_google_verification(path, root=ROOT):
+    # Google's plain ownership proof is an asset, not a rendered website page.
+    return (path.parent == root and re.fullmatch(r'google[0-9a-f]+\.html', path.name)
+            and path.read_text().strip() == 'google-site-verification: ' + path.name)
+
+
 def pages(root=ROOT):
-    return sorted(p for p in root.rglob('*.html') if not set(p.relative_to(root).parts) & EXCLUDED)
+    return sorted(p for p in root.rglob('*.html') if not set(p.relative_to(root).parts) & EXCLUDED
+                  and not is_google_verification(p, root))
 
 
 def render(source, path, root=ROOT):
