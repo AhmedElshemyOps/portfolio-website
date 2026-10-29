@@ -1,0 +1,32 @@
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const vm = require('node:vm');
+const source = fs.readFileSync('assets/js/discovery.js', 'utf8');
+const start = source.indexOf('  function normalize(');
+const end = source.indexOf('  function appendHighlighted(');
+const context = { topicLabel: x => x };
+vm.createContext(context);
+vm.runInContext(source.slice(start, end) + ';this.rank = score;', context);
+const item = (title, description='') => ({title, description, type:'Article'});
+assert(context.rank(item('Standard Operating Procedures'), 'SOP') > 0);
+assert(context.rank(item('SOP'), 'standard operating procedures') > 0);
+assert(context.rank(item('Airport transport'), 'airport transfers') > 0);
+assert(context.rank(item('Visitor journey'), 'guest experience') > 0);
+assert(context.rank(item('Conference handoff'), 'event coordination') > 0);
+assert.equal(context.rank(item('Airport transport'), 'airport impossibleword'), 0);
+assert.equal(context.rank(item('Shopping'), 'SOP'), 0);
+assert.equal(context.rank(item('Preventive maintenance coordination'), 'event coordination'), 0);
+assert.equal(context.rank(item('Visitor journey'), ''), 0);
+assert(context.rank(item('Quality and SOP'), 'Quality & SOP') > 0);
+assert(context.rank(item('Guest experience'), 'guest-experience') > 0);
+assert(context.rank(item('Airport transfers'), 'airport transfers') > context.rank(item('Airport transport'), 'airport transfers'));
+assert(context.rank(item('Guest experience'), 'guest experience') > context.rank(item('Visitor journey'), 'guest experience'));
+assert(context.rank(item('Airport transfers'), 'airport transfers') > context.rank(item('General handbook', 'airport transfers'), 'airport transfers'));
+const index = JSON.parse(fs.readFileSync('content/discovery-index.json','utf8'));
+const rows = Array.isArray(index) ? index : index.items;
+for (const query of ['airport transfers','guest experience','SOP','event coordination']) {
+  const hits = rows.map(item => ({item,score:context.rank(item,query)})).filter(x=>x.score>0).sort((a,b)=>b.score-a.score);
+  assert(hits.length>0,query);
+  console.log(query+': '+hits.slice(0,3).map(x=>x.item.title).join(' | '));
+}
+console.log('Production search ranking, phrase aliases, negative queries and exact-match priority passed.');

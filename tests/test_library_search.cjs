@@ -36,7 +36,7 @@ function library(address = 'https://ahmedqualityops.com/knowledge/index.html', s
   };
 }
 
-for (const [query, expected] of [['Amsterdam research', 4], ['research Amsterdam', 4], ['MICE airport', 4], ['quotation margin', 3], ['reservations corporate', 1]]) {
+for (const [query, expected] of [['Amsterdam research', 4], ['research Amsterdam', 4], ['MICE airport', 5], ['quotation margin', 3], ['reservations corporate', 1]]) {
   const page = library(); page.search(query);
   assert.equal(page.matches().length, expected, query);
   assert.equal(page.empty.hidden, true);
@@ -106,3 +106,25 @@ assert.equal(emptyCombination.matches().length,0);
 emptyCombination.resets[0].handlers.click();
 assert.equal(emptyCombination.matches().length,12);
 console.log('Taxonomy category, subcategory, tag, series, empty intersections and reset checks passed.');
+
+// Related wording broadens useful matches without dropping any query concept.
+for (const query of ['airport transfers', 'guest experience', 'SOP', 'event coordination']) {
+  const page = library(); page.search(query);
+  assert(page.matches().length > 0, query + ' has relevant published material');
+  page.search(query + ' impossibleword');
+  assert.equal(page.matches().length, 0, query + ' must match every concept');
+}
+const semantic = library();
+semantic.cards[0].dataset.search = 'standard operating procedures uniqueproof';
+semantic.search('SOP uniqueproof');
+assert(semantic.matches().includes(semantic.cards[0]), 'SOP finds its expanded form');
+semantic.cards[0].dataset.search = 'airport transport handover uniqueproof';
+semantic.search('airport transfers uniqueproof');
+assert(semantic.matches().includes(semantic.cards[0]), 'Transfer terminology matches transport');
+semantic.cards[0].dataset.search = 'visitor journey uniqueproof';
+semantic.search('guest experience uniqueproof');
+assert(semantic.matches().includes(semantic.cards[0]), 'Guest experience finds visitor journey');
+semantic.cards[0].dataset.search = 'conference handoff uniqueproof';
+semantic.search('event coordination uniqueproof');
+assert(semantic.matches().includes(semantic.cards[0]), 'Event coordination finds conference handoffs');
+console.log('Related terminology and all-concept matching passed.');
