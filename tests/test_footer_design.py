@@ -41,7 +41,7 @@ class FooterDesign(unittest.TestCase):
    footers=[n for n in nodes if n['tag']=='footer']
    self.assertEqual(len(footers),1,str(path));self.assertIn(self.source.strip(),s,str(path))
    self.assertEqual(sum(n['attrs'].get('id')=='page-top' for n in nodes),1,str(path));total+=1
-  self.assertEqual(total,179)
+  self.assertEqual(total,197)  # Includes 18 approved historical article addresses
  def test_text_palette_has_aa_contrast(self):
   def lum(color):
    rgb=[int(color[i:i+2],16)/255 for i in (1,3,5)]
