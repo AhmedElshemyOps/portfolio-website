@@ -1,0 +1,3196 @@
+{
+  "checkedAt": "2026-10-29T07:53:10.923492+00:00",
+  "uniqueUrls": 246,
+  "results": [
+    {
+      "url": "https://www.linkedin.com/in/ahmed-mahmoud-tourism/",
+      "pages": [
+        "404.html",
+        "articles/abu-dhabi-mice-operations-series/index.html",
+        "articles/amsterdam-product-discovery-01-research-plan/index.html",
+        "articles/amsterdam-product-discovery-02-competitive-landscape/index.html",
+        "articles/amsterdam-product-discovery-03-market-gap/index.html",
+        "articles/amsterdam-product-discovery-04-voice-of-customer/index.html",
+        "articles/amsterdam-product-discovery-05-segmentation-language/index.html",
+        "articles/amsterdam-product-discovery-06-destination-geography/index.html",
+        "articles/amsterdam-product-discovery-07-product-requirements-concept/index.html",
+        "articles/amsterdam-product-discovery-08-commercial-model-unit-economics/index.html",
+        "articles/amsterdam-product-discovery-09-risk-responsibility/index.html",
+        "articles/amsterdam-product-discovery-10-seasonality-operating-calendar/index.html",
+        "articles/amsterdam-product-discovery-11-mvp-pilot-operational-readiness/index.html",
+        "articles/amsterdam-product-discovery-12-product-analytics-scale-decision/index.html",
+        "articles/article-abu-dhabi-mice-movement-control-room/index.html",
+        "articles/article-air-connectivity-dmc-market-intelligence/index.html",
+        "articles/article-assignment-engine-dmc-operations/index.html",
+        "articles/article-city-tour-quotation-professional/index.html",
+        "articles/article-destination-experience-journey-map/index.html",
+        "articles/article-fixed-variable-costs-city-tour-pricing/index.html",
+        "articles/article-fleet-control-tower-operations-dashboard/index.html",
+        "articles/article-mice-arrival-waves-zayed-international-airport/index.html",
+        "articles/article-mice-backup-operations-service-recovery-abu-dhabi/index.html",
+        "articles/article-mice-hotel-desks-coach-departures-abu-dhabi/index.html",
+        "articles/article-mice-venue-arrivals-registration-abu-dhabi/index.html",
+        "articles/article-net-cost-selling-price-markup/index.html",
+        "articles/article-participant-estimation-break-even-risk/index.html",
+        "articles/article-professional-client-tour-quotation/index.html",
+        "articles/article-rfi-rfq-rfp-erfp-nda-tourism-sales/index.html",
+        "articles/article-tour-cost-worksheet-city-tour/index.html",
+        "articles/article-tour-guide-quality-index/index.html",
+        "articles/article-tour-guide-storytelling-system/index.html",
+        "articles/article-tourism-operations-roles-real-difference/index.html",
+        "articles/article-transport-tickets-vat-gratuities/index.html",
+        "articles/capa-tourism-operations/index.html",
+        "articles/customer-journey-mapping-sop-design/index.html",
+        "articles/dmc-operations-ai-prompts/index.html",
+        "articles/document-control-version-management-tourism/index.html",
+        "articles/front-line-tourism-ai-toolkit/index.html",
+        "articles/guest-experience-ai-prompts/index.html",
+        "articles/guest-ready-apartment-standard/index.html",
+        "articles/hotel-ai-prompting-framework/index.html",
+        "articles/hotel-apartment-asset-lifecycle-management/index.html",
+        "articles/hotel-apartment-cost-of-poor-quality/index.html",
+        "articles/hotel-apartment-end-to-end-guest-journey/index.html",
+        "articles/hotel-apartment-extended-stay-ai-toolkit/index.html",
+        "articles/hotel-apartment-kpi-architecture/index.html",
+        "articles/hotel-apartment-operating-system/index.html",
+        "articles/hotel-apartment-operations-control-tower/index.html",
+        "articles/hotel-apartment-preventive-maintenance-strategy/index.html",
+        "articles/hotel-apartment-sop-architecture/index.html",
+        "articles/hotel-apartment-total-cost-of-ownership/index.html",
+        "articles/hotel-complaint-root-cause-analysis/index.html",
+        "articles/hotel-control-tower-ai-decision-support-toolkit/index.html",
+        "articles/hotel-critical-spare-parts-management/index.html",
+        "articles/hotel-downtime-out-of-service-management/index.html",
+        "articles/hotel-economics-of-service-failure/index.html",
+        "articles/hotel-energy-utility-management-ai-toolkit/index.html",
+        "articles/hotel-engineering-maintenance-ai-toolkit/index.html",
+        "articles/hotel-esg-sustainability-ai-toolkit/index.html",
+        "articles/hotel-finance-cost-control-ai-toolkit/index.html",
+        "articles/hotel-first-time-right-operations/index.html",
+        "articles/hotel-front-office-ai-toolkit/index.html",
+        "articles/hotel-general-manager-ai-toolkit/index.html",
+        "articles/hotel-guest-complaint-service-recovery-ai-toolkit/index.html",
+        "articles/hotel-guest-experience-ai-toolkit/index.html",
+        "articles/hotel-guest-experience-quality-management/index.html",
+        "articles/hotel-housekeeping-management-ai-toolkit/index.html",
+        "articles/hotel-housekeeping-quality-control/index.html",
+        "articles/hotel-housekeeping-standardization/index.html",
+        "articles/hotel-inventory-par-level-management/index.html",
+        "articles/hotel-inventory-par-management-ai-toolkit/index.html",
+        "articles/hotel-kpi-dashboard-ai-toolkit/index.html",
+        "articles/hotel-lean-six-sigma-ai-toolkit/index.html",
+        "articles/hotel-maintenance-work-order-management/index.html",
+        "articles/hotel-operational-excellence-maturity-model/index.html",
+        "articles/hotel-operations-manager-ai-toolkit/index.html",
+        "articles/hotel-operations-planning-daily-control/index.html",
+        "articles/hotel-ota-distribution-review-management-ai-toolkit/index.html",
+        "articles/hotel-predictive-maintenance-ai-toolkit/index.html",
+        "articles/hotel-preventive-maintenance-kpis/index.html",
+        "articles/hotel-procurement-ai-toolkit/index.html",
+        "articles/hotel-procurement-supplier-quality-control/index.html",
+        "articles/hotel-property-reliability-score/index.html",
+        "articles/hotel-quality-audit-ai-toolkit/index.html",
+        "articles/hotel-reservations-ai-toolkit/index.html",
+        "articles/hotel-revenue-management-ai-toolkit/index.html",
+        "articles/hotel-sales-corporate-accounts-ai-toolkit/index.html",
+        "articles/hotel-sop-process-design-ai-toolkit/index.html",
+        "articles/hotel-workforce-productivity-efficiency/index.html",
+        "articles/how-to-audit-an-sop/index.html",
+        "articles/how-to-write-professional-sop-procedure/index.html",
+        "articles/how-to-write-professional-sop-structure/index.html",
+        "articles/how-to-write-work-instructions/index.html",
+        "articles/insights-city-tour-quotation-pricing-masterclass/index.html",
+        "articles/integrated-sop-creation-model/index.html",
+        "articles/itil-4-tourism-operations/index.html",
+        "articles/lean-thinking-tourism-operations/index.html",
+        "articles/map-process-before-writing-sop/index.html",
+        "articles/operational-checklist-employees-use/index.html",
+        "articles/pmp-thinking-sop-implementation/index.html",
+        "articles/policy-vs-sop-work-instruction-checklist-form-template/index.html",
+        "articles/procedures-processes-process-maps/index.html",
+        "articles/professional-operational-form/index.html",
+        "articles/responsible-ai-governance-hotels/index.html",
+        "articles/responsible-ai-tourism-guide/index.html",
+        "articles/root-cause-analysis-tourism-managers/index.html",
+        "articles/sipoc-tourism-operations/index.html",
+        "articles/six-sigma-tourism-complaints-data/index.html",
+        "articles/sop-evidence-documentation-legal-defensibility/index.html",
+        "articles/sop-exception-escalation-management/index.html",
+        "articles/sop-roles-authority-raci/index.html",
+        "articles/standard-communication-templates/index.html",
+        "articles/standard-test-procedures-tourism-operations/index.html",
+        "articles/tourism-ai-operations-playbook/index.html",
+        "articles/tourism-company-operating-system/index.html",
+        "articles/tourism-document-hierarchy/index.html",
+        "articles/tourism-itinerary-ai-prompts/index.html",
+        "articles/tourism-operational-excellence-management-system/index.html",
+        "articles/tourism-operational-risk-assessment-before-sop/index.html",
+        "articles/tourism-operations-kpis-control-dashboards/index.html",
+        "articles/tourism-operations-manual/index.html",
+        "articles/tourism-product-development-ai-prompts/index.html",
+        "articles/tourism-prompting-framework/index.html",
+        "articles/tourism-quality-sop-ai-prompts/index.html",
+        "articles/tourism-sales-quotation-ai-prompts/index.html",
+        "articles/tourism-sop-training-competency-adoption/index.html",
+        "articles/tourism-supplier-partner-governance-sops/index.html",
+        "articles/tourism-transport-dispatch-ai-prompts/index.html",
+        "articles/where-stp-fits-tourism-operations/index.html",
+        "articles/workforce-rostering-productivity-ai-toolkit/index.html",
+        "careers/ai-implementation/index.html",
+        "careers/operations-manager/index.html",
+        "careers/product-manager/index.html",
+        "collections/operations-managers/index.html",
+        "collections/product-managers/index.html",
+        "collections/tourism-professionals/index.html",
+        "expertise/tourism-operations/index.html",
+        "glossary/index.html",
+        "index.html",
+        "knowledge/index.html",
+        "lab/guest-journey-mapper/index.html",
+        "lab/guide-allocation/index.html",
+        "lab/index.html",
+        "lab/mice-arrival-wave/index.html",
+        "lab/sop-structure-builder/index.html",
+        "lab/vehicle-requirement/index.html",
+        "learn/videos/index.html",
+        "learning/ai-for-tourism/index.html",
+        "learning/dmc-commercial-quotation/index.html",
+        "learning/index.html",
+        "learning/mice-operations/index.html",
+        "learning/quality-sop-management/index.html",
+        "learning/tourism-operations/index.html",
+        "live-demos/infracluster.html",
+        "live-demos/infradispatch/index.html",
+        "live-demos/infraquote.html",
+        "live-demos/infrasky.html",
+        "locations/abu-dhabi/index.html",
+        "maintenance/index.html",
+        "marketing/utm-builder/index.html",
+        "methodology/index.html",
+        "newsletter/confirmed/index.html",
+        "newsletter/index.html",
+        "offline/index.html",
+        "privacy/index.html",
+        "profile/index.html",
+        "projects/index.html",
+        "projects/infracluster/index.html",
+        "projects/infradispatch/index.html",
+        "projects/infraquote/index.html",
+        "projects/infrasky/index.html",
+        "resources/index.html",
+        "resources/recruiter-summary/index.html",
+        "saved/index.html",
+        "series/amsterdam-tourism-product-discovery/index.html",
+        "series/hotel-ai-operations-playbook/index.html",
+        "series/hotel-apartment-operational-excellence/index.html",
+        "visuals/index.html"
+      ],
+      "status": 999,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://github.com/AhmedElshemyOps?tab=repositories",
+      "pages": [
+        "404.html",
+        "articles/abu-dhabi-mice-operations-series/index.html",
+        "articles/amsterdam-product-discovery-01-research-plan/index.html",
+        "articles/amsterdam-product-discovery-02-competitive-landscape/index.html",
+        "articles/amsterdam-product-discovery-03-market-gap/index.html",
+        "articles/amsterdam-product-discovery-04-voice-of-customer/index.html",
+        "articles/amsterdam-product-discovery-05-segmentation-language/index.html",
+        "articles/amsterdam-product-discovery-06-destination-geography/index.html",
+        "articles/amsterdam-product-discovery-07-product-requirements-concept/index.html",
+        "articles/amsterdam-product-discovery-08-commercial-model-unit-economics/index.html",
+        "articles/amsterdam-product-discovery-09-risk-responsibility/index.html",
+        "articles/amsterdam-product-discovery-10-seasonality-operating-calendar/index.html",
+        "articles/amsterdam-product-discovery-11-mvp-pilot-operational-readiness/index.html",
+        "articles/amsterdam-product-discovery-12-product-analytics-scale-decision/index.html",
+        "articles/article-abu-dhabi-mice-movement-control-room/index.html",
+        "articles/article-air-connectivity-dmc-market-intelligence/index.html",
+        "articles/article-assignment-engine-dmc-operations/index.html",
+        "articles/article-city-tour-quotation-professional/index.html",
+        "articles/article-destination-experience-journey-map/index.html",
+        "articles/article-fixed-variable-costs-city-tour-pricing/index.html",
+        "articles/article-fleet-control-tower-operations-dashboard/index.html",
+        "articles/article-mice-arrival-waves-zayed-international-airport/index.html",
+        "articles/article-mice-backup-operations-service-recovery-abu-dhabi/index.html",
+        "articles/article-mice-hotel-desks-coach-departures-abu-dhabi/index.html",
+        "articles/article-mice-venue-arrivals-registration-abu-dhabi/index.html",
+        "articles/article-net-cost-selling-price-markup/index.html",
+        "articles/article-participant-estimation-break-even-risk/index.html",
+        "articles/article-professional-client-tour-quotation/index.html",
+        "articles/article-rfi-rfq-rfp-erfp-nda-tourism-sales/index.html",
+        "articles/article-tour-cost-worksheet-city-tour/index.html",
+        "articles/article-tour-guide-quality-index/index.html",
+        "articles/article-tour-guide-storytelling-system/index.html",
+        "articles/article-tourism-operations-roles-real-difference/index.html",
+        "articles/article-transport-tickets-vat-gratuities/index.html",
+        "articles/capa-tourism-operations/index.html",
+        "articles/customer-journey-mapping-sop-design/index.html",
+        "articles/dmc-operations-ai-prompts/index.html",
+        "articles/document-control-version-management-tourism/index.html",
+        "articles/front-line-tourism-ai-toolkit/index.html",
+        "articles/guest-experience-ai-prompts/index.html",
+        "articles/guest-ready-apartment-standard/index.html",
+        "articles/hotel-ai-prompting-framework/index.html",
+        "articles/hotel-apartment-asset-lifecycle-management/index.html",
+        "articles/hotel-apartment-cost-of-poor-quality/index.html",
+        "articles/hotel-apartment-end-to-end-guest-journey/index.html",
+        "articles/hotel-apartment-extended-stay-ai-toolkit/index.html",
+        "articles/hotel-apartment-kpi-architecture/index.html",
+        "articles/hotel-apartment-operating-system/index.html",
+        "articles/hotel-apartment-operations-control-tower/index.html",
+        "articles/hotel-apartment-preventive-maintenance-strategy/index.html",
+        "articles/hotel-apartment-sop-architecture/index.html",
+        "articles/hotel-apartment-total-cost-of-ownership/index.html",
+        "articles/hotel-complaint-root-cause-analysis/index.html",
+        "articles/hotel-control-tower-ai-decision-support-toolkit/index.html",
+        "articles/hotel-critical-spare-parts-management/index.html",
+        "articles/hotel-downtime-out-of-service-management/index.html",
+        "articles/hotel-economics-of-service-failure/index.html",
+        "articles/hotel-energy-utility-management-ai-toolkit/index.html",
+        "articles/hotel-engineering-maintenance-ai-toolkit/index.html",
+        "articles/hotel-esg-sustainability-ai-toolkit/index.html",
+        "articles/hotel-finance-cost-control-ai-toolkit/index.html",
+        "articles/hotel-first-time-right-operations/index.html",
+        "articles/hotel-front-office-ai-toolkit/index.html",
+        "articles/hotel-general-manager-ai-toolkit/index.html",
+        "articles/hotel-guest-complaint-service-recovery-ai-toolkit/index.html",
+        "articles/hotel-guest-experience-ai-toolkit/index.html",
+        "articles/hotel-guest-experience-quality-management/index.html",
+        "articles/hotel-housekeeping-management-ai-toolkit/index.html",
+        "articles/hotel-housekeeping-quality-control/index.html",
+        "articles/hotel-housekeeping-standardization/index.html",
+        "articles/hotel-inventory-par-level-management/index.html",
+        "articles/hotel-inventory-par-management-ai-toolkit/index.html",
+        "articles/hotel-kpi-dashboard-ai-toolkit/index.html",
+        "articles/hotel-lean-six-sigma-ai-toolkit/index.html",
+        "articles/hotel-maintenance-work-order-management/index.html",
+        "articles/hotel-operational-excellence-maturity-model/index.html",
+        "articles/hotel-operations-manager-ai-toolkit/index.html",
+        "articles/hotel-operations-planning-daily-control/index.html",
+        "articles/hotel-ota-distribution-review-management-ai-toolkit/index.html",
+        "articles/hotel-predictive-maintenance-ai-toolkit/index.html",
+        "articles/hotel-preventive-maintenance-kpis/index.html",
+        "articles/hotel-procurement-ai-toolkit/index.html",
+        "articles/hotel-procurement-supplier-quality-control/index.html",
+        "articles/hotel-property-reliability-score/index.html",
+        "articles/hotel-quality-audit-ai-toolkit/index.html",
+        "articles/hotel-reservations-ai-toolkit/index.html",
+        "articles/hotel-revenue-management-ai-toolkit/index.html",
+        "articles/hotel-sales-corporate-accounts-ai-toolkit/index.html",
+        "articles/hotel-sop-process-design-ai-toolkit/index.html",
+        "articles/hotel-workforce-productivity-efficiency/index.html",
+        "articles/how-to-audit-an-sop/index.html",
+        "articles/how-to-write-professional-sop-procedure/index.html",
+        "articles/how-to-write-professional-sop-structure/index.html",
+        "articles/how-to-write-work-instructions/index.html",
+        "articles/insights-city-tour-quotation-pricing-masterclass/index.html",
+        "articles/integrated-sop-creation-model/index.html",
+        "articles/itil-4-tourism-operations/index.html",
+        "articles/lean-thinking-tourism-operations/index.html",
+        "articles/map-process-before-writing-sop/index.html",
+        "articles/operational-checklist-employees-use/index.html",
+        "articles/pmp-thinking-sop-implementation/index.html",
+        "articles/policy-vs-sop-work-instruction-checklist-form-template/index.html",
+        "articles/procedures-processes-process-maps/index.html",
+        "articles/professional-operational-form/index.html",
+        "articles/responsible-ai-governance-hotels/index.html",
+        "articles/responsible-ai-tourism-guide/index.html",
+        "articles/root-cause-analysis-tourism-managers/index.html",
+        "articles/sipoc-tourism-operations/index.html",
+        "articles/six-sigma-tourism-complaints-data/index.html",
+        "articles/sop-evidence-documentation-legal-defensibility/index.html",
+        "articles/sop-exception-escalation-management/index.html",
+        "articles/sop-roles-authority-raci/index.html",
+        "articles/standard-communication-templates/index.html",
+        "articles/standard-test-procedures-tourism-operations/index.html",
+        "articles/tourism-ai-operations-playbook/index.html",
+        "articles/tourism-company-operating-system/index.html",
+        "articles/tourism-document-hierarchy/index.html",
+        "articles/tourism-itinerary-ai-prompts/index.html",
+        "articles/tourism-operational-excellence-management-system/index.html",
+        "articles/tourism-operational-risk-assessment-before-sop/index.html",
+        "articles/tourism-operations-kpis-control-dashboards/index.html",
+        "articles/tourism-operations-manual/index.html",
+        "articles/tourism-product-development-ai-prompts/index.html",
+        "articles/tourism-prompting-framework/index.html",
+        "articles/tourism-quality-sop-ai-prompts/index.html",
+        "articles/tourism-sales-quotation-ai-prompts/index.html",
+        "articles/tourism-sop-training-competency-adoption/index.html",
+        "articles/tourism-supplier-partner-governance-sops/index.html",
+        "articles/tourism-transport-dispatch-ai-prompts/index.html",
+        "articles/where-stp-fits-tourism-operations/index.html",
+        "articles/workforce-rostering-productivity-ai-toolkit/index.html",
+        "careers/ai-implementation/index.html",
+        "careers/operations-manager/index.html",
+        "careers/product-manager/index.html",
+        "collections/operations-managers/index.html",
+        "collections/product-managers/index.html",
+        "collections/tourism-professionals/index.html",
+        "expertise/tourism-operations/index.html",
+        "glossary/index.html",
+        "index.html",
+        "knowledge/index.html",
+        "lab/guest-journey-mapper/index.html",
+        "lab/guide-allocation/index.html",
+        "lab/index.html",
+        "lab/mice-arrival-wave/index.html",
+        "lab/sop-structure-builder/index.html",
+        "lab/vehicle-requirement/index.html",
+        "learn/videos/index.html",
+        "learning/ai-for-tourism/index.html",
+        "learning/dmc-commercial-quotation/index.html",
+        "learning/index.html",
+        "learning/mice-operations/index.html",
+        "learning/quality-sop-management/index.html",
+        "learning/tourism-operations/index.html",
+        "live-demos/infracluster.html",
+        "live-demos/infradispatch/index.html",
+        "live-demos/infraquote.html",
+        "live-demos/infrasky.html",
+        "locations/abu-dhabi/index.html",
+        "maintenance/index.html",
+        "marketing/utm-builder/index.html",
+        "methodology/index.html",
+        "newsletter/confirmed/index.html",
+        "newsletter/index.html",
+        "offline/index.html",
+        "privacy/index.html",
+        "profile/index.html",
+        "projects/index.html",
+        "projects/infracluster/index.html",
+        "projects/infradispatch/index.html",
+        "projects/infraquote/index.html",
+        "projects/infrasky/index.html",
+        "resources/index.html",
+        "resources/recruiter-summary/index.html",
+        "saved/index.html",
+        "series/amsterdam-tourism-product-discovery/index.html",
+        "series/hotel-ai-operations-playbook/index.html",
+        "series/hotel-apartment-operational-excellence/index.html",
+        "visuals/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/AhmedElshemyOps?tab=repositories",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.youtube.com/@ahmedqualityops-official",
+      "pages": [
+        "404.html",
+        "articles/abu-dhabi-mice-operations-series/index.html",
+        "articles/amsterdam-product-discovery-01-research-plan/index.html",
+        "articles/amsterdam-product-discovery-02-competitive-landscape/index.html",
+        "articles/amsterdam-product-discovery-03-market-gap/index.html",
+        "articles/amsterdam-product-discovery-04-voice-of-customer/index.html",
+        "articles/amsterdam-product-discovery-05-segmentation-language/index.html",
+        "articles/amsterdam-product-discovery-06-destination-geography/index.html",
+        "articles/amsterdam-product-discovery-07-product-requirements-concept/index.html",
+        "articles/amsterdam-product-discovery-08-commercial-model-unit-economics/index.html",
+        "articles/amsterdam-product-discovery-09-risk-responsibility/index.html",
+        "articles/amsterdam-product-discovery-10-seasonality-operating-calendar/index.html",
+        "articles/amsterdam-product-discovery-11-mvp-pilot-operational-readiness/index.html",
+        "articles/amsterdam-product-discovery-12-product-analytics-scale-decision/index.html",
+        "articles/article-abu-dhabi-mice-movement-control-room/index.html",
+        "articles/article-air-connectivity-dmc-market-intelligence/index.html",
+        "articles/article-assignment-engine-dmc-operations/index.html",
+        "articles/article-city-tour-quotation-professional/index.html",
+        "articles/article-destination-experience-journey-map/index.html",
+        "articles/article-fixed-variable-costs-city-tour-pricing/index.html",
+        "articles/article-fleet-control-tower-operations-dashboard/index.html",
+        "articles/article-mice-arrival-waves-zayed-international-airport/index.html",
+        "articles/article-mice-backup-operations-service-recovery-abu-dhabi/index.html",
+        "articles/article-mice-hotel-desks-coach-departures-abu-dhabi/index.html",
+        "articles/article-mice-venue-arrivals-registration-abu-dhabi/index.html",
+        "articles/article-net-cost-selling-price-markup/index.html",
+        "articles/article-participant-estimation-break-even-risk/index.html",
+        "articles/article-professional-client-tour-quotation/index.html",
+        "articles/article-rfi-rfq-rfp-erfp-nda-tourism-sales/index.html",
+        "articles/article-tour-cost-worksheet-city-tour/index.html",
+        "articles/article-tour-guide-quality-index/index.html",
+        "articles/article-tour-guide-storytelling-system/index.html",
+        "articles/article-tourism-operations-roles-real-difference/index.html",
+        "articles/article-transport-tickets-vat-gratuities/index.html",
+        "articles/capa-tourism-operations/index.html",
+        "articles/customer-journey-mapping-sop-design/index.html",
+        "articles/dmc-operations-ai-prompts/index.html",
+        "articles/document-control-version-management-tourism/index.html",
+        "articles/front-line-tourism-ai-toolkit/index.html",
+        "articles/guest-experience-ai-prompts/index.html",
+        "articles/guest-ready-apartment-standard/index.html",
+        "articles/hotel-ai-prompting-framework/index.html",
+        "articles/hotel-apartment-asset-lifecycle-management/index.html",
+        "articles/hotel-apartment-cost-of-poor-quality/index.html",
+        "articles/hotel-apartment-end-to-end-guest-journey/index.html",
+        "articles/hotel-apartment-extended-stay-ai-toolkit/index.html",
+        "articles/hotel-apartment-kpi-architecture/index.html",
+        "articles/hotel-apartment-operating-system/index.html",
+        "articles/hotel-apartment-operations-control-tower/index.html",
+        "articles/hotel-apartment-preventive-maintenance-strategy/index.html",
+        "articles/hotel-apartment-sop-architecture/index.html",
+        "articles/hotel-apartment-total-cost-of-ownership/index.html",
+        "articles/hotel-complaint-root-cause-analysis/index.html",
+        "articles/hotel-control-tower-ai-decision-support-toolkit/index.html",
+        "articles/hotel-critical-spare-parts-management/index.html",
+        "articles/hotel-downtime-out-of-service-management/index.html",
+        "articles/hotel-economics-of-service-failure/index.html",
+        "articles/hotel-energy-utility-management-ai-toolkit/index.html",
+        "articles/hotel-engineering-maintenance-ai-toolkit/index.html",
+        "articles/hotel-esg-sustainability-ai-toolkit/index.html",
+        "articles/hotel-finance-cost-control-ai-toolkit/index.html",
+        "articles/hotel-first-time-right-operations/index.html",
+        "articles/hotel-front-office-ai-toolkit/index.html",
+        "articles/hotel-general-manager-ai-toolkit/index.html",
+        "articles/hotel-guest-complaint-service-recovery-ai-toolkit/index.html",
+        "articles/hotel-guest-experience-ai-toolkit/index.html",
+        "articles/hotel-guest-experience-quality-management/index.html",
+        "articles/hotel-housekeeping-management-ai-toolkit/index.html",
+        "articles/hotel-housekeeping-quality-control/index.html",
+        "articles/hotel-housekeeping-standardization/index.html",
+        "articles/hotel-inventory-par-level-management/index.html",
+        "articles/hotel-inventory-par-management-ai-toolkit/index.html",
+        "articles/hotel-kpi-dashboard-ai-toolkit/index.html",
+        "articles/hotel-lean-six-sigma-ai-toolkit/index.html",
+        "articles/hotel-maintenance-work-order-management/index.html",
+        "articles/hotel-operational-excellence-maturity-model/index.html",
+        "articles/hotel-operations-manager-ai-toolkit/index.html",
+        "articles/hotel-operations-planning-daily-control/index.html",
+        "articles/hotel-ota-distribution-review-management-ai-toolkit/index.html",
+        "articles/hotel-predictive-maintenance-ai-toolkit/index.html",
+        "articles/hotel-preventive-maintenance-kpis/index.html",
+        "articles/hotel-procurement-ai-toolkit/index.html",
+        "articles/hotel-procurement-supplier-quality-control/index.html",
+        "articles/hotel-property-reliability-score/index.html",
+        "articles/hotel-quality-audit-ai-toolkit/index.html",
+        "articles/hotel-reservations-ai-toolkit/index.html",
+        "articles/hotel-revenue-management-ai-toolkit/index.html",
+        "articles/hotel-sales-corporate-accounts-ai-toolkit/index.html",
+        "articles/hotel-sop-process-design-ai-toolkit/index.html",
+        "articles/hotel-workforce-productivity-efficiency/index.html",
+        "articles/how-to-audit-an-sop/index.html",
+        "articles/how-to-write-professional-sop-procedure/index.html",
+        "articles/how-to-write-professional-sop-structure/index.html",
+        "articles/how-to-write-work-instructions/index.html",
+        "articles/insights-city-tour-quotation-pricing-masterclass/index.html",
+        "articles/integrated-sop-creation-model/index.html",
+        "articles/itil-4-tourism-operations/index.html",
+        "articles/lean-thinking-tourism-operations/index.html",
+        "articles/map-process-before-writing-sop/index.html",
+        "articles/operational-checklist-employees-use/index.html",
+        "articles/pmp-thinking-sop-implementation/index.html",
+        "articles/policy-vs-sop-work-instruction-checklist-form-template/index.html",
+        "articles/procedures-processes-process-maps/index.html",
+        "articles/professional-operational-form/index.html",
+        "articles/responsible-ai-governance-hotels/index.html",
+        "articles/responsible-ai-tourism-guide/index.html",
+        "articles/root-cause-analysis-tourism-managers/index.html",
+        "articles/sipoc-tourism-operations/index.html",
+        "articles/six-sigma-tourism-complaints-data/index.html",
+        "articles/sop-evidence-documentation-legal-defensibility/index.html",
+        "articles/sop-exception-escalation-management/index.html",
+        "articles/sop-roles-authority-raci/index.html",
+        "articles/standard-communication-templates/index.html",
+        "articles/standard-test-procedures-tourism-operations/index.html",
+        "articles/tourism-ai-operations-playbook/index.html",
+        "articles/tourism-company-operating-system/index.html",
+        "articles/tourism-document-hierarchy/index.html",
+        "articles/tourism-itinerary-ai-prompts/index.html",
+        "articles/tourism-operational-excellence-management-system/index.html",
+        "articles/tourism-operational-risk-assessment-before-sop/index.html",
+        "articles/tourism-operations-kpis-control-dashboards/index.html",
+        "articles/tourism-operations-manual/index.html",
+        "articles/tourism-product-development-ai-prompts/index.html",
+        "articles/tourism-prompting-framework/index.html",
+        "articles/tourism-quality-sop-ai-prompts/index.html",
+        "articles/tourism-sales-quotation-ai-prompts/index.html",
+        "articles/tourism-sop-training-competency-adoption/index.html",
+        "articles/tourism-supplier-partner-governance-sops/index.html",
+        "articles/tourism-transport-dispatch-ai-prompts/index.html",
+        "articles/where-stp-fits-tourism-operations/index.html",
+        "articles/workforce-rostering-productivity-ai-toolkit/index.html",
+        "careers/ai-implementation/index.html",
+        "careers/operations-manager/index.html",
+        "careers/product-manager/index.html",
+        "collections/operations-managers/index.html",
+        "collections/product-managers/index.html",
+        "collections/tourism-professionals/index.html",
+        "expertise/tourism-operations/index.html",
+        "glossary/index.html",
+        "index.html",
+        "knowledge/index.html",
+        "lab/guest-journey-mapper/index.html",
+        "lab/guide-allocation/index.html",
+        "lab/index.html",
+        "lab/mice-arrival-wave/index.html",
+        "lab/sop-structure-builder/index.html",
+        "lab/vehicle-requirement/index.html",
+        "learn/videos/index.html",
+        "learning/ai-for-tourism/index.html",
+        "learning/dmc-commercial-quotation/index.html",
+        "learning/index.html",
+        "learning/mice-operations/index.html",
+        "learning/quality-sop-management/index.html",
+        "learning/tourism-operations/index.html",
+        "live-demos/infracluster.html",
+        "live-demos/infradispatch/index.html",
+        "live-demos/infraquote.html",
+        "live-demos/infrasky.html",
+        "locations/abu-dhabi/index.html",
+        "maintenance/index.html",
+        "marketing/utm-builder/index.html",
+        "methodology/index.html",
+        "newsletter/confirmed/index.html",
+        "newsletter/index.html",
+        "offline/index.html",
+        "privacy/index.html",
+        "profile/index.html",
+        "projects/index.html",
+        "projects/infracluster/index.html",
+        "projects/infradispatch/index.html",
+        "projects/infraquote/index.html",
+        "projects/infrasky/index.html",
+        "resources/index.html",
+        "resources/recruiter-summary/index.html",
+        "saved/index.html",
+        "series/amsterdam-tourism-product-discovery/index.html",
+        "series/hotel-ai-operations-playbook/index.html",
+        "series/hotel-apartment-operational-excellence/index.html",
+        "visuals/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.youtube.com/@ahmedqualityops-official?cbrd=1&ucbcb=1",
+      "result": "reachable"
+    },
+    {
+      "url": "https://wa.me/31628895967",
+      "pages": [
+        "404.html",
+        "articles/abu-dhabi-mice-operations-series/index.html",
+        "articles/amsterdam-product-discovery-01-research-plan/index.html",
+        "articles/amsterdam-product-discovery-02-competitive-landscape/index.html",
+        "articles/amsterdam-product-discovery-03-market-gap/index.html",
+        "articles/amsterdam-product-discovery-04-voice-of-customer/index.html",
+        "articles/amsterdam-product-discovery-05-segmentation-language/index.html",
+        "articles/amsterdam-product-discovery-06-destination-geography/index.html",
+        "articles/amsterdam-product-discovery-07-product-requirements-concept/index.html",
+        "articles/amsterdam-product-discovery-08-commercial-model-unit-economics/index.html",
+        "articles/amsterdam-product-discovery-09-risk-responsibility/index.html",
+        "articles/amsterdam-product-discovery-10-seasonality-operating-calendar/index.html",
+        "articles/amsterdam-product-discovery-11-mvp-pilot-operational-readiness/index.html",
+        "articles/amsterdam-product-discovery-12-product-analytics-scale-decision/index.html",
+        "articles/article-abu-dhabi-mice-movement-control-room/index.html",
+        "articles/article-air-connectivity-dmc-market-intelligence/index.html",
+        "articles/article-assignment-engine-dmc-operations/index.html",
+        "articles/article-city-tour-quotation-professional/index.html",
+        "articles/article-destination-experience-journey-map/index.html",
+        "articles/article-fixed-variable-costs-city-tour-pricing/index.html",
+        "articles/article-fleet-control-tower-operations-dashboard/index.html",
+        "articles/article-mice-arrival-waves-zayed-international-airport/index.html",
+        "articles/article-mice-backup-operations-service-recovery-abu-dhabi/index.html",
+        "articles/article-mice-hotel-desks-coach-departures-abu-dhabi/index.html",
+        "articles/article-mice-venue-arrivals-registration-abu-dhabi/index.html",
+        "articles/article-net-cost-selling-price-markup/index.html",
+        "articles/article-participant-estimation-break-even-risk/index.html",
+        "articles/article-professional-client-tour-quotation/index.html",
+        "articles/article-rfi-rfq-rfp-erfp-nda-tourism-sales/index.html",
+        "articles/article-tour-cost-worksheet-city-tour/index.html",
+        "articles/article-tour-guide-quality-index/index.html",
+        "articles/article-tour-guide-storytelling-system/index.html",
+        "articles/article-tourism-operations-roles-real-difference/index.html",
+        "articles/article-transport-tickets-vat-gratuities/index.html",
+        "articles/capa-tourism-operations/index.html",
+        "articles/customer-journey-mapping-sop-design/index.html",
+        "articles/dmc-operations-ai-prompts/index.html",
+        "articles/document-control-version-management-tourism/index.html",
+        "articles/front-line-tourism-ai-toolkit/index.html",
+        "articles/guest-experience-ai-prompts/index.html",
+        "articles/guest-ready-apartment-standard/index.html",
+        "articles/hotel-ai-prompting-framework/index.html",
+        "articles/hotel-apartment-asset-lifecycle-management/index.html",
+        "articles/hotel-apartment-cost-of-poor-quality/index.html",
+        "articles/hotel-apartment-end-to-end-guest-journey/index.html",
+        "articles/hotel-apartment-extended-stay-ai-toolkit/index.html",
+        "articles/hotel-apartment-kpi-architecture/index.html",
+        "articles/hotel-apartment-operating-system/index.html",
+        "articles/hotel-apartment-operations-control-tower/index.html",
+        "articles/hotel-apartment-preventive-maintenance-strategy/index.html",
+        "articles/hotel-apartment-sop-architecture/index.html",
+        "articles/hotel-apartment-total-cost-of-ownership/index.html",
+        "articles/hotel-complaint-root-cause-analysis/index.html",
+        "articles/hotel-control-tower-ai-decision-support-toolkit/index.html",
+        "articles/hotel-critical-spare-parts-management/index.html",
+        "articles/hotel-downtime-out-of-service-management/index.html",
+        "articles/hotel-economics-of-service-failure/index.html",
+        "articles/hotel-energy-utility-management-ai-toolkit/index.html",
+        "articles/hotel-engineering-maintenance-ai-toolkit/index.html",
+        "articles/hotel-esg-sustainability-ai-toolkit/index.html",
+        "articles/hotel-finance-cost-control-ai-toolkit/index.html",
+        "articles/hotel-first-time-right-operations/index.html",
+        "articles/hotel-front-office-ai-toolkit/index.html",
+        "articles/hotel-general-manager-ai-toolkit/index.html",
+        "articles/hotel-guest-complaint-service-recovery-ai-toolkit/index.html",
+        "articles/hotel-guest-experience-ai-toolkit/index.html",
+        "articles/hotel-guest-experience-quality-management/index.html",
+        "articles/hotel-housekeeping-management-ai-toolkit/index.html",
+        "articles/hotel-housekeeping-quality-control/index.html",
+        "articles/hotel-housekeeping-standardization/index.html",
+        "articles/hotel-inventory-par-level-management/index.html",
+        "articles/hotel-inventory-par-management-ai-toolkit/index.html",
+        "articles/hotel-kpi-dashboard-ai-toolkit/index.html",
+        "articles/hotel-lean-six-sigma-ai-toolkit/index.html",
+        "articles/hotel-maintenance-work-order-management/index.html",
+        "articles/hotel-operational-excellence-maturity-model/index.html",
+        "articles/hotel-operations-manager-ai-toolkit/index.html",
+        "articles/hotel-operations-planning-daily-control/index.html",
+        "articles/hotel-ota-distribution-review-management-ai-toolkit/index.html",
+        "articles/hotel-predictive-maintenance-ai-toolkit/index.html",
+        "articles/hotel-preventive-maintenance-kpis/index.html",
+        "articles/hotel-procurement-ai-toolkit/index.html",
+        "articles/hotel-procurement-supplier-quality-control/index.html",
+        "articles/hotel-property-reliability-score/index.html",
+        "articles/hotel-quality-audit-ai-toolkit/index.html",
+        "articles/hotel-reservations-ai-toolkit/index.html",
+        "articles/hotel-revenue-management-ai-toolkit/index.html",
+        "articles/hotel-sales-corporate-accounts-ai-toolkit/index.html",
+        "articles/hotel-sop-process-design-ai-toolkit/index.html",
+        "articles/hotel-workforce-productivity-efficiency/index.html",
+        "articles/how-to-audit-an-sop/index.html",
+        "articles/how-to-write-professional-sop-procedure/index.html",
+        "articles/how-to-write-professional-sop-structure/index.html",
+        "articles/how-to-write-work-instructions/index.html",
+        "articles/insights-city-tour-quotation-pricing-masterclass/index.html",
+        "articles/integrated-sop-creation-model/index.html",
+        "articles/itil-4-tourism-operations/index.html",
+        "articles/lean-thinking-tourism-operations/index.html",
+        "articles/map-process-before-writing-sop/index.html",
+        "articles/operational-checklist-employees-use/index.html",
+        "articles/pmp-thinking-sop-implementation/index.html",
+        "articles/policy-vs-sop-work-instruction-checklist-form-template/index.html",
+        "articles/procedures-processes-process-maps/index.html",
+        "articles/professional-operational-form/index.html",
+        "articles/responsible-ai-governance-hotels/index.html",
+        "articles/responsible-ai-tourism-guide/index.html",
+        "articles/root-cause-analysis-tourism-managers/index.html",
+        "articles/sipoc-tourism-operations/index.html",
+        "articles/six-sigma-tourism-complaints-data/index.html",
+        "articles/sop-evidence-documentation-legal-defensibility/index.html",
+        "articles/sop-exception-escalation-management/index.html",
+        "articles/sop-roles-authority-raci/index.html",
+        "articles/standard-communication-templates/index.html",
+        "articles/standard-test-procedures-tourism-operations/index.html",
+        "articles/tourism-ai-operations-playbook/index.html",
+        "articles/tourism-company-operating-system/index.html",
+        "articles/tourism-document-hierarchy/index.html",
+        "articles/tourism-itinerary-ai-prompts/index.html",
+        "articles/tourism-operational-excellence-management-system/index.html",
+        "articles/tourism-operational-risk-assessment-before-sop/index.html",
+        "articles/tourism-operations-kpis-control-dashboards/index.html",
+        "articles/tourism-operations-manual/index.html",
+        "articles/tourism-product-development-ai-prompts/index.html",
+        "articles/tourism-prompting-framework/index.html",
+        "articles/tourism-quality-sop-ai-prompts/index.html",
+        "articles/tourism-sales-quotation-ai-prompts/index.html",
+        "articles/tourism-sop-training-competency-adoption/index.html",
+        "articles/tourism-supplier-partner-governance-sops/index.html",
+        "articles/tourism-transport-dispatch-ai-prompts/index.html",
+        "articles/where-stp-fits-tourism-operations/index.html",
+        "articles/workforce-rostering-productivity-ai-toolkit/index.html",
+        "careers/ai-implementation/index.html",
+        "careers/operations-manager/index.html",
+        "careers/product-manager/index.html",
+        "collections/operations-managers/index.html",
+        "collections/product-managers/index.html",
+        "collections/tourism-professionals/index.html",
+        "expertise/tourism-operations/index.html",
+        "glossary/index.html",
+        "index.html",
+        "knowledge/index.html",
+        "lab/guest-journey-mapper/index.html",
+        "lab/guide-allocation/index.html",
+        "lab/index.html",
+        "lab/mice-arrival-wave/index.html",
+        "lab/sop-structure-builder/index.html",
+        "lab/vehicle-requirement/index.html",
+        "learn/videos/index.html",
+        "learning/ai-for-tourism/index.html",
+        "learning/dmc-commercial-quotation/index.html",
+        "learning/index.html",
+        "learning/mice-operations/index.html",
+        "learning/quality-sop-management/index.html",
+        "learning/tourism-operations/index.html",
+        "live-demos/infracluster.html",
+        "live-demos/infradispatch/index.html",
+        "live-demos/infraquote.html",
+        "live-demos/infrasky.html",
+        "locations/abu-dhabi/index.html",
+        "maintenance/index.html",
+        "marketing/utm-builder/index.html",
+        "methodology/index.html",
+        "newsletter/confirmed/index.html",
+        "newsletter/index.html",
+        "offline/index.html",
+        "privacy/index.html",
+        "profile/index.html",
+        "projects/index.html",
+        "projects/infracluster/index.html",
+        "projects/infradispatch/index.html",
+        "projects/infraquote/index.html",
+        "projects/infrasky/index.html",
+        "resources/index.html",
+        "resources/recruiter-summary/index.html",
+        "saved/index.html",
+        "series/amsterdam-tourism-product-discovery/index.html",
+        "series/hotel-ai-operations-playbook/index.html",
+        "series/hotel-apartment-operational-excellence/index.html",
+        "visuals/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://api.whatsapp.com/send/?phone=31628895967&text&type=phone_number&app_absent=0",
+      "result": "reachable"
+    },
+    {
+      "url": "https://github.com/AhmedElshemyOps",
+      "pages": [
+        "404.html",
+        "articles/abu-dhabi-mice-operations-series/index.html",
+        "articles/amsterdam-product-discovery-01-research-plan/index.html",
+        "articles/amsterdam-product-discovery-02-competitive-landscape/index.html",
+        "articles/amsterdam-product-discovery-03-market-gap/index.html",
+        "articles/amsterdam-product-discovery-04-voice-of-customer/index.html",
+        "articles/amsterdam-product-discovery-05-segmentation-language/index.html",
+        "articles/amsterdam-product-discovery-06-destination-geography/index.html",
+        "articles/amsterdam-product-discovery-07-product-requirements-concept/index.html",
+        "articles/amsterdam-product-discovery-08-commercial-model-unit-economics/index.html",
+        "articles/amsterdam-product-discovery-09-risk-responsibility/index.html",
+        "articles/amsterdam-product-discovery-10-seasonality-operating-calendar/index.html",
+        "articles/amsterdam-product-discovery-11-mvp-pilot-operational-readiness/index.html",
+        "articles/amsterdam-product-discovery-12-product-analytics-scale-decision/index.html",
+        "articles/article-abu-dhabi-mice-movement-control-room/index.html",
+        "articles/article-air-connectivity-dmc-market-intelligence/index.html",
+        "articles/article-assignment-engine-dmc-operations/index.html",
+        "articles/article-city-tour-quotation-professional/index.html",
+        "articles/article-destination-experience-journey-map/index.html",
+        "articles/article-fixed-variable-costs-city-tour-pricing/index.html",
+        "articles/article-fleet-control-tower-operations-dashboard/index.html",
+        "articles/article-mice-arrival-waves-zayed-international-airport/index.html",
+        "articles/article-mice-backup-operations-service-recovery-abu-dhabi/index.html",
+        "articles/article-mice-hotel-desks-coach-departures-abu-dhabi/index.html",
+        "articles/article-mice-venue-arrivals-registration-abu-dhabi/index.html",
+        "articles/article-net-cost-selling-price-markup/index.html",
+        "articles/article-participant-estimation-break-even-risk/index.html",
+        "articles/article-professional-client-tour-quotation/index.html",
+        "articles/article-rfi-rfq-rfp-erfp-nda-tourism-sales/index.html",
+        "articles/article-tour-cost-worksheet-city-tour/index.html",
+        "articles/article-tour-guide-quality-index/index.html",
+        "articles/article-tour-guide-storytelling-system/index.html",
+        "articles/article-tourism-operations-roles-real-difference/index.html",
+        "articles/article-transport-tickets-vat-gratuities/index.html",
+        "articles/capa-tourism-operations/index.html",
+        "articles/customer-journey-mapping-sop-design/index.html",
+        "articles/dmc-operations-ai-prompts/index.html",
+        "articles/document-control-version-management-tourism/index.html",
+        "articles/front-line-tourism-ai-toolkit/index.html",
+        "articles/guest-experience-ai-prompts/index.html",
+        "articles/guest-ready-apartment-standard/index.html",
+        "articles/hotel-ai-prompting-framework/index.html",
+        "articles/hotel-apartment-asset-lifecycle-management/index.html",
+        "articles/hotel-apartment-cost-of-poor-quality/index.html",
+        "articles/hotel-apartment-end-to-end-guest-journey/index.html",
+        "articles/hotel-apartment-extended-stay-ai-toolkit/index.html",
+        "articles/hotel-apartment-kpi-architecture/index.html",
+        "articles/hotel-apartment-operating-system/index.html",
+        "articles/hotel-apartment-operations-control-tower/index.html",
+        "articles/hotel-apartment-preventive-maintenance-strategy/index.html",
+        "articles/hotel-apartment-sop-architecture/index.html",
+        "articles/hotel-apartment-total-cost-of-ownership/index.html",
+        "articles/hotel-complaint-root-cause-analysis/index.html",
+        "articles/hotel-control-tower-ai-decision-support-toolkit/index.html",
+        "articles/hotel-critical-spare-parts-management/index.html",
+        "articles/hotel-downtime-out-of-service-management/index.html",
+        "articles/hotel-economics-of-service-failure/index.html",
+        "articles/hotel-energy-utility-management-ai-toolkit/index.html",
+        "articles/hotel-engineering-maintenance-ai-toolkit/index.html",
+        "articles/hotel-esg-sustainability-ai-toolkit/index.html",
+        "articles/hotel-finance-cost-control-ai-toolkit/index.html",
+        "articles/hotel-first-time-right-operations/index.html",
+        "articles/hotel-front-office-ai-toolkit/index.html",
+        "articles/hotel-general-manager-ai-toolkit/index.html",
+        "articles/hotel-guest-complaint-service-recovery-ai-toolkit/index.html",
+        "articles/hotel-guest-experience-ai-toolkit/index.html",
+        "articles/hotel-guest-experience-quality-management/index.html",
+        "articles/hotel-housekeeping-management-ai-toolkit/index.html",
+        "articles/hotel-housekeeping-quality-control/index.html",
+        "articles/hotel-housekeeping-standardization/index.html",
+        "articles/hotel-inventory-par-level-management/index.html",
+        "articles/hotel-inventory-par-management-ai-toolkit/index.html",
+        "articles/hotel-kpi-dashboard-ai-toolkit/index.html",
+        "articles/hotel-lean-six-sigma-ai-toolkit/index.html",
+        "articles/hotel-maintenance-work-order-management/index.html",
+        "articles/hotel-operational-excellence-maturity-model/index.html",
+        "articles/hotel-operations-manager-ai-toolkit/index.html",
+        "articles/hotel-operations-planning-daily-control/index.html",
+        "articles/hotel-ota-distribution-review-management-ai-toolkit/index.html",
+        "articles/hotel-predictive-maintenance-ai-toolkit/index.html",
+        "articles/hotel-preventive-maintenance-kpis/index.html",
+        "articles/hotel-procurement-ai-toolkit/index.html",
+        "articles/hotel-procurement-supplier-quality-control/index.html",
+        "articles/hotel-property-reliability-score/index.html",
+        "articles/hotel-quality-audit-ai-toolkit/index.html",
+        "articles/hotel-reservations-ai-toolkit/index.html",
+        "articles/hotel-revenue-management-ai-toolkit/index.html",
+        "articles/hotel-sales-corporate-accounts-ai-toolkit/index.html",
+        "articles/hotel-sop-process-design-ai-toolkit/index.html",
+        "articles/hotel-workforce-productivity-efficiency/index.html",
+        "articles/how-to-audit-an-sop/index.html",
+        "articles/how-to-write-professional-sop-procedure/index.html",
+        "articles/how-to-write-professional-sop-structure/index.html",
+        "articles/how-to-write-work-instructions/index.html",
+        "articles/insights-city-tour-quotation-pricing-masterclass/index.html",
+        "articles/integrated-sop-creation-model/index.html",
+        "articles/itil-4-tourism-operations/index.html",
+        "articles/lean-thinking-tourism-operations/index.html",
+        "articles/map-process-before-writing-sop/index.html",
+        "articles/operational-checklist-employees-use/index.html",
+        "articles/pmp-thinking-sop-implementation/index.html",
+        "articles/policy-vs-sop-work-instruction-checklist-form-template/index.html",
+        "articles/procedures-processes-process-maps/index.html",
+        "articles/professional-operational-form/index.html",
+        "articles/responsible-ai-governance-hotels/index.html",
+        "articles/responsible-ai-tourism-guide/index.html",
+        "articles/root-cause-analysis-tourism-managers/index.html",
+        "articles/sipoc-tourism-operations/index.html",
+        "articles/six-sigma-tourism-complaints-data/index.html",
+        "articles/sop-evidence-documentation-legal-defensibility/index.html",
+        "articles/sop-exception-escalation-management/index.html",
+        "articles/sop-roles-authority-raci/index.html",
+        "articles/standard-communication-templates/index.html",
+        "articles/standard-test-procedures-tourism-operations/index.html",
+        "articles/tourism-ai-operations-playbook/index.html",
+        "articles/tourism-company-operating-system/index.html",
+        "articles/tourism-document-hierarchy/index.html",
+        "articles/tourism-itinerary-ai-prompts/index.html",
+        "articles/tourism-operational-excellence-management-system/index.html",
+        "articles/tourism-operational-risk-assessment-before-sop/index.html",
+        "articles/tourism-operations-kpis-control-dashboards/index.html",
+        "articles/tourism-operations-manual/index.html",
+        "articles/tourism-product-development-ai-prompts/index.html",
+        "articles/tourism-prompting-framework/index.html",
+        "articles/tourism-quality-sop-ai-prompts/index.html",
+        "articles/tourism-sales-quotation-ai-prompts/index.html",
+        "articles/tourism-sop-training-competency-adoption/index.html",
+        "articles/tourism-supplier-partner-governance-sops/index.html",
+        "articles/tourism-transport-dispatch-ai-prompts/index.html",
+        "articles/where-stp-fits-tourism-operations/index.html",
+        "articles/workforce-rostering-productivity-ai-toolkit/index.html",
+        "careers/ai-implementation/index.html",
+        "careers/operations-manager/index.html",
+        "careers/product-manager/index.html",
+        "collections/operations-managers/index.html",
+        "collections/product-managers/index.html",
+        "collections/tourism-professionals/index.html",
+        "expertise/tourism-operations/index.html",
+        "glossary/index.html",
+        "index.html",
+        "knowledge/index.html",
+        "lab/guest-journey-mapper/index.html",
+        "lab/guide-allocation/index.html",
+        "lab/index.html",
+        "lab/mice-arrival-wave/index.html",
+        "lab/sop-structure-builder/index.html",
+        "lab/vehicle-requirement/index.html",
+        "learn/videos/index.html",
+        "learning/ai-for-tourism/index.html",
+        "learning/dmc-commercial-quotation/index.html",
+        "learning/index.html",
+        "learning/mice-operations/index.html",
+        "learning/quality-sop-management/index.html",
+        "learning/tourism-operations/index.html",
+        "live-demos/infracluster.html",
+        "live-demos/infradispatch/index.html",
+        "live-demos/infraquote.html",
+        "live-demos/infrasky.html",
+        "locations/abu-dhabi/index.html",
+        "maintenance/index.html",
+        "marketing/utm-builder/index.html",
+        "methodology/index.html",
+        "newsletter/confirmed/index.html",
+        "newsletter/index.html",
+        "offline/index.html",
+        "privacy/index.html",
+        "profile/index.html",
+        "projects/index.html",
+        "projects/infracluster/index.html",
+        "projects/infradispatch/index.html",
+        "projects/infraquote/index.html",
+        "projects/infrasky/index.html",
+        "resources/index.html",
+        "resources/recruiter-summary/index.html",
+        "saved/index.html",
+        "series/amsterdam-tourism-product-discovery/index.html",
+        "series/hotel-ai-operations-playbook/index.html",
+        "series/hotel-apartment-operational-excellence/index.html",
+        "visuals/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/AhmedElshemyOps",
+      "result": "reachable"
+    },
+    {
+      "url": "https://onderzoek.amsterdam.nl/dossier/toerisme",
+      "pages": [
+        "articles/amsterdam-product-discovery-01-research-plan/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://onderzoek.amsterdam.nl/dossier/toerisme",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.amsterdam.nl/en/general-items/items-footer/privacy-city-of-amsterdam/",
+      "pages": [
+        "articles/amsterdam-product-discovery-01-research-plan/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.amsterdam.nl/en/policy/tourism/",
+      "pages": [
+        "articles/amsterdam-product-discovery-01-research-plan/index.html",
+        "articles/amsterdam-product-discovery-03-market-gap/index.html",
+        "articles/amsterdam-product-discovery-09-risk-responsibility/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.nbtc.nl/nl/site/over-ons/wat-we-doen/perspectief-2040",
+      "pages": [
+        "articles/amsterdam-product-discovery-01-research-plan/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.nbtc.nl/nl/site/over-ons/wat-we-doen/perspectief-2040",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.amsterdam.nl/bestuur-organisatie/beleid/toerisme/",
+      "pages": [
+        "articles/amsterdam-product-discovery-01-research-plan/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.cbs.nl/en-gb/news/2026/16/fewer-overnight-stays-by-dutch-guests-more-international-visitors-in-2025",
+      "pages": [
+        "articles/amsterdam-product-discovery-01-research-plan/index.html"
+      ],
+      "result": "unverified",
+      "error": "URLError"
+    },
+    {
+      "url": "https://www.nbtc.nl/en/site/about-us/what-we-do-at-nbtc/perspective-destination-netherlands-2030",
+      "pages": [
+        "articles/amsterdam-product-discovery-01-research-plan/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.nbtc.nl/en/site/about-us/what-we-do-at-nbtc/perspective-destination-netherlands-2030",
+      "result": "reachable"
+    },
+    {
+      "url": "https://data.amsterdam.nl/",
+      "pages": [
+        "articles/amsterdam-product-discovery-01-research-plan/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://data.amsterdam.nl/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://onderzoek.amsterdam.nl/publicatie/bezoekersprognose-amsterdam-2026-2028",
+      "pages": [
+        "articles/amsterdam-product-discovery-01-research-plan/index.html",
+        "articles/amsterdam-product-discovery-03-market-gap/index.html",
+        "articles/amsterdam-product-discovery-10-seasonality-operating-calendar/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://onderzoek.amsterdam.nl/publicatie/bezoekersprognose-amsterdam-2026-2028",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.getyourguide.com/amsterdam-l36/amsterdam-full-day-walking-biking-cruising-with-lunch-t407357/",
+      "pages": [
+        "articles/amsterdam-product-discovery-02-competitive-landscape/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.expedia.com/things-to-do/search?filter.categories=ToursDayTrips&location=Amsterdam&rid=178229",
+      "pages": [
+        "articles/amsterdam-product-discovery-02-competitive-landscape/index.html"
+      ],
+      "status": 429,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.iamsterdam.com/en/whats-on/calendar/attractions-and-sights/tours/amsterdam-self-guided-food-tour-de-jordaan-district",
+      "pages": [
+        "articles/amsterdam-product-discovery-02-competitive-landscape/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.iamsterdam.com/en/whats-on/calendar/attractions-and-sights/tours/amsterdam-self-guided-food-tour-de-jordaan-district",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.tiqets.com/en/amsterdam-attractions-c75061/tickets-for-van-gogh-museum-canal-cruise-p974260/",
+      "pages": [
+        "articles/amsterdam-product-discovery-02-competitive-landscape/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.tiqets.com/en/amsterdam-attractions-c75061/tickets-for-van-gogh-museum-canal-cruise-p974260/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.klook.com/activity/150500-amsterdam-walking-tour-with-canal-cruise/",
+      "pages": [
+        "articles/amsterdam-product-discovery-02-competitive-landscape/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.getyourguide.com/the-jordaan-l2983/",
+      "pages": [
+        "articles/amsterdam-product-discovery-02-competitive-landscape/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.viator.com/en-GB/tours/Amsterdam/Amsterdam-Food-and-Canals-Tour/d525-6624P3",
+      "pages": [
+        "articles/amsterdam-product-discovery-02-competitive-landscape/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://tickets.blueboat.nl/?lang=en",
+      "pages": [
+        "articles/amsterdam-product-discovery-02-competitive-landscape/index.html"
+      ],
+      "result": "unverified",
+      "error": "URLError"
+    },
+    {
+      "url": "https://www.iamsterdam.com/en/tickets",
+      "pages": [
+        "articles/amsterdam-product-discovery-02-competitive-landscape/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.iamsterdam.com/en/tickets",
+      "result": "reachable"
+    },
+    {
+      "url": "https://onderzoek.amsterdam.nl/publicatie/onderzoek-toeristisch-dagbezoek-in-amsterdam",
+      "pages": [
+        "articles/amsterdam-product-discovery-03-market-gap/index.html",
+        "articles/amsterdam-product-discovery-05-segmentation-language/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://onderzoek.amsterdam.nl/publicatie/onderzoek-toeristisch-dagbezoek-in-amsterdam",
+      "result": "reachable"
+    },
+    {
+      "url": "https://onderzoek.amsterdam.nl/publicatie/toeristische-draagkracht-van-wijken-in-amsterdam-in-2025",
+      "pages": [
+        "articles/amsterdam-product-discovery-03-market-gap/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://onderzoek.amsterdam.nl/publicatie/toeristische-draagkracht-van-wijken-in-amsterdam-in-2025",
+      "result": "reachable"
+    },
+    {
+      "url": "https://onderzoek.amsterdam.nl/artikel/toerisme-in-cijfers-2025",
+      "pages": [
+        "articles/amsterdam-product-discovery-03-market-gap/index.html",
+        "articles/amsterdam-product-discovery-10-seasonality-operating-calendar/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://onderzoek.amsterdam.nl/artikel/toerisme-in-cijfers-2025",
+      "result": "reachable"
+    },
+    {
+      "url": "https://voicemap.me/tour/amsterdam/a-tasty-stroll-around-the-cool-spots-of-the-pijp",
+      "pages": [
+        "articles/amsterdam-product-discovery-04-voice-of-customer/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.viator.com/tours/Amsterdam/Introduction-Walking-Tour-Hello-Amsterdam-Small-group/d525-90720P6",
+      "pages": [
+        "articles/amsterdam-product-discovery-04-voice-of-customer/index.html",
+        "articles/amsterdam-product-discovery-08-commercial-model-unit-economics/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.viator.com/tours/Amsterdam/Wonderful-Guided-Walks-in-Amsterdam/d525-425945P1",
+      "pages": [
+        "articles/amsterdam-product-discovery-04-voice-of-customer/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://voicemap.me/tour/amsterdam/an-amsterdam-introduction-from-fishing-hamlet-to-trading-centre",
+      "pages": [
+        "articles/amsterdam-product-discovery-04-voice-of-customer/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.viator.com/tours/Amsterdam/Amsterdam-Jordaan-District-Food-Walking-Tour/d525-6624FOOD",
+      "pages": [
+        "articles/amsterdam-product-discovery-04-voice-of-customer/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://nieuws.schiphol.nl/schiphol-verbindt-nederland-met-301-bestemmingen-68-miljoen-reizigers-in-2025/",
+      "pages": [
+        "articles/amsterdam-product-discovery-05-segmentation-language/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://nieuws.schiphol.nl/schiphol-verbindt-nederland-met-301-bestemmingen-68-miljoen-reizigers-in-2025/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://guidor.nl/en/guides-and-languages/",
+      "pages": [
+        "articles/amsterdam-product-discovery-05-segmentation-language/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://guidor.nl/en/guides-and-languages/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.nbtc.nl/nl/site/themas/internationale-concurrentiepositie/key-insights-verenigd-koninkrijk",
+      "pages": [
+        "articles/amsterdam-product-discovery-05-segmentation-language/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.nbtc.nl/nl/site/themas/kennis-en-data/key-insights-verenigd-koninkrijk",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.amsterdam.nl/en/business/rules-permit-tours/",
+      "pages": [
+        "articles/amsterdam-product-discovery-05-segmentation-language/index.html",
+        "articles/amsterdam-product-discovery-06-destination-geography/index.html",
+        "articles/amsterdam-product-discovery-09-risk-responsibility/index.html",
+        "live-demos/infraquote.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://onderzoek.amsterdam.nl/publicatie/toerisme-mra-2024-2025",
+      "pages": [
+        "articles/amsterdam-product-discovery-05-segmentation-language/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://onderzoek.amsterdam.nl/publicatie/toerisme-mra-2024-2025",
+      "result": "reachable"
+    },
+    {
+      "url": "https://inkomendtoerisme.nbtc.nl/onderzoek-inkomend-dagbezoek/orienteren-en-boeken1",
+      "pages": [
+        "articles/amsterdam-product-discovery-05-segmentation-language/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://inkomendtoerisme.nbtc.nl/onderzoek-inkomend-dagbezoek/orienteren-en-boeken1",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.nbtc.nl/nl/site/themas/kennis-en-data/key-insights-duitsland",
+      "pages": [
+        "articles/amsterdam-product-discovery-05-segmentation-language/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.nbtc.nl/nl/site/themas/kennis-en-data/key-insights-duitsland",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.nbtc.nl/nl/site/kennisbank/markten-segmenten/key-insights-frankrijk",
+      "pages": [
+        "articles/amsterdam-product-discovery-05-segmentation-language/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.nbtc.nl/nl/site/themas/kennis-en-data/key-insights-frankrijk",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.nbtc.nl/nl/site/themas/kennis-en-data/key-insights-verenigde-staten",
+      "pages": [
+        "articles/amsterdam-product-discovery-05-segmentation-language/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.nbtc.nl/nl/site/themas/kennis-en-data/key-insights-verenigde-staten",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.nsinternational.com/en/trains/ice-to-berlin",
+      "pages": [
+        "articles/amsterdam-product-discovery-05-segmentation-language/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.nsinternational.com/en/trains/ice-to-berlin",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.eurostar.com/uk-en/train/amsterdam-to-london",
+      "pages": [
+        "articles/amsterdam-product-discovery-05-segmentation-language/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.eurostar.com/uk-en/train/amsterdam-to-london",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.eurostar.com/uk-en/train/amsterdam-to-paris",
+      "pages": [
+        "articles/amsterdam-product-discovery-05-segmentation-language/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.eurostar.com/uk-en/train/amsterdam-to-paris",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.nbtc.nl/nl/site/themas/kennis-en-data/key-insights-belgie",
+      "pages": [
+        "articles/amsterdam-product-discovery-05-segmentation-language/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.nbtc.nl/nl/site/themas/kennis-en-data/key-insights-belgie",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.gvb.nl/en/visit-amsterdam/gvb-public-transport-company-amsterdam",
+      "pages": [
+        "articles/amsterdam-product-discovery-06-destination-geography/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.rijksmuseum.nl/en/visit/accessibility",
+      "pages": [
+        "articles/amsterdam-product-discovery-06-destination-geography/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.rijksmuseum.nl/en/visit/accessibility",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.gvb.nl/en/step-free-access-public-transport",
+      "pages": [
+        "articles/amsterdam-product-discovery-06-destination-geography/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.annefrank.org/en/museum/accessibility-museum/",
+      "pages": [
+        "articles/amsterdam-product-discovery-06-destination-geography/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.annefrank.org/en/museum/accessibility-museum/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.eyefilm.nl/en/plan-your-visit",
+      "pages": [
+        "articles/amsterdam-product-discovery-06-destination-geography/index.html",
+        "articles/amsterdam-product-discovery-07-product-requirements-concept/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.eyefilm.nl/en/plan-your-visit",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.gvb.nl/en/summer-2026",
+      "pages": [
+        "articles/amsterdam-product-discovery-06-destination-geography/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.iamsterdam.com/en/travel-stay/accessibility/public-transportation",
+      "pages": [
+        "articles/amsterdam-product-discovery-06-destination-geography/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.iamsterdam.com/en/travel-stay/accessibility/public-transportation",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.dehortus.nl/en/plan-your-visit/",
+      "pages": [
+        "articles/amsterdam-product-discovery-07-product-requirements-concept/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.dehortus.nl/en/plan-your-visit/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://guidor.nl/en/looking-for-a-guide/",
+      "pages": [
+        "articles/amsterdam-product-discovery-07-product-requirements-concept/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://guidor.nl/en/looking-for-a-guide/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://guidor.nl/en/",
+      "pages": [
+        "articles/amsterdam-product-discovery-07-product-requirements-concept/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://guidor.nl/en/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.gvb.nl/en/travel-information/journey-planner",
+      "pages": [
+        "articles/amsterdam-product-discovery-07-product-requirements-concept/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://docs.stripe.com/payouts",
+      "pages": [
+        "articles/amsterdam-product-discovery-08-commercial-model-unit-economics/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.stripe.com/payouts",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/btw_berekenen_aan_uw_klanten/btw_berekenen/btw_tarief/btw_tarief",
+      "pages": [
+        "articles/amsterdam-product-discovery-08-commercial-model-unit-economics/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/btw_berekenen_aan_uw_klanten/btw_berekenen/btw_tarief/btw_tarief",
+      "result": "reachable"
+    },
+    {
+      "url": "https://stripe.com/en-nl/pricing",
+      "pages": [
+        "articles/amsterdam-product-discovery-08-commercial-model-unit-economics/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://stripe.com/en-nl/pricing",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.getyourguide.com/amsterdam-l36/amsterdam-small-group-guided-walking-tour-frenchenglish-t872600/",
+      "pages": [
+        "articles/amsterdam-product-discovery-08-commercial-model-unit-economics/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/tarieven_en_vrijstellingen/vrijstellingen/vrijstelling_voor_lezingen_excursies_en_rondleidingen",
+      "pages": [
+        "articles/amsterdam-product-discovery-08-commercial-model-unit-economics/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/tarieven_en_vrijstellingen/vrijstellingen/vrijstelling_voor_lezingen_excursies_en_rondleidingen",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.getyourguide.com/en-gb/amsterdam-l36/amsterdam-cultural-inner-city-tour-in-german-or-english-t66011/",
+      "pages": [
+        "articles/amsterdam-product-discovery-08-commercial-model-unit-economics/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.getyourguide.supply/",
+      "pages": [
+        "articles/amsterdam-product-discovery-08-commercial-model-unit-economics/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.getyourguide.supply/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.getyourguide.supply/join/getyourguide",
+      "pages": [
+        "articles/amsterdam-product-discovery-08-commercial-model-unit-economics/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.getyourguide.supply/join/getyourguide",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.viator.com/tours/Amsterdam/Amsterdam-Small-Group-Walking-Tour/d525-61268P8",
+      "pages": [
+        "articles/amsterdam-product-discovery-08-commercial-model-unit-economics/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://stripe.com/nl/pricing",
+      "pages": [
+        "articles/amsterdam-product-discovery-08-commercial-model-unit-economics/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://stripe.com/nl/pricing",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.getyourguide.com/amsterdam-l36/walking-tours-tc3/",
+      "pages": [
+        "articles/amsterdam-product-discovery-08-commercial-model-unit-economics/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.amsterdam.nl/en/policy/policy-city-centre-approach/",
+      "pages": [
+        "articles/amsterdam-product-discovery-09-risk-responsibility/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.amsterdam.nl/en/policy/urban-development/",
+      "pages": [
+        "articles/amsterdam-product-discovery-09-risk-responsibility/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://business.gov.nl/regulations/working-conditions-self-employed-professionals/",
+      "pages": [
+        "articles/amsterdam-product-discovery-09-risk-responsibility/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://business.gov.nl/regulations/working-conditions-self-employed-professionals/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://business.gov.nl/running-your-business/insurance/business-liability-insurance/",
+      "pages": [
+        "articles/amsterdam-product-discovery-09-risk-responsibility/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://business.gov.nl/running-your-business/insurance/business-liability-insurance/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.acm.nl/nl/toegankelijkheid/toegankelijkheid-van-e-handelsdiensten-en-elektronische-communicatiediensten",
+      "pages": [
+        "articles/amsterdam-product-discovery-09-risk-responsibility/index.html"
+      ],
+      "result": "unverified",
+      "error": "URLError"
+    },
+    {
+      "url": "https://www.mensenrechten.nl/themas/rechten-van-mensen-met-een-beperking/toegang-met-een-beperking",
+      "pages": [
+        "articles/amsterdam-product-discovery-09-risk-responsibility/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.mensenrechten.nl/themas/rechten-van-mensen-met-een-beperking/toegang-met-een-beperking",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.amsterdam.nl/en/policy/policy-city-centre-approach/valuable-visitors-economy/",
+      "pages": [
+        "articles/amsterdam-product-discovery-09-risk-responsibility/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://business.gov.nl/regulations/long-distance-sales-and-purchases/",
+      "pages": [
+        "articles/amsterdam-product-discovery-09-risk-responsibility/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://business.gov.nl/regulations/long-distance-sales-and-purchases/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.amsterdam.nl/en/policy/policy-sustainability-energy/",
+      "pages": [
+        "articles/amsterdam-product-discovery-09-risk-responsibility/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://business.gov.nl/regulations/protection-personal-data/",
+      "pages": [
+        "articles/amsterdam-product-discovery-09-risk-responsibility/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://business.gov.nl/regulations/protection-personal-data/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://business.gov.nl/regulations/cancellation-period-sale/",
+      "pages": [
+        "articles/amsterdam-product-discovery-09-risk-responsibility/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://business.gov.nl/regulations/cancellation-period-sale/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://business.gov.nl/regulations/rules-for-accessibility-eaa/",
+      "pages": [
+        "articles/amsterdam-product-discovery-09-risk-responsibility/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://business.gov.nl/regulations/rules-for-accessibility-eaa/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://business.gov.nl/running-your-business/insurance/arrange-business-insurance/",
+      "pages": [
+        "articles/amsterdam-product-discovery-09-risk-responsibility/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://business.gov.nl/running-your-business/insurance/arrange-business-insurance/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://business.gov.nl/regulations/risk-inventory-evaluation/",
+      "pages": [
+        "articles/amsterdam-product-discovery-09-risk-responsibility/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://business.gov.nl/regulations/risk-inventory-evaluation/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.amsterdam.nl/stadsdelen/centrum/aanpak-binnenstad/regels-rondleidingen/",
+      "pages": [
+        "articles/amsterdam-product-discovery-09-risk-responsibility/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.amsterdam.nl/en/policy/circular-economy/",
+      "pages": [
+        "articles/amsterdam-product-discovery-09-risk-responsibility/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.amsterdam.nl/projecten/sarphatistraat/",
+      "pages": [
+        "articles/amsterdam-product-discovery-09-risk-responsibility/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.rijksoverheid.nl/vraag-en-antwoord/zomertijd-wintertijd/klok-verzetten-nederland",
+      "pages": [
+        "articles/amsterdam-product-discovery-10-seasonality-operating-calendar/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/zomertijd-wintertijd/klok-verzetten-nederland",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.knmi.nl/nederland-nu/weer/waarschuwingen",
+      "pages": [
+        "articles/amsterdam-product-discovery-10-seasonality-operating-calendar/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.knmi.nl/nederland-nu/weer/waarschuwingen/utrecht",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.knmi.nl/klimaat-viewer/grafieken-tabellen/klimaattabellen-per-station/schiphol",
+      "pages": [
+        "articles/amsterdam-product-discovery-10-seasonality-operating-calendar/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.knmi.nl/klimaat-viewer/grafieken-tabellen/klimaattabellen-per-station/schiphol",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.amsterdam-dance-event.nl/en/faq-and-contact/",
+      "pages": [
+        "articles/amsterdam-product-discovery-10-seasonality-operating-calendar/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.amsterdam-dance-event.nl/en/faq-and-contact/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.cbs.nl/en-gb/figures/detail/82061ENG?q=amsterdam",
+      "pages": [
+        "articles/amsterdam-product-discovery-10-seasonality-operating-calendar/index.html"
+      ],
+      "result": "unverified",
+      "error": "URLError"
+    },
+    {
+      "url": "https://www.amsterdam.nl/nieuws/evenementen-herdenkingen/koningsdag-2027/",
+      "pages": [
+        "articles/amsterdam-product-discovery-10-seasonality-operating-calendar/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://amsterdamlightfestival.com/en/news/the-lights-are-off-edition-14",
+      "pages": [
+        "articles/amsterdam-product-discovery-10-seasonality-operating-calendar/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://amsterdamlightfestival.com/en/news/the-lights-are-off-edition-14",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=MS1rVkMbTK4",
+      "pages": [
+        "articles/amsterdam-product-discovery-12-product-analytics-scale-decision/index.html",
+        "learn/videos/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.youtube.com/watch?v=MS1rVkMbTK4",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.adairports.ae/en/pressrelease/2026/01/air-china-launches-direct-beijing-capital---abu-dhabi-service-strengthening-air-connectivity",
+      "pages": [
+        "articles/article-air-connectivity-dmc-market-intelligence/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.adairports.ae/en/pressrelease/2026/01/abu-dhabi-airports-closes-2025-with-record-traffic-as--zayed-international-emerges-as-emea",
+      "pages": [
+        "articles/article-air-connectivity-dmc-market-intelligence/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.etihadhub.com/en-ae/news/etihad-airways-and-condor-announce-strategic-partnership-and-new-abu-dhabi-routes",
+      "pages": [
+        "articles/article-air-connectivity-dmc-market-intelligence/index.html"
+      ],
+      "result": "unverified",
+      "error": "timeout"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=92Rl7Yj3HoI",
+      "pages": [
+        "articles/article-fleet-control-tower-operations-dashboard/index.html",
+        "learn/videos/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.youtube.com/watch?v=92Rl7Yj3HoI",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.zayedinternationalairport.ae/en/flights-and-check-in/connecting-at-auh/transfer-guide",
+      "pages": [
+        "articles/article-mice-arrival-waves-zayed-international-airport/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.zayedinternationalairport.ae/flights-and-check-in/flight-status/arrivals",
+      "pages": [
+        "articles/article-mice-arrival-waves-zayed-international-airport/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.zayedinternationalairport.ae/en/plan-and-prepare/at-the-airport/baggage-services",
+      "pages": [
+        "articles/article-mice-arrival-waves-zayed-international-airport/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.zayedinternationalairport.ae/en/shop-dine-and-experience/premium-services/book-salam-service",
+      "pages": [
+        "articles/article-mice-arrival-waves-zayed-international-airport/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.zayedinternationalairport.ae/en/plan-and-prepare/passenger-assistance/special-assistance",
+      "pages": [
+        "articles/article-mice-arrival-waves-zayed-international-airport/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.zayedinternationalairport.ae/en/parking-and-transport/transport/pickup-and-dropoff",
+      "pages": [
+        "articles/article-mice-arrival-waves-zayed-international-airport/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=jrqUFNnN6bA",
+      "pages": [
+        "articles/article-mice-arrival-waves-zayed-international-airport/index.html",
+        "learn/videos/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.youtube.com/watch?v=jrqUFNnN6bA",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.adnec.ae/en/discover-adnec",
+      "pages": [
+        "articles/article-mice-venue-arrivals-registration-abu-dhabi/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.adnec.ae/en/discover-adnec",
+      "result": "reachable"
+    },
+    {
+      "url": "https://admobility.gov.ae/en/traffic-management",
+      "pages": [
+        "articles/article-mice-venue-arrivals-registration-abu-dhabi/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://admobility.gov.ae/en/traffic-management",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.adnec.ae/en/space-listing",
+      "pages": [
+        "articles/article-mice-venue-arrivals-registration-abu-dhabi/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.adnec.ae/en/space-listing",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.adnec.ae/en",
+      "pages": [
+        "articles/article-mice-venue-arrivals-registration-abu-dhabi/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.adnec.ae/en",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.adnec.ae/en/visit/getting-here",
+      "pages": [
+        "articles/article-mice-venue-arrivals-registration-abu-dhabi/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.adnec.ae/en/visit/getting-here",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.acm.nl/nl/verkoop-aan-consumenten/consumenten-informeren/prijzen-vermelden",
+      "pages": [
+        "articles/article-professional-client-tour-quotation/index.html",
+        "articles/article-transport-tickets-vat-gratuities/index.html"
+      ],
+      "result": "unverified",
+      "error": "URLError"
+    },
+    {
+      "url": "https://dct.gov.ae/en/what.we.do/tourism/industry.initiatives.emiratisation/tourist.guide.training.and.licensing.programme.aspx",
+      "pages": [
+        "articles/article-professional-client-tour-quotation/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://dct.gov.ae/en/what.we.do/tourism/industry.initiatives.emiratisation/tourist.guide.training.and.licensing.programme.aspx",
+      "result": "reachable"
+    },
+    {
+      "url": "https://tax.gov.ae/en/taxes/vat/guides.references.aspx",
+      "pages": [
+        "articles/article-professional-client-tour-quotation/index.html",
+        "articles/article-transport-tickets-vat-gratuities/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://tax.gov.ae/en/taxes/vat/guides.references.aspx",
+      "result": "reachable"
+    },
+    {
+      "url": "https://tax.gov.ae/DataFolder/Files/Pdf/2022/Get%20to%20know%20your%20Tax%20Obligations.pdf",
+      "pages": [
+        "articles/article-transport-tickets-vat-gratuities/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://tax.gov.ae/DataFolder/Files/Pdf/2022/Get%20to%20know%20your%20Tax%20Obligations.pdf",
+      "result": "reachable"
+    },
+    {
+      "url": "https://asq.org/quality-resources/root-cause-analysis",
+      "pages": [
+        "articles/capa-tourism-operations/index.html",
+        "articles/root-cause-analysis-tourism-managers/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.iso.org/standard/65694.html",
+      "pages": [
+        "articles/capa-tourism-operations/index.html",
+        "articles/how-to-audit-an-sop/index.html",
+        "articles/how-to-write-professional-sop-structure/index.html",
+        "articles/pmp-thinking-sop-implementation/index.html",
+        "articles/root-cause-analysis-tourism-managers/index.html",
+        "articles/sipoc-tourism-operations/index.html",
+        "articles/sop-exception-escalation-management/index.html",
+        "articles/sop-roles-authority-raci/index.html",
+        "articles/standard-test-procedures-tourism-operations/index.html",
+        "articles/tourism-operational-risk-assessment-before-sop/index.html",
+        "articles/tourism-operations-manual/index.html",
+        "articles/tourism-supplier-partner-governance-sops/index.html",
+        "articles/where-stp-fits-tourism-operations/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://asq.org/quality-progress/articles/corrective-vs-preventive-action?id=f5c21a6abfea4bbe8d0c079b430e33a3",
+      "pages": [
+        "articles/capa-tourism-operations/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.iso.org/standards/popular/iso-9000-family",
+      "pages": [
+        "articles/capa-tourism-operations/index.html",
+        "articles/document-control-version-management-tourism/index.html",
+        "articles/policy-vs-sop-work-instruction-checklist-form-template/index.html",
+        "articles/tourism-company-operating-system/index.html",
+        "articles/tourism-document-hierarchy/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.iso.org/standard/73315.html",
+      "pages": [
+        "articles/customer-journey-mapping-sop-design/index.html",
+        "articles/how-to-write-professional-sop-structure/index.html",
+        "articles/policy-vs-sop-work-instruction-checklist-form-template/index.html",
+        "articles/tourism-company-operating-system/index.html",
+        "articles/tourism-document-hierarchy/index.html",
+        "articles/tourism-operational-risk-assessment-before-sop/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.iso.org/standard/76358.html",
+      "pages": [
+        "articles/customer-journey-mapping-sop-design/index.html",
+        "articles/itil-4-tourism-operations/index.html",
+        "articles/sop-exception-escalation-management/index.html",
+        "articles/tourism-company-operating-system/index.html",
+        "articles/tourism-operational-excellence-management-system/index.html",
+        "articles/tourism-operations-kpis-control-dashboards/index.html",
+        "articles/tourism-operations-manual/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.unwto.org/policy-destination-management",
+      "pages": [
+        "articles/customer-journey-mapping-sop-design/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.untourism.int/policy-destination-management",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.unwto.org/news/abu-dhabi-awarded-un-tourism-quest-certification-for-excellence-in-destination-management",
+      "pages": [
+        "articles/customer-journey-mapping-sop-design/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.untourism.int/news/abu-dhabi-awarded-un-tourism-quest-certification-for-excellence-in-destination-management",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.iso.org/standard/72126.html",
+      "pages": [
+        "articles/customer-journey-mapping-sop-design/index.html",
+        "articles/how-to-write-professional-sop-structure/index.html",
+        "articles/map-process-before-writing-sop/index.html",
+        "articles/policy-vs-sop-work-instruction-checklist-form-template/index.html",
+        "articles/sop-exception-escalation-management/index.html",
+        "articles/tourism-company-operating-system/index.html",
+        "articles/tourism-document-hierarchy/index.html",
+        "articles/tourism-operational-risk-assessment-before-sop/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.iso.org/obp/ui/en/",
+      "pages": [
+        "articles/customer-journey-mapping-sop-design/index.html",
+        "articles/procedures-processes-process-maps/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://github.com/AhmedElshemyOps/tourism-ai-operations-playbook/blob/main/playbook/03-dmc-operations-ai-toolkit.md",
+      "pages": [
+        "articles/dmc-operations-ai-prompts/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/AhmedElshemyOps/tourism-ai-operations-playbook/blob/main/playbook/03-dmc-operations-ai-toolkit.md",
+      "result": "reachable"
+    },
+    {
+      "url": "https://github.com/AhmedElshemyOps/tourism-ai-operations-playbook/issues",
+      "pages": [
+        "articles/dmc-operations-ai-prompts/index.html",
+        "articles/front-line-tourism-ai-toolkit/index.html",
+        "articles/guest-experience-ai-prompts/index.html",
+        "articles/responsible-ai-tourism-guide/index.html",
+        "articles/tourism-ai-operations-playbook/index.html",
+        "articles/tourism-itinerary-ai-prompts/index.html",
+        "articles/tourism-product-development-ai-prompts/index.html",
+        "articles/tourism-prompting-framework/index.html",
+        "articles/tourism-quality-sop-ai-prompts/index.html",
+        "articles/tourism-sales-quotation-ai-prompts/index.html",
+        "articles/tourism-transport-dispatch-ai-prompts/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/AhmedElshemyOps/tourism-ai-operations-playbook/issues",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ze8RW_CPXWk",
+      "pages": [
+        "articles/document-control-version-management-tourism/index.html",
+        "learn/videos/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.youtube.com/watch?v=ze8RW_CPXWk",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.iso.org/standard/70400.html",
+      "pages": [
+        "articles/document-control-version-management-tourism/index.html",
+        "articles/how-to-write-professional-sop-structure/index.html",
+        "articles/policy-vs-sop-work-instruction-checklist-form-template/index.html",
+        "articles/tourism-document-hierarchy/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.iso.org/iso/iso9001_2015_process_approach.Pdf",
+      "pages": [
+        "articles/document-control-version-management-tourism/index.html",
+        "articles/how-to-write-professional-sop-structure/index.html",
+        "articles/map-process-before-writing-sop/index.html",
+        "articles/policy-vs-sop-work-instruction-checklist-form-template/index.html",
+        "articles/procedures-processes-process-maps/index.html",
+        "articles/tourism-company-operating-system/index.html",
+        "articles/tourism-document-hierarchy/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.iso.org/home/insights-news/resources/iso-9001-explained.html",
+      "pages": [
+        "articles/document-control-version-management-tourism/index.html",
+        "articles/how-to-write-professional-sop-structure/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.iso.org/standard/75736.html",
+      "pages": [
+        "articles/document-control-version-management-tourism/index.html",
+        "articles/hotel-sop-process-design-ai-toolkit/index.html",
+        "articles/how-to-audit-an-sop/index.html",
+        "articles/how-to-write-professional-sop-procedure/index.html",
+        "articles/how-to-write-professional-sop-structure/index.html",
+        "articles/how-to-write-work-instructions/index.html",
+        "articles/integrated-sop-creation-model/index.html",
+        "articles/map-process-before-writing-sop/index.html",
+        "articles/operational-checklist-employees-use/index.html",
+        "articles/pmp-thinking-sop-implementation/index.html",
+        "articles/policy-vs-sop-work-instruction-checklist-form-template/index.html",
+        "articles/procedures-processes-process-maps/index.html",
+        "articles/professional-operational-form/index.html",
+        "articles/sipoc-tourism-operations/index.html",
+        "articles/sop-evidence-documentation-legal-defensibility/index.html",
+        "articles/sop-roles-authority-raci/index.html",
+        "articles/standard-communication-templates/index.html",
+        "articles/standard-test-procedures-tourism-operations/index.html",
+        "articles/tourism-company-operating-system/index.html",
+        "articles/tourism-document-hierarchy/index.html",
+        "articles/tourism-operational-excellence-management-system/index.html",
+        "articles/tourism-operations-manual/index.html",
+        "articles/tourism-sop-training-competency-adoption/index.html",
+        "articles/tourism-supplier-partner-governance-sops/index.html",
+        "articles/where-stp-fits-tourism-operations/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://github.com/AhmedElshemyOps/tourism-ai-operations-playbook/blob/main/playbook/02-front-line-tourism-ai-toolkit.md",
+      "pages": [
+        "articles/front-line-tourism-ai-toolkit/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/AhmedElshemyOps/tourism-ai-operations-playbook/blob/main/playbook/02-front-line-tourism-ai-toolkit.md",
+      "result": "reachable"
+    },
+    {
+      "url": "https://github.com/AhmedElshemyOps/tourism-ai-operations-playbook/blob/main/playbook/08-guest-experience-ai-toolkit.md",
+      "pages": [
+        "articles/guest-experience-ai-prompts/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/AhmedElshemyOps/tourism-ai-operations-playbook/blob/main/playbook/08-guest-experience-ai-toolkit.md",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "pages": [
+        "articles/hotel-ai-prompting-framework/index.html",
+        "articles/responsible-ai-tourism-guide/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "result": "reachable"
+    },
+    {
+      "url": "https://uaelegislation.gov.ae/en/legislations/1972/download",
+      "pages": [
+        "articles/hotel-ai-prompting-framework/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.iso.org/artificial-intelligence/ai-management-systems",
+      "pages": [
+        "articles/hotel-ai-prompting-framework/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence",
+      "pages": [
+        "articles/hotel-ai-prompting-framework/index.html",
+        "articles/responsible-ai-tourism-guide/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence",
+      "result": "reachable"
+    },
+    {
+      "url": "https://u.ae/en/about-the-uae/digital-uae/data/data-protection-laws",
+      "pages": [
+        "articles/hotel-ai-prompting-framework/index.html",
+        "articles/responsible-ai-tourism-guide/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://u.ae/en/about-the-uae/digital-uae/data/data-protection-laws",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.dubaidet.gov.ae/en/newsroom/press-releases/dubai-sustainable-tourism-stamp-2026",
+      "pages": [
+        "articles/hotel-esg-sustainability-ai-toolkit/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.dubaidet.gov.ae/ar/newsroom/press-releases/det-launches-sustainability-courses",
+      "pages": [
+        "articles/hotel-esg-sustainability-ai-toolkit/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=CUZa297Dq4w",
+      "pages": [
+        "articles/hotel-front-office-ai-toolkit/index.html",
+        "learn/videos/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.youtube.com/watch?v=CUZa297Dq4w",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=u3Nvy3zTiGE",
+      "pages": [
+        "articles/hotel-lean-six-sigma-ai-toolkit/index.html",
+        "learn/videos/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.youtube.com/watch?v=u3Nvy3zTiGE",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ANd2lVb6RQw",
+      "pages": [
+        "articles/hotel-lean-six-sigma-ai-toolkit/index.html",
+        "learn/videos/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.youtube.com/watch?v=ANd2lVb6RQw",
+      "result": "reachable"
+    },
+    {
+      "url": "https://insights.ehl.edu/hotel-standard-operating-procedures",
+      "pages": [
+        "articles/hotel-operations-manager-ai-toolkit/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://insights.ehl.edu/hotel-standard-operating-procedures",
+      "result": "reachable"
+    },
+    {
+      "url": "https://insights.ehl.edu/hotel-operations",
+      "pages": [
+        "articles/hotel-operations-manager-ai-toolkit/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://insights.ehl.edu/hotel-operations",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.ahla.com/partner-spotlight-quore",
+      "pages": [
+        "articles/hotel-operations-manager-ai-toolkit/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.ahla.com/partner-spotlight-quore",
+      "result": "reachable"
+    },
+    {
+      "url": "https://github.com/AhmedElshemyOps/hotel-ai-operations-playbook/blob/main/AUTHORITY-MATRIX.md",
+      "pages": [
+        "articles/hotel-operations-manager-ai-toolkit/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/AhmedElshemyOps/hotel-ai-operations-playbook/blob/main/AUTHORITY-MATRIX.md",
+      "result": "reachable"
+    },
+    {
+      "url": "https://github.com/AhmedElshemyOps/hotel-ai-operations-playbook/blob/main/PRIVACY-AND-RESPONSIBLE-USE.md",
+      "pages": [
+        "articles/hotel-operations-manager-ai-toolkit/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/AhmedElshemyOps/hotel-ai-operations-playbook/blob/main/PRIVACY-AND-RESPONSIBLE-USE.md",
+      "result": "reachable"
+    },
+    {
+      "url": "https://insights.ehl.edu/banking-industry",
+      "pages": [
+        "articles/hotel-operations-manager-ai-toolkit/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://insights.ehl.edu/banking-industry",
+      "result": "reachable"
+    },
+    {
+      "url": "https://github.com/AhmedElshemyOps/hotel-ai-operations-playbook/blob/main/SOURCE-OF-TRUTH-MATRIX.md",
+      "pages": [
+        "articles/hotel-operations-manager-ai-toolkit/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/AhmedElshemyOps/hotel-ai-operations-playbook/blob/main/SOURCE-OF-TRUTH-MATRIX.md",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.dubaidet.gov.ae/en/legislative-news/administrative-resolution-no-1-of-2018",
+      "pages": [
+        "articles/hotel-quality-audit-ai-toolkit/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.iso.org/standard/19011",
+      "pages": [
+        "articles/hotel-quality-audit-ai-toolkit/index.html",
+        "articles/how-to-audit-an-sop/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.dubaidet.gov.ae/en/our-services/for-consumers-and-students/classify-a-hotel-establishment",
+      "pages": [
+        "articles/hotel-quality-audit-ai-toolkit/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=_93R2PRGJhA",
+      "pages": [
+        "articles/hotel-reservations-ai-toolkit/index.html",
+        "learn/videos/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.youtube.com/watch?v=_93R2PRGJhA",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.iso.org/iso/iso9001_2015_process_approach.pdf",
+      "pages": [
+        "articles/hotel-sop-process-design-ai-toolkit/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.iso.org/standard/70397.html",
+      "pages": [
+        "articles/how-to-audit-an-sop/index.html",
+        "articles/lean-thinking-tourism-operations/index.html",
+        "articles/tourism-operational-excellence-management-system/index.html",
+        "articles/tourism-operations-kpis-control-dashboards/index.html",
+        "articles/tourism-operations-manual/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://nodis3.gsfc.nasa.gov/displayAll.cfm?Internal_ID=N_PR_1400_001H_&page_name=ALL",
+      "pages": [
+        "articles/how-to-write-professional-sop-procedure/index.html",
+        "articles/how-to-write-work-instructions/index.html",
+        "articles/sop-roles-authority-raci/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://nodis3.gsfc.nasa.gov/displayAll.cfm?Internal_ID=N_PR_1400_001H_&page_name=ALL",
+      "result": "reachable"
+    },
+    {
+      "url": "https://hf.tc.faa.gov/hfds/download-hfds/hfds_pdfs/Ch15_User_documentation.pdf",
+      "pages": [
+        "articles/how-to-write-professional-sop-procedure/index.html",
+        "articles/how-to-write-work-instructions/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://hf.tc.faa.gov/hfds/download-hfds/hfds_pdfs/Ch15_User_documentation.pdf",
+      "result": "reachable"
+    },
+    {
+      "url": "https://committee.iso.org/files/live/sites/tc176sc2/files/documents/ISO%209001%202015%20-%20Implementation%20guidance%20docs/ISO9001_2015_Guidance_on_Documented_Information.docx",
+      "pages": [
+        "articles/how-to-write-professional-sop-procedure/index.html",
+        "articles/sop-evidence-documentation-legal-defensibility/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://committee.iso.org/files/live/sites/tc176sc2/files/documents/ISO%209001%202015%20-%20Implementation%20guidance%20docs/ISO9001_2015_Guidance_on_Documented_Information.docx",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.iso.org/standard/69459.html",
+      "pages": [
+        "articles/how-to-write-work-instructions/index.html",
+        "articles/operational-checklist-employees-use/index.html",
+        "articles/tourism-sop-training-competency-adoption/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.lean.org/explore-lean/what-is-lean/",
+      "pages": [
+        "articles/integrated-sop-creation-model/index.html",
+        "articles/lean-thinking-tourism-operations/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.lean.org/explore-lean/what-is-lean/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.peoplecert.org/news-and-announcements/itil-version-5-foundation-whats-new-guide",
+      "pages": [
+        "articles/integrated-sop-creation-model/index.html",
+        "articles/itil-4-tourism-operations/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.itil.com/Itil-News-and-Announcements/itil-version-5-foundation-whats-new-guide",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.pmi.org/standards/pmbok",
+      "pages": [
+        "articles/integrated-sop-creation-model/index.html",
+        "articles/pmp-thinking-sop-implementation/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.iso.org/standard/52901.html",
+      "pages": [
+        "articles/integrated-sop-creation-model/index.html",
+        "articles/six-sigma-tourism-complaints-data/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=wPKJikM9Ui0",
+      "pages": [
+        "articles/integrated-sop-creation-model/index.html",
+        "learn/videos/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.youtube.com/watch?v=wPKJikM9Ui0",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1/itil-5-foundation-version-50-4154",
+      "pages": [
+        "articles/itil-4-tourism-operations/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1/itil-5-foundation-version-50-4154",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1/itil-4-foundation-2565",
+      "pages": [
+        "articles/itil-4-tourism-operations/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1/itil-4-foundation-2565",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=PiZttt_ugaI",
+      "pages": [
+        "articles/lean-thinking-tourism-operations/index.html",
+        "learn/videos/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.youtube.com/watch?v=PiZttt_ugaI",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.lean.org/explore-lean/a-brief-history-of-lean/",
+      "pages": [
+        "articles/lean-thinking-tourism-operations/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.lean.org/explore-lean/a-brief-history-of-lean/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=kviqS1V8gaA",
+      "pages": [
+        "articles/lean-thinking-tourism-operations/index.html",
+        "learn/videos/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.youtube.com/watch?v=kviqS1V8gaA",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.lean.org/the-lean-post/articles/the-eight-wastes-of-lean/",
+      "pages": [
+        "articles/lean-thinking-tourism-operations/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.lean.org/the-lean-post/articles/the-eight-wastes-of-lean/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=N7ro6KO46-Q",
+      "pages": [
+        "articles/lean-thinking-tourism-operations/index.html",
+        "learn/videos/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.youtube.com/watch?v=N7ro6KO46-Q",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=w4rkcYgH8Ds",
+      "pages": [
+        "articles/lean-thinking-tourism-operations/index.html",
+        "learn/videos/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.youtube.com/watch?v=w4rkcYgH8Ds",
+      "result": "reachable"
+    },
+    {
+      "url": "https://asq.org/quality-resources/benchmarking/process-sipoc-template?id=cf2058f9fd5a4d13aebbd6cf10ee9272",
+      "pages": [
+        "articles/map-process-before-writing-sop/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://committee.iso.org/files/live/sites/tc176/files/PDF%20APG%20New%20Disclaimer%2012-2023/ISO-TC%20176-TF_APG-Processes.pdf",
+      "pages": [
+        "articles/map-process-before-writing-sop/index.html",
+        "articles/procedures-processes-process-maps/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://committee.iso.org/files/live/sites/tc176/files/PDF%20APG%20New%20Disclaimer%2012-2023/ISO-TC%20176-TF_APG-Processes.pdf",
+      "result": "reachable"
+    },
+    {
+      "url": "https://asq.org/quality-resources/sipoc",
+      "pages": [
+        "articles/map-process-before-writing-sop/index.html",
+        "articles/procedures-processes-process-maps/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.who.int/publications/i/item/9789241598590",
+      "pages": [
+        "articles/operational-checklist-employees-use/index.html",
+        "articles/tourism-sop-training-competency-adoption/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.who.int/publications/i/item/9789241598590",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.faa.gov/sites/faa.gov/files/data_research/research/med_humanfacs/oamtechreports/AM91-07.pdf",
+      "pages": [
+        "articles/operational-checklist-employees-use/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.faa.gov/sites/faa.gov/files/data_research/research/med_humanfacs/oamtechreports/AM91-07.pdf",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.pmi.org/learning/library/applying-lessons-learned-implement-project-8344",
+      "pages": [
+        "articles/pmp-thinking-sop-implementation/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://asq.org/quality-resources/quality-tools",
+      "pages": [
+        "articles/procedures-processes-process-maps/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.w3.org/WAI/tutorials/forms/",
+      "pages": [
+        "articles/professional-operational-form/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.w3.org/WAI/tutorials/forms/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/data-protection-principles/a-guide-to-the-data-protection-principles/data-minimisation/",
+      "pages": [
+        "articles/professional-operational-form/index.html",
+        "articles/sop-evidence-documentation-legal-defensibility/index.html",
+        "articles/standard-communication-templates/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/data-protection-principles/a-guide-to-the-data-protection-principles/data-minimisation/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.archives.gov/records-mgmt/policy/agency-recordkeeping-requirements.html",
+      "pages": [
+        "articles/professional-operational-form/index.html",
+        "articles/sop-evidence-documentation-legal-defensibility/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.archives.gov/records-mgmt/policy/agency-recordkeeping-requirements.html",
+      "result": "reachable"
+    },
+    {
+      "url": "https://oecd.ai/en/ai-principles",
+      "pages": [
+        "articles/responsible-ai-tourism-guide/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://oecd.ai/en/ai-principles",
+      "result": "reachable"
+    },
+    {
+      "url": "https://github.com/AhmedElshemyOps/tourism-ai-operations-playbook/blob/main/playbook/10-responsible-ai-for-tourism.md",
+      "pages": [
+        "articles/responsible-ai-tourism-guide/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/AhmedElshemyOps/tourism-ai-operations-playbook/blob/main/playbook/10-responsible-ai-for-tourism.md",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.unesco.org/en/artificial-intelligence/recommendation-ethics",
+      "pages": [
+        "articles/responsible-ai-tourism-guide/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.unesco.org/en/artificial-intelligence/recommendation-ethics",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.iso.org/standard/52902.html",
+      "pages": [
+        "articles/root-cause-analysis-tourism-managers/index.html",
+        "articles/six-sigma-tourism-complaints-data/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://asq.org/quality-resources/seven-basic-quality-tools",
+      "pages": [
+        "articles/root-cause-analysis-tourism-managers/index.html",
+        "articles/six-sigma-tourism-complaints-data/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=CTFYU97sBYo",
+      "pages": [
+        "articles/root-cause-analysis-tourism-managers/index.html",
+        "learn/videos/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.youtube.com/watch?v=CTFYU97sBYo",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.pmi.org/learning/library/business-analyst-project-manager-collaboration-6512",
+      "pages": [
+        "articles/sipoc-tourism-operations/index.html",
+        "articles/sop-roles-authority-raci/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://asq.org/quality-resources/dmaic",
+      "pages": [
+        "articles/six-sigma-tourism-complaints-data/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=phsesJAr_qw",
+      "pages": [
+        "articles/six-sigma-tourism-complaints-data/index.html",
+        "learn/videos/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.youtube.com/watch?v=phsesJAr_qw",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.iso.org/standard/75106.html",
+      "pages": [
+        "articles/sop-exception-escalation-management/index.html",
+        "articles/tourism-operational-risk-assessment-before-sop/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.iso.org/standard/72140.html",
+      "pages": [
+        "articles/sop-exception-escalation-management/index.html",
+        "articles/tourism-operational-risk-assessment-before-sop/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=lhQyORsaaTQ",
+      "pages": [
+        "articles/sop-exception-escalation-management/index.html",
+        "learn/videos/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.youtube.com/watch?v=lhQyORsaaTQ",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=RkXz9VNLdEc",
+      "pages": [
+        "articles/sop-exception-escalation-management/index.html",
+        "learn/videos/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.youtube.com/watch?v=RkXz9VNLdEc",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.iso.org/standard/75107.html",
+      "pages": [
+        "articles/sop-exception-escalation-management/index.html",
+        "articles/tourism-operational-risk-assessment-before-sop/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=f5JiLYEzPyA",
+      "pages": [
+        "articles/sop-roles-authority-raci/index.html",
+        "learn/videos/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.youtube.com/watch?v=f5JiLYEzPyA",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.communications.gov.uk/publication/stop-crisis-communications-planning-guide/",
+      "pages": [
+        "articles/standard-communication-templates/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.communications.gov.uk/publication/stop-crisis-communications-planning-guide/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.cdc.gov/cerc/php/cerc-manual/index.html",
+      "pages": [
+        "articles/standard-communication-templates/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://glossary.istqb.org/",
+      "pages": [
+        "articles/standard-test-procedures-tourism-operations/index.html",
+        "articles/where-stp-fits-tourism-operations/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://glossary.istqb.org/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.iso.org/standard/50294.html",
+      "pages": [
+        "articles/standard-test-procedures-tourism-operations/index.html",
+        "articles/where-stp-fits-tourism-operations/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=VMAXcTM4zsE",
+      "pages": [
+        "articles/standard-test-procedures-tourism-operations/index.html",
+        "learn/videos/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.youtube.com/watch?v=VMAXcTM4zsE",
+      "result": "reachable"
+    },
+    {
+      "url": "https://github.com/AhmedElshemyOps/tourism-ai-operations-playbook",
+      "pages": [
+        "articles/tourism-ai-operations-playbook/index.html",
+        "live-demos/infracluster.html",
+        "live-demos/infrasky.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/AhmedElshemyOps/tourism-ai-operations-playbook",
+      "result": "reachable"
+    },
+    {
+      "url": "https://github.com/AhmedElshemyOps/tourism-ai-operations-playbook/releases",
+      "pages": [
+        "articles/tourism-ai-operations-playbook/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/AhmedElshemyOps/tourism-ai-operations-playbook/releases",
+      "result": "reachable"
+    },
+    {
+      "url": "https://github.com/AhmedElshemyOps/tourism-ai-operations-playbook/blob/main/playbook/06-tourism-itinerary-ai-toolkit.md",
+      "pages": [
+        "articles/tourism-itinerary-ai-prompts/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/AhmedElshemyOps/tourism-ai-operations-playbook/blob/main/playbook/06-tourism-itinerary-ai-toolkit.md",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.nist.gov/baldrige",
+      "pages": [
+        "articles/tourism-operational-excellence-management-system/index.html",
+        "articles/tourism-operations-kpis-control-dashboards/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.nist.gov/baldrige",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.iso.org/standard/85847.html",
+      "pages": [
+        "articles/tourism-operational-excellence-management-system/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=D0CA6bNh0fA",
+      "pages": [
+        "articles/tourism-operations-kpis-control-dashboards/index.html",
+        "learn/videos/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.youtube.com/watch?v=D0CA6bNh0fA",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.nist.gov/blogs/blogrige/learning-role-models-category-4-measurement-analysis-and-knowledge-management",
+      "pages": [
+        "articles/tourism-operations-kpis-control-dashboards/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.nist.gov/blogs/blogrige/learning-role-models-category-4-measurement-analysis-and-knowledge-management",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=KCZDCSyBQSg",
+      "pages": [
+        "articles/tourism-operations-kpis-control-dashboards/index.html",
+        "learn/videos/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.youtube.com/watch?v=KCZDCSyBQSg",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.unwto.org/tourism-statistics/statistical-framework-for-measuring-the-sustainability-of-tourism",
+      "pages": [
+        "articles/tourism-operations-kpis-control-dashboards/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.untourism.int/tourism-statistics/statistical-framework-for-measuring-the-sustainability-of-tourism",
+      "result": "reachable"
+    },
+    {
+      "url": "https://github.com/AhmedElshemyOps/tourism-ai-operations-playbook/blob/main/playbook/05-tourism-product-development-ai-toolkit.md",
+      "pages": [
+        "articles/tourism-product-development-ai-prompts/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/AhmedElshemyOps/tourism-ai-operations-playbook/blob/main/playbook/05-tourism-product-development-ai-toolkit.md",
+      "result": "reachable"
+    },
+    {
+      "url": "https://github.com/AhmedElshemyOps/tourism-ai-operations-playbook/blob/main/playbook/01-tourism-prompting-framework.md",
+      "pages": [
+        "articles/tourism-prompting-framework/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/AhmedElshemyOps/tourism-ai-operations-playbook/blob/main/playbook/01-tourism-prompting-framework.md",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=5iz7ueR1-Cc",
+      "pages": [
+        "articles/tourism-prompting-framework/index.html",
+        "learn/videos/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.youtube.com/watch?v=5iz7ueR1-Cc",
+      "result": "reachable"
+    },
+    {
+      "url": "https://github.com/AhmedElshemyOps/tourism-ai-operations-playbook/blob/main/playbook/09-tourism-quality-sop-ai-toolkit.md",
+      "pages": [
+        "articles/tourism-quality-sop-ai-prompts/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/AhmedElshemyOps/tourism-ai-operations-playbook/blob/main/playbook/09-tourism-quality-sop-ai-toolkit.md",
+      "result": "reachable"
+    },
+    {
+      "url": "https://github.com/AhmedElshemyOps/tourism-ai-operations-playbook/blob/main/playbook/07-tourism-sales-quotation-ai-toolkit.md",
+      "pages": [
+        "articles/tourism-sales-quotation-ai-prompts/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/AhmedElshemyOps/tourism-ai-operations-playbook/blob/main/playbook/07-tourism-sales-quotation-ai-toolkit.md",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.iso.org/standard/69973.html",
+      "pages": [
+        "articles/tourism-sop-training-competency-adoption/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=bp78Pzk_dWI",
+      "pages": [
+        "articles/tourism-sop-training-competency-adoption/index.html",
+        "learn/videos/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.youtube.com/watch?v=bp78Pzk_dWI",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.iso.org/standard/79000.html",
+      "pages": [
+        "articles/tourism-supplier-partner-governance-sops/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.iso.org/standard/63026.html",
+      "pages": [
+        "articles/tourism-supplier-partner-governance-sops/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://github.com/AhmedElshemyOps/tourism-ai-operations-playbook/blob/main/playbook/04-tourism-transport-dispatch-ai-toolkit.md",
+      "pages": [
+        "articles/tourism-transport-dispatch-ai-prompts/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/AhmedElshemyOps/tourism-ai-operations-playbook/blob/main/playbook/04-tourism-transport-dispatch-ai-toolkit.md",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=7nnixb5XUs0",
+      "pages": [
+        "learn/videos/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.youtube.com/watch?v=7nnixb5XUs0",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=LJ4NVZYYJXA",
+      "pages": [
+        "learn/videos/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.youtube.com/watch?v=LJ4NVZYYJXA",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=De_ZCkC9cGk",
+      "pages": [
+        "learn/videos/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.youtube.com/watch?v=De_ZCkC9cGk",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=w4g72xQ43uA",
+      "pages": [
+        "learn/videos/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.youtube.com/shorts/w4g72xQ43uA?cbrd=1&ucbcb=1",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=B_k7xVd_7V8",
+      "pages": [
+        "learn/videos/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.youtube.com/watch?v=B_k7xVd_7V8",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=hYP7dJ8XM9I",
+      "pages": [
+        "learn/videos/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.youtube.com/watch?v=hYP7dJ8XM9I",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=-qBu61a5j_8",
+      "pages": [
+        "learn/videos/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.youtube.com/watch?v=-qBu61a5j_8",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=AA676Jb4ORs",
+      "pages": [
+        "learn/videos/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.youtube.com/watch?v=AA676Jb4ORs",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=bfQ-9PctjKA",
+      "pages": [
+        "learn/videos/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.youtube.com/watch?v=bfQ-9PctjKA",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=RJT-MhjVSwQ",
+      "pages": [
+        "learn/videos/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.youtube.com/watch?v=RJT-MhjVSwQ",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.google.com/maps",
+      "pages": [
+        "live-demos/infradispatch/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.google.com/maps?ucbcb=1",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.linkedin.com/company/infradispatch",
+      "pages": [
+        "live-demos/infradispatch/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.linkedin.com/company/infradispatch",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/bijzondere_regelingen/reisbureauregeling/wanneer_geldt_de_reisbureauregeling/",
+      "pages": [
+        "live-demos/infraquote.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/bijzondere_regelingen/reisbureauregeling/wanneer_geldt_de_reisbureauregeling/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.amsterdam.nl/verkeer-vervoer/touringcar/",
+      "pages": [
+        "live-demos/infraquote.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://policies.google.com/technologies/partner-sites",
+      "pages": [
+        "privacy/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://policies.google.com/technologies/partner-sites",
+      "result": "reachable"
+    },
+    {
+      "url": "https://policies.google.com/technologies/ads",
+      "pages": [
+        "privacy/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://policies.google.com/technologies/ads",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.amsterdam.nl/verkeer-vervoer/milieuzones-uitstootvrije-zones/autobussen-touringcars/regels-milieuzone-bussen-touringcars/",
+      "pages": [
+        "projects/infradispatch/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://www.utrecht.nl/wonen-en-leven/gezonde-leefomgeving/luchtkwaliteit/milieuzone-en-zero-emissiezone",
+      "pages": [
+        "projects/infradispatch/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.utrecht.nl/wonen-en-leven/gezonde-leefomgeving/luchtkwaliteit/milieuzone-en-zero-emissiezone",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.amsterdam.nl/verkeer-vervoer/touringcar/ontheffing-touringcar-aanvragen/",
+      "pages": [
+        "projects/infradispatch/index.html"
+      ],
+      "status": 403,
+      "result": "restricted_or_unverified"
+    },
+    {
+      "url": "https://sterrenwachtcopernicus.nl/nl/bezoek-ons",
+      "pages": [
+        "projects/infrasky/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://sterrenwachtcopernicus.nl/nl/bezoek-ons",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.gml.noaa.gov/grad/solcalc/solareqns.PDF",
+      "pages": [
+        "projects/infrasky/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.gml.noaa.gov/grad/solcalc/solareqns.PDF",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.knmi.nl/nederland-nu/weer/verwachtingen",
+      "pages": [
+        "projects/infrasky/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.knmi.nl/nederland-nu/weer/verwachtingen",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.np-zuidkennemerland.nl/gebiedsinformatie/gebiedsregels/",
+      "pages": [
+        "projects/infrasky/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.np-zuidkennemerland.nl/gebiedsinformatie/gebiedsregels/",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.staatsbosbeheer.nl/uit-in-de-natuur/locaties/lauwersmeer/over-het-lauwersmeer",
+      "pages": [
+        "projects/infrasky/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.staatsbosbeheer.nl/uit-in-de-natuur/locaties/lauwersmeer/over-het-lauwersmeer",
+      "result": "reachable"
+    },
+    {
+      "url": "https://sterrenwachtcopernicus.nl/nl",
+      "pages": [
+        "projects/infrasky/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://sterrenwachtcopernicus.nl/nl",
+      "result": "reachable"
+    },
+    {
+      "url": "https://www.artis.nl/nl/artis-park/planetarium",
+      "pages": [
+        "projects/infrasky/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.artis.nl/nl/artis-park/planetarium",
+      "result": "reachable"
+    },
+    {
+      "url": "https://github.com/AhmedElshemyOps/hotel-ai-operations-playbook",
+      "pages": [
+        "series/hotel-ai-operations-playbook/index.html"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/AhmedElshemyOps/hotel-ai-operations-playbook",
+      "result": "reachable"
+    }
+  ],
+  "supplementalReview": {
+    "method": "Public page retrieval through web browsing, 29 October 2026",
+    "retrieved": [
+      "https://www.cbs.nl/en-gb/news/2026/16/fewer-overnight-stays-by-dutch-guests-more-international-visitors-in-2025",
+      "https://tickets.blueboat.nl/?lang=en",
+      "https://www.acm.nl/nl/toegankelijkheid/toegankelijkheid-van-e-handelsdiensten-en-elektronische-communicatiediensten",
+      "https://www.cbs.nl/en-gb/figures/detail/82061ENG?q=amsterdam",
+      "https://www.etihadhub.com/en-ae/news/etihad-airways-and-condor-announce-strategic-partnership-and-new-abu-dhabi-routes",
+      "https://www.acm.nl/nl/verkoop-aan-consumenten/consumenten-informeren/prijzen-vermelden"
+    ],
+    "note": "These six pages were readable through browsing after the direct HTTP probe failed. Original probe outcomes retained."
+  },
+  "editorialFlags": [
+    {
+      "url": "https://insights.ehl.edu/banking-industry",
+      "page": "articles/hotel-operations-manager-ai-toolkit/index.html",
+      "issue": "Citation describes briefing/debriefing coordination; retrieved source is a banking hospitality-skills article and no briefing match was found. Claim-level support needs review; no speculative replacement made."
+    },
+    {
+      "url": "https://www.knmi.nl/nederland-nu/weer/waarschuwingen",
+      "issue": "Automated request redirected to an Utrecht-specific warning page. Review regional selection before relying on this link in an Amsterdam operational plan; keep the official national landing address."
+    }
+  ],
+  "publicPagesWithExternalLinks": 179
+}
