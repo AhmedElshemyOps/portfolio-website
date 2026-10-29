@@ -1,0 +1,13 @@
+{
+  "productionHostname": "ahmedqualityops.com",
+  "propertyId": "538087578",
+  "measurementId": "G-45YNREM1LT",
+  "streamId": "14892642073",
+  "streamName": "Ahmed Website",
+  "verifiedFrom": "Connected GA4 stream/hostname report, 1–28 October 2026",
+  "historicalReportingRule": "Include hostname exactly equal to productionHostname; retain other hosts in a separate diagnostic report. Do not delete historical data.",
+  "consentRule": "Do not send analytics events or load gtag without granted analytics consent on the production host.",
+  "campaignLabels": {"utm_source": "linkedin", "utm_medium": "organic_social", "utm_campaign": "tourism_operations", "utm_content": "airport_handover"},
+  "campaignLabelRule": "Explicit labels only, 1–80 letters/digits/underscore/hyphen; never names, email addresses or prompt input. Existing untagged URLs remain unchanged.",
+  "limits": ["Sessions are not unique readers.", "Historical events may contain previous tracking overlaps.", "file_download is all downloads, not a verified CV-only count.", "web_vitals is historical; current raw observations are not validated field Core Web Vitals.", "No GA4 property was deleted or key event changed."]
+}

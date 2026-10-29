@@ -185,8 +185,8 @@
       });
     }, { passive: true });
     document.addEventListener("click", function (event) {
-      if (event.target.closest && event.target.closest("[data-back-to-top]")) sendEvent("article_back_to_top", { page_path: window.location.pathname });
-      if (event.target.closest && event.target.closest("[data-copy-target]")) sendEvent("ai_prompt_copy", { page_path: window.location.pathname });
+      if (event.target.closest && event.target.closest("[data-back-to-top]") && !document.querySelector('script[src^="/assets/js/article-reader.js"]')) sendEvent("article_back_to_top", { page_path: window.location.pathname });
+      if (event.target.closest && event.target.closest("[data-copy-target]") && !event.target.closest("[data-ai-toolkit]")) sendEvent("ai_prompt_copy", { page_path: window.location.pathname });
     });
   }
 
