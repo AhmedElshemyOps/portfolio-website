@@ -11,6 +11,7 @@ publish, request indexing or grant a search-engine ranking.
 | Existing canonical article HTML | Approved teaching text, sections and original dates | Shared rendering preserves the teaching body; do not run historical migrations as routine builds |
 | Finished Markdown outside the public repository | New articles created by the managed publisher | `publish_article.py` creates the canonical HTML and registers the article |
 | `content/article-registry.json` | Public article metadata, permanent URLs and classifications | Catalogue refresh updates discovery, article statistics, content index and Knowledge Hub |
+| `content/discovery-metadata.json` | Reviewed search/sharing descriptions, separate from unchanged visible summaries | Shared renderer applies head-only metadata; reviewed paths must exist |
 | `content/knowledge-taxonomy.json` | Approved categories, subcategories and tags | Used by the publisher, validator and library renderer |
 | `content/series-banners.json` | Approved series, artwork, numbering and reading order | Publisher updates affected series navigation; new series need explicit editorial/design review |
 | `templates/` and original `assets/css/`, `assets/js/` files | Shared presentation and behavior | Shared renderer produces page markup and content-hashed CSS; never hand-edit generated bundles |

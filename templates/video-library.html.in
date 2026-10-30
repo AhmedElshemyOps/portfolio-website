@@ -39,7 +39,7 @@
 <a class="nav-cv" href="/documents/Ahmed-Mahmoud-CV.pdf" download>CV</a>
 </nav>
 </header>
-<main class="wrap" id="main">
+<main class="wrap" id="main" itemscope itemtype="https://schema.org/CollectionPage" itemid="https://ahmedqualityops.com/learn/videos/index.html">
 <section class="hero">
 <p class="eyebrow">Travel &amp; Tourism Operations</p>
 <h1>Watch. Understand. Put it into practice.</h1>
