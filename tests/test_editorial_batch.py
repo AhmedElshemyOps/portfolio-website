@@ -1,5 +1,6 @@
 import json,re,subprocess,sys,unittest
 from pathlib import Path
+from urllib.parse import urljoin
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'scripts'))
 from audit_seo import DOM,schema_nodes
 from render_shared import pages as public_pages
@@ -25,8 +26,8 @@ class EditorialBatchTests(unittest.TestCase):
  def test_collection_items_match_visible_chapter_links(self):
   for entry in MANIFEST['schema_collections']:
    p=ROOT/entry['page'];source=p.read_text();collection=next(n for n in schema_nodes(source)[0] if n.get('@type')=='CollectionPage');self.assertNotIn('headline',collection);items=collection['mainEntity']['itemListElement'];self.assertEqual(len(items),entry['visible_linked_items']);self.assertEqual([x['position'] for x in items],list(range(1,len(items)+1)))
-   visible={n.attrs.get('href') for n in DOM(source).root.all('a')}
-   for item in items:self.assertIn(item['url'].removeprefix('https://ahmedqualityops.com'),visible)
+   visible={urljoin('https://ahmedqualityops.com/'+entry['page'],n.attrs.get('href','')) for n in DOM(source).root.all('a')}
+   for item in items:self.assertIn(item['url'],visible)
  def test_reviewed_scenarios_keep_assumptions_and_property_controls(self):
   controls=json.loads((ROOT/'maintenance/seo/hotel-example-controls.json').read_text())
   for slug in controls:
