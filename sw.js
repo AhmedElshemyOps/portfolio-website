@@ -1,5 +1,5 @@
 /* Public offline reading only. Quotation drafts remain in localStorage. */
-const VERSION = 'ahmed-portfolio-v46-measurement-ownership';
+const VERSION = 'ahmed-portfolio-v47-mobile-tables-font';
 const PREFIX = 'ahmed-portfolio-';
 const POLICIES = {
   pages: { limit: 40, age: 14 * 86400000 },

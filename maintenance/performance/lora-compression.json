@@ -1,0 +1,14 @@
+{
+  "originalBytes": 132188,
+  "compressedBytes": 46852,
+  "savedBytes": 85336,
+  "glyphs": 888,
+  "mappedCharacters": 778,
+  "allGlyphOutlinesIdentical": true,
+  "allAdvanceWidthsIdentical": true,
+  "layoutTablesIdentical": true,
+  "format": "WOFF2",
+  "fonttools": "4.60.2",
+  "brotli": "1.2.1",
+  "sha256": "f1ed95b366a77a8c4ee58920308538fd5a7a39d0d6c4c4004293864178c3a0f8"
+}
