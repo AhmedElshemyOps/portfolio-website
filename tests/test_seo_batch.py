@@ -20,7 +20,7 @@ class SeoBatchTests(unittest.TestCase):
    for href in re.findall(r'href="([^"]+)"',old):
     if '/articles/' in href:self.assertIn(href,new,str(p))
  def test_sitemap_and_atom_are_valid_unique_canonical_outputs(self):
-  sitemap=ET.parse(ROOT/'sitemap.xml').getroot();urls=[n.findtext('{*}loc') for n in sitemap];self.assertEqual(len(urls),len(set(urls)));self.assertEqual(len(urls),173);self.assertFalse(any('/newsletter/' in url for url in urls))
+  sitemap=ET.parse(ROOT/'sitemap.xml').getroot();urls=[n.findtext('{*}loc') for n in sitemap];self.assertEqual(len(urls),len(set(urls)));self.assertEqual(len(urls),173+len(json.loads((ROOT/'content/career-routes.json').read_text())));self.assertFalse(any('/newsletter/' in url for url in urls))
   for url in urls:
    path=url.split('https://ahmedqualityops.com/',1)[1] or 'index.html';s=(ROOT/path).read_text();d=DOM(s).root;robots=next((n.attrs.get('content','') for n in d.all('meta') if n.attrs.get('name')=='robots'),'');self.assertNotIn('noindex',robots)
   feed=ET.parse(ROOT/'feed.xml').getroot();entries=feed.findall('{*}entry');self.assertEqual(len(entries),128);latest=feed.findtext('{*}updated');self.assertTrue(all(n.findtext('{*}updated')<=latest for n in entries))
