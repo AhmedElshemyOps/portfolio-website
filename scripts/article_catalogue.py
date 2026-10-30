@@ -7,7 +7,7 @@ def display_topic(s): return s.replace('Hotel & Serviced Apartment AI','AI for H
 def refresh(ROOT, registry):
  old=json.loads((ROOT/'content/discovery-index.json').read_text())
  def write_json(name,value): (ROOT/'content'/name).write_text(json.dumps(value,ensure_ascii=False,indent=2)+'\n')
- from knowledge_taxonomy import validate
+ from validate_content_registry import validate
  validate(ROOT,registry)
  write_json('article-registry.json',registry)
  write_json('discovery-index.json',[x for x in old if x.get('type') not in ['Article','Series index']]+[dict(x,category=display_topic(x.get('category','')),title=display_topic(x.get('title',''))) for x in registry])
