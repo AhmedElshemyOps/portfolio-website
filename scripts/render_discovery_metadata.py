@@ -79,7 +79,7 @@ def render(source, path, root):
                     for item in entity.get('itemListElement', []):
                         url = item.get('url', '')
                         parsed = urlsplit(url)
-                        if parsed.scheme == 'https' and parsed.netloc == 'ahmedqualityops.com' and parsed.path in ('', '/') and parsed.fragment in ids and '#' + parsed.fragment in jumps and route != 'index.html':
+                        if parsed.scheme == 'https' and parsed.netloc == 'ahmedqualityops.com' and parsed.path in ('', '/') and not parsed.query and parsed.fragment in ids and '#' + parsed.fragment in jumps and route != 'index.html':
                             item['url'] = canonical[0] + '#' + parsed.fragment
                             changed = True
         update(data)

@@ -37,10 +37,10 @@ class DiscoveryMetadata(unittest.TestCase):
  def test_only_demonstrated_collection_fragment_links_are_repaired(self):
   with tempfile.TemporaryDirectory() as tmp:
    root=Path(tmp);p=root/'articles/series/index.html';p.parent.mkdir(parents=True)
-   data={'@type':'CollectionPage','url':BASE+'/articles/series/index.html','mainEntity':{'@type':'ItemList','itemListElement':[{'url':BASE+'#lesson'},{'url':BASE+'#unknown'},{'url':'https://example.com/#lesson'}]}}
+   data={'@type':'CollectionPage','url':BASE+'/articles/series/index.html','mainEntity':{'@type':'ItemList','itemListElement':[{'url':BASE+'#lesson'},{'url':BASE+'#unknown'},{'url':'https://example.com/#lesson'},{'url':BASE+'/?q=topic#lesson'}]}}
    source='<link rel="canonical" href="'+BASE+'/articles/series/index.html"><h2 id="lesson">Lesson</h2><a href="#lesson">Jump</a><script type="application/ld+json">'+json.dumps(data)+'</script>'
    result=render(source,p,root);items=schema_nodes(result)[0][0]['mainEntity']['itemListElement']
-   self.assertEqual(items[0]['url'],BASE+'/articles/series/index.html#lesson');self.assertEqual(items[1]['url'],BASE+'#unknown');self.assertEqual(items[2]['url'],'https://example.com/#lesson')
+   self.assertEqual(items[0]['url'],BASE+'/articles/series/index.html#lesson');self.assertEqual(items[1]['url'],BASE+'#unknown');self.assertEqual(items[2]['url'],'https://example.com/#lesson');self.assertEqual(items[3]['url'],BASE+'/?q=topic#lesson')
    self.assertEqual(render(result,p,root),result)
  def test_all_reviewed_descriptions_and_series_section_targets(self):
   descriptions=load(ROOT);self.assertEqual(len(descriptions),10)
