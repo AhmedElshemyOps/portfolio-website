@@ -40,6 +40,8 @@ def render(source, path, root=ROOT):
         return source
     from bundle_page_styles import unpack, pack
     source = unpack(source)
+    from render_career_routes import render as render_career_routes
+    source = render_career_routes(source, path, root)
     from render_video_library import render as render_video_library
     source = render_video_library(source, path, root)
     from render_article_videos import render as render_article_videos

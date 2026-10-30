@@ -30,7 +30,7 @@ class CalmRolloutTests(unittest.TestCase):
 
     def test_every_page_inherits_the_shared_design(self):
         paths=pages(ROOT)
-        self.assertEqual(len(paths),197)  # Includes 18 approved historical article addresses
+        self.assertEqual(len(paths),197+len(json.loads((ROOT/'content/career-routes.json').read_text())))  # Three additive career routes; historical addresses retained
         for path in paths:
             source=path.read_text()
             body=next(n for n in parse(source).nodes if n['tag']=='body')
