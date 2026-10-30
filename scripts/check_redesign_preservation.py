@@ -100,17 +100,21 @@ def check(data,root=ROOT):
   if old['file']=='templates/footer.html' and footer_change and p.is_file() and footer_before.is_file():
    if digest(footer_before.read_bytes())==old['sha256'] and digest(p.read_bytes())==footer_change['approvedTemplateSha256']:continue
   if old['file']=='sitemap.xml' and p.is_file() and digest(p.read_bytes())!=old['sha256']:
-   # The approved library is additive. Preserve every original sitemap entry,
+   # The approved video library and three career routes are additive. Preserve every original sitemap entry,
    # date and attribute, while allowing XML serializer whitespace to differ.
    import xml.etree.ElementTree as ET
    baseline=root/'docs/calm-redesign/step-5/sitemap-baseline.xml'
    if baseline.is_file() and digest(baseline.read_bytes())==old['sha256']:
     try:
-     current=ET.fromstring(p.read_text());extra=[n for n in current if n.findtext('{*}loc')==BASE+'/learn/videos/index.html']
-     if len(extra)==1 and len(extra[0])==1 and not extra[0].attrib:
+     current=ET.fromstring(p.read_text())
+     approved=['/learn/videos/index.html','/careers/tourism-operations/index.html','/careers/mice-event-coordination/index.html','/careers/tourism-product-support/index.html']
+     valid=True
+     for path in approved:
+      extra=[n for n in current if n.findtext('{*}loc')==BASE+path]
+      if len(extra)!=1 or len(extra[0])!=1 or extra[0].attrib:valid=False;break
       current.remove(extra[0])
-      canonical=lambda text:ET.canonicalize(xml_data=text,strip_text=True)
-      if canonical(ET.tostring(current,encoding='unicode'))==canonical(ET.tostring(ET.fromstring(baseline.read_text()),encoding='unicode')):continue
+     canonical=lambda text:ET.canonicalize(xml_data=text,strip_text=True)
+     if valid and canonical(ET.tostring(current,encoding='unicode'))==canonical(ET.tostring(ET.fromstring(baseline.read_text()),encoding='unicode')):continue
     except ET.ParseError:pass
   if not p.is_file() or digest(p.read_bytes())!=old['sha256']:errors.append({'file':old['file'],'issue':'protected download/footer file changed or missing'})
  return {'passed':not errors,'baselineCommit':data['baselineCommit'],'pagesChecked':len(data['pages']),'articlesChecked':sum(bool(p['articleTokensSha256']) for p in data['pages']),'anchorsProtected':sum(len(p['anchors']) for p in data['pages']),'downloadsChecked':len(data['downloads']),'errors':errors}

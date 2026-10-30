@@ -7,7 +7,11 @@ class PageContractTests(unittest.TestCase):
   policy=json.loads((ROOT/'maintenance/measurement/preservation-contract.json').read_text())
   for relative,old in policy['pages'].items():
    with self.subTest(page=relative):
-    p=ROOT/relative;self.assertTrue(p.is_file());d=DOM(p.read_text()).root
+    p=ROOT/relative;self.assertTrue(p.is_file());source=p.read_text()
+    if relative=='index.html':
+     from render_career_routes import strip_homepage_addition
+     source=strip_homepage_addition(source,ROOT)
+    d=DOM(source).root
     self.assertEqual(hashlib.sha256(d.text().encode()).hexdigest(),old['visibleTextSha256'])
     self.assertEqual([n.attrs.get('href','') for n in d.all('a')],old['allLinkHrefs'])
     self.assertEqual([n.attrs['id'] for n in d.all() if 'id' in n.attrs],old['allIds'])

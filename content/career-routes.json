@@ -1,0 +1,29 @@
+[
+  {
+    "slug": "tourism-operations",
+    "title": "Travel & Tourism Operations",
+    "summary": "Destination delivery, reservations, supplier coordination and the handovers that connect a travel plan to the guest experience.",
+    "experience": [{"company":"Masarra DMC - Miral Experiences","contributions":[0]},{"company":"WebBeds Middle East & Africa","contributions":[1]},{"company":"Oceanair Travels","contributions":[1]}],
+    "projects": ["infradispatch"],
+    "reading": ["/articles/customer-journey-mapping-sop-design/index.html","/articles/lean-thinking-tourism-operations/index.html"],
+    "qualification": "Travel Operations"
+  },
+  {
+    "slug": "mice-event-coordination",
+    "title": "MICE & Event Coordination",
+    "summary": "Airport and hotel representation, guest movements, transport readiness and clear communication across event teams.",
+    "experience": [{"company":"Masarra DMC - Miral Experiences","contributions":[1]},{"company":"Alnatalie Red Sea Tours","contributions":[1]}],
+    "projects": ["infradispatch","infracluster"],
+    "reading": ["/articles/article-mice-arrival-waves-zayed-international-airport/index.html","/articles/article-abu-dhabi-mice-movement-control-room/index.html"],
+    "qualification": "MICE and Sales"
+  },
+  {
+    "slug": "tourism-product-support",
+    "title": "Tourism Product Support",
+    "summary": "Itinerary and quotation preparation, supplier information, controlled documentation and practical support across departments.",
+    "experience": [{"company":"Elmadina Tours","contributions":[0]},{"company":"Masarra DMC - Miral Experiences","contributions":[2]}],
+    "projects": ["infraquote","infrasky"],
+    "reading": ["/series/amsterdam-tourism-product-discovery/index.html","/articles/document-control-version-management-tourism/index.html"],
+    "qualification": "Tour Production"
+  }
+]
