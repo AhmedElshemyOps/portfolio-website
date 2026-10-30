@@ -140,6 +140,11 @@ def render(source, path, root=ROOT):
     source = re.sub(r'(<details\b[^>]*data-reader-toc[^>]*)\sopen(?=[\s>])', r'\1', source)
     from render_reader_enhancements import render as render_reader_enhancements
     source = render_reader_enhancements(source, path, root)
+    # Table controls create a dialog outside the article body at runtime.
+    # Keep their styles independent of the retired article-page stylesheet.
+    source = re.sub(r'<link\b[^>]*href="/assets/css/article-tables\.css[^\"]*"[^>]*>', '', source)
+    if 'article-tables.js' in source and '<table' in source:
+        source = source.replace('</head>', '<link rel="stylesheet" href="/assets/css/article-tables.css"/></head>', 1)
     # Version changed interaction assets so an offline cache cannot serve old controls.
     source = re.sub(r'(/assets/js/(?:discovery|article-reader)\.js)(?:\?[^"\s]*)?(?=")', r'\1?v=20261009-phase2', source)
     source = re.sub(r'(/assets/css/infraquote-bundle\.css)(?:\?[^"\s]*)?(?=")', r'\1?v=20261009-phase2', source)
