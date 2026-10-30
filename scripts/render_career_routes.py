@@ -88,7 +88,8 @@ def render(source,path,root):
     old=next((n for n in nodes if n['attrs'].get('id')=='career-routes'),None)
     if old:source=source[:old['start']]+homepage_section(root)+source[old['end']:]
     else:
-        snapshot=next(n for n in nodes if 'snapshot' in n['attrs'].get('class','').split())
+        snapshot=next((n for n in nodes if 'snapshot' in n['attrs'].get('class','').split()),None)
+        if snapshot is None:return source
         source=source[:snapshot['end']]+homepage_section(root)+source[snapshot['end']:]
     source=re.sub(r'<link\b[^>]*href="/assets/css/career-routes\.css[^\"]*"[^>]*>','',source)
     return source.replace('</head>',STYLE+'</head>',1)

@@ -43,6 +43,10 @@ class CareerRoutes(unittest.TestCase):
         for rel in ['index.html']+['careers/'+r['slug']+'/index.html' for r in entries(ROOT)[0]]:
             p=ROOT/rel;s=p.read_text();self.assertEqual(shared(s,p,ROOT),s,rel)
 
+    def test_header_only_fixture_does_not_require_a_homepage_snapshot(self):
+        source='<html><head></head><body><header class="masthead"></header></body></html>'
+        self.assertEqual(render(source,ROOT/'index.html',ROOT),source)
+
     def test_invalid_fact_reference_is_rejected(self):
         original=Path.read_text
         def changed(path,*a,**kw):
