@@ -5,7 +5,7 @@ canonicals, dates and the approved footer unchanged.
 
 ## One owner for search descriptions
 
-`content/discovery-metadata.json` holds ten reviewed search/sharing descriptions.
+`content/discovery-metadata.json` holds eleven reviewed search/sharing descriptions.
 These are distinct from the visible article summaries in the registry and the
 learning-path introductions. Shared rendering applies the descriptions after
 page-specific rendering so an older project or collection renderer cannot
@@ -34,6 +34,12 @@ The video library uses microdata on its existing collection, nonempty lesson
 groups, titles and destination links. It describes visible lesson lists without
 creating extra elements or claiming that every library card is a video watch
 page. It does not manufacture VideoObject upload dates, ratings or viewing counts.
+
+Bing URL Inspection confirmed the homepage indexed on 30 October and flagged its
+181-character description. The reviewed homepage description follows Bing's
+reported length guidance without changing the visible introduction. Its two logo
+notices concern existing decorative images with empty alternative text; retain
+that accessible treatment rather than add redundant image descriptions.
 
 The SEO audit reuses shared rendering's public-page boundary, excluding internal
 previews and exact plain ownership proof assets. It also excludes test fixtures.

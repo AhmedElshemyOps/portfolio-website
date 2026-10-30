@@ -43,7 +43,7 @@ class DiscoveryMetadata(unittest.TestCase):
    self.assertEqual(items[0]['url'],BASE+'/articles/series/index.html#lesson');self.assertEqual(items[1]['url'],BASE+'#unknown');self.assertEqual(items[2]['url'],'https://example.com/#lesson');self.assertEqual(items[3]['url'],BASE+'/?q=topic#lesson')
    self.assertEqual(render(result,p,root),result)
  def test_all_reviewed_descriptions_and_series_section_targets(self):
-  descriptions=load(ROOT);self.assertEqual(len(descriptions),10)
+  descriptions=load(ROOT);self.assertEqual(len(descriptions),11)
   for route,description in descriptions.items():
    source=(ROOT/route).read_text();d=DOM(source).root
    self.assertEqual([n.attrs['content'] for n in d.all('meta') if n.attrs.get('name')=='description'],[description])

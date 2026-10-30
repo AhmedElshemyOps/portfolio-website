@@ -17,7 +17,7 @@ def load(root):
     if not isinstance(descriptions, dict):
         raise ValueError('Discovery metadata pages must be an object')
     for route, description in descriptions.items():
-        if not re.fullmatch(r'(?:articles|learning|collections|projects|resources)/[a-z0-9]+(?:-[a-z0-9]+)*/index\.html', route):
+        if route != 'index.html' and not re.fullmatch(r'(?:articles|learning|collections|projects|resources)/[a-z0-9]+(?:-[a-z0-9]+)*/index\.html', route):
             raise ValueError('Invalid discovery metadata route: ' + route)
         path = root / route
         if not path.is_file() or not path.resolve().is_relative_to(root.resolve()):
@@ -34,7 +34,8 @@ def render(source, path, root):
     # homepage despite matching an existing section and visible jump on this page.
     doc = DOM(source).root
     canonical = [n.attrs.get('href') for n in doc.all('link') if n.attrs.get('rel') == 'canonical']
-    if len(canonical) != 1 or canonical[0] != BASE + '/' + route:
+    expected_canonical = BASE + ('/' if route == 'index.html' else '/' + route)
+    if len(canonical) != 1 or canonical[0] != expected_canonical:
         if description:
             raise ValueError('Discovery canonical mismatch: ' + route)
         return source
@@ -68,7 +69,7 @@ def render(source, path, root):
             elif isinstance(value, dict):
                 if '@graph' in value:
                     update(value['@graph'])
-                if description and value.get('@type') in ('Article', 'WebPage', 'CollectionPage') and (value.get('url') == canonical[0] or value.get('mainEntityOfPage') == canonical[0]):
+                if description and value.get('@type') in ('Article', 'WebPage', 'CollectionPage', 'WebSite') and (value.get('url') == canonical[0] or value.get('mainEntityOfPage') == canonical[0]):
                     if value.get('description') != description:
                         value['description'] = description
                         changed = True
