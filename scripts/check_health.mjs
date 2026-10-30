@@ -6,6 +6,7 @@ import { spawnSync } from 'node:child_process';
 const root = fileURLToPath(new URL('../', import.meta.url));
 const python = process.env.PORTFOLIO_PYTHON || 'python3';
 const checks = [
+  ['Content publication preflight', python, ['scripts/validate_content_registry.py']],
   ['Article and website tests', python, ['-m', 'unittest', 'discover', '-s', 'tests', '-p', 'test_*.py']],
   ...readdirSync(new URL('../tests/', import.meta.url))
     .filter(name => /^test_.*\.(cjs|mjs)$/.test(name)).sort()

@@ -37,3 +37,11 @@ Choose exactly one `primaryCategory` and one of its `subcategory` values from `c
 The local publication transaction validates these fields, stable URLs, approved series and file existence. It rolls back generated outputs when validation fails. The registry supplies category counts, filters, article cards and connected reading. Never edit derived JSON files as a substitute for editing `content/article-registry.json`.
 
 After approved metadata edits, run `python3 scripts/sync_catalogue.py`. This now refreshes consumers from the registry without rerunning historical article-body migrations. Run the health checks and review changes before any separately authorized publication. Private RAG and prompt-injection drafts stay outside the public repository.
+
+## Release preflight
+
+Run `pnpm run check:content` for a read-only metadata, path, canonical and taxonomy
+check. Catalogue refresh uses the same check before writing consumers. Follow the
+[ordered publishing and source-ownership guide](publishing-integrity.md) for the
+full workflow. Run `pnpm run check:health` before a release; do not replay old
+editorial migration scripts as routine publishing steps.
