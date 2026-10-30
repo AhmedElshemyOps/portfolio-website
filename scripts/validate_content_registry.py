@@ -82,7 +82,10 @@ def main():
     parser.parse_args()
     try:
         registry = json.loads((ROOT / 'content/article-registry.json').read_text())
-        print(f'Content preflight passed: {validate(ROOT, registry)} registered destinations; no files changed.')
+        count = validate(ROOT, registry)
+        from render_discovery_metadata import load
+        descriptions = load(ROOT)
+        print(f'Content preflight passed: {count} registered destinations, {len(descriptions)} reviewed search descriptions; no files changed.')
     except (ValueError, OSError, KeyError, TypeError) as error:
         parser.exit(1, f'Content preflight failed: {error}\n')
 

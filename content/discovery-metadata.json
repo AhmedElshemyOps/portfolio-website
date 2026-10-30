@@ -1,0 +1,17 @@
+{
+  "reviewedOn": "2026-10-30",
+  "scope": "Search and sharing descriptions only. Preserve titles, article text, URLs, canonicals, anchors, dates and visible navigation.",
+  "pages": {
+    "articles/tourism-prompting-framework/index.html": "Learn prompt engineering for tourism teams: define the task, supply verified context, set output boundaries and review AI work before operational use.",
+    "learning/ai-for-tourism/index.html": "Follow 11 practical guides to AI for travel and tourism, from prompt engineering and guest-facing work to DMC operations and responsible use.",
+    "learning/tourism-operations/index.html": "Follow seven tourism operations guides covering DMC systems, guest journeys, team roles, guide quality, dispatch and service improvement.",
+    "learning/mice-operations/index.html": "Explore five MICE and event operations guides on Abu Dhabi airport transfers, hotel departures, conference arrivals and service recovery.",
+    "collections/tourism-professionals/index.html": "Explore practical tourism guides on guest experience, destination operations, MICE events, tour quotations and responsible AI for tourism teams.",
+    "articles/tourism-operations-kpis-control-dashboards/index.html": "Build tourism operations KPIs and control dashboards that connect service quality, guest experience, risk and performance to clear management decisions.",
+    "articles/tourism-sop-training-competency-adoption/index.html": "Put tourism SOPs into practice through training, competency checks, clear authorization and performance review during live operations.",
+    "projects/infraquote/index.html": "Explore InfraQuote, a tour quotation portfolio demo for Amsterdam and Abu Dhabi with supplier costing, margin review and client PDF outputs.",
+    "projects/infradispatch/index.html": "Explore InfraDispatch, a tourism dispatch portfolio demo connecting movement details, passenger capacity, access checks and team handovers.",
+    "resources/recruiter-summary/index.html": "Review Ahmed Mahmoud's travel and tourism operations experience, product workflow projects, languages and qualifications in a printable recruiter summary.",
+    "index.html": "Ahmed Mahmoud: travel and tourism operations professional in the Netherlands, with DMC experience, practical guides and inspectable product demos."
+  }
+}

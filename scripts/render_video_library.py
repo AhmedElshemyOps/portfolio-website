@@ -24,7 +24,7 @@ def render(source, path, root):
         if m:
             figure_id = 'video-' + vid
             destination = '/' + m['article'] + '#' + figure_id
-            content = '<p class="meta">Read and watch in context</p><p>'+escape(m['rationale'])+'</p><a class="button" href="'+destination+'">Open the article and video →</a>'
+            content = '<p class="meta">Read and watch in context</p><p>'+escape(m['rationale'])+'</p><a itemprop="url" class="button" href="'+destination+'">Open the article and video →</a>'
             placement = 'article'
         elif status == 'available':
             destination = '/learn/videos/index.html#video-' + vid
@@ -35,12 +35,12 @@ def render(source, path, root):
             destination = direct
             placement = 'direct-link'
             content = '<p class="meta">Watch on YouTube</p><p>'+escape('YouTube currently does not permit an embedded player for this lesson.' if status == 'unavailable' else 'Embedding availability could not be confirmed; use the direct video link.')+'</p>'
-        cards[placement].append('<article class="card video-card" id="video-'+vid+'"><h3>'+title+'</h3>'+content+'<a class="video-direct" href="'+direct+'" aria-label="Watch on YouTube: '+title+'">Watch on YouTube ↗</a></article>')
+        cards[placement].append('<article class="card video-card" id="video-'+vid+'" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><h3 itemprop="name">'+title+'</h3>'+content+'<a '+('itemprop="url" ' if not m else '')+'class="video-direct" href="'+direct+'" aria-label="Watch on YouTube: '+title+'">Watch on YouTube ↗</a></article>')
     source = (root / 'index.html').read_text()
     footer = next(n for n in parse(source).nodes if 'platform-footer' in n['attrs'].get('class','').split())
     footer_html = source[footer['start']:footer['end']]
     groups = [('article', 'Watch alongside a guide'), ('library', 'Explore companion lessons'), ('direct-link', 'Watch directly on YouTube')]
-    sections = ''.join('<section id="'+key+'" aria-labelledby="'+key+'-title"><h2 id="'+key+'-title">'+label+'</h2><div class="video-grid">'+''.join(cards[key])+'</div></section>' for key,label in groups)
+    sections = ''.join('<section id="'+key+'" aria-labelledby="'+key+'-title"'+(' itemprop="mainEntity" itemscope itemtype="https://schema.org/ItemList"' if cards[key] else '')+'><h2 id="'+key+'-title"'+(' itemprop="name"' if cards[key] else '')+'>'+label+'</h2><div class="video-grid">'+''.join(cards[key])+'</div></section>' for key,label in groups)
     jump = '<nav class="video-jump" aria-label="Browse video lessons">'+''.join('<a href="#'+key+'">'+label+'</a>' for key,label in groups)+'</nav>'
     page = (root / 'templates/video-library.html.in').read_text()
     checked=date.fromisoformat(inventory['inventoryCheckedOn'])

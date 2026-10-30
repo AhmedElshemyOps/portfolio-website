@@ -15,7 +15,7 @@ from update_site_contact import apply as update_contact
 
 class SharedComponents(unittest.TestCase):
     def test_homepage_search_assets_survive_rendering_without_duplicates(self):
-        source = '<html><head><link rel="stylesheet" href="/assets/css/homepage-editorial.css"/></head><body><header class="masthead"></header><main>Unchanged</main></body></html>'
+        source = '<html><head><link rel="canonical" href="https://ahmedqualityops.com/"><meta name="description" content="Fixture description"><link rel="stylesheet" href="/assets/css/homepage-editorial.css"/></head><body><header class="masthead"></header><main>Unchanged</main></body></html>'
         result = render(source, ROOT / 'index.html')
         self.assertEqual(result.count('/assets/js/discovery.js'), 1)
         self.assertEqual(result.count('/assets/css/homepage-search.css'), 1)
@@ -99,7 +99,7 @@ class SharedComponents(unittest.TestCase):
             self.assertIn(footer,source,str(path))
 
     def test_homepage_has_only_one_active_navigation_link(self):
-        source = '<html><head></head><body><header class="wrap editorial-masthead"></header><main>Unchanged</main><footer class="wrap footer"></footer></body></html>'
+        source = '<html><head><link rel="canonical" href="https://ahmedqualityops.com/"><meta name="description" content="Fixture description"></head><body><header class="wrap editorial-masthead"></header><main>Unchanged</main><footer class="wrap footer"></footer></body></html>'
         result = render(source, ROOT / 'index.html')
         self.assertEqual(result.count('aria-current="page"'), 1)
         self.assertIn('id="static-primary-navigation"', result)

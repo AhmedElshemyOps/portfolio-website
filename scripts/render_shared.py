@@ -165,7 +165,9 @@ def render(source, path, root=ROOT):
     source = render_projects(source, path, root) if path.relative_to(root).as_posix() in {"index.html", "projects/index.html"} and 'class="project' in source else source
     from render_series_banners import render as render_series_banners
     from render_calm_design import render as render_calm_design
-    return pack(render_calm_design(render_series_banners(render_library_navigation(source, path, root), path, root),path,root),path,root)
+    from render_discovery_metadata import render as render_discovery_metadata
+    source = render_calm_design(render_series_banners(render_library_navigation(source, path, root), path, root),path,root)
+    return pack(render_discovery_metadata(source, path, root),path,root)
 
 
 def apply(root=ROOT, check=False):
