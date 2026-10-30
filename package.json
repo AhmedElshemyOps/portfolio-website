@@ -10,7 +10,8 @@
     "test:infraquote": "node tests/test_infraquote_calculations.cjs && node tests/test_infraquote_workspace.cjs && node tests/test_infraquote_pdf.cjs && node tests/test_infraquote_amsterdam.cjs",
     "test:infraquote-backend": "node tests/test_infraquote_backend.mjs",
     "check:redesign": "python3 scripts/check_redesign_preservation.py",
-    "check:search": "python3 scripts/validate_search_release.py"
+    "check:search": "python3 scripts/validate_search_release.py",
+    "check:videos": "python3 scripts/check_article_videos.py"
   },
   "devDependencies": {
     "@electric-sql/pglite": "0.5.8"
