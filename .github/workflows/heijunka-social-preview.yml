@@ -1,0 +1,49 @@
+name: Generate Heijunka LinkedIn social image
+on:
+  push:
+    paths:
+      - '.github/workflows/heijunka-social-preview.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Install SVG rasterizer
+        run: python -m pip install --quiet cairosvg pillow
+      - name: Create social PNG and update Open Graph metadata
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import cairosvg
+          from PIL import Image
+          from io import BytesIO
+          source = Path('assets/series-banners/heijunka-tourism-banner.svg')
+          target = Path('assets/series-banners/heijunka-tourism-social-1200x630.png')
+          data = cairosvg.svg2png(bytestring=source.read_bytes(), output_width=1200, output_height=330)
+          banner = Image.open(BytesIO(data)).convert('RGB')
+          canvas = Image.new('RGB', (1200,630), '#071e38')
+          canvas.paste(banner, (0,150))
+          canvas.save(target, 'PNG', optimize=True)
+          html_path = Path('articles/heijunka-tourism-operations/index.html')
+          html = html_path.read_text()
+          old = 'https://ahmedqualityops.com/assets/series-banners/heijunka-tourism-banner.svg'
+          new = 'https://ahmedqualityops.com/assets/series-banners/heijunka-tourism-social-1200x630.png'
+          assert html.count(old) == 2, 'Unexpected social image metadata'
+          html = html.replace(old,new)
+          html = html.replace('<meta property="og:image:type" content="image/svg+xml"/>', '<meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image:type" content="image/png"/>')
+          html_path.write_text(html)
+          assert target.exists() and Image.open(target).size == (1200,630)
+          PY
+      - name: Commit generated preview and metadata
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/series-banners/heijunka-tourism-social-1200x630.png articles/heijunka-tourism-operations/index.html
+          git diff --cached --check
+          git commit -m "Fix Heijunka LinkedIn preview with 1200x630 PNG and OG metadata"
+          git push
