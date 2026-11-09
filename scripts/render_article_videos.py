@@ -9,14 +9,24 @@ def render(source,path,root):
  if not manifest.exists():return source
  matches=[m for m in json.loads(manifest.read_text()) if m['article']==relative]
  if not matches:return source
+ inventory=root/'content/youtube-videos.json'
+ videos={v['videoId']:v for v in json.loads(inventory.read_text()).get('videos',[])} if inventory.exists() else {}
  def text(value):return ' '.join(unescape(re.sub('<[^>]+>','',value)).replace('#','').split())
  for m in matches:
   vid=m['videoId']
   if not re.fullmatch('[A-Za-z0-9_-]{11}',vid):raise ValueError('Invalid YouTube video ID')
-  if 'data-youtube-id="'+vid+'"' in source:
-   if 'id="video-'+vid+'"' not in source:
-    source=source.replace('data-youtube-id="'+vid+'"','id="video-'+vid+'" data-youtube-id="'+vid+'"',1)
+  existing=re.search(r'<iframe\b(?=[^>]*\bsrc=["\']https://(?:www\.)?(?:youtube-nocookie|youtube)\.com/embed/'+re.escape(vid)+r'["\'])[^>]*>',source)
+  if existing:
+   tag=existing.group(0); marked=tag
+   if not re.search(r'\bid=["\']video-'+re.escape(vid)+r'["\']',marked):marked=marked.replace('<iframe','<iframe id="video-'+vid+'"',1)
+   if not re.search(r'\bdata-youtube-id=["\']'+re.escape(vid)+r'["\']',marked):marked=marked.replace('<iframe','<iframe data-youtube-id="'+vid+'"',1)
+   source=source.replace(tag,marked,1)
    continue
+  if 'data-youtube-id="'+vid+'"' in source:
+   continue
+  video=videos.get(vid)
+  if not video or video.get('privacyStatus')!='public' or video.get('embedStatus')!='available':
+   raise ValueError('New article embeds require a public video with confirmed embedding permission: '+vid)
   nodes=parse(source).nodes
   paras=[n for n in nodes if n['tag']=='p' and text(source[n['start']:n['end']])==m['afterParagraph']]
   if len(paras)!=1:raise ValueError('Video paragraph requires editorial review: '+relative+' '+vid)

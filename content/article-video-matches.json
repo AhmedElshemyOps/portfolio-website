@@ -251,5 +251,82 @@
     "evidence": "Public description and exact article paragraph; illustrative cross-context explanations are labelled. No full transcript audit.",
     "reviewedOn": "2026-10-28",
     "videoFormat": "short"
+  },
+  {
+    "videoId": "B_k7xVd_7V8",
+    "title": "Heijunka Explained |The Japanese Method for Balancing Workloads (DMC Example) #continuousimprovement",
+    "article": "articles/heijunka-tourism-operations/index.html",
+    "section": "Watch the lesson: Heijunka explained with a DMC example",
+    "afterParagraph": "Instead, you level the eligible preparation work surrounding those events.",
+    "rationale": "This DMC example explains workload volume and mix leveling beside the article's Heijunka explanation.",
+    "evidence": "Existing public article embed; placement and title read from repository HTML and inventory.",
+    "reviewedOn": "2026-11-09",
+    "videoFormat": "short"
+  },
+  {
+    "videoId": "XvlukNHgkT8",
+    "title": "Yamazumi Chart Explained | Balance Work in a DMC Excursion Team",
+    "article": "articles/heijunka-tourism-operations/index.html",
+    "section": "Heijunka is not Yamazumi",
+    "afterParagraph": "The strongest improvement may use both tools together.",
+    "rationale": "The DMC Yamazumi lesson supports the article's explanation of how workload balancing and work leveling complement each other.",
+    "evidence": "Existing public article embed; placement and title read from repository HTML.",
+    "reviewedOn": "2026-11-09",
+    "videoFormat": "short"
+  },
+  {
+    "videoId": "XvlukNHgkT8",
+    "title": "Yamazumi Chart Explained | Balance Work in a DMC Excursion Team",
+    "article": "articles/yamazumi-chart-tourism-operations/index.html",
+    "section": "Watch the Yamazumi lesson",
+    "afterParagraph": "For the DMC example, the line is a 55-minute workload planning limit within a 60-minute preparation window, with five minutes reserved for minor disruptions. It is not takt time.",
+    "rationale": "The video introduces the same stacked chart, workload limit and DMC excursion-team example explained in this article.",
+    "evidence": "Existing public article embed; placement and title read from repository HTML.",
+    "reviewedOn": "2026-11-09",
+    "videoFormat": "short"
+  },
+  {
+    "videoId": "Gv0fWxSZvEU",
+    "title": "Lean Management Fixes Tour Waste in 5 Minutes",
+    "article": "articles/heijunka-tourism-operations/index.html",
+    "section": "Understanding Muda, Mura and Muri",
+    "afterParagraph": "The purpose of analysis is to distinguish preventable variation from genuine demand.",
+    "rationale": "This tourism waste lesson accompanies the article's discussion of Muda and the interaction between waste, unevenness and overburden.",
+    "evidence": "Existing public article embed; placement and title read from repository HTML.",
+    "reviewedOn": "2026-11-09",
+    "videoFormat": "long"
+  },
+  {
+    "videoId": "bfQ-9PctjKA",
+    "title": "Can You Dispatch 600 Cruise Passengers in 2 Hours? Takt Time Explained #TaktTime #TourismOperations",
+    "article": "articles/article-abu-dhabi-mice-movement-control-room/index.html",
+    "section": "Do not manage 500 delegates as one group",
+    "afterParagraph": "The delegates must be divided into smaller, visible and manageable movement cells.",
+    "rationale": "A cruise shore-excursion example shows how to think about system-wide dispatch pace for a large group; its rate is not an individual service-speed target.",
+    "evidence": "Public video description and article paragraph; the example is a related group-movement application.",
+    "reviewedOn": "2026-11-09",
+    "videoFormat": "long"
+  },
+  {
+    "videoId": "De_ZCkC9cGk",
+    "title": "Why your departments are clashing (and how to stop it) 🛑 #management #leadership #team",
+    "article": "articles/tourism-operational-excellence-management-system/index.html",
+    "section": "Connect strategy to operational capability",
+    "afterParagraph": "A management system connects purpose, customer and stakeholder value, leadership, governance, processes, people, partners, information, technology, risk, documented controls, evidence, measurement, assurance, and improvement. Documents are one enabling layer, not the system itself. Maturity is capability demonstrated in operation, not a score based on self-description. Evidence should show deployment across shifts, services, locations, and partners; stable results; learning; integration; and leadership decisions—not merely the existence of policies. Integration means that strategy, customer promises, risk, capacity, supplier governance, SOPs, competence, dashboards, audits, CAPA, and investment decisions use consistent definitions and feedback. Parallel initiatives create reporting activity without operational coherence. Excellence is contextual. A small specialist operator and a multi-destination DMC need different scale, technology, and governance, but both can create clear ownership, proportionate control, honest evidence, and systematic learning.",
+    "rationale": "The Hoshin Kanri lesson explains how to align organizational priorities with daily team actions, matching the article's strategy-to-capability connection.",
+    "evidence": "Public video description and article paragraph; no full transcript audit.",
+    "reviewedOn": "2026-11-09",
+    "videoFormat": "short"
+  },
+  {
+    "videoId": "AA676Jb4ORs",
+    "title": "What Do Lean Six Sigma Belts Actually Do? A 60-Second #leansixsigmatraining #leansixsigma #sixsigma",
+    "article": "articles/hotel-lean-six-sigma-ai-toolkit/index.html",
+    "section": "The Lean Six Sigma HOTEL model",
+    "afterParagraph": "Who sponsors the project? Who owns the process? Who provides subject-matter expertise? Who reviews statistics? Who validates financial benefits?",
+    "rationale": "This overview of typical belt roles supports the article's project-team role questions; responsibilities and certification rules vary by organization.",
+    "evidence": "Public video description and article paragraph; no full transcript audit.",
+    "reviewedOn": "2026-11-09",
+    "videoFormat": "short"
   }
 ]

@@ -399,6 +399,31 @@
       "embedStatus": "available",
       "embedReason": "Embedding allowed in public player metadata.",
       "embedCheckedOn": "2026-10-28"
+    },
+    {
+      "videoId": "XvlukNHgkT8",
+      "title": "Yamazumi Chart Explained | Balance Work in a DMC Excursion Team",
+      "privacyStatus": "unknown",
+      "videoType": "unknown",
+      "description": "",
+      "embedAllowedAtOriginalReview": null,
+      "evidence": "Video ID and title found in public article iframe markup; YouTube watch-page metadata was not retrievable during this audit.",
+      "embedStatus": "unknown",
+      "embedReason": "Public article markup contains the player; current YouTube availability and privacy status were not rechecked.",
+      "embedCheckedOn": null
+    },
+    {
+      "videoId": "Gv0fWxSZvEU",
+      "title": "Lean Management Fixes Tour Waste in 5 Minutes",
+      "privacyStatus": "unknown",
+      "videoType": "unknown",
+      "description": "",
+      "embedAllowedAtOriginalReview": null,
+      "evidence": "Video ID and title found in public article iframe markup; YouTube watch-page metadata was not retrievable during this audit.",
+      "embedStatus": "unknown",
+      "embedReason": "Public article markup contains the player; current YouTube availability and privacy status were not rechecked.",
+      "embedCheckedOn": null
     }
-  ]
+  ],
+  "supplementalAuditCheckedOn": "2026-11-09"
 }
