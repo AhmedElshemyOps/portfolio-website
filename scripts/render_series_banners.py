@@ -63,7 +63,9 @@ def render(source,path,root=ROOT,manifest_data=None):
    if item.get('@type') in ('Article','CollectionPage'):item['image']=BASE+design['master']
   return m[1]+json.dumps(obj,ensure_ascii=False,separators=(',',':'))+m[3]
  source=re.sub(r'(<script\b[^>]*type="application/ld\+json"[^>]*>)(.*?)(</script>)',schema,source,flags=re.S)
- return pack(source,path,root) if was_bundled else source
+ source = pack(source,path,root) if was_bundled else source
+ from build_field_atlas import STYLE as ATLAS_STYLE, stylesheet
+ return stylesheet(source) if ATLAS_STYLE in source else source
 
 def apply(root=ROOT,check=False):
  data=json.loads((root/'content/series-banners.json').read_text());changed=[]

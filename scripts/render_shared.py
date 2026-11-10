@@ -169,7 +169,9 @@ def render(source, path, root=ROOT):
     from render_calm_design import render as render_calm_design
     from render_discovery_metadata import render as render_discovery_metadata
     source = render_calm_design(render_series_banners(render_library_navigation(source, path, root), path, root),path,root)
-    return pack(render_discovery_metadata(source, path, root),path,root)
+    source = pack(render_discovery_metadata(source, path, root), path, root)
+    from build_field_atlas import STYLE as ATLAS_STYLE, stylesheet
+    return stylesheet(source) if ATLAS_STYLE in source else source
 
 
 def apply(root=ROOT, check=False):

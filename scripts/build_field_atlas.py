@@ -29,8 +29,19 @@ def without_slot(source, name):
     return re.sub(re.escape(opening) + '.*?' + re.escape(closing) + r'\n?', '', source, flags=re.S)
 
 
+def restore_reader_slot(source):
+    opening, closing = SLOT.format('connections'), SLOT.format('/connections')
+    if opening not in source:
+        return source
+    start = source.index(opening) + len(opening)
+    body = source[start:source.index(closing, start)].strip('\n')
+    source = without_slot(source, 'connections')
+    article = next(n for n in parse(source).nodes if 'article-body' in n['attrs'].get('class', '').split())
+    return slot(source, 'connections', body, article['end'])
+
+
 def stylesheet(source):
-    return source if STYLE in source else source.replace('</head>', STYLE + '\n</head>', 1)
+    return source.replace(STYLE + '\n', '').replace(STYLE, '').replace('</head>', STYLE + '\n</head>', 1)
 
 
 def link(label, path, cls=''):
@@ -244,8 +255,11 @@ def build(root, check=False):
     for project in json.loads((root / 'content/projects.json').read_text()):
         path = root / project['caseStudy'].lstrip('/')
         source = stylesheet(path.read_text(encoding='utf-8'))
-        at = source.index('</section>', source.index('<main')) + len('</section>')
-        outputs[path] = slot(source, 'project', project_panel(project), at)
+        source = without_slot(source, 'project')
+        nodes = parse(source).nodes
+        main = next(n for n in nodes if n['tag'] == 'main')
+        intro = next(n for n in nodes if n['tag'] == 'section' and n['parent'] is main)
+        outputs[path] = slot(source, 'project', project_panel(project), intro['end'])
     drift = []
     for path, source in outputs.items():
         if path.read_text(encoding='utf-8') != source:
