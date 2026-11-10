@@ -8,6 +8,7 @@ from datetime import date
 from html import escape
 import json, math, re
 from pathlib import Path
+from string import Template
 from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -84,7 +85,14 @@ def page(meta,text):
     styles = ''.join('<link rel="stylesheet" href="/assets/css/'+name+'.css"/>' for name in ('launch-pages','discovery','article-field-manual'))
     scripts = ''.join('<script defer src="/assets/js/'+name+'.js"></script>' for name in ('site-config','analytics','discovery','saved-reading','article-reader'))
     toc = ''.join('<li><a href="#'+ident+'">'+e(title)+'</a></li>' for ident,title in headings)
-    html = f'''<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>{e(meta['title'])} | Ahmed Mahmoud</title><meta name="description" content="{e(meta['description'],quote=True)}"/><link rel="canonical" href="{BASE+url}"/><meta property="og:title" content="{e(meta['title'],quote=True)}"/><meta property="og:description" content="{e(meta['description'],quote=True)}"/><meta property="og:url" content="{BASE+url}"/><meta property="og:type" content="article"/>{styles}{scripts}<script type="application/ld+json">{schema_json}</script></head><body class="article-reader-page field-manual">{MARKER}<a class="skip" href="#article">Skip to article</a><header class="masthead"></header><main class="article-page" id="article" tabindex="-1"><header class="article-page-header"><span class="eyebrow">{e(meta['topic'])} · Field guide</span><h1>{e(meta['title'])}</h1><p>{e(meta['description'])}</p><p>{minutes} min read · Published {e(meta['published'])} · Updated {e(meta['updated'])}</p></header><div class="article-reader-layout"><aside class="article-toc"><details data-reader-toc><summary>On this page</summary><ol>{toc}</ol></details></aside><div class="article-reading-column"><div class="article-topline"><div class="reader-utilities"><button type="button" data-reader-font="decrease" aria-label="Decrease text size">A−</button><button type="button" data-reader-font="increase" aria-label="Increase text size">A+</button><button type="button" data-reader-theme aria-pressed="false">Dark reading</button><button type="button" data-reader-contrast aria-pressed="false">High contrast</button></div></div><article class="article-body">{body}</article><p><a href="/knowledge/index.html">Explore the Knowledge Library</a></p></div></div></main><footer class="platform-footer"></footer></body></html>'''
+    template = Template((ROOT / 'templates/finished-article-reader.html.in').read_text(encoding='utf-8').removesuffix('\n'))
+    html = template.substitute(
+        title=e(meta['title']), title_attr=e(meta['title'], quote=True),
+        description=e(meta['description']), description_attr=e(meta['description'], quote=True),
+        canonical=BASE+url, styles=styles, scripts=scripts, schema_json=schema_json,
+        marker=MARKER, topic=e(meta['topic']), minutes=minutes,
+        published=e(meta['published']), updated=e(meta['updated']), toc=toc, body=body,
+    )
     return html, dict(id=meta['slug'],title=meta['title'],url=url,description=meta['description'],category=meta['topic'],pillar=meta['topic'],series=meta.get('series',meta['topic']),type='Article',contentType='Field guide',readingTime=minutes,wordCount=len(text.split()),headings=[x[1] for x in headings],tags=meta.get('tags',[]),learningPaths=[],updated=meta['updated'])
 
 def publish(root,meta,text,replace=False):
