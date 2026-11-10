@@ -9030,5 +9030,21 @@
     ],
     "classificationRationale": "Track B explains the operating principles, controls, metrics and management decisions. Track C provides governed AI prompts to analyse, document, audit and improve the same work. Each B article links to its most relevant C toolkit, and C pages can point readers back to the management method.",
     "seriesKind": "Series overview"
+  },
+  {
+    "id": "heijunka-tourism-operations",
+    "title": "Heijunka: How to Handle Peak Tourism Demand Without Overloading Your Team",
+    "type": "Article",
+    "description": "Learn Heijunka workload leveling for tourism with a DMC case study, vertical charts, a leveling board, a YouTube lesson and three copyable AI master prompts.",
+    "url": "/articles/heijunka-tourism-operations/index.html",
+    "tags": []
+  },
+  {
+    "id": "yamazumi-chart-tourism-operations",
+    "title": "Yamazumi Chart for Tourism Operations",
+    "type": "Article",
+    "description": "Learn Yamazumi charts, Muda, Mura and Muri with DMC workload examples, responsive charts, AI master prompts and a controlled Lean pilot.",
+    "url": "/articles/yamazumi-chart-tourism-operations/index.html",
+    "tags": []
   }
 ]

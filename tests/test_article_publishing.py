@@ -32,6 +32,12 @@ class ArticlePublishing(unittest.TestCase):
    self.assertIn('href="/articles/finished-text-test/index.html"', (root/'articles/amsterdam-product-discovery-12-product-analytics-scale-decision/index.html').read_text())
    for name in ('article-registry.json','discovery-index.json','articles.json','article-stats.json'):
     self.assertIn('finished-text-test',(root/'content'/name).read_text())
+   from article_catalogue import UNCATEGORIZED_GUIDES
+   search=json.loads((root/'content/discovery-index.json').read_text())
+   for route in UNCATEGORIZED_GUIDES:
+    matches=[entry for entry in search if entry['url']==route]
+    self.assertEqual(len(matches),1)
+    self.assertNotIn('primaryCategory',matches[0])
    for name in ('knowledge/index.html','index.html','sitemap.xml','feed.xml'):
     self.assertIn('/articles/finished-text-test/index.html',(root/name).read_text())
    with self.assertRaises(ValueError):publish(root,self.meta,self.text)
