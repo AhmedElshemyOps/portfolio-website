@@ -19,7 +19,8 @@ def render(source,path,root):
   if existing:
    tag=existing.group(0); marked=tag
    marked=re.sub(r'\s+id=["\']video-'+re.escape(vid)+r'["\']','',marked)
-   if not re.search(r'\bdata-youtube-id=["\']'+re.escape(vid)+r'["\']',marked):marked=marked.replace('<iframe','<iframe data-youtube-id="'+vid+'"',1)
+   marked=re.sub(r'\s+data-youtube-id=["\']'+re.escape(vid)+r'["\']','',marked)
+   marked=re.sub(r'\s+allow=["\']([^"\']*)["\']',lambda a:' allow="'+'; '.join(token.strip() for token in a.group(1).split(';') if token.strip().lower()!='autoplay')+'"',marked)
    source=source.replace(tag,marked,1)
    nodes=parse(source).nodes
    frame=next((n for n in nodes if n['tag']=='iframe' and '/embed/'+vid in n['attrs'].get('src','')),None)
