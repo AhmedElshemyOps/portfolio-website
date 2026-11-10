@@ -2,10 +2,23 @@
 
 | Phase | Status |
 | --- | --- |
-| 00 Discovery and baseline | Ready for Review. Source and live route evidence collected. Mobile baseline screenshots, field metrics and account-side checks remain open. |
-| 01 Three visual concepts | Ready for Review. A Editorial Knowledge Journal, B Operations Intelligence Hub, C Expert Portfolio & Academy. Design approval pending. |
-| 02–15 | Not Started. Execute individually and in order under the master plan. |
-| 16 Controlled production release | Not Started. Explicit authorization required. |
-| 17 Analytics, AdSense and continual improvement | Not Started. Activation decisions remain separate. |
+| 00 Discovery, repository audit, baseline and inventories | Existing audit retained. Mobile baseline, field metrics and account-side checks remain open. |
+| 01 Three complete visual design concepts | Knowledge Garden direction selected conditionally. See [decision](PHASE_01_DECISION.md). |
+| 02 Selected design system and information architecture | Planning package ready for Gate 2 review. [Review and decisions](PHASE_02_REVIEW.md). |
+| 03 Reusable article publishing architecture | Not started. Follow V3.0 phase order and approval conditions. |
+| 04 Article sharing and social preview system | Not started. Follow V3.0 phase order and approval conditions. |
+| 05 Mobile-first reading and navigation | Not started. Follow V3.0 phase order and approval conditions. |
+| 06 Image and digital asset optimization | Not started. Follow V3.0 phase order and approval conditions. |
+| 07 Four-project preservation, redesign and code quality | Not started. Follow V3.0 phase order and approval conditions. |
+| 08 Knowledge library, taxonomy, series and search | Not started. Follow V3.0 phase order and approval conditions. |
+| 09 YouTube and article integration | Not started. Follow V3.0 phase order and approval conditions. |
+| 10 Technical SEO, GEO and content discovery | Not started. Follow V3.0 phase order and approval conditions. |
+| 11 ITIL 4 service management governance | Not started. Follow V3.0 phase order and approval conditions. |
+| 12 Performance, accessibility, privacy and security | Not started. Follow V3.0 phase order and approval conditions. |
+| 13 Automated testing and regression verification | Not started. Follow V3.0 phase order and approval conditions. |
+| 14 Documentation and future publishing handover | Not started. Follow V3.0 phase order and approval conditions. |
+| 15 Final acceptance and release readiness | Not started. Follow V3.0 phase order and approval conditions. |
+| 16 Controlled production release after explicit approval | Not started. Gate 4 and explicit deployment authorization required. |
+| 17 Analytics, AdSense optimization and continual improvement | Not started. Measurement and monetization activation approvals remain separate. |
 
-The full phase sequence and gates are in Sections C and V of the [master plan](MASTER_PLAN.md).
+The governing sequence and gates are in Sections C and V of the [master plan](MASTER_PLAN.md).
