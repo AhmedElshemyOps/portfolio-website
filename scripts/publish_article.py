@@ -95,8 +95,15 @@ def page(meta,text):
     )
     return html, dict(id=meta['slug'],title=meta['title'],url=url,description=meta['description'],category=meta['topic'],pillar=meta['topic'],series=meta.get('series',meta['topic']),type='Article',contentType='Field guide',readingTime=minutes,wordCount=len(text.split()),headings=[x[1] for x in headings],tags=meta.get('tags',[]),learningPaths=[],updated=meta['updated'])
 
+def with_inactive_ad_slot(source):
+    """A managed-shell hook for separately approved future monetization."""
+    slot = '<aside hidden data-article-ad-slot="inactive"></aside>'
+    return source.replace('</article>', '</article>' + slot, 1)
+
+
 def publish(root,meta,text,replace=False):
     from article_catalogue import refresh
+    from build_field_atlas import stylesheet
     from render_shared import render
     import build_search_feeds
     target = root/'articles'/meta['slug']/'index.html'
@@ -126,7 +133,7 @@ def publish(root,meta,text,replace=False):
         (root/'content/series-banners.json').write_text(json.dumps(banners,ensure_ascii=False,indent=2)+'\n')
         target.parent.mkdir(parents=True,exist_ok=True)
         target.write_text(source,encoding='utf-8'); refresh(root,registry)
-        target.write_text(render(source,target,root),encoding='utf-8')
+        target.write_text(stylesheet(with_inactive_ad_slot(render(source,target,root))),encoding='utf-8')
         # Update totals and previous/next links for the entire affected series.
         for row in banners['articles']:
             if row['design']==banner_row['design'] and row['url']!=record['url']:
@@ -156,12 +163,13 @@ if __name__=='__main__':
     try:
         meta,text=read_draft(args.draft)
         if args.preview:
+            from build_field_atlas import stylesheet
             from render_shared import render
             from article_series import register
             from render_series_banners import render as banner_render
             banners,_=register(ROOT,meta)
             source,_=page(meta,text);path=ROOT/'articles'/meta['slug']/'index.html'
-            args.preview.write_text(banner_render(render(source,path,ROOT),path,ROOT,manifest_data=banners));print('Preview saved:',args.preview)
+            args.preview.write_text(stylesheet(with_inactive_ad_slot(banner_render(render(source,path,ROOT),path,ROOT,manifest_data=banners))));print('Preview saved:',args.preview)
             from bundle_page_styles import write_generated
             write_generated(root=ROOT)
         else:

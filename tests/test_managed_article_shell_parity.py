@@ -7,7 +7,7 @@ import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
-from publish_article import page
+from publish_article import page, with_inactive_ad_slot
 
 
 class ManagedArticleShellParity(unittest.TestCase):
@@ -38,3 +38,11 @@ class ManagedArticleShellParity(unittest.TestCase):
         for renderer in (previous.page, page):
             with self.assertRaisesRegex(ValueError, 'Unsupported link'):
                 renderer(metadata, '## Inputs\n\n[bad](javascript:alert)')
+
+    def test_ad_slot_has_no_loader_and_is_outside_article(self):
+        source = '<article class="article-body">Protected wording</article><footer></footer>'
+        self.assertEqual(
+            with_inactive_ad_slot(source),
+            '<article class="article-body">Protected wording</article>'
+            '<aside hidden data-article-ad-slot="inactive"></aside><footer></footer>',
+        )

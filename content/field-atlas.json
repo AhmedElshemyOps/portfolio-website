@@ -1,0 +1,416 @@
+{
+  "planningRevision": "5fc86cae7067983844a5e0a1125ce01027e6a6ff",
+  "journeys": [
+    {
+      "id": "manage-a-dmc",
+      "title": "I Manage a DMC",
+      "objective": "Take a group programme from itinerary and quote to delivery and performance review.",
+      "steps": [
+        {
+          "title": "Tourism Operations",
+          "path": "/learning/tourism-operations/index.html",
+          "why": "Start · choose the operating baseline"
+        },
+        {
+          "title": "How to Quote a City Tour Professionally for DMCs",
+          "path": "/articles/article-city-tour-quotation-professional/index.html",
+          "why": "Scope the quote and commercial requirements"
+        },
+        {
+          "title": "Tour Cost Worksheet for City Tours",
+          "path": "/articles/article-tour-cost-worksheet-city-tour/index.html",
+          "why": "Build the cost worksheet"
+        },
+        {
+          "title": "Net Cost, Selling Price, Markup and Margin",
+          "path": "/articles/article-net-cost-selling-price-markup/index.html",
+          "why": "Distinguish margin from markup before approval"
+        },
+        {
+          "title": "The Tourism Itinerary AI Toolkit: 10 Prompts for Realistic and Guest-Centred Travel Planning",
+          "path": "/articles/tourism-itinerary-ai-prompts/index.html",
+          "why": "Build and stress-test the itinerary"
+        },
+        {
+          "title": "Supplier and Partner Governance in Tourism SOPs",
+          "path": "/articles/tourism-supplier-partner-governance-sops/index.html",
+          "why": "Translate supplier commitments into controls"
+        },
+        {
+          "title": "Before the Delegate Reaches the Hotel",
+          "path": "/articles/article-mice-arrival-waves-zayed-international-airport/index.html",
+          "why": "Sequence airport arrival waves"
+        },
+        {
+          "title": "From Hotel Lobby to Coach Door",
+          "path": "/articles/article-mice-hotel-desks-coach-departures-abu-dhabi/index.html",
+          "why": "Plan hotel-to-coach handovers"
+        },
+        {
+          "title": "The Abu Dhabi MICE Movement Control Room",
+          "path": "/articles/article-abu-dhabi-mice-movement-control-room/index.html",
+          "why": "Coordinate MICE group movements"
+        },
+        {
+          "title": "When the MICE Plan Changes",
+          "path": "/articles/article-mice-backup-operations-service-recovery-abu-dhabi/index.html",
+          "why": "Prepare service recovery for live changes"
+        },
+        {
+          "title": "CAPA: Corrective and Preventive Action in Tourism",
+          "path": "/articles/capa-tourism-operations/index.html",
+          "why": "Connect failures to corrective and preventive action"
+        },
+        {
+          "title": "Tourism Operations KPIs and Control Dashboards",
+          "path": "/articles/tourism-operations-kpis-control-dashboards/index.html",
+          "why": "Define and review operational KPIs"
+        }
+      ],
+      "related": [
+        {
+          "title": "DMC Commercial & Quotation",
+          "path": "/learning/dmc-commercial-quotation/index.html",
+          "why": "Quotation learning path."
+        },
+        {
+          "title": "Abu Dhabi MICE Operations in Practice",
+          "path": "/articles/abu-dhabi-mice-operations-series/index.html",
+          "why": "MICE operations series."
+        },
+        {
+          "title": "Building a Data-Driven Signature Tour.",
+          "path": "/series/amsterdam-tourism-product-discovery/index.html",
+          "why": "Optional product-discovery series for tour development."
+        },
+        {
+          "title": "InfraQuote",
+          "path": "/projects/infraquote/index.html",
+          "why": "Cost worksheet, margin and client quote."
+        },
+        {
+          "title": "InfraDispatch",
+          "path": "/projects/infradispatch/index.html",
+          "why": "Movement briefs and dispatch handovers."
+        }
+      ],
+      "next": [
+        {
+          "title": "The Fleet Control Tower: What Operations Managers Should See on One Screen",
+          "path": "/articles/article-fleet-control-tower-operations-dashboard/index.html",
+          "why": "Read the fleet control tower guide to extend the review into transport oversight."
+        }
+      ]
+    },
+    {
+      "id": "work-in-hospitality",
+      "title": "I Work in Hospitality",
+      "objective": "Map service quality, establish operating standards and review AI use with guest privacy in mind.",
+      "steps": [
+        {
+          "title": "Guest Experience Quality Management",
+          "path": "/articles/hotel-guest-experience-quality-management/index.html",
+          "why": "Start · define and observe guest experience quality"
+        },
+        {
+          "title": "Designing the End-to-End Guest Journey",
+          "path": "/articles/hotel-apartment-end-to-end-guest-journey/index.html",
+          "why": "Trace service handovers across the guest journey"
+        },
+        {
+          "title": "SOP Architecture for Hotel Apartments",
+          "path": "/articles/hotel-apartment-sop-architecture/index.html",
+          "why": "Define the SOP structure"
+        },
+        {
+          "title": "Complaint Root-Cause Analysis",
+          "path": "/articles/hotel-complaint-root-cause-analysis/index.html",
+          "why": "Investigate repeat complaints"
+        },
+        {
+          "title": "SOP Writing Part 4: Exception and Escalation Management",
+          "path": "/articles/sop-exception-escalation-management/index.html",
+          "why": "Set incident escalation and ownership"
+        },
+        {
+          "title": "Hotel Apartment KPI Architecture",
+          "path": "/articles/hotel-apartment-kpi-architecture/index.html",
+          "why": "Measure quality with a KPI architecture"
+        },
+        {
+          "title": "Responsible AI Governance for Hotel Apartments",
+          "path": "/articles/responsible-ai-governance-hotels/index.html",
+          "why": "Review AI governance and guest privacy before adopting tools"
+        },
+        {
+          "title": "The HOTEL Prompting Framework",
+          "path": "/articles/hotel-ai-prompting-framework/index.html",
+          "why": "Structure Hotel AI prompts after safeguards are in place"
+        },
+        {
+          "title": "Guest Complaint & Service Recovery AI Toolkit",
+          "path": "/articles/hotel-guest-complaint-service-recovery-ai-toolkit/index.html",
+          "why": "Apply the approach to a guest complaint or recovery workflow"
+        }
+      ],
+      "related": [
+        {
+          "title": "Hotel Apartment Operational Excellence",
+          "path": "/series/hotel-apartment-operational-excellence/index.html",
+          "why": "Hospitality operations series."
+        },
+        {
+          "title": "AI for Hotel Apartments Operations Playbook",
+          "path": "/series/hotel-ai-operations-playbook/index.html",
+          "why": "Hotel AI series."
+        }
+      ],
+      "next": [
+        {
+          "title": "Operational Excellence Maturity Model",
+          "path": "/articles/hotel-operational-excellence-maturity-model/index.html",
+          "why": "Use the maturity model to identify one priority improvement."
+        }
+      ]
+    },
+    {
+      "id": "learn-lean-six-sigma",
+      "title": "I Want to Learn Lean Six Sigma",
+      "objective": "Follow a self-guided sequence from identifying waste to standardizing, measuring and aligning improvements.",
+      "steps": [
+        {
+          "title": "Lean Thinking for Tourism Operations",
+          "path": "/articles/lean-thinking-tourism-operations/index.html",
+          "why": "Start · Lean fundamentals and eight wastes"
+        },
+        {
+          "title": "Lean Six Sigma for Hotel Apartment Operations AI Toolkit",
+          "path": "/articles/hotel-lean-six-sigma-ai-toolkit/index.html",
+          "why": "Use the toolkit as a Kaizen and 5S primer, then return to it for DMAIC practice"
+        },
+        {
+          "title": "The Integrated SOP Creation Model: ITIL + PMP + Lean Six Sigma",
+          "path": "/articles/integrated-sop-creation-model/index.html",
+          "why": "Connect improvement to SOP ownership, controls and review"
+        },
+        {
+          "title": "Never Write an SOP Before Mapping the Process",
+          "path": "/articles/map-process-before-writing-sop/index.html",
+          "why": "Map the current process before standardizing it"
+        },
+        {
+          "title": "Six Sigma for Tourism: From Complaints to Data",
+          "path": "/articles/six-sigma-tourism-complaints-data/index.html",
+          "why": "Use complaints data to practise Six Sigma measurement and analysis"
+        },
+        {
+          "title": "Heijunka: How to Handle Peak Tourism Demand Without Overloading Your Team",
+          "path": "/articles/heijunka-tourism-operations/index.html",
+          "why": "Heijunka · level workload over time"
+        },
+        {
+          "title": "What Is a Yamazumi Chart? How to Balance Workloads in Tourism Operations",
+          "path": "/articles/yamazumi-chart-tourism-operations/index.html",
+          "why": "Yamazumi · visualize and balance workload"
+        },
+        {
+          "title": "Tourism Operations KPIs and Control Dashboards",
+          "path": "/articles/tourism-operations-kpis-control-dashboards/index.html",
+          "why": "Select quality and operational measures"
+        },
+        {
+          "title": "From SOP Library to Tourism Operational Excellence Management System",
+          "path": "/articles/tourism-operational-excellence-management-system/index.html",
+          "why": "Relate improvement to operational management and the introductory Hoshin Kanri reference"
+        }
+      ],
+      "related": [
+        {
+          "title": "Quality & SOP Management",
+          "path": "/learning/quality-sop-management/index.html",
+          "why": "Quality and SOP learning path."
+        }
+      ],
+      "next": [
+        {
+          "title": "How to Use SIPOC in Tourism Operations",
+          "path": "/articles/sipoc-tourism-operations/index.html",
+          "why": "Draw a SIPOC for one tourism process and compare it to the process map."
+        }
+      ]
+    },
+    {
+      "id": "evaluate-for-a-role",
+      "title": "I Am Evaluating This Professional for a Role",
+      "objective": "Assess management readiness through attributable operational responsibilities, qualifications and working examples.",
+      "steps": [
+        {
+          "title": "Ahmed Mahmoud — Travel and Tourism Operations.",
+          "path": "/resources/recruiter-summary/index.html",
+          "why": "Start · employer summary and role-fit context"
+        },
+        {
+          "title": "Travel and Tourism Operations",
+          "path": "/profile/index.html",
+          "why": "Read career history and professional background"
+        },
+        {
+          "title": "Travel & Tourism Operations",
+          "path": "/careers/tourism-operations/index.html",
+          "why": "Review competencies relevant to operational coordination and stakeholder handover"
+        },
+        {
+          "title": "MICE & Event Coordination",
+          "path": "/careers/mice-event-coordination/index.html",
+          "why": "Review MICE and group-movement experience"
+        },
+        {
+          "title": "Tourism Product Support",
+          "path": "/careers/tourism-product-support/index.html",
+          "why": "Review itinerary, quotation and product support experience"
+        },
+        {
+          "title": "The Integrated SOP Creation Model: ITIL + PMP + Lean Six Sigma",
+          "path": "/articles/integrated-sop-creation-model/index.html",
+          "why": "Read the SOP guide for an example of published professional thinking"
+        },
+        {
+          "title": "The Abu Dhabi MICE Movement Control Room",
+          "path": "/articles/article-abu-dhabi-mice-movement-control-room/index.html",
+          "why": "Review the MICE movement scenario as published methodology"
+        },
+        {
+          "title": "Ahmed Mahmoud — published CV (PDF)",
+          "path": "/documents/Ahmed-Mahmoud-CV.pdf",
+          "why": "Download the current CV"
+        }
+      ],
+      "related": [
+        {
+          "title": "Abu Dhabi MICE Operations in Practice",
+          "path": "/articles/abu-dhabi-mice-operations-series/index.html",
+          "why": "Optional MICE series as a writing and methodology sample."
+        },
+        {
+          "title": "InfraQuote",
+          "path": "/projects/infraquote/index.html",
+          "why": "Commercial workflow and quote review."
+        },
+        {
+          "title": "InfraDispatch",
+          "path": "/projects/infradispatch/index.html",
+          "why": "Dispatch readiness and handover."
+        },
+        {
+          "title": "InfraSky",
+          "path": "/projects/infrasky/index.html",
+          "why": "Experience readiness decision and guest brief."
+        },
+        {
+          "title": "InfraCluster",
+          "path": "/projects/infracluster/index.html",
+          "why": "Pickup clustering and capacity constraints."
+        }
+      ],
+      "next": [
+        {
+          "title": "Projects shaped by operations.",
+          "path": "/projects/index.html",
+          "why": "Compare all project summaries, then use the published contact options."
+        }
+      ]
+    }
+  ],
+  "employerProof": [
+    {
+      "title": "Career across the travel journey",
+      "path": "/profile/index.html#career-title",
+      "why": "Career history."
+    },
+    {
+      "title": "Qualifications on the professional profile",
+      "path": "/profile/index.html#qualifications-title",
+      "why": "Qualifications."
+    },
+    {
+      "title": "Published contact and footer links",
+      "path": "/#site-footer",
+      "why": "Contact."
+    },
+    {
+      "title": "Ahmed Mahmoud — published CV (PDF)",
+      "path": "/documents/Ahmed-Mahmoud-CV.pdf",
+      "why": "Download."
+    }
+  ],
+  "plannedCategories": [
+    "Tourism & DMC Operations",
+    "Tour Guiding & Guest Experience",
+    "Tourism Product & Commercial Management",
+    "MICE & Event Operations",
+    "Hospitality Management",
+    "Travel Technology & AI",
+    "Lean Six Sigma & Quality",
+    "ITIL 4 & Service Management",
+    "Leadership & Management",
+    "Cruise & Destination Operations"
+  ],
+  "edges": [
+    {
+      "source": "/articles/integrated-sop-creation-model/index.html",
+      "target": "/articles/abu-dhabi-mice-operations-series/index.html",
+      "type": "link",
+      "evidence": "/articles/integrated-sop-creation-model/index.html",
+      "revision": "753c3a0cc6e2235201e939b840973911725dc00c"
+    },
+    {
+      "source": "/articles/integrated-sop-creation-model/index.html",
+      "target": "/articles/article-abu-dhabi-mice-movement-control-room/index.html",
+      "type": "link",
+      "evidence": "/articles/integrated-sop-creation-model/index.html",
+      "revision": "753c3a0cc6e2235201e939b840973911725dc00c"
+    },
+    {
+      "source": "/articles/integrated-sop-creation-model/index.html",
+      "target": "/articles/article-destination-experience-journey-map/index.html",
+      "type": "link",
+      "evidence": "/articles/integrated-sop-creation-model/index.html",
+      "revision": "753c3a0cc6e2235201e939b840973911725dc00c"
+    },
+    {
+      "source": "/articles/itil-4-tourism-operations/index.html",
+      "target": "/articles/integrated-sop-creation-model/index.html",
+      "type": "link",
+      "evidence": "/articles/itil-4-tourism-operations/index.html",
+      "revision": "753c3a0cc6e2235201e939b840973911725dc00c"
+    },
+    {
+      "source": "/articles/lean-thinking-tourism-operations/index.html",
+      "target": "/articles/integrated-sop-creation-model/index.html",
+      "type": "link",
+      "evidence": "/articles/lean-thinking-tourism-operations/index.html",
+      "revision": "753c3a0cc6e2235201e939b840973911725dc00c"
+    },
+    {
+      "source": "/articles/tourism-operational-excellence-management-system/index.html",
+      "target": "/articles/integrated-sop-creation-model/index.html",
+      "type": "link",
+      "evidence": "/articles/tourism-operational-excellence-management-system/index.html",
+      "revision": "753c3a0cc6e2235201e939b840973911725dc00c"
+    },
+    {
+      "source": "/articles/integrated-sop-creation-model/index.html",
+      "target": "https://www.youtube.com/watch?v=wPKJikM9Ui0",
+      "type": "embed",
+      "evidence": "/articles/integrated-sop-creation-model/index.html",
+      "revision": "753c3a0cc6e2235201e939b840973911725dc00c"
+    },
+    {
+      "source": "/articles/abu-dhabi-mice-operations-series/index.html",
+      "target": "/articles/article-abu-dhabi-mice-movement-control-room/index.html",
+      "type": "series",
+      "evidence": "/articles/abu-dhabi-mice-operations-series/index.html",
+      "revision": "753c3a0cc6e2235201e939b840973911725dc00c"
+    }
+  ]
+}

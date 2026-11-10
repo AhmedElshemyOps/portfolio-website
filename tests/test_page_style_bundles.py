@@ -10,7 +10,12 @@ class PageStyleBundles(unittest.TestCase):
    self.assertNotIn('data-style-sources=',restored)
    self.assertEqual(pack(restored,p,ROOT),s)
    nodes=[n for n in parse(s).nodes if n['tag']=='link' and n['attrs'].get('rel')=='stylesheet']
-   self.assertEqual(len(nodes),1,route)
+   if route == 'knowledge/index.html':
+    self.assertEqual(len(nodes), 2, route)
+    self.assertEqual(nodes[1]['attrs']['href'], '/assets/atlas/field-atlas.css')
+   else:
+    self.assertEqual(len(nodes), 1, route)
+   self.assertIn('data-style-sources', nodes[0]['attrs'])
    css=(ROOT/nodes[0]['attrs']['href'].lstrip('/')).read_text()
    self.assertNotIn('@import',css)
    self.assertEqual(css.count('/* assets/css/fonts.css */'),1)

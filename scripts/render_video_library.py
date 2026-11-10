@@ -1,7 +1,6 @@
 """Render the approved video library from public inventory and editorial matches."""
 from html import escape
 import json
-from pathlib import Path
 import re
 from datetime import date
 from apply_field_manual import parse
@@ -10,10 +9,11 @@ CHANNEL = 'https://www.youtube.com/@ahmedqualityops-official'
 def render(source, path, root):
     if path.relative_to(root).as_posix() != 'learn/videos/index.html':return source
     inventory=json.loads((root/'content/youtube-videos.json').read_text())
-    match_ids={m['videoId'] for m in json.loads((Path(__file__).resolve().parents[1]/'content/article-video-matches.json').read_text())}
+    matches = json.loads((root / 'content/article-video-matches.json').read_text())
+    match_ids = {match['videoId'] for match in matches}
     videos=[v for v in inventory['videos'] if v.get('privacyStatus')=='public' or (v.get('privacyStatus')=='unknown' and v['videoId'] in match_ids)]
     if len({v['videoId'] for v in videos})!=len(videos):raise ValueError('Duplicate public video in library inventory')
-    by_id={m['videoId']:m for m in json.loads((root/'content/article-video-matches.json').read_text())}
+    by_id = {match['videoId']: match for match in matches}
     # Unknown-visibility supplements are listed only when an article match already
     # exists; they do not create a library player. Unmatched lessons retain a truthful
     # home without inventing article prose to justify an embed.
