@@ -1,3 +1,4 @@
+from historical_inventory import LATER_ARTICLES
 import copy,json,re,sys,unittest,subprocess
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'scripts'))
@@ -18,7 +19,7 @@ class KnowledgeTaxonomyTests(unittest.TestCase):
  def test_routes_canonicals_and_original_content_preserved(self):
   baseline=json.loads((ROOT/'reports/knowledge-hub-restructure/baseline.json').read_text())
   self.assertEqual(baseline['registryUrls'],[x['url'] for x in self.rows])
-  self.assertEqual(baseline['articleFiles'],sorted('/'+str(p.relative_to(ROOT)) for p in (ROOT/'articles').glob('*/index.html')))
+  self.assertEqual(sorted(set(baseline['articleFiles']) | {'/'+route for route in LATER_ARTICLES}),sorted('/'+str(p.relative_to(ROOT)) for p in (ROOT/'articles').glob('*/index.html')))
   from apply_field_manual import parse
   for row in self.rows:
    path=row['url'].lstrip('/');new=(ROOT/path).read_text();old=subprocess.check_output(['git','show',baseline['commit']+':'+path],cwd=ROOT,text=True)

@@ -1,4 +1,5 @@
 """Protect real page coverage, unique video players and narrow editorial exceptions."""
+from historical_inventory import LATER_ARTICLES
 import json
 from pathlib import Path
 import sys
@@ -30,7 +31,7 @@ class CalmRolloutTests(unittest.TestCase):
 
     def test_every_page_inherits_the_shared_design(self):
         paths=pages(ROOT)
-        self.assertEqual(len(paths),197+len(json.loads((ROOT/'content/career-routes.json').read_text())))  # Three additive career routes; historical addresses retained
+        self.assertEqual(len(paths),197+len(json.loads((ROOT/'content/career-routes.json').read_text()))+len(LATER_ARTICLES))  # Three additive career routes; historical addresses retained
         for path in paths:
             source=path.read_text()
             body=next(n for n in parse(source).nodes if n['tag']=='body')

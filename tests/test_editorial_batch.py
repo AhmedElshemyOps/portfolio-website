@@ -1,3 +1,4 @@
+from historical_inventory import historical_articles, LATER_ARTICLES
 import json,re,subprocess,sys,unittest
 from pathlib import Path
 from urllib.parse import urljoin
@@ -10,7 +11,7 @@ MANIFEST=json.loads((ROOT/'maintenance/seo/editorial-batch-manifest.json').read_
 class EditorialBatchTests(unittest.TestCase):
  def baseline(self,p):return subprocess.check_output(['git','show',MANIFEST['baseline_commit']+':'+str(p.relative_to(ROOT))],cwd=ROOT,text=True)
  def test_existing_routes_canonicals_and_indexing_policy_unchanged(self):
-  original=set(subprocess.check_output(['git','ls-tree','-r','--name-only',MANIFEST['baseline_commit']],cwd=ROOT,text=True).splitlines());before={p for p in original if p.endswith('.html') and not {'templates','docs','tests'}&set(Path(p).parts)};after={str(p.relative_to(ROOT)) for p in public_pages(ROOT)};self.assertEqual(after-before,{'learn/videos/index.html'} | {e['legacy_path'].lstrip('/') for e in json.loads((ROOT/'maintenance/seo/active-legacy-articles.json').read_text())} | {'careers/'+r['slug']+'/index.html' for r in json.loads((ROOT/'content/career-routes.json').read_text())});self.assertTrue(before<=after)
+  original=set(subprocess.check_output(['git','ls-tree','-r','--name-only',MANIFEST['baseline_commit']],cwd=ROOT,text=True).splitlines());before={p for p in original if p.endswith('.html') and not {'templates','docs','tests'}&set(Path(p).parts)};after={str(p.relative_to(ROOT)) for p in public_pages(ROOT)};self.assertEqual(after-before,LATER_ARTICLES | {'learn/videos/index.html'} | {e['legacy_path'].lstrip('/') for e in json.loads((ROOT/'maintenance/seo/active-legacy-articles.json').read_text())} | {'careers/'+r['slug']+'/index.html' for r in json.loads((ROOT/'content/career-routes.json').read_text())});self.assertTrue(before<=after)
   for name in sorted(before):
    old=DOM(self.baseline(ROOT/name)).root;new=DOM((ROOT/name).read_text()).root
    def directives(d):return [(n.tag,n.attrs) for n in d.all() if n.tag=='link' and n.attrs.get('rel')=='canonical' or n.tag=='meta' and n.attrs.get('name','').lower() in ['robots','googlebot','bingbot']]
@@ -20,7 +21,7 @@ class EditorialBatchTests(unittest.TestCase):
     self.assertIn('0;url=/knowledge/index.html',(ROOT/name).read_text())
    else:self.assertEqual(directives(old),directives(new),name)
  def test_prompts_and_publication_dates_preserved(self):
-  for p in (ROOT/'articles').glob('*/index.html'):
+  for p in historical_articles(MANIFEST['baseline_commit']):
    old=approved_revisions(self.baseline(p),p.parent.name);new=p.read_text();self.assertEqual(re.findall(r'<pre\b.*?</pre>',old,re.S),re.findall(r'<pre\b.*?</pre>',new,re.S),str(p))
    self.assertEqual([n.get('datePublished') for n in approved_schema(schema_nodes(old)[0],p.parent.name) if n.get('datePublished')],[n.get('datePublished') for n in schema_nodes(new)[0] if n.get('datePublished')],str(p))
  def test_collection_items_match_visible_chapter_links(self):

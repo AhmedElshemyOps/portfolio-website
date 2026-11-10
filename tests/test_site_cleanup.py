@@ -1,3 +1,4 @@
+from historical_inventory import LATER_ARTICLES
 import json,re,sys,tempfile,unittest
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'scripts'))
@@ -9,8 +10,8 @@ from check_site_cleanup import audit
 class SiteCleanupTests(unittest.TestCase):
  def test_every_public_page_and_asset_reference(self):
   report=audit(ROOT)
-  self.assertEqual(report['pagesChecked'],197+len(json.loads((ROOT/'content/career-routes.json').read_text())))  # 179 existing pages plus 18 approved historical article copies
-  self.assertEqual(report['articlePagesChecked'],130)
+  self.assertEqual(report['pagesChecked'],197+len(json.loads((ROOT/'content/career-routes.json').read_text()))+len(LATER_ARTICLES))  # 179 existing pages plus 18 approved historical article copies
+  self.assertEqual(report['articlePagesChecked'],130+len(LATER_ARTICLES))
   self.assertEqual(report['missingReferences'],[])
   self.assertEqual(report['unusedGeneratedBundles'],[])
   self.assertTrue(report['passed'],[r for r in report['pages'] if r['issues']])

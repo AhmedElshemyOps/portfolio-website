@@ -1,3 +1,4 @@
+from historical_inventory import historical_articles, LATER_ARTICLES
 import unittest,json,re,sys,subprocess,xml.etree.ElementTree as ET
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'scripts'))
@@ -5,7 +6,7 @@ from audit_seo import DOM,schema_nodes
 from approved_article_revisions import approved_revisions
 class SeoBatchTests(unittest.TestCase):
  def test_original_articles_routes_and_bodies_preserved(self):
-  for p in (ROOT/'articles').rglob('index.html'):
+  for p in historical_articles('47aaa1df95fca4d17461c8fcf92a33fa93afcdcb'):
    # Immutable parent of the original SEO repair; the old local-only ref was
    # absent from fresh clones and made this regression test non-portable.
    old=subprocess.check_output(['git','show','47aaa1df95fca4d17461c8fcf92a33fa93afcdcb:'+str(p.relative_to(ROOT))],cwd=ROOT,text=True);new=p.read_text()
@@ -20,7 +21,8 @@ class SeoBatchTests(unittest.TestCase):
    for href in re.findall(r'href="([^"]+)"',old):
     if '/articles/' in href:self.assertIn(href,new,str(p))
  def test_sitemap_and_atom_are_valid_unique_canonical_outputs(self):
-  sitemap=ET.parse(ROOT/'sitemap.xml').getroot();urls=[n.findtext('{*}loc') for n in sitemap];self.assertEqual(len(urls),len(set(urls)));self.assertEqual(len(urls),173+len(json.loads((ROOT/'content/career-routes.json').read_text())));self.assertFalse(any('/newsletter/' in url for url in urls))
+  sitemap=ET.parse(ROOT/'sitemap.xml').getroot();urls=[n.findtext('{*}loc') for n in sitemap];self.assertEqual(len(urls),len(set(urls)));self.assertEqual(len(urls),173+len(json.loads((ROOT/'content/career-routes.json').read_text()))+len(LATER_ARTICLES));self.assertFalse(any('/newsletter/' in url for url in urls))
+  for route in sorted(LATER_ARTICLES):self.assertIn('https://ahmedqualityops.com/'+route,urls)
   for url in urls:
    path=url.split('https://ahmedqualityops.com/',1)[1] or 'index.html';s=(ROOT/path).read_text();d=DOM(s).root;robots=next((n.attrs.get('content','') for n in d.all('meta') if n.attrs.get('name')=='robots'),'');self.assertNotIn('noindex',robots)
   feed=ET.parse(ROOT/'feed.xml').getroot();entries=feed.findall('{*}entry');self.assertEqual(len(entries),128);latest=feed.findtext('{*}updated');self.assertTrue(all(n.findtext('{*}updated')<=latest for n in entries))

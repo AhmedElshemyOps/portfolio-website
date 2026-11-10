@@ -1,3 +1,4 @@
+from historical_inventory import LATER_ARTICLES
 import hashlib,json,re,subprocess,sys,unittest
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
@@ -7,7 +8,7 @@ from render_premium_ai_toolkit import plain
 class ToolkitIntegrationTests(unittest.TestCase):
  def test_all_articles_have_top_glossary_and_original_sources(self):
   pages=list((ROOT/'articles').glob('*/index.html'))
-  self.assertEqual(len(pages),130)
+  self.assertEqual(len(pages),130+len(LATER_ARTICLES))
   for p in pages:
    s=p.read_text();nodes=parse(s).nodes
    glossary=[n for n in nodes if 'article-glossary' in n['attrs'].get('class','').split()]

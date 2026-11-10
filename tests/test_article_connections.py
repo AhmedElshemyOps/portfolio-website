@@ -1,5 +1,6 @@
 # Preservation baseline: verified 8 October release, before evidence corrections.
 # Earlier migration commits are unavailable; this checks release content, not historical migration provenance.
+from historical_inventory import historical_articles
 import sys,unittest,re,subprocess
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
@@ -39,7 +40,7 @@ class ArticleConnectionTests(unittest.TestCase):
     concepts+=bool(n['attrs'].get('data-concept-link'))
   self.assertEqual(concepts,11) # Obsolete closing navigation was replaced by the single ending action.
  def test_full_prompt_text_preserved_except_approved_accommodation_scope(self):
-  for p in (ROOT/'articles').rglob('*.html'):
+  for p in historical_articles('6f8f6f6f9324c83b3c63e915ac31a633bdf31d53'):
    old=subprocess.check_output(['git','show','6f8f6f6f9324c83b3c63e915ac31a633bdf31d53:'+str(p.relative_to(ROOT))],cwd=ROOT,text=True);new=p.read_text()
    # The user explicitly approved hotel-apartment terminology in these guides.
    # Every other word and the complete prompt structure remain protected.

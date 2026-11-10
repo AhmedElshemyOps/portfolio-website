@@ -1,4 +1,5 @@
 """Contracts for the shared reference-based footer, destinations and accessibility."""
+from historical_inventory import LATER_ARTICLES
 from pathlib import Path
 import re
 import json
@@ -42,7 +43,7 @@ class FooterDesign(unittest.TestCase):
    footers=[n for n in nodes if n['tag']=='footer']
    self.assertEqual(len(footers),1,str(path));self.assertIn(self.source.strip(),s,str(path))
    self.assertEqual(sum(n['attrs'].get('id')=='page-top' for n in nodes),1,str(path));total+=1
-  self.assertEqual(total,197+len(json.loads((ROOT/'content/career-routes.json').read_text())))  # Existing pages plus three additive career routes
+  self.assertEqual(total,197+len(json.loads((ROOT/'content/career-routes.json').read_text()))+len(LATER_ARTICLES))  # Existing pages plus three additive career routes
  def test_text_palette_has_aa_contrast(self):
   def lum(color):
    rgb=[int(color[i:i+2],16)/255 for i in (1,3,5)]

@@ -1,5 +1,6 @@
 # Preservation baseline: verified 8 October release, before evidence corrections.
 # Earlier migration commits are unavailable; this checks release content, not historical migration provenance.
+from historical_inventory import historical_articles, LATER_ARTICLES
 import sys,unittest,subprocess,re
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
@@ -17,9 +18,9 @@ class MobileArticleStructureTests(unittest.TestCase):
     n=next(n for n in e.nodes if n['attrs'].get('data-reader-font')==action);self.assertTrue(n['attrs'].get('aria-label'))
    self.assertIn('width=device-width',s);self.assertNotIn('user-scalable=no',s)
    self.assertEqual(migrate(s),s,p)
-  self.assertEqual(total,130)
+  self.assertEqual(total,130+len(LATER_ARTICLES))
  def test_prompt_text_retained(self):
-  for p in (ROOT/'articles').rglob('*.html'):
+  for p in historical_articles('6f8f6f6f9324c83b3c63e915ac31a633bdf31d53'):
    old=subprocess.check_output(['git','show','6f8f6f6f9324c83b3c63e915ac31a633bdf31d53:'+str(p.relative_to(ROOT))],cwd=ROOT,text=True);new=p.read_text()
    old=approved_revisions(old,p.parent.name)
    self.assertEqual(re.findall(r'<pre\b[^>]*>.*?</pre>',old,re.S),re.findall(r'<pre\b[^>]*>.*?</pre>',new,re.S),p)

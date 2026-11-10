@@ -1,5 +1,6 @@
 # Preservation baseline: verified 8 October release, before evidence corrections.
 # Earlier migration commits are unavailable; this checks release content, not historical migration provenance.
+from historical_inventory import historical_articles
 import sys, unittest, subprocess,re
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
@@ -24,7 +25,7 @@ class ArticleVisualTests(unittest.TestCase):
      self.assertIn('diagram-scroll',s[n['start']:n['end']])
   self.assertEqual((tables,figures),(174,338)) # Four reservations tables now use table semantics.
  def test_data_and_image_preservation(self):
-  for p in (ROOT/'articles').rglob('*.html'):
+  for p in historical_articles('6f8f6f6f9324c83b3c63e915ac31a633bdf31d53'):
    old=subprocess.check_output(['git','show','6f8f6f6f9324c83b3c63e915ac31a633bdf31d53:'+str(p.relative_to(ROOT))],cwd=ROOT,text=True);new=p.read_text()
    old=approved_revisions(old,p.parent.name)
    for pattern in [r'<td\b[^>]*>.*?</td>',r'<pre\b[^>]*>.*?</pre>',r'<img\b(?![^>]*class="(?:series-banner-art|footer-monogram)")[^>]*>']:

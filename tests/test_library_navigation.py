@@ -1,3 +1,4 @@
+from historical_inventory import historical_articles
 import json,re,subprocess,sys,unittest,struct
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'scripts'))
@@ -17,7 +18,7 @@ class LibraryNavigationTests(unittest.TestCase):
    crumbs=[n for n in schema_nodes(s)[0] if n.get('@type')=='BreadcrumbList'];self.assertEqual(len(crumbs),1);items=crumbs[0]['itemListElement'];self.assertEqual([x['position'] for x in items],[1,2,3]);self.assertEqual([x['item'] for x in items],[BASE+'/',BASE+'/knowledge/index.html',BASE+row['url']]);self.assertEqual(items[-1]['name'],current[0].text())
    self.assertEqual(render(s,p),s,str(p))
  def test_original_teaching_bodies_prompts_and_dates_untouched(self):
-  for p in (ROOT/'articles').glob('*/index.html'):
+  for p in historical_articles(BASELINE):
    old=subprocess.check_output(['git','show',BASELINE+':'+str(p.relative_to(ROOT))],cwd=ROOT,text=True);new=p.read_text()
    for edit in json.loads((ROOT/'maintenance/seo/library-batch-manifest.json').read_text())['navigation_component_replacements'].get(str(p.relative_to(ROOT)),[]):old=old.replace(edit['old'],edit['new'])
    for edit in json.loads((ROOT/'maintenance/seo/evidence-batch-manifest.json').read_text())['replacements'].get(str(p.relative_to(ROOT)),[]):old=old.replace(edit['old'],edit['new'])
