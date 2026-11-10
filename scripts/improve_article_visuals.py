@@ -31,7 +31,21 @@ def migrate(s):
  for n in e.nodes:
   if n['tag'] not in ('table','figure') or 'article-video' in e.classes(n):continue
   body=s[n['start']:n['end']]
-  if 'data-reading-visual="true"' in body:continue
+  if 'data-reading-visual="true"' in body:
+   # A previous pass may have marked a figure before its caption was added.
+   # Complete that additive accessibility treatment without wrapping it twice.
+   if n['tag']=='figure':
+    if '<figcaption>' not in body:
+     caption='Use this diagram to compare the labels and values with the explanation in this section.'
+     body=body.replace('</figure>','<figcaption><span class="visual-reading-label">What to learn</span><p>'+escape(caption)+'</p><p class="visual-scroll-hint">On small screens, scroll the diagram horizontally to read its labels.</p></figcaption></figure>',1)
+    if 'diagram-scroll' not in body:
+     chart=next((x for x in e.nodes if n['inner']<=x['start']<x['end']<=n['end'] and x['attrs'].get('role')=='img'),None)
+     if chart is None:chart=next((x for x in e.nodes if x['parent'] is n and x['tag']=='div'),None)
+     if chart:
+      a=chart['start']-n['start'];b=chart['end']-n['start']
+      body=body[:a]+'<div class="diagram-scroll" tabindex="0" role="region" aria-label="Diagram: scroll horizontally on small screens">'+body[a:b]+'</div>'+body[b:]
+    if body!=s[n['start']:n['end']]:edits.append((n['start'],n['end'],body))
+   continue
   if n['tag']=='table':
    headers=[x for x in e.nodes if n['inner']<=x['start']<n['end'] and x['tag']=='th']
    labels=[LABELS.get(text(s,x),text(s,x)) for x in headers]
@@ -63,8 +77,12 @@ def migrate(s):
    # Existing captions contain authored explanations; retain them verbatim.
    body=re.sub(r'(<img\b[^>]*>)',lambda m:'<div class="diagram-scroll" tabindex="0" role="region" aria-label="Diagram: scroll horizontally on small screens">'+m[1]+'</div>',body,count=1)
    body=body.replace('>',' data-reading-visual="true">',1)
-   body=body.replace('<figcaption>','<figcaption><span class="visual-reading-label">What to learn</span>',1)
-   body=body.replace('</figcaption>','<p class="visual-scroll-hint">On small screens, scroll the diagram horizontally to read its labels.</p></figcaption>',1)
+   if '<figcaption>' in body:
+    body=body.replace('<figcaption>','<figcaption><span class="visual-reading-label">What to learn</span>',1)
+    body=body.replace('</figcaption>','<p class="visual-scroll-hint">On small screens, scroll the diagram horizontally to read its labels.</p></figcaption>',1)
+   else:
+    caption='Use this diagram to compare the labels and values with the explanation in this section.'
+    body=body.replace('</figure>','<figcaption><span class="visual-reading-label">What to learn</span><p>'+escape(caption)+'</p><p class="visual-scroll-hint">On small screens, scroll the diagram horizontally to read its labels.</p></figcaption></figure>',1)
    edits.append((n['start'],n['end'],body))
  for a,b,new in sorted(edits,reverse=True):s=s[:a]+new+s[b:]
  return s

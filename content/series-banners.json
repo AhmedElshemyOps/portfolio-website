@@ -1367,6 +1367,24 @@
       "series": "Hotel Apartment Operational Excellence",
       "number": null,
       "kind": "Series overview"
+    },
+    {
+      "url": "/articles/heijunka-tourism-operations/index.html",
+      "title": "Heijunka: How to Handle Peak Tourism Demand Without Overloading Your Team",
+      "design": "tourism-operations-excellence",
+      "option": "A",
+      "series": "Lean & Continuous Improvement",
+      "number": null,
+      "kind": "Field guide"
+    },
+    {
+      "url": "/articles/yamazumi-chart-tourism-operations/index.html",
+      "title": "What Is a Yamazumi Chart? How to Balance Workloads in Tourism Operations",
+      "design": "tourism-operations-excellence",
+      "option": "A",
+      "series": "Lean & Continuous Improvement",
+      "number": null,
+      "kind": "Field guide"
     }
   ]
 }

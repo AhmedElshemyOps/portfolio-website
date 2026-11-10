@@ -878,5 +878,15 @@
     "date": null,
     "published": null,
     "basis": "no modification date; omitted"
+  },
+  "https://ahmedqualityops.com/articles/heijunka-tourism-operations/index.html": {
+    "date": "2026-11-02",
+    "published": "2026-11-02",
+    "basis": "article:modified_time"
+  },
+  "https://ahmedqualityops.com/articles/yamazumi-chart-tourism-operations/index.html": {
+    "date": "2026-11-01",
+    "published": "2026-11-01",
+    "basis": "page main-entity dateModified"
   }
 }

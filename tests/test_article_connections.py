@@ -6,6 +6,7 @@ sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 from connect_article_methods import ROOT,load_rows,apply,href
 from apply_field_manual import parse
 from approved_article_revisions import approved_revisions
+from git_baseline import show_file
 class ArticleConnectionTests(unittest.TestCase):
  def test_curated_links_and_return_paths(self):
   rows=load_rows();self.assertEqual(len(rows),26);self.assertEqual(sum(len(r['prompts']) for r in rows),78)
@@ -40,7 +41,7 @@ class ArticleConnectionTests(unittest.TestCase):
   self.assertEqual(concepts,11) # Obsolete closing navigation was replaced by the single ending action.
  def test_full_prompt_text_preserved_except_approved_accommodation_scope(self):
   for p in (ROOT/'articles').rglob('*.html'):
-   old=subprocess.check_output(['git','show','6f8f6f6f9324c83b3c63e915ac31a633bdf31d53:'+str(p.relative_to(ROOT))],cwd=ROOT,text=True);new=p.read_text()
+   old=show_file('6f8f6f6f9324c83b3c63e915ac31a633bdf31d53',str(p.relative_to(ROOT)),cwd=ROOT);new=p.read_text()
    # The user explicitly approved hotel-apartment terminology in these guides.
    # Every other word and the complete prompt structure remain protected.
    import json
