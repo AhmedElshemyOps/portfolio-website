@@ -1426,3 +1426,87 @@ body.calm-site.reader-high-contrast { --calm-muted:var(--calm-ink); }
 .calm-site:not(.calm-app) main .article-video { scroll-margin-top:100px; }
 .calm-site:not(.calm-app) main .premium-ai-toolkit :is(h2,h3,h4) { color:#fcfaf5; }
 .calm-site:not(.calm-app) main .cta-panel :is(h2,h3) { color:var(--calm-ink)!important; }
+
+/* Soft-clay refresh: friendly surfaces, clear reading rhythm and tactile controls. */
+body.calm-site {
+  --calm-paper:#fffdf9;
+  --calm-ink:#24343a;
+  --calm-muted:#53666b;
+  --calm-surface:#f5f1eb;
+  --calm-gold:#76552a;
+  --clay-lilac:#f1ebf7;
+  --clay-peach:#fff0e7;
+  --clay-mint:#eaf4ee;
+  --clay-sky:#edf3f8;
+  --clay-line:#e5ded5;
+  --clay-shadow:0 8px 24px rgba(40,53,57,.07),0 2px 6px rgba(40,53,57,.04);
+  background:var(--calm-paper);
+}
+body.calm-site.reader-dark {
+  --calm-paper:#14232b;
+  --calm-ink:#f8f5ef;
+  --calm-muted:#cbd5d5;
+  --calm-surface:#1d3038;
+  --calm-gold:#f0cf91;
+  --clay-lilac:#302b3a;
+  --clay-peach:#382d2a;
+  --clay-mint:#25362f;
+  --clay-sky:#26353d;
+  --clay-line:#3d5057;
+  --clay-shadow:0 8px 24px rgba(0,0,0,.16);
+}
+.calm-site .masthead { border-bottom-color:var(--clay-line); background:var(--calm-paper); }
+.calm-site .masthead .mark { border:0; border-radius:17px; background:var(--clay-lilac); }
+.calm-site .masthead nav a,
+.calm-site .masthead .brand strong { color:var(--calm-ink); }
+.calm-site .masthead nav a { border-radius:999px; padding-inline:10px; }
+.calm-site .masthead nav a::after { display:none; }
+.calm-site .masthead nav a:is(:hover,:focus-visible,[aria-current="page"]) { background:var(--clay-sky); }
+.calm-site .masthead :is(.nav-search,.nav-cv,.static-menu-toggle) {
+  min-height:44px; border:1px solid var(--clay-line); border-radius:999px;
+  background:var(--calm-paper); color:var(--calm-ink); box-shadow:0 2px 0 rgba(36,52,58,.05);
+  letter-spacing:0; text-transform:none;
+}
+.calm-site .masthead :is(.nav-search,.nav-cv,.static-menu-toggle):hover { background:var(--clay-mint); }
+.calm-site:not(.calm-app) main :is(.hero,.profile-intro,.growth-hero) {
+  border:1px solid var(--clay-line); border-radius:28px;
+  background:linear-gradient(135deg,var(--clay-sky),var(--clay-lilac) 58%,var(--clay-peach));
+  box-shadow:var(--clay-shadow); padding:clamp(30px,5vw,64px); margin-block:24px;
+}
+.calm-site:not(.calm-app) main .hero-photo { border-radius:24px; box-shadow:var(--clay-shadow); }
+.calm-site:not(.calm-app) main :is(.project,.qualification-card,.career-entry,.project-output-preview,.growth-card,.topic-card,.taxonomy-category,.knowledge-card,.resource-card,.path-card,.collection-card,.prompt-card) {
+  border:1px solid var(--clay-line); border-radius:22px; background:var(--calm-paper); box-shadow:var(--clay-shadow);
+}
+.calm-site:not(.calm-app) main :is(.project,.qualification-card,.growth-card,.topic-card,.taxonomy-category,.knowledge-card,.resource-card,.path-card,.collection-card,.prompt-card) { padding:clamp(20px,3vw,30px); }
+.calm-site:not(.calm-app) main .section:nth-of-type(odd) :is(.project,.qualification-card,.growth-card,.topic-card,.knowledge-card) { background:var(--clay-sky); }
+.calm-site:not(.calm-app) main :is(.button,.button-primary,.button-secondary) {
+  min-height:50px; border-radius:999px; box-shadow:0 3px 0 rgba(36,52,58,.12);
+  transition:transform .18s ease,box-shadow .18s ease,background-color .18s ease;
+}
+.calm-site:not(.calm-app) main :is(.button,.button-primary,.button-secondary):hover { transform:translateY(-2px); box-shadow:0 5px 0 rgba(36,52,58,.12); }
+.calm-site:not(.calm-app) main .button:not(.secondary) { background:#31525a; border-color:#31525a; color:#fffdf9; }
+.calm-site:not(.calm-app) main .button.secondary { border-color:#829494; background:var(--calm-paper); color:var(--calm-ink); }
+.calm-site:not(.calm-app) main .snapshot { border-radius:20px; background:var(--clay-mint); }
+.calm-site:not(.calm-app) main .work-authorisation { border:1px solid #e8d7bd; border-left:5px solid #c49356; border-radius:16px; background:var(--clay-peach); }
+.calm-site:not(.calm-app) main .article-page-header { border-radius:24px; background:linear-gradient(140deg,var(--clay-sky),var(--clay-lilac)); padding:clamp(28px,5vw,48px); }
+.calm-site:not(.calm-app) main .article-toc { border-color:var(--clay-line); border-radius:20px; background:var(--clay-mint); box-shadow:var(--clay-shadow); }
+.calm-site:not(.calm-app) main :is(.article-evidence-note,.article-glossary,.article-purpose,.article-ending,.article-finish,.article-feedback,.article-references) {
+  border:1px solid var(--clay-line); border-radius:20px; background:var(--clay-peach); padding:clamp(20px,3vw,30px);
+}
+.calm-site:not(.calm-app) main .article-video { border:1px solid var(--clay-line); border-radius:20px; background:var(--clay-sky); padding:18px; }
+.calm-site:not(.calm-app) main .article-video iframe { border-radius:14px; }
+.calm-site:not(.calm-app) main :is(input,select,textarea) { max-width:100%; border:1px solid #b9c4bf; border-radius:13px; background:var(--calm-paper); color:var(--calm-ink); padding:12px 14px; }
+.calm-site:not(.calm-app) main :is(a,button,summary,input,select,textarea):focus-visible,
+.calm-site .masthead :is(a,button):focus-visible { outline:3px solid #7b6a9c; outline-offset:3px; }
+.platform-footer { border-radius:26px; box-shadow:var(--clay-shadow); }
+@media(max-width:760px) {
+  .calm-site .masthead[data-navigation-ready] nav { border:1px solid var(--clay-line); border-radius:0 0 22px 22px; box-shadow:var(--clay-shadow); }
+  .calm-site:not(.calm-app) main :is(.hero,.profile-intro,.growth-hero) { border-radius:22px; }
+}
+@media(max-width:520px) {
+  .calm-site:not(.calm-app) main :is(.hero,.profile-intro,.growth-hero) { margin-block:12px; padding:24px 20px; }
+  .calm-site:not(.calm-app) main :is(.project,.qualification-card,.growth-card,.topic-card,.knowledge-card,.resource-card,.path-card,.collection-card,.prompt-card) { border-radius:18px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .calm-site:not(.calm-app) main :is(.button,.button-primary,.button-secondary):hover { transform:none; }
+}

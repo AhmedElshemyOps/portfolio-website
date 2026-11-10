@@ -2722,6 +2722,48 @@
         "/series/hotel-ai-operations-playbook/index.html",
         "/articles/hotel-kpi-dashboard-ai-toolkit/index.html"
       ]
+    },
+    {
+      "title": "Heijunka: How to Handle Peak Tourism Demand Without Overloading Your Team",
+      "slug": "heijunka-tourism-operations",
+      "category": "Lean Management",
+      "summary": "Learn Heijunka workload leveling for tourism with a DMC case study, vertical charts, a leveling board, a YouTube lesson and three copyable AI master prompts.",
+      "canonical": "https://ahmedqualityops.com/articles/heijunka-tourism-operations/index.html",
+      "readingMinutes": 21,
+      "primaryCategory": "Operations & Process Engineering",
+      "subcategory": "Quality & Continuous Improvement",
+      "tags": [
+        "Process design",
+        "Quality improvement",
+        "Workforce planning"
+      ],
+      "seriesId": null,
+      "seriesPosition": null,
+      "relatedArticles": [
+        "/articles/yamazumi-chart-tourism-operations/index.html",
+        "/articles/lean-thinking-tourism-operations/index.html"
+      ]
+    },
+    {
+      "title": "What Is a Yamazumi Chart? How to Balance Workloads in Tourism Operations",
+      "slug": "yamazumi-chart-tourism-operations",
+      "category": "Lean Management",
+      "summary": "Use a Yamazumi chart to compare tourism workload with practical capacity, identify imbalance and improve handovers without compromising fixed guest commitments.",
+      "canonical": "https://ahmedqualityops.com/articles/yamazumi-chart-tourism-operations/index.html",
+      "readingMinutes": 21,
+      "primaryCategory": "Operations & Process Engineering",
+      "subcategory": "Quality & Continuous Improvement",
+      "tags": [
+        "Process design",
+        "Quality improvement",
+        "Workforce planning"
+      ],
+      "seriesId": null,
+      "seriesPosition": null,
+      "relatedArticles": [
+        "/articles/heijunka-tourism-operations/index.html",
+        "/articles/tourism-operations-kpis-control-dashboards/index.html"
+      ]
     }
   ],
   "projects": [

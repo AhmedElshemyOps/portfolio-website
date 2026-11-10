@@ -18,9 +18,24 @@ def render(source,path,root):
   existing=re.search(r'<iframe\b(?=[^>]*\bsrc=["\']https://(?:www\.)?(?:youtube-nocookie|youtube)\.com/embed/'+re.escape(vid)+r'["\'])[^>]*>',source)
   if existing:
    tag=existing.group(0); marked=tag
-   if not re.search(r'\bid=["\']video-'+re.escape(vid)+r'["\']',marked):marked=marked.replace('<iframe','<iframe id="video-'+vid+'"',1)
-   if not re.search(r'\bdata-youtube-id=["\']'+re.escape(vid)+r'["\']',marked):marked=marked.replace('<iframe','<iframe data-youtube-id="'+vid+'"',1)
+   marked=re.sub(r'\s+id=["\']video-'+re.escape(vid)+r'["\']','',marked)
+   marked=re.sub(r'\s+data-youtube-id=["\']'+re.escape(vid)+r'["\']','',marked)
+   marked=re.sub(r'\s+allow=["\']([^"\']*)["\']',lambda a:' allow="'+'; '.join(token.strip() for token in a.group(1).split(';') if token.strip().lower()!='autoplay')+'"',marked)
    source=source.replace(tag,marked,1)
+   nodes=parse(source).nodes
+   frame=next((n for n in nodes if n['tag']=='iframe' and '/embed/'+vid in n['attrs'].get('src','')),None)
+   wrapper=frame['parent'] if frame else None
+   while wrapper and not ({'article-video','video'} & set(wrapper['attrs'].get('class','').split())):wrapper=wrapper['parent']
+   if wrapper:
+    attrs=''
+    if not wrapper['attrs'].get('id'):attrs+=' id="video-'+vid+'"'
+    if wrapper['attrs'].get('data-youtube-id')!=vid:attrs+=' data-youtube-id="'+vid+'"'
+    if attrs:
+     at=wrapper['start']+len('<'+wrapper['tag'])
+     source=source[:at]+attrs+source[at:]
+   elif frame and not wrapper:
+    at=frame['start']+len('<iframe')
+    source=source[:at]+' id="video-'+vid+'"'+source[at:]
    continue
   if 'data-youtube-id="'+vid+'"' in source:
    continue

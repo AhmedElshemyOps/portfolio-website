@@ -6,6 +6,7 @@ sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 from improve_mobile_reader import ROOT,migrate
 from apply_field_manual import parse
 from approved_article_revisions import approved_revisions
+from git_baseline import show_file
 class MobileArticleStructureTests(unittest.TestCase):
  def test_preferences_before_reading_and_mobile_metadata(self):
   total=0
@@ -17,10 +18,10 @@ class MobileArticleStructureTests(unittest.TestCase):
     n=next(n for n in e.nodes if n['attrs'].get('data-reader-font')==action);self.assertTrue(n['attrs'].get('aria-label'))
    self.assertIn('width=device-width',s);self.assertNotIn('user-scalable=no',s)
    self.assertEqual(migrate(s),s,p)
-  self.assertEqual(total,130)
+  self.assertEqual(total,132)
  def test_prompt_text_retained(self):
   for p in (ROOT/'articles').rglob('*.html'):
-   old=subprocess.check_output(['git','show','6f8f6f6f9324c83b3c63e915ac31a633bdf31d53:'+str(p.relative_to(ROOT))],cwd=ROOT,text=True);new=p.read_text()
+   old=show_file('6f8f6f6f9324c83b3c63e915ac31a633bdf31d53',str(p.relative_to(ROOT)),cwd=ROOT);new=p.read_text()
    old=approved_revisions(old,p.parent.name)
    self.assertEqual(re.findall(r'<pre\b[^>]*>.*?</pre>',old,re.S),re.findall(r'<pre\b[^>]*>.*?</pre>',new,re.S),p)
 

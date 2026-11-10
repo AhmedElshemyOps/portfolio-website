@@ -6,6 +6,7 @@ sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 from improve_article_visuals import migrate
 from apply_field_manual import parse
 from approved_article_revisions import approved_revisions
+from git_baseline import show_file
 ROOT=Path(__file__).resolve().parents[1]
 class ArticleVisualTests(unittest.TestCase):
  def test_caption_and_scroll_coverage(self):
@@ -22,10 +23,10 @@ class ArticleVisualTests(unittest.TestCase):
      figures+=1;self.assertEqual(n['attrs'].get('data-reading-visual'),'true')
      self.assertIn('What to learn',s[n['start']:n['end']])
      self.assertIn('diagram-scroll',s[n['start']:n['end']])
-  self.assertEqual((tables,figures),(174,338)) # Four reservations tables now use table semantics.
+  self.assertEqual((tables,figures),(186,346)) # Includes the two registered field guides.
  def test_data_and_image_preservation(self):
   for p in (ROOT/'articles').rglob('*.html'):
-   old=subprocess.check_output(['git','show','6f8f6f6f9324c83b3c63e915ac31a633bdf31d53:'+str(p.relative_to(ROOT))],cwd=ROOT,text=True);new=p.read_text()
+   old=show_file('6f8f6f6f9324c83b3c63e915ac31a633bdf31d53',str(p.relative_to(ROOT)),cwd=ROOT);new=p.read_text()
    old=approved_revisions(old,p.parent.name)
    for pattern in [r'<td\b[^>]*>.*?</td>',r'<pre\b[^>]*>.*?</pre>',r'<img\b(?![^>]*class="(?:series-banner-art|footer-monogram)")[^>]*>']:
     self.assertEqual(re.findall(pattern,old,re.S),re.findall(pattern,new,re.S),p)

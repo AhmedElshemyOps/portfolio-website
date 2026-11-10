@@ -344,5 +344,39 @@
       "definition": "Key performance indicator.",
       "sourceArticle": "/articles/hotel-apartment-operating-system/index.html"
     }
+  ],
+  "heijunka-tourism-operations": [
+    {
+      "term": "Heijunka",
+      "definition": "Workload leveling that smooths eligible work by volume and mix while respecting fixed service commitments.",
+      "sourceArticle": "/articles/heijunka-tourism-operations/index.html"
+    },
+    {
+      "term": "Workload leveling",
+      "definition": "Planning or releasing flexible tasks across time intervals to reduce avoidable peaks without moving guest or event deadlines.",
+      "sourceArticle": "/articles/heijunka-tourism-operations/index.html"
+    },
+    {
+      "term": "Pitch",
+      "definition": "A repeating planning interval used to organize the quantity and mix of work released for preparation.",
+      "sourceArticle": "/articles/heijunka-tourism-operations/index.html"
+    }
+  ],
+  "yamazumi-chart-tourism-operations": [
+    {
+      "term": "Yamazumi chart",
+      "definition": "A stacked bar chart that displays work content by task or role so teams can compare workload with a defined capacity limit.",
+      "sourceArticle": "/articles/yamazumi-chart-tourism-operations/index.html"
+    },
+    {
+      "term": "Work element",
+      "definition": "A defined task or activity that contributes to a process and can be timed or assigned for workload analysis.",
+      "sourceArticle": "/articles/yamazumi-chart-tourism-operations/index.html"
+    },
+    {
+      "term": "Workload limit",
+      "definition": "A planning threshold used for comparison; it must be labeled with its assumptions and should not be confused with takt time unless that calculation is valid.",
+      "sourceArticle": "/articles/yamazumi-chart-tourism-operations/index.html"
+    }
   ]
 }

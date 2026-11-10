@@ -102,16 +102,18 @@ def check(root=ROOT, online=False, lookup=None):
             continue
 
         frame = frames[0]
-        wrapper = frame["parent"]["parent"]
-        marker = (
-            frame["attrs"].get("id") == "video-" + video_id
-            and frame["attrs"].get("data-youtube-id") == video_id
-        ) or (
-            wrapper["attrs"].get("id") == "video-" + video_id
-            and wrapper["attrs"].get("data-youtube-id") == video_id
-        )
+        marker = False
+        ancestor = frame
+        while ancestor:
+            if (
+                ancestor["attrs"].get("id") == "video-" + video_id
+                and ancestor["attrs"].get("data-youtube-id") == video_id
+            ):
+                marker = True
+                break
+            ancestor = ancestor["parent"]
         if not marker:
-            preceding = source[:wrapper["start"]]
+            preceding = source[:frame["parent"]["start"]]
             paragraphs = re.findall(r"<p\b[^>]*>(.*?)</p>", preceding, re.I | re.S)
             actual = clean_text(paragraphs[-1]) if paragraphs else ""
             if actual != match.get("afterParagraph", ""):

@@ -30,7 +30,7 @@ class CalmRolloutTests(unittest.TestCase):
 
     def test_every_page_inherits_the_shared_design(self):
         paths=pages(ROOT)
-        self.assertEqual(len(paths),197+len(json.loads((ROOT/'content/career-routes.json').read_text())))  # Three additive career routes; historical addresses retained
+        self.assertEqual(len(paths),199+len(json.loads((ROOT/'content/career-routes.json').read_text())))  # 199 existing pages plus three additive career routes; historical addresses retained
         for path in paths:
             source=path.read_text()
             body=next(n for n in parse(source).nodes if n['tag']=='body')
@@ -47,7 +47,11 @@ class CalmRolloutTests(unittest.TestCase):
                     self.assertEqual(attrs.get('loading'),'lazy')
                     self.assertTrue(attrs.get('title'))
                     self.assertNotIn('autoplay',attrs.get('allow',''))
-        self.assertEqual(Counter(players),Counter(v['videoId'] for v in inventory if v['embedStatus']=='available'))
+        matches=json.loads((ROOT/'content/article-video-matches.json').read_text())
+        self.assertEqual(set(players),set(v['videoId'] for v in inventory if v['embedStatus']=='available')|{m['videoId'] for m in matches})
+        for path in list((ROOT/'articles').glob('*/index.html'))+[ROOT/'learn/videos/index.html']:
+            ids=[n['attrs']['src'].split('/')[-1] for n in parse(path.read_text()).nodes if n['tag']=='iframe' and 'youtube' in n['attrs'].get('src','')]
+            self.assertEqual(len(ids),len(set(ids)),str(path))
         library=(ROOT/'learn/videos/index.html').read_text()
         for v in inventory:self.assertIn('https://www.youtube.com/watch?v='+v['videoId'],library)
 
