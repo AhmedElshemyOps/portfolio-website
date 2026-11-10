@@ -1,5 +1,40 @@
 # Field Atlas final QA and release preparation
 
+## Release blocker resolution
+
+**Recommendation: BLOCKED at final manual sign-off.** The code and preservation checks are green. Close the remaining Lighthouse and manual accessibility checks in a supported browser before approving a live release. The protected revision is `753c3a0cc6e2235201e939b840973911725dc00c`. The starting development revision was `28ea5f72a2ae8f8bf48cc39f5adb17948b8f38f9`. This section supersedes the earlier run retained below.
+
+| Check | Final evidence |
+| --- | --- |
+| Frozen release suite | Node 22.23.4, Python 3.12.14, pnpm 9.15.9. Offline frozen install passed. `pnpm run check:health` passed **31/31 groups**, including **205 Python tests with zero failures or errors**, 21 Node groups, shared bundles, publishing, link and SEO checks. |
+| Historical and redesign failures | Closed all 31 previous failures. The earlier inventory records 18 historical IDs and 13 pre-Atlas snapshot conflicts. Historical fixture assertions still replay their original references. Two standalone guides use exact authored fixtures. Three supplemental video figures are reconciled against both sides of `e68a59f31de2245a6a08c206e9102e6484ee2ab4`. The production contract independently guards current bodies, links, anchors and metadata. |
+| Renderer and discovery | Shared rendering reports zero drift and 18 synchronized historical article copies. Existing iframe markup with parameters now stays in place. Global search now finds published Heijunka and Yamazumi by their canonical page metadata. Neither has been assigned an unapproved category. |
+| Protected content and SEO | 196 routes, 135 article/series paths, 18 aliases, 9,460 anchors, 2,356 social tags, 22 unchanged social-image files, 178 unchanged sitemap URLs and 376 unchanged JSON-LD nodes. Original article bodies, links, heading IDs, video placement and canonicals match production. Alias bytes differ only by the verified reader asset cache key. Intentional text, heading, anchor, link, canonical and social-image URL mutations were rejected. |
+| Browser navigation | All four journey links reached their expected anchors by keyboard. Global search found both Lean guides and Escape returned focus. Garden search for SOP found 63 matching items. The reader copied the article URL and restored keyboard-selected text size after reload. Employer, CV and project links were inspected. Existing category, series and consent behaviors passed their automated tests. |
+| Accessibility | axe found zero violations on nine representative routes at 390 and 1,250 CSS px. All 36 combinations at 320, 390, 768 and 1,250 CSS px had one main heading and no document overflow. Narrow contrast fixes covered InfraDispatch, InfraSky and InfraCluster. Both reader text-size names include the visible button label. Standalone assistive-technology and browser zoom/reduced-motion sign-off remains open. |
+| Performance | Mobile and desktop Lighthouse both failed to start Chromium because the environment rejected the process singleton socket and crashpad ptrace. The local 390 px iframe sample observed DOM/load of 67/83 ms home, 42/81 ms Garden and 85/100 ms reader, with CLS 0.000 in those observations. LCP was unavailable in the sample. These are lab observations. |
+| Integrations | Preview-host and consent tests passed. AdSense remains inactive. Live YouTube playback, maps/weather providers, GA4 account ingestion, Search Console indexing and search visibility were outside the verified scope. |
+
+### Project checks
+
+| Project | Functional fixture | Actual browser delivery and reload |
+| --- | --- | --- |
+| InfraQuote | 4 adults and 1 child, AED 4,000.50. JSON and worksheet CSV contents checked. | Native JSON download completed. Saved draft fields restored after reload. |
+| InfraDispatch | 3 pickups, 7 passengers, 1 child seat, 65 minutes. JSON and HTML contents checked. | Native HTML download completed. Operator profile restored after reload. Print-ready browser manifest opened and contained all three stops. |
+| InfraSky | 16 passengers, future-date estimate, 80/100 SELL. JSON handover checked. | Native JSON download completed. Saved plan remained after reload. |
+| InfraCluster | 6 groups, 56 passengers, 4 clusters, AED 3,569. CSV and handover JSON checked. | Native CSV download completed. Browser-local persistence is not claimed for this demo. |
+
+All four projects passed the 390 px layout fixture. The print-ready manifest was inspected in the browser. OS print/save-to-PDF for the project print actions remains unverified.
+
+### Preview, deployment and rollback
+
+1. From the development checkout, run `pnpm run dev -- --host 127.0.0.1 --port 4173`. Open the homepage, `/knowledge/index.html#field-atlas`, a protected article, the recruiter summary, and the project case studies. Use the supplied screenshots to compare the protected and candidate homepages.
+2. Before release approval, run desktop and mobile Lighthouse in an environment that can launch Chrome. Complete browser zoom, reduced-motion, screen-reader and print/PDF spot checks. Record findings against the pinned development revision.
+3. After explicit release approval, verify the serving SHA, freeze the known-good protected revision and rehearse the revert or hosting rollback path. Confirm sitemap, redirects, consent and cache state. Publish only the approved candidate through the authorized release process.
+4. Smoke-test the homepage, Garden, protected article and alias, all four demos, sitemap, consent and ad-loader state. If a protected route, article, image, demo or consent behavior regresses, restore the recorded good revision. Verify the serving SHA, service worker, cache and smoke routes, and retain the incident evidence.
+
+## Historical QA record
+
 **Recommendation: BLOCKED.** This review covers the development branch only. Production reference `753c3a0cc6e2235201e939b840973911725dc00c`. QA started from development commit `c9f3989cc8724951c4fb5f06c4031e3ac641f088`. Existing planning and protected-master evidence was reused. The Master Transformation Plan V3.0 phase and approval boundaries apply.
 
 ## Repairs
