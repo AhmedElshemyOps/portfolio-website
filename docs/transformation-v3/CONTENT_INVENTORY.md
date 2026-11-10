@@ -1,0 +1,3 @@
+# Content inventory
+
+See [content inventory TSV](content-inventory.tsv) for every registered destination and the two unregistered article pages. Inventory uses the exact deployed commit. Git blob IDs fingerprint complete source bytes. The repository's existing semantic preservation manifest dates to 28 October and covers 130 article fingerprints. Preserve it as evidence and reconcile its coverage against the present source before redesign. Future verification must distinguish protected article words, headings, tables, formulas, links and videos from generated surrounding controls. Do not silently rebaseline failed tests.

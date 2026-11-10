@@ -1,0 +1,3 @@
+# Analytics and Search Console
+
+A production GA4 measurement ID is configured, and the live homepage displayed the analytics preference prompt. Source intends to load the tag after consent. Verify network behavior with deny/grant and test account-side data only with authorized access. Repository includes a separate demo analytics module with a different consent implementation. Verify whether it is reachable before treating it as an active behavior. Search Console site verification HTML and meta tag are present in source, and the live homepage matches Git. Property ownership, reports and data collection remain unverified. No tracking was activated during this audit.

@@ -1,0 +1,3 @@
+# AdSense baseline and approval gate
+
+The live ads.txt and repository publisher entry match. The source AdSense enable flag is false and no AdSense loader signatures were detected across the 206 HTML files. Verify site status, ownership, approval and policy state inside the owner's account. V3.0 Section Q governs planning and activation. Consider reserved space only on eligible long-form article layouts. Employer, CV, contact and interactive projects default to ad-free. Validate applicable consent and ad serving requirements before any activation. Measure page RPM, revenue, coverage, geography, mobile engagement and Core Web Vitals only from available data.

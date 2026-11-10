@@ -1,0 +1,3 @@
+# Publishing workflow discovery
+
+Start with [the existing authoring guide](../authoring/README.md) and its starter. Existing Python publisher builds approved metadata, layout, search, sitemap and feed outputs. Current first template rejects unsupported tables and images, so articles requiring them use a separate editorial path. Phase 03 evaluates Markdown plus structured frontmatter and the existing static templates, then uses an unpublished example to validate tables, images, video placement, exact text and controlled output. Store drafts outside the web root. Production publication requires explicit approval.
