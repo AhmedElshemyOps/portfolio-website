@@ -100,18 +100,31 @@ def check(data,root=ROOT):
   if old['file']=='templates/footer.html' and footer_change and p.is_file() and footer_before.is_file():
    if digest(footer_before.read_bytes())==old['sha256'] and digest(p.read_bytes())==footer_change['approvedTemplateSha256']:continue
   if old['file']=='sitemap.xml' and p.is_file() and digest(p.read_bytes())!=old['sha256']:
-   # The approved video library and three career routes are additive. Preserve every original sitemap entry,
+   # The documented video library, career routes and Lean guides are additive. Preserve every original sitemap entry,
    # date and attribute, while allowing XML serializer whitespace to differ.
    import xml.etree.ElementTree as ET
    baseline=root/'docs/calm-redesign/step-5/sitemap-baseline.xml'
    if baseline.is_file() and digest(baseline.read_bytes())==old['sha256']:
     try:
      current=ET.fromstring(p.read_text())
-     approved=['/learn/videos/index.html','/careers/tourism-operations/index.html','/careers/mice-event-coordination/index.html','/careers/tourism-product-support/index.html']
+     approved = {
+      '/learn/videos/index.html': None,
+      '/careers/tourism-operations/index.html': None,
+      '/careers/mice-event-coordination/index.html': None,
+      '/careers/tourism-product-support/index.html': None,
+      '/articles/heijunka-tourism-operations/index.html': '2026-11-02',
+      '/articles/yamazumi-chart-tourism-operations/index.html': '2026-11-09',
+     }
      valid=True
-     for path in approved:
+     namespace = '{http://www.sitemaps.org/schemas/sitemap/0.9}'
+     for path, lastmod in approved.items():
       extra=[n for n in current if n.findtext('{*}loc')==BASE+path]
-      if len(extra)!=1 or len(extra[0])!=1 or extra[0].attrib:valid=False;break
+      children = [(namespace + 'loc', BASE + path)]
+      if lastmod is not None:children.append((namespace + 'lastmod', lastmod))
+      if (len(extra)!=1 or extra[0].tag!=namespace+'url' or extra[0].attrib
+          or [(c.tag,c.text) for c in extra[0]]!=children or any(c.attrib or len(c) for c in extra[0])):
+       valid=False
+       break
       current.remove(extra[0])
      canonical=lambda text:ET.canonicalize(xml_data=text,strip_text=True)
      if valid and canonical(ET.tostring(current,encoding='unicode'))==canonical(ET.tostring(ET.fromstring(baseline.read_text()),encoding='unicode')):continue

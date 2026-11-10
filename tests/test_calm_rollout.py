@@ -80,5 +80,13 @@ class CalmRolloutTests(unittest.TestCase):
             p=root/'sitemap.xml';p.write_bytes((ROOT/'sitemap.xml').read_bytes())
             small={**data,'pages':[],'downloads':[row],'footerFiles':[],'identityFiles':[]}
             self.assertTrue(check(small,root)['passed'])
-            p.write_text(p.read_text().replace('/articles/abu-dhabi-mice-operations-series/index.html','/articles/changed-original-url/index.html'))
-            self.assertFalse(check(small,root)['passed'])
+            current = p.read_text()
+            for old, new in (
+                ('/articles/abu-dhabi-mice-operations-series/index.html', '/articles/changed-original-url/index.html'),
+                ('<lastmod>2026-11-02</lastmod>', '<lastmod>2026-11-03</lastmod>'),
+                ('/articles/yamazumi-chart-tourism-operations/index.html', '/articles/heijunka-tourism-operations/index.html'),
+            ):
+                with self.subTest(old=old):
+                    self.assertIn(old, current)
+                    p.write_text(current.replace(old, new, 1))
+                    self.assertFalse(check(small, root)['passed'])
