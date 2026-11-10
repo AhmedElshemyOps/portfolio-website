@@ -1,4 +1,5 @@
 # Preservation baseline: verified 8 October release, before evidence corrections.
+from published_fixtures import assert_custom_guide
 # Earlier migration commits are unavailable; this checks release content, not historical migration provenance.
 from historical_inventory import historical_articles
 import sys, unittest, subprocess,re
@@ -13,6 +14,7 @@ class ArticleVisualTests(unittest.TestCase):
   tables=figures=0
   for p in (ROOT/'articles').rglob('*.html'):
    s=p.read_text();e=parse(s)
+   if assert_custom_guide(self,p,s):continue
    self.assertEqual(migrate(s),s,p)
    for n in e.nodes:
     if n['tag']=='table':

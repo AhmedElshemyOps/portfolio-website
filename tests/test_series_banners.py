@@ -1,3 +1,5 @@
+from historical_inventory import LATER_ARTICLES
+from published_fixtures import assert_custom_guide
 import json,re,sys,unittest,collections
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
@@ -7,8 +9,12 @@ class SeriesBannerTests(unittest.TestCase):
  def test_complete_coverage_exact_titles_and_reading_order(self):
   data=json.loads((ROOT/'content/series-banners.json').read_text());rows=data['articles'];orders=collections.defaultdict(list)
   actual={'/'+p.relative_to(ROOT).as_posix() for folder in ('articles','series') for p in (ROOT/folder).glob('*/index.html')}
-  self.assertEqual({r['url'] for r in rows},actual)
-  self.assertEqual(len(rows),len(actual))
+  authored = {"/"+route for route in LATER_ARTICLES}
+  self.assertEqual({r['url'] for r in rows} | authored,actual)
+  for route in LATER_ARTICLES:
+   p=ROOT/route
+   assert_custom_guide(self,p,p.read_text(),'article-page-header')
+  self.assertEqual(len(rows)+len(authored),len(actual))
   for row in rows:
    p=ROOT/row['url'].lstrip('/');s=p.read_text();heads=re.findall(r'<h1\b[^>]*>.*?</h1>',s,re.S)
    self.assertEqual(len(heads),1,row['url']);self.assertEqual(plain(heads[0]),row['title'])

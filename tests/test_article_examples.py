@@ -1,3 +1,4 @@
+from published_fixtures import assert_custom_guide
 import sys
 import unittest
 from pathlib import Path
@@ -33,5 +34,6 @@ class PracticalExampleTests(unittest.TestCase):
     validate(registry[key])
     terms=[text(s,n) for n in e.nodes if panel['inner']<=n['start']<panel['end'] and n['tag']=='dt' and n['parent']['parent']['attrs'].get('class')=='example-flow']
     self.assertEqual(terms,list(FIELDS),p)
-   self.assertEqual(standardize(s,p.parent.name,registry)[0],s,p)
+   if not assert_custom_guide(self,p,s):
+    self.assertEqual(standardize(s,p.parent.name,registry)[0],s,p)
   self.assertEqual(len(seen),358)

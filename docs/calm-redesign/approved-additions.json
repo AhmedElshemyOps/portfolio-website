@@ -62,5 +62,29 @@
     "reviewNoteBefore": "",
     "reviewNoteAfter": "<p>Video placement reviewed: <time datetime=\"2026-10-28\">2026-10-28</time>. Matched using public descriptions; full transcripts were unavailable.</p>",
     "authorization": "28 October 2026: Ahmed requested extending paragraph-matched videos as supplementary explanations across articles. This exception permits only this exact player and review note."
+  },
+  {
+    "file": "articles/article-abu-dhabi-mice-movement-control-room/index.html",
+    "videoId": "bfQ-9PctjKA",
+    "figureSha256": "f71bc21ee93bfea222c6e68627e5ff21e222b4b19a8dc86f04836c465e64f041",
+    "reviewNoteBefore": "<!-- reader-evidence:start --><aside class=\"article-evidence-note\" aria-label=\"Article evidence and review dates\"><p>Article updated: <time datetime=\"2026-08-28\">2026-08-28</time>.</p><p>Includes illustrative examples; example figures are not measured business results.</p></aside><!-- reader-evidence:end -->",
+    "reviewNoteAfter": "<!-- reader-evidence:start --><aside class=\"article-evidence-note\" aria-label=\"Article evidence and review dates\"><p>Article updated: <time datetime=\"2026-08-28\">2026-08-28</time>.</p><p>Includes illustrative examples; example figures are not measured business results.</p></aside><!-- reader-evidence:end -->",
+    "authorization": "Published supplemental placement recorded in e68a59f31de2245a6a08c206e9102e6484ee2ab4 and independently pinned to protected master. Exact figure only."
+  },
+  {
+    "file": "articles/hotel-lean-six-sigma-ai-toolkit/index.html",
+    "videoId": "AA676Jb4ORs",
+    "figureSha256": "3e71de77998d41cf4aedf69f145d67e6df5d4498fb266d2c39cb7df30d4fb5bd",
+    "reviewNoteBefore": "<!-- reader-evidence:start --><aside class=\"article-evidence-note\" aria-label=\"Article evidence and review dates\"><p>Article updated: <time datetime=\"2026-10-07\">2026-10-07</time>.</p><p>Video placement reviewed: <time datetime=\"2026-10-27\">2026-10-27</time>. Matched using public descriptions; full transcripts were unavailable.</p><p>Includes illustrative examples; example figures are not measured business results.</p></aside><!-- reader-evidence:end -->",
+    "reviewNoteAfter": "<!-- reader-evidence:start --><aside class=\"article-evidence-note\" aria-label=\"Article evidence and review dates\"><p>Article updated: <time datetime=\"2026-10-07\">2026-10-07</time>.</p><p>Video placement reviewed: <time datetime=\"2026-10-27\">2026-10-27</time>. Matched using public descriptions; full transcripts were unavailable.</p><p>Includes illustrative examples; example figures are not measured business results.</p></aside><!-- reader-evidence:end -->",
+    "authorization": "Published supplemental placement recorded in e68a59f31de2245a6a08c206e9102e6484ee2ab4 and independently pinned to protected master. Exact figure only."
+  },
+  {
+    "file": "articles/tourism-operational-excellence-management-system/index.html",
+    "videoId": "De_ZCkC9cGk",
+    "figureSha256": "e28d45ffb5286ad849eb2663ea91967585e50345dbd7157572127208e963d1a0",
+    "reviewNoteBefore": "<!-- reader-evidence:start --><aside class=\"article-evidence-note\" aria-label=\"Article evidence and review dates\"><p>Article updated: <time datetime=\"2026-08-28\">2026-08-28</time>.</p><p>Includes illustrative examples; example figures are not measured business results.</p></aside><!-- reader-evidence:end -->",
+    "reviewNoteAfter": "<!-- reader-evidence:start --><aside class=\"article-evidence-note\" aria-label=\"Article evidence and review dates\"><p>Article updated: <time datetime=\"2026-08-28\">2026-08-28</time>.</p><p>Includes illustrative examples; example figures are not measured business results.</p></aside><!-- reader-evidence:end -->",
+    "authorization": "Published supplemental placement recorded in e68a59f31de2245a6a08c206e9102e6484ee2ab4 and independently pinned to protected master. Exact figure only."
   }
 ]

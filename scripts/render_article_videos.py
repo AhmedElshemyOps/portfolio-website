@@ -4,10 +4,12 @@ from html import escape,unescape
 import re
 from apply_field_manual import parse
 
-def render(source,path,root):
+def render(source,path,root,*,matches=None):
  relative=path.relative_to(root).as_posix();manifest=root/'content/article-video-matches.json'
- if not manifest.exists():return source
- matches=[m for m in json.loads(manifest.read_text()) if m['article']==relative]
+ if matches is None:
+  if not manifest.exists():return source
+  matches=json.loads(manifest.read_text())
+ matches=[m for m in matches if m['article']==relative]
  if not matches:return source
  inventory=root/'content/youtube-videos.json'
  videos={v['videoId']:v for v in json.loads(inventory.read_text()).get('videos',[])} if inventory.exists() else {}
@@ -15,7 +17,13 @@ def render(source,path,root):
  for m in matches:
   vid=m['videoId']
   if not re.fullmatch('[A-Za-z0-9_-]{11}',vid):raise ValueError('Invalid YouTube video ID')
-  existing=re.search(r'<iframe\b(?=[^>]*\bsrc=["\']https://(?:www\.)?(?:youtube-nocookie|youtube)\.com/embed/'+re.escape(vid)+r'["\'])[^>]*>',source)
+  existing=any(
+   n['tag']=='iframe' and re.fullmatch(
+    r'https://(?:www\.)?(?:youtube-nocookie|youtube)\.com/embed/'+vid+r'(?:[?#][^\s]*)?',
+    n['attrs'].get('src',''),
+   )
+   for n in parse(source).nodes
+  )
   if existing:
    # Existing players own their markup, including placement and attributes.
    continue
@@ -31,5 +39,7 @@ def render(source,path,root):
   block='\n<figure class="article-video'+(' article-video--short' if short else '')+'" data-youtube-id="'+vid+'">\n<div class="article-video__frame"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/'+vid+'" title="'+title+'" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div>\n<figcaption><strong>Watch: '+title+'</strong><p>'+escape(m['rationale'])+'</p><a href="https://www.youtube.com/watch?v='+vid+'">Watch on YouTube: '+title+'</a></figcaption>\n</figure>\n'
   block=block.replace('data-youtube-id="'+vid+'"','id="video-'+vid+'" data-youtube-id="'+vid+'"',1)
   pos=paras[0]['end'];source=source[:pos]+block+source[pos:]
- if '/assets/css/article-video.css' not in source:source=source.replace('</head>','<link rel="stylesheet" href="/assets/css/article-video.css">\n</head>',1)
+ # Normalize the supplemental standalone link into the existing style pipeline.
+ if '/assets/css/article-video.css' not in source:
+  source=source.replace('</head>','<link rel="stylesheet" href="/assets/css/article-video.css"/>\n</head>',1)
  return source

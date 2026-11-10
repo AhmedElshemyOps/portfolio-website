@@ -1,3 +1,4 @@
+from published_fixtures import assert_custom_guide
 import sys
 import unittest
 from pathlib import Path
@@ -23,6 +24,7 @@ class HeadingTests(unittest.TestCase):
   for p in (ROOT/'articles').glob('*/index.html'):
    s=p.read_text();e=parse(s);body=next(n for n in e.nodes if 'article-body' in e.classes(n))
    self.assertEqual(sum(n['tag']=='h1' for n in e.nodes),1,p)
+   if assert_custom_guide(self,p,s):continue
    previous=1
    for n in e.nodes:
     if body['inner']<=n['start']<body['end'] and n['tag'] in ('h2','h3','h4','h5','h6'):

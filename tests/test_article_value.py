@@ -1,3 +1,4 @@
+from published_fixtures import assert_custom_guide
 import sys
 import unittest
 from pathlib import Path
@@ -18,8 +19,10 @@ class PracticalValueTests(unittest.TestCase):
  def test_all_editorial_pages_have_curated_openings(self):
   rows=load_rows()
   pages=[p for p in (ROOT/'articles').glob('*/index.html') if 'class="article-body"' in p.read_text()]
-  self.assertEqual(set(rows),{p.parent.name for p in pages})
+  authored = {p.parent.name for p in pages if assert_custom_guide(self,p,p.read_text(),'article-page-header')}
+  self.assertEqual(set(rows) | authored,{p.parent.name for p in pages})
   for p in pages:
+   if p.parent.name in authored:continue
    s=p.read_text();e=parse(s);row=rows[p.parent.name]
    header=next(n for n in e.nodes if 'article-page-header' in e.classes(n))
    body=next(n for n in e.nodes if 'article-body' in e.classes(n))

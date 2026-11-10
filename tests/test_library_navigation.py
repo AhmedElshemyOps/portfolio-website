@@ -1,3 +1,4 @@
+from published_fixtures import before_supplement, prior_video_matches
 from historical_inventory import historical_articles
 import json,re,subprocess,sys,unittest,struct
 from pathlib import Path
@@ -23,10 +24,11 @@ class LibraryNavigationTests(unittest.TestCase):
    for edit in json.loads((ROOT/'maintenance/seo/library-batch-manifest.json').read_text())['navigation_component_replacements'].get(str(p.relative_to(ROOT)),[]):old=old.replace(edit['old'],edit['new'])
    for edit in json.loads((ROOT/'maintenance/seo/evidence-batch-manifest.json').read_text())['replacements'].get(str(p.relative_to(ROOT)),[]):old=old.replace(edit['old'],edit['new'])
    if str(p.relative_to(ROOT)) in json.loads((ROOT/'maintenance/seo/evidence-batch-manifest.json').read_text())['replacements']:old=re.sub(r'("dateModified"\s*:\s*")[^"]+(")',r'\g<1>2026-10-08\2',old)
-   old=approved_revisions(old,p.parent.name)
+   old=approved_revisions(old,p.parent.name,video_matches=prior_video_matches())
    def body(s):
     n=next(n for n in parse(s).nodes if 'article-body' in n['attrs'].get('class','').split());return s[n['start']:n['end']]
-   self.assertEqual(body(old),body(new),str(p))
+   route=p.relative_to(ROOT).as_posix()
+   self.assertEqual(body(old),body(before_supplement(new,route)),str(p))
    self.assertEqual(re.findall(r'<pre\b.*?</pre>',old,re.S),re.findall(r'<pre\b.*?</pre>',new,re.S))
    olddates=[(x.get('datePublished'),x.get('dateModified')) for x in approved_schema(schema_nodes(old)[0],p.parent.name) if x.get('datePublished') or x.get('dateModified')];newdates=[(x.get('datePublished'),x.get('dateModified')) for x in schema_nodes(new)[0] if x.get('datePublished') or x.get('dateModified')];self.assertEqual(olddates,newdates,str(p))
  def test_sharing_assets_are_real_small_pngs_and_described(self):

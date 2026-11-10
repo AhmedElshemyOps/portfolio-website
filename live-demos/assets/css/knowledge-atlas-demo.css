@@ -299,3 +299,9 @@ body.infrasky-page.knowledge-atlas-demo .v14-mobile-cta{display:none!important}
   .knowledge-atlas-demo .cluster-hero h1{color:#000;font-size:34pt}
   .knowledge-atlas-demo .cluster-hero-card{color:#000;border:1px solid #aaa;background:#fff;box-shadow:none}
 }
+
+/* Keep the small labels legible on the light workspace surfaces. */
+.knowledge-atlas-demo .planning-country > .eyebrow,
+.knowledge-atlas-demo .cluster-step .step-head > span {
+  color: #4e421e;
+}

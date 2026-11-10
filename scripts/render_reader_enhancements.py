@@ -4,6 +4,14 @@ import re
 from html import escape
 from apply_field_manual import parse
 
+# These published placements were added as supplements without changing the
+# surrounding evidence wording. Rendering an existing reader must retain it.
+SUPPLEMENTAL_EVIDENCE_ROUTES = {
+    'articles/article-abu-dhabi-mice-movement-control-room/index.html',
+    'articles/hotel-lean-six-sigma-ai-toolkit/index.html',
+    'articles/tourism-operational-excellence-management-system/index.html',
+}
+
 def render(source, path, root):
     relative=path.relative_to(root).as_posix()
     # The shared footer points to a stable local target even on deep article routes.
@@ -38,7 +46,10 @@ def render(source, path, root):
     row=next((r for r in json.loads(registry_path.read_text()) if r['url'].lstrip('/')==relative),None)
     if not row:return source
     # Updated is an editorial date from the registry, never represented as fresh fact verification.
-    source=re.sub(r'<!-- reader-evidence:start -->.*?<!-- reader-evidence:end -->','',source,flags=re.S)
+    existing_note=re.search(r'<!-- reader-evidence:start -->.*?<!-- reader-evidence:end -->',source,flags=re.S)
+    keep_note=relative in SUPPLEMENTAL_EVIDENCE_ROUTES and existing_note is not None
+    if not keep_note:
+        source=re.sub(r'<!-- reader-evidence:start -->.*?<!-- reader-evidence:end -->','',source,flags=re.S)
     notes=[]
     date=row.get('updated','')
     if re.fullmatch(r'\d{4}-\d{2}-\d{2}',date):
@@ -48,7 +59,7 @@ def render(source, path, root):
     dates=sorted({m['reviewedOn'] for m in matches if m['article']==relative and m.get('reviewedOn')})
     if dates:notes.append('Video placement reviewed: <time datetime="'+dates[-1]+'">'+dates[-1]+'</time>. Matched using public descriptions; full transcripts were unavailable.')
     if re.search(r'illustrative (?:scenario|example|teaching)|fictional.*?case',source,re.I):notes.append('Includes illustrative examples; example figures are not measured business results.')
-    if notes:
+    if notes and not keep_note:
         header=next((n for n in parse(source).nodes if 'article-page-header' in n['attrs'].get('class','').split()),None)
         if header:
             note='<!-- reader-evidence:start --><aside class="article-evidence-note" aria-label="Article evidence and review dates">'+''.join('<p>'+n+'</p>' for n in notes)+'</aside><!-- reader-evidence:end -->'

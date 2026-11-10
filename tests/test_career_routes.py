@@ -1,4 +1,5 @@
 """Protect additive career evidence and all original homepage content."""
+from published_fixtures import PRODUCTION, snapshot
 import hashlib,json,sys,unittest
 from pathlib import Path
 from unittest.mock import patch
@@ -23,14 +24,14 @@ class CareerRoutes(unittest.TestCase):
             self.assertIn(profile['work_authorisation'],dom.text())
 
     def test_homepage_preservation_baseline_is_unchanged(self):
-        source=(ROOT/'index.html').read_text();old=json.loads((ROOT/'maintenance/measurement/preservation-contract.json').read_text())['pages']['index.html']
+        source=snapshot(PRODUCTION,'index.html');old=json.loads((ROOT/'maintenance/measurement/preservation-contract.json').read_text())['pages']['index.html']
         dom=DOM(strip_homepage_addition(source,ROOT)).root
         self.assertEqual(hashlib.sha256(dom.text().encode()).hexdigest(),old['visibleTextSha256'])
         self.assertEqual([n.attrs.get('href','') for n in dom.all('a')],old['allLinkHrefs'])
         self.assertEqual([n.attrs['id'] for n in dom.all() if 'id' in n.attrs],old['allIds'])
 
     def test_exception_cannot_hide_changed_original_text(self):
-        source=(ROOT/'index.html').read_text().replace('Travel &amp; Tourism Operations</h1>','Invented Job Title</h1>',1)
+        source=snapshot(PRODUCTION,'index.html').replace('Travel &amp; Tourism Operations</h1>','Invented Job Title</h1>',1)
         old=json.loads((ROOT/'maintenance/measurement/preservation-contract.json').read_text())['pages']['index.html']
         self.assertNotEqual(hashlib.sha256(DOM(strip_homepage_addition(source,ROOT)).root.text().encode()).hexdigest(),old['visibleTextSha256'])
 

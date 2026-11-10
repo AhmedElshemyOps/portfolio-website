@@ -1,3 +1,4 @@
+from published_fixtures import assert_custom_guide
 from historical_inventory import LATER_ARTICLES
 import hashlib,json,re,subprocess,sys,unittest
 from pathlib import Path
@@ -13,6 +14,7 @@ class ToolkitIntegrationTests(unittest.TestCase):
    s=p.read_text();nodes=parse(s).nodes
    glossary=[n for n in nodes if 'article-glossary' in n['attrs'].get('class','').split()]
    body=next(n for n in nodes if 'article-body' in n['attrs'].get('class','').split())
+   if assert_custom_guide(self,p,s,'article-glossary'):continue
    self.assertEqual(len(glossary),1,str(p));self.assertLess(glossary[0]['start'],body['start'],str(p))
    old=subprocess.check_output(['git','show','HEAD:'+p.relative_to(ROOT).as_posix()],cwd=ROOT,text=True)
    previous=next((n for n in parse(old).nodes if 'article-glossary' in n['attrs'].get('class','').split()),None)

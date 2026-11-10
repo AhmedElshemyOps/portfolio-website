@@ -159,7 +159,15 @@ def render(source, path, root=ROOT):
     config_path = root / 'assets/js/site-config.js'
     config = config_path.read_text() if config_path.is_file() else ''
     publisher = re.search(r'adsensePublisherId:\s*"(ca-pub-\d+)"', config)
-    if publisher:
+    custom_reader = (
+        path.relative_to(root).as_posix() in {
+            'articles/heijunka-tourism-operations/index.html',
+            'articles/yamazumi-chart-tourism-operations/index.html',
+        }
+        and publisher
+        and source.count('<meta name="google-adsense-account" content="'+publisher[1]+'"/>') == 1
+    )
+    if publisher and not custom_reader:
         source = re.sub(r'<meta\b[^>]*name="google-adsense-account"[^>]*>', '', source)
         source = source.replace('</head>', '<meta name="google-adsense-account" content="'+publisher[1]+'"/></head>', 1)
     from apply_library_navigation import render as render_library_navigation

@@ -7,7 +7,9 @@ const script = full.slice(0,full.indexOf('  // Use the table of contents'))+'})(
 function run(width, saved, blocked=false) {
  const events={}, values={}, classes=new Set(), stored=[];
  const button=()=>({attrs:{},handlers:{},setAttribute(k,v){this.attrs[k]=v},addEventListener(k,v){this.handlers[k]=v}});
- const font=['decrease','reset','increase'].map(action=>({...button(),dataset:{readerFont:action}}));
+ const font=[
+  ['decrease','A−','Decrease font size'],['reset','A','Reset font size'],['increase','A+','Increase font size'],
+ ].map(([action,textContent,label])=>({...button(),textContent,attrs:{'aria-label':label},getAttribute(key){return this.attrs[key]},dataset:{readerFont:action}}));
  const contrast=button(), theme=button(), toc={open:true,parentElement:null};
  const group={open:false,parentElement:{closest:()=>toc}};
  const link={getAttribute:()=> '#prompt',closest:()=>group,addEventListener(){}};
@@ -15,6 +17,7 @@ function run(width, saved, blocked=false) {
  const window={location:{pathname:'/article',hash:'#prompt'},matchMedia(q){return {matches:q.includes('900px')?width<=900:false,addEventListener(){}}},localStorage:{getItem(){if(blocked)throw Error('blocked');return saved},setItem(k,v){if(blocked)throw Error('blocked');stored.push(JSON.parse(v))}},addEventListener(k,v){events[k]=v}};
  vm.runInNewContext(script,{document,window});
  assert.equal(toc.open,width>900);assert.equal(group.open,true);
+ assert.deepEqual(font.map(node=>node.getAttribute('aria-label')),['A− Decrease font size','Reset font size','A+ Increase font size']);
  font[2].handlers.click();assert(values['--reader-scale']<=1.25);
  font[1].handlers.click();assert.equal(values['--reader-scale'],1);
  font[0].handlers.click();assert.equal(values['--reader-scale'],.9);

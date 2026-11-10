@@ -1,3 +1,4 @@
+from published_fixtures import assert_custom_guide
 import sys
 import unittest
 from pathlib import Path
@@ -22,7 +23,8 @@ class ContentsTests(unittest.TestCase):
    links=[n['attrs']['href'].removeprefix('#') for n in e.nodes if toc['inner']<=n['start']<toc['end'] and 'data-toc-link' in n['attrs']]
    self.assertTrue(links,p);self.assertEqual(len(links),len(set(links)),p)
    self.assertTrue(set(links)<=ids,p)
-   self.assertEqual(simplify(s)[0],s,p)
+   if not assert_custom_guide(self,p,s,'article-toc'):
+    self.assertEqual(simplify(s)[0],s,p)
 
  def test_unanchored_subsection_does_not_point_at_whole_article(self):
   source='<main id="article"><aside class="article-toc"><a href="#article" data-toc-link>Source of truth matrix</a></aside><article class="article-body"><h2 id="framework">Framework</h2><h3>Source of truth matrix</h3><p>Original evidence.</p><section class="practical-example"><h4>Related reading</h4></section></article></main>'

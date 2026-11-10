@@ -1,3 +1,4 @@
+from published_fixtures import before_supplement, prior_video_matches
 from historical_inventory import LATER_ARTICLES
 import copy,json,re,sys,unittest,subprocess
 from pathlib import Path
@@ -26,7 +27,7 @@ class KnowledgeTaxonomyTests(unittest.TestCase):
    def body(s):
     n=next((n for n in parse(s).nodes if 'article-body' in n['attrs'].get('class','').split()),None)
     return s[n['start']:n['end']] if n else None
-   self.assertEqual(body(approved_revisions(old,row['id'])),body(new),path)
+   self.assertEqual(body(approved_revisions(old,row['id'],video_matches=prior_video_matches())),body(before_supplement(new,path)),path)
    dom=DOM(new).root;self.assertEqual([n.attrs['href'] for n in dom.all('link') if n.attrs.get('rel')=='canonical'],baseline['canonical'][row['url']])
    self.assertEqual(len([n for n in dom.all('aside') if 'knowledge-context' in n.attrs.get('class','')]),1)
    self.assertEqual(schema_nodes(new)[1],[])

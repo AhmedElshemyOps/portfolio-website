@@ -28,7 +28,7 @@ def _replace_approved(source, old, new):
         return source
     raise AssertionError('Approved article text was not found')
 
-def approved_revisions(source, slug):
+def approved_revisions(source, slug, *, video_matches=None):
     source = approved_baseline(source, slug)
     row = BY_ID[slug]
     if slug in SCOPED and row['type'] == 'Article' and 'id="accommodation-scope"' not in source:
@@ -68,4 +68,4 @@ def approved_revisions(source, slug):
     from render_reader_enhancements import render as render_reader_enhancements
     path=ROOT/'articles'/slug/'index.html'
     from remove_subscription_ui import render as remove_subscription_ui
-    return remove_subscription_ui(render_reader_enhancements(render_article_videos(source,path,ROOT),path,ROOT))
+    return remove_subscription_ui(render_reader_enhancements(render_article_videos(source,path,ROOT,matches=video_matches),path,ROOT))

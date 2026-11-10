@@ -29,6 +29,40 @@ def metadata(source):
     ]
 
 
+def change_attribute(source, node, name, value):
+    opening = source[node['start']:node['inner']]
+    changed = opening.replace(f'{name}="{node["attrs"][name]}"', f'{name}="{value}"', 1)
+    if changed == opening:
+        raise ValueError(f'Could not change fixture attribute {name}')
+    return source[:node['start']] + changed + source[node['inner']:]
+
+
+def assert_article_preserved(test, before, after):
+    def regions(source, selector):
+        return [source[n['start']:n['end']] for n in parse(source).nodes if selector(n)]
+    def body(n):
+        return 'article-body' in n['attrs'].get('class', '').split()
+    def frame(n):
+        return n['tag'] == 'iframe'
+    def anchors(source):
+        return Counter((key, n['attrs'][key]) for n in parse(source).nodes
+                       for key in ('id', 'name')
+                       if n['attrs'].get(key) and (key == 'id' or n['tag'] == 'a'))
+    def links(source):
+        return [n['attrs'] for n in parse(source).nodes
+                if n['tag'] == 'a' and 'href' in n['attrs']]
+
+    test.assertEqual(regions(before, body), regions(after, body))
+    test.assertEqual(regions(before, frame), regions(after, frame))
+    test.assertEqual(metadata(before), metadata(after))
+    test.assertFalse(anchors(before) - anchors(after))
+    stripped = re.sub(
+        r'<!-- field-atlas:connections -->.*?<!-- field-atlas:/connections -->\n',
+        '', after, flags=re.S,
+    )
+    test.assertEqual(links(before), links(stripped))
+
+
 class FieldAtlas(unittest.TestCase):
     def test_generator_has_no_drift_and_destinations_resolve(self):
         build(ROOT, check=True)
@@ -59,26 +93,44 @@ class FieldAtlas(unittest.TestCase):
             with self.subTest(route=route):
                 before = git('show', PRODUCTION + ':' + route).decode()
                 after = (ROOT / route).read_bytes().decode()
-                def regions(source, selector):
-                    return [source[n['start']:n['end']] for n in parse(source).nodes if selector(n)]
-                def body(n):
-                    return 'article-body' in n['attrs'].get('class', '').split()
-                def frame(n):
-                    return n['tag'] == 'iframe'
-                def anchors(source):
-                    return Counter(n['attrs']['id'] for n in parse(source).nodes if n['attrs'].get('id'))
-                self.assertEqual(regions(before, body), regions(after, body))
-                self.assertEqual(regions(before, frame), regions(after, frame))
-                self.assertEqual(metadata(before), metadata(after))
-                self.assertFalse(anchors(before) - anchors(after))
-                stripped = re.sub(
-                    r'<!-- field-atlas:connections -->.*?<!-- field-atlas:/connections -->\n',
-                    '', after, flags=re.S,
-                )
-                def links(source):
-                    return [n['attrs']['href'] for n in parse(source).nodes
-                            if n['tag'] == 'a' and 'href' in n['attrs']]
-                self.assertEqual(links(before), links(stripped))
+                assert_article_preserved(self, before, after)
+
+    def test_protection_rejects_content_heading_anchor_canonical_and_social_mutations(self):
+        route = 'articles/integrated-sop-creation-model/index.html'
+        source = git('show', PRODUCTION + ':' + route).decode()
+        nodes = parse(source).nodes
+        body = next(n for n in nodes if 'article-body' in n['attrs'].get('class', '').split())
+        heading = next(n for n in nodes if n['tag']=='h2' and body['start'] < n['start'] < body['end'])
+        link = next(n for n in nodes if n['tag']=='a' and 'href' in n['attrs']
+                    and body['start'] < n['start'] < body['end'])
+        meta = next(n for n in nodes if n['attrs'].get('property')=='og:image')
+        canonical = next(n for n in nodes if n['attrs'].get('rel')=='canonical')
+        mutations = {
+            'text': source[:body['inner']] + 'unapproved copy' + source[body['inner']:],
+            'heading': source[:heading['inner']] + 'unapproved heading' + source[heading['inner']:],
+            'anchor': change_attribute(source, heading, 'id', 'unapproved-id'),
+            'link': change_attribute(source, link, 'href', 'https://example.org/changed'),
+            'canonical': change_attribute(source, canonical, 'href', 'https://example.org/changed'),
+            'social': change_attribute(source, meta, 'content', 'https://example.org/changed.png'),
+        }
+        assert_article_preserved(self, source, source)
+        for name, changed in mutations.items():
+            with self.subTest(mutation=name), self.assertRaises(AssertionError):
+                assert_article_preserved(self, source, changed)
+
+    def test_legacy_aliases_preserve_every_byte_except_reader_asset_revision(self):
+        import hashlib
+        aliases = json.loads((ROOT / 'maintenance/seo/active-legacy-articles.json').read_text())
+        reader = (ROOT / 'assets/js/article-reader.js').read_bytes()
+        prior = git('show', PRODUCTION + ':assets/js/article-reader.js')
+        suffix = lambda data: hashlib.sha256(data).hexdigest()[:12].encode()
+        for alias in aliases:
+            route = alias['legacy_path'].lstrip('/')
+            original = git('show', PRODUCTION + ':' + route)
+            self.assertEqual((ROOT / route).read_bytes(), original.replace(
+                b'/assets/js/article-reader.js?v=' + suffix(prior),
+                b'/assets/js/article-reader.js?v=' + suffix(reader),
+            ), route)
 
     def test_protected_operational_files_are_unchanged(self):
         targets = [
@@ -87,4 +139,28 @@ class FieldAtlas(unittest.TestCase):
             'content/article-registry.json', 'content/knowledge-taxonomy.json',
             'content/article-video-matches.json', 'content/youtube-videos.json',
         ]
-        self.assertEqual(git('diff', '--name-only', PRODUCTION, '--', *targets), b'')
+        demo_css = 'live-demos/assets/css/knowledge-atlas-demo.css'
+        reader = 'assets/js/article-reader.js'
+        expected = {
+            demo_css: git('show', PRODUCTION + ':' + demo_css) + b'''
+/* Keep the small labels legible on the light workspace surfaces. */
+.knowledge-atlas-demo .planning-country > .eyebrow,
+.knowledge-atlas-demo .cluster-step .step-head > span {
+  color: #4e421e;
+}
+''',
+            reader: git('show', PRODUCTION + ':' + reader).replace(
+                b"    button.addEventListener('click', () => {\n      const action = button.dataset.readerFont;",
+                b"""    const visibleLabel = button.textContent.trim();
+    const accessibleLabel = button.getAttribute('aria-label');
+    if (['increase', 'decrease'].includes(button.dataset.readerFont) && visibleLabel && accessibleLabel) {
+      button.setAttribute('aria-label', visibleLabel + ' ' + accessibleLabel);
+    }
+    button.addEventListener('click', () => {
+      const action = button.dataset.readerFont;""",
+            ),
+        }
+        changed = git('diff', '--name-only', PRODUCTION, '--', *targets).decode().splitlines()
+        self.assertEqual(set(changed), set(expected))
+        for path, approved in expected.items():
+            self.assertEqual((ROOT / path).read_bytes(), approved, path)

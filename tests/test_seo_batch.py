@@ -1,3 +1,4 @@
+from published_fixtures import before_supplement, prior_video_matches
 from historical_inventory import historical_articles, LATER_ARTICLES
 import unittest,json,re,sys,subprocess,xml.etree.ElementTree as ET
 from pathlib import Path
@@ -15,9 +16,10 @@ class SeoBatchTests(unittest.TestCase):
    for edit in manifest['body_replacements'].get(str(p.relative_to(ROOT)),[]):expected=expected.replace(edit['old'],edit['new'])
    for edit in json.loads((ROOT/'maintenance/seo/library-batch-manifest.json').read_text())['navigation_component_replacements'].get(str(p.relative_to(ROOT)),[]):expected=expected.replace(edit['old'],edit['new'])
    for edit in json.loads((ROOT/'maintenance/seo/evidence-batch-manifest.json').read_text())['replacements'].get(str(p.relative_to(ROOT)),[]):expected=expected.replace(edit['old'],edit['new'])
-   expected=approved_revisions(expected,p.parent.name)
+   expected=approved_revisions(expected,p.parent.name,video_matches=prior_video_matches())
    for pattern in [r'<article class="article-body".*?</article>',r'<link[^>]*rel="canonical"[^>]*>']:
-    a=re.search(pattern,expected,re.S);b=re.search(pattern,new,re.S);self.assertEqual(a[0] if a else None,b[0] if b else None,str(p))
+    route=p.relative_to(ROOT).as_posix()
+    a=re.search(pattern,expected,re.S);b=re.search(pattern,before_supplement(new,route),re.S);self.assertEqual(a[0] if a else None,b[0] if b else None,str(p))
    for href in re.findall(r'href="([^"]+)"',old):
     if '/articles/' in href:self.assertIn(href,new,str(p))
  def test_sitemap_and_atom_are_valid_unique_canonical_outputs(self):

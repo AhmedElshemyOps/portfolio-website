@@ -66,6 +66,11 @@
   analytics('article_opened', { article_path: window.location.pathname });
 
   document.querySelectorAll('[data-reader-font]').forEach((button) => {
+    const visibleLabel = button.textContent.trim();
+    const accessibleLabel = button.getAttribute('aria-label');
+    if (['increase', 'decrease'].includes(button.dataset.readerFont) && visibleLabel && accessibleLabel) {
+      button.setAttribute('aria-label', visibleLabel + ' ' + accessibleLabel);
+    }
     button.addEventListener('click', () => {
       const action = button.dataset.readerFont;
       readerScale = action === 'increase' ? clamp(readerScale + .1, .9, 1.25) : action === 'decrease' ? clamp(readerScale - .1, .9, 1.25) : 1;

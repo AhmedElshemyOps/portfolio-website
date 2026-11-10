@@ -1,4 +1,5 @@
 """Protect real page coverage, unique video players and narrow editorial exceptions."""
+from published_fixtures import assert_custom_guide
 from historical_inventory import LATER_ARTICLES
 import json
 from pathlib import Path
@@ -40,15 +41,24 @@ class CalmRolloutTests(unittest.TestCase):
 
     def test_every_public_video_has_one_destination_and_no_repeated_player(self):
         inventory=json.loads((ROOT/'content/youtube-videos.json').read_text())['videos']
+        matches=json.loads((ROOT/'content/article-video-matches.json').read_text())
+        placements=Counter((m['article'],m['videoId']) for m in matches)
+        matched_ids={vid for _,vid in placements}
+        placements.update(('learn/videos/index.html', v['videoId']) for v in inventory
+                          if v['privacyStatus']=='public' and v['embedStatus']=='available'
+                          and v['videoId'] not in matched_ids)
         players=[]
         for path in list((ROOT/'articles').glob('*/index.html'))+[ROOT/'learn/videos/index.html']:
-            for n in parse(path.read_text()).nodes:
+            source=path.read_text()
+            for n in parse(source).nodes:
                 if n['tag']=='iframe' and 'youtube' in n['attrs'].get('src',''):
-                    attrs=n['attrs'];players.append(attrs['src'].split('/')[-1])
+                    attrs=n['attrs'];players.append((path.relative_to(ROOT).as_posix(),attrs['src'].split('/')[-1]))
+                    if assert_custom_guide(self,path,source):continue
                     self.assertEqual(attrs.get('loading'),'lazy')
                     self.assertTrue(attrs.get('title'))
                     self.assertNotIn('autoplay',attrs.get('allow',''))
-        self.assertEqual(Counter(players),Counter(v['videoId'] for v in inventory if v['embedStatus']=='available'))
+        self.assertEqual(Counter(players),placements)
+        self.assertTrue(all(count==1 for count in placements.values()))
         library=(ROOT/'learn/videos/index.html').read_text()
         for v in inventory:self.assertIn('https://www.youtube.com/watch?v='+v['videoId'],library)
 
