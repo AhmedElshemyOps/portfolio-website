@@ -1,10 +1,10 @@
 # C. Professional-goal journeys
 
-Status: proposed for Gate 2. The resource ordering is editorial. The destinations are verified against the pinned public HTTP and Git-blob inventory. This was a captured-baseline verification, not a new live crawl.
+Status: the owner conditionally approved all four journey concepts and placement. This is the reviewed planning map. Public activation remains pending. The resource ordering is editorial. The destinations are verified against the pinned public HTTP and Git-blob inventory. This was a captured-baseline verification, not a new live crawl.
 
 ## Navigation proposal
 
-Place the section immediately after the Garden introduction and search, with a compact homepage entry point after the professional introduction. Desktop uses a two-by-two set of numbered route panels with short objectives and an adjacent trail index. Mobile uses four stacked, 44 CSS px minimum link rows. The map remains a separate optional exploration route. Activate a journey via a named fragment on the existing Knowledge Hub, show its ordered list and expose a return link to the Garden overview. Render lists as ordinary HTML so they remain usable without JavaScript. Keep filters independent of the selected journey. Link to existing category, series, article, project and CV URLs. Use the existing profile and recruiter summary for For Employers. Fragments are proposed, with zero new canonical pages.
+Place the section immediately after the Garden introduction and search, with a compact homepage entry point after the professional introduction and direct employer pathway. Desktop uses a two-by-two set of numbered route panels with short objectives and an adjacent trail index. Mobile uses four stacked, 44 CSS px minimum link rows. The map remains a separate optional exploration route. Activate a journey via a named fragment on the existing Knowledge Hub, show its ordered list and expose a return link to the Garden overview. Render lists as ordinary HTML so they remain usable without JavaScript. Keep filters independent of the selected journey. Link to existing category, series, article, project and CV URLs. Use the existing profile and recruiter summary for For Employers. Fragments are proposed, with zero new canonical pages.
 
 ## 1. I Manage a DMC
 
@@ -151,3 +151,15 @@ The public PDF and website profile align on employers, broad date ranges and ope
 - Qualifications. [Qualifications on the professional profile](https://ahmedqualityops.com/profile/index.html#qualifications-title)
 - Contact. [Published contact and footer links](https://ahmedqualityops.com/#site-footer)
 - Download. [Ahmed Mahmoud — published CV (PDF)](https://ahmedqualityops.com/documents/Ahmed-Mahmoud-CV.pdf)
+
+## Reviewed content backlog
+
+| Gap | Current coverage | Next editorial decision |
+| --- | --- | --- |
+| ECRS for tourism operations | No verified standalone lesson in the pinned corpus. | Hold a future slot after Kaizen/5S. Add only when verified material exists. |
+| Standalone 5S, Kaizen and visual management | Toolkit material supplies introductory Kaizen and 5S. | Keep toolkit links, and review whether standalone lessons fill an audience need. |
+| Hoshin Kanri for tourism | Existing management system article mentions it in context. | Keep as an introductory reference and track a possible standalone lesson. |
+| End-to-end DMC exercise | Verified reading and projects cover component steps. | Consider a guided exercise after editorial approval. |
+| Cruise primary coverage | Existing itinerary toolkit provides a relevant example. | Keep the target category in the crosswalk and defer an empty standalone category page. |
+
+See [navigation](GATE_02_NAVIGATION.md) and the [employer claim table](EMPLOYER_CLAIM_EVIDENCE.md). Historical journey links and titles were checked against the pinned captures again during this review.

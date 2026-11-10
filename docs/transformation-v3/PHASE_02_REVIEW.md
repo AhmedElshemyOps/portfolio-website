@@ -1,6 +1,6 @@
 # I. Phase 02 planning review and documentation index
 
-10 November 2026 · Ready for Gate 2 review.
+10 November 2026 · Initial review package. See the subsequent [conditional Gate 2 decision and artifact index](GATE_02_DECISION_REPORT.md).
 
 The selected Knowledge Garden can use the existing static site, shared templates and article registry. Preserve canonical HTML teaching bodies. Introduce goal journeys as curated references and derive backlinks from verified relationships in separate metadata. Reuse the existing Knowledge Hub, profile, recruiter summary, project, series and article destinations. Later classification work must reconcile the live five-category registry with the approved V3.0 ten-category target.
 

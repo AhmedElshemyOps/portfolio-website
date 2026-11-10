@@ -22,3 +22,9 @@
 | Unsupported pilot metrics as employer headlines | High | Published CV and profile broadly align, but the CV reviewed lacks the pilot counts. Record claim-level provenance and confirm before promotion. |
 
 See [batch rollback controls](PHASE_02_RISK_ROLLBACK.md).
+
+## Gate 2 review update
+
+- **High — baseline reproducibility.** Targeted checks ran against a pinned fixture. Full checkout/history and the CI-equivalent toolchain are still needed before classifying historical failures and candidate regressions. [Reproduction](BASELINE_REPRODUCTION.md).
+- **High — taxonomy activation.** Crosswalk prepared, 135 proposed rows awaiting owner review. Preserve live assignments until separate approval and Phase 08. [Crosswalk review](TAXONOMY_CROSSWALK_REVIEW.md).
+- **High — employer claims.** Public CV approved as reference. Hold profile-only metrics and distinguish prototypes, projected opportunities and verified outcomes. [Evidence table](EMPLOYER_CLAIM_EVIDENCE.md).

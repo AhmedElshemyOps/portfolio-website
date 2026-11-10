@@ -4,8 +4,8 @@
 | --- | --- |
 | 00 Discovery, repository audit, baseline and inventories | Existing audit retained. Mobile baseline, field metrics and account-side checks remain open. |
 | 01 Three complete visual design concepts | Knowledge Garden direction selected conditionally. See [decision](PHASE_01_DECISION.md). |
-| 02 Selected design system and information architecture | Planning package ready for Gate 2 review. [Review and decisions](PHASE_02_REVIEW.md). |
-| 03 Reusable article publishing architecture | Not started. Follow V3.0 phase order and approval conditions. |
+| 02 Selected design system and information architecture | Conditionally approved for planning. Review artifacts complete. [Gate 2 decision](GATE_02_DECISION_REPORT.md) · [Gate 3 prerequisites](GATE_03_PREREQUISITES.md). |
+| 03 Reusable article publishing architecture | Not started. [First slice proposed](FIRST_IMPLEMENTATION_SLICE.md). Gate 3 and separate authorization pending. |
 | 04 Article sharing and social preview system | Not started. Follow V3.0 phase order and approval conditions. |
 | 05 Mobile-first reading and navigation | Not started. Follow V3.0 phase order and approval conditions. |
 | 06 Image and digital asset optimization | Not started. Follow V3.0 phase order and approval conditions. |

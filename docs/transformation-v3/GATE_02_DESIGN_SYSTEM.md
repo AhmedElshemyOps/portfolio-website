@@ -1,0 +1,15 @@
+# 1. Field Atlas design-system decision sheet
+
+Status: planning decision sheet under conditional Gate 2 approval. References: [Phase 01 decision](PHASE_01_DECISION.md), [Field Atlas pilot](https://chatgpt.com/library?file_id=libfile_d8781c525c1c819183cc71a03f2e8cfd&account_id=personal). This sheet resolves proposed defaults for review. Visual conformance in production remains a future acceptance check.
+
+| Decision | Default for the proposed design | Acceptance check |
+| --- | --- | --- |
+| Identity and hierarchy | Put **Travel & Tourism Professional** in the homepage H1 and show Ahmed Mahmoud as the author. Keep experience, For Employers/CV and contact discoverable in the first section. Introduce the Garden after the professional pathway. | On desktop and mobile the headline and employer CTA appear ahead of the illustration and map in both visual and reading order. |
+| Typography | Lora for headings and long-form reading, IBM Plex Sans for body UI and controls. Retain existing self-hosted WOFF2. Suggested body 16–18 px, reading line height 1.65–1.75, measure 60–75 characters, H1 36–72 px with responsive scaling. | 200% zoom, 320 CSS px reflow, wrapping headings and no clipped labels. |
+| Color and state | Paper `#F9F6ED`, ink `#21382E`, evergreen `#23563E`, clay `#924931`, quiet panel `#EDF0E3`, focus `#A2442E`. Use text and line patterns as well as color to encode relationships. | Verify the actual pairings and states against WCAG 2.2 AA, including 4.5:1 for regular text and 3:1 for essential non-text controls. |
+| Spacing and composition | 4/8 px base, 16/24/32/48/64 section steps, 16–20 px mobile gutters, responsive desktop gutters. One optional original Field Plate near the homepage introduction and no map in the hero. | First fold prioritizes career information. No shift caused by unreserved media. |
+| Interaction | Ordinary links as default, disclosures for contents and map, visible keyboard focus, optional progressive enhancement for filtering and map selection. No animation required to reveal content. | Keyboard, touch, reduced motion, focus restoration, map/list parity and no-JS link access. |
+| Media | Original compact SVG diagrams with meaningful labels/alternatives. Preserve existing published art and custom social cards. Use responsive derivatives where approved. | Existing artwork and OG/X image paths match the baseline. Validate asset weights, intrinsic sizes and accessible descriptions. |
+| Employer surface | Current CV is documentary source; prefer roles, responsibilities and proof links. Use documented prototypes as demonstrations. Employer, CV and demo views default ad-free. | Claims align to evidence table; CV file hashes unchanged. |
+
+Remaining review: exact homepage identity copy and CTA labels, claim-level clearance for any optional metrics, and final visual/accessibility validation of the first authorized prototype. Decorative art may sit alongside the introductory content on desktop. On mobile it follows the primary employer and project pathways.
