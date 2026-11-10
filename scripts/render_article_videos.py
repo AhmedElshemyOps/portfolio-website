@@ -17,10 +17,7 @@ def render(source,path,root):
   if not re.fullmatch('[A-Za-z0-9_-]{11}',vid):raise ValueError('Invalid YouTube video ID')
   existing=re.search(r'<iframe\b(?=[^>]*\bsrc=["\']https://(?:www\.)?(?:youtube-nocookie|youtube)\.com/embed/'+re.escape(vid)+r'["\'])[^>]*>',source)
   if existing:
-   tag=existing.group(0); marked=tag
-   if not re.search(r'\bid=["\']video-'+re.escape(vid)+r'["\']',marked):marked=marked.replace('<iframe','<iframe id="video-'+vid+'"',1)
-   if not re.search(r'\bdata-youtube-id=["\']'+re.escape(vid)+r'["\']',marked):marked=marked.replace('<iframe','<iframe data-youtube-id="'+vid+'"',1)
-   source=source.replace(tag,marked,1)
+   # Existing players own their markup, including placement and attributes.
    continue
   if 'data-youtube-id="'+vid+'"' in source:
    continue
