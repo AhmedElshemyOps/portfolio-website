@@ -8,3 +8,8 @@ h1,h2,.hero h1,.wordmark>span>span:first-child{font-family:Lora,Georgia,serif}
 .demo-suite a[aria-current="page"]{color:#071a32;background:#fcfaf5}
 .hero .eyebrow,.hero .kicker,.hero-kicker,.project-kicker{color:#9a7020}
 a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #b68a2f;outline-offset:3px}
+
+/* The in-flow footer link stays available without covering demo controls. */
+.knowledge-atlas-demo #backToTop {
+  display: none;
+}

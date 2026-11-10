@@ -139,9 +139,19 @@ class FieldAtlas(unittest.TestCase):
             'content/article-registry.json', 'content/knowledge-taxonomy.json',
             'content/article-video-matches.json', 'content/youtube-videos.json',
         ]
+        from hashlib import sha256
+
         demo_css = 'live-demos/assets/css/knowledge-atlas-demo.css'
+        bridge = 'live-demos/assets/css/portfolio-bridge.css'
+        bundle = 'assets/css/infraquote-bundle.css'
         reader = 'assets/js/article-reader.js'
         expected = {
+            bridge: git('show', PRODUCTION + ':' + bridge) + b'''
+/* The in-flow footer link stays available without covering demo controls. */
+.knowledge-atlas-demo #backToTop {
+  display: none;
+}
+''',
             demo_css: git('show', PRODUCTION + ':' + demo_css) + b'''
 /* Keep the small labels legible on the light workspace surfaces. */
 .knowledge-atlas-demo .planning-country > .eyebrow,
@@ -160,6 +170,19 @@ class FieldAtlas(unittest.TestCase):
       const action = button.dataset.readerFont;""",
             ),
         }
+        for route in ('infraquote.html', 'infradispatch/index.html', 'infrasky.html', 'infracluster.html'):
+            path = 'live-demos/' + route
+            asset = bundle if route == 'infraquote.html' else bridge
+            filename = Path(asset).name.encode()
+            revision = sha256((ROOT / asset).read_bytes()).hexdigest()[:12].encode()
+            approved, count = re.subn(
+                re.escape(filename) + rb'(?:\?v=[a-f0-9]+)?(?=")',
+                filename + b'?v=' + revision,
+                git('show', PRODUCTION + ':' + path),
+            )
+            self.assertEqual(count, 1, path)
+            self.assertIn(b'class="footer-back-top" href="#page-top"', approved, path)
+            expected[path] = approved
         changed = git('diff', '--name-only', PRODUCTION, '--', *targets).decode().splitlines()
         self.assertEqual(set(changed), set(expected))
         for path, approved in expected.items():
