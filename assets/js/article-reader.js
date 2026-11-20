@@ -398,3 +398,69 @@
   window.addEventListener('resize', requestUpdate, { passive: true });
   window.addEventListener('pagehide', savePosition);
 })();
+
+/* Continue through a numbered series using its published catalogue order. */
+(async function addSeriesReadingOrder() {
+  const article = document.querySelector('main article.article-body, main article, main');
+  if (!article || !location.pathname.startsWith('/articles/')) return;
+  const normalPath = path => path.replace(/(?:index\.html)?\/?$/, '').replace(/\/$/, '');
+  try {
+    const response = await fetch('/content/article-registry.json');
+    if (!response.ok) return;
+    const registry = await response.json();
+    const current = registry.find(item => normalPath(item.url) === normalPath(location.pathname));
+    if (!current?.seriesId || !Number.isInteger(current.seriesPosition)) return;
+    const parts = registry.filter(item => item.status === 'Published' && item.seriesId === current.seriesId && Number.isInteger(item.seriesPosition)).sort((a,b) => a.seriesPosition - b.seriesPosition);
+    const index = parts.findIndex(item => item.url === current.url);
+    if (index < 0) return;
+    const section = document.createElement('nav');
+    section.setAttribute('aria-label', 'Series reading order');
+    const heading = document.createElement('h2');
+    heading.textContent = current.seriesTitle;
+    section.append(heading);
+    function link(item, label) {
+      const anchor = document.createElement('a');
+      anchor.href = item.url;
+      anchor.textContent = label;
+      return anchor;
+    }
+    for (const [item,label] of [[parts[index-1],'Previous part'],[parts[index+1],'Next part']]) {
+      if (!item) continue;
+      const line = document.createElement('p');
+      line.append(link(item, label + ' · ' + item.title));
+      section.append(line);
+    }
+    const details = document.createElement('details');
+    const summary = document.createElement('summary');
+    summary.textContent = 'Series contents · ' + parts.length + ' parts';
+    const list = document.createElement('ol');
+    for (const part of parts) {
+      const row = document.createElement('li');
+      if (part.url === current.url) {
+        row.textContent = part.title;
+        row.setAttribute('aria-current','page');
+      } else row.append(link(part,part.title));
+      list.append(row);
+    }
+    details.append(summary,list);
+    section.append(details);
+    article.append(section);
+  } catch { /* The original article remains readable if the catalogue is unavailable. */ }
+})();
+
+(function addPortfolioFieldNote() {
+ const notes = {"/articles/article-mice-hotel-desks-coach-departures-abu-dhabi/index.html":["At Masarra DMC my work included airport and hotel representation for group movements. A practical handover is to give the dispatch lead the boarded count, outstanding names and departure decision before releasing the coach.","Experience: Masarra DMC, Abu Dhabi"],"/articles/article-fleet-control-tower-operations-dashboard/index.html":["In Cairo I coordinated approximately 15 vehicles and drivers. For a fleet handover, record the assigned driver, the latest confirmed vehicle status and who owns the next movement.","Experience: transport and fleet coordination, Cairo"],"/articles/article-professional-client-tour-quotation/index.html":["At Elmadina Tours I designed and quoted leisure packages and coordinated suppliers. Before issuing a quote, record the guest count used for the price and the trigger for a revised offer.","Experience: travel consulting, Cairo"]};
+ const note = notes[location.pathname.replace(/\/$/, '/index.html')];
+ const body = document.querySelector('main article, main');
+ if (!note || !body) return;
+ const aside = document.createElement('aside');
+ const heading = document.createElement('h2');
+ heading.textContent = 'From the field';
+ const copy = document.createElement('p');
+ copy.textContent = note[0];
+ const source = document.createElement('a');
+ source.href = '/profile/index.html#career';
+ source.textContent = note[1];
+ aside.append(heading,copy,source);
+ body.append(aside);
+})();
