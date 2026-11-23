@@ -4,7 +4,7 @@ from html import escape
 import json
 from pathlib import Path
 import re
-from urllib.parse import urlsplit
+from urllib.parse import quote, urlsplit
 
 from apply_field_manual import parse
 
@@ -106,7 +106,11 @@ def garden(data, titles):
             f'<ol>{list_items(j["steps"])}</ol>{related}{proof}<h4>Next step</h4><ul>{list_items(j["next"])}</ul>'
             '<p><a href="#field-atlas">Return to the Knowledge Garden</a></p></section>'
         )
-    categories = ''.join('<li>' + escape(name) + '</li>' for name in data['plannedCategories'])
+    counts = list(data['articleTopics'].values())
+    categories = ''.join(
+        f'<li><a href="/knowledge/index.html?tag={quote(name)}#all-knowledge-title">{escape(name)} <small>{counts.count(name)} articles</small></a></li>'
+        for name in data['plannedCategories'] if name in counts
+    )
     return (
         '<section id="field-atlas" class="atlas atlas-panel" aria-labelledby="field-atlas-title">'
         '<p class="atlas-kicker">Ahmed Quality Ops · Tourism Operations Field Atlas</p>'
@@ -116,8 +120,8 @@ def garden(data, titles):
         '<a href="#professional-goals">Explore by professional goal</a><a href="#atlas-map">Open the map</a></nav>'
         f'<h3 id="professional-goals">Explore by Professional Goal</h3><ol class="atlas-trails">{trail_index}</ol>'
         + knowledge_map(data['edges'], titles)
-        + '<details><summary>Ten planned Field Atlas topics</summary><p>These are planned topics. Browse and search use the five existing categories while article mappings await approval.</p>'
-        f'<ol>{categories}</ol></details>' + ''.join(trails) + '</section>'
+        + '<h3 id="field-topics">Browse by field topic</h3>'
+        + f'<ul class="atlas-topics">{categories}</ul>' + ''.join(trails) + '</section>'
     )
 
 

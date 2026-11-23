@@ -43,3 +43,32 @@
 .atlas-preview-ad:empty{display:none}
 @media(max-width:700px){.atlas-hero,.atlas-trails,.atlas-proof{grid-template-columns:1fr}.atlas-hero figure{max-width:28rem}.atlas-map svg{display:none}}
 @media(prefers-reduced-motion:reduce){.atlas,.atlas *{scroll-behavior:auto;animation:none;transition:none}}
+
+/* Field Atlas entry points and subject index */
+.atlas.atlas-hero {
+  background: #193c32;
+  color: #fffaf0;
+  border-radius: .75rem;
+  padding: clamp(1.5rem, 5vw, 4rem);
+}
+.calm-site main .atlas-hero :is(h1, p, figcaption, a) { color: inherit; }
+.calm-site main .atlas-hero .atlas-kicker { color: #f4ce91; }
+.calm-site main .atlas-hero .atlas-button { color: #193c32; background: #fff5dd; }
+.atlas-hero figure img { background: #f6f3e8; border-radius: .4rem; }
+.atlas-hero :focus-visible { outline-color: #ffe59e; }
+.atlas-topics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+  gap: .75rem;
+  list-style: none;
+  padding: 0;
+}
+.atlas-topics a {
+  display: grid;
+  padding: 1rem;
+  height: 100%;
+  box-sizing: border-box;
+  border: 1px solid currentColor;
+  border-radius: .35rem;
+}
+.atlas-topics small { font-size: .875rem; }
