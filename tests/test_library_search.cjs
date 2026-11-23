@@ -54,7 +54,7 @@ assert.equal(normalized.empty.hidden, false);
 const restored = library('https://ahmedqualityops.com/knowledge/index.html?utm_source=review#all-knowledge-title', {
   filters: { pillar: 'MICE & Event Operations' }, query: 'airport', sort: 'title', limit: 12
 });
-assert.equal(restored.summary.textContent, 'Filter articles (1 active)');
+assert.equal(restored.summary.textContent, 'More filters (1 active)');
 assert.match(restored.selection.textContent, /Topic: MICE & Event Operations/);
 assert.match(restored.selection.textContent, /Search: “airport”/);
 assert.match(restored.selection.textContent, /Sort: Title · A–Z/);
@@ -66,7 +66,7 @@ assert.equal(restored.empty.hidden, true);
 assert.equal(restored.active.hidden, true);
 assert.equal(restored.matches().length, 12);
 assert.equal(restored.heading.focused, true, 'Focus moves out of the now-hidden reset button');
-assert.equal(restored.summary.textContent, 'Filter articles');
+assert.equal(restored.summary.textContent, 'More filters');
 const url = new URL(restored.location.href);
 assert.equal(url.searchParams.get('utm_source'), 'review');
 assert.equal(url.hash, '#all-knowledge-title');

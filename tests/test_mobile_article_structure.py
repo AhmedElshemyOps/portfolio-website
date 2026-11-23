@@ -9,16 +9,19 @@ from apply_field_manual import parse
 from approved_article_revisions import approved_revisions
 class MobileArticleStructureTests(unittest.TestCase):
  def test_preferences_before_reading_and_mobile_metadata(self):
-  total=0
+  checked=set()
   for p in (ROOT/'articles').rglob('*.html'):
-   s=p.read_text();e=parse(s);body=next(n for n in e.nodes if 'article-body' in e.classes(n));total+=1
+   s=p.read_text();e=parse(s);body=next(n for n in e.nodes if 'article-body' in e.classes(n));checked.add(p)
    controls=[n for n in e.nodes if 'reader-utilities' in e.classes(n)];self.assertEqual(len(controls),1,p)
    self.assertLess(controls[0]['start'],body['start']);self.assertEqual(controls[0]['attrs']['aria-label'],'Reading preferences')
    for action in ['increase','decrease','reset']:
     n=next(n for n in e.nodes if n['attrs'].get('data-reader-font')==action);self.assertTrue(n['attrs'].get('aria-label'))
    self.assertIn('width=device-width',s);self.assertNotIn('user-scalable=no',s)
    self.assertEqual(migrate(s),s,p)
-  self.assertEqual(total,130+len(LATER_ARTICLES))
+  expected=set(historical_articles('6f8f6f6f9324c83b3c63e915ac31a633bdf31d53'))
+  expected.update(ROOT / name for name in LATER_ARTICLES)
+  expected.add(ROOT / 'articles/understanding-cruise-lines/index.html')
+  self.assertEqual(checked,expected)
  def test_prompt_text_retained(self):
   for p in historical_articles('6f8f6f6f9324c83b3c63e915ac31a633bdf31d53'):
    old=subprocess.check_output(['git','show','6f8f6f6f9324c83b3c63e915ac31a633bdf31d53:'+str(p.relative_to(ROOT))],cwd=ROOT,text=True);new=p.read_text()

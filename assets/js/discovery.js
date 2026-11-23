@@ -41,19 +41,20 @@
     ['experience', 'experiences', 'journey', 'journeys'],
     ['event', 'events', 'mice', 'conference', 'conferences'],
     ['coordination', 'coordinating', 'coordinator', 'handover', 'handoff'],
+    ['price', 'pricing', 'quote', 'quotation', 'cost', 'costing'],
     ['airport', 'airports'], ['reservation', 'reservations', 'booking', 'bookings']
   ];
   function hasTerm(text, term) {
     return (' ' + text.replace(/[^a-z0-9]+/g, ' ') + ' ').includes(' ' + term + ' ');
   }
   function searchConcepts(query) {
-    var text = normalize(query);
+    var text = normalize(query).replace(/^(?:how (?:do i|to)|how can i)\s+/, "");
     relatedTerms.forEach(function (group) {
       group.filter(function (term) { return term.includes(' '); }).sort(function (a, b) { return b.length - a.length; }).forEach(function (term) {
         text = text.replace(new RegExp('\\b' + term + '\\b', 'g'), group[0]);
       });
     });
-    return searchTokens(text);
+    return searchTokens(text).filter(function (token) { return token !== "a" && token !== "an" && token !== "the"; });
   }
   function matchesToken(text, token) {
     if (hasTerm(text, token)) return true;
@@ -70,6 +71,7 @@
     var text = normalize(topicLabel(item.searchText || [item.title, item.description, item.category, item.primaryCategory, item.subcategory, item.seriesTitle].concat(item.tags || [], item.headings || []).join(" ")) + " " + (item.searchText || ""));
     if (!searchConcepts(query).every(function (token) { return matchesToken(text, token); })) return 0;
     var phrase = normalize(query).trim();
+    if (title === phrase) return 10000;
     var total = title.includes(phrase) ? 24 : text.includes(phrase) ? 6 : 1;
     tokens.forEach(function (token) {
       if (title === token) total += 18;
@@ -297,7 +299,7 @@
     if (sort?.value && sort.value !== 'recommended') selection.push('Sort: ' + Array.from(sort.options).find(function (item) { return item.value === sort.value; })?.textContent);
     if (activeSelection) activeSelection.hidden = selection.length === 0;
     if (selectionText) selectionText.textContent = selection.join(' · ');
-    if (filterDisclosureLabel) filterDisclosureLabel.textContent = 'Filter articles' + (activeFilters.length ? ' (' + activeFilters.length + ' active)' : '');
+    if (filterDisclosureLabel) filterDisclosureLabel.textContent = 'More filters' + (activeFilters.length ? ' (' + activeFilters.length + ' active)' : '');
     document.querySelector('[data-knowledge-status]').textContent = matched.length ? 'Showing ' + visible.length + ' of ' + matched.length + ' matching items (articles and series indexes).' : 'No matching items.';
     document.querySelector('[data-knowledge-empty]').hidden = matched.length !== 0;
     if (moreButton) moreButton.hidden = visible.length >= matched.length;
