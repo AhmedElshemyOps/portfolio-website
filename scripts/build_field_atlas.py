@@ -4,7 +4,7 @@ from html import escape
 import json
 from pathlib import Path
 import re
-from urllib.parse import urlsplit
+from urllib.parse import quote, urlsplit
 
 from apply_field_manual import parse
 
@@ -106,7 +106,13 @@ def garden(data, titles):
             f'<ol>{list_items(j["steps"])}</ol>{related}{proof}<h4>Next step</h4><ul>{list_items(j["next"])}</ul>'
             '<p><a href="#field-atlas">Return to the Knowledge Garden</a></p></section>'
         )
-    categories = ''.join('<li>' + escape(name) + '</li>' for name in data['plannedCategories'])
+    topics = ''.join(
+        '<li>' + link(topic['name'], '/knowledge/index.html?tag=' + quote(topic['name']) + '#all-knowledge-title')
+        + ' <span>' + str(topic['articleCount']) + ' articles · ' + escape(topic['status'].title()) + '</span></li>'
+        if topic['articleCount'] else
+        '<li><span>' + escape(topic['name']) + ' · Planned</span></li>'
+        for topic in data['fieldTopics']
+    )
     return (
         '<section id="field-atlas" class="atlas atlas-panel" aria-labelledby="field-atlas-title">'
         '<p class="atlas-kicker">Ahmed Quality Ops · Tourism Operations Field Atlas</p>'
@@ -116,8 +122,9 @@ def garden(data, titles):
         '<a href="#professional-goals">Explore by professional goal</a><a href="#atlas-map">Open the map</a></nav>'
         f'<h3 id="professional-goals">Explore by Professional Goal</h3><ol class="atlas-trails">{trail_index}</ol>'
         + knowledge_map(data['edges'], titles)
-        + '<details><summary>Ten planned Field Atlas topics</summary><p>These are planned topics. Browse and search use the five existing categories while article mappings await approval.</p>'
-        f'<ol>{categories}</ol></details>' + ''.join(trails) + '</section>'
+        + '<h3 id="field-topics">Browse by field topic</h3>'
+        + '<p>Choose a topic to filter the library. Counts include registered articles; topics without articles are shown as planned.</p>'
+        + f'<ol class="atlas-topics">{topics}</ol>' + ''.join(trails) + '</section>'
     )
 
 
@@ -181,6 +188,24 @@ def employer_panel():
 
 
 def validate_atlas(root, data):
+    registry = json.loads((root / 'content/article-registry.json').read_text(encoding='utf-8'))
+    taxonomy = json.loads((root / 'content/knowledge-taxonomy.json').read_text(encoding='utf-8'))
+    topics = data.get('fieldTopics', [])
+    names = [topic['name'] for topic in topics]
+    threshold = data.get('topicActivationThreshold')
+    if len(names) != 10 or len(set(names)) != 10 or threshold != 8:
+        raise ValueError('The ten Field Atlas topics and activation threshold must remain explicit')
+    counts = {}
+    for row in registry:
+        if row['type'] == 'Article':
+            for topic in row.get('tags', []):
+                if topic in names:
+                    counts[topic] = counts.get(topic, 0) + 1
+    for topic in topics:
+        count = counts.get(topic['name'], 0)
+        status = 'established' if count >= threshold else 'emerging' if count else 'planned'
+        if topic['name'] not in taxonomy['tags'] or topic.get('articleCount') != count or topic.get('status') != status:
+            raise ValueError('Field Atlas topic coverage does not match the published registry: ' + topic['name'])
     paths = {'/knowledge/index.html'}
     for journey in data['journeys']:
         if not re.fullmatch(r'[a-z0-9-]+', journey['id']):

@@ -412,5 +412,58 @@
       "evidence": "/articles/abu-dhabi-mice-operations-series/index.html",
       "revision": "753c3a0cc6e2235201e939b840973911725dc00c"
     }
+  ],
+  "topicActivationThreshold": 8,
+  "fieldTopics": [
+    {
+      "name": "Tourism & DMC Operations",
+      "articleCount": 4,
+      "status": "emerging"
+    },
+    {
+      "name": "Tour Guiding & Guest Experience",
+      "articleCount": 3,
+      "status": "emerging"
+    },
+    {
+      "name": "Tourism Product & Commercial Management",
+      "articleCount": 21,
+      "status": "established"
+    },
+    {
+      "name": "MICE & Event Operations",
+      "articleCount": 5,
+      "status": "emerging"
+    },
+    {
+      "name": "Hospitality Management",
+      "articleCount": 18,
+      "status": "established"
+    },
+    {
+      "name": "Travel Technology & AI",
+      "articleCount": 37,
+      "status": "established"
+    },
+    {
+      "name": "Lean Six Sigma & Quality",
+      "articleCount": 11,
+      "status": "established"
+    },
+    {
+      "name": "ITIL 4 & Service Management",
+      "articleCount": 20,
+      "status": "established"
+    },
+    {
+      "name": "Leadership & Management",
+      "articleCount": 9,
+      "status": "established"
+    },
+    {
+      "name": "Cruise & Destination Operations",
+      "articleCount": 0,
+      "status": "planned"
+    }
   ]
 }
