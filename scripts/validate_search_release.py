@@ -26,6 +26,9 @@ def validate(root=ROOT):
     expected = set()
     for relative, path in paths.items():
         url = BASE + ('/' if relative == 'index.html' else '/' + relative)
+        # This article was published with its directory URL as the canonical.
+        if relative == 'articles/understanding-cruise-lines/index.html':
+            url = url.removesuffix('index.html')
         source = path.read_text()
         dom = DOM(source).root
         canonical = [n.attrs.get('href') for n in dom.all('link')

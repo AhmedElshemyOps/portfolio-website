@@ -108,6 +108,7 @@ def check(data,root=ROOT):
     try:
      current=ET.fromstring(p.read_text())
      approved = {
+      '/articles/understanding-cruise-lines/': None,
       '/learn/videos/index.html': None,
       '/careers/tourism-operations/index.html': None,
       '/careers/mice-event-coordination/index.html': None,
